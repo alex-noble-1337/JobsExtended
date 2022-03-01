@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="JobsExtended" path="Mods/JobsExtended/filelist.xml" corepackage="false" gameversion="0.16.6.1" steamworkshopid="2526236489" installtime="1645829041">
+  <Item file="Mods/JobsExtended/Jobs/commoner_gear.xml" />
+  <Jobs file="Mods/JobsExtended/Jobs/Jobs.xml" />
+  <None file="Mods/JobsExtended/Jobs/NewIcons.png" />
+  <Text file="Mods/JobsExtended/Text/English.xml" />
+  <TalentTrees file="Mods/JobsExtended/Talents/TalentTrees.xml" />
+</contentpackage>
