@@ -1,29 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Talents>
 
-	<Talent identifier="specializedtactics"> 
+	<Talent identifier="needalight"> 
 
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>    
-		<AbilityGroupEffect abilityeffecttype="OnGainSkillPoint">
-			<Conditions>
-				<AbilityConditionSkill skillidentifier="weapons"/>
-			</Conditions>
-			<Abilities>
-				<AbilityGroupEffect abilityeffecttype="OnKillCharacter">
-					<Conditions>
-						<AbilityConditionAffliction afflictions="burn"/>
-						<AbilityConditionCharacter targettypes="Enemy"/>
-					</Conditions>
+			<AbilityGroupEffect abilityeffecttype="OnCrewKillCharacter"> <!-- no way to check for affiction on target -->
+				<Conditions>
+					<AbilityConditionCharacter targettype="Enemy" />
+				</Conditions>
+				<Abilities>
 					<CharacterAbilityApplyStatusEffects>
 						<StatusEffects>
 							<StatusEffect type="OnAbility" target="This">
-								<GiveExperience amount="20"/>
+								<GiveExperience amount="15"/>
 							</StatusEffect>
 						</StatusEffects>
 					</CharacterAbilityApplyStatusEffects>
-				</AbilityGroupEffect>
-			</Abilities>
-
+				</Abilities>
+			</AbilityGroupEffect>
 		<AddedRecipe itemidentifier="ek_flaregun"/>
 		<AddedRecipe itemidentifier="ek_flare_round"/>
 	</Talent>

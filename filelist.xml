@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Jobs Extended Beta" path="Mods/Jobs Extended Beta/filelist.xml" corepackage="false" gameversion="0.16.7.0" steamworkshopid="2764795204" installtime="1645987418">
+<contentpackage name="Jobs Extended Beta" path="Mods/Jobs Extended Beta/filelist.xml" corepackage="false" gameversion="0.16.7.0" steamworkshopid="2764795204" installtime="1646181762">
   <None file="Mods/Jobs Extended Beta/ideas.txt" />
   <None file="Mods/Jobs Extended Beta/TODO.txt" />
   <None file="Mods/Jobs Extended Beta/Jobs.PNG" />
@@ -51,4 +51,5 @@
   <Talents file="Mods/Jobs Extended Beta/Talents/VanillaOverrides/SEC/SecurityTalents.xml" />
   <None file="Mods/Jobs Extended Beta/Items/Jobgear/InventoryIcons.png" />
   <None file="Mods/Jobs Extended Beta/Items/Jobgear/ek_grenadepin.ogg" />
+  <None file="Mods/Jobs Extended Beta/SteamPage.txt" />
 </contentpackage>

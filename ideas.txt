@@ -4,19 +4,12 @@ Make every class type (capitan-like, engi role) have their own diving suit and w
 The Exeption is "Commanding Classes", Witch should have its own versions of them, a little more powerfull, but MUCH more expenisve, but only wealded by them. Diving suits should be normal.
 
 new gimmick of "ruling" classes will be aoe buffs (mabe without HoS, cuz idk if i can make it specify targets).
-CO - small buffs, but spanning entire sub
-Navigator - small, but combat and gun fire rate oriented
-XO - same as CO but smaller
-COB - small repair oriented
-CMO - small buffs to injecting (?)
 
-			TREE
-		Name 
-		Proffesion
-	   one  two  one - left and right should be for pda, middle one should have some kind of choice, buff yourself, or be more better for your team
-	   two  one  two - Unlock an small recipie and then offensive or defensive choices on left and right, buffing team and yourself very slightly)
-	   two  two  two - unlock a tool, or something you can give, middle is xp gain
-	   one  one  one - left and right respectivly weapons and diving suits. Two should be buff yourself, or buff team sort of
+TREE
+	one  two  one - left and right should be for pda, middle one should have some kind of choice, buff yourself, or be more better for your team
+	two  one  two - Unlock an small recipie and then offensive or defensive choices on left and right, buffing team and yourself very slightly)
+	two  two  two - unlock a tool, or something you can give, middle is xp gain
+	one  one  one - left and right respectivly weapons and diving suits. Two should be buff yourself, or buff team sort of
 	
 	1st column - buffs to dmg scaled to your skill, except are engineers and mechanics, and COB
 	2nd column - buffs to your team and xp. Capitan like roles should have medals tree instead. Exception is CO
@@ -49,32 +42,26 @@ Navigator
 	UV Polarisng gogles. - more vison range. - a component of modular headset - tier 4 of utility tree
 	AOE buff when you use shuttle nav terminal - lvl 2 skill
 
-Dive Coordinator;
+	Dive Coordinator;
 
-Stick flares to harpoons, Flares deal DOT and illuminate target (Maybe later damage exposure?) (Doesn’t attract enemies)
+	Stick flares to harpoons, Flares deal DOT and illuminate target (Maybe later damage exposure?) (Doesn’t attract enemies)
 
-Slipsuits; +25% movement speed while in slipsuit OR physical conditioning melee attack replaced with slow regen (Half of just a scratch when in water)
+	Slipsuits; +25% movement speed while in slipsuit OR physical conditioning melee attack replaced with slow regen (Half of just a scratch when in water)
 
-Spec-ops propulsion ; Polarized Lens 
+	Spec-ops propulsion ; Polarized Lens 
 
-Flare Cannon; Handcannon flare edition and alien flares ammunition
+	Flare Cannon; Handcannon flare edition and alien flares ammunition
 
+	Shuttle Captain
 
+	Remote Navigation Controller; remotely controls navigation terminal OR Shuttle Navigation Controller
 
+	Trustbuilding; while in a shuttle gain passive buff? OR 
 
-
-Shuttle Captain
-
-Remote Navigation Controller; remotely controls navigation terminal OR Shuttle Navigation Controller
-
-Trustbuilding; while in a shuttle gain passive buff? OR 
-
-Helmsman
+	Helmsman
 
 
 
-
-	
 Diver
 
 	Balista gun  - better hapoon gun. - 4st offenive tier, class weapon. added velocity
@@ -96,7 +83,6 @@ Diver
 	Tier 2;Plant Detection; when within 50m of plants, get a status effect. 50% chance of double output from plants OR Miner
 
 	Tier 3; If holding a storage container, gain a speed boost OR 
-
 
 	Frogman 
 
@@ -129,14 +115,21 @@ Custodian
 	
 	Weapons
 
+
+
 Security and Divers
 	Security will have autoshotguns, and Divers Assault Rifle
+
+
 
 Medic
 	https://steamcommunity.com/sharedfiles/filedetails/?id=2695068144&searchtext=talent
 	Maybe this as a talent gun
 	
-The range of the effects is irrelevant tbh in everything. Making a role in its entirety based on its range is counterproductive but thinking more on a personal talent by talent basis is more effective. You have the right idea with XO but maybe think more like health, speed, and skill boosts.
+
+
+
+
 COB should have many technical staff only and physical vessel buffs. Imagine a tinker skill but it lasts several minutes afterwards.
 
 
@@ -149,3 +142,11 @@ All talents should have 1 thing to give all people, an weapon, and an diving sui
 Themed medals
 
 If a player dies gives you valor
+
+Make Lua command to make someone prisioner
+
+The range of the effects is irrelevant tbh in everything. Making a role in its entirety based on its range is counterproductive but thinking more on a personal talent by talent basis is more effective. You have the right idea with XO but maybe think more like health, speed, and skill boosts.
+
+Tear gas
+
+Passenger BaroPlus integration (alien things)

@@ -362,7 +362,7 @@
 
   
 <Override>
-	<Job identifier="medicaldoctor" maxnumber="0" uicolor="0.81,0.31,0.19"vitalitymodifier="0" pricemultiplier="1.15" idlebehavior="Active">
+	<Job identifier="medicaldoctor" maxnumber="0" uicolor="0.81,0.31,0.19" vitalitymodifier="0" pricemultiplier="1.15" idlebehavior="Active">
     <Jobicon>
       <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="512,256,128,128" origin="0.5,0.5"/>
     </Jobicon>

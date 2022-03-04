@@ -2,8 +2,8 @@
 
 <TalentTrees>
 
-	<!--CO -->
-	<TalentTree jobidentifier="commanding_officer">
+	<!--CO Multiclass -->
+	<TalentTree jobidentifier="commanding_officer"> <!-- Powerfull in emergancies, more used to comand stuff around. Diving suits Special coaliton upgrade, small buff to eveything -->
 		<SubTree identifier="gunslinger">
 			<TalentOptions>
 				<TalentOption identifier="handsomestranger"/>
@@ -54,8 +54,8 @@
 		</SubTree>
 	</TalentTree>
 
-	<!--XO -->
-	<TalentTree jobidentifier="executive_officer">
+	<!--XO Multiclass -->
+	<TalentTree jobidentifier="executive_officer"> <!-- Multiclass, weak when away from capitan, or not taking his orders. better helmet for eveyone, like baro plus, with modular slots -->
 		<SubTree identifier="warden">
 			<TalentOptions> 
 				<TalentOption identifier="defenceindepth"/> <!-- when you kill something gain 5xp -->
@@ -105,63 +105,11 @@
 			</TalentOptions>
 		</SubTree>	
 	</TalentTree>
-	
-	<!-- Navigator -->
-	<TalentTree jobidentifier="navigator"> 
-		<SubTree identifier="Iluminator">
-			<TalentOptions> 
-				<TalentOption identifier="specializedtactics"/> <!-- get flare gun, get weapons skill and 5 xp when creature is killed (possibly in close proximity) -->
-			</TalentOptions>
-			<TalentOptions>
-				<TalentOption identifier="scorchedtactic"/> <!-- flare munitions that deal dot -->
-				<TalentOption identifier="incenderiumkatana"/> <!-- incenderium katana, gains more damage when you hit burned enemy (if possible) -->
-			</TalentOptions>
-			<TalentOptions>
-				<TalentOption identifier="mastertactician"/>	 <!-- small dmg buff aoe -->
-				<TalentOption identifier="watercqc"/> <!-- swing speed and mele damage according to weapons skill -->		
-			</TalentOptions>
-			<TalentOptions>
-	        <TalentOption identifier="warlord"/> <!-- bonus dmg to all people near you when dealing a fire dmg, twin 9mm with a flare munitions to go with it, and other flare munitions -->	
-			</TalentOptions>
-		</SubTree>
-		<SubTree identifier="Navigator"> 
-			<TalentOptions>
-				<TalentOption identifier="helmsman"/> <!-- Navpda, gain 20xp when reached new location, gain weapon skill when getting helm skill -->
-				<TalentOption identifier="divecoordinator"/> <!-- shuttle Navpda, gain 50xp when completed a mission type: nest, mining, gain weapon skill when getting helm skill -->
-			</TalentOptions>
-			<TalentOptions>
-				<TalentOption identifier="experimentaldivinggear"/> <!-- polarized lens, duel spec ops ability-->
-			</TalentOptions>
-			<TalentOptions>
-				<TalentOption identifier="shuttlecapitan"/> <!-- gain buff while in shuttle, emit defence buff while outside -->
-				<TalentOption identifier="proffesional"/> <!-- buff while in submarine, and buff to helm shkill while piloting -->
-			</TalentOptions>
-			<TalentOptions>
-				<TalentOption identifier="masternavigator"/> <!-- every time you get in new location, gain +1 to all skills, bonus lost on death -->
-			</TalentOptions>
-		</SubTree>	
-		<SubTree identifier="Diver Training"> 
-			<TalentOptions>	
-				<TalentOption identifier="physicalconditioning"/> <!-- need that one but weaker, no one dies, and your mission is alien ruin, nest, get 20xp -->
-			</TalentOptions>
-			<TalentOptions>		
-				<TalentOption identifier="targettingmatrix"/> <!-- give buff to manning the turet, weapons skill -->
-				<TalentOption identifier="stonewall"/> 	
-			</TalentOptions>
-			<TalentOptions>				
-				<TalentOption identifier="spacialawarness"/> <!-- gain defence buff to you and others small range while in water -->
-				<TalentOption identifier="medicaltraining"/> <!-- gain health to you and others small range while outside water -->
-			</TalentOptions>
-			<TalentOptions>
-				<TalentOption identifier="navydiver"/> <!-- unique diving suit and space for an strafe like in specialist tree,  -->
-			</TalentOptions>
-		</SubTree>	
-	</TalentTree>
 
-	
-	
-	<!--Head of security not remade (yet) -->
-	<TalentTree jobidentifier="head_of_security"> 
+
+
+	<!--Head of security Defence-->
+	<TalentTree jobidentifier="head_of_security"> <!-- same as secuirity buf more focus on buffs and training, diving suit upgrade aim assist +25 Weapon skill -->
 		<SubTree identifier="Warden"> <!-- Same as in normal security -->
 			<TalentOptions> 
 				<TalentOption identifier="defenceindepth"/> 
@@ -212,11 +160,11 @@
 		</SubTree>	
 	</TalentTree>
 
-	<!--Security -->
-	<TalentTree jobidentifier="security">
+	<!--Security Defence -->
+	<TalentTree jobidentifier="security"> <!-- offensive tree, going out of the submarine and fight in water, upgrade diving suits with ti-al plating, slowning you down slightly and giving more defence buff -->
 		<SubTree identifier="Warden">
 			<TalentOptions> 
-				<TalentOption identifier="defenceindepth"/> <!--  when you gain wepon skill gain 15 xp -->
+				<TalentOption identifier="defenceindepth"/> <!--  riot shield -->
 			</TalentOptions>
 			<TalentOptions>
 				<TalentOption identifier="beatcop"/> 
@@ -264,8 +212,61 @@
 		</SubTree>	
 	</TalentTree>
 
-	<!--Diver -->	
-	<TalentTree jobidentifier="diver">
+
+	<!-- Navigator weak def when in submarine, support offensive when outside -->
+	<TalentTree jobidentifier="navigator"> <!-- buffs to diving team and offensive when in water, diving suit upgrade sonar beacon and sonar integration-->
+		<SubTree identifier="Iluminator">
+			<TalentOptions> 
+				<TalentOption identifier="needalight"/> <!-- get flare gun, get weapons skill and 5 xp when creature is killed (possibly in close proximity) -->
+			</TalentOptions>
+			<TalentOptions>
+				<TalentOption identifier="scorchedearth"/> <!-- flare munitions that deal dot -->
+				<TalentOption identifier="incenderiumkatana"/> <!-- incenderium katana, gains more damage when you hit burned enemy (if possible) -->
+			</TalentOptions>
+			<TalentOptions>
+				<TalentOption identifier="sailorwithnoname"/>
+				<TalentOption identifier="drunkensailor"/> 	
+			</TalentOptions>
+			<TalentOptions>
+	        <TalentOption identifier="readytofry"/> <!-- bonus dmg to all people near you when dealing a fire dmg, twin 9mm with a flare munitions to go with it, and other flare munitions -->	
+			</TalentOptions>
+		</SubTree>
+		<SubTree identifier="Navigator"> 
+			<TalentOptions>
+				<TalentOption identifier="helmsman"/> <!-- Navpda, gain 20xp when reached new location, gain weapon skill when getting helm skill -->
+				<TalentOption identifier="divecoordinator"/> <!-- shuttle Navpda, gain 50xp when completed a mission type: nest, mining, gain weapon skill when getting helm skill -->
+			</TalentOptions>
+			<TalentOptions>
+				<TalentOption identifier="experimentaldivinggear"/> <!-- polarized lens, duel spec ops ability-->
+			</TalentOptions>
+			<TalentOptions>
+				<TalentOption identifier="shuttlecapitan"/> <!-- gain buff while in shuttle, emit defence buff while outside -->
+				<TalentOption identifier="proffesional"/> <!-- buff while in submarine, and buff to helm shkill while piloting -->
+			</TalentOptions>
+			<TalentOptions>
+				<TalentOption identifier="masternavigator"/> <!-- every time you get in new location, gain +1 to all skills, bonus lost on death -->
+			</TalentOptions>
+		</SubTree>	
+		<SubTree identifier="Diver Training"> 
+			<TalentOptions>	
+				<TalentOption identifier="physicalconditioning"/> <!-- need that one but weaker, no one dies, and your mission is alien ruin, nest, get 20xp -->
+			</TalentOptions>
+			<TalentOptions>		
+				<TalentOption identifier="targettingmatrix"/> <!-- give buff to manning the turet, weapons skill -->
+				<TalentOption identifier="stonewall"/> 	
+			</TalentOptions>
+			<TalentOptions>				
+				<TalentOption identifier="spacialawarness"/> <!-- gain defence buff to you and others small range while in water -->
+				<TalentOption identifier="medicaltraining"/> <!-- gain health to you and others small range while outside water -->
+			</TalentOptions>
+			<TalentOptions>
+				<TalentOption identifier="navydiver"/> <!-- unique diving suit and space for an strafe like in specialist tree,  -->
+			</TalentOptions>
+		</SubTree>	
+	</TalentTree>
+
+	<!--Diver Offensive -->	
+	<TalentTree jobidentifier="diver"> <!-- offensive tree, going out of the submarine and fight in water, upgrade pucs with fins same as slipsuit -->
 		<SubTree identifier="Frogman">
 			<TalentOptions> 
 				<TalentOption identifier="watercombatexpert"/> <!-- gain more hapoons when harpoon crafting / dumb TODO, add 15xp from killing a monster -->
@@ -318,8 +319,8 @@
 
 
 
-	<!-- CMO not remade (yet) -->
-  <TalentTree jobidentifier="chiefmedicaldoctor">
+	<!-- CMO Support not remade (yet) -->
+  <TalentTree jobidentifier="chiefmedicaldoctor"> <!-- same as normal doc, but with more focus on medical training diving suit life support witch can save you in emergancies -->
     <SubTree identifier="xenologist">
       <TalentOptions>
         <TalentOption identifier="researchersintuition"/>
@@ -371,8 +372,8 @@
     </SubTree>
   </TalentTree>	
 	
-	<!-- MED not remade (yet) -->	
-  <TalentTree jobidentifier="medicalstaff">
+	<!-- MED Support not remade (yet) -->	
+  <TalentTree jobidentifier="medicalstaff"> <!-- weaker ruin exploration and gene, diving suits, autoinjector on diving suits upgrade, pucs gets -->
     <SubTree identifier="medic">
       <TalentOptions>
         <TalentOption identifier="fieldmedic"/>
@@ -424,64 +425,11 @@
       </TalentOptions>
     </SubTree>
   </TalentTree>
-	
-	
-	
-	<!--Engi not remade (yet) -->	
-  <TalentTree jobidentifier="engineering">
-    <SubTree identifier="weaponsengineer">
-      <TalentOptions>
-        <TalentOption identifier="militaryapplications"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="strengthenedalloys"/>
-        <TalentOption identifier="castledoctrine"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="expandedresearch"/>
-        <TalentOption identifier="armsdealer"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="nuclearoption"/>
-      </TalentOptions>
-    </SubTree>
-    <SubTree identifier="electrician">
-      <TalentOptions>
-        <TalentOption identifier="minorinmechanics"/>
-        <TalentOption identifier="justascratch"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="melodicrespite"/>
-        <TalentOption identifier="intheflow"/>	  
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="electrochemist"/>
-        <TalentOption identifier="optimizedpowerflow"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="allseeingeye"/>
-      </TalentOptions>
-    </SubTree>
-    <SubTree identifier="physicist">
-      <TalentOptions>
-        <TalentOption identifier="remotemonitor"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="coauthor"/>
-        <TalentOption identifier="hazardousmaterials"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="collegeathletics"/>
-        <TalentOption identifier="polymath"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="phdinnuclearphysics"/>
-      </TalentOptions>
-    </SubTree>
-  </TalentTree>
-	
-	<!--COB not remade (yet) -->
-  <TalentTree jobidentifier="chief">
+
+
+
+	<!--COB Support not remade (yet) -->
+  <TalentTree jobidentifier="chief"> <!-- Buffing the submarine by crafing stuff to place, diving suits, no more view obstruction -->
     <SubTree identifier="electrician">
       <TalentOptions>
         <TalentOption identifier="minorinmechanics"/>
@@ -532,11 +480,64 @@
       </TalentOptions>
     </SubTree>
   </TalentTree>	
+	
+	<!--Engi Support not remade (yet) -->	
+  <TalentTree jobidentifier="engineering"> <!-- Mostly not changed, diving suits upgrade more light  -->
+    <SubTree identifier="weaponsengineer">
+      <TalentOptions>
+        <TalentOption identifier="militaryapplications"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="strengthenedalloys"/>
+        <TalentOption identifier="castledoctrine"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="expandedresearch"/>
+        <TalentOption identifier="armsdealer"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="nuclearoption"/>
+      </TalentOptions>
+    </SubTree>
+    <SubTree identifier="electrician">
+      <TalentOptions>
+        <TalentOption identifier="minorinmechanics"/>
+        <TalentOption identifier="justascratch"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="melodicrespite"/>
+        <TalentOption identifier="intheflow"/>	  
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="electrochemist"/>
+        <TalentOption identifier="optimizedpowerflow"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="allseeingeye"/>
+      </TalentOptions>
+    </SubTree>
+    <SubTree identifier="physicist">
+      <TalentOptions>
+        <TalentOption identifier="remotemonitor"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="coauthor"/>
+        <TalentOption identifier="hazardousmaterials"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="collegeathletics"/>
+        <TalentOption identifier="polymath"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="phdinnuclearphysics"/>
+      </TalentOptions>
+    </SubTree>
+  </TalentTree>
 
 
 
-	<!--Mech not remade (yet) -->
-  <TalentTree jobidentifier="mechanical">
+	<!--Mech Support not remade (yet) -->
+  <TalentTree jobidentifier="mechanical"> <!-- Robots on offensive tree, middle tree mostly same as engineer (repair bonuses), exoskeleton (waterflow resistance and speed) diving suit upgrade -->
     <SubTree identifier="machinist">
       <TalentOptions>
         <TalentOption identifier="tinkerer"/>
@@ -587,8 +588,8 @@
     </SubTree>
   </TalentTree>
 	
-	<!--Quatermaster -->
-	<TalentTree jobidentifier="quartermaster"> <!-- I dont think i like it that much ... -->
+	<!--Quatermaster Support -->
+	<TalentTree jobidentifier="quartermaster"> <!-- Crafting better, faster, stronger + fabricator pda, cargo pouches diving suit upgrade -->
 		<SubTree identifier="weaponsengineer">
 			<TalentOptions>			
 				<TalentOption identifier="bootcamp"/> <!-- Add to quatermaster and security -->	
@@ -640,9 +641,9 @@
 	</TalentTree>
 
 
-	
-	<!--Passenger-->	
-	<TalentTree jobidentifier="passenger"> <!-- I dont think i like it that much ... -->
+
+	<!--Passenger Misc  -->	
+	<TalentTree jobidentifier="passenger"> <!-- Genes and ruin exploration + clown, TODO in future BaroPlus integration, diving suit upgrade, add moloch shell  -->
 		<SubTree identifier="xenologist">
 		  <TalentOptions>
 				<TalentOption identifier="curiosity"/>
@@ -693,59 +694,8 @@
 		</SubTree>
 	</TalentTree>
 
-	<!--Prisoner -->
-	<TalentTree jobidentifier="inmate">
-		<SubTree identifier="violent"> <!-- TODO name -->
-		  <TalentOptions>
-				<TalentOption identifier="pyromaniac"/> <!-- add to prisoner -->
-				<TalentOption identifier="combatinstincts"/> <!-- more damage when using diving kinves -->
-		  </TalentOptions>
-		  <TalentOptions>
-				<TalentOption identifier="deaddrops"/><!-- Gain free weapons every round  -->  
-		  </TalentOptions>
-		  <TalentOptions>
-				<TalentOption identifier="implacable"/> <!-- when dead revive a short while after  -->
-				<TalentOption identifier="adaptiblity"/> <!-- 100% stun resistance  -->  
-		  </TalentOptions>
-		  <TalentOptions>
-				<TalentOption identifier="physicalconditioning"/> 
-		  </TalentOptions>
-		</SubTree>	
-		<SubTree identifier="trolling"> <!-- TODO name -->
-		  <TalentOptions>
-				<TalentOption identifier="skedaddle"/> <!-- Move to prisoner -->
-		  </TalentOptions>
-		  <TalentOptions>
-				<TalentOption identifier="stillkicking"/> <!-- Move it to a prisoner -->
-				<TalentOption identifier="immunetodeath"/> <!-- resisstance to reaper tax-->
-		  </TalentOptions>
-		  <TalentOptions>
-				<TalentOption identifier="securitybackground"/> <!-- 50 weapons skill -->
-				<TalentOption identifier="stonewall"/> <!-- 50% resistance to everthing --> 
-		  </TalentOptions>
-		  <TalentOptions>
-				<TalentOption identifier="publicenemynumberone"/> <!-- get a nuke each round  --> 
-		  </TalentOptions>
-		</SubTree>	
-		<SubTree identifier="cooperative"> <!-- TODO name -->
-		  <TalentOptions>
-				<TalentOption identifier="playingcatchup"/> <!-- Move to prisoner Should be in all classes -->	        
-		  </TalentOptions>
-		  <TalentOptions>
-				<TalentOption identifier="insurancepolicy"/> <!-- Move it to a prisoner -->
-		  </TalentOptions>
-		  <TalentOptions>
-				<TalentOption identifier="apprenticeship"/> <!-- Move it to a prisoner -->
-				<TalentOption identifier="standanddeliver"/> <!-- Move it to a prisoner -->
-		  </TalentOptions>
-		  <TalentOptions>			
-				<TalentOption identifier="graduationceremony"/> <!-- Add it to prisoner, and Custodian -->
-		  </TalentOptions>
-		</SubTree>	
-	</TalentTree>
-		
-	<!--Custodian -->
-	<TalentTree jobidentifier="janitor"> <!-- I dont think i like it that much ... -->
+	<!--Custodian Misc -->
+	<TalentTree jobidentifier="janitor"> <!-- Cleaning, roombas, joke class + super clown, better suits, upgrade suits to an equivalent to a pirate suits, but they look the part -->
 		<SubTree identifier="cleaner"> <!-- TODO name -->
 			<TalentOptions>	
 				<TalentOption identifier="supercleaner"/> <!-- add crafting of dasher cleaner -->
@@ -795,6 +745,58 @@
 		  </TalentOptions>
 		</SubTree>
 	</TalentTree>
-	
+
+
+
+	<!--Prisoner -->
+	<TalentTree jobidentifier="inmate"> <!-- Troll class -->
+		<SubTree identifier="violent"> <!-- TODO name -->
+		  <TalentOptions>
+				<TalentOption identifier="pyromaniac"/> <!-- add to prisoner -->
+				<TalentOption identifier="combatinstincts"/> <!-- more damage when using diving kinves -->
+		  </TalentOptions>
+		  <TalentOptions>
+				<TalentOption identifier="deaddrops"/><!-- Gain free weapons every round  -->  
+		  </TalentOptions>
+		  <TalentOptions>
+				<TalentOption identifier="implacable"/> <!-- when dead revive a short while after  -->
+				<TalentOption identifier="adaptiblity"/> <!-- 100% stun resistance  -->  
+		  </TalentOptions>
+		  <TalentOptions>
+				<TalentOption identifier="physicalconditioning"/> 
+		  </TalentOptions>
+		</SubTree>	
+		<SubTree identifier="trolling"> <!-- TODO name -->
+		  <TalentOptions>
+				<TalentOption identifier="skedaddle"/> <!-- Move to prisoner -->
+		  </TalentOptions>
+		  <TalentOptions>
+				<TalentOption identifier="stillkicking"/> <!-- Move it to a prisoner -->
+				<TalentOption identifier="immunetodeath"/> <!-- resisstance to reaper tax-->
+		  </TalentOptions>
+		  <TalentOptions>
+				<TalentOption identifier="securitybackground"/> <!-- 50 weapons skill -->
+				<TalentOption identifier="stonewall"/> <!-- 50% resistance to everthing --> 
+		  </TalentOptions>
+		  <TalentOptions>
+				<TalentOption identifier="publicenemynumberone"/> <!-- get a nuke each round  --> 
+		  </TalentOptions>
+		</SubTree>	
+		<SubTree identifier="cooperative"> <!-- TODO name -->
+		  <TalentOptions>
+				<TalentOption identifier="playingcatchup"/> <!-- Move to prisoner Should be in all classes -->	        
+		  </TalentOptions>
+		  <TalentOptions>
+				<TalentOption identifier="insurancepolicy"/> <!-- Move it to a prisoner -->
+		  </TalentOptions>
+		  <TalentOptions>
+				<TalentOption identifier="apprenticeship"/> <!-- Move it to a prisoner -->
+				<TalentOption identifier="standanddeliver"/> <!-- Move it to a prisoner -->
+		  </TalentOptions>
+		  <TalentOptions>			
+				<TalentOption identifier="graduationceremony"/> <!-- Add it to prisoner, and Custodian -->
+		  </TalentOptions>
+		</SubTree>	
+	</TalentTree>
 
 </TalentTrees>
