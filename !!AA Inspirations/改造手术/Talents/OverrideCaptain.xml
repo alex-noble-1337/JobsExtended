@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Override>
+<Talents>
+
+  <Talent identifier="handsomestranger">
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.revolverround" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.increasereputationgains">
+      <Replace tag="[value]" value="20" color="gui.green"/>
+    </Description>
+    <Description tag="talentdescription.simultaneousskillgain">
+      <Replace tag="[skillname1]" value="skillname.helm" color="gui.orange"/>
+      <Replace tag="[skillname2]" value="skillname.weapons" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.gaindoubleskillatskill">
+      <Replace tag="[skillname1]" value="skillname.helm" color="gui.orange"/>
+      <Replace tag="[skilltotal]" value="100" color="gui.orange"/>
+      <Replace tag="[skillname2]" value="skillname.weapons" color="gui.orange"/>
+    </Description>
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>    
+    <AbilityGroupEffect abilityeffecttype="OnGainSkillPoint">
+      <Conditions>
+        <AbilityConditionSkill skillidentifier="weapons"/>
+        <AbilityConditionHasSkill skillidentifier="helm" minvalue="100"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityGainSimultaneousSkill skillidentifier="weapons" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnGainSkillPoint">
+      <Conditions>
+        <AbilityConditionSkill skillidentifier="helm"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityGainSimultaneousSkill skillidentifier="weapons" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveStat stattype="ReputationGainMultiplier" value="0.2"/>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="revolverround"/>
+<AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
+     <Conditions>
+        <AbilityConditionServerRandom randomchance="0.25" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityPutItem itemidentifier="servicestud" amount="2"/>
+        <CharacterAbilityPutItem itemidentifier="servicestudgold"/>
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+
+<Talent identifier="travelingtradesman">
+    <Description tag="talentdescription.extramarksonnewstation">
+      <Replace tag="[marks]" value="500" color="gui.green"/>
+    </Description>
+    <Description tag="talentdescription.specialsaleitemincrease">
+      <Replace tag="[itemcount]" value="4" color="gui.green"/>
+    </Description>
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,0" sheetelementsize="128,128"/>
+    <AbilityGroupEffect abilityeffecttype="OnLocationDiscovered">
+      <Conditions>
+        <AbilityConditionLocation hasoutpost="true"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityGiveMoney amount="500"/>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveStat stattype="ExtraSpecialSalesCount" value="4"/>
+      </Abilities>
+    </AbilityGroupEffect>
+<AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
+     <Conditions>
+        <AbilityConditionServerRandom randomchance="0.25" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityPutItem itemidentifier="servicestud" amount="2"/>
+        <CharacterAbilityPutItem itemidentifier="servicestudgold"/>
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+  
+  <Talent identifier="evasivemaneuvers">
+    <Description tag="talentdescription.evasivemaneuvers">
+      <Replace tag="[helmbonus]" value="75" color="gui.green"/>
+      <Replace tag="[seconds]" value="5" color="gui.green"/>
+    </Description>
+    <Description tag="talentdescription.payextra.monsterandnest">
+      <Replace tag="[extra]" value="15" color="gui.green"/>
+    </Description>
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="5,0" sheetelementsize="128,128"/>
+    <AbilityGroupEffect abilityeffecttype="AfterSubmarineAttacked">
+      <Conditions>
+        <AbilityConditionEvasiveManeuvers/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="This" multiplyafflictionsbymaxvitality="true">
+              <Affliction identifier="evasivemaneuvers" amount="5.0"/>
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnGainMissionMoney">
+      <Conditions>
+        <AbilityConditionMission missiontype="Monster"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyValue addedvalue="0.15"/>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnGainMissionMoney">
+      <Conditions>
+        <AbilityConditionMission missiontype="Nest"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyValue addedvalue="0.15"/>
+      </Abilities>
+    </AbilityGroupEffect>
+<AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
+     <Conditions>
+        <AbilityConditionServerRandom randomchance="0.25" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityPutItem itemidentifier="servicestud" amount="2"/>
+        <CharacterAbilityPutItem itemidentifier="servicestudgold"/>
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+
+ <Talent identifier="commander">
+    <Description tag="talentdescription.commander">
+      <Replace tag="[physicalresistance]" value="25" color="gui.green"/>
+      <Replace tag="[skillincrease]" value="10" color="gui.green"/>
+    </Description>
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,1" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.commanderreminder"/>
+    <AbilityGroupInterval>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffectsToLastOrderedCharacter>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+              <Affliction identifier="inspiredtoact" amount="5.0"/>
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffectsToLastOrderedCharacter>
+      </Abilities>
+    </AbilityGroupInterval>
+<AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
+     <Conditions>
+        <AbilityConditionServerRandom randomchance="0.25" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityPutItem itemidentifier="servicestud" amount="2"/>
+        <CharacterAbilityPutItem itemidentifier="servicestudgold"/>
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+
+  <Talent identifier="geneharvester">
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,6" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.geneharvester">
+      <Replace tag="[probability]" value="35" color="gui.green"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="OnCrewKillCharacter">
+      <Conditions>
+        <AbilityConditionServerRandom randomchance="0.35" />
+        <AbilityConditionCharacter targettype="Enemy,Monster" />
+        <AbilityConditionGeneHarvester />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="UseTarget" spawnitemrandomly="true" >
+              <SpawnItem identifiers="geneticmaterialcrawler_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialmudraptor_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialmoloch_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialmantis_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialthresher_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialhammerhead_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialhammerheadmatriarch_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialspineling_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialhusk_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialmollusc_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialskitter_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialhunter_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialbetchergland_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialsecondaryheart_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialossmodula_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialbiscopea_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialhaemastamen_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmateriallarramanorgan_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialcatalepseannode_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialpreomnor_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialomophage_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialmultilung_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialocculobe_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmateriallymanear_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialsusanmembrane_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialmelanochromic_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialoolitickidney_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialneuroglottis_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialmucranoid_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialblackbarapace_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialsinewcoils_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialmagnificat_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterialbelisarianfurnace_unresearched" spawnposition="ThisInventory" />
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+</Talents>
+</Override>

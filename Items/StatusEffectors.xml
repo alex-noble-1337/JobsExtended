@@ -1,0 +1,11 @@
+﻿<Items>
+<!-- Unused Item WIP
+<Item name="VREffectorItem" identifier="VREFFECTOR" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem" description="This is an invisable Effector for defining target use, do not remove from VR Inventory." scale="0.5">
+    <Sprite name="VREffector" texture="Mods/VondessMudraptor/Items/Invisible Effector.png" depth="0.6" sourcerect="0,0,16,16" origin="0.5,0.5" scale="0.5" />
+    <Body width="40" radius="30" density="15" />
+    <Wearable limbtype="Torso" slots="InnerClothes, Any" msg="ItemMsgPickUpSelect">
+      <sprite name="VREffector Wearable" texture="Mods/VondessMudraptor/Items/Invisible Effector.png" limb="Torso" inheritlimbdepth="true" inherittexturescale="true" sourcerect="0,0,16,16" origin="0.5,0.5" />
+      <StatusEffect tags="RaptorProwess" type="OnWearing" target="Character" HideFace="False" duration="0.1" stackable="false" />
+    </Wearable>
+  </Item> -->
+  </Items>

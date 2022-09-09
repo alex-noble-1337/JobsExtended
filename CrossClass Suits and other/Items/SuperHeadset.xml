@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="SuperHeadset" identifier="superheadset" scale="0.5" category="Equipment" tags="smallitem" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+   <PreferredContainer primary="medcab" minamount="0" maxamount="1" spawnprobability="0.0" />
+   <Price baseprice="450" soldeverywhere="false">
+     <Price locationtype="outpost" multiplier="1.3" sold="false"/>
+     <Price locationtype="city" multiplier="1.2" sold="false"/>
+     <Price locationtype="research" multiplier="1" sold="false"/>
+     <Price locationtype="military" multiplier="1.25" sold="false"/>
+     <Price locationtype="mine" multiplier="1" sold="false"/>
+   </Price>
+   <Deconstruct time="20">
+     <Item identifier="healthscanner" />
+	 <Item identifier="thermalgoggles" />
+	 <Item identifier="autoinjectorheadset" />
+	 <Item identifier="handheldsonar" />
+	 <Item identifier="fulgurium" />
+   </Deconstruct>
+   <Fabricate suitablefabricators="fabricator" requiredtime="10">
+     <RequiredSkill identifier="electrical" level="90" />
+     <RequiredSkill identifier="mechanical" level="90" />
+     <RequiredSkill identifier="medical" level="90" />
+     <RequiredItem identifier="healthscanner" />
+	 <RequiredItem identifier="thermalgoggles" />
+	 <RequiredItem identifier="autoinjectorheadset" />
+	 <RequiredItem identifier="handheldsonar" />
+	 <RequiredItem identifier="fulgurium" />
+   </Fabricate>
+   <InventoryIcon texture="Mods/SuperHeadset/SuperHeadset/MedInventoryIconAtlas.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
+   <Sprite name="SuperHeadset" texture="Mods/SuperHeadset/SuperHeadset/baromedhead.png" sourcerect="115,321,75,62" depth="0.6" origin="0.5,0.5" />
+   <Body width="70" height="24" density="30" />
+   <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect">
+     <sprite name="SuperHeadset Wearable" texture="Mods/SuperHeadset/SuperHeadset/baromedhead.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" sourcerect="115,321,75,62" origin="0.55,0.85" />
+   </Wearable>
+   <Sonar range="6000.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="false" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+      <sound file="Content/Items/Command/SonarPing.ogg" type="OnUse" range="1000.0" />
+      <GuiFrame relativesize="0.4,0.4" anchor="CenterRight" relativeoffset="-0.05,-0.41"/>
+      <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
+      <DirectionalPingCircle texture="Content/Items/Command/directionalPingCircle.png" origin="0.0,0.5" />
+      <ScreenOverlay texture="Content/Items/Command/sonarOverlay.png" origin="0.5,0.5" />
+      <ScreenBackground texture="Content/Items/Command/sonarBackground.png" origin="0.5,0.5" />
+      <DirectionalPingBackground texture="Content/Items/Command/directionalPingBackground.png" origin="0.5,0.5" />
+      <DirectionalPingButton index="0" texture="Content/Items/Command/directionalPingButton.png" sourcerect="0,0,91,266" origin="-4.5275,0.5" />
+      <DirectionalPingButton index="1" texture="Content/Items/Command/directionalPingButton.png" sourcerect="133,0,91,266" origin="-4.5275,0.5" />
+      <DirectionalPingButton index="2" texture="Content/Items/Command/directionalPingButton.png" sourcerect="266,0,91,266" origin="-4.5275,0.5" />
+      <Blip texture="Content/Items/Command/sonarBlip.png" origin="0.5,0.5" />
+      <LineSprite texture="Content/Items/Command/NavUI.png" sourcerect="181,141,109,4" origin="0,0.5"/>
+      <icon identifier="outpost" texture="Content/UI/MainIconsAtlas.png" sourcerect="352,398,16,8" origin="0.5,0.5"/>
+      <icon identifier="submarine" texture="Content/UI/MainIconsAtlas.png" sourcerect="353,407,14,6" origin="0.5,0.5"/>
+      <icon identifier="shuttle" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,407,8,6" origin="0.5,0.5"/>
+      <icon identifier="artifact" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,414,8,8" origin="0.5,0.5"/>
+      <icon identifier="mineral" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,434,7,12" origin="0.5,0.5"/>
+      <icon identifier="" texture="Content/UI/MainIconsAtlas.png" sourcerect="346,416,4,4" origin="0.5,0.5"/>
+    </Sonar>
+   <StatusHUD drawhudwhenequipped="true" overlaycolor="77,106,255,120" range="3000" thermalgoggles="true" showdeadcharacters="false" showtexts="true" />
+   <WifiComponent range="35000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+     <RequiredItems items="mobilebattery" type="Contained" />
+   </WifiComponent>
+   <ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="battery" containedstateindicatorslot="0" autoinject="true">
+      <Containable items="none" />
+      <SlotIcon slotindex="0" texture="Content/UI/WeaponUI.png" sourcerect="64,961,32,22" origin="0.5,0.45" />
+      <SlotIcon slotindex="1" texture="Content/UI/ContainerIndicators.png" sourcerect="2,155,120,29" origin="0.5,0.5" />
+	  <SlotIcon slotindex="2" texture="Content/UI/ContainerIndicators.png" sourcerect="2,155,120,29" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="mobilebattery" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="chem,medical" />
+      </SubContainer>
+	  <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="chem,medical" />
+      </SubContainer>
+    </ItemContainer>
+  </Item>
+</Items>

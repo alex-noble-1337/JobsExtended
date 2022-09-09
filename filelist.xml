@@ -1,8 +1,108 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="JobsExtended" path="Mods/JobsExtended/filelist.xml" corepackage="false" gameversion="0.16.6.1" steamworkshopid="2526236489" installtime="1645829041">
-  <Item file="Mods/JobsExtended/Jobs/commoner_gear.xml" />
-  <Jobs file="Mods/JobsExtended/Jobs/Jobs.xml" />
-  <None file="Mods/JobsExtended/Jobs/NewIcons.png" />
-  <Text file="Mods/JobsExtended/Text/English.xml" />
-  <TalentTrees file="Mods/JobsExtended/Talents/TalentTrees.xml" />
+<contentpackage name="Jobs Extended Beta" path="Mods/JobsExtended/filelist.xml" corepackage="false" gameversion="0.16.7.0" steamworkshopid="2526236489" installtime="1645808048">
+<!-- .. -->
+<None file="%ModDir%/ideas.txt" />
+<None file="%ModDir%/README.md" />
+<None file="%ModDir%/JobsExtendedThumb.PNG" />
+<None file="%ModDir%/TODO.txt" />
+<None file="%ModDir%/JobsHierarchy.png" />
+<None file="%ModDir%/List of all jobs with desc.txt" />
+<Jobs file="%ModDir%/Jobs.xml" />
+<None file="%ModDir%/FileTree.txt" />
+<!-- Character -->
+<None file="%ModDir%/Characters/VondessMudraptor/Vondess Labs Logo.PNG" />
+<None file="%ModDir%/Characters/VondessMudraptor/Vondessmudraptor.xml" />
+<None file="%ModDir%/Characters/VondessMudraptor/VondessRaptorSpriteSheet.png" />
+<None file="%ModDir%/Characters/VondessMudraptor/Info.txt" />
+<None file="%ModDir%/Characters/VondessMudraptor/Items/CapsuleHHSfullthree.png" />
+<None file="%ModDir%/Characters/VondessMudraptor/Items/Vials.png" />
+<None file="%ModDir%/Characters/VondessMudraptor/Items/VRStorso.png" />
+<None file="%ModDir%/Characters/VondessMudraptor/Items/Invisible Effector.png" />
+<None file="%ModDir%/Characters/VondessMudraptor/Items/Smalleggstage.png" />
+<None file="%ModDir%/Characters/VondessMudraptor/Items/VondessItems.xml" />
+<None file="%ModDir%/Characters/VondessMudraptor/Items/VRSthigh.png" />
+<None file="%ModDir%/Characters/VondessMudraptor/Items/CapsuleHHSemptyINV.png" />
+<None file="%ModDir%/Characters/VondessMudraptor/Items/UltraLightV1.3.png" />
+<None file="%ModDir%/Characters/VondessMudraptor/Items/mediumeggstage.png" />
+<None file="%ModDir%/Characters/VondessMudraptor/Items/largeeggstage.png" />
+<None file="%ModDir%/Characters/VondessMudraptor/Items/CapsuleHHSempty.png" />
+<None file="%ModDir%/Characters/VondessMudraptor/Items/V-Pal.png" />
+<None file="%ModDir%/Characters/VondessMudraptor/Items/VondessEquipment.xml" />
+<None file="%ModDir%/Characters/VondessMudraptor/Items/tools_new.png" />
+<None file="%ModDir%/Characters/VondessMudraptor/Lights/BaroUltraLightv3.png" />
+<None file="%ModDir%/Characters/VondessMudraptor/Lights/BaroUltraLightv2.png" />
+<None file="%ModDir%/Characters/VondessMudraptor/Lights/BaroUltraLight.png" />
+<None file="%ModDir%/Characters/VondessMudraptor/Sounds/containmenthiss1.ogg" />
+<None file="%ModDir%/Characters/VondessMudraptor/Sounds/Splashalter.ogg" />
+<None file="%ModDir%/Characters/VondessMudraptor/Animations/VondessmudraptorSwimFast.xml" />
+<None file="%ModDir%/Characters/VondessMudraptor/Animations/VondessmudraptorRun.xml" />
+<None file="%ModDir%/Characters/VondessMudraptor/Animations/VondessmudraptorWalk.xml" />
+<None file="%ModDir%/Characters/VondessMudraptor/Animations/VondessmudraptorSwimSlow.xml" />
+<None file="%ModDir%/Characters/VondessMudraptor/Ragdolls/VondessmudraptorDefaultRagdoll.xml" />
+<!-- Items -->
+<Item file="%ModDir%/Items/SpecialItems.xml" />
+<Item file="%ModDir%/Items/commoner_gear.xml" />
+<Item file="%ModDir%/Items/TalentsUsedInItems.xml" />
+<Item file="%ModDir%/Items/Headsets.xml" />
+<None file="%ModDir%/Items/ek_armor_accessories.png" />
+<None file="%ModDir%/Items/Genetic.png" />
+<None file="%ModDir%/Items/Genetic2.png" />
+<None file="%ModDir%/Items/InventoryIcon_Cleaner.png" />
+<None file="%ModDir%/Items/InventoryIcons.png" />
+<None file="%ModDir%/Items/MedSuit.png" />
+<None file="%ModDir%/Items/MedSuit2.png" />
+<None file="%ModDir%/Items/melee_ek.png" />
+<None file="%ModDir%/Items/pucs.xcf" />
+<None file="%ModDir%/Items/TalentGear.png" />
+<None file="%ModDir%/Items/TalentGear.xcf" />
+<None file="%ModDir%/Items/weaponicons.png" />
+<None file="%ModDir%/Items/weapons.png" />
+<None file="%ModDir%/Items/weapons_ek.png" />
+<None file="%ModDir%/Items/weapons_new.png" />
+<None file="%ModDir%/Items/weapons_new.xcf" />
+<None file="%ModDir%/Items/Assistant.xcf" />
+<None file="%ModDir%/Items/ModularHeadset.png" />
+<None file="%ModDir%/Items/Darcher_Cleaner.ogg" />
+<None file="%ModDir%/Items/ek_grenadepin.ogg" />
+<None file="%ModDir%/Items/Darcher_tools.png" />
+<!-- Submarines -->
+<Submarine file="%ModDir%/Submarines/Azimuth [JE].sub" />
+<Submarine file="%ModDir%/Submarines/Barsuk [JE].sub" />
+<Submarine file="%ModDir%/Submarines/Berilia [JE].sub" />
+<Submarine file="%ModDir%/Submarines/Dugong [JE].sub" />
+<Submarine file="%ModDir%/Submarines/Herja [JE].sub" />
+<Submarine file="%ModDir%/Submarines/Humpback [JE].sub" />
+<Submarine file="%ModDir%/Submarines/Kastrull [JE].sub" />
+<Submarine file="%ModDir%/Submarines/Orca [JE].sub" />
+<Submarine file="%ModDir%/Submarines/Orca2 [JE].sub" />
+<Submarine file="%ModDir%/Submarines/R-29 [JE].sub" />
+<Submarine file="%ModDir%/Submarines/Remora [JE].sub" />
+<Submarine file="%ModDir%/Submarines/Typhon [JE].sub" />
+<Submarine file="%ModDir%/Submarines/Typhon2 [JE].sub" />
+<Submarine file="%ModDir%/Submarines/Winterhalter [JE].sub" />
+<!-- Talents -->
+<None file="%ModDir%/Talents/TalentTrees.xml" />
+<None file="%ModDir%/Talents/Not finished.txt" />
+<None file="%ModDir%/Talents/CO/COAfflictionsNew.xml" />
+<None file="%ModDir%/Talents/CO/COTalents.xml" />
+<None file="%ModDir%/Talents/CUS/CUSTalents.xml" />
+<None file="%ModDir%/Talents/DIV/DIVTalents.xml" />
+<None file="%ModDir%/Talents/MED/MEDAffictions.xml" />
+<None file="%ModDir%/Talents/MED/MEDTalents.xml" />
+<None file="%ModDir%/Talents/NAV/NAVAfflictions.xml" />
+<None file="%ModDir%/Talents/NAV/NAVTalents.xml" />
+<None file="%ModDir%/Talents/PAS/PASTalents.xml" />
+<None file="%ModDir%/Talents/PRI/PRITalents.xml" />
+<None file="%ModDir%/Talents/QUA/QUATalents.xml" />
+<None file="%ModDir%/Talents/SEC/SECAffictions.xml" />
+<None file="%ModDir%/Talents/SEC/SECTalents.xml" />
+<None file="%ModDir%/Talents/VanillaOverrides/CAP/CapitanTalents.xml" />
+<None file="%ModDir%/Talents/VanillaOverrides/CAP/AfflictionsOverrides.xml" />
+<None file="%ModDir%/Talents/VanillaOverrides/SEC/AfflictionsOverrides.xml" />
+<None file="%ModDir%/Talents/VanillaOverrides/SEC/SecurityTalents.xml" />
+<None file="%ModDir%/Talents/XO/XOTalents.xml" />
+<!-- Texts -->
+<None file="%ModDir%/Texts/English.xml" />
+<!-- UI -->
+<None file="%ModDir%/UI/NewIcons.png" />
 </contentpackage>

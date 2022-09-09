@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Talents>
+  <Talent identifier="usepowerarmor">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="4,5" sheetelementsize="128,128"/>
+    <AbilityGroupInterval>
+      <Conditions>
+        <AbilityConditionHasItem tags="powerarmor" requireall="true"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+              <Affliction identifier="barapace" amount="1.0"/>
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+    <AbilityGroupInterval>
+      <Conditions>
+        <AbilityConditionHasItem tags="terminator" requireall="true"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+              <Affliction identifier="barapaceplus" amount="1.0"/>
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+    <AbilityGroupInterval>
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="barapace" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyResistance resistanceid="damage" resistance="0.25"/>
+        <CharacterAbilityModifyResistance resistanceid="burn" resistance="0.3"/>
+        <CharacterAbilityModifyResistance resistanceid="radiationsickness" resistance="0.35"/>
+        <CharacterAbilityModifyResistance resistanceid="poison" resistance="0.3"/>
+        <CharacterAbilityModifyResistance resistanceid="bleeding" resistance="0.25"/>
+        <CharacterAbilityModifyResistance resistanceid="huskinfection" resistance="0.91"/>
+        <CharacterAbilityModifyResistance resistanceid="psychosis" resistance="0.35"/>
+        <CharacterAbilityModifyStat stattype="WalkingSpeed" value="0.5"/>
+        <CharacterAbilityModifyStat stattype="SwimmingSpeed" value="0.5"/>
+        <CharacterAbilityModifyStat stattype="FlowResistance" value="0.5"/>
+        <CharacterAbilityModifyFlag flagtype="ImmuneToPressure" />
+      </Abilities>
+    </AbilityGroupInterval>
+    <AbilityGroupInterval>
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="barapaceplus" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyResistance resistanceid="damage" resistance="0.1"/>
+        <CharacterAbilityModifyResistance resistanceid="burn" resistance="0.05"/>
+        <CharacterAbilityModifyResistance resistanceid="radiationsickness" resistance="0.25"/>
+        <CharacterAbilityModifyResistance resistanceid="poison" resistance="0.15"/>
+        <CharacterAbilityModifyResistance resistanceid="bleeding" resistance="0.1"/>
+        <CharacterAbilityModifyResistance resistanceid="huskinfection" resistance="0.96"/>
+        <CharacterAbilityModifyResistance resistanceid="psychosis" resistance="0.25"/>
+        <CharacterAbilityModifyStat stattype="WalkingSpeed" value="0.3"/>
+        <CharacterAbilityModifyStat stattype="SwimmingSpeed" value="0.3"/>
+        <CharacterAbilityModifyStat stattype="FlowResistance" value="0.8"/>
+        <CharacterAbilityModifyFlag flagtype="ImmuneToPressure" />
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
+
+    <Talent identifier="dashing">
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,2" sheetelementsize="128,128"/>
+    <AbilityGroupEffect abilityeffecttype="OnRagdoll">
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="This" multiplyafflictionsbymaxvitality="true">
+              <Affliction identifier="beatcop" amount="2.0"/>
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupInterval>
+      <Conditions>
+        <AbilityConditionRagdolled />
+        <AbilityConditionHasVelocity velocity="4.4"/>
+        <AbilityConditionHasAffliction afflictionidentifier="beatcop"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects nearbycharactersappliestoself="false" >
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="NearbyCharacters" range="150" setvalue="true" disabledeltatime="true">
+              <Affliction identifier="stun" strength="10"/>
+              <Affliction identifier="concussion" strength="100"/>
+              <Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="1.0"/>
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
+  <Talent identifier="judge">
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="barapace" />
+        <AbilityConditionAttackData itemidentifier="powerhammer"/>
+        <AbilityConditionServerRandom randomchance="0.3" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData implode="true"/>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="barapaceplus" />
+        <AbilityConditionAttackData itemidentifier="powerhammer"/>
+        <AbilityConditionServerRandom randomchance="0.5" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData implode="true"/>
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+</Talents>

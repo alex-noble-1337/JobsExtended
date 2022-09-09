@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<infotext language="English" nowhitespace="true" translatedname="English">
+  <!--[Items]-->
+  <!--genespliceromega-->
+  <entityname.progenoids>progenoids</entityname.progenoids>
+  <entitydescription.progenoids>The device used by the Astartes to ensure that the modification operation works properly can be removed at any time and modified onto another human, but can cause fatal internal damage to the original owner</entitydescription.progenoids>
+  <!--genesplicerpsmprogenoids-->
+  <entityname.psmprogenoids>psmprogenoids</entityname.psmprogenoids>
+  <entitydescription.psmprogenoids>Primaris space marines require more surgery, so their progenoids are not the same as normal space marines</entitydescription.psmprogenoids>
+  <!--geneticmaterialwatcher-->
+  <entityname.geneticmaterialwatcher>genetic material[betcher gland]</entityname.geneticmaterialwatcher>
+  <entitydescription.geneticmaterialwatcher>This gland contains strong acids that can shoot around and burn enemies instantly, and since you already have strong acids in your body, no other acids can harm you(Press F to use)</entitydescription.geneticmaterialwatcher>
+  <!--geneticmaterialsecondaryheart-->
+  <entityname.geneticmaterialsecondaryheart>genetic material[secondary heart]</entityname.geneticmaterialsecondaryheart>
+  <entitydescription.geneticmaterialsecondaryheart>The secondary heart makes the human body stronger and more resilient, recovering from injuries faster than normal</entitydescription.geneticmaterialsecondaryheart>
+  <!--geneticmaterialossmodula-->
+  <entityname.geneticmaterialossmodula>genetic material[ossmodula]</entityname.geneticmaterialossmodula>
+  <entitydescription.geneticmaterialossmodula>Ossmodula allow humans to withstand more damage</entitydescription.geneticmaterialossmodula>
+  <!--geneticmaterialbiscopea-->
+  <entityname.geneticmaterialbiscopea>genetic material[biscopea]</entityname.geneticmaterialbiscopea>
+  <entitydescription.geneticmaterialbiscopea>increases human muscle strength and density, increases melee damage, melee speed, and movement speed</entitydescription.geneticmaterialbiscopea>
+  <!--geneticmaterialhaemastamen-->
+  <entityname.geneticmaterialhaemastamen>genetic material[haemastamen]</entityname.geneticmaterialhaemastamen>
+  <entitydescription.geneticmaterialhaemastamen>The modified blood regenerates quickly, reduces excessive blood loss, and improves blood flow and oxygen supply</entitydescription.geneticmaterialhaemastamen>
+  <!--geneticmaterialhaemastamen-->
+  <entityname.geneticmateriallarramanorgan>genetic material[larraman organ]</entityname.geneticmateriallarramanorgan>
+  <entitydescription.geneticmateriallarramanorgan>Larraman cells quickly form skin tissue to stop bleeding and heal exposed wounds, have some effect on burns, and provide mild trauma resistance</entitydescription.geneticmateriallarramanorgan>
+  <!--geneticmaterialcatalepseannode-->
+  <entityname.geneticmaterialcatalepseannode>genetic material[catalepsean node]</entityname.geneticmaterialcatalepseannode>
+  <entitydescription.geneticmaterialcatalepseannode>the existence of catalepseannode not only improves the skill level of human beings, but also improves the learning speed</entitydescription.geneticmaterialcatalepseannode>
+   <!--geneticmaterialpreomnor-->
+  <entityname.geneticmaterialpreomnor>genetic material[preomnor]</entityname.geneticmaterialpreomnor>
+  <entitydescription.geneticmaterialpreomnor>Preomnor improves human resistance to toxins</entitydescription.geneticmaterialpreomnor>
+    <!--geneticmaterialomophage-->
+  <entityname.geneticmaterialomophage>genetic material[omophage]</entityname.geneticmaterialomophage>
+  <entitydescription.geneticmaterialomophage>This modification allows you to refine your genes toward perfection, making all treatments more effective and significantly reducing the likelihood of drug addiction</entitydescription.geneticmaterialomophage>
+    <!--geneticmaterialmultilung-->
+  <entityname.geneticmaterialmultilung>genetic material[multi lung]</entityname.geneticmaterialmultilung>
+  <entitydescription.geneticmaterialmultilung>Artificial lung allow you to last longer without oxygen and resist mild toxins</entitydescription.geneticmaterialmultilung>
+    <!--geneticmaterialocculobe-->
+  <entityname.geneticmaterialocculobe>genetic material[occulobe]</entityname.geneticmaterialocculobe>
+  <entitydescription.geneticmaterialocculobe>Occulobe make human remote weapon control skills greatly improved, guns in your hands more lethal</entitydescription.geneticmaterialocculobe>
+    <!--geneticmateriallymanear-->
+  <entityname.geneticmateriallymanear>genetic material[lyman ear]</entityname.geneticmateriallymanear>
+  <entitydescription.geneticmateriallymanear>The modified ear looks exactly the same as a normal human ear, but is designed to protect against stun and nausea</entitydescription.geneticmateriallymanear>
+    <!--geneticmaterialsusanmembrane-->
+  <entityname.geneticmaterialsusanmembrane>genetic material[susan membrane]</entityname.geneticmaterialsusanmembrane>
+  <entitydescription.geneticmaterialsusanmembrane>Susan membrane allow humans to stay awake after a fatal injury</entitydescription.geneticmaterialsusanmembrane>
+    <!--geneticmaterialmelanochromic-->
+  <entityname.geneticmaterialmelanochromic>genetic material[melanochromic]</entityname.geneticmaterialmelanochromic>
+  <entitydescription.geneticmaterialmelanochromic>The melanochromic's main function is to prevent ultraviolet burns, but it can also provide some protection against radiation in Europa's icy ocean</entitydescription.geneticmaterialmelanochromic>
+    <!--geneticmaterialmeloolitickidney-->
+  <entityname.geneticmaterialoolitickidney>genetic material[oolitic kidney]</entityname.geneticmaterialoolitickidney>
+  <entitydescription.geneticmaterialoolitickidney>Oolitickidney produces a large amount of adrenaline to fight pain and increase speed when needed, and has a slight toxin filtering ability</entitydescription.geneticmaterialoolitickidney>
+    <!--geneticmaterialneuroglottis-->
+  <entityname.geneticmaterialneuroglottis>genetic material[neuroglottis]</entityname.geneticmaterialneuroglottis>
+  <entitydescription.geneticmaterialneuroglottis>The neuroglottis are designed to detect a variety of toxins, but on Europa, nerves at the back of the mouth effectively inhibit the growth of husk parasites there</entitydescription.geneticmaterialneuroglottis>
+    <!--geneticmaterialmucranoid-->
+  <entityname.geneticmaterialmucranoid>genetic material[mucranoid]</entityname.geneticmaterialmucranoid>
+  <entitydescription.geneticmaterialmucranoid>Mucranoid will provide some protection against water pressure and skin burns</entitydescription.geneticmaterialmucranoid>
+    <!--geneticmaterialblackbarapace-->
+  <entityname.geneticmaterialblackbarapace>genetic material[blackcarapace]</entityname.geneticmaterialblackbarapace>
+  <entitydescription.geneticmaterialblackbarapace>This gland contains strong acids that can shoot around and burn enemies instantly, and since you already have strong acids in your body, no other acids can harm you</entitydescription.geneticmaterialblackbarapace>
+    <!--geneticmaterialsinewcoils-->
+  <entityname.geneticmaterialsinewcoils>genetic material[sinew coils]</entityname.geneticmaterialsinewcoils>
+  <entitydescription.geneticmaterialsinewcoils>Beefed up muscles make you stronger, and you can even crash into enemies like a chariot, disabling them (press space while running)</entitydescription.geneticmaterialsinewcoils>
+    <!--geneticmaterialmagnificat-->
+  <entityname.geneticmaterialmagnificat>genetic material[magnificat]</entityname.geneticmaterialmagnificat>
+  <entitydescription.geneticmaterialmagnificat>This modified pituitary gland implanted in the brain can better stimulate the body's muscle density, making it more resilient</entitydescription.geneticmaterialmagnificat>
+    <!--geneticmaterialbelisarianfurnace-->
+  <entityname.geneticmaterialbelisarianfurnace>genetic material[belisarian furnace]</entityname.geneticmaterialbelisarianfurnace>
+  <entitydescription.geneticmaterialbelisarianfurnace>Also known as the Resurrecter, the belisarian furnace can put humans into a state of suspended animation when they take excessive damage, which is said to have saved many primaris space marines from death</entitydescription.geneticmaterialbelisarianfurnace>
+
+   <!--powerarmorummk7-->
+   <entityname.ummk7>Astartes power armor (ultramarines)</entityname.ummk7>
+   <entitydescription.ummk7>Power armor made of ceramic steel, intended for true super soldiers. the average person would be unable to walk or achieve any desired effect</entitydescription.ummk7>
+   <!--powerarmorUMterminator-->
+    <entityname.UMterminator>Astartes Terminator Power Armor (ultramarines)</entityname.UMterminator>
+    <entitydescription.UMterminator>Power armor that can only be used by the best of the space Marines. The defense is more powerful, but it is slightly bulky</entitydescription.UMterminator>
+   <!--servicestud-->
+   <entityname.servicestud>service stud（silver）</entityname.servicestud>
+   <entitydescription.servicestud>A silver service stud symbolizes 50 years of combat experience, and only tough fighters are eligible for it</entitydescription.servicestud>
+    <!--servicestudgold-->
+   <entityname.servicestudgold>service stud（golden）</entityname.servicestudgold>
+   <entitydescription.servicestudgold>A golden service stud symbolizes 100 years of combat experience, which only the best fighters are eligible for it</entitydescription.servicestudgold>
+    <!--purityseal-->
+   <entityname.purityseal>purity seal</entityname.purityseal>
+   <entitydescription.purityseal>The purity seal is filled with the blessing of the emperor, which will protect the loyal warrior from mental damage and minor physical trauma</entitydescription.purityseal>
+   <!--standard-->
+   <entityname.standard>standard</entityname.standard>
+   <entitydescription.standard>The noble flag of the legion, let no heresy sully it</entitydescription.standard>
+   <!--lasrifle-->
+   <entityname.lasrifle>lasrifle</entityname.lasrifle>
+   <entitydescription.lasrifle>Standard weapon for the Guardsman</entitydescription.lasrifle>
+   <!--lasriflerod-->
+   <entityname.lasriflerod>lasrifle battery</entityname.lasriflerod>
+   <entitydescription.lasriflerod>A high-capacity battery to power the lasrifle</entitydescription.lasriflerod>
+   <!--lasriflerod II-->
+   <entityname.lasriflerodII>lasrifle battery II</entityname.lasriflerodII>
+   <entitydescription.lasriflerodII>Praise the emperor, better batteries can kill more heresies</entitydescription.lasriflerodII>
+   <!--laspistol-->
+    <entityname.laspistolwwbc>Laser pistol</entityname.laspistolwwbc>
+    <entitydescription.laspistolwwbc>Astral Army officers often fight with a sword in one hand and a laser pistol in one hand. Compared with a laser rifle, a laser pistol is more portable</entitydescription.laspistolwwbc>
+     <!--laspistolrod-->
+    <entityname.laspistolrodwwbc>Laser pistol battery</entityname.laspistolrodwwbc>
+    <entitydescription.laspistolrodwwbc>The battery that powers the laser pistol has a slightly smaller capacity than conventional batteries, but it is easier to manufacture</entitydescription.laspistolrodwwbc>
+   <!--plasmagun-->
+   <entityname.plasmagun>plasma gun</entityname.plasmagun>
+   <entitydescription.plasmagun>A heavy but deadly weapon, its overload mode is locked for safety reasons and can only be fired in standard mode. Remember, loyal plasma never overheats!</entitydescription.plasmagun>
+    <!--plasmagunrod-->
+   <entityname.plasmagunrod>Small plasma gun power source</entityname.plasmagunrod>
+   <entitydescription.plasmagunrod>Containers filled with liquid hydrogen fuel, which is so low in fuel to prevent overheating, can only be fired twice</entitydescription.plasmagunrod>
+    <!--plasmagunrodII-->
+   <entityname.plasmagunrodII>Medium plasma gun power source</entityname.plasmagunrodII>
+   <entitydescription.plasmagunrodII>A container filled with liquid hydrogen fuel, which has been reduced in volume to prevent overheating, can only be fired four times</entitydescription.plasmagunrodII>
+    <!--plasmagunrodIII-->
+   <entityname.plasmagunrodIII>Large plasma gun power source</entityname.plasmagunrodIII>
+   <entitydescription.plasmagunrodIII>A container filled with liquid hydrogen fuel, which has been reduced to prevent overheating, can only be fired eight times</entitydescription.plasmagunrodIII>
+   <!--bolter-->
+   <entityname.bolter>Bolter</entityname.bolter>
+   <entitydescription.bolter>The bolter is the standard weapon for space marines, and they deliver death to the emperor's enemies</entitydescription.bolter>
+    <!--bolterstraightmagazine-->
+   <entityname.bolterstraightmagazine>bolter straight magazine</entityname.bolterstraightmagazine>
+   <entitydescription.bolterstraightmagazine>Straight magazines were common because they were easier to carry, but their poor ammunition capacity made them unfit for the heat of battle</entitydescription.bolterstraightmagazine>
+   <!--boltermagazine-->
+   <entityname.boltermagazine>bolter magazine</entityname.boltermagazine>
+   <entitydescription.boltermagazine>Bolter magazines provide more ammunition, but they are less common than straight magazines and are allowed to carry less</entitydescription.boltermagazine>
+   <!--bolternormal-->
+   <entityname.bolternormal>Bolter</entityname.bolternormal>
+   <entitydescription.bolternormal>The bolster is the standard weapon for space marines, and they deliver death to the emperor's enemies</entitydescription.bolternormal>
+    <!--bolterstraightmagazinenormal-->
+   <entityname.bolterstraightmagazinenormal>bolter straight magazine</entityname.bolterstraightmagazinenormal>
+   <entitydescription.bolterstraightmagazinenormal>Straight magazines were common because they were easier to carry, but their poor ammunition capacity made them unfit for the heat of battle</entitydescription.bolterstraightmagazinenormal>
+   <!--boltermagazinenormal-->
+   <entityname.boltermagazinenormal>bolter magazine</entityname.boltermagazinenormal>
+   <entitydescription.boltermagazinenormal>Bolter magazines provide more ammunition, but they are less common than straight magazines and are allowed to carry less</entitydescription.boltermagazinenormal>
+   <!--bolterdrumnormal-->
+   <entityname.bolterdrumnormal>bolter drum</entityname.bolterdrumnormal>
+   <entitydescription.bolterdrumnormal>The drum is rarely used today. The recipe for making it is lost, and only some military posts may still have some in stock</entitydescription.bolterdrumnormal>
+    <!--krieghelmet-->
+   <entityname.krieghelmet>krieg helmet</entityname.krieghelmet>
+   <entitydescription.krieghelmet>Standard krieg death Corps helmet with gas mask</entitydescription.krieghelmet>
+    <!--krieguniform-->
+   <entityname.krieguniform>Krige uniform</entityname.krieguniform>
+   <entitydescription.krieguniform>The standard uniform of the Kriege Death Regiment, which is thick and covers the body, can withstand some radiation damage</entitydescription.krieguniform>
+    <!--kriegarmor-->
+    <entityname.kriegarmor>Kriegar armor</entityname.kriegarmor>
+    <entitydescription.kriegarmor>The breastplate of the Kriegar Death Corps, equipped with the grenadier regiments and officers, is not only excellent in defense, but also a symbol of status</entitydescription.kriegarmor>
+    <!--kriegcommissarcap-->
+    <entityname.kriegcommissarcap>Krieg commissar cap</entityname.kriegcommissarcap>
+    <entitydescription.kriegcommissarcap>The political commissar cap of the Krieg Death Corps, full of majesty, inspires the soldiers around</entitydescription.kriegcommissarcap>
+    <!--commissarcap-->
+    <entityname.commissarcap>Committee cap</entityname.commissarcap>
+    <entitydescription.commissarcap>The cap of the political commissar of the Imperial guard, full of majesty, inspires the soldiers around</entitydescription.commissarcap>
+    <!--chainsword-->
+   <entityname.chainsword>chain sword</entityname.chainsword>
+   <entitydescription.chainsword>Originally a weapon of techno-barbarians, it will now tear apart the emperor's enemies</entitydescription.chainsword>
+    <!--combatknife-->
+   <entityname.combatknife>combat knife</entityname.combatknife>
+   <entitydescription.combatknife>Bullets may run out, energy may run out, but the loyal combat knife can always be relied on</entitydescription.combatknife>
+    <!--powersword-->
+   <entityname.powersword>power sword</entityname.powersword>
+   <entitydescription.powersword>Each power sword is a magic weapon, not only a status symbol, but also an easy way to kill enemies</entitydescription.powersword>
+   <!--powerhammer-->
+   <entityname.powerhammer>power hammer</entityname.powerhammer>
+   <entitydescription.powerhammer>Extremely powerful weapon, only the person implanted with the sinew coils can exert his true power while wearing power armor ———— smash all creatures into a pulp</entitydescription.powerhammer>
+   <!--chainfist-->
+   <entityname.chainfist>chain fist</entityname.chainfist>
+   <entitydescription.chainfist>Fist holsters equipped with miniature chainsaws can also unleash powerful punches when loaded with alien batteries</entitydescription.chainfist>
+   <!--stormbolter-->
+   <entityname.stormbolter>storm bolter</entityname.stormbolter>
+   <entitydescription.stormbolter>storm bolter are more powerful, after all, in the heat of battle, changing a magazine can mean death</entitydescription.stormbolter>
+   <!--stormboltermagazine-->
+   <entityname.stormboltermagazine>storm bolter magazine</entityname.stormboltermagazine>
+   <entitydescription.stormboltermagazine>To provide enough firepower for the storm bolter, the magazine is loaded with 50 rounds</entitydescription.stormboltermagazine>
+   <!--shovel-->
+   <entityname.shovel>shovel</entityname.shovel>
+   <entitydescription.shovel>Kriges often use this lightweight weapon, which can easily tear apart walls and open the heads of their enemies</entitydescription.shovel>
+   <!--40mmradgrenade-->
+   <entityname.40mmradgrenade>40mm radgrenade</entityname.40mmradgrenade>
+   <entitydescription.40mmradgrenade>It needs to be fired from a grenade launcher, which emits a powerful amount of radiation and explodes in a slightly smaller area than a conventional grenade to avoid injuring the user</entitydescription.40mmradgrenade>
+   <!--boardingshield-->
+   <entityname.boardingshield>boarding shield</entityname.boardingshield>
+   <entitydescription.boardingshield>If you want to fend off a barrage of bullets on a pirate ship, boarding shield is the way to go</entitydescription.boardingshield>
+   <!--autopistol-->
+   <entityname.autopistol>drexian autopistol</entityname.autopistol>
+   <entitydescription.autopistol>Autopistols are old weapons, but they still work ———— traitors are always willing to use them</entitydescription.autopistol>
+   <!--pistolmagazine-->
+   <entityname.pistolmagazine>drexian autopistol magazine</entityname.pistolmagazine>
+   <entitydescription.pistolmagazine>A autopistol magazine usually holds 10 rounds. Primitive, but effective</entitydescription.pistolmagazine>
+   <!--handsmg-->
+   <entityname.handsmg>voss mini smg</entityname.handsmg>
+   <entitydescription.handsmg>Someone once made fun of the performance of this weapon before he was beaten to death by it, and I hope it wasn't you</entitydescription.handsmg>
+   <!--handsmgmagazine-->
+   <entityname.handsmgmagazine>mini smg magazine</entityname.handsmgmagazine>
+   <entitydescription.handsmgmagazine>Mini smg magazines that can dump all the bullets in a fraction of a second</entitydescription.handsmgmagazine>
+   <!--agripinaa-->
+   <entityname.agripinaa>agripinaa rifle</entityname.agripinaa>
+   <entitydescription.agripinaa>Loud but damaging enough that no one should underestimate this weapon</entitydescription.agripinaa>
+   <!--agripinaamagazine-->
+   <entityname.agripinaamagazine>agripinaa magazine</entityname.agripinaamagazine>
+   <entitydescription.agripinaamagazine>Modified large 40-round magazines for agripinaa rifles</entitydescription.agripinaamagazine>
+   <!--hammer-->
+   <entityname.hammer>hammer</entityname.hammer>
+   <entitydescription.hammer>It's all spiked, improvised weapons, but still, it's not a good idea to get hit with one of these, is it？</entitydescription.hammer>
+   <!--flamethrower-->
+   <entityname.flamethrower>flamethrower</entityname.flamethrower>
+   <entitydescription.flamethrower>To the emperor, with flame to purify all</entitydescription.flamethrower>
+   <!--flamethrowerfueltank-->
+   <entityname.flamethrowerfueltank>flamethrower fueltank</entityname.flamethrowerfueltank>
+   <entitydescription.flamethrowerfueltank>Flamethrower sticky fuel use, can use long time</entitydescription.flamethrowerfueltank>
+   <!--handflamethrower-->
+   <entityname.handflamethrower>flamethrower pistol</entityname.handflamethrower>
+   <entitydescription.handflamethrower>Cabinet durable flame spray gun, used more close self-defense</entitydescription.handflamethrower>
+   <!--handflamethrowerfueltank-->
+   <entityname.handflamethrowerfueltank>flamethrower pistol fueltank</entityname.handflamethrowerfueltank>
+   <entitydescription.handflamethrowerfueltank>This kind of fuel tank after the special craft processing, lighter, easy to carry, But bad capacity to make it not as a primary weapon duty</entitydescription.handflamethrowerfueltank>
+   <!--heavybolter-->
+   <entityname.heavybolter>heavy bolter</entityname.heavybolter>
+   <entitydescription.heavybolter>The heavy weapons, guns and ammunition used for the attack were cumbersome</entitydescription.heavybolter>
+    <!--heavyboltermagazine-->
+   <entityname.heavyboltermagazine>heavy bolter magazine</entityname.heavyboltermagazine>
+   <entitydescription.heavyboltermagazine>This ammunition diameter larger, charge more, power is also unusual. Due to too heavy to carry difficult</entitydescription.heavyboltermagazine>
+   <!--assaultcannon-->
+   <entityname.assaultcannon>assault cannon</entityname.assaultcannon>
+   <entitydescription.assaultcannon> It's a very high rate of fire suppression weapon, most suitable for fighting in small spaces such as hulks and outposts. </entitydescription.assaultcannon>
+   <!--assaultcannonammobox-->
+   <entityname.assaultcannonammobox>assault cannonammobox</entityname.assaultcannonammobox>
+   <entitydescription.assaultcannonammobox>A ammunition box used to prepare ammunition for the assault cannon used by the Terminator’s power armor, with a capacity of 500 rounds</entitydescription.assaultcannonammobox>
+   <!--automaticinjectionagent-->
+   <entityname.automaticinjectionagent>automatic injection agent</entityname.automaticinjectionagent>
+   <entitydescription.automaticinjectionagent> The Space Marines Power Armor has a built-in array of meditators, which will inject this compound potion when the Space Marines' life is dying, and it can deal with almost all kinds of injuries. </entitydescription.automaticinjectionagent>
+   <!--bolterpistol-->
+   <entityname.bolterpistol>bolter pistol</entityname.bolterpistol>
+   <entitydescription.bolterpistol>Bolter pistols have very little bullet capacity and are generally not used in fierce battles. Some mortal officers who are powerful enough will use this weapon</entitydescription.bolterpistol>
+   <!--bolterpistolmagazine-->
+   <entityname.bolterpistolmagazine>bolter pistol magazine</entityname.bolterpistolmagazine>
+   <entitydescription.bolterpistolmagazine>Built-in 8 rounds of regular bolter round, which are powerful enough but limited in number. The biggest advantage is that they are easy to carry.</entitydescription.bolterpistolmagazine>
+   <!--sunderarmorgrenade-->
+   <entityname.sunderarmorgrenade>armor-piercing grenade</entityname.sunderarmorgrenade>
+   <entitydescription.sunderarmorgrenade>A grenade used by the human empire, which can provide good structural damage and high damage</entitydescription.sunderarmorgrenade>
+   <!--concussiongrenade-->
+   <entityname.concussiongrenade>concussion grenade</entityname.concussiongrenade>
+   <entitydescription.concussiongrenade>Imperial sailors are good at using this grenade. Its explosion can stun and stun the enemy. The most important thing is that its explosion will not damage the hull, so it is often used in boarding and anti-boarding battles. </entitydescription.concussiongrenade>
+   <!--boltermagazinenormal_hellfire-->
+   <entityname.boltermagazinenormal_hellfire>bolter magazine(hellfire)</entityname.boltermagazinenormal_hellfire>
+   <entitydescription.boltermagazinenormal_hellfire>A special  rounds used to deal with a large group of enemies. After hitting it, it will explode and cause damage like a heavy bolter in the explosive area.</entitydescription.boltermagazinenormal_hellfire>
+   <!--boltermagazinenormal_armored-->
+    <entityname.boltermagazinenormal_armored>bolter magazine(armor-piercing)</entityname.boltermagazinenormal_armored>
+    <entitydescription.boltermagazinenormal_armored>A special bolterround designed to penetrate power armor</entitydescription.boltermagazinenormal_armored>
+    <!--boltermagazinenormal_implosion-->
+    <entityname.boltermagazinenormal_implosion>bolter magazine(implosion)</entityname.boltermagazinenormal_implosion>
+    <entitydescription.boltermagazinenormal_implosion>This is an experimental magazine. The production principle is not known for a long time. After hitting the body, it will form a small deadly vacuum space. Even the Space Marines will suffer a lot of damage.</entitydescription.boltermagazinenormal_implosion >
+   <!--combatshotgun-->
+   <entityname.combatshotgun>navy shotgun</entityname.combatshotgun>
+   <entitydescription.combatshotgun> Although it is said that the main weapon of armed sailors is the laser rifle, in some special cases, the shotgun is still used for combat. </entitydescription.combatshotgun>
+   <!--combatshotgunshell_boarding-->
+   <entityname.combatshotgunshell_boarding>shotgun shell(boarding)</entityname.combatshotgunshell_boarding>
+   <entitydescription.combatshotgunshell_boarding>Widely used in boarding and anti-boarding warfare, it has a small spread, concentrated power and does not damage the hull</entitydescription.combatshotgunshell_boarding>
+   <!--combatshotgunshell-->
+   <entityname.combatshotgunshell> shotgun shell(regular)</entityname.combatshotgunshell>
+   <entitydescription.combatshotgunshell>Conventional shotgun shell shoot multiple shrapnels in a small area to kill targets, and their damage can even exceed laser guns at close range</entitydescription.combatshotgunshell>
+   <!--combatshotgunshell_rifledslug-->
+   <entityname.combatshotgunshell_rifledslug>shotgun shell(rifled slug)</entityname.combatshotgunshell_rifledslug>
+   <entitydescription.combatshotgunshell_rifledslug>Some people think that a rifled slug shotgun shell is not a shotgun shell, but it doesn't matter. It can be fired from a shotgun and hit the target accurately</entitydescription.combatshotgunshell_rifledslug>
+   <!--combatshotgunshell_hellfire-->
+   <entityname.combatshotgunshell_hellfire>shotgun shell(hellfire)</entityname.combatshotgunshell_hellfire>
+   <entitydescription.combatshotgunshell_hellfire>Similar to the low-profile version of the Hellfire bolter of the Space Marines, fired by a shotgun, it can kill a large number of enemies</entitydescription.combatshotgunshell_hellfire>
+   <!--combatshotgunshell_flare-->
+   <entityname.combatshotgunshell_flare>shotgun shell(flare)</entityname.combatshotgunshell_flare>
+   <entitydescription.combatshotgunshell_flare>Krieg sappers use this flare. They have many uses: provide light, send signals, mark, etc., of course, can also be used to shoot enemies in emergency situations</entitydescription.combatshotgunshell_flare>
+   <!--combatshotgunshell_radgas-->
+   <entityname.combatshotgunshell_radgas>shotgun shell(radiation gas)</entityname.combatshotgunshell_radgas>
+   <entitydescription.combatshotgunshell_radgas> It is essentially a miniature radiation grenade, modified to be fired by a shotgun</entitydescription.combatshotgunshell_radgas>
+   <!--combatshotgunshell_armored-->
+   <entityname.combatshotgunshell_armored>shotshot shell(armor-piercing)</entityname.combatshotgunshell_armored>
+   <entitydescription.combatshotgunshell_armored>Specially modified shotgun shells, each pellet has a certain armor breaking effect, even the power armor wearing Space Marines will choose to avoid it</entitydescription.combatshotgunshell_armored>
+   <!--combatshotgunshell_stun-->
+   <entityname.combatshotgunshell_stun>shotgun shell(stun)</entityname.combatshotgunshell_stun>
+   <entitydescription.combatshotgunshell_stun>A shotgun shell used to suppress riots. It is a non-lethal weapon</entitydescription.combatshotgunshell_stun>
+   <!--radiotoxingrenade-->
+   <entityname.radiotoxingrenade>radiation gas grenade</entityname.radiotoxingrenade>
+   <entitydescription.radiotoxingrenade> contains dangerous radiation poison gas, usually used for special missions-such as capturing enemy ships without destroying the hull</entitydescription.radiotoxingrenade>
+   <!--Medikit-->
+    <entityname.Medikit>battlefield medikit</entityname.Medikit>
+    <entitydescription.Medikit>Guardsman's squad equipment can be purchased at every outpost, and a skilled doctor can use a first aid kit to quickly treat a variety of injuries</entitydescription.Medikit>
+    <!--license-->
+    <entityname.license>Privateers License</entityname.license>
+    <entitydescription.license>This license has been around for some years. It is issued by the authority of the empire, which gives the holder the right to private and trade.</entitydescription.license>
+    <!--cargometalcrate-->
+    <entityname.cargometalcrate>Cargo safe</entityname.cargometalcrate>
+    <entitydescription.cargometalcrate>In order to ensure that the goods will not be stolen, the empire often uses this kind of box for cargo transportation</entitydescription.cargometalcrate>
+    <!--rebeluniform-->
+   <entityname.rebeluniform>Rebel Uniform</entityname.rebeluniform>
+   <entitydescription.rebeluniform>The usual clothes of traitors, dirty</entitydescription.rebeluniform>
+   <!--rebelmask-->
+   <entityname.rebelmask>Rebel Mask</entityname.rebelmask>
+   <entitydescription.rebelmask>A mask commonly used by traitors, cowards are always afraid to show their faces</entitydescription.rebelmask>
+   <!--hellpistol-->
+   <entityname.hellpistol>Hellpistol</entityname.hellpistol>
+   <entitydescription.hellpistol>Has a more powerful laser pistol, usually issued to senior officers for use</entitydescription.hellpistol>
+   <!--hellpistolrod-->
+   <entityname.hellpistolrod>Hellpistol Battery</entityname.hellpistolrod>
+   <entitydescription.hellpistolrod>The Hellpistol would have required a heavy battery pack to power it, but the Mechanicus on Europa created an experimental disposable battery that would briefly power the Hellpistol, but not again Recharge, as excessive heat will directly burn the battery</entitydescription.hellpistolrod>
+    <!--lasrifleboltround-->
+   <entityname.lasrifleboltround>lasrifle ammo</entityname.lasrifleboltround>
+   <!--laspistolboltround-->
+   <entityname.laspistolboltroundwwbc>laspistol ammo</entityname.laspistolboltroundwwbc>
+   <!--bolterround-->
+   <entityname.bolterround>bolter ammo</entityname.bolterround>
+   <!--stormbolterround-->
+   <entityname.stormbolterround>stormbolter ammo</entityname.stormbolterround>
+   <!--pistolround-->
+   <entityname.pistolround>pistol ammo</entityname.pistolround>
+   <!--agripinaaround-->
+   <entityname.agripinaaround>agripinaa ammo</entityname.agripinaaround>
+   <!--heavybolterround-->
+   <entityname.heavybolterround>heavy bolter ammo</entityname.heavybolterround>
+   <!--assaultcannonround-->
+    <entityname.assaultcannonround>assault cannon ammo</entityname.assaultcannonround>
+   <!--bolterround_hellfire-->
+    <entityname.bolterround_hellfire> bolter ammo(hellfire)</entityname.bolterround_hellfire>
+    <!--bolterround_armored-->
+    <entityname.bolterround_armored>bolter ammo(armored)</entityname.bolterround_armored>
+    <!--bolterround_implosion-->
+    <entityname.bolterround_implosion>bolter ammo(implosion)</entityname.bolterround_implosion>
+    <!--shotgunshell_flare-->
+    <entityname.shotgunshell_flare>low-speed flares</entityname.shotgunshell_flare>
+    <!--hellpistolboltround-->
+    <entityname.hellpistolboltround>hellpistol Ammo</entityname.hellpistolboltround>
+
+    <missionname.abandonedoutpostpurify>Purify the outpost</missionname.abandonedoutpostpurify>
+    <missiondescription.abandonedoutpostpurify>We have lost contact with [location1]. The rebels have defeated the imperial loyalists here, purifying their sins, ALL KILL. </missiondescription.abandonedoutpostpurify>
+    <missionsuccess.abandonedoutpostpurify>We have purified the outpost, and may the loyal soul rest in peace. </missionsuccess.abandonedoutpostpurify>
+    <missionfailure.abandonedoutpostpurify>We failed to purify the sins of those rebels. </missionfailure.abandonedoutpostpurify>
+    <missionheader0.abandonedoutpostpurify>All enemies have been eliminated</missionheader0.abandonedoutpostpurify>
+    <missionmessage0.abandonedoutpostpurify> Praise the emperor, we have purified this place. </missionmessage0.abandonedoutpostpurify>
+
+    <missionname.abandonedoutposthusk>Husk Outpost</missionname.abandonedoutposthusk>
+    <missiondescription.abandonedoutposthusk>[location1], which received a batch of husk eggs for research purposes, has now lost contact with us. We have reason to believe that a biohazard has broken out there, destroy the aliens, soldiers. </missiondescription.abandonedoutposthusk>
+    <missionsuccess.abandonedoutposthusk>The husk crisis here is lifted</missionsuccess.abandonedoutposthusk>
+    <missionfailure.abandonedoutposthusk>The husk is still active here</missionfailure.abandonedoutposthusk>
+    <missionheader0.abandonedoutposthusk>killed all infected</missionheader0.abandonedoutposthusk>
+    <missionmessage0.abandonedoutposthusk>Alien, your fate can only be death! </missionmessage0.abandonedoutposthusk>
+
+    <afflictionname.excessiverecoil>Excessive recoil</afflictionname.excessiverecoil>
+    <afflictiondescription.excessiverecoil>You probably shouldn't try this weapon. Excessive recoil makes you very painful</afflictiondescription.excessiverecoil>
+    <afflictioncauseofdeath.excessiverecoil>Died from excessive recoil</afflictioncauseofdeath.excessiverecoil>
+    <afflictioncauseofdeathself.excessiverecoil>Don't use weapons like this next time</afflictioncauseofdeathself.excessiverecoil>
+    <afflictionname.excessiverecoilplus>Excessive recoil</afflictionname.excessiverecoilplus>
+    <afflictiondescription.excessiverecoilplus>You probably shouldn't try this weapon. Excessive recoil makes you very painful</afflictiondescription.excessiverecoilplus>
+    <afflictioncauseofdeath.excessiverecoilplus> Died from excessive recoil</afflictioncauseofdeath.excessiverecoilplus>
+    <afflictioncauseofdeathself.excessiverecoilplus>Don't use weapons like this next time</afflictioncauseofdeathself.excessiverecoilplus>
+    <afflictionname.shreddedarmor>Sunder Armor Damage</afflictionname.shreddedarmor>
+    <afflictiondescription.shreddedarmor>The armor-piercing shrapnel is embedded in your body</afflictiondescription.shreddedarmor>
+    <afflictioncauseofdeath.shreddedarmor>Death from armor-piercing damage</afflictioncauseofdeath.shreddedarmor>
+    <afflictioncauseofdeathself.shreddedarmor> died of armor-piercing damage</afflictioncauseofdeathself.shreddedarmor>
+
+   <talentname.usepowerarmor>blackcarapace successful implantation</talentname.usepowerarmor>
+   <afflictionname.barapace>Power armor function has been launched</afflictionname.barapace>
+   <afflictionname.barapaceplus>Terminator power armor function has been launched</afflictionname.barapaceplus>
+   <talentname.dashing>sinew coils successful implantation</talentname.dashing>
+   <talentname.judge>power hammer of justice</talentname.judge>
+  
+  <!--[Afflictions]-->
+  <!--eyeball-->
+  <afflictionname.eyeball>betcher gland</afflictionname.eyeball>
+  <afflictiondescription.eyeball>This gland contains strong acids that can shoot around and burn enemies instantly, and since you already have strong acids in your body, no other acids can harm you</afflictiondescription.eyeball>
+  <!--secondaryheart-->
+  <afflictionname.secondaryheart>secondary heart</afflictionname.secondaryheart>
+  <afflictiondescription.secondaryheart>The secondary heart makes the human body stronger and more resilient, recovering from injuries faster than normal</afflictiondescription.secondaryheart>
+  <!--ossmodula-->
+  <afflictionname.ossmodula>ossmodula</afflictionname.ossmodula>
+  <afflictiondescription.ossmodula>Ossmodula allow humans to withstand more damage</afflictiondescription.ossmodula>
+  <!--biscopea-->
+  <afflictionname.biscopea>biscopea</afflictionname.biscopea>
+  <afflictiondescription.biscopea>increases human muscle strength and density, increases melee damage, melee speed, and movement speed</afflictiondescription.biscopea>
+  <!--haemastamen-->
+  <afflictionname.haemastamen>haemastamen</afflictionname.haemastamen>
+  <afflictiondescription.haemastamen>The modified blood regenerates quickly, reduces excessive blood loss, and improves blood flow and oxygen supply</afflictiondescription.haemastamen>
+  <!--larramanorgan-->
+  <afflictionname.larramanorgan>larraman organ</afflictionname.larramanorgan>
+  <afflictiondescription.larramanorgan>Larraman cells quickly form skin tissue to stop bleeding and heal exposed wounds, have some effect on burns, and provide mild trauma resistance</afflictiondescription.larramanorgan>
+  <!--catalepseannode-->
+  <afflictionname.catalepseannode>catalepsean node</afflictionname.catalepseannode>
+  <afflictiondescription.catalepseannode>the existence of catalepseannode not only improves the skill level of human beings, but also improves the learning speed</afflictiondescription.catalepseannode>
+  <!--preomnor-->
+  <afflictionname.preomnor>preomnor</afflictionname.preomnor>
+  <afflictiondescription.preomnor>Preomnor improves human resistance to toxins</afflictiondescription.preomnor>
+  <!--omophage-->
+  <afflictionname.omophage>omophage</afflictionname.omophage>
+  <afflictiondescription.omophage>This modification allows you to refine your genes toward perfection, making all treatments more effective and significantly reducing the likelihood of drug addiction</afflictiondescription.omophage>
+  <!--multilung-->
+  <afflictionname.multilung>multi lung</afflictionname.multilung>
+  <afflictiondescription.multilung>Artificial lung allow you to last longer without oxygen and resist mild toxins</afflictiondescription.multilung>
+  <!--occulobe-->
+  <afflictionname.occulobe>occulobe</afflictionname.occulobe>
+  <afflictiondescription.occulobe>Occulobe make human remote weapon control skills greatly improved, guns in your hands more lethal</afflictiondescription.occulobe>
+  <!--lymanear-->
+  <afflictionname.lymanear>lyman ear</afflictionname.lymanear>
+  <afflictiondescription.lymanear>The modified ear looks exactly the same as a normal human ear, but is designed to protect against stun and nausea</afflictiondescription.lymanear>
+  <!--susanmembrane-->
+  <afflictionname.susanmembrane>susan membrane</afflictionname.susanmembrane>
+  <afflictiondescription.susanmembrane>Susan membrane allow humans to stay awake after a fatal injury</afflictiondescription.susanmembrane>
+  <!--melanochromic-->
+  <afflictionname.melanochromic>melanochromic</afflictionname.melanochromic>
+  <afflictiondescription.melanochromic>The melanochromic's main function is to prevent ultraviolet burns, but it can also provide some protection against radiation in Europa's icy ocean</afflictiondescription.melanochromic>
+  <!--oolitickidney-->
+  <afflictionname.oolitickidney>oolitic kidney</afflictionname.oolitickidney>
+  <afflictiondescription.oolitickidney>Oolitickidney produces a large amount of adrenaline to fight pain and increase speed when needed, and has a slight toxin filtering ability</afflictiondescription.oolitickidney>
+  <!--neuroglottis-->
+  <afflictionname.neuroglottis>neuroglottis</afflictionname.neuroglottis>
+  <afflictiondescription.neuroglottis>The neuroglottis are designed to detect a variety of toxins, but on Europa, nerves at the back of the mouth effectively inhibit the growth of husk parasites there</afflictiondescription.neuroglottis>
+  <!--mucranoid-->
+  <afflictionname.mucranoid>mucranoid</afflictionname.mucranoid>
+  <afflictiondescription.mucranoid>Mucranoid will provide some protection against water pressure and skin burns</afflictiondescription.mucranoid>
+  <!--blackbarapace-->
+  <afflictionname.blackbarapace>blackcarapace</afflictionname.blackbarapace>
+  <afflictiondescription.blackbarapace>This gland contains strong acids that can shoot around and burn enemies instantly, and since you already have strong acids in your body, no other acids can harm you</afflictiondescription.blackbarapace>
+  <!--sinewcoils-->
+  <afflictionname.sinewcoils>sinew coils</afflictionname.sinewcoils>
+  <afflictiondescription.sinewcoils>Beefed up muscles make you stronger, and you can even crash into enemies like a chariot, disabling them (press space while running)</afflictiondescription.sinewcoils>
+  <!--magnificat-->
+  <afflictionname.magnificat>magnificat</afflictionname.magnificat>
+  <afflictiondescription.magnificat>This modified pituitary gland implanted in the brain can better stimulate the body's muscle density, making it more resilient</afflictiondescription.magnificat>
+  <!--belisarianfurnace-->
+  <afflictionname.belisarianfurnace>belisarian furnace</afflictionname.belisarianfurnace>
+  <afflictiondescription.belisarianfurnace>Also known as the Resurrecter, the belisarian furnace can put humans into a state of suspended animation when they take excessive damage, which is said to have saved many primaris space marines from death</afflictiondescription.belisarianfurnace>
+ 
+  <!--[Characters]-->
+    <!--betchergland-->
+  <character.betchergland>betcher gland</character.betchergland>
+    <!--secondaryheart-->
+  <character.secondaryheart>secondary heart</character.secondaryheart>
+    <!--ossmodula-->
+  <character.ossmodula>ossmodula</character.ossmodula>
+    <!--biscopea-->
+  <character.biscopea>biscopea</character.biscopea>
+    <!--haemastamen-->
+  <character.haemastamen>haemastamen</character.haemastamen>
+    <!--larramanorgan-->
+  <character.larramanorgan>larraman organ</character.larramanorgan>
+    <!--catalepseannode-->
+  <character.catalepseannode>catalepsean node</character.catalepseannode>
+    <!--preomnor-->
+  <character.preomnor>preomnor</character.preomnor>
+    <!--omophage-->
+  <character.omophage>omophage</character.omophage>
+    <!--multilung-->
+  <character.multilung>multi lung</character.multilung>
+    <!--occulobe-->
+  <character.occulobe>occulobe</character.occulobe>
+    <!--lymanear-->
+  <character.lymanear>lyman ear</character.lymanear>
+    <!--melanochromic-->
+  <character.melanochromic>melanochromic</character.melanochromic>
+    <!--oolitickidney-->
+  <character.oolitickidney>oolitic kidney</character.oolitickidney>
+    <!--neuroglottis-->
+  <character.neuroglottis>neuroglottis</character.neuroglottis>
+    <!--mucranoid-->
+  <character.mucranoid>mucranoid</character.mucranoid>
+    <!--blackbarapace-->
+  <character.blackbarapace>blackcarapace</character.blackbarapace>
+    <!--susanmembrane-->
+  <character.susanmembrane>susan membrane</character.susanmembrane>
+    <!--sinewcoils-->
+  <character.sinewcoils>sinew coils</character.sinewcoils>
+   <!--magnificat-->
+  <character.magnificat>magnificat</character.magnificat>
+   <!--belisarianfurnace-->
+  <character.belisarianfurnace>belisarian furnace</character.belisarianfurnace>
+
+<!--event-->
+<eventtext.licensecheck.c1> An Imperial guard is inspecting the passing crowd. He sees you. "Hey, You! Come here! I understand you came here from another outpost. Do you have a privateers license by the Empire?"</eventtext.licensecheck.c1>
+<eventtext.licensecheck.o1>"Uh, are you talking about privateers license? Of course I have it."</eventtext.licensecheck.o1>
+<eventtext.licensecheck.o1.c1>The guardsman reaches out to you: "Show me your license. This is a routine check."</eventtext.licensecheck.o1.c1>
+<eventtext.licensecheck.o1.o1>Find out if you have a privateers license on your body</eventtext.licensecheck.o1.o1>
+<eventtext.licensecheck.o1.o1.c1>"Ah, honorable rogue trader, I'm sorry to disturb you, you can go now." The guardsman returned the privateer license to you</eventtext.licensecheck.o1.o1.c1>
+<eventtext.licensecheck.o1.o1.o1>The troublesome guardsman...</eventtext.licensecheck.o1.o1.o1>
+<eventtext.licensecheck.o1.o1.c2> "Hey! If you don't have an imperial license, it's not a good thing." The guardsman took out a new privateer license: "Take it, but you Have to pay a fine of 2000 points."</eventtext.licensecheck.o1.o1.c2>
+<eventtext.licensecheck.o1.o1.o2>What a bad luck. </eventtext.licensecheck.o1.o1.o2>
+<eventtext.licensecheck.o2>Maybe you should run away right now</eventtext.licensecheck.o2>
+<eventtext.licensecheck.o2.c1> "Ah! Look at that!" You yelled, pointed in a random direction, then turned around and ran</eventtext.licensecheck.o2.c1>
+<eventtext.licensecheck.o2.o1>The guardsman yelled in the crowd and wanted to chase you, but in the end he was failure</eventtext.licensecheck.o2.o1>
+<eventtext.licensecheck.o2.c2>"Freeze!" The guardsman raised his weapon</eventtext.licensecheck.o2.c2>
+<eventtext.licensecheck.o2.o2> Oops. </eventtext.licensecheck.o2.o2>
+
+<eventtext.drunkenman.c1>A drunken guardsman walks towards you, yelling something as he goes</eventtext.drunkenman.c1>
+<eventtext.drunkenman.o1>See what he's up to. </eventtext.drunkenman.o1>
+<eventtext.drunkenman.o1.c1> The guardsman walked up to you with the smell of alcohol and bumped into you. He looked up at you angrily, just about to speak, but suddenly seemed to recognize your identity. "Sorry, sir," he muttered, shoving a packet into your hand: "Don't bring this up to my superiors..."</eventtext.drunkenman.o1.c1>
+<eventtext.drunkenman.o1.o1> That's a bag of money. </eventtext.drunkenman.o1.o1>
+<eventtext.drunkenman.o1.c2>The guardsman grumbles and shoves you, then suddenly punches you in the face</eventtext.drunkenman.o1.c2>
+<eventtext.drunkenman.o1.o2> Damn it! </eventtext.drunkenman.o1.o2>
+<eventtext.drunkenman.o2> Avoid contact with it. </eventtext.drunkenman.o2>
+<eventtext.drunkenman.o2.c1> You mingled with the crowd, and the drunkard's scolding grew farther and farther. </eventtext.drunkenman.o2.c1>
+<eventtext.drunkenman.o2.o1>Drunken man. </eventtext.drunkenman.o2.o1>
+<eventtext.drunkenman.o2.c2>The alcoholic shouted to pull your clothes, you just turned your head and got punched in the face</eventtext.drunkenman.o2.c2>
+<eventtext.drunkenman.o2.o2> Damn it! </eventtext.drunkenman.o2.o2>
+
+<eventtext.reinforcement.c1>You have just entered the outpost's management room when a soldier in the uniform of the Krieg Death Corps approaches you:\n\n"Report to you, sir! I'm from Krieg The 51st Regiment of the Dead Legion, No. 5135-3840, has been ordered to join your ships."\n</eventtext.reinforcement.c1>
+<eventtext.reinforcement.o1>A Krieg soldier! ? </eventtext.reinforcement.o1>
+<eventtext.reinforcement.o1.c1>I received orders to escort your submarine all the way to the bottom of the ocean. Captain, request boarding!</eventtext.reinforcement.o1.c1>
+<eventtext.reinforcement.o1.o1> Permission to board. </eventtext.reinforcement.o1.o1>
+<eventtext.reinforcement.o1.o1.c1>The Krieg salutes you and silently enters the submarine</eventtext.reinforcement.o1.o1.c1>
+<eventtext.reinforcement.o1.o2> Probably shouldn't have let this Krieg soldier on board, after all, they have a weird temper. </eventtext.reinforcement.o1.o2>
+<eventtext.reinforcement.o1.o2.c1>"Sorry, soldier, my submarine is full."</eventtext.reinforcement.o1.o2.c1>
+<eventtext.reinforcement.o2>"Sorry, there is no more room on my ship for another warrior. "</eventtext.reinforcement.o2>
+<eventtext.reinforcement.o2.c1>The Krieg left without a word</eventtext.reinforcement.o2.c1>
+
+<!--loadingscreentip-->
+<loadingscreentip>Welcome to use "Astartes' surgery and more WH40K gears" and have fun! </loadingscreentip>
+<loadingscreentip>Surgery genes are precious, so make them as pure as possible</loadingscreentip>
+<loadingscreentip>Praise the emperor! Praise holly terra! </loadingscreentip>
+<loadingscreentip>Without black carapace, power armor is just a decoration</loadingscreentip>
+<loadingscreentip>The recoil force of the bolter is very large. If there is no power armor protection, mortals will be injured if they use it</loadingscreentip>
+<loadingscreentip>Want to try the high power of bolter, but can't activate the power armor? You can try the bolter pistol! </loadingscreentip>
+<loadingscreentip>Plasma weapons are powerful, doors, structures, and human bodies can all be shredded, but it takes a long time to prepare</loadingscreentip>
+<loadingscreentip>Help! Can anyone see this tip? I am trapped in the subspace now, so I can only ask for help in this way! </loadingscreentip>
+<loadingscreentip>The storm bolter can be used with only one hand, but its excessive recoil makes you have to activate the Terminator power armor to use it normally</loadingscreentip>
+<loadingscreentip>The first article of Astarte scripture: If you find error while using this mod, report it to the workshop comment section immediately!</loadingscreentip>
+<loadingscreentip>Heavy bolter and assault cannon are so powerful that only Terminator power armor can control them</loadingscreentip>
+<loadingscreentip>The boarding shield is very heavy. If you are a mortal, please don't try to pick it up, it is not calibur</loadingscreentip>
+<loadingscreentip>Beware of armor-piercing weapons such as powered swords, armor-piercing grenade, etc., they are also deadly for Astartes</loadingscreentip>
+<loadingscreentip>The equipment of mortals is also very powerful, please don’t ignore the power of mortals</loadingscreentip>
+<loadingscreentip>Article 2 of the Guardsman Infantry Squad Manual: The battery of the laser weapon can be recharged, please charge it in time after the battle</loadingscreentip>
+<loadingscreentip>Don’t use the assault cannon for a long time to fire, even the Terminator’s power armor can't completely resist its powerful recoil</loadingscreentip>
+<loadingscreentip>If you take received armor-piercing damage and recoil damage, please use the battlefield medikit for treatment</loadingscreentip>
+<loadingscreentip>Don't try to steal shipments, the Empire will lock them up</loadingscreentip>
+<loadingscreentip>Space Marines' flamethrowers are so hot they can even be used to cut through hatches</loadingscreentip>
+<loadingscreentip>If you go down, you'll want to have an automatic injection agent in your power armor</loadingscreentip>
+<loadingscreentip>Skilled Imperial Sailors are always well versed in the effects of all kinds of shotgun shells and use them when the time is right</loadingscreentip>
+<loadingscreentip>Privateer's license is an ancient authorization that still works today - at least when you're facing annoying guardsman</loadingscreentip>
+<loadingscreentip>Krieg's shovel has high structural damage and is a handy weapon</loadingscreentip>
+<loadingscreentip>Even if the power is depleted, the power sword is still a sharp weapon</loadingscreentip>
+<loadingscreentip>Space Marine power armor can carry two oxygen tanks, and a potion</loadingscreentip>
+<loadingscreentip>Flexible choice between live ammunition and laser weapons, both of which have advantages and disadvantages</loadingscreentip>
+<loadingscreentip>Standard shine brightly and illuminate the surroundings, useful in dark environments</loadingscreentip>
+<loadingscreentip>Some special weapons do not cause damage to the hull, use them first in boarding battles and anti-boarding battles</loadingscreentip>
+<loadingscreentip>Some of the abandoned outposts have large numbers of rebels, be careful when clearing them</loadingscreentip>
+<loadingscreentip>The best way to deal with a hostile Space Marine is another Space Marine</loadingscreentip>
+<loadingscreentip>Courage and Honour! ——— Ultramarines</loadingscreentip>
+<loadingscreentip>We March for Macragge! ——— Ultramarines</loadingscreentip>
+<loadingscreentip>We shall know no fear! ——— Ultramarines</loadingscreentip>
+<loadingscreentip>The foundation of the empire rests on sacrifice, and the blood of the martyrs is the fire of the empire</loadingscreentip>
+<loadingscreentip>faith is my shield，fury is my sword</loadingscreentip>
+<loadingscreentip>Burn the hereticlib.Kill the mutant.Purge the unclean</loadingscreentip>
+<loadingscreentip>Laser weapons cause burns, and ordinary body armor cannot effectively resist this kind of damage</loadingscreentip>
+<loadingscreentip>chainsword are powered by fuel rods, and chains themselves are consumables</loadingscreentip>
+<loadingscreentip>Powersword is powered by alien batteries and is a powerful melee weapon</loadingscreentip>
+<loadingscreentip>Hellpistols are more powerful than regular laser weapons, but due to excessive heat, their batteries will burn out after use and cannot be recharged</loadingscreentip>
+
+<jobname.servitor>servitor</jobname.servitor>
+
+</infotext>

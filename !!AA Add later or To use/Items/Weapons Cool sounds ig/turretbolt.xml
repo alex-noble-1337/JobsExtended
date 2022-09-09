@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+<!--__оружие_турелей_+__________________________________________________________________________________________________________________________________________________-->
+<!--Нужно сделать плазменную турель, которую можно получить только скрестив обычную и плазменный посох-->
+ <Item name="turretgausscannon" identifier="turretgausscannon" category="Equipment" tags="" Scale="0.1" 
+   impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true">
+    <Sprite name="turretgausscannon" texture="secturretweapons.png" sourcerect="0,0,1,1" depth="0.1" origin="0.5,0.5" />
+    <Body width="80" height="25" density="1" />
+    <Holdable slots="RightHand, Any" controlpose="false" aimpos="150,0" handle1="0,0" holdangle="0" usehandrotationforholdangle="true" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon singlechargedshot="true" maxchargetime="1.0" reload="0.4" barrelpos="0,0" spread="0" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" scalemin="2.0" scalemax="2.0" velocitymin="0" velocitymax="0" />
+      <Sound file="Mods/MantaAutomatons/Items/Weapons/gausscannon1.ogg" type="OnUse" volume="0.7" range="1000" selectionmode="Random" />
+      <Sound file="Mods/MantaAutomatons/Items/Weapons/gausscannon2.ogg" type="OnUse" volume="0.7" range="1000" />
+      <Sound file="Mods/MantaAutomatons/Items/Weapons/gausscannon3.ogg" type="OnUse" volume="0.7" range="1000" />
+      <Sound file="Mods/MantaAutomatons/Items/Weapons/gausscannon4.ogg" type="OnUse" volume="0.7" range="1000" />
+      <ChargeSound file="Mods/MantaAutomatons/Items/Weapons/gausscannon_chargeup.ogg" volume="0.7" range="1200" />
+      <StatusEffect type="OnUse" disabledeltatime="true">
+        <Explosion range="10" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="2" flashcolor="255,255,255,255" />
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="This" targetitemcomponent="ItemContainer">
+        <SpawnItem identifier="gausscannonprojectile" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" targetitemcomponent="ItemContainer">
+        <SpawnItem identifier="gausscannonprojectile" spawnposition="ThisInventory" />
+      </StatusEffect>
+	  <StatusEffect type="OnNotContained" target="This" delay="0.1" checkconditionalalways="true">
+        <Remove />
+      </StatusEffect>
+    </RangedWeapon>
+    <ItemContainer hideitems="true" capacity="1" maxstacksize="1" containedstateindicatorstyle="bullet">
+      <Containable items="gausscannonprojectile" />
+    </ItemContainer>
+  </Item>
+ <Item name="turretlasercannon" identifier="turretlasercannon" category="Equipment" tags="" Scale="0.1" 
+   impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true">
+    <Sprite name="turretlasercannon" texture="secturretweapons.png" sourcerect="0,0,1,1" depth="0.1" origin="0.5,0.5" />
+    <Body width="80" height="25" density="1" />
+    <Holdable slots="RightHand, Any" controlpose="false" aimpos="150,0" handle1="0,0" holdangle="0" usehandrotationforholdangle="true" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon singlechargedshot="true" maxchargetime="1.6" reload="0.4" barrelpos="0,0" spread="0" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Sound file="Mods/MantaAutomatons/Items/Weapons/lasercannon1.ogg" type="OnUse" volume="1" range="1000" selectionmode="Random" />
+      <Sound file="Mods/MantaAutomatons/Items/Weapons/lasercannon2.ogg" type="OnUse" volume="1" range="1000" />
+      <Sound file="Mods/MantaAutomatons/Items/Weapons/lasercannon3.ogg" type="OnUse" volume="1" range="1000" />
+      <Sound file="Mods/MantaAutomatons/Items/Weapons/lasercannon4.ogg" type="OnUse" volume="1" range="1000" />
+      <ChargeSound file="Mods/MantaAutomatons/Items/Weapons/lasercannon_chargeup.ogg" volume="0.7" range="1200" />
+      <ParticleEmitter particle="chemlasermist" colormultiplier="239,255,133,155" particleamount="30" anglemin="-10" anglemax="10" scalemin="0.4" scalemax="0.4" distancemin="0" distancemax="0" velocitymin="0" velocitymax="0" />
+      <ParticleEmitter particle="GlowDot" colormultiplier="239,255,133,255" scalemin="2.0" scalemax="2.0" particleamount="20" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" />
+      <ParticleEmitterCharge particle="chargechemlaser" colormultiplier="239,255,133,255" particlespersecond="60" scalemin="1.0" scalemax="1.0" anglemin="0" anglemax="359" />
+      <StatusEffect type="OnUse" disabledeltatime="true">
+        <Explosion range="0" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="0" flashcolor="255,255,255,255" />
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="This" targetitemcomponent="ItemContainer">
+        <SpawnItem identifier="lasercannonprojectile" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" targetitemcomponent="ItemContainer">
+        <SpawnItem identifier="lasercannonprojectile" spawnposition="ThisInventory" />
+      </StatusEffect>
+	  <StatusEffect type="OnNotContained" target="This" delay="0.1" checkconditionalalways="true">
+        <Remove />
+      </StatusEffect>
+    </RangedWeapon>
+    <ItemContainer hideitems="true" capacity="1" maxstacksize="1" containedstateindicatorstyle="bullet">
+      <Containable items="lasercannonprojectile" />
+    </ItemContainer>
+  </Item>
+ <Item name="turretGSGcannon" identifier="turretGSGcannon" category="Equipment" tags="" Scale="0.1" 
+   impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true">
+    <Sprite name="turretGSGcannon" texture="secturretweapons.png" sourcerect="0,0,1,1" depth="0.1" origin="0.5,0.5" />
+    <Body width="80" height="25" density="1" />
+    <Holdable slots="RightHand, Any" controlpose="false" aimpos="150,0" handle1="0,0" holdangle="0" usehandrotationforholdangle="true" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon singlechargedshot="true" maxchargetime="1.6" reload="0.5" barrelpos="0,0" spread="5" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" scalemin="2.0" scalemax="2.0" velocitymin="0" velocitymax="0" />
+      <Sound file="Mods/MantaAutomatons/Items/Weapons/SGSgun1.ogg" type="OnUse" volume="0.8" range="1000" selectionmode="Random" />
+      <Sound file="Mods/MantaAutomatons/Items/Weapons/SGSgun2.ogg" type="OnUse" volume="0.8" range="1000" />
+      <Sound file="Mods/MantaAutomatons/Items/Weapons/SGSgun3.ogg" type="OnUse" volume="0.8" range="1000" />
+      <Sound file="Mods/MantaAutomatons/Items/Weapons/SGSgun4.ogg" type="OnUse" volume="0.8" range="1000" />
+      <ChargeSound file="Mods/MantaAutomatons/Items/Weapons/SGS_chargeup.ogg" volume="0.7" range="1200" />
+      <StatusEffect type="OnUse" disabledeltatime="true">
+        <Explosion range="10" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="2" flashcolor="155,155,155,155" />
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="This" targetitemcomponent="ItemContainer">
+        <SpawnItem identifier="gsgrojectile" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" targetitemcomponent="ItemContainer">
+        <SpawnItem identifier="gsgrojectile" spawnposition="ThisInventory" />
+      </StatusEffect>
+	  <StatusEffect type="OnNotContained" target="This" delay="0.1" checkconditionalalways="true">
+        <Remove />
+      </StatusEffect>
+    </RangedWeapon>
+    <ItemContainer hideitems="true" capacity="1" maxstacksize="1" containedstateindicatorstyle="bullet">
+      <Containable items="gsgrojectile" />
+    </ItemContainer>
+  </Item>
+ <Item name="turretchaincannon" identifier="turretchaincannon" category="Equipment" tags="" Scale="0.1" 
+   impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true">
+    <Sprite name="turretchaincannon" texture="secturretweapons.png" sourcerect="0,0,1,1" depth="0.1" origin="0.5,0.5" />
+    <Body width="80" height="25" density="1" />
+    <Holdable slots="RightHand, Any" controlpose="false" aimpos="150,0" handle1="0,0" holdangle="0" usehandrotationforholdangle="true" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon reload="0.195" barrelpos="0,0" spread="10" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" scalemin="2.0" scalemax="2.0" velocitymin="0" velocitymax="0" />
+      <Sound file="Mods/MantaAutomatons/Items/Weapons/chaincannon1.ogg" type="OnUse" volume="0.7" range="1000" selectionmode="Random" />
+      <Sound file="Mods/MantaAutomatons/Items/Weapons/chaincannon2.ogg" type="OnUse" volume="0.7" range="1000" />
+      <Sound file="Mods/MantaAutomatons/Items/Weapons/chaincannon3.ogg" type="OnUse" volume="0.7" range="1000" />
+      <Sound file="Mods/MantaAutomatons/Items/Weapons/chaincannon4.ogg" type="OnUse" volume="0.7" range="1000" />
+	  <StatusEffect type="OnUse" disabledeltatime="true">
+        <Explosion range="10" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="2" flashcolor="155,155,155,155" />
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="This" targetitemcomponent="ItemContainer">
+        <SpawnItem identifier="revolverround" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" targetitemcomponent="ItemContainer">
+        <SpawnItem identifier="revolverround" spawnposition="ThisInventory" />
+      </StatusEffect>
+	  <StatusEffect type="OnNotContained" target="This" delay="0.1" checkconditionalalways="true">
+        <Remove />
+      </StatusEffect>
+    </RangedWeapon>
+    <ItemContainer hideitems="true" capacity="1" maxstacksize="1" containedstateindicatorstyle="bullet">
+      <Containable items="revolverround" />
+    </ItemContainer>
+  </Item>
+  <Item name="turretsteamcannon" identifier="turretsteamcannon" category="Equipment" tags="" Scale="0.1" 
+   impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true">
+    <Sprite name="turretsteamcannon" texture="secturretweapons.png" sourcerect="0,0,1,1" depth="0.1" origin="0.5,0.5" />
+    <Body width="80" height="25" density="1" />
+    <Holdable slots="RightHand, Any" controlpose="false" aimpos="150,0" handle1="0,0" holdangle="0" usehandrotationforholdangle="true" msg="ItemMsgPickUpSelect" />
+    <RepairTool structurefixamount="0.0" range="500" barrelpos="0,0" fireprobability="0.0" spread="25">
+      <ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100" />
+      <ParticleEmitter particle="steamspray" particlespersecond="80" anglemin="0" anglemax="0" velocitymin="300" velocitymax="500" highqualitycollisiondetection="true"/>
+      <ParticleEmitter particle="bubbles" particlespersecond="20" anglemin="-10" anglemax="10" scalemin="0.3" scalemax="0.7" velocitymin="5" velocitymax="100" copyentityangle="true"/>
+      <sound file="Content/Items/Weapons/FlameThrowerLoop.ogg" type="OnUse"  volume="1.4"  range="500.0" loop="true" />
+      <StatusEffect type="OnUse" target="UseTarget">
+        <Affliction identifier="burn" amount="3.5" />
+      </StatusEffect>
+	  <StatusEffect type="OnNotContained" target="This" delay="0.1" checkconditionalalways="true">
+        <Remove />
+      </StatusEffect>
+    </RepairTool>
+  </Item>
+  <Item name="turretaliencannon" identifier="turretaliencannon" category="Equipment" tags="" Scale="0.1" 
+   impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true">
+    <Sprite name="turretaliencannon" texture="secturretweapons.png" sourcerect="0,0,1,1" depth="0.1" origin="0.5,0.5" />
+    <Body width="80" height="25" density="1" />
+    <Holdable slots="RightHand, Any" controlpose="false" aimpos="150,0" handle1="0,0" holdangle="0" usehandrotationforholdangle="true" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon singlechargedshot="true" maxchargetime="1.0" reload="0.6" barrelpos="165,10" spread="2" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="ma_crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="ma_crosshairs.png" sourcerect="256,256,256,256" />
+      <Sound file="Mods/MantaAutomatons/1Othergoodys/Weapons/plstaff1.ogg" type="OnUse" volume="0.6" range="1000" selectionmode="Random" />
+      <Sound file="Mods/MantaAutomatons/1Othergoodys/Weapons/plstaff2.ogg" type="OnUse" volume="0.6" range="1000" />
+      <Sound file="Mods/MantaAutomatons/1Othergoodys/Weapons/plstaff3.ogg" type="OnUse" volume="0.6" range="1000" />
+      <ChargeSound file="Mods/MantaAutomatons/1Othergoodys/Weapons/staffchargesfx.ogg" volume="0.8" range="1200" />
+      <ParticleEmitter particle="plasmaboltsmoke" scalemin="1.7" scalemax="1.7" particleamount="2" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" />
+      <ParticleEmitter particle="plasmaboltDot" scalemin="1.7" scalemax="1.7" particleamount="1" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" />
+      <ParticleEmitterCharge particle="plasmaboltDot" scalemin="0.2" scalemax="1" particleamount="1" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" />
+	  <StatusEffect type="OnUse" disabledeltatime="true">
+        <Explosion range="10" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="2" flashcolor="255,255,255,255" />
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="This" targetitemcomponent="ItemContainer">
+        <SpawnItem identifier="alienenergystaffprojectile" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" targetitemcomponent="ItemContainer">
+        <SpawnItem identifier="alienenergystaffprojectile" spawnposition="ThisInventory" />
+      </StatusEffect>
+	  <StatusEffect type="OnNotContained" target="This" delay="0.1" checkconditionalalways="true">
+        <Remove />
+      </StatusEffect>
+    </RangedWeapon>
+    <ItemContainer hideitems="true" capacity="1" maxstacksize="1" containedstateindicatorstyle="bullet">
+      <Containable items="alienenergystaffprojectile" />
+    </ItemContainer>
+  </Item>
+<!--__оружие__турелей_-_________________________________________________оружие_кидо_+___________________________________________________________________________________-->
+ <Item name="kidodefgun" identifier="kidodefgun" category="Equipment" tags="" Scale="0.1" 
+   impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true">
+    <Sprite name="kidodefgun" texture="secturretweapons.png" sourcerect="0,0,1,1" depth="0.1" origin="0.5,0.5" />
+    <Body width="80" height="25" density="1" />
+    <Holdable slots="RightHand, Any" controlpose="false" aimpos="150,0" handle1="0,0" holdangle="0" usehandrotationforholdangle="true" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon reload="0.24" barrelpos="0,0" spread="7" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <Sound file="Mods/MantaAutomatons/Items/Weapons/kidosmg1.ogg" type="OnUse" volume="1.4" range="1000" selectionmode="Random" />
+      <Sound file="Mods/MantaAutomatons/Items/Weapons/kidosmg2.ogg" type="OnUse" volume="1.4" range="1000" />
+      <Sound file="Mods/MantaAutomatons/Items/Weapons/kidosmg3.ogg" type="OnUse" volume="1.4" range="1000" />
+	  <StatusEffect type="OnUse" disabledeltatime="true">
+        <Explosion range="1" force="0.8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="0" />
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="This" targetitemcomponent="ItemContainer">
+        <SpawnItem identifier="kidodefgunround" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" targetitemcomponent="ItemContainer">
+        <SpawnItem identifier="kidodefgunround" spawnposition="ThisInventory" />
+      </StatusEffect>
+	  <StatusEffect type="OnNotContained" target="This" delay="0.1" checkconditionalalways="true">
+        <Remove />
+      </StatusEffect>
+    </RangedWeapon>
+    <ItemContainer hideitems="true" capacity="1" maxstacksize="1" containedstateindicatorstyle="bullet">
+      <Containable items="kidodefgunround" />
+    </ItemContainer>
+  </Item>
+<!--__оружие_кидо_-______________________________________________________снаряды_и_прочее_+_____________________________________________________________________________-->
+ <Item name="gsgrojectile" identifier="gsgrojectile" category="Misc" Scale="0.5" sonarsize="1" hideinmenus="true" interactthroughwalls="true">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="189,299,23,11" depth="0.55" origin="0.5,0.5" />
+    <Body width="23" height="10" density="40" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" hitscancount="12" removeonhit="true" spread="15">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.8" />
+      <Attack structuredamage="0.9" targetforce="8" itemdamage="15" severlimbsprobability="0.6">
+        <Affliction identifier="bleeding" strength="6" />
+        <Affliction identifier="gunshotwound" strength="8" />
+        <Affliction identifier="stun" strength="0.2" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+ <Item name="lasercannonprojectile" identifier="lasercannonprojectile" category="Misc" Scale="0.5" sonarsize="1" hideinmenus="true" interactthroughwalls="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" />
+    <Body width="170" height="10" density="20" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <ParticleEmitter particle="tracechemlaser" particleamount="1" velocitymin="0" velocitymax="0"  colormultiplier="238,255,82,255" />
+      <ParticleEmitter particle="FlareBubbles" emitacrossrayinterval="50" />
+      <Attack structuredamage="5" targetforce="130" itemdamage="5" severlimbsprobability="25">
+        <Affliction identifier="burn" strength="50" />
+        <Affliction identifier="stun" strength="1" />
+      </Attack>
+	  <StatusEffect type="OnImpact" target="Character">
+		<Affliction identifier="disintegration" strength="500" />
+		<ParticleEmitter particle="muzzleflashchemlaser" colormultiplier="239,255,133,155" anglemin="0" anglemax="360" particleamount="10" velocitymin="0" scalemin="0.5" scalemax="0.5" />
+        <Explosion range="60.0" shockwave="true" smoke="false" flames="false" sparks="false" underwaterbubble="false" structuredamage="0" ballastfloradamage="0" itemdamage="0" force="0" severlimbsprobability="0" decal="explosion" decalsize="0.6" camerashake="2" flashcolor="255,255,255,255" />
+      </StatusEffect>  
+      <StatusEffect type="OnImpact" target="Character">
+		<Conditional disintegration="gt 0" />
+		<ParticleEmitter particle="chemlasermist" colormultiplier="255,0,0,155" lifetime="20" particleamount="5" anglemin="-10" anglemax="10" scalemin="1.3" scalemax="2" distancemin="0" distancemax="10" velocitymin="0" velocitymax="10" />  
+      </StatusEffect>  
+	  <StatusEffect type="OnImpact" target="UseTarget">
+        <sound file="Mods/MantaAutomatons/Particles/chemlaserblast.ogg" type="OnUse" volume="0.5" range="1000" />
+		<ParticleEmitter particle="muzzleflashchemlaser"  colormultiplier="239,255,133,155" anglemin="0" anglemax="360" particleamount="10" velocitymin="0" scalemin="0.4" scalemax="0.5" />
+        <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" />
+        <Explosion shockwave="true" smoke="false" flames="false" sparks="false" underwaterbubble="false" range="10.0" structuredamage="5" ballastfloradamage="160" itemdamage="20" force="10" severlimbsprobability="1.5" decal="explosion" decalsize="0.2">
+          <Affliction identifier="stun" strength="0.2" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <Explosion range="20.0" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" flashcolor="255,255,255,255"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+ <Item name="gausscannonprojectile" identifier="gausscannonprojectile" category="Misc" Scale="0.5" sonarsize="1" hideinmenus="true" interactthroughwalls="true">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,384,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="191,290,21,7" depth="0.55" origin="0.5,0.5" />
+    <Body width="29" height="10" density="40" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,2" />
+      <Attack structuredamage="25" targetforce="30" itemdamage="40" severlimbsprobability="10">
+          <Affliction identifier="explosiondamage" strength="20" />
+          <Affliction identifier="lacerations" strength="50" />
+          <Affliction identifier="internaldamage" strength="10" />
+          <Affliction identifier="blunttrauma" strength="2" />
+          <Affliction identifier="burn" strength="10" />
+          <Affliction identifier="stun" strength="0.3" />
+      </Attack>
+      <StatusEffect type="OnImpact" disabledeltatime="true">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" type="OnUse" volume="0.9" range="500" selectionmode="Random" />
+        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" type="OnUse" volume="0.9" range="500" />
+        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" type="OnUse" volume="0.9" range="500" />
+        <Explosion range="15.0" structuredamage="20" ballastfloradamage="60" itemdamage="30" force="225" severlimbsprobability="50" decal="explosion" decalsize="0.2"/>
+      </StatusEffect>
+	  <StatusEffect type="OnImpact" target="Character">
+         <breakLimb />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" scalemin="3" scalemax="3" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" scalemin="0.5" scalemax="1" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="15" velocitymin="-10" velocitymax="-200" />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+ <Item name="kidodefgunround" identifier="kidodefgunround" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="14" density="40" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+    <Projectile characterusable="false" hitscan="true" spread="3" removeonhit="true">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6"/>
+      <Attack structuredamage="1.5" targetforce="8" itemdamage="15" severlimbsprobability="0.5">
+        <Affliction identifier="bleeding" strength="14.5" />
+        <Affliction identifier="gunshotwound" strength="14.5" />
+        <Affliction identifier="stun" strength="0.17" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure"/>
+        <Conditional hastag="eq door"/>
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+<!--____________________________________________________________________________________________________________________________________________________________________-->
+</Items>

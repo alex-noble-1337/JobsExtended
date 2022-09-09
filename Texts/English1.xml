@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+
+<talentdescription.lowhealth.regenerate2>Common damage types now heal themselves quicker.</talentdescription.lowhealth.regenerate2>
+<talentdescription.munitionsexpertise2>Whenever you fabricate any kind of handheld ammunition, you will gain double the amount</talentdescription.munitionsexpertise2>
+<!-- not actually used, but kept for reference. couldnt get the override to work
+
+<entitydescription.slipsuit2>A modified Combat Diving Suit with a autoinjector that activates on 20% and additional diving fins that aid the user when moving in water. Sadly, the fins also make it difficult to walk on solid ground. (10000m)</entitydescription.slipsuit2>
+<entitydescription.pucs2>The Protective Universal Crisis Suit, or PUCS for short, bestows its user with immense resistances to environmental hazards such as radiation and fire. The built-in air-filtration system allows the suit to utilize hull oxygen when possible, and autoinjector that activates on 20% (10000m)</entitydescription.pucs2>
+
+-->
+<talentdescription.combatmedic2>Gain an additional percentage to Movement Speed, Melee Attack Speed and Swimming Speed equal to [skillpercentage]% of your medical skill.</talentdescription.combatmedic2>
+<talentdescription.drunkensailor2>Gain [dmgresistance]% physical damage resistance, [stunresistance]% stun resistance and [amount] to [skillname] [while drunk.\nWhen you play a Harmonica, a random ally on your current submarine has a [skillgainprobability]% chance to gain a random skill point every second.</talentdescription.drunkensailor2>
+<talentdescription.nuclearoption2>When you fabricate a fuel rod, gain double output.</talentdescription.nuclearoption2>
+<talentname.nuclearoptions>Nuclear Options</talentname.nuclearoptions>
+<talentdescription.nucleargunupgrade>Handheld nuclear weaponry you fabricate are [qualitybonus] higher quality.</talentdescription.nucleargunupgrade>
+
+</infotexts>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+<!-- Gunsmith Lathe -->
+  <Item name=""
+    identifier="gunlathe"
+    linkable="true"
+    allowedlinks="cabinet,locker"
+    description=""
+    damagedbyexplosions="true" 
+    explosiondamagemultiplier="0.2"
+    scale="0.6">
+    <!-- TODO: language file stuff -->
+
+    <Price locationtype="Research" buyprice="250" />
+	<Price locationtype="Military" buyprice="500" />
+    <Price locationtype="City" buyprice="500" />
+    <Price locationtype="Outpost" buyprice="500" />
+    <Price locationtype="Mine" buyprice="250" />
+
+    <Deconstruct time="20">
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="steel" />
+      <Item identifier="aluminium" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <!-- <Fabricate suitablefabricators="fabricator" requiredtime="30"> -->
+      <!-- <RequiredSkill identifier="mechanical" level="1"/> -->
+      <!-- <RequiredItem identifier="titaniumaluminiumalloy" /> -->
+      <!-- <RequiredItem identifier="steel" /> -->
+      <!-- <RequiredItem identifier="aluminium" /> -->
+      <!-- <RequiredItem identifier="plastic" /> -->
+    <!-- </Fabricate> -->
+
+    <Sprite 
+      texture="Mods/Underwater Guns/textures/autolathe.png" 
+      depth="0.8" 
+      sourcerect="0,0,108,108" />
+    <BrokenSprite 
+      texture="Mods/Underwater Guns/textures/autolathe.png" 
+      sourcerect="0,0,108,108" 
+      depth="0.8" 
+      maxcondition="40" 
+      fadein="true" />
+    <BrokenSprite 
+      texture="Mods/Underwater Guns/textures/autolathe.png" 
+      sourcerect="0,0,108,108" 
+      depth="0.8" 
+      maxcondition="0" />
+
+    <Body width="108" height="108" density="50" />
+    <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="ItemMsgDetachWrench" PickingTime="10.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem identifier="wrench" type="Equipped" />
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.55" setvalue="true" />
+    </Holdable>
+
+	  <!-- Adjust power consumption sometime -->
+
+    <Fabricator 
+      canbeselected="true" 
+      powerconsumption="600.0" 
+      msg="ItemMsgInteractSelect">
+      <sound 
+        file="Mods/Underwater Guns/Sounds/lathe.ogg" 
+        type="OnActive" 
+        range="600" 
+        loop="true" />
+      <GuiFrame 
+        relativesize="0.3,0.45" 
+        style="ItemUI" 
+        anchor="Center" />       
+    </Fabricator>
+
+    <ConnectionPanel 
+      selectkey="Action" 
+      canbeselected="true" 
+      hudpriority="10" 
+      msg="ItemMsgRewireScrewdriver">
+      <GuiFrame 
+        relativesize="0.2,0.32" 
+        minsize="400,350" 
+        maxsize="480,420" 
+        anchor="Center" 
+        style="ConnectionPanel"/>
+      <RequiredItem 
+        identifier="screwdriver" 
+        type="Equipped"/>
+      <input name="power_in" displayname="connection.powerin"/>
+    </ConnectionPanel>
+	
+    <Repairable 
+      selectkey="Action" 
+      header="mechanicalrepairsheader" 
+      deteriorationspeed="0.15" 
+      mindeteriorationdelay="120" 
+      maxdeteriorationdelay="360" 
+	  RepairThreshold="80"
+      ShowRepairUIThreshold="50" 
+      fixDurationHighSkill="10" 
+      fixDurationLowSkill="25" 
+      msg="ItemMsgRepairScrewdriver" 
+      hudpriority="10">
+      <GuiFrame 
+        relativesize="0.2,0.16" 
+        minsize="400,180" 
+        maxsize="480,216" 
+        anchor="Center" 
+        relativeoffset="0.0,0.27" 
+        style="ItemUI" />
+      <RequiredSkill 
+        identifier="mechanical" 
+        level="30" />
+      <RequiredItem 
+        identifier="wrench" 
+        type="equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="1" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
+      <ParticleEmitter particle="heavysmoke" particleburstinterval="0.25" particlespersecond="2" scalemin="2.5" scalemax="5.0" mincondition="0.0" maxcondition="15.0" />   
+    </Repairable>
+
+    <ItemContainer 
+      capacity="5" 
+      canbeselected="true" 
+      hideitems="true" 
+      slotsperrow="6" 
+      uilabel="Input" 
+      allowuioverlap="true">
+      <Containable identifiers="watergunmagazine,airgunmagazine,watergun,airgun,smallitem,mediumitem" />
+    </ItemContainer>
+    <ItemContainer 
+      capacity="1" 
+      canbeselected="true" 
+      hideitems="true" 
+      slotsperrow="1" 
+      uilabel="Output" 
+      allowuioverlap="true"/>
+  </Item>
+</Items>

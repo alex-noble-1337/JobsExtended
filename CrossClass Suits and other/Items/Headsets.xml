@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Modular Headset" identifier="modularheadset" scale="0.5" category="Equipment" tags="smallitem" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" description="Modular Headset allows you to stick thermal gogles and Medical HUD scanner in it and get its benefits. It also has small pocket for pda's and monitors. Range 350m.">
+    <!--
+	<Price baseprice="450" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1.3" sold="false"/>
+		<Price locationtype="city" multiplier="1.2" sold="false"/>
+		<Price locationtype="research" multiplier="1" sold="false"/>
+		<Price locationtype="military" multiplier="1.25" sold="false"/>
+		<Price locationtype="mine" multiplier="1" sold="false"/>
+	</Price>
+	-->
+    <Deconstruct time="20">
+      <Item identifier="autoinjectorheadset" />
+      <Item identifier="organicfiber" />
+      <Item identifier="fpgacircuit" />
+      <Item identifier="fpgacircuit" />
+      <Item identifier="fulgurium" />
+      <Item identifier="fulgurium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="electrical" level="90" />
+      <RequiredSkill identifier="mechanical" level="90" />
+      <RequiredItem identifier="organicfiber" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="fulgurium" />
+      <RequiredItem identifier="fulgurium" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/ModularHeadset.png" sourcerect="113,264,58,45" origin="0.5,0.5" />
+    <Sprite name="modulartacticalheadset" texture="%ModDir%/Items/ModularHeadset.png" depth="0.6" sourcerect="126,344,63,54" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="30" />
+    <StatusHUD range="300" drawhudwhenequipped="true" showtexts="false" thermalgoggles="false" overlaycolor="0,0,0,0">
+      <StatusEffect type="OnWearing" target="This" thermalgoggles="false" setvalue="true" overlaycolor="0,0,0,0" />
+      <StatusEffect type="OnWearing" range="5000" target="This" thermalgoggles="true" setvalue="true" overlaycolor="0,0,0,0" comparison="and">
+        <RequiredItems items="thermalgoggles" type="Contained" />
+        <RequiredItem items="mobilebattery" type="Contained" condition="gt 0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="This" showtexts="false" setvalue="true" overlaycolor="0,0,0,0" />
+      <StatusEffect type="OnWearing" target="This" showtexts="true" setvalue="true" overlaycolor="0,0,0,0" comparison="and">
+        <RequiredItem items="mobilebattery" type="Contained" condition="gt 0" />
+        <RequiredItem items="healthscanner" type="Contained" />
+      </StatusEffect>
+    </StatusHUD>
+    <WifiComponent range="35000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+        <RequiredItems items="mobilebattery" type="Contained" mincondition="0.01" />
+    </WifiComponent>
+    <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+      <sprite name="modularheadset Wearable" texture="%ModDir%/Items/ModularHeadset.png" sourcerect="126,344,63,54" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" origin="0.5,0.5" />
+    </Wearable>
+    <ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="battery" containedstateindicatorslot="0" autoinject="true">
+      <Containable items="none" />
+      <SlotIcon slotindex="0" texture="Content/UI/WeaponUI.png" sourcerect="64,961,32,22" origin="0.5,0.45" />
+      <SlotIcon slotindex="1" texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,256,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="2" texture="Content/Items/JobGear/TalentGear.png" sourcerect="0,224,63,31" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="mobilebattery" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="healthscanner" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="thermalgoggles" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="handheldelectricalmonitor, reactorpda, handheldsonar" />
+      </SubContainer>
+    </ItemContainer>
+  </Item>
+  <Item name="Modular Headset (Auto Injectior Headset)" identifier="modularheadsetautoinjectorheadset" scale="0.5" category="Equipment" tags="smallitem" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" description="Modular Headset allows you to stick thermal gogles and Medical HUD scanner in it and get its benefits. It also has small pocket for pda's and monitors. Range 350m. This version has a Auto Injectior Headset integrated">
+    <!--
+	<Price baseprice="450" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1.3" sold="false"/>
+		<Price locationtype="city" multiplier="1.2" sold="false"/>
+		<Price locationtype="research" multiplier="1" sold="false"/>
+		<Price locationtype="military" multiplier="1.25" sold="false"/>
+		<Price locationtype="mine" multiplier="1" sold="false"/>
+	</Price>
+	-->
+    <Deconstruct time="20">
+      <Item identifier="autoinjectorheadset" />
+      <Item identifier="modularheadset" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="electrical" level="45" />
+      <RequiredSkill identifier="mechanical" level="45" />
+      <RequiredSkill identifier="medical" level="90" />
+      <RequiredItem identifier="autoinjectorheadset" />
+      <RequiredItem identifier="modularheadset" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/ModularHeadset.png" sourcerect="113,264,58,45" origin="0.5,0.5" />
+    <Sprite name="modulartacticalheadset" texture="%ModDir%/Items/ModularHeadset.png" depth="0.6" sourcerect="126,344,63,54" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="30" />
+    <StatusHUD range="300" drawhudwhenequipped="true" showtexts="false" thermalgoggles="false" overlaycolor="0,0,0,0">
+      <StatusEffect type="OnWearing" target="This" thermalgoggles="false" setvalue="true" overlaycolor="0,0,0,0" />
+      <StatusEffect type="OnWearing" range="5000" target="This" thermalgoggles="true" setvalue="true" overlaycolor="0,0,0,0" comparison="and">
+        <RequiredItems items="thermalgoggles" type="Contained" />
+        <RequiredItem items="mobilebattery" type="Contained" condition="gt 0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="This" showtexts="false" setvalue="true" overlaycolor="0,0,0,0" />
+      <StatusEffect type="OnWearing" target="This" showtexts="true" setvalue="true" overlaycolor="0,0,0,0" comparison="and">
+        <RequiredItem items="mobilebattery" type="Contained" condition="gt 0" />
+        <RequiredItem items="healthscanner" type="Contained" />
+      </StatusEffect>
+    </StatusHUD>
+    <WifiComponent range="35000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+        <RequiredItems items="mobilebattery" type="Contained" mincondition="0.01" />
+    </WifiComponent>
+    <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+      <sprite name="modularheadset Wearable" texture="%ModDir%/Items/ModularHeadset.png" sourcerect="126,344,63,54" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" origin="0.5,0.5" />
+    </Wearable>
+    <ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="battery" containedstateindicatorslot="0" autoinject="true">
+      <Containable items="none" />
+      <SlotIcon slotindex="0" texture="Content/UI/WeaponUI.png" sourcerect="64,961,32,22" origin="0.5,0.45" />
+      <SlotIcon slotindex="1" texture="Content/UI/ContainerIndicators.png" sourcerect="2,155,120,29" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,256,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="2" texture="Content/Items/JobGear/TalentGear.png" sourcerect="0,224,63,31" origin="0.5,0.5" />
+      <SlotIcon slotindex="4" texture="Content/UI/ContainerIndicators.png" sourcerect="2,155,120,29" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="mobilebattery" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="healthscanner" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="thermalgoggles" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="handheldelectricalmonitor, reactorpda, handheldsonar" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="chem,medical" />
+      </SubContainer>
+    </ItemContainer>
+  </Item>
+</Items>

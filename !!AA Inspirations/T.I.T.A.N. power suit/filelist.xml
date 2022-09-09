@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="T.I.T.A.N. power suit" path="Mods/T.I.T.A.N. power suit/filelist.xml" corepackage="false" gameversion="0.15.22.1" steamworkshopid="2346376423" installtime="1641253740">
+  <Item file="Mods/T.I.T.A.N. power suit/Items/suit.xml" />
+  <Afflictions file="Mods/T.I.T.A.N. power suit/Items/Afflictions.xml" />
+  <Sounds file="Mods/T.I.T.A.N. power suit/Sounds/sounds.xml" />
+  <None file="Mods/T.I.T.A.N. power suit/Items/components.png" />
+  <None file="Mods/T.I.T.A.N. power suit/Items/suit.png" />
+  <None file="Mods/T.I.T.A.N. power suit/Items/light.png" />
+  <None file="Mods/T.I.T.A.N. power suit/Items/wristlight.png" />
+  <None file="Mods/T.I.T.A.N. power suit/Sounds/titan_footstep_2.ogg" />
+  <None file="Mods/T.I.T.A.N. power suit/Sounds/titan_footstep_3.ogg" />
+  <None file="Mods/T.I.T.A.N. power suit/Items/containericons.png" />
+  <None file="Mods/T.I.T.A.N. power suit/Items/newsuit.png" />
+  <Text file="Mods/T.I.T.A.N. power suit/Text/English.xml" />
+  <Text file="Mods/T.I.T.A.N. power suit/Text/Polish.xml" />
+</contentpackage>

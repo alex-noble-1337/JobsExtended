@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<infotext language="Traditional Chinese" nowhitespace="true" translatedname="中文（繁體）">
+  <!--[Items]-->
+  <!--genespliceromega-->
+  <entityname.progenoids>基因存收腺</entityname.progenoids>
+  <entitydescription.progenoids>星際戰士用來確保改造手術正常生效的裝置，可隨時摘除並改造到其他人類身上，但會對持有者造成致命的内臟損傷</entitydescription.progenoids>
+  <!--genesplicerpsmprogenoids-->
+  <entityname.psmprogenoids>原鑄基因存收腺</entityname.psmprogenoids>
+  <entitydescription.psmprogenoids>原鑄星際戰士需要經歷更多的手術，因此他們的基因存收腺和普通星際戰士不盡相同</entitydescription.psmprogenoids>
+  <!--geneticmaterialwatcher-->
+  <entityname.geneticmaterialwatcher>遺傳物質[betcher腺體]</entityname.geneticmaterialwatcher>
+  <entitydescription.geneticmaterialwatcher>腺體内有强酸，可以在瞬間向四周噴出并且灼燒敵人，并且因爲你體内已經含有强酸，所以其他酸無法再對你造成傷害（按下f使用）</entitydescription.geneticmaterialwatcher>
+  <!--geneticmaterialsecondaryheart-->
+  <entityname.geneticmaterialsecondaryheart>遺傳物質[第二心臟]</entityname.geneticmaterialsecondaryheart>
+  <entitydescription.geneticmaterialsecondaryheart>第二心臟使人類的身體更加的强壯且耐打</entitydescription.geneticmaterialsecondaryheart>
+  <!--geneticmaterialossmodula-->
+  <entityname.geneticmaterialossmodula>遺傳物質[骨强化器官]</entityname.geneticmaterialossmodula>
+  <entitydescription.geneticmaterialossmodula>骨强化器官使得人類能抵禦更多的傷害</entitydescription.geneticmaterialossmodula>
+  <!--geneticmaterialbiscopea-->
+  <entityname.geneticmaterialbiscopea>遺傳物質[肌肉强化器官]</entityname.geneticmaterialbiscopea>
+  <entitydescription.geneticmaterialbiscopea>强化了人類的肌肉力量與密度，增加近戰傷害，近戰速度以及移動速度</entitydescription.geneticmaterialbiscopea>
+  <!--geneticmaterialhaemastamen-->
+  <entityname.geneticmaterialhaemastamen>遺傳物質[血液再造器官]</entityname.geneticmaterialhaemastamen>
+  <entitydescription.geneticmaterialhaemastamen>你體内的血液再生速度很快，失血過多的情況大大減少，同時血液流速加快，供氧能力更强</entitydescription.geneticmaterialhaemastamen>
+  <!--geneticmaterialhaemastamen-->
+  <entityname.geneticmateriallarramanorgan>遺傳物質[拉瑞曼器官]</entityname.geneticmateriallarramanorgan>
+  <entitydescription.geneticmateriallarramanorgan>拉瑞曼細胞會快速形成皮膚組織進行止血和治療暴露的傷口，對燒傷也有一定的效果</entitydescription.geneticmateriallarramanorgan>
+  <!--geneticmaterialcatalepseannode-->
+  <entityname.geneticmaterialcatalepseannode>遺傳物質[神經結]</entityname.geneticmaterialcatalepseannode>
+  <entitydescription.geneticmaterialcatalepseannode>神經結的存在不僅使得人類的各項技能水平有所提高，學習速度也得到了提升</entitydescription.geneticmaterialcatalepseannode>
+   <!--geneticmaterialpreomnor-->
+  <entityname.geneticmaterialpreomnor>遺傳物質[預置胃]</entityname.geneticmaterialpreomnor>
+  <entitydescription.geneticmaterialpreomnor>預置胃使得人類對毒素的抗性有了一定的提升</entitydescription.geneticmaterialpreomnor>
+    <!--geneticmaterialomophage-->
+  <entityname.geneticmaterialomophage>遺傳物質[基因偵測神經]</entityname.geneticmaterialomophage>
+  <entitydescription.geneticmaterialomophage>這種改造可以讓你的基因不斷優化最終接近完美，使得你收到的所有治療都更加有效，并且顯著降低可能的藥物成癮</entitydescription.geneticmaterialomophage>
+    <!--geneticmaterialmultilung-->
+  <entityname.geneticmaterialmultilung>遺傳物質[多肺]</entityname.geneticmaterialmultilung>
+  <entitydescription.geneticmaterialmultilung>人工肺可以讓你在無氧環境下堅持的更久，也可以抵擋一些輕微的毒素</entitydescription.geneticmaterialmultilung>
+    <!--geneticmaterialocculobe-->
+  <entityname.geneticmaterialocculobe>遺傳物質[視覺控制器官]</entityname.geneticmaterialocculobe>
+  <entitydescription.geneticmaterialocculobe>視覺控制器官使得人類的遠程武器操作技巧大幅的提升，槍械在你手中更加致命</entitydescription.geneticmaterialocculobe>
+    <!--geneticmateriallymanear-->
+  <entityname.geneticmateriallymanear>遺傳物質[萊曼之耳]</entityname.geneticmateriallymanear>
+  <entitydescription.geneticmateriallymanear>經過改造後的耳朵在外觀上和普通人類的耳朵並無差異，但它卻可以最大程度的保護人類避免眩暈和惡心感</entitydescription.geneticmateriallymanear>
+    <!--geneticmaterialsusanmembrane-->
+  <entityname.geneticmaterialsusanmembrane>遺傳物質[susan腦膜]</entityname.geneticmaterialsusanmembrane>
+  <entitydescription.geneticmaterialsusanmembrane>susan腦膜可以讓人類在受到致命傷害后依然保持著清醒</entitydescription.geneticmaterialsusanmembrane>
+    <!--geneticmaterialmelanochromic-->
+  <entityname.geneticmaterialmelanochromic>遺傳物質[色素控制球]</entityname.geneticmaterialmelanochromic>
+  <entitydescription.geneticmaterialmelanochromic>色素控制球的主要功能是防止紫外綫燒傷，但在木衛二的冰洋下，它也可以對輻射起到一定的抵抗作用</entitydescription.geneticmaterialmelanochromic>
+    <!--geneticmaterialmeloolitickidney-->
+  <entityname.geneticmaterialoolitickidney>遺傳物質[卵石腎臟]</entityname.geneticmaterialoolitickidney>
+  <entitydescription.geneticmaterialoolitickidney>卵石腎臟會在必要時刻分泌出大量腎上腺素來抵禦疼痛以及增强速度，并且具有輕微的毒素過濾能力</entitydescription.geneticmaterialoolitickidney>
+    <!--geneticmaterialneuroglottis-->
+  <entityname.geneticmaterialneuroglottis>遺傳物質[味覺監測神經]</entityname.geneticmaterialneuroglottis>
+  <entitydescription.geneticmaterialneuroglottis>味覺監測神經原本被設計未檢測多種毒素，然而在木衛二，位於口腔後部的神經可以有效抑制此處的畫皮寄生蟲的生長</entitydescription.geneticmaterialneuroglottis>
+    <!--geneticmaterialmucranoid-->
+  <entityname.geneticmaterialmucranoid>遺傳物質[汗腺改進器官]</entityname.geneticmaterialmucranoid>
+  <entitydescription.geneticmaterialmucranoid>改造過的汗腺將會在水壓和皮膚燒傷中提供一定的保護</entitydescription.geneticmaterialmucranoid>
+    <!--geneticmaterialblackbarapace-->
+  <entityname.geneticmaterialblackbarapace>遺傳物質[黑色甲殼]</entityname.geneticmaterialblackbarapace>
+  <entitydescription.geneticmaterialblackbarapace>只有植入了黑色甲殼才能發揮陶鋼動力甲的真正實力，并且這些植入的物體也可以讓人類在操控炮塔時更爲熟練和靈活</entitydescription.geneticmaterialblackbarapace>
+    <!--geneticmaterialsinewcoils-->
+  <entityname.geneticmaterialsinewcoils>遺傳物質[肌腱線圈]</entityname.geneticmaterialsinewcoils>
+  <entitydescription.geneticmaterialsinewcoils>強化過的肌肉使得你可以像戰車一樣撞向敵人，讓他們失去反抗的能力（奔跑時按下空格）</entitydescription.geneticmaterialsinewcoils>
+  <!--geneticmaterialmagnificat-->
+  <entityname.geneticmaterialmagnificat>遺傳物質[聖頌垂體]</entityname.geneticmaterialmagnificat>
+  <entitydescription.geneticmaterialmagnificat>這種植入大腦的改造垂體可以更好的激發人體的肌肉密度，使其生命力更加頑強</entitydescription.geneticmaterialmagnificat>
+    <!--geneticmaterialbelisarianfurnace-->
+  <entityname.geneticmaterialbelisarianfurnace>遺傳物質[貝利撒留熔爐]</entityname.geneticmaterialbelisarianfurnace>
+  <entitydescription.geneticmaterialbelisarianfurnace>貝利撒留熔爐又被稱為起死回生者，可以在人類受到過高傷害時使其進入假死狀態，據說很多原鑄星際戰士都因此逃過一死</entitydescription.geneticmaterialbelisarianfurnace>
+    
+   <!--powerarmorummk7-->
+   <entityname.ummk7>星際戰士動力甲（極限戰士）</entityname.ummk7>
+   <entitydescription.ummk7>陶鋼製造而成的動力甲，是爲真正的超級士兵准備的，一般人穿上去會寸步難行，也無法達到應有的防禦效果</entitydescription.ummk7>
+   <!--powerarmorUMterminator-->
+   <entityname.UMterminator>星際戰士終結者動力甲（極限戰士）</entityname.UMterminator>
+   <entitydescription.UMterminator>只有星際戰士中的佼佼者才能使用的動力甲，防禦力更加強大，但略顯笨重</entitydescription.UMterminator>
+   <!--servicestud-->
+   <entityname.servicestud>服役釘（銀)</entityname.servicestud>
+   <entitydescription.servicestud>一顆銀色服役釘象征著50年的作戰經驗，只有強悍的戰士才有資格獲得</entitydescription.servicestud>
+    <!--servicestudgold-->
+   <entityname.servicestudgold>服役釘（金）</entityname.servicestudgold>
+   <entitydescription.servicestudgold>一顆金色服役釘象征著100年的作戰經驗，只有最精良的戰士才有資格獲得</entitydescription.servicestudgold>
+    <!--purityseal-->
+   <entityname.purityseal>純潔印記</entityname.purityseal>
+   <entitydescription.purityseal>純潔印記上充盈著帝皇的賜福，將保護忠誠的戰士免受精神傷害以及輕微的物理外傷</entitydescription.purityseal>
+    <!--standard-->
+   <entityname.standard>戰旗</entityname.standard>
+   <entitydescription.standard>高貴的戰團戰旗，莫要讓異端玷汙了它</entitydescription.standard>
+    <!--lasrifle-->
+   <entityname.lasrifle>激光槍</entityname.lasrifle>
+   <entitydescription.lasrifle>星界軍的標準武器</entitydescription.lasrifle>
+   <!--laspistol-->
+   <entityname.laspistolwwbc>激光手槍</entityname.laspistolwwbc>
+   <entitydescription.laspistolwwbc>星界軍軍官經常會一手持劍一手拿著激光手槍作戰，相比於激光步槍而言激光手槍更加輕便</entitydescription.laspistolwwbc>
+    <!--laspistolrod-->
+   <entityname.laspistolrod>激光手槍電池</entityname.laspistolrod>
+   <entitydescription.laspistolrod>為激光手槍供能的電池，容量比常規電池略小，但製造起來更容易</entitydescription.laspistolrod>
+    <!--lasriflerod-->
+   <entityname.lasriflerod>激光槍電池</entityname.lasriflerod>
+   <entitydescription.lasriflerod>大容量的電池，為激光槍供能</entitydescription.lasriflerod>
+    <!--lasriflerod II-->
+   <entityname.lasriflerodII>激光槍電池II型</entityname.lasriflerodII>
+   <entitydescription.lasriflerodII>贊美帝皇，更優秀的電池可以殺死更多的異端</entitydescription.lasriflerodII>
+   <!--plasmagun-->
+   <entityname.plasmagun>等離子槍</entityname.plasmagun>
+   <entitydescription.plasmagun>笨重但卻致命的武器，出於安全考慮，它的過載模式被鎖定，只能采取標準模式射擊，請記住，忠誠的等離子永不過熱！</entitydescription.plasmagun>
+    <!--plasmagunrod-->
+   <entityname.plasmagunrod>小型等離子槍能量源</entityname.plasmagunrod>
+   <entitydescription.plasmagunrod>裝填著液氫燃料的容器，為了防止過熱的出現，裏面的燃料量被大大降低，一般只能完成兩次射擊</entitydescription.plasmagunrod>
+    <!--plasmagunrodII-->
+   <entityname.plasmagunrodII>中型等離子槍能量源</entityname.plasmagunrodII>
+   <entitydescription.plasmagunrodII>裝填著液氫燃料的容器，為了防止過熱的出現，裏面的燃料量被大大降低，一般只能完成四次射擊</entitydescription.plasmagunrodII>
+    <!--plasmagunrodIII-->
+   <entityname.plasmagunrodIII>大型等離子槍能量源</entityname.plasmagunrodIII>
+   <entitydescription.plasmagunrodIII>裝填著液氫燃料的容器，為了防止過熱的出現，裏面的燃料量被大大降低，一般只能完成八次射擊</entitydescription.plasmagunrodIII>
+   <!--bolter-->
+   <entityname.bolter>爆彈槍</entityname.bolter>
+   <entitydescription.bolter>爆彈槍是星際戰士的標準化武器，它們會給帝皇的敵人送去死亡</entitydescription.bolter>
+    <!--bolterstraightmagazine-->
+   <entityname.bolterstraightmagazine>爆彈直型彈匣</entityname.bolterstraightmagazine>
+   <entitydescription.bolterstraightmagazine>直型彈匣非常常見，因為他們更好攜帶，但同時它們糟糕的彈容量使得它無法勝任激烈的戰鬥</entitydescription.bolterstraightmagazine>
+   <!--boltermagazine-->
+   <entityname.boltermagazine>爆彈鐮式彈匣</entityname.boltermagazine>
+   <entitydescription.boltermagazine>鐮式彈匣提供更加充足的彈藥，但它們比直型彈匣要少見，且允許攜帶的數量更少</entitydescription.boltermagazine>
+   <!--bolternormal-->
+   <entityname.bolternormal>爆彈槍</entityname.bolternormal>
+   <entitydescription.bolternormal>爆彈槍是星際戰士的標準化武器，它們會給帝皇的敵人送去死亡</entitydescription.bolternormal>
+    <!--bolterstraightmagazinenormal-->
+   <entityname.bolterstraightmagazinenormal>爆彈直型彈匣</entityname.bolterstraightmagazinenormal>
+   <entitydescription.bolterstraightmagazinenormal>直型彈匣非常常見，因為他們更好攜帶，但同時它們糟糕的彈容量使得它無法勝任激烈的戰鬥</entitydescription.bolterstraightmagazinenormal>
+   <!--boltermagazinenormal-->
+   <entityname.boltermagazinenormal>爆彈鐮式彈匣</entityname.boltermagazinenormal>
+   <entitydescription.boltermagazinenormal>鐮式彈匣提供更加充足的彈藥，但它們比直型彈匣要少見，且允許攜帶的數量更少</entitydescription.boltermagazinenormal>
+   <!--bolterdrumnormal-->
+   <entityname.bolterdrumnormal>爆彈彈鼓</entityname.bolterdrumnormal>
+   <entitydescription.bolterdrumnormal>爆彈彈鼓現如今已經很少再被使用，製造它的配方早已不知所蹤，只有某些軍事哨所可能還保留著一些存貨</entitydescription.bolterdrumnormal>
+    <!--krieghelmet-->
+   <entityname.krieghelmet>克裏格頭盔</entityname.krieghelmet>
+   <entitydescription.krieghelmet>克裏格死亡兵團的標準頭盔，帶有防毒面具</entitydescription.krieghelmet>
+   <!--krieguniform-->
+   <entityname.krieguniform>克裏格軍裝</entityname.krieguniform>
+   <entitydescription.krieguniform>克裏格死亡兵團的標準軍裝，厚實包裹住身體，可以抵擋一些輻射傷害</entitydescription.krieguniform>
+   <!--kriegarmor-->
+   <entityname.kriegarmor>克裏格胸甲</entityname.kriegarmor>
+   <entitydescription.kriegarmor>克裏格死亡兵團的胸甲，裝備於擲彈兵團和軍官們，不僅防禦力優秀，還是身份的象征</entitydescription.kriegarmor>
+   <!--kriegcommissarcap-->
+   <entityname.kriegcommissarcap>克裏格政委帽</entityname.kriegcommissarcap>
+   <entitydescription.kriegcommissarcap>克裏格死亡兵團的政委軍帽，充滿著威嚴，激勵著身邊的將士們</entitydescription.kriegcommissarcap>
+   <!--commissarcap-->
+   <entityname.commissarcap>政委帽</entityname.commissarcap>
+   <entitydescription.commissarcap>星界軍政委的軍帽，充滿著威嚴，激勵著身邊的將士們</entitydescription.commissarcap>
+    <!--chainsword-->
+   <entityname.chainsword>鏈鋸劍</entityname.chainsword>
+   <entitydescription.chainsword>原本是科技蠻族的武器，現在它將撕碎帝皇之敵</entitydescription.chainsword>
+    <!--combatknife-->
+   <entityname.combatknife>戰鬥刀</entityname.combatknife>
+   <entitydescription.combatknife>子彈可能會耗盡，能源可能會枯竭，但忠誠的戰鬥刀永遠可以依靠</entitydescription.combatknife>
+    <!--powersword-->
+   <entityname.powersword>動力劍</entityname.powersword>
+   <entitydescription.powersword>每一把動力劍都可謂是神器，它們不僅僅是身份的象征，更能輕易的將敵人斬殺</entitydescription.powersword>
+   <!--powerhammer-->
+   <entityname.powerhammer>動力錘</entityname.powerhammer>
+   <entitydescription.powerhammer>極其強大的武器，只有植入了肌腱線圈的人在身穿動力甲的情況下才能發揮出他的真正威力————將一切生物都砸成肉泥</entitydescription.powerhammer>
+   <!--chainfist-->
+   <entityname.chainfist>鏈鋸拳</entityname.chainfist>
+   <entitydescription.chainfist>裝有小型鏈鋸的拳套，可以輕易的切割開墻體，當然也可以切割開異端</entitydescription.chainfist>
+   <!--stormbolter-->
+   <entityname.stormbolter>風暴爆彈槍</entityname.stormbolter>
+   <entitydescription.stormbolter>風暴爆彈槍的火力更猛，畢竟在最激烈的戰鬥中，換彈匣可能就意味著死亡</entitydescription.stormbolter>
+   <!--stormboltermagazine-->
+   <entityname.stormboltermagazine>風暴爆彈槍彈匣</entityname.stormboltermagazine>
+   <entitydescription.stormboltermagazine>為了供給給風暴爆彈槍足夠的火力，這種彈匣裏裝填有50發爆彈</entitydescription.stormboltermagazine>
+   <!--shovel-->
+   <entityname.shovel>工兵鏟</entityname.shovel>
+   <entitydescription.shovel>克裏格人經常使用這種輕便的武器，它可以輕易拆開墻體，也可以敲開敵人的腦袋</entitydescription.shovel>
+   <!--40mmradgrenade-->
+   <entityname.40mmradgrenade>40mm輻射榴彈</entityname.40mmradgrenade>
+   <entitydescription.40mmradgrenade>需要通過榴彈發射器發射，會釋放出強大的輻射，為了避免傷及使用者自己，爆炸的範圍比常規榴彈略小</entitydescription.40mmradgrenade>
+   <!--boardingshield-->
+   <entityname.boardingshield>跳幫盾</entityname.boardingshield>
+   <entitydescription.boardingshield>如果你想在海盜船上抵擋槍林彈雨，跳幫盾是不二之選</entitydescription.boardingshield>
+   <!--autopistol-->
+   <entityname.autopistol>德雷希安自動手槍</entityname.autopistol>
+   <entitydescription.autopistol>自動手槍已經是老舊的武器了，但它依然能用————叛徒們總是願意使用它</entitydescription.autopistol>
+   <!--pistolmagazine-->
+   <entityname.pistolmagazine>自動手槍彈匣</entityname.pistolmagazine>
+   <entitydescription.pistolmagazine>自動手槍彈匣，容彈量通常為10發。原始，但卻有效</entitydescription.pistolmagazine>
+   <!--handsmg-->
+   <entityname.handsmg>沃斯微型沖鋒槍</entityname.handsmg>
+   <entitydescription.handsmg>曾經有人在被它打成篩子前取笑過這把武器的性能，希望那個人不是你</entitydescription.handsmg>
+   <!--handsmgmagazine-->
+   <entityname.handsmgmagazine>微型沖鋒槍彈匣</entityname.handsmgmagazine>
+   <entitydescription.handsmgmagazine>微型沖鋒槍彈匣，能在短時間內將所有子彈傾瀉出去</entitydescription.handsmgmagazine>
+   <!--agripinaa-->
+   <entityname.agripinaa>阿格裏皮娜式步槍</entityname.agripinaa>
+   <entitydescription.agripinaa>鑄造世界打造的武器，槍聲聒噪但是傷害足夠，任何人都不應該小瞧這把武器</entitydescription.agripinaa>
+   <!--agripinaamagazine-->
+   <entityname.agripinaamagazine>阿格裏皮娜式步槍彈匣</entityname.agripinaamagazine>
+   <entitydescription.agripinaamagazine>經過改造後的40發子彈的大型彈匣，為阿格裏皮娜式步槍供彈</entitydescription.agripinaamagazine>
+   <!--hammer-->
+   <entityname.hammer>刺錘</entityname.hammer>
+   <entitydescription.hammer>全是釘刺的簡易武器，雖然如此，被這玩意擊中可不是什麽好事</entitydescription.hammer>
+   <!--flamethrower-->
+   <entityname.flamethrower>火焰噴射器</entityname.flamethrower>
+   <entitydescription.flamethrower>為了帝皇，用火焰凈化一切</entitydescription.flamethrower>
+   <!--flamethrowerfueltank-->
+   <entityname.flamethrowerfueltank>火焰噴射器燃料</entityname.flamethrowerfueltank>
+   <entitydescription.flamethrowerfueltank>噴火器使用的粘稠燃料，可以使用較長的時間</entitydescription.flamethrowerfueltank>
+   <!--handflamethrower-->
+   <entityname.handflamethrower>火焰噴射手槍</entityname.handflamethrower>
+   <entitydescription.handflamethrower>小巧耐用的火焰噴射手槍，更多用於近距離的自保</entitydescription.handflamethrower>
+   <!--handflamethrowerfueltank-->
+   <entityname.handflamethrowerfueltank>火焰噴射手槍燃料</entityname.handflamethrowerfueltank>
+   <entitydescription.handflamethrowerfueltank>這種燃料罐經過特殊工藝加工，更輕便易攜帶，但糟糕的容量使它無法擔任主要武器的職責</entitydescription.handflamethrowerfueltank>
+   <!--heavybolter-->
+   <entityname.heavybolter>重型爆彈槍</entityname.heavybolter>
+   <entitydescription.heavybolter>用於攻堅的重型武器，槍和彈藥都顯得比較笨重</entitydescription.heavybolter>
+    <!--heavyboltermagazine-->
+   <entityname.heavyboltermagazine>重型爆彈槍彈匣</entityname.heavyboltermagazine>
+   <entitydescription.heavyboltermagazine>這種彈藥口徑更大，裝藥更多，威力也非同尋常。由於過於笨重而攜帶困難</entitydescription.heavyboltermagazine>
+   <!--assaultcannon-->
+   <entityname.assaultcannon>突擊炮</entityname.assaultcannon>
+   <entitydescription.assaultcannon>擁有極高射速的壓製型武器，最適合在廢船和前哨站等狹小空間作戰。</entitydescription.assaultcannon>
+   <!--assaultcannonammobox-->
+   <entityname.assaultcannonammobox>突擊炮彈藥箱</entityname.assaultcannonammobox>
+   <entitydescription.assaultcannonammobox>用於給終結者動力甲所使用的突擊炮備彈的彈藥箱，容彈500發</entitydescription.assaultcannonammobox>
+   <!--automaticinjectionagent-->
+   <entityname.automaticinjectionagent>自動註射劑</entityname.automaticinjectionagent>
+   <entitydescription.automaticinjectionagent>星際戰士動力甲內置有沈思者陣列，會在星際戰士生命垂危時註射這種復合型藥劑，它幾乎能應對各種傷痛</entitydescription.automaticinjectionagent>
+   <!--bolterpistol-->
+   <entityname.bolterpistol>爆彈手槍</entityname.bolterpistol>
+   <entitydescription.bolterpistol>爆彈手槍子彈容量很少，一般不用於激烈的戰鬥，一些足夠強大的凡人軍官會使用這種武器</entitydescription.bolterpistol>
+   <!--bolterpistolmagazine-->
+   <entityname.bolterpistolmagazine>爆彈手槍彈匣</entityname.bolterpistolmagazine>
+   <entitydescription.bolterpistolmagazine>內置8發常規口徑的爆彈，威力足夠但數量有限，最大的優點是方便攜帶</entitydescription.bolterpistolmagazine>
+   <!--sunderarmorgrenade-->
+   <entityname.sunderarmorgrenade>破甲手榴彈</entityname.sunderarmorgrenade>
+   <entitydescription.sunderarmorgrenade>人類帝國使用的一種手榴彈，能提供良好的結構損傷以及高傷害</entitydescription.sunderarmorgrenade>
+   <!--concussiongrenade-->
+   <entityname.concussiongrenade>震蕩手榴彈</entityname.concussiongrenade>
+   <entitydescription.concussiongrenade>帝國水兵擅長使用這種手榴彈，它的爆炸可以眩暈並且震飛敵人。最重要的是，它的爆炸不會損傷船殼，因此經常被用於跳幫戰和反跳幫戰</entitydescription.concussiongrenade>
+   <!--boltermagazinenormal_hellfire-->
+   <entityname.boltermagazinenormal_hellfire>地獄火爆彈彈匣</entityname.boltermagazinenormal_hellfire>
+   <entitydescription.boltermagazinenormal_hellfire>用於對付大群敵人時使用的特殊爆彈，命中後會爆炸並在爆炸區域內造成猶如重爆彈一樣的傷害</entitydescription.boltermagazinenormal_hellfire>
+   <!--combatshotgun-->
+   <entityname.combatshotgun>海軍霰彈槍</entityname.combatshotgun>
+   <entitydescription.combatshotgun>雖然說武裝水兵們的主要武器是激光槍，但在一些特殊情況下依然會使用霰彈槍這種武器作戰</entitydescription.combatshotgun>
+   <!--combatshotgunshell_boarding-->
+   <entityname.combatshotgunshell_boarding>跳幫霰彈</entityname.combatshotgunshell_boarding>
+   <entitydescription.combatshotgunshell_boarding>這種霰彈被廣泛運用在跳幫和反跳幫作戰中，它散布小威力集中且不會損傷船殼</entitydescription.combatshotgunshell_boarding>
+   <!--combatshotgunshell-->
+   <entityname.combatshotgunshell>常規霰彈</entityname.combatshotgunshell>
+   <entitydescription.combatshotgunshell>常規霰彈以在小片區域內射出多個彈片的方式殺傷目標，在近距離內它們的傷害甚至可以超過激光槍</entitydescription.combatshotgunshell>
+   <!--combatshotgunshell_rifledslug-->
+   <entityname.combatshotgunshell_rifledslug>獨頭霰彈</entityname.combatshotgunshell_rifledslug>
+   <entitydescription.combatshotgunshell_rifledslug>某些人認為獨頭霰彈不屬於霰彈，不過無所謂，它能從霰彈槍裏被激發，並且精準命中目標</entitydescription.combatshotgunshell_rifledslug>
+   <!--combatshotgunshell_hellfire-->
+   <entityname.combatshotgunshell_hellfire>地獄火霰彈</entityname.combatshotgunshell_hellfire>
+   <entitydescription.combatshotgunshell_hellfire>類似於星際戰士的地獄火爆彈的低配版，通過霰彈槍發射，可以殺傷大量敵人</entitydescription.combatshotgunshell_hellfire>
+   <!--boltermagazinenormal_armored-->
+   <entityname.boltermagazinenormal_armored>被甲爆彈彈匣</entityname.boltermagazinenormal_armored>
+   <entitydescription.boltermagazinenormal_armored>一種專門被設計用來擊穿動力甲的特種爆彈</entitydescription.boltermagazinenormal_armored>
+   <!--boltermagazinenormal_implosion-->
+   <entityname.boltermagazinenormal_implosion>內爆爆彈彈匣</entityname.boltermagazinenormal_implosion>
+   <entitydescription.boltermagazinenormal_implosion>這是一種實驗性的彈匣，製作原理早已不為人知，在命中肉體後會形成一個小型的致命真空空間，就連星際戰士都會因此受到不小的傷害</entitydescription.boltermagazinenormal_implosion>
+    <!--combatshotgunshell_flare-->
+   <entityname.combatshotgunshell_flare>低速照明霰彈</entityname.combatshotgunshell_flare>
+   <entitydescription.combatshotgunshell_flare>克裏格工兵們會使用這種照明彈，它們擁有諸多用途：提供光亮，發出信號，標記等等，當然也可以在緊急情況下用來射擊敵人</entitydescription.combatshotgunshell_flare>
+   <!--combatshotgunshell_radgas-->
+   <entityname.combatshotgunshell_radgas>輻射毒氣霰彈</entityname.combatshotgunshell_radgas>
+   <entitydescription.combatshotgunshell_radgas>實質上是一種微型的輻射榴彈，改裝成由霰彈槍發射</entitydescription.combatshotgunshell_radgas>
+   <!--combatshotgunshell_armored-->
+   <entityname.combatshotgunshell_armored>被甲霰彈</entityname.combatshotgunshell_armored>
+   <entitydescription.combatshotgunshell_armored>特別改造的霰彈，每顆彈丸都具有一定的破甲效果，就連穿著動力甲的星際戰士都得忌憚三分</entitydescription.combatshotgunshell_armored>
+   <!--combatshotgunshell_stun-->
+   <entityname.combatshotgunshell_stun>眩暈霰彈</entityname.combatshotgunshell_stun>
+   <entitydescription.combatshotgunshell_stun>用於鎮壓暴動的霰彈，屬於非致命武器</entitydescription.combatshotgunshell_stun>
+   <!--radiotoxingrenade-->
+   <entityname.radiotoxingrenade>輻射毒氣手榴彈</entityname.radiotoxingrenade>
+   <entitydescription.radiotoxingrenade>內含危險的輻射毒氣，通常用於特種任務————比如在不毀壞船體的情況下俘獲敵艦</entitydescription.radiotoxingrenade>
+   <!--Medikit-->
+   <entityname.Medikit>戰地急救包</entityname.Medikit>
+   <entitydescription.Medikit>星界軍班級裝備，在每個前哨站都能夠買到，一名熟練的醫生可以使用急救包快速治療多種傷害</entitydescription.Medikit>
+   <!--license-->
+   <entityname.license>私掠許可證</entityname.license>
+   <entitydescription.license>這份許可有些年頭了，它由帝國的權威機構頒發，賦予持有者私掠權和行商權</entitydescription.license>
+   <!--cargometalcrate-->
+   <entityname.cargometalcrate>運輸保險箱</entityname.cargometalcrate>
+   <entitydescription.cargometalcrate>為了確保貨物不會被人偷走，帝國往往會使用這種箱子進行貨物運送</entitydescription.cargometalcrate>
+   <!--rebeluniform-->
+   <entityname.rebeluniform>叛軍服裝</entityname.rebeluniform>
+   <entitydescription.rebeluniform>叛徒們常穿的衣服，臟兮兮的</entitydescription.rebeluniform>
+   <!--rebelmask-->
+   <entityname.rebelmask>叛軍面具</entityname.rebelmask>
+   <entitydescription.rebelmask>叛徒們常用的面具，懦夫總是怯於露出自己的面目</entitydescription.rebelmask>
+   <!--hellpistol-->
+   <entityname.hellpistol>地獄手槍</entityname.hellpistol>
+   <entitydescription.hellpistol>擁有更大功率的激光手槍，通常配發給高級的軍官使用</entitydescription.hellpistol>
+   <!--hellpistolrod-->
+   <entityname.hellpistolrod>地獄手槍電池</entityname.hellpistolrod>
+   <entitydescription.hellpistolrod>地獄手槍本來需要沈重的電池背包為它供電，而在木衛二的機械神教製造出了一種實驗性的一次性電池，它能為地獄手槍短暫供能，但無法再次充電，因為過高的熱量會直接燒毀電池</entitydescription.hellpistolrod>
+    <!--lasrifleboltround-->
+   <entityname.lasrifleboltround>激光槍彈藥</entityname.lasrifleboltround>
+    <!--laspistolboltround-->
+   <entityname.laspistolboltround>激光手槍彈藥</entityname.laspistolboltround>
+   <!--bolterround-->
+   <entityname.bolterround>爆彈槍彈藥</entityname.bolterround>
+   <!--stormbolterround-->
+   <entityname.stormbolterround>風暴爆彈槍彈藥</entityname.stormbolterround>
+   <!--pistolround-->
+   <entityname.pistolround>手槍彈藥</entityname.pistolround>
+   <!--agripinaaround-->
+   <entityname.agripinaaround>步槍彈藥</entityname.agripinaaround>
+   <!--heavybolterround-->
+   <entityname.heavybolterround>重爆彈彈藥</entityname.heavybolterround>
+   <!--assaultcannonround-->
+   <entityname.assaultcannonround>突擊炮彈藥</entityname.assaultcannonround>
+   <!--bolterround_hellfire-->
+   <entityname.bolterround_hellfire>地獄火爆彈彈藥</entityname.bolterround_hellfire>
+   <!--bolterround_armored-->
+   <entityname.bolterround_armored>被甲爆彈彈藥</entityname.bolterround_armored>
+   <!--bolterround_implosion-->
+   <entityname.bolterround_implosion>內爆爆彈彈藥</entityname.bolterround_implosion>
+   <!--shotgunshell_flare-->
+   <entityname.shotgunshell_flare>低速照明彈光亮</entityname.shotgunshell_flare>
+   <!--hellpistolboltround-->
+   <entityname.hellpistolboltround>地獄手槍彈藥</entityname.hellpistolboltround>
+
+   <missionname.abandonedoutpostpurify>凈化前哨站</missionname.abandonedoutpostpurify>
+   <missiondescription.abandonedoutpostpurify>我們與 [location1]失去了聯系，叛軍已經擊敗了此處的帝國忠誠派，凈化他們的罪孽，一個不留。</missiondescription.abandonedoutpostpurify>
+   <missionsuccess.abandonedoutpostpurify>我們凈化了前哨站，願忠誠的靈魂安息。</missionsuccess.abandonedoutpostpurify>
+   <missionfailure.abandonedoutpostpurify>我們未能凈化那些叛軍的罪孽。</missionfailure.abandonedoutpostpurify>
+   <missionheader0.abandonedoutpostpurify>已消滅所有敵人</missionheader0.abandonedoutpostpurify>
+   <missionmessage0.abandonedoutpostpurify>贊美神皇，我們已經凈化了此地。</missionmessage0.abandonedoutpostpurify>
+
+   <missionname.abandonedoutposthusk>畫皮哨站</missionname.abandonedoutposthusk>
+   <missiondescription.abandonedoutposthusk>以研究為由接收了一批畫皮卵的[location1]現在和我們失去了聯系，我們有理由認為那裏已經爆發了生化危機，消滅異形，士兵。</missiondescription.abandonedoutposthusk>
+   <missionsuccess.abandonedoutposthusk>這裏的畫皮危機被解除</missionsuccess.abandonedoutposthusk>
+   <missionfailure.abandonedoutposthusk>這裏的畫皮依然活躍</missionfailure.abandonedoutposthusk>
+   <missionheader0.abandonedoutposthusk>已殺死所有感染體</missionheader0.abandonedoutposthusk>
+   <missionmessage0.abandonedoutposthusk>異形，你的下場只能是死亡！</missionmessage0.abandonedoutposthusk>
+
+   <afflictionname.excessiverecoil>過大後坐力</afflictionname.excessiverecoil>
+   <afflictiondescription.excessiverecoil>你也許不應該嘗試這種武器，過大的後坐力讓你十分痛苦</afflictiondescription.excessiverecoil>
+   <afflictioncauseofdeath.excessiverecoil>死於過大後坐力</afflictioncauseofdeath.excessiverecoil>
+   <afflictioncauseofdeathself.excessiverecoil>下次不要在這樣使用武器了</afflictioncauseofdeathself.excessiverecoil>
+   <afflictionname.excessiverecoilplus>過大後坐力</afflictionname.excessiverecoilplus>
+   <afflictiondescription.excessiverecoilplus>你也許不應該嘗試這種武器，過大的後坐力讓你十分痛苦</afflictiondescription.excessiverecoilplus>
+   <afflictioncauseofdeath.excessiverecoilplus>死於過大後坐力</afflictioncauseofdeath.excessiverecoilplus>
+   <afflictioncauseofdeathself.excessiverecoilplus>下次不要在這樣使用武器了</afflictioncauseofdeathself.excessiverecoilplus>
+   <afflictionname.shreddedarmor>破甲傷害</afflictionname.shreddedarmor>
+   <afflictiondescription.shreddedarmor>破甲彈片嵌入了你的身體</afflictiondescription.shreddedarmor>
+   <afflictioncauseofdeath.shreddedarmor>死於破甲傷害</afflictioncauseofdeath.shreddedarmor>
+   <afflictioncauseofdeathself.shreddedarmor>死於破甲傷害</afflictioncauseofdeathself.shreddedarmor>
+
+   <talentname.usepowerarmor>黑色甲殼成功植入</talentname.usepowerarmor>
+   <afflictionname.barapace>動力甲功能已上綫</afflictionname.barapace>
+   <afflictionname.barapaceplus>終結者動力甲功能已上線</afflictionname.barapaceplus>
+   <talentname.dashing>肌腱線圈成功植入</talentname.dashing>
+   <talentname.judge>審判之錘</talentname.judge>
+  
+  <!--[Afflictions]-->
+  <!--eyeball-->
+  <afflictionname.eyeball1>betcher腺體</afflictionname.eyeball1>
+  <afflictiondescription.eyeball1>腺體内有强酸，可以在瞬間向四周噴出并且灼燒敵人，并且因爲你體内已經含有强酸，所以其他酸無法再對你造成傷害</afflictiondescription.eyeball1>
+  <!--secondaryheart-->
+  <afflictionname.secondaryheart>第二心臟</afflictionname.secondaryheart>
+  <afflictiondescription.secondaryheart>第二心臟使人類的身體更加的强壯且耐打</afflictiondescription.secondaryheart>
+  <!--ossmodula-->
+  <afflictionname.ossmodula>骨强化器官</afflictionname.ossmodula>
+  <afflictiondescription.ossmodula>骨强化器官使得人類能抵禦更多的傷害</afflictiondescription.ossmodula>
+  <!--biscopea-->
+  <afflictionname.biscopea>肌肉强化器官</afflictionname.biscopea>
+  <afflictiondescription.biscopea>强化了人類的肌肉力量與密度，增加近戰傷害，近戰速度以及移動速度</afflictiondescription.biscopea>
+  <!--haemastamen-->
+  <afflictionname.haemastamen>血液再造器官</afflictionname.haemastamen>
+  <afflictiondescription.haemastamen>你體内的血液再生速度很快，失血過多的情況大大減少，同時血液流速加快，供氧能力更强</afflictiondescription.haemastamen>
+  <!--larramanorgan-->
+  <afflictionname.larramanorgan>拉瑞曼器官</afflictionname.larramanorgan>
+  <afflictiondescription.larramanorgan>拉瑞曼細胞會快速形成皮膚組織進行止血和治療暴露的傷口，對燒傷也有一定的效果</afflictiondescription.larramanorgan>
+  <!--catalepseannode-->
+  <afflictionname.catalepseannode>神經結</afflictionname.catalepseannode>
+  <afflictiondescription.catalepseannode>神經結的存在不僅使得人類的各項技能水平有所提高，學習速度也得到了提升</afflictiondescription.catalepseannode>
+  <!--preomnor-->
+  <afflictionname.preomnor>預置胃</afflictionname.preomnor>
+  <afflictiondescription.preomnor>預置胃使得人類對毒素的抗性有了一定的提升</afflictiondescription.preomnor>
+  <!--omophage-->
+  <afflictionname.omophage>基因偵測神經</afflictionname.omophage>
+  <afflictiondescription.omophage>這種改造可以讓你的基因不斷優化最終接近完美，使得你收到的所有治療都更加有效，并且顯著降低可能的藥物成癮</afflictiondescription.omophage>
+  <!--multilung-->
+  <afflictionname.multilung>多肺</afflictionname.multilung>
+  <afflictiondescription.multilung>人工肺可以讓你在無氧環境下堅持的更久，也可以抵擋一些輕微的毒素</afflictiondescription.multilung>
+  <!--occulobe-->
+  <afflictionname.occulobe>視覺控制器官</afflictionname.occulobe>
+  <afflictiondescription.occulobe>視覺控制器官使得人類的遠程武器操作技巧大幅的提升，槍械在你手中更加致命</afflictiondescription.occulobe>
+  <!--lymanear-->
+  <afflictionname.lymanear>萊曼之耳</afflictionname.lymanear>
+  <afflictiondescription.lymanear>經過改造後的耳朵在外觀上和普通人類的耳朵並無差異，但它卻可以最大程度的保護人類避免眩暈和惡心感</afflictiondescription.lymanear>
+  <!--susanmembrane-->
+  <afflictionname.susanmembrane>susan腦膜</afflictionname.susanmembrane>
+  <afflictiondescription.susanmembrane>susan腦膜可以讓人類在受到致命傷害后依然保持著清醒</afflictiondescription.susanmembrane>
+  <!--melanochromic-->
+  <afflictionname.melanochromic>色素控制球</afflictionname.melanochromic>
+  <afflictiondescription.melanochromic>色素控制球的主要功能是防止紫外綫燒傷，但在木衛二的冰洋下，它也可以對輻射起到一定的抵抗作用</afflictiondescription.melanochromic>
+  <!--oolitickidney-->
+  <afflictionname.oolitickidney>卵石腎臟</afflictionname.oolitickidney>
+  <afflictiondescription.oolitickidney>卵石腎臟會在必要時刻分泌出大量腎上腺素來抵禦疼痛以及增强速度，并且具有輕微的毒素過濾能力</afflictiondescription.oolitickidney>
+  <!--neuroglottis-->
+  <afflictionname.neuroglottis>味覺監測神經</afflictionname.neuroglottis>
+  <afflictiondescription.neuroglottis>味覺監測神經原本被設計未檢測多種毒素，然而在木衛二，位於口腔後部的神經可以有效抑制此處的畫皮寄生蟲的生長</afflictiondescription.neuroglottis>
+  <!--mucranoid-->
+  <afflictionname.mucranoid>汗腺改進器官</afflictionname.mucranoid>
+  <afflictiondescription.mucranoid>改造過的汗腺將會在水壓和皮膚燒傷中提供一定的保護</afflictiondescription.mucranoid>
+  <!--blackbarapace-->
+  <afflictionname.blackbarapace>黑色甲殼</afflictionname.blackbarapace>
+  <afflictiondescription.blackbarapace>只有植入了黑色甲殼才能發揮陶鋼動力甲的真正實力，并且這些植入的物體也可以讓人類在操控炮塔時更爲熟練和靈活</afflictiondescription.blackbarapace>
+  <!--sinewcoils-->
+  <afflictionname.sinewcoils>肌腱線圈</afflictionname.sinewcoils>
+  <afflictiondescription.sinewcoils>強化過的肌肉使得你更加健壯，你甚至可以像戰車一樣撞向敵人，讓他們失去反抗的能力（奔跑時按下空格）</afflictiondescription.sinewcoils>
+  <!--magnificat-->
+  <afflictionname.magnificat>聖頌垂體</afflictionname.magnificat>
+  <afflictiondescription.magnificat>這種植入大腦的改造垂體可以更好的激發人體的肌肉密度，使其生命力更加頑強</afflictiondescription.magnificat>
+  <!--belisarianfurnace-->
+  <afflictionname.belisarianfurnace>貝利撒留熔爐</afflictionname.belisarianfurnace>
+  <afflictiondescription.belisarianfurnace>貝利撒留熔爐又被稱為起死回生者，可以在人類受到過高傷害時使其進入假死狀態，據說很多原鑄星際戰士都因此逃過一死</afflictiondescription.belisarianfurnace>
+
+  <!--[Characters]-->
+    <!--betchergland-->
+  <character.betchergland>betcher腺體</character.betchergland>
+    <!--secondaryheart-->
+  <character.secondaryheart>第二心臟</character.secondaryheart>
+    <!--ossmodula-->
+  <character.ossmodula>骨强化器官</character.ossmodula>
+    <!--biscopea-->
+  <character.biscopea>肌肉强化器官</character.biscopea>
+    <!--haemastamen-->
+  <character.haemastamen>血液再造器官</character.haemastamen>
+    <!--larramanorgan-->
+  <character.larramanorgan>拉瑞曼器官</character.larramanorgan>
+    <!--catalepseannode-->
+  <character.catalepseannode>神經結</character.catalepseannode>
+    <!--preomnor-->
+  <character.preomnor>預置胃</character.preomnor>
+    <!--omophage-->
+  <character.omophage>基因偵測神經</character.omophage>
+    <!--multilung-->
+  <character.multilung>多肺</character.multilung>
+    <!--occulobe-->
+  <character.occulobe>視覺控制器官</character.occulobe>
+    <!--lymanear-->
+  <character.lymanear>萊曼之耳</character.lymanear>
+    <!--melanochromic-->
+  <character.melanochromic>色素控制球</character.melanochromic>
+    <!--oolitickidney-->
+  <character.oolitickidney>卵石腎臟</character.oolitickidney>
+    <!--neuroglottis-->
+  <character.neuroglottis>味覺監測神經</character.neuroglottis>
+    <!--mucranoid-->
+  <character.mucranoid>汗腺改進器官</character.mucranoid>
+    <!--blackbarapace-->
+  <character.blackbarapace>黑色甲殼</character.blackbarapace>
+    <!--susanmembrane-->
+  <character.susanmembrane>susan腦膜</character.susanmembrane>
+   <!--sinewcoils-->
+  <character.sinewcoils>肌腱線圈</character.sinewcoils>
+   <!--magnificat-->
+  <character.magnificat>聖頌垂體</character.magnificat>
+   <!--belisarianfurnace-->
+  <character.belisarianfurnace>貝利撒留熔爐</character.belisarianfurnace>
+
+<!--event-->
+<eventtext.licensecheck.c1>一名帝國衛兵正在挨個檢查來往的人群，他看到了你：「嘿！就是你，過來！我知道你是從其他站點來到這裏的，你身上可有帝國發行的私掠許可證？」</eventtext.licensecheck.c1>
+<eventtext.licensecheck.o1>「呃，你說的是私掠許可證麽？我當然有啊。」</eventtext.licensecheck.o1>
+<eventtext.licensecheck.o1.c1>衛兵向你伸出手：「給我看看你的證件，這是例行檢查。」</eventtext.licensecheck.o1.c1>
+<eventtext.licensecheck.o1.o1>找找自己身上有沒有私掠許可證</eventtext.licensecheck.o1.o1>
+<eventtext.licensecheck.o1.o1.c1>「啊，尊敬的行商浪人，很抱歉打擾了你，你現在可以走了。」衛兵將私掠許可證還給了你</eventtext.licensecheck.o1.o1.c1>
+<eventtext.licensecheck.o1.o1.o1>麻煩的衛兵……</eventtext.licensecheck.o1.o1.o1>
+<eventtext.licensecheck.o1.o1.c2>「嘿！如果你身上沒有帝國的許可證，那可不是什麽好事啊。」衛兵拿出一張新的私掠許可證：「拿著吧，但是你得支付2000點的罰款。」</eventtext.licensecheck.o1.o1.c2>
+<eventtext.licensecheck.o1.o1.o2>真倒黴。</eventtext.licensecheck.o1.o1.o2>
+<eventtext.licensecheck.o2>也許你應該逃跑</eventtext.licensecheck.o2>
+<eventtext.licensecheck.o2.c1>「啊！看那！」你大喊一聲，胡亂指了個方向，然後轉身就跑</eventtext.licensecheck.o2.c1>
+<eventtext.licensecheck.o2.o1>衛兵在人群中大喊著想追你，但最終還是被你甩掉了</eventtext.licensecheck.o2.o1>
+<eventtext.licensecheck.o2.c2>「老實點！」衛兵舉起了手中的武器</eventtext.licensecheck.o2.c2>
+<eventtext.licensecheck.o2.o2>糟糕。</eventtext.licensecheck.o2.o2>
+
+<eventtext.drunkenman.c1>一個醉醺醺的衛兵朝你走了過來，一邊走一邊叫罵著什麽</eventtext.drunkenman.c1>
+<eventtext.drunkenman.o1>看看他要做什麽。</eventtext.drunkenman.o1>
+<eventtext.drunkenman.o1.c1>衛兵帶著酒氣走到你面前，和你撞了個滿懷，他憤怒地擡頭看向你，剛想發話，卻似乎突然認出了你的身份。「抱歉，長官。」他嘟囔著，把一包東西塞到你手裏：「別和我的上級提起這事……」</eventtext.drunkenman.o1.c1>
+<eventtext.drunkenman.o1.o1>那是一包錢。</eventtext.drunkenman.o1.o1>
+<eventtext.drunkenman.o1.c2>衛兵嘟嘟囔囔地推搡著你，突然往你的臉上來了一拳</eventtext.drunkenman.o1.c2>
+<eventtext.drunkenman.o1.o2>該死的！</eventtext.drunkenman.o1.o2>
+<eventtext.drunkenman.o2>避免與其接觸。</eventtext.drunkenman.o2>
+<eventtext.drunkenman.o2.c1>你混入了人群裏，那個酒鬼的叫罵聲越來越遠。</eventtext.drunkenman.o2.c1>
+<eventtext.drunkenman.o2.o1>酒鬼。</eventtext.drunkenman.o2.o1>
+<eventtext.drunkenman.o2.c2>這個酒鬼大聲叫喊著來拉你的衣服，你剛回過頭，臉上就挨了一拳</eventtext.drunkenman.o2.c2>
+<eventtext.drunkenman.o2.o2>該死的！</eventtext.drunkenman.o2.o2>
+
+<eventtext.reinforcement.c1>你剛走進前哨站的管理室，一名身穿克裏格死亡兵團製服的士兵向你走來：\n\n「向你報到，長官！我來自克裏格死亡軍團第51團，編號5135-3840，接受上級命令加入你的戰艦。」\n</eventtext.reinforcement.c1>
+<eventtext.reinforcement.o1>一名克裏格士兵！？</eventtext.reinforcement.o1>
+<eventtext.reinforcement.o1.c1>「我接受到命令，搭載你的潛艇一路抵達淵洋之底。艦長，申請登艦！」</eventtext.reinforcement.o1.c1>
+<eventtext.reinforcement.o1.o1>登艦請求已批準。</eventtext.reinforcement.o1.o1>
+<eventtext.reinforcement.o1.o1.c1>克裏格人向你敬了個禮，默默地走進了潛艇</eventtext.reinforcement.o1.o1.c1>
+<eventtext.reinforcement.o1.o2>也許不應該讓這個克裏格士兵上船，畢竟他們的脾氣很古怪。</eventtext.reinforcement.o1.o2>
+<eventtext.reinforcement.o1.o2.c1>「抱歉，士兵，我的潛艇已經滿員了。」</eventtext.reinforcement.o1.o2.c1>
+<eventtext.reinforcement.o2>“抱歉，我的船上已經沒有更多的空間再搭載一名戰士了。”</eventtext.reinforcement.o2>
+<eventtext.reinforcement.o2.c1>克裏格人一言不發地離開了</eventtext.reinforcement.o2.c1>
+
+<!--loadingscreentip-->
+<loadingscreentip>歡迎使用「星際戰士改造手術和更多的WH40k裝備」 玩的開心！</loadingscreentip>
+<loadingscreentip>手術基因很珍貴，盡可能讓它們的純度達到最高</loadingscreentip>
+<loadingscreentip>贊美神皇！贊美神聖泰拉！</loadingscreentip>
+<loadingscreentip>如果沒有黑色甲殼，再強大的動力甲都只是擺設</loadingscreentip>
+<loadingscreentip>爆彈槍後座力很大，如果沒有動力甲保護，凡人使用會導致受傷</loadingscreentip>
+<loadingscreentip>想嘗試爆彈的高威力，又無法激活動力甲？可以去試試爆彈手槍！</loadingscreentip>
+<loadingscreentip>等離子武器威力巨大，門、結構和人體都可以被撕碎，但需要較長時間的準備</loadingscreentip>
+<loadingscreentip>救命！有人能看到這條tip麽，我現在被困在亞空間，只能靠這種方式求救！</loadingscreentip>
+<loadingscreentip>風暴爆彈槍只需要一只手就能使用，但是它過大的後座力使得你必需激活終結者動力甲才能正常使用</loadingscreentip>
+<loadingscreentip>阿斯塔特聖典第一條：如果你在使用此mod時出現錯誤，立刻向創意工坊留言區報告</loadingscreentip>
+<loadingscreentip>重爆彈和突擊炮威力巨大，只有終結者動力甲才能駕馭住它們</loadingscreentip>
+<loadingscreentip>跳幫盾很重，如果你是凡人，請不要嘗試去拿起它，它不是石中劍</loadingscreentip>
+<loadingscreentip>小心動力劍、破甲手榴彈等破甲武器，它們對於星際戰士而言也是致命的</loadingscreentip>
+<loadingscreentip>凡人的裝備也很強大，請不要忽視凡人的力量</loadingscreentip>
+<loadingscreentip>星界軍步兵班手冊第二條：激光武器的電池可以再充電，請在戰鬥後及時充電</loadingscreentip>
+<loadingscreentip>不要長時間使用突擊炮開火，就連終結者動力甲都無法完全抵擋它的強大後座力</loadingscreentip>
+<loadingscreentip>如果你受到了破甲傷害以及後座力傷害，請使用戰地急救包進行救治</loadingscreentip>
+<loadingscreentip>不要嘗試去偷走運輸的物品，帝國會把這些物資都鎖起來</loadingscreentip>
+<loadingscreentip>星際戰士的火焰噴射器溫度很高，甚至能用來切開艙門</loadingscreentip>
+<loadingscreentip>如果你倒下了，你一定會希望你的動力甲裏有一劑自動註射劑的</loadingscreentip>
+<loadingscreentip>熟練的帝國水兵總是精通各種霰彈的作用，並在恰當的時機使用它們</loadingscreentip>
+<loadingscreentip>私掠許可證是一種古老的授權證件，如今依然有作用————至少在你面對煩人的衛兵的時候</loadingscreentip>
+<loadingscreentip>克裏格的工兵鏟擁有很高的結構傷害，並且是一件趁手的武器</loadingscreentip>
+<loadingscreentip>即使能源耗盡，動力劍依然是一把鋒利的武器</loadingscreentip>
+<loadingscreentip>星際戰士的動力甲都可以攜帶兩個氧氣瓶，以及一份藥劑</loadingscreentip>
+<loadingscreentip>靈活的在實彈和激光武器之中選擇，它們各自有優點和缺陷</loadingscreentip>
+<loadingscreentip>戰旗可以發出耀眼的光芒並且照亮四周，在黑暗的環境下相當有用</loadingscreentip>
+<loadingscreentip>一些特殊武器不會對船體造成傷害，優先在跳幫戰和反跳幫戰中使用它們</loadingscreentip>
+<loadingscreentip>有些廢棄的前哨站內盤踞有大量的叛軍，肅清他們的時候請務必小心</loadingscreentip>
+<loadingscreentip>對付一名敵對的星際戰士的最好辦法就是另一名星際戰士</loadingscreentip>
+<loadingscreentip>勇氣與榮耀！————極限戰士戰團</loadingscreentip>
+<loadingscreentip>為瑪庫拉德而戰！————極限戰士戰團</loadingscreentip>
+<loadingscreentip>帝國的根基立於犧牲之上,烈士的鮮血是帝國的火種</loadingscreentip>
+<loadingscreentip>信仰乃吾之盾，憤怒乃吾之劍</loadingscreentip>
+<loadingscreentip>炮烙奸佞,族滅醜類,滌蕩垢孽</loadingscreentip>
+<loadingscreentip>激光武器造成的是燒傷，普通的防彈衣無法有效抵擋這種傷害</loadingscreentip>
+<loadingscreentip>鏈鋸劍通過燃料棒提供能量源，而鏈鋸齒本身也是消耗品</loadingscreentip>
+<loadingscreentip>動力劍使用外星電池提供能量，是一把強大的近戰武器</loadingscreentip>
+
+<jobname.servitor>機仆</jobname.servitor>
+
+</infotext>

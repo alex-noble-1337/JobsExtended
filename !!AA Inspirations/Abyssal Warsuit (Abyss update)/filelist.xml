@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Abyssal Warsuit (Abyss update)" path="Mods/Abyssal Warsuit (Abyss update)/filelist.xml" corepackage="false" gameversion="0.15.22.1" steamworkshopid="2480342460" installtime="1641253691">
+  <Item file="Mods/Abyssal Warsuit (Abyss update)/Items/items.xml" />
+  <Afflictions file="Mods/Abyssal Warsuit (Abyss update)/Afflictions.xml" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/energy.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/icons.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/classicinvicon.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/inventoryicons.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/marine1_body.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/marine1_legs.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/marine2_body.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/marine2_legs.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/marine3_body.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/marine3_legs.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/marinehelmet.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/marinehelms.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/painted.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/pieces.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/rodsicons.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/wristlight.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Sounds/sounds.xml" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Sounds/warsuit_footstep_1.ogg" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Sounds/warsuit_footstep_2.ogg" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Sounds/warsuit_footstep_3.ogg" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Sounds/warsuit_footstep_4.ogg" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/Container/containers.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/Container/Full suit/contained0.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/Container/Full suit/contained1.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/Container/Full suit/contained2.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/Container/Full suit/contained3.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/Container/Full suit/marine0_items.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/Container/Full suit/marine1_items.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/Container/Full suit/marine2_items.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/Container/Full suit/marine3_items.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/Container/No helm/contained0.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/Container/No helm/contained1.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/Container/No helm/contained2.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/Container/No helm/contained3.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/Container/No helm/marine0_items.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/Container/No helm/marine1_items.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/Container/No helm/marine2_items.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/Container/No helm/marine3_items.png" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/Items/marine.png" />
+  <Text file="Mods/Abyssal Warsuit (Abyss update)/Text/English.xml" />
+  <Text file="Mods/Abyssal Warsuit (Abyss update)/Text/Polish.xml" />
+  <None file="Mods/Abyssal Warsuit (Abyss update)/UI/icons.png" />
+</contentpackage>

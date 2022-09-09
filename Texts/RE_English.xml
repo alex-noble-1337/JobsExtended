@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+
+	<!--Afflictions-->
+	
+	<afflictionname.stimulants>Emergency Stimulants</afflictionname.stimulants>
+	<afflictiondescription.stimulants>Your life is in your hands, but not for too long.</afflictiondescription.stimulants>
+	<afflictionname.defibin>Defibrillator Shock</afflictionname.defibin>
+	<afflictiondescription.defibin>On the edge of the blade.</afflictiondescription.defibin>
+	<afflictionname.confus>Disorientation</afflictionname.confus>
+	<afflictiondescription.confus>Escape from the inevitable has consequences.</afflictiondescription.confus>
+
+	<!--Items-->
+
+	<!--WarSuits-->
+	<entityname.reforged_b1>Warsuit MKI</entityname.reforged_b1>
+	<entitydescription.reforged_b1>The 'A.B.Y.S.S.' warsuit, is a new generation divesuit granting much greater protection to it's user due to it's power system.</entitydescription.reforged_b1>
+	<entityname.reforged_b2>Warsuit MKII</entityname.reforged_b2> 
+	<entitydescription.reforged_b2>The 'A.B.Y.S.S.' warsuit, is a new generation divesuit granting much greater protection to it's user due to it's power system. Advanced system consumes more power now. It is recommended to use only high quality energy sources.</entitydescription.reforged_b2>
+	<entityname.reforged_h1>Diving Helmet MKI</entityname.reforged_h1>
+	<entitydescription.reforged_h1>The 'A.B.Y.S.S.' helmet, a necessary part of the warsuit diving kit.</entitydescription.reforged_h1>
+	<entityname.reforged_h2>Diving Helmet MKII</entityname.reforged_h2>
+	<entitydescription.reforged_h2>The 'A.B.Y.S.S.' helmet, a necessary part of the warsuit diving kit.</entitydescription.reforged_h2>
+
+	<!--Misc-->
+	<entityname.re_bp1>Blueprint MKI</entityname.re_bp1>
+	<entitydescription.re_bp1>Blueprint of one of the recent technology of Europe. There are rumors that it can only be obtained from researchers or the military.</entitydescription.re_bp1>
+	<entityname.re_bp2>Blueprint MKII</entityname.re_bp2>
+	<entitydescription.re_bp2>Blueprint of one of the most advanced developments in Europe. There are rumors that it can only be obtained only from researchers.</entitydescription.re_bp2>
+	<entityname.fusioncore>FusionCore Frame</entityname.fusioncore>
+	<entitydescription.fusioncore>Battery rod frame for the divesuit powersystem.</entitydescription.fusioncore>
+	<entityname.fusioncore_u>FusionCore-92</entityname.fusioncore_u>
+	<entitydescription.fusioncore_u>A special rechargable battery rod for the divesuit powersystem. Experimental prototype, has some drawbacks, mainly insufficient capacity and recoil.</entitydescription.fusioncore_u>
+	<entityname.fusioncore_t>FusionCore-90</entityname.fusioncore_t>
+	<entitydescription.fusioncore_t>A special rechargable battery rod for the divesuit powersystem. Second generation, based on a different isotope. Workhorse.</entitydescription.fusioncore_t>
+	<entityname.fusioncore_i>FusionCore-105</entityname.fusioncore_i>
+	<entitydescription.fusioncore_i>A special rechargable battery rod for the divesuit powersystem. Using alien material as a source, it achieves incredible performance. However, it required the completion of the power distribution system.</entitydescription.fusioncore_i>
+	<entityname.energycell>Energy Cell</entityname.energycell>
+	<entitydescription.energycell>Specific battery-type power distributor. Not suitable for most devices. Avoid short-circuit.</entitydescription.energycell>
+	<entityname.energycell2>Energy Cell Enhanced</entityname.energycell2>
+	<entitydescription.energycell2>Specific battery-type power distributor with extended capacity. Not suitable for most devices. Do not short-circuit under any circumstances.</entitydescription.energycell2>
+	<entityname.coresocket>FusionCore Socket</entityname.coresocket>
+	<entitydescription.coresocket>Receiver for the fusion cores сombined with a power distributor. Сan be used as a small portable generator.</entitydescription.coresocket>
+	<entityname.re_medmod>Life Support Module</entityname.re_medmod>
+	<entitydescription.re_medmod>This module is a very multifunctional tool, but medical supervision and stimulation injections are still its main purpose.</entitydescription.re_medmod>
+	<entityname.re_flyer>Weird Flyer</entityname.re_flyer>
+	<entityname.re_scanner>Health Scanner</entityname.re_scanner>
+	<entitydescription.re_scanner>Handheld device that shows information about the vital signs and status of nearby humans.</entitydescription.re_scanner>
+
+</infotexts>

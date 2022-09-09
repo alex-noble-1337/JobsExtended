@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Super Mining Sonar" path="Mods/Super Mining Sonar/filelist.xml" corepackage="false" gameversion="0.15.13.0" steamworkshopid="2151428187" installtime="1636562268">
+  <Item file="Mods/Super Mining Sonar/Content/Items/Alien/alienitems.xml" />
+  <Item file="Mods/Super Mining Sonar/Content/Items/Command/command.xml" />
+  <None file="Mods/Super Mining Sonar/Content/Items/Command/sonarBlip.png" />
+  <Item file="Mods/Super Mining Sonar/Content/Items/Materials/medmaterials.xml" />
+  <Item file="Mods/Super Mining Sonar/Content/Items/Materials/minerals.xml" />
+  <Item file="Mods/Super Mining Sonar/Content/Items/Tools/handheld sonar.xml" />
+</contentpackage>

@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- This translation is by -->
+<!-- EndlingSky.: https://steamcommunity.com/id/2951412464 -->
+<!-- RS-CZH: https://steamcommunity.com/profiles/76561198382572372/ -->
+<infotexts language="Traditional Chinese" nowhitespace="true" translatedname="中文(繁體)">
+<entityname.gunlathe>Gunsmith Lathe</entityname.gunlathe>
+<entitydescription.gunlathe>Processes materials into guns.</entitydescription.gunlathe>
+<!-- Gunsmith Lathe -->
+<entityname.bothseawayround>.50火药粉</entityname.bothseawayround>
+<!-- .50 Banger Powder -->
+<entitydescription.bothseawayround>一支50卡的弹药粉。闻起来感觉很怀旧。</entitydescription.bothseawayround>
+<!-- A 50 cal cartridge powder. It smells like squares. -->
+<entityname.seawaymagazine>.50空爆弹</entityname.seawaymagazine>
+<!-- .50 Banger Catridge -->
+<entitydescription.seawaymagazine>一位机械工程师用两发.50的子弹内装药做成了这个，这发子弹是给驱鲨棍用的。</entitydescription.seawaymagazine>
+<!-- A mechanic fashioned this from two 50 cal rounds, meant to be used with a Bangstick. -->
+<entityname.waternugget>7.62x54mm 水用弹</entityname.waternugget>
+<!-- Wet 7.62x54mm -->
+<entitydescription.waternugget>用于在潮湿环境使用，在边缘能隐隐约约的看见印有苏联的标识。</entitydescription.waternugget>
+<!-- It's wet, the rim says USSR -->
+<entityname.airnugget>7.62x54mm</entityname.airnugget>
+<!-- 7.62x54mm -->
+<entitydescription.airnugget>用于在干燥环境使用，在边缘能隐隐约约的看见印有苏联的标识。</entitydescription.airnugget>
+<!-- It's dry, the rim says USSR -->
+<entityname.water3006>30-06水下步枪弹</entityname.water3006>
+<!-- Wet .30-06 Round -->
+<entitydescription.water3006>用于在潮湿环境使用，黑色弹头，在边缘能隐隐约约的看见印有温切斯特的标识。</entitydescription.water3006>
+<!-- It's wet, the tip is black, and the rim says Winchester -->
+<entityname.air3006>.30-06弹药</entityname.air3006>
+<!-- 30-06 Round -->
+<entitydescription.air3006>用于在潮湿环境使用，子弹的弹头是黑色的，在边缘能隐隐约约的看见印有温切斯特的标识。</entitydescription.air3006>
+<!-- It's wet, the tip is black, and the rim says Winchester -->
+<entityname.nuggetmagazine> "炸薯条" </entityname.nuggetmagazine>
+<!-- Mosin Nugget Fries -->
+<entitydescription.nuggetmagazine>一位机械工程师用空的炸薯条盒当作弹药盒，来装5发7.62x52毫米口径的弹药。噫，太油腻了。</entitydescription.nuggetmagazine>
+<!-- A mechanic fashioned this from empty plastic french fries container to hold 5 rounds of 7.62 by 52mm rim fired ammo, it's extra greasy. -->
+<entityname.mosinmagazine>莫辛纳甘弹夹</entityname.mosinmagazine>
+<!-- Mosin Nagant Stripper Clip -->
+<entitydescription.mosinmagazine>一位安全官用钢材制作了5发7.62x52毫米用于莫辛纳甘发射的弹药。</entitydescription.mosinmagazine>
+<!-- A weapons expert crafted this from steel to hold 5 rounds of 7.62 by 52mm rim fired ammo. -->
+<entityname.m1amagazine>M1A漏夹弹夹</entityname.m1amagazine>
+<!-- Mosin Nugget Fries -->
+<entitydescription.m1amagazine>一位安全官用钢材制作了这个，可以容纳8发30-06口径弹药。这子弹射击很响。</entitydescription.m1amagazine>
+<!-- A weapons expert crafted this from steel to hold 8 rounds of 30-06 rim fired ammo. It pings -->
+<entityname.tacomagazine>"墨西哥玉米卷"</entityname.tacomagazine>
+<entitydescription.tacomagazine>一位机械工程师用塑料制作了这个，可以容纳8发30-06口径的弹药。它射击的时候不响，闻起来像油炸圈饼。</entitydescription.tacomagazine>
+<!-- A mechanic expert crafted this from plastic to hold 8 rounds of 30-06 rim fired ammo. It doesn't ping and smells like churros -->
+<entityname.m1agarand>M1A加兰德</entityname.m1agarand>
+<!-- M1A Garand -->
+<entitydescription.m1agarand>一位机械工程师制作的旧设计，它曾被用于许多次陆地战争，但在水中不能很好地发挥作用。</entitydescription.m1agarand>
+<!-- An old design made by a mechanic, served in a lot of land wars but doesn't function well in water. -->
+<entityname.m1agarand_f>M1A加兰德(战术手电)</entityname.m1agarand_f>
+<!-- M1A Garand with Flashlight -->
+<entitydescription.m1agarand_f>一名电气工程师不知为何有了将手电筒用管道胶带粘在M1A加兰德上的想法，结果他还真的这么做了。</entitydescription.m1agarand_f>
+<!-- An eletrician taped a flashlight on this gun. -->
+<entityname.m1agarandtanker>M1A侦察步枪</entityname.m1agarandtanker>
+<!-- M1A Tanker Garand -->
+<entitydescription.m1agarandtanker>一位机械工程师做的另一种旧设计，缩短了7英寸，它曾被用于许多次陆地战争，但在水中不能很好地发挥作用。</entitydescription.m1agarandtanker>
+<!-- An old design made by a mechanic, shortened by 7 inches, served in a lot of land wars but doesn't function well in water -->
+<entityname.m1agarandtanker_f>M1A侦察步枪(战术手电)</entityname.m1agarandtanker_f>
+<!-- 1A Tanker Garand with Flashlight -->
+<entitydescription.m1agarandtanker_f>一名电气工程师不知为何有了将手电筒用管道胶带粘在M1A侦察步枪上的想法，结果他还真的这么做了。</entitydescription.m1agarandtanker_f>
+<!-- An eletrician taped a flashlight on this gun. -->
+<entityname.nugget_f>莫辛纳甘(战术手电)</entityname.nugget_f>
+<!-- Mosin Nagant with Flashlight -->
+<entitydescription.nugget_f>一名电气工程师不知为何有了将手电筒用管道胶带粘在莫辛纳甘上的想法，结果他还真的这么做了。</entitydescription.nugget_f>
+<!-- An electrician crafted this to hold a functioning light while shooting the gun. -->
+<entityname.nugget>莫辛纳甘</entityname.nugget>
+<!-- Mosin Nagant -->
+<entitydescription.nugget>一位机械工程师制作的旧设计，它曾被用于许多次陆地战争，但在水中不能很好地发挥作用。</entitydescription.nugget>
+<!-- An old design made by a mechanic, served in a lot of land wars but doesn't function well in water. -->
+<entityname.nugget_fmm>莫辛纳甘(近战枪托)</entityname.nugget_fmm>
+<!-- Mosin Nagant with Everything -->
+<entitydescription.nugget_fmm>它装有一个手电筒和一把小刀，但它的主要武器却是用来猛击攻击性高的人的枪托。武器涂有弹性蛋白，以避免进水导致损坏。</entitydescription.nugget_fmm>
+<!-- Flashlight and knife, but its main weapon is the buttstock for bludgeoning people with high libido. Barrel plugged and coated with Elastin to avoid water damage. -->
+<entityname.nugget_m>莫辛纳甘(战术刺刀)</entityname.nugget_m>
+<!-- Mosin Nagant with Bayonet -->
+<entitydescription.nugget_m>武器的枪口末端被装进了一把小刀，现在它不能再射击了。武器涂有弹性蛋白，以避免进水导致损坏。</entitydescription.nugget_m>
+<!-- Knife is in the shooting end and now it can't shoot no more. Barrel plugged and coated with Elastin to avoid water damage. -->
+<!--Broken Mk1Mod0 Dart-->
+<entityname.airmk1mod0round>Mk1Mod0镖体(破碎)</entityname.airmk1mod0round>
+<!--A broken Mk1Mod0 Dart from shooting in the air.-->
+<entitydescription.airmk1mod0round>在空气中射击后被撕碎的Mk1Mod0弹药。</entitydescription.airmk1mod0round>
+<!--Mk1Mod0 Dart-->
+<entityname.watermk1mod0round>Mk1Mod0镖体</entityname.watermk1mod0round>
+<!--A Mk1Mod0 Dart.-->
+<entitydescription.watermk1mod0round>一枚Mk1Mod0镖体。</entitydescription.watermk1mod0round>
+<!--Broken P11 Round-->
+<entityname.airp11round>P11弹药(破碎)</entityname.airp11round>
+<!--A broken P11 Round from being shot in the air.-->
+<entitydescription.airp11round>在空气中射击后被撕碎的P11弹药。</entitydescription.airp11round>
+<!--Sealed P11 Round-->
+<entityname.waterp11round>P11弹药(密装)</entityname.waterp11round>
+<!--A P11 Round.-->
+<entitydescription.waterp11round>P11弹药。</entitydescription.waterp11round>
+<!--Bent Flechette Round-->
+<entityname.airflechette>螺纹镖体弹</entityname.airflechette>
+<!--QBS Flechette round bent from being shot in the air.-->
+<entitydescription.airflechette>QBS使用的螺纹镖体弹, 用于在空气中使用。</entitydescription.airflechette>
+<!--Flechette Round-->
+<entityname.waterflechette>镖体弹</entityname.waterflechette>
+<!--QBS Flechette Round-->
+<entitydescription.waterflechette>镖体弹(QBS)</entitydescription.waterflechette>
+<!--Bent SPP Flechette Round-->
+<entityname.sppairflechette>螺纹镖体弹(SPP)</entityname.sppairflechette>
+<!--Bent SPP Flechette Round from being shot in the air.-->
+<entitydescription.sppairflechette>SPP使用的螺纹镖体弹, 用于在空气中使用。</entitydescription.sppairflechette>。
+<!--SPP Flechette Round-->
+<entityname.sppwaterflechette>镖体弹(SPP)</entityname.sppwaterflechette>
+<!--SPP Flechette Round, goes in the SPP.-->
+<entitydescription.sppwaterflechette>SPP使用的镖体弹, 用于装填SPP。</entitydescription.sppwaterflechette>
+<!--SPP2 Speed Loader-->
+<entityname.spp2magazine>SPP2 快装弹筒</entityname.spp2magazine>
+<!--It contains 8 rounds for the SPP-2 Underwater Pistol.-->
+<entitydescription.spp2magazine>它装有8枚SPP-2水下手枪弹药。</entitydescription.spp2magazine>
+<!--Mk1Mod0 Cylinder-->
+<entityname.mk1mod0magazine>Mk1Mod0转轮弹筒</entityname.mk1mod0magazine>
+<!--It contains 6 sealed rounds for the Mk1Mod0 Underwater Defense Gun.-->
+<entitydescription.mk1mod0magazine>它能为Mk1Mod0水下手枪提供6枚预装弹药。</entitydescription.mk1mod0magazine>
+<!--P11 Barrel-->
+<entityname.p11magazine>P11弹筒</entityname.p11magazine>
+<!--It contains 5 sealed rounds for the P11.-->
+<entitydescription.p11magazine>它能为P11提供5枚预装弹药。</entitydescription.p11magazine>
+<!--QBS Magazine-->
+<entityname.qbsmagazine>QBS弹药盒</entityname.qbsmagazine>
+<!--It contains 26 rounds for the QBS.-->
+<entitydescription.qbsmagazine>它装有26枚QBS弹药。</entitydescription.qbsmagazine>
+<!--AG-026-->
+<entityname.ag026magazine>AG-026弹药盒(26)</entityname.ag026magazine>
+<!--It contains 26 rounds for the AG-026.-->
+<entitydescription.ag026magazine>它装有26枚AG-026弹药。</entitydescription.ag026magazine>.
+<!--AG-026 Big Magazine-->
+<entityname.ag026magazine60>AG-026弹药盒(60)</entityname.ag026magazine60>
+<!--It contains 60 rounds for the AG-026.-->
+<entitydescription.ag026magazine60>它装有60枚AG-026弹药。</entitydescription.ag026magazine60>
+<!--Seaway Bangstick-->
+<entityname.seawaybanger>航海驱鲨棍</entityname.seawaybanger>
+<!--A long stick with a contact explosive attached to the pointing end. Meant to deter sharks in melee range.-->
+<entitydescription.seawaybanger>末端带有接触引信炸药的长棍。它的作用是为了让“鲨鱼”远离使用者。</entitydescription.seawaybanger>
+<!--Seaway Bangstick with Flashlight-->
+<entityname.seawaybanger_f>航海驱鲨棍(战术手电)</entityname.seawaybanger_f>
+<!--An electrical engineer used duct tape to stick a Flashlight onto the Bangstick.-->
+<entitydescription.seawaybanger_f>一名电气工程师不知为何有了将手电筒用管道胶带粘在航海驱鲨棍上的想法，结果他还真的这么做了。</entitydescription.seawaybanger_f>
+<!--SPP-2 Underwater Pistol-->
+<entityname.spp2>SPP-2 水下手枪</entityname.spp2>
+<!--An old soviet design made by a mechanic to shoot 8 darts in 8 barrels.-->
+<entitydescription.spp2>一种源自苏联的旧设计，由一名机械工程师改良制作，能让它可以装填8枚装有镖体的弹筒。</entitydescription.spp2>
+<!--Mk1 Mod0 Underwater Defense Gun<-->
+<entityname.mk1mod0>Mk1 Mod0 水下手枪</entityname.mk1mod0>
+<!--An old design made by a mechanic to shoot 6 darts in a cylinder.-->
+<entitydescription.mk1mod0>一名机械工程师的旧型设计，它装填用的转轮弹筒里含有6枚镖体。</entitydescription.mk1mod0>
+<!--HnK P11-->
+<entityname.p11>HnK P11</entityname.p11>
+<!--An old soviet design made by a mechanic to shoot 5 darts in barrels.-->
+<entitydescription.p11>一名电气工程师的旧型设计，它装填用的弹筒里含有6枚镖体。</entitydescription.p11>
+<!--AG-026 with FlashLight-->
+<entityname.ag026_f>AG-026(战术手电)</entityname.ag026_f>
+<entitydescription.ag026_f>一名电气工程师不知为何有了将手电筒用管道胶带粘在AG-026上的想法，结果他还真的这么做了。</entitydescription.ag026_f>
+<entityname.ag026>AG-026</entityname.ag026>
+<entitydescription.ag026>这是一种以俄罗斯的一种机枪为原型制作的型号，它发射镖体，但在空气中收效甚微。</entitydescription.ag026>
+<!--QBS with FlashLight-->
+<entityname.qbs_f>QBS(战术手电)</entityname.qbs_f>
+<entitydescription.qbs_f>一名电气工程师不知为何有了将手电筒用管道胶带粘在QBS上的想法，结果他还真的这么做了。</entitydescription.qbs_f>
+<entityname.qbs>QBS</entityname.qbs>
+<!--A chinese variant of the Russian APS underwater assault rifle, it shoots darts and doesn't work well in air.-->
+<entitydescription.qbs>一种俄国APS水下突击步枪的中国改装型号，它发射镖体，但在空气中收效甚微。</entitydescription.qbs>
+<!--Seaway Ammo Pouch-->
+<entityname.ammopouch>航海弹药袋</entityname.ammopouch>
+<!--A pouch made by a medic, containing 6 slots to store .50 cal ammo for the SeaWay Bangstick.-->
+<entitydescription.ammopouch>一个由军医制作的弹药袋，内含6个插槽，可以存放等量的.50口径弹药给航海驱鲨棍使用。</entitydescription.ammopouch>
+</infotexts>

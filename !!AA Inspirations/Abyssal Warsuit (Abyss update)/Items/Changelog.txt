@@ -1,0 +1,30 @@
+-Updated sprites for the suit and the main contained status
+-Removed tiers
+	-The features of the tiers are now either baseline or distributed into the power rods
+-Organized the folders
+-Custom sound for the steps (This is more of a test than anything fancy)
+-'Full suit' renamed to 'NPC version'
+-'NPC version' no longer has two slots for items
+-'NPC version' no loger accepts battery rods
+	-Increased base movement speed for the npc version to compensate
+	(!)'NPC version' now acts more like a vanilla outfit, it doesn't grant any custom affliction and npc's will wear treat them as any other diving suit
+-Changed price to 1000
+-Changed the multipliers for each outpost type
+-Lights consume energy
+-Normalized the movement speed bonus for each battery rod
+-Batteries now stack up to 5 (you'll need them)
+-Crafting receipe received an overhaul:
+	1)You need to decompost (in the fabricator) a suit of each type
+	2)Deconstruct the compost to get the needed items for the suit and helmet
+	3)Construct the suit using the required components plus some steel and rubber
+-Can now only be purchased from the city and military outposts
+-Diving suit containers (that are powered) now refuel your oxygen tanks and battery rods
+-Fixed helmets having the needle icon instead of the oxygen icon in the container
+-Helmet containers now can also be wired to restore oxygen to the helmets
+-Affliction "impact dampers" is no longer being used
+KNOWN ISSUES:
+-Lights don't turn off when there's no battery/battery is depleted
+todo:
+Increase footstep volume
+Helmet lights turns on only when the suit is on and powered?
+Restore oxygen for the diving mask?

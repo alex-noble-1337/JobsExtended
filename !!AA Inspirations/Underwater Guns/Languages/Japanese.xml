@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Japanese" nowhitespace="true" translatedname="日本語">
+<entityname.gunlathe>Gunsmith Lathe</entityname.gunlathe>
+<entitydescription.gunlathe>Processes materials into guns.</entitydescription.gunlathe>
+<!-- Gunsmith Lathe -->
+<entityname.bothseawayround>.50 Banger Powder</entityname.bothseawayround>
+<entitydescription.bothseawayround>A 50 cal cartridge powder. It smells like squares.</entitydescription.bothseawayround>
+<entityname.seawaymagazine>.50 Banger Catridge</entityname.seawaymagazine>
+<entitydescription.seawaymagazine>A mechanic fashioned this from two 50 cal rounds, meant to be used with a Bangstick.</entitydescription.seawaymagazine>
+<entityname.waternugget>Wet 7.62x54mm</entityname.waternugget>
+<entitydescription.waternugget>It's wet, the rim says USSR</entitydescription.waternugget>
+<entityname.airnugget>7.62x54mm</entityname.airnugget>
+<entitydescription.airnugget>It's dry, the rim says USSR</entitydescription.airnugget>
+<entityname.water3006>Wet .30-06 Round</entityname.water3006>
+<entitydescription.water3006>It's wet, the tip is black, and the rim says Winchester</entitydescription.water3006>
+<entityname.air3006>.30-06 Round</entityname.air3006>
+<entitydescription.air3006>It's dry, the tip is black, and the rim says Winchester</entitydescription.air3006>
+<entityname.nuggetmagazine>Mosin Nugget Fries</entityname.nuggetmagazine>
+<entitydescription.nuggetmagazine>A mechanic fashioned this from empty plastic french fries container to hold 5 rounds of 7.62 by 52mm rim fired ammo, it's extra greasy.</entitydescription.nuggetmagazine>
+<entityname.mosinmagazine>Mosin Nagant Stripper Clip</entityname.mosinmagazine>
+<entitydescription.mosinmagazine>A weapons expert crafted this from steel to hold 5 rounds of 7.62 by 52mm rim fired ammo.</entitydescription.mosinmagazine>
+<entityname.m1amagazine>M1A En-Bloc Clip</entityname.m1amagazine>
+<entitydescription.m1amagazine>A weapons expert crafted this from steel to hold 8 rounds of 30-06 rim fired ammo. It pings</entitydescription.m1amagazine>
+<entityname.tacomagazine>M1A Taco Clip</entityname.tacomagazine>
+<entitydescription.tacomagazine>A mechanic expert crafted this from plastic to hold 8 rounds of 30-06 rim fired ammo. It doesn't ping and smells like churros.</entitydescription.tacomagazine>
+<entityname.m1agarand>M1A Garand</entityname.m1agarand>
+<entitydescription.m1agarand>An old design made by a mechanic, served in a lot of land wars but doesn't function well in water.</entitydescription.m1agarand>
+<entityname.m1agarand_f>M1A Garand with Flashlight</entityname.m1agarand_f>
+<entitydescription.m1agarand_f>An eletrician taped a flashlight on this gun.</entitydescription.m1agarand_f>
+<entityname.m1agarandtanker>M1A Tanker Garand</entityname.m1agarandtanker>
+<entitydescription.m1agarandtanker>An old design made by a mechanic, shortened by 7 inches, served in a lot of land wars but doesn't function well in water.</entitydescription.m1agarandtanker>
+<entityname.m1agarandtanker_f>M1A Tanker Garand with Flashlight</entityname.m1agarandtanker_f>
+<entitydescription.m1agarandtanker_f>An eletrician taped a flashlight on this gun.</entitydescription.m1agarandtanker_f>
+<entityname.nugget_f>Mosin Nagant with Flashlight</entityname.nugget_f>
+<entitydescription.nugget_f>An electrician crafted this to hold a functioning light while shooting the gun.</entitydescription.nugget_f>
+<entityname.nugget>Mosin Nagant</entityname.nugget>
+<entitydescription.nugget>An old design made by a mechanic, served in a lot of land wars but doesn't function well in water.</entitydescription.nugget>
+<entityname.nugget_fmm>Mosin Nagant with Everything</entityname.nugget_fmm>
+<entitydescription.nugget_fmm>Flashlight and knife, but its main weapon is the buttstock for bludgeoning people with high libido. Barrel plugged and coated with Elastin to avoid water damage.</entitydescription.nugget_fmm>
+<entityname.nugget_m>Mosin Nagant with Bayonet</entityname.nugget_m>
+<entitydescription.nugget_m>Knife is in the shooting end and now it can't shoot no more. Barrel plugged and coated with Elastin to avoid water damage.</entitydescription.nugget_m>
+<entityname.airmk1mod0round>Broken Mk1Mod0 Dart</entityname.airmk1mod0round>
+<entitydescription.airmk1mod0round>A broken Mk1Mod0 Dart from shooting in the air.</entitydescription.airmk1mod0round>
+<entityname.watermk1mod0round>Mk1Mod0 Dart</entityname.watermk1mod0round>
+<entitydescription.watermk1mod0round>A Mk1Mod0 Dart.</entitydescription.watermk1mod0round>
+<entityname.airp11round>Broken P11 Round</entityname.airp11round>
+<entitydescription.airp11round>A broken P11 Round from being shot in the air.</entitydescription.airp11round>
+<entityname.waterp11round>Sealed P11 Round</entityname.waterp11round>
+<entitydescription.waterp11round>A P11 Round.</entitydescription.waterp11round>
+<entityname.airflechette>Bent Flechette Round</entityname.airflechette>
+<entitydescription.airflechette>QBS Flechette round bent from being shot in the air.</entitydescription.airflechette>
+<entityname.waterflechette>Flechette Round</entityname.waterflechette>
+<entitydescription.waterflechette>QBS Flechette Round</entitydescription.waterflechette>
+<entityname.sppairflechette>Bent SPP Flechette Round</entityname.sppairflechette>
+<entitydescription.sppairflechette>Bent SPP Flechette Round from being shot in the air.</entitydescription.sppairflechette>
+<entityname.sppwaterflechette>SPP Flechette Round</entityname.sppwaterflechette>
+<entitydescription.sppwaterflechette>SPP Flechette Round, goes in the SPP.</entitydescription.sppwaterflechette>
+<entityname.spp2magazine>SPP2 Speed Loader</entityname.spp2magazine>
+<entitydescription.spp2magazine>It contains 8 rounds for the SPP-2 Underwater Pistol.</entitydescription.spp2magazine>
+<entityname.mk1mod0magazine>Mk1Mod0 Cylinder</entityname.mk1mod0magazine>
+<entitydescription.mk1mod0magazine>It contains 6 sealed rounds for the Mk1Mod0 Underwater Defense Gun.</entitydescription.mk1mod0magazine>
+<entityname.p11magazine>P11 Barrel</entityname.p11magazine>
+<entitydescription.p11magazine>It contains 5 sealed rounds for the P11.</entitydescription.p11magazine>
+<entityname.qbsmagazine>QBS Magazine</entityname.qbsmagazine>
+<entitydescription.qbsmagazine>It contains 26 rounds for the QBS.</entitydescription.qbsmagazine>
+<entityname.ag026magazine>AG-026 Magazine</entityname.ag026magazine>
+<entitydescription.ag026magazine>It contains 26 rounds for the AG-026.</entitydescription.ag026magazine>
+<entityname.ag026magazine60>AG-026 Big Magazine</entityname.ag026magazine60>
+<entitydescription.ag026magazine60>It contains 60 rounds for the AG-026.</entitydescription.ag026magazine60>
+<entityname.seawaybanger>Seaway Bangstick</entityname.seawaybanger>
+<entitydescription.seawaybanger>A long stick with a contact explosive attached to the pointing end. Meant to deter sharks in melee range.</entitydescription.seawaybanger>
+<entityname.seawaybanger_f>Seaway Bangstick with Flashlight</entityname.seawaybanger_f>
+<entitydescription.seawaybanger_f>An electrical engineer used duct tape to stick a Flashlight onto the Bangstick.</entitydescription.seawaybanger_f>
+<entityname.spp2>SPP-2 Underwater Pistol</entityname.spp2>
+<entitydescription.spp2>An old soviet design made by a mechanic to shoot 8 darts in 8 barrels.</entitydescription.spp2>
+<entityname.mk1mod0>Mk1 Mod0 Underwater Defense Gun</entityname.mk1mod0>
+<entitydescription.mk1mod0>An old design made by a mechanic to shoot 6 darts in a cylinder.</entitydescription.mk1mod0>
+<entityname.p11>HnK P11</entityname.p11>
+<entitydescription.p11>An old design made by an eletrical engineer to shoot 5 darts in a barrel.</entitydescription.p11>
+<entityname.ag026_f>AG-026 with FlashLight</entityname.ag026_f>
+<entitydescription.ag026_f>An electrical engineer used duct tape to stick a flashlight on the AG-026.</entitydescription.ag026_f>
+<entityname.ag026>AG-026</entityname.ag026>
+<entitydescription.ag026>A Russian prototype machine gun, it shoots darts and doesn't work well in air.</entitydescription.ag026>
+<entityname.qbs_f>QBS with FlashLight</entityname.qbs_f>
+<entitydescription.qbs_f>An electrical engineer used duct tape to stick a flashlight on the QBS.</entitydescription.qbs_f>
+<entityname.qbs>QBS</entityname.qbs>
+<entitydescription.qbs>A chinese variant of the Russian APS underwater assault rifle, it shoots darts and doesn't work well in air.</entitydescription.qbs>
+<entityname.ammopouch>Seaway Ammo Pouch</entityname.ammopouch>
+<entitydescription.ammopouch>A pouch made by a medic, containing 6 slots to store .50 cal ammo for the SeaWay Bangstick.</entitydescription.ammopouch>
+</infotexts>

@@ -1,0 +1,15 @@
+﻿<AtlasSwimSlow
+  animationtype="SwimSlow"
+  legmoveamount="0.2199464"
+  legcyclelength="10.671757"
+  handmoveamount="0.5,0.1"
+  handmovestrength="0"
+  handcyclespeed="5"
+  handmoveoffset="0,0"
+  footangle="0"
+  footrotatestrength="0"
+  steertorque="25"
+  movementspeed="1"
+  cyclespeed="1"
+  headangle="NaN"
+  torsoangle="NaN" />

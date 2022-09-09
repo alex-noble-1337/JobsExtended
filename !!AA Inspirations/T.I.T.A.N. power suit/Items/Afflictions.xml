@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Afflictions>
+  <Affliction
+    name="Titan strength"
+    identifier="titanaffliction"
+    description="The suit grants mayor pressure, paralysis, damage, and psychosis resistance. Move much faster underwater"
+    type="resistance"
+    isbuff="true"
+    limbspecific="false"
+    maxstrength="100">
+    <Effect minstrength="0" maxstrength="100"
+      strengthchange="-100"
+      resistancefor="paralysis"
+      minresistance="0"
+      maxresistance="0.95"/>
+	<Effect minstrength="0" maxstrength="100"
+      strengthchange="0"
+      resistancefor="psychosis"
+      minresistance="0"
+      maxresistance="0.99"/>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,896,128,128" color="10,193,114,255" origin="0,0"/>
+  </Affliction>
+  
+  <Affliction
+    name="Neurotoxin"
+    identifier="titantoxinlow"
+    description="Recycled micro-organisms synthesized into a powerful concoction, interferes with the nervous system of extremly large creatures. The larger the nervous system of the creature, the stronger the effect."
+    type="damage"
+	causeofdeathdescription=""
+	selfcauseofdeathdescription=""
+    limbspecific="false"
+    maxstrength="100"
+	showiconthreshold="1000"
+    showicontoothersthreshold="1000"
+	damageoverlayalpha="1">
+    <Effect minstrength="0" maxstrength="100" multiplybymaxvitality="true"
+			minvitalitydecrease="0"
+			maxvitalitydecrease="0.2"
+			strengthchange="30"/>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,896,128,128" color="10,193,114,255" origin="0,0"/>
+  </Affliction>
+  <Affliction
+    name="Neurotoxin"
+    identifier="titantoxinmedium"
+    description="Recycled micro-organisms synthesized into a powerful concoction, interferes with the nervous system of extremly large creatures. The larger the nervous system of the creature, the stronger the effect."
+    type="damage"
+	causeofdeathdescription=""
+	selfcauseofdeathdescription=""
+    limbspecific="false"
+    maxstrength="100"
+	showiconthreshold="1000"
+    showicontoothersthreshold="1000"
+	damageoverlayalpha="1">
+    <Effect minstrength="0" maxstrength="100" multiplybymaxvitality="true"
+			minvitalitydecrease="0"
+			maxvitalitydecrease="0.35"
+			strengthchange="20"/>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,896,128,128" color="10,193,114,255" origin="0,0"/>
+  </Affliction>
+  <Affliction
+    name="Neurotoxin"
+    identifier="titantoxinhigh"
+    description="Recycled micro-organisms synthesized into a powerful concoction, interferes with the nervous system of extremly large creatures. The larger the nervous system of the creature, the stronger the effect."
+    type="damage"
+	causeofdeathdescription=""
+	selfcauseofdeathdescription=""
+    limbspecific="false"
+    maxstrength="100"
+	showiconthreshold="1000"
+    showicontoothersthreshold="1000"
+	damageoverlayalpha="1">
+    <Effect minstrength="0" maxstrength="100" multiplybymaxvitality="true"
+			minvitalitydecrease="0"
+			maxvitalitydecrease="0.5"
+			strengthchange="10"/>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,896,128,128" color="10,193,114,255" origin="0,0"/>
+  </Affliction>
+  
+  <Affliction
+    name="Neurotoxin Poison"
+    identifier="titantoxinpoison"
+    description=""
+    type="damage"
+	causeofdeathdescription=""
+	selfcauseofdeathdescription=""
+    limbspecific="false"
+    maxstrength="4"
+	showiconthreshold="1000"
+    showicontoothersthreshold="1000"
+	damageoverlayalpha="1">
+    <Effect minstrength="0" maxstrength="100"
+	        strengthchange="-1">
+	  <StatusEffect target="Character" setvalue="true" conditional="or">
+		<Conditional speciesname="Mudraptor" />
+		<Conditional speciesname="Mudraptor_unarmored" />
+		<Conditional speciesname="Spineling" />
+		<Conditional speciesname="Tigerthresher" />
+		<Affliction identifier="titantoxinlow" amount="1" />
+      </StatusEffect>
+	  <StatusEffect target="Character" setvalue="true" conditional="or">
+		<Conditional speciesname="watcher" />
+		<Conditional speciesname="moloch" />
+		<Conditional speciesname="Bonethresher" />
+		<Affliction identifier="titantoxinmedium" amount="1" />
+      </StatusEffect>
+	  <StatusEffect target="Character" setvalue="true" conditional="or">
+		<Conditional speciesname="Endworm" />
+		<Conditional speciesname="Charybdis" />
+		<Affliction identifier="titantoxinhigh" amount="1" />
+      </StatusEffect>
+	</Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,896,128,128" color="10,193,114,255" origin="0,0"/>
+  </Affliction>
+  
+  <Affliction
+    name="Marked for death"
+    identifier="markedfordeathtitan"
+    description="Your skin feels bland, your muscles weakened, and your bones shattered."
+    type="damageamplifier"
+    isbuff="false"
+    limbspecific="false"
+    maxstrength="10"
+    treatmentthreshold="1000"
+    iconcolors="92,61,61;205,57,57;253,31,31;255,0,0">
+    <Effect minstrength="0" maxstrength="1"
+      strengthchange="-1"
+      resistancefor="damage">
+	  <StatusEffect target="Character" targetlimb="Head" HealthMultiplier="0.96" setvalue="true"/> 
+	</Effect>
+	<Effect minstrength="1" maxstrength="2"
+      strengthchange="-1">
+	  <StatusEffect target="Character" targetlimb="Head" HealthMultiplier="0.94" setvalue="true"/> 
+	</Effect>  
+	<Effect minstrength="2" maxstrength="3"
+      strengthchange="-1">
+	  <StatusEffect target="Character" targetlimb="Head" HealthMultiplier="0.92" setvalue="true"/> 
+	</Effect>
+	<Effect minstrength="3" maxstrength="4"
+      strengthchange="-1">
+	  <StatusEffect target="Character" targetlimb="Head" HealthMultiplier="0.9" setvalue="true"/> 
+	</Effect>
+	<Effect minstrength="4" maxstrength="5"
+      strengthchange="-1">
+	  <StatusEffect target="Character" targetlimb="Head" HealthMultiplier="0.88" setvalue="true"/> 
+	</Effect>
+	<Effect minstrength="5" maxstrength="6"
+      strengthchange="-1">
+	  <StatusEffect target="Character" targetlimb="Head" HealthMultiplier="0.86" setvalue="true"/> 
+	</Effect>
+	<Effect minstrength="6" maxstrength="7"
+      strengthchange="-1">
+	  <StatusEffect target="Character" targetlimb="Head" HealthMultiplier="0.84" setvalue="true"/> 
+    </Effect>
+	<Effect minstrength="7" maxstrength="8"
+      strengthchange="-1">
+	  <StatusEffect target="Character" targetlimb="Head" HealthMultiplier="0.82" setvalue="true"/> 
+    </Effect>
+	<Effect minstrength="8" maxstrength="9"
+      strengthchange="-1">
+	  <StatusEffect target="Character" targetlimb="Head" HealthMultiplier="0.8" setvalue="true"/> 
+    </Effect>
+	<Effect minstrength="9" maxstrength="10"
+      strengthchange="-1">
+	  <StatusEffect target="Character" targetlimb="Head" HealthMultiplier="0.75" setvalue="true"/> 
+    </Effect>
+	<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="0,255,0,255" origin="0,0"/>
+  </Affliction>
+
+</Afflictions>

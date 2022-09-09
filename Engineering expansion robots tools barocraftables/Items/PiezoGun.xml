@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+ <Item name="Piezo Gun" identifier="piezogun" category="Equipment" cargocontaineridentifier="metalcrate" description="A modded RFA that has been turned into a pulse laser using piezo crystals." tags="mediumitem,weapon,gun" Scale="0.5" impactsoundtag="impact_metal_heavy">
+    <Price baseprice="1500" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" sold="false" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="silicon" />
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="physicorium" />
+	  <Item identifier="piezocrystalshard" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" >
+      <RequiredSkill identifier="electrical" level="85" />
+      <RequiredItem identifier="physicorium" />
+      <RequiredItem identifier="piezocrystalshard" />
+      <RequiredItem identifier="nucleargun" />
+      <RequiredItem identifier="silicon" />
+    </Fabricate>
+    <Sprite texture="Mods/NuclearChemistry/Items/OddsAndEndsBecauseFuckMisc/PiezoGun.png" sourcerect="28,41,245,69" depth="0.55" origin="0.5,0.5" />
+    <Body width="238" height="63" density="70" />
+	<LightComponent range="50" lightcolor="0,0,0.5,0.25" powerconsumption="0" IsOn="true" Flicker="0.5" castshadows="true" allowingameediting="false">
+	  <LightTexture texture="Content/Lights/pointlight_bright.png" origin="0.5,0.5"/>
+	  <StatusEffect type="Always" target="This" IsOn="true"/>
+    </LightComponent>
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="70,4" handle1="-50,-10" handle2="10,-3" holdangle="-25" />
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="Piezo Gun Worn" texture="Mods/NuclearChemistry/Items/OddsAndEndsBecauseFuckMisc/PiezoGun.png" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" depth="0.6" sourcerect="28,41,245,69" limb="Torso" scale="0.5" origin="0.5,0.8" />
+    </Wearable>
+    <RangedWeapon reload="0.1" barrelpos="118,14" spread="0" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.25">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="FlareBubbles" scalemin="1.4" scalemax="1.8" particleamount="14" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+      <ParticleEmitter particle="GlowDot" scalemin="4.0" scalemax="4.0" particleamount="20" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" colormultiplier="10,235,195,255" />
+      <ParticleEmitterCharge particle="chargenucleargun" particlespersecond="60" scalemultiplier="0.75,0.75" scalemin="1.0" scalemax="1.0" anglemin="0" anglemax="359" />
+      <Sound file="Content/Items/JobGear/Engineer/WEAPONS_rapidFissileAccelerator.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="Content/Items/JobGear/Engineer/WEAPONS_rapidFissileAccelerator2.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/JobGear/Engineer/WEAPONS_rapidFissileAccelerator3.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/JobGear/Engineer/WEAPONS_rapidFissileAccelerator4.ogg" type="OnUse" range="3000" />
+      <ChargeSound file="Content/Items/JobGear/Engineer/WEAPONS_rapidFissileAcceleratorStartLoop.ogg" range="3000" />
+      <StatusEffect type="OnUse">
+        <Explosion range="250.0" force="0.1" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <RequiredItems items="fulguriumbatterycell" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="25" />
+    </RangedWeapon>
+    <ItemContainer itemrotation="90" capacity="1" maxstacksize="1" hideitems="false" itempos="10,-5" containedspritedepth="0.56" containedstateindicatorstyle="tank">
+      <Containable items="fulguriumbatterycell" />
+    </ItemContainer>
+    <aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
+    <Quality>
+      <QualityStat stattype="AttackMultiplier" value="0.1" />
+    </Quality>
+  </Item>
+  
+  <Item name="Piezo Crystal Shard" identifier="piezocrystalshard" category="Material" maxstacksize="8" Tags="smallitem" scale="0.25" cargocontaineridentifier="metalcrate" canbepicked="true">
+    <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.06"/>
+    <Price baseprice="500" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" sold="false"/>
+      <Price locationtype="city" multiplier="1.15" sold="false"/>
+      <Price locationtype="research" multiplier="1" sold="true" minavailable="1"/>
+      <Price locationtype="military" multiplier="1.1" sold="false"/>
+      <Price locationtype="mine" multiplier="0.9" sold="false" minavailable="1"/>
+    </Price>
+    <InventoryIcon texture="Content/Items/Materials/Minerals.png" sourcerect="386,4,117,118" origin="0.5,0.5"/>
+    <Sprite texture="Content/Items/Materials/Minerals.png" sourcerect="386,4,117,118" depth="0.55" />
+    <Body radius="25" density="50" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item name="piezogunbolt" identifier="piezogunbolt" category="Misc" scale="0.5" sonarsize="2" hideinmenus="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" />
+    <Body width="170" height="10" density="20" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <ParticleEmitter particle="tracernucleargun" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.75" />
+      <ParticleEmitter particle="FlareBubbles" emitacrossrayinterval="50" />
+      <Attack structuredamage="0" targetforce="0" itemdamage="0" severlimbsprobability="0">
+        <Affliction identifier="burn" strength="15" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="muzzleflashnucleargun" anglemin="0" anglemax="360" particleamount="10" velocitymin="0" scalemin="0.5" scalemax="0.8" scalemultiplier="0.75,0.75" />
+        <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="150,255,195,180" />
+        <ParticleEmitter particle="FlareBubbles" particleamount="3" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <Explosion range="125.0" structuredamage="0" itemdamage="0" force="0" flames="false" smoke="false" sparks="false" underwaterbubble="false" flashcolor="255,255,0,0">
+          <Affliction identifier="burn" strength="15" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  
+    <Override>
+    <Item name="Fulgurium Battery Cell" identifier="fulguriumbatterycell" category="Equipment,Electrical" maxstacksize="8" tags="smallitem,loadable,mobilebattery" scale="0.5" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
+    <Upgrade gameversion="0.10.0.0" scale="0.5"/>
+    <PreferredContainer primary="batterycellrecharger" maxcondition="80"/>
+    <PreferredContainer secondary="divingcab,engcab,reactorcab"/>
+    <Price baseprice="250" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" sold="false"/>
+      <Price locationtype="city" multiplier="1" minavailable="1"/>
+      <Price locationtype="research" multiplier="1" minavailable="2"/>
+      <Price locationtype="military" multiplier="1" minavailable="1"/>
+      <Price locationtype="mine" multiplier="1.25" sold="false"/>
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="zinc" />
+      <Item identifier="fulgurium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="15">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredItem identifier="fulgurium" />
+      <RequiredItem identifier="zinc" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="514,832,62,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="968,25,37,21" depth="0.8" />
+    <Body width="32" height="20" density="30" />
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
+	<ItemContainer hideitems="true" capacity="1" itemrotation="90" drawinventory="false" canbeselected="false" SpawnWithId="piezogunbolt" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
+      <Containable items="piezogunbolt" />
+      <StatusEffect type="OnUse" target="This" condition="-3.3" disabledeltatime="true">
+        <SpawnItem identifiers="piezogunbolt" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Quality>
+      <QualityStat stattype="Condition" value="0.1"/>
+    </Quality>
+  </Item>
+  </Override>
+</Items>

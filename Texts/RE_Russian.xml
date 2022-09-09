@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Russian" nowhitespace="false" translatedname="Русский">
+
+	<!--Afflictions-->
+	
+	<afflictionname.stimulants>"Экстренные Стимуляторы"</afflictionname.stimulants>
+	<afflictiondescription.stimulants>Твоя жизнь в твоих руках, но не надоло...</afflictiondescription.stimulants>
+	<afflictionname.defibin>Разряд Дефибриллятора</afflictionname.defibin>
+	<afflictiondescription.defibin>Еще один шаг по краю лезвия.</afflictiondescription.defibin>
+	<afflictionname.confus>Дезориентация</afflictionname.confus>
+	<afflictiondescription.confus>От неизбежного не убежать без последствий.</afflictiondescription.confus>
+
+	<!--Items-->
+
+	<!--WarSuits-->
+	<entityname.reforged_b1>Боевой Скафандр МКI</entityname.reforged_b1>
+	<entitydescription.reforged_b1>Боевой скафандр 'A.B.Y.S.S.', новое поколение водолазных костюмов. Неплохое увеличение защитных показателей за счет встроенной системы с внутренним источником питания.</entitydescription.reforged_b1>
+	<entityname.reforged_b2>Боевой Скафандр МКII</entityname.reforged_b2> 
+	<entitydescription.reforged_b2>Боевой скафандр 'A.B.Y.S.S.', новое поколение водолазных костюмов. Серьезное увеличение защитных показателей за счет встроенной системы с внутренним источником питания. Улучшенные системы потребляют больше энергии. Рекомендуется использовать только высококачественные энергоносители.</entitydescription.reforged_b2>
+	<entityname.reforged_h1>Водолазный Шлем МКI</entityname.reforged_h1>
+	<entitydescription.reforged_h1>Шлем 'A.B.Y.S.S.', неотъемлемая часть боевого водолазного облачения.</entitydescription.reforged_h1>
+	<entityname.reforged_h2>Водолазный Шлем МКII</entityname.reforged_h2>
+	<entitydescription.reforged_h2>Шлем 'A.B.Y.S.S.', неотъемлемая часть боевого водолазного облачения.</entitydescription.reforged_h2>
+
+	<!--Misc-->
+	<entityname.re_bp1>Чертеж МКI</entityname.re_bp1>
+	<entitydescription.re_bp1>Чертеж одной из последних технологических разработок Европы. Ходят слухи, что его можно заполучить только у исследователей или военных.</entitydescription.re_bp1>
+	<entityname.re_bp2>Чертеж МКII</entityname.re_bp2>
+	<entitydescription.re_bp2>Чертеж передовой технологической разработоки Европы. Ходят слухи, что такие имеются только в лабораториях исследователей.</entitydescription.re_bp2>
+	<entityname.fusioncore>Рамка для энергоблока</entityname.fusioncore>
+	<entitydescription.fusioncore>Каркас аккумуляторного ядра для системы питания боевого скафандра.</entitydescription.fusioncore>
+	<entityname.fusioncore_u>Энергоблок-92</entityname.fusioncore_u>
+	<entitydescription.fusioncore_u>Специальное аккумуляторное ядро для системы питания боевого скафандра. Опытный образец, имеет ряд недостатков, среди которых малая емкость и недостаточная мощность.</entitydescription.fusioncore_u>
+	<entityname.fusioncore_t>Энергоблок-90</entityname.fusioncore_t>
+	<entitydescription.fusioncore_t>Специальное аккумуляторное ядро для системы питания боевого скафандра. Второе поколение, основан на другом изотопе. Рабочая лошадка.</entitydescription.fusioncore_t>
+	<entityname.fusioncore_i>Энергоблок-105</entityname.fusioncore_i>
+	<entitydescription.fusioncore_i>Специальное аккумуляторное ядро для системы питания боевого скафандра. Созданный из инопланетных материалов достигает невероятных характеристик. Для безопасного использования требуются доработки системы распределения энергии.</entitydescription.fusioncore_i>
+	<entityname.energycell>Энергоячейка</entityname.energycell>
+	<entitydescription.energycell>Специальный распределитель питания аккумуляторного типа. Не подходит для большинства устройств. Избегайте короткого замыкания.</entitydescription.energycell>
+	<entityname.energycell2>Энергоячейка Улучшенная</entityname.energycell2>
+	<entitydescription.energycell2>Специальный распределитель питания аккумуляторного типа с увеличенной емкостью. Не подходит для большинства устройств. Ни при каких обстоятельствах не допускайте короткого замыкания.</entitydescription.energycell2>
+	<entityname.coresocket>Разъем для энергоблока</entityname.coresocket>
+	<entitydescription.coresocket>Сборка из ресивера для энергоблоков и распределителя питания. Может использоваться как небольшой портативный генератор.</entitydescription.coresocket>
+	<entityname.re_medmod>Модуль жизнеобеспечения</entityname.re_medmod>
+	<entitydescription.re_medmod>Многофункциональный модуль, но его основными назначениями по-прежнему остаются экстренные инъекции и отслеживание жизненных показателей пользователя.</entitydescription.re_medmod>
+	<entityname.re_flyer>Странный флаер</entityname.re_flyer>
+	<entityname.re_scanner>Медицинский сканер</entityname.re_scanner>
+	<entitydescription.re_scanner>Портативный ручной информационный экран, на котором отображается информация о жизненных показателях и состоянии находящихся поблизости людей.</entitydescription.re_scanner>
+
+
+</infotexts>

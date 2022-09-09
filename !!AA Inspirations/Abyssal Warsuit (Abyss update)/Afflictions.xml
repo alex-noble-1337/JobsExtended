@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Afflictions>
+ <Affliction
+    name="Scented air conditioner"
+    identifier="minorsuitpsychosisresistance"
+    description="There seems to be an air conditioner in this thing! And with the current power flow, it's active.A sweet and relaxing scent."
+    type="resistance"
+    isbuff="true"
+    limbspecific="false"
+    maxstrength="100">
+    <Effect minstrength="0" maxstrength="100"
+      strengthchange="-100"
+      resistancefor="psychosis"
+      minresistance="0"
+      maxresistance="0.375"/>
+    <icon texture="Mods/Abyssal Warsuit (Abyss update)/icons.png" sourcerect="0,0,105,123" color="0,0,105,123" origin="0,0"/>
+  </Affliction>
+
+  <Affliction
+    name="Unbeatable Morale"
+    identifier="suitpsychosisresistance"
+    description="The suit has activated most of it's relaxants, making the user lose all fear and remains focused on reality."
+    type="resistance"
+    isbuff="true"
+    limbspecific="false"
+    maxstrength="100">
+    <Effect minstrength="0" maxstrength="100"
+      strengthchange="-100"
+      resistancefor="psychosis"
+      minresistance="0"
+      maxresistance="0.75"/>
+    <icon texture="Mods/Abyssal Warsuit (Abyss update)/icons.png" sourcerect="105,0,105,123" color="105,0,105,123" origin="0,0"/>
+  </Affliction>
+
+  <Affliction
+    name="Impact dampers"
+    identifier="suitstrengthen"
+    description="The suit has activated it's dampers ready to reduce incoming blows, effectively reducing all damage."
+    type="suitresistance"
+    isbuff="true"
+    limbspecific="false"
+    maxstrength="100">
+    <Effect minstrength="0" maxstrength="100"
+      strengthchange="-100"
+      resistancefor="damage"
+      minresistance="0"
+      maxresistance="0.50"/>
+    <icon texture="Mods/Abyssal Warsuit (Abyss update)/icons.png" sourcerect="210,0,105,123" color="210,0,105,123" origin="0,0"/>
+  </Affliction>
+
+  <Affliction
+    name="Minor anaparalyzant injections"
+    identifier="minorsuitparalysisresistance"
+    description="The suit takes care of it's user by injecting anaparalyzant on demand, avoiding psychosis. Minor doses means possibly won't stop the effects, but will slow it down"
+    type="resistance"
+    isbuff="true"
+    limbspecific="false"
+    karmachangeonapplied="0.15"
+    maxstrength="100">
+    <Effect minstrength="0" maxstrength="100"
+      strengthchange="-100"
+      resistancefor="paralysis"
+      minresistance="0"
+      maxresistance="0.8"/>
+    <icon texture="Mods/Abyssal Warsuit (Abyss update)/icons.png" sourcerect="0,123,105,123" color="0,123,105,123" origin="0,0"/>
+  </Affliction>
+  
+  <Affliction
+    name="Medium anaparalyzant injections"
+    identifier="mediumsuitparalysisresistance"
+    description="The suit takes care of it's user by injecting anaparalyzant on demand, avoiding psychosis. Moderated doses, slowing paralysis effects."
+    type="resistance"
+    isbuff="true"
+    limbspecific="false"
+    karmachangeonapplied="0.15"
+    maxstrength="100">
+    <Effect minstrength="0" maxstrength="100"
+      strengthchange="-100"
+      resistancefor="paralysis"
+      minresistance="0"
+      maxresistance="0.8"/>
+    <icon texture="Mods/Abyssal Warsuit (Abyss update)/icons.png" sourcerect="105,123,105,123" color="105,123,105,123" origin="0,0"/>
+  </Affliction>
+  
+  <Affliction
+    name="Abyss pressuriser"
+    identifier="abyssprotection"
+    description="You are protected from the hostile pressure. MarineCorps DOES encourage usage in the literal abyss."
+    type="resistance"
+    isbuff="true"
+    limbspecific="false"
+    activationthreshold="1.0"
+    showiconthreshold="50"
+    maxstrength="50">
+    <Effect minstrength="1" maxstrength="25"
+      minvitalitydecrease="0"
+      maxvitalitydecrease="0"
+      strengthchange="-150.0" >
+    </Effect>
+    <Effect minstrength="25" maxstrength="50"
+      strengthchange="-150.0" >
+      <StatusEffect target="Character" PressureProtection="10000.0" />
+    </Effect>
+	<icon texture="Mods/Abyssal Warsuit (Abyss update)/icons.png" sourcerect="210,123,105,123" color="210,123,105,123" origin="0,0"/>
+  </Affliction>
+
+</Afflictions>

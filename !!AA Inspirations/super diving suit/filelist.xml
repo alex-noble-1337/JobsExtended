@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="super diving suit" path="Mods/super diving suit/filelist.xml" corepackage="false" gameversion="0.15.13.0" steamworkshopid="2665842802" installtime="1638202661">
+  <Item file="Mods/super diving suit/super diving suit.xml" />
+  <None file="Mods/super diving suit/lightcone+90.png" />
+</contentpackage>

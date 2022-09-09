@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+<Items>
+  <!-- ********************************************************************************************* -->
+  <!-- ****************************************Meds************************************************* -->
+  <!-- ********************************************************************************************* -->
+  <!-- Name: Bandage -->
+  <!-- Description: Basic bandages, useful in the treatment of bleeding wounds and burns. -->
+  <!-- *************************************************************************************************************************************************************************** -->
+  <Bandage name="" identifier="antibleeding1" aliases="Bandage" category="Equipment" Tags="smallitem,medical" maxstacksize="16" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_soft" RequireAimToUse="True">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <PreferredContainer primary="medcab" minamount="6" maxamount="8" spawnprobability="1" />
+    <PreferredContainer primary="supplycab" minamount="3" maxamount="4" spawnprobability="0.5" />
+    <PreferredContainer primary="wreckmedcab,abandonedmedcab" minamount="0" maxamount="6" spawnprobability="0.4" />
+    <PreferredContainer primary="outpostmedcompartment" minamount="0" maxamount="3" spawnprobability="0.25" />
+    <Price baseprice="40" >
+      <Price locationtype="outpost" multiplier="1" minavailable="25" />
+      <Price locationtype="city" multiplier="0.9" minavailable="30" />
+      <Price locationtype="research" multiplier="0.9" minavailable="25" />
+      <Price locationtype="military" multiplier="1" minavailable="30" />
+      <Price locationtype="mine" multiplier="0.75" minavailable="20" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="15" amount="2">
+      <RequiredSkill identifier="medical" level="5" />
+      <RequiredItem identifier="organicfiber" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="organicfiber" mincondition="0.1" outcondition="0.5"/>
+    </Deconstruct>
+    <SuitableTreatment type="bleeding" suitability="15" />
+    <SuitableTreatment type="burn" suitability="18" />
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="310,33,26,42" depth="0.6" origin="0.5,0.5" />
+    <Body width="25" height="40" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="10" reload="1.0" msg="ItemMsgPickUpSelect">
+      <RequiredSkill identifier="medical" level="10" />
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect tags="medical" type="OnUse" target="This, Limb" duration="12.0">
+        <Sound file="Content/Items/Medical/Bandage1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Items/Medical/Bandage2.ogg" type="OnUse" range="500" />
+        <ReduceAffliction type="bleeding" amount="2" />
+        <ReduceAffliction type="burn" amount="1.5" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="Limb, This" duration="12.0">
+        <Sound file="Content/Items/Medical/Bandage2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Items/Medical/Bandage1.ogg" type="OnUse" range="500" />
+        <ReduceAffliction type="bleeding" amount="1.5" />
+        <ReduceAffliction type="burn" amount="1" />
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Bandage>
+  <!-- Name: Plastiseal -->
+  <!-- Description: A synthetic skin with hemostatic properties, able to quickly seal most wounds. -->
+  <!-- *************************************************************************************************************************************************************************** -->
+  <Plastiseal name="" identifier="antibleeding2" category="Equipment" Tags="smallitem,medical" maxstacksize="16" cargocontaineridentifier="mediccrate" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_soft" RequireAimToUse="True">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <PreferredContainer primary="medcab" minamount="4" maxamount="6" />
+    <PreferredContainer primary="wreckmedcab,abandonedmedcab" minamount="0" maxamount="6" spawnprobability="0.4" />
+    <PreferredContainer primary="outpostmedcompartment" minamount="0" maxamount="4" spawnprobability="0.25" />
+    <Price baseprice="100" >
+      <Price locationtype="outpost" multiplier="1" minavailable="12" />
+      <Price locationtype="city" multiplier="0.9" minavailable="15" />
+      <Price locationtype="research" multiplier="0.9" minavailable="18" />
+      <Price locationtype="military" multiplier="1" minavailable="15" />
+      <Price locationtype="mine" multiplier="0.75" minavailable="12" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="25" amount="2">
+      <RequiredSkill identifier="medical" level="16" />
+      <RequiredItem identifier="antibleeding1" />
+      <RequiredItem identifier="elastin" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="organicfiber" mincondition="0.1" outcondition="0.25" />
+      <Item identifier="elastin" mincondition="0.1" outcondition="0.5" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="959,771,63,59" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="340,33,26,42" depth="0.6" origin="0.5,0.5" />
+    <Body width="25" height="40" density="20" />
+    <SuitableTreatment type="bleeding" suitability="32" />
+    <SuitableTreatment type="burn" suitability="35" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="10" reload="1.0" msg="ItemMsgPickUpSelect">
+      <RequiredSkill identifier="medical" level="22"></RequiredSkill>
+      <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect tags="medical" type="OnUse" target="This, Limb" duration="12">
+        <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
+        <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
+        <ReduceAffliction type="bleeding" amount="4" />
+        <ReduceAffliction type="burn" amount="3" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="This, Limb" duration="12">
+        <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
+        <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
+        <ReduceAffliction type="bleeding" amount="2" />
+        <ReduceAffliction type="burn" amount="1.5" />
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Plastiseal>
+</Items>
+</Override>

@@ -1,0 +1,562 @@
+
+<!--Engineer -->
+			<TalentOption identifier="minorinmechanics"/> <!-- Good one stays Add to Engineer, COB -->
+			<TalentOption identifier="remotemonitor"/> <!-- Stays, add to engineer -->
+			<TalentOption identifier="phdinnuclearphysics"/> <!-- Good one but pucs might conflict with personalised diving suits, add to engineer -->
+			<TalentOption identifier="militaryapplications"/> <!-- Add it to COB and engineer, and mabe quatermaster -->
+			<TalentOption identifier="strengthenedalloys"/> <!-- Add it to COB and engineer, and mabe quatermaster -->
+			<TalentOption identifier="castledoctrine"/> <!-- Add it to COB and engineer, and mabe quatermaster -->
+			<TalentOption identifier="expandedresearch"/> <!-- Add it to COB and engineer, and mabe quatermaster -->
+			<TalentOption identifier="armsdealer"/> <!-- Add it to COB and engineer, and mabe quatermaster -->	
+			<TalentOption identifier="nuclearoption"/> <!-- Remove RFA, add it as a class weapon, Add it to COB and engineer, and mabe quatermaster -->
+<!--Mechanic -->
+			<TalentOption identifier="quickfix"/> <!-- Add to Mechanic and Quatermaster  -->
+			<TalentOption identifier="hullsealer"/> <!-- Add it to Mechanic -->
+			<TalentOption identifier="letitdrain"/> <!-- Add it to COB and mechanic -->	
+			<TalentOption identifier="aggressiveengineering"/> <!-- Dumb, only the repar part viable add it to Mechanic -->
+			<TalentOption identifier="hullfixer"/> <!-- Fabricate toolls to an Quatermaster, Status monitor to COB, Mechanic -->
+			<TalentOption identifier="crisismanagement"/> <!-- Dumb but can stay in Mechanic and Quatermaster -->
+			
+			
+			<!--<TalentOption identifier="inspiretobattle"/>  Make it eoe and move to navigator, and security tree-->
+<!-- Tree Templates -->
+
+	<SubTree identifier="gunslinger">
+		<TalentOptions>
+			<TalentOption identifier="handsomestranger"/> <!--  Good,  buff it only for CO, add to navigator  -->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="tumble"/> <!--  Rework -->
+			<TalentOption identifier="quickdraw"/>
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="sailorwithnoname"/>
+			<!-- More buffs / when you play harmonica you get xp -->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="bountyhunter"/> <!-- mabe break it down and add to diver -->
+		</TalentOptions>
+	</SubTree>
+	<SubTree identifier="skipper"> 
+		<TalentOptions>
+			<TalentOption identifier="travelingtradesman"/> <!-- mabe break it down and add to diver -->
+		<!-- <TalentOption identifier="evasivemaneuvers"/>  Rework -->
+			<TalentOption identifier="trustedcaptain"/>
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="trucker"/>
+			<!--<TalentOption identifier="trustedcaptain"/> -->
+		</TalentOptions>
+		<TalentOptions>
+		<!-- <TalentOption identifier="trucker"/> Moved-->
+		<!-- <TalentOption identifier="downwiththeship"/> Rework -->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="esteemedcaptain"/> <!-- Rework (ONLY CO)  unlock promotion token -->
+		</TalentOptions>
+    </SubTree>
+	<SubTree identifier="shipmaster"> <!-- make buffs more aoe if possible, add it to CO and XO-->
+		<TalentOptions>
+			<TalentOption identifier="commander"/> <!-- Nefr and make continous -->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="trustbuilding"/>
+			<!-- Talent about getting small buffs, no more than 10% -->
+			<!-- <TalentOption identifier="maintenanceroutine"/>  REWORK Move COB -->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="camaraderie"/> <!-- Buff it -->
+			<!-- Red Alarm, shipwide speed, and small repair buff, when crouched, once a mission/ 10 mission -->
+			<!--<TalentOption identifier="inspiretobattle"/>  Make it eoe and move to navigator, and security tree-->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="allhandsondeck"/> <!--If your team has at least 7 diffrent jobs gain big buff, and unlock all talents in this tree -->
+		</TalentOptions>
+	</SubTree>
+
+<!--Navigator 
+	Flare instead of offenive tree.
+	Tactical offenive tool. CC
+	super flares
+	Super alien flare - massive light range. a long time.
+	flaregun good - They melt hull. 
+	UV Polarisng gogles. - more vison range. - a component of modular headset - tier 4 of utility tree
+	AOE buff when you use shuttle nav terminal - lvl 2 skill -->
+
+	<SubTree identifier="gunslinger">
+		<TalentOptions>
+			<TalentOption identifier="handsomestranger"/> <!--  Good,  buff it only for CO, add to navigator  -->
+		</TalentOptions>
+		<TalentOptions>
+			<!-- <TalentOption identifier="tumble"/>  Rework -->
+			<!-- <TalentOption identifier="quickdraw"/>  Rework -->
+		</TalentOptions>
+		<TalentOptions>
+			<!-- <TalentOption identifier="sailorwithnoname"/>  Rework -->
+			<!-- <TalentOption identifier="drunkensailor"/>  Rework -->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="bountyhunter"/> <!-- mabe break it down and add to diver -->
+		</TalentOptions>
+	</SubTree>
+	<SubTree identifier="skipper"> 
+		<TalentOptions>
+			<TalentOption identifier="travelingtradesman"/> <!-- mabe break it down and add to diver -->
+		<!-- <TalentOption identifier="evasivemaneuvers"/>  Rework -->
+			<TalentOption identifier="trustedcaptain"/>
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="trucker"/>
+			<!-- TODO AOE buff when you use shuttle nav terminal -->
+		</TalentOptions>
+		<TalentOptions>
+		<!-- <TalentOption identifier="trucker"/> Moved-->
+		<!-- TODO UV Polarisng gogles. - more vison range. - a component of modular headset - tier 4 of utility tree -->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="esteemedcaptain"/> <!-- Rework (ONLY CO)  unlock promotion token -->
+		</TalentOptions>
+    </SubTree>
+	<SubTree identifier="shipmaster"> <!-- make buffs more aoe if possible, add it to CO and XO-->
+		<TalentOptions>
+			<TalentOption identifier="commander"/> <!-- Nefr and make continous -->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="trustbuilding"/>
+			<!-- Talent about getting small buffs, no more than 10% -->
+			<!-- <TalentOption identifier="maintenanceroutine"/>  REWORK Move COB -->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="camaraderie"/> <!-- Buff it -->
+			<!-- Red Alarm, shipwide speed, and small repair buff -->
+			<!--<TalentOption identifier="inspiretobattle"/>  Make it eoe and move to navigator, and security tree-->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="allhandsondeck"/> <!--If your team has at least 7 diffrent jobs gain big buff, and unlock all talents in this tree -->
+		</TalentOptions>
+	</SubTree>
+  </TalentTree>
+
+<!--XO -->
+	<SubTree identifier="warden"> <!-- entire tree to security -->
+			<TalentOptions>
+				<TalentOption identifier="enforcer"/> <!--add to security swap with beat cop, remove reciepie add it to munitionsexpertise, and make the buff more ground comabat and buffier--> 
+			</TalentOptions>
+			<TalentOptions>
+				<TalentOption identifier="beatcop"/> <!-- Buff it, add fulgurium stun dart.-->
+				<TalentOption identifier="munitionsexpertise"/> <!-- Add reciepie for Shotgun Shell, add slug shell used for non leathal operations -->
+			</TalentOptions>
+			<TalentOptions>
+				<TalentOption identifier="stonewall"/> <!-- Its okey but make stun resistance 100% -->
+				<TalentOption identifier="bythebook"/> <!-- Afer removing fulgurium stun dart is weak af, into a trash it goes -->
+			</TalentOptions>
+			<TalentOptions>
+				<TalentOption identifier="implacable"/> <!-- Good one but add it to divers also, but with something else than auto shotgun -->
+			</TalentOptions>
+	</SubTree>
+
+<!--diver -->	
+	<SubTree identifier="specialist"> <!-- 3 diver tree -->
+			<TalentOptions>	
+				<TalentOption identifier="physicalconditioning"/> <!-- Replace to something better -->
+			</TalentOptions>
+			<TalentOptions>            
+				<TalentOption identifier="scrounger"/> <!-- Move to diver -->
+				<TalentOption identifier="collegeathletics"/> <!-- Move to diver -->
+			</TalentOptions>
+			<TalentOptions>	
+				<!-- TODO 1 -->			
+ <!-- Make only for diver, and expand for it. -->
+				<TalentOption identifier="scrapsavant"/> <!-- Moved to diver -->	
+			</TalentOptions>
+			<TalentOptions>			
+				<TalentOption identifier="elbowgrease"/> <!-- Move to diver -->
+			</TalentOptions>			
+	</SubTree>
+	<SubTree identifier="diver2"> <!-- 2 TODO name diver tree -->	
+			<TalentOptions>	
+				<TalentOption identifier="justascratch"/> <!-- Move to a security and diver -->		
+				<TalentOption identifier="warriorpoet"/> <!-- Move to diver -->
+			</TalentOptions>
+			<TalentOptions> 			
+				<!-- TODO - to all skills besides weapons, boost to speed in watter -->
+			</TalentOptions>
+			<TalentOptions> 
+				<TalentOption identifier="scavenger"/> <!-- Move to diver -->
+				<TalentOption identifier="miner"/> <!-- Move to diver -->
+			</TalentOptions>
+			<TalentOptions> 			
+				<TalentOption identifier="dualspecops"/> <!-- Move to diver -->	
+			</TalentOptions>
+	</SubTree>			
+	<SubTree identifier="turiningthetide"> <!-- TODO name diver tree -->				
+			<TalentOptions>	
+				<!-- Craft better harpoonguns and harpoons, named "personalised gear" -->
+				<TalentOption identifier="navydiver"/>
+			</TalentOptions>
+			<TalentOptions> 			
+				<!-- TODO 1 -->
+				<!-- TODO 2 -->
+			</TalentOptions>
+			<TalentOptions> 		
+				<!-- TODO 1 -->
+				<!-- TODO 2 -->
+			</TalentOptions>
+			<TalentOptions> 			
+	        <TalentOption identifier="warlord"/> <!-- Move to diver and change it so it has implaciable efffect -->	
+			</TalentOptions>			
+	</SubTree>	
+
+<!--COB -->				
+	<SubTree identifier="technician">	
+			<TalentOptions>	
+				<TalentOption identifier="safetyfirst"/> <!-- Buff it, add reciepie  to COB -->
+			</TalentOptions>
+			<TalentOptions>
+				<TalentOption identifier="hullfixer"/> <!-- TODO, split +1 to quality, add reciepie Fabricate toolls to an Quatermaster, Status monitor to COB, Mechanic -->
+				<!-- TODO 2 -->
+			</TalentOptions>
+			<TalentOptions>
+				<!-- TODO 1 -->
+				<!-- TODO 2 -->
+			</TalentOptions>
+			<TalentOptions>
+				<!-- TODO 1 -->		
+			</TalentOptions>
+	</SubTree>	
+	<SubTree identifier="machinist">	<!-- TODO think fabout better name, Add it to Quatermaster and COB -->		
+			<TalentOptions> 
+				<TalentOption identifier="overclocking"/> <!-- Add it to Quatermaster and COB -->
+			</TalentOptions>
+			<TalentOptions>
+				<!-- TODO 1 -->
+				<!-- TODO 2 -->
+			</TalentOptions>
+			<TalentOptions>
+				<!-- TODO 1 -->
+				<!-- TODO 2 -->
+			</TalentOptions>
+			<TalentOptions>		
+				<TalentOption identifier="letitdrain"/> <!-- Add it to COB and mechanic -->
+			</TalentOptions>
+	</SubTree>	
+	<SubTree identifier="electrician">				
+			<TalentOptions> 	
+				<TalentOption identifier="minorinmechanics"/> <!-- Good one stays Add to Engineer, COB -->	
+			</TalentOptions>
+			<TalentOptions>
+				<!-- TODO 1 -->
+				<!-- TODO 2 -->
+			</TalentOptions>
+			<TalentOptions>
+				<!-- TODO 1 -->
+				<!-- TODO 2 -->
+			</TalentOptions>
+			<TalentOptions>
+				<TalentOption identifier="nuclearoption"/> <!-- Remove RFA, add it as a class weapon, Add it to COB and engineer, and mabe quatermaster -->				
+			</TalentOptions>
+	</SubTree>
+	
+
+<!--Quatermaster TODO expand ammo crafting and streamline talents -->
+	<SubTree identifier="weaponsengineer">
+		<TalentOptions>			
+			<TalentOption identifier="bootcamp"/> <!-- Add to quatermaster and security -->	
+			<TalentOption identifier="armsdealer"/> <!-- Add it to COB and engineer, and mabe quatermaster -->	
+		</TalentOptions>
+		<TalentOptions>			
+			<TalentOption identifier="militaryapplications"/> <!-- Add it to COB and engineer, and mabe quatermaster -->	
+		</TalentOptions>
+		<TalentOptions>				
+			<TalentOption identifier="demolitionsexpert"/> <!-- Move to quatermaster -->
+			<TalentOption identifier="gunsmith"/> <!-- Move to quatermaster -->
+		</TalentOptions>
+		<TalentOptions>					
+			<TalentOption identifier="nuclearoption"/> <!-- Todo think of better thing than rfa Remove RFA, add it as a class weapon, Add it to COB and engineer, and mabe quatermaster -->				
+		</TalentOptions>
+	</SubTree>
+	<SubTree identifier="crafter"> <!-- TODO name -->
+		<TalentOptions>			
+			<TalentOption identifier="tinkerer"/> <!-- Add to Quatermaster -->		
+		</TalentOptions>
+		<TalentOptions>				
+			<TalentOption identifier="massproduction"/> <!-- Add it to Quatermaster-->
+			<TalentOption identifier="quickfix"/> <!-- Add to Mechanic and Quatermaster  -->				
+		</TalentOptions>
+		<TalentOptions>				
+			<TalentOption identifier="hullfixer"/> <!-- TODO Fabricate toolls to an Quatermaster, Status monitor to COB, Mechanic -->
+		</TalentOptions>
+		<TalentOptions>				
+			<TalentOption identifier="strengthenedalloys"/> <!-- Add it to COB and engineer, and mabe quatermaster -->
+			<TalentOption identifier="artisansmith"/> <!-- Move to quatermaster -->
+		</TalentOptions>	
+	</SubTree>	
+	<SubTree identifier="resuplayer"> <!-- TODO name -->
+		<TalentOptions>				
+			<TalentOption identifier="cannedheat"/> <!-- Move to quatermaster -->			
+		</TalentOptions>
+		<TalentOptions>			
+			<TalentOption identifier="crisismanagement"/> <!-- Dumb but can stay in Mechanic and Quatermaster -->	
+			<TalentOption identifier="overclocking"/> <!-- Add it to Quatermaster and COB -->
+		</TalentOptions>
+		<TalentOptions>			
+			<TalentOption identifier="castledoctrine"/> <!-- Add it to COB and engineer, and mabe quatermaster -->			
+			<TalentOption identifier="expandedresearch"/> <!-- Add it to COB and engineer, and mabe quatermaster -->		
+		</TalentOptions>
+		<TalentOptions>
+			<!-- TODO 1 -->		
+		</TalentOptions>		
+	</SubTree>	
+
+<!--Custodian -->
+	<SubTree identifier="cleaner"> <!-- TODO name -->
+		<TalentOptions>	
+			<TalentOption identifier="crewlayabout"/>
+		</TalentOptions>
+		<TalentOptions>
+		    <TalentOption identifier="firemanscarry"/> <!-- Add to Custodian, add to medic -->				
+			<!-- TODO 1 -->	
+		</TalentOptions>
+		<TalentOptions>
+			<!-- TODO 1 -->	
+			<!-- TODO 2 -->				
+		</TalentOptions>
+		<TalentOptions>	
+			<!-- TODO 1 -->		
+		</TalentOptions>		
+	</SubTree>	
+	<SubTree identifier="cleaner2"> <!-- TODO name -->
+		<TalentOptions>			
+			<TalentOption identifier="multitasker"/> <!-- Move to Custodian -->		
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="olympian"/> <!-- TODO Stays and add speed specifically for Custodian, add to passanger -->			
+			<!-- TODO 1 -->	
+		</TalentOptions>
+		<TalentOptions>
+			<!-- TODO 1 -->	
+			<!-- TODO 2 -->			
+		</TalentOptions>
+		<TalentOptions>	
+			<!-- TODO 1 -->		
+		</TalentOptions>		
+	</SubTree>	
+	<SubTree identifier="cleaner3"> <!-- TODO name -->
+		<TalentOptions>		
+			<TalentOption identifier="standanddeliver"/> <!-- Stays add to Custodian -->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="survivalpackage"/> <!-- Split it, ability to custodian, getting stuff to medic -->
+			<!-- TODO 1 -->	
+		</TalentOptions>
+		<TalentOptions>
+			<!-- TODO 1 -->	
+			<!-- TODO 2 -->			
+		</TalentOptions>
+		<TalentOptions>	
+			<!-- TODO 1 -->		
+		</TalentOptions>		
+	</SubTree>
+
+
+<!--Chief Medical Officer (same as medic for now) -->
+	<SubTree identifier="med1"> <!-- TODO name -->
+		<TalentOptions>		        
+			<TalentOption identifier="doubleduty"/> <!-- Add To medic -->
+	        <TalentOption identifier="fieldmedic"/> <!-- Stays add to medic  -->		
+		</TalentOptions>
+		<TalentOptions>
+			<!-- TODO 1 -->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="drsubmarine"/> <!-- Move to medic -->
+			<TalentOption identifier="survivalpackage"/> <!-- TODO Split it, ability to custodian, getting stuff to medic -->
+		</TalentOptions>			
+		<TalentOptions>
+			<!-- TODO 1 -->
+		</TalentOptions>
+	</SubTree>		
+	<SubTree identifier="medic"> 
+		<TalentOptions>	
+			<TalentOption identifier="firemanscarry"/> <!-- Add to Custodian, add to medic -->
+		</TalentOptions>			
+		<TalentOptions>			
+			<TalentOption identifier="researchanddevelopment"/> <!-- Move to medic -->	
+			<TalentOption identifier="researchgrant"/> <!-- TODO Reciepie move to medic, rest move to passanger -->
+		</TalentOptions>			
+		<TalentOptions>			
+			<TalentOption identifier="mechanicscourse"/> <!-- Rework, dumb, add to medic -->
+			<!-- TODO 1 -->
+		</TalentOptions>			
+		<TalentOptions>			
+			<TalentOption identifier="dontdieonme"/> <!-- Stays add to medic -->
+		</TalentOptions>
+	</SubTree>	
+	<SubTree identifier="med3"> <!-- TODO name -->
+		<TalentOptions>		
+			<TalentOption identifier="bedsidemanner"/> <!-- Stays add to medic -->	
+		</TalentOptions>			
+		<TalentOptions>	
+			<!-- TODO 1 -->		
+			<!-- TODO 2 -->
+		</TalentOptions>			
+		<TalentOptions>			
+			<!-- TODO 1 -->		
+			<!-- TODO 2 -->
+		</TalentOptions>			
+		<TalentOptions>		
+			<TalentOption identifier="combatmedic"/> <!-- Stays add to medic -->	
+		</TalentOptions>
+	</SubTree>			
+
+
+<!--Head of Security (same as security for now) -->
+	<SubTree identifier="warden"> <!-- entire tree to security -->
+		<TalentOptions>
+			<TalentOption identifier="enforcer"/> <!--add to security swap with beat cop, remove reciepie add it to munitionsexpertise, and make the buff more ground comabat and buffier--> 
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="beatcop"/> <!-- Buff it, add fulgurium stun dart.-->
+			<TalentOption identifier="munitionsexpertise"/> <!-- Add reciepie for Shotgun Shell, add slug shell used for non leathal operations -->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="stonewall"/> <!-- Its okey but make stun resistance 100% -->
+			<TalentOption identifier="bythebook"/> <!-- Afer removing fulgurium stun dart is weak af, into a trash it goes -->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="implacable"/> <!-- Good one but add it to divers also, but with something else than auto shotgun -->
+		</TalentOptions>
+	</SubTree>
+	<SubTree identifier="soldier">
+		<TalentOptions>
+			<TalentOption identifier="bootcamp"/> <!-- Add to quatermaster and security -->	 
+		</TalentOptions>
+		<TalentOptions>				
+			<TalentOption identifier="buccaneer"/> <!-- Good one, add to security  -->	
+			<!-- TODO 1 -->	
+		</TalentOptions>
+		<TalentOptions>				
+			<TalentOption identifier="optimizedpowerflow"/> <!-- TODO Make something simmilar but for security, and slightly worse -->			
+			<!-- TODO 1 -->	
+		</TalentOptions>
+		<TalentOptions>
+			<!-- TODO 1 -->		
+		</TalentOptions>
+	</SubTree>	
+	<SubTree identifier="soldier3"> <!-- TODO name -->
+		<TalentOptions>	
+			<TalentOption identifier="justascratch"/> <!-- Move to a security and diver -->
+		</TalentOptions>
+		<TalentOptions>				
+			<!-- TODO 1 -->		
+			<!-- TODO 2 -->	
+		</TalentOptions>
+		<TalentOptions>				
+			<!-- TODO 1 -->				
+			<!-- TODO 2 -->	
+		</TalentOptions>
+		<TalentOptions>
+			<!-- TODO 1 -->		
+		</TalentOptions>
+	</SubTree>	
+
+
+<!--Passenger-->	
+	<SubTree identifier="xenologist">
+      <TalentOptions>
+	  	<TalentOption identifier="curiosity"/> <!-- Add To Passenger -->
+      </TalentOptions>
+      <TalentOptions>
+		<TalentOption identifier="researchersintuition"/>  <!-- Add To Passenger -->	
+		<!-- TODO 1  -->
+      </TalentOptions>
+      <TalentOptions>
+		<TalentOption identifier="alienhoarder"/> <!-- TODO rework Add To Passenger -->
+		<TalentOption identifier="reverseengineer"/> <!-- Add To Passenger -->
+      </TalentOptions>
+      <TalentOptions>
+		<TalentOption identifier="atmosmachine"/> <!-- Add To Passenger -->
+      </TalentOptions>
+    </SubTree>
+	<SubTree identifier="scientist">
+      <TalentOptions>
+        <TalentOption identifier="genetherapist"/>
+      </TalentOptions>
+      <TalentOptions>
+			<!-- TODO 1 instrument thingy -->				
+			<!-- TODO 2 instrument thingy -->
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="geneharvester"/>
+        <TalentOption identifier="geneticstability"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="advancedsplicing"/>
+      </TalentOptions>
+    </SubTree>
+	<SubTree identifier="clown"> <!-- Move entire tree to passenger -->
+      <TalentOptions> 
+        <TalentOption identifier="enrollintoclowncollege"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="waterprankster"/>
+        <TalentOption identifier="inspiringtunes"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="psychoclown"/>
+        <TalentOption identifier="slapstickexpert"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="truepotential"/>
+      </TalentOptions>
+    </SubTree>
+
+<!--Prisoner -->
+	<SubTree identifier="violent"> <!-- TODO name -->
+      <TalentOptions>
+	        <TalentOption identifier="pyromaniac"/> <!-- add to prisoner -->
+      </TalentOptions>
+      <TalentOptions>
+			<!-- TODO 1  -->
+			<!-- TODO 2  -->	  
+	  </TalentOptions>
+      <TalentOptions>
+			<!-- TODO 1  -->
+			<!-- TODO 2  -->	  
+	  </TalentOptions>
+      <TalentOptions>
+			<!-- TODO 1  -->  
+	  </TalentOptions>
+    </SubTree>	
+	<SubTree identifier="trolling"> <!-- TODO name -->
+      <TalentOptions>
+			<TalentOption identifier="skedaddle"/> <!-- Move to prisoner -->
+      </TalentOptions>
+      <TalentOptions>
+			<TalentOption identifier="stillkicking"/> <!-- Move it to a prisoner -->
+			<!-- TODO 2  -->	  
+	  </TalentOptions>
+      <TalentOptions>
+			<!-- TODO 1  -->
+			<!-- TODO 2  -->	  
+	  </TalentOptions>
+      <TalentOptions>
+			<!-- TODO 1  -->  
+	  </TalentOptions>
+    </SubTree>	
+	<SubTree identifier="cooperative"> <!-- TODO name -->
+      <TalentOptions>
+	        <TalentOption identifier="playingcatchup"/> <!-- Move to prisoner Should be in all classes -->	        
+      </TalentOptions>
+      <TalentOptions>
+			<TalentOption identifier="insurancepolicy"/> <!-- Move it to a prisoner -->
+			<!-- TODO 1  -->
+      </TalentOptions>
+      <TalentOptions>
+			<!-- TODO 1  -->
+			<!-- TODO 2  -->
+      </TalentOptions>
+      <TalentOptions>			
+	        <TalentOption identifier="graduationceremony"/> <!-- Add it to prisoner, and Custodian -->
+      </TalentOptions>
+    </SubTree>	

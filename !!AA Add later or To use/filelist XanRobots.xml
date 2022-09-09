@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="XanRobots" path="Mods/XanRobots/filelist.xml" corepackage="false" gameversion="0.12.0.3" steamworkshopid="2203545443" installtime="1614845816">
+  <Character file="Mods/XanRobots/Characters/Brute/Brute.xml" />
+  <Character file="Mods/XanRobots/Characters/Bruteping/Bruteping.xml" />
+  <Item file="Mods/XanRobots/items/Generalitems.xml" />
+  <Character file="Mods/XanRobots/Characters/Tokka/Tokka.xml" />
+  <Character file="Mods/XanRobots/Characters/Brutepingkiller/Brutepingkiller.xml" />
+  <Character file="Mods/XanRobots/Characters/Mule/Mule.xml" />
+  <Character file="Mods/XanRobots/Characters/Atlas/Atlas.xml" />
+  <Afflictions file="Mods/XanRobots/Cargoaffliction.xml" />
+  <Character file="Mods/XanRobots/Characters/Brute2/Brute2.xml" />
+  <Character file="Mods/XanRobots/Characters/Cargoping/Cargoping.xml" />
+  <Character file="Mods/XanRobots/Characters/Cargopingkiller/Cargopingkiller.xml" />
+</contentpackage>
