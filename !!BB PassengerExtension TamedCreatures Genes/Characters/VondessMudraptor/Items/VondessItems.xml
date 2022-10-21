@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+    <Item name="Vial Ca" identifier="vial1" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <Price locationtype="Research" buyprice="10" />
+    <Price locationtype="City" buyprice="12" />
+    <Price locationtype="Outpost" buyprice="30" />
+    <Price locationtype="Mine" buyprice="35" />
+	<Price locationtype="Military" buyprice="45" />
+    <Deconstruct time="20">
+      <Item identifier="quartz" outcondition="0.2" /> 
+      <Item identifier="rubber" outcondition="0.1" /> 
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="8" outcondition="0.01">
+      <RequiredItem identifier="quartz" mincondition="0.2" usecondition="true" />
+      <RequiredItem identifier="rubber" mincondition="0.1" usecondition="true" />
+    </Fabricate>   
+   <InventoryIcon texture="Mods/VondessMudraptor/Items/Vials.png" sourcerect="0,0,100,100" />
+    <Sprite texture="Mods/VondessMudraptor/Items/Vials.png" sourcerect="0,200,100,100" depth="0.55" scale="0.5" origin="0.5,0.5" />
+    <Body width="90" height="60" density="50" />
+    <Holdable canBeCombined="false" removeOnCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+    </Holdable>
+    </Item>
+	<Item name="Vial P" identifier="vial2" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <Price locationtype="Research" buyprice="10" />
+    <Price locationtype="City" buyprice="12" />
+    <Price locationtype="Outpost" buyprice="30" />
+    <Price locationtype="Mine" buyprice="35" />
+	<Price locationtype="Military" buyprice="45" />
+    <Deconstruct time="20">
+      <Item identifier="quartz" outcondition="0.2" /> 
+      <Item identifier="rubber" outcondition="0.1" /> 
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="8" outcondition="0.01">
+      <RequiredItem identifier="quartz" mincondition="0.2" usecondition="true" />
+      <RequiredItem identifier="rubber" mincondition="0.1" usecondition="true" />
+    </Fabricate>   
+   <InventoryIcon texture="Mods/VondessMudraptor/Items/Vials.png" sourcerect="100,0,100,100" />
+    <Sprite texture="Mods/VondessMudraptor/Items/Vials.png" sourcerect="100,200,100,100" scale="0.5" depth="0.55" origin="0.5,0.5" />
+    <Body width="90" height="60" density="50" />
+    <Holdable canBeCombined="false" removeOnCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+    </Holdable>
+    </Item>
+		<Item name="Vial OH" identifier="vial3" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <Price locationtype="Research" buyprice="10" />
+    <Price locationtype="City" buyprice="12" />
+    <Price locationtype="Outpost" buyprice="30" />
+    <Price locationtype="Mine" buyprice="35" />
+	<Price locationtype="Military" buyprice="45" />
+    <Deconstruct time="20">
+      <Item identifier="quartz" outcondition="0.2" /> 
+      <Item identifier="rubber" outcondition="0.1" /> 
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="8" outcondition="0.01">
+      <RequiredItem identifier="quartz" mincondition="0.2" usecondition="true" />
+      <RequiredItem identifier="rubber" mincondition="0.1" usecondition="true" />
+    </Fabricate>   
+   <InventoryIcon texture="Mods/VondessMudraptor/Items/Vials.png" sourcerect="200,0,100,100" />
+    <Sprite texture="Mods/VondessMudraptor/Items/Vials.png" sourcerect="200,200,100,100" depth="0.55" scale="0.5" origin="0.5,0.5" />
+    <Body width="90" height="60" density="50" />
+    <Holdable canBeCombined="false" removeOnCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+    </Holdable>
+    </Item>
+	<Item name="EtOH Concentrate" identifier="ethanolconcentrate" category="Material" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <Deconstruct time="5">
+      <Item identifier="ethanol" outcondition="0.5" /> 
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" outcondition="1">
+      <RequiredItem identifier="vial3" mincondition="0.781" usecondition="true" />
+      <RequiredItem identifier="carbon" />
+    </Fabricate>   
+   <InventoryIcon texture="Mods/VondessMudraptor/Items/Vials.png" sourcerect="300,0,100,100" />
+    <Sprite texture="Mods/VondessMudraptor/Items/Vials.png" sourcerect="300,0,100,100" depth="0.55" origin="0.5,0.5" scale="0.5" />
+    <Body width="90" height="60" density="50" />
+    <Holdable canBeCombined="false" removeOnCombined="false" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+    </Holdable>
+    </Item>
+	<Item name="Small Vondess Raptor egg" identifier="smallvondessraptoregg" discription="Feed pattern- Stage 1= Saline. Stage 2= Saline. Stage 3= Velonaceps Calyx Eggs." Tags="smallitem" health="20" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" damagedbyrepairtools="true" category="Misc" scale="0.2" impactsoundtag="impact_soft">
+    <Sprite texture="Mods/VondessMudraptor/Items/smalleggstage.png" depth="0.7" sourcerect="0,0,128,128" origin="0.5,0.5" />
+		<Price locationtype="research" buyprice="460" />   
+   <Deconstruct time="10">
+      <Item identifier="alienblood" />
+    </Deconstruct>
+    <Body width="60" height="75" friction="1.0" restitution="0.01" angulardamping="1.5"/>
+    <Holdable slots="RightHand,LeftHand,Any" holdpos="0,-70" handle1="0,10" handle2="0,-10">
+      <StatusEffect type="OnBroken" target="This">
+        <particleemitter particle="whitegoosplash" particleamount="20" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.5" scalemax="1.0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+        <particleemitter particle="brownchunks" particleamount="50" velocitymin="0" velocitymax="700" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.5" />
+        <Sound file="Content/Sounds/Damage/Gore6.ogg" range="800" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnFire" target="This" Condition="-5.0"/>
+    </Holdable>
+    <ItemContainer capacity="1" hideitems="true" showcontainedstateindicator="false">
+      <Containable items="antibloodloss1">
+        <!-- increase scale -->
+        <StatusEffect type="OnContaining" target="This" Scale="0.0025"/>
+        <StatusEffect type="OnContaining" target="Contained" Condition="-0.75"/>
+        <!-- remove and spawn a medium egg when scale is greater than or equal to 0.4 -->
+        <StatusEffect type="OnContaining" target="This">
+          <Sound file="Content/Sounds/Damage/Gore6.ogg" range="500" />
+          <particleemitter particle="brownchunks" particleamount="10" emitinterval="1000" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" scalemin="0.1" scalemax="0.3" />
+          <Conditional Scale="gte 0.8" />
+          <SpawnItem identifier="mediumvondessraptoregg" spawnposition="This" />
+          <Remove />
+        </StatusEffect>
+      </Containable>
+    </ItemContainer>
+	</Item>
+	<Item name="Medium Vondess Raptor egg" identifier="mediumvondessraptoregg" hideinmenus="true" health="50" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" damagedbyrepairtools="true" category="Misc" scale="0.8" impactsoundtag="impact_soft">
+    <Sprite texture="Mods/VondessMudraptor/Items/mediumeggstage.png" depth="0.7" sourcerect="0,0,128,128" origin="0.5,0.5" />
+    <Deconstruct time="10">
+      <Item identifier="alienblood" />
+      <Item identifier="adrenalinegland" />
+    </Deconstruct>
+    <!-- rectangular body to prevent the egg from rolling -->
+    <Body width="95" height="100" friction="1.0" restitution="0.01" angulardamping="20" />
+    <ItemContainer capacity="1" hideitems="true" showcontainedstateindicator="false" canbeselected="true">
+      <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
+      <StatusEffect type="OnBroken" target="This">
+        <particleemitter particle="whitegoosplash" particleamount="20" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.5" scalemax="1" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+        <particleemitter particle="brownchunks" particleamount="50" velocitymin="0" velocitymax="700" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.5" />
+        <Sound file="Content/Sounds/Damage/Gore6.ogg" range="800" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnFire" target="This" Condition="-5.0"/>
+      <Containable items="antibloodloss1">
+        <!-- increase scale -->
+        <StatusEffect type="OnContaining" target="This" Scale="0.03"/>
+        <StatusEffect type="OnContaining" target="Contained" Condition="-1"/>
+        <StatusEffect type="OnContaining" target="This">
+          <Sound file="Content/Sounds/Damage/Gore6.ogg" range="500" />
+          <particleemitter particle="brownchunks" particleamount="10" emitinterval="1000" velocitymin="0" velocitymax="500" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.5" />
+          <Conditional Scale="gte 1.2" />
+          <SpawnItem identifier="largevondessraptoregg" spawnposition="This" />
+          <Remove />
+        </StatusEffect>
+      </Containable>
+    </ItemContainer>
+	</Item>
+	<Item name="Large Vondess Raptor egg" identifier="largevondessraptoregg" hideinmenus="true" health="200" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" damagedbyrepairtools="true" category="Misc" scale="1.2" impactsoundtag="impact_soft">
+    <Sprite texture="Mods/VondessMudraptor/Items/largeeggstage.png" depth="0.7" sourcerect="0,0,128,128" origin="0.5,0.5" />
+    <Deconstruct time="10">
+      <Item identifier="alienblood" />
+      <Item identifier="alienblood" />
+      <Item identifier="adrenalinegland" />
+    </Deconstruct>
+    <!-- rectangular body to prevent the egg from rolling -->
+     <Body width="95" height="100" friction="1.0" restitution="0.01" angulardamping="50" />
+    <ItemContainer capacity="1" hideitems="true" showcontainedstateindicator="false" canbeselected="true">
+      <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
+      <StatusEffect type="OnBroken" target="This">
+        <particleemitter particle="brownchunks" particleamount="100" velocitymin="0" velocitymax="800" anglemin="0" anglemax="360" scalemin="0.4" scalemax="0.6" />
+        <particleemitter particle="whitegoosplash" particleamount="50" velocitymin="0" velocitymax="500" anglemin="0" anglemax="360" scalemin="1" scalemax="1.5" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+        <Sound file="Content/Sounds/Damage/Gore7.ogg" range="800" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnFire" target="This" Condition="-5.0"/>      
+      <Containable items="huskeggs">
+        <!-- increase scale -->
+        <StatusEffect type="OnContaining" target="This" Scale="0.040"/>
+        <StatusEffect type="OnContaining" target="Contained" Condition="-1"/>
+        <StatusEffect type="OnContaining" target="This" Condition="0" setvalue="true">
+          <Conditional Scale="gte 1.6" />
+          <SpawnCharacter speciesname="Vondessmudraptor" />
+		  <SpawnItem identifier="VRwhistle" spawnposition="This" />
+          <Remove />
+        </StatusEffect>
+      </Containable>
+    </ItemContainer>
+	</Item>
+	<Item name="H-H-J Containment" identifier="HHJcontainmentF" category="Equipment" discription="The Hammer Head Juvenile Containment was created to safely harvest and transport juvenile and infant hammer heads in a convenient glass container." cargocontaineridentifier="explosivecrate" tags="mediumitem" Scale="0.19" impactsoundtag="impact_metal_medium">
+    <Upgrade gameversion="0.9.2.0" />
+    <Price locationtype="Military" buyprice="240" />
+    <Price locationtype="City" buyprice="340" />
+    <Price locationtype="Research" buyprice="130" />
+    <Deconstruct time="10">
+      <Item identifier="iron" />
+      <Item identifier="carbon" />
+      <Item identifier="quartz" />
+      <Item identifier="adrenalinegland" />
+      <Item identifier="alienblood" />
+      <Item identifier="alienblood" />
+    </Deconstruct>
+    <InventoryIcon texture="Mods/VondessMudraptor/Items/CapsuleHHSfullthree.png" sourcerect="0,0,200,400" origin="0.5,0.5" />
+    <Sprite texture="Mods/VondessMudraptor/Items/CapsuleHHSfullthree.png" sourcerect="0,0,200,400" depth="0.55" origin="0.5,0.5" />
+    <Body width="200" height="400" friction="1.0" density="50" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="OnBroken" target="This">
+	   <sound file="Mods/VondessMudraptor/Sounds/Splashalter.ogg" range="1200" />
+		<SpawnCharacter speciesname="hammerheadspawn" count="3" spread="10" />
+		<SpawnItem identifier="smallcontainment" spawnposition="This" />
+		<remove />
+      </StatusEffect> 
+    </ItemComponent>
+    <Throwable slots="Any,RightHand,LeftHand" aimangle="45" holdpos="30,-15" handle1="0,0" throwforce="0.4" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="5.0" disabledeltatime="true" checkconditionalalways="true" >
+	  </StatusEffect>
+	  <StatusEffect type="OnSecondaryUse" target="This" > 
+	  <sound file="Mods/VondessMudraptor/Sounds/containmenthiss1.ogg" range="1200" />
+      </StatusEffect>
+    </Throwable>
+  </Item>
+  	<Item name="Small Containment" identifier="smallcontainment" category="Equipment" discription="An alien containment device, made to simulate the dark and pressured insides of the selected xeno-womb." tags="mediumitem" Scale="0.19" impactsoundtag="impact_metal_medium">
+    <Upgrade gameversion="0.9.2.0" />
+    <Deconstruct time="10">
+      <Item identifier="iron" />
+      <Item identifier="carbon" />
+      <Item identifier="quartz" />
+    </Deconstruct>
+    <InventoryIcon texture="Mods/VondessMudraptor/Items/CapsuleHHSemptyINV.png" sourcerect="0,0,200,400" origin="0.5,0.5" />
+    <Sprite texture="Mods/VondessMudraptor/Items/CapsuleHHSempty.png" sourcerect="0,0,400,200" depth="0.55" origin="0.5,0.5" />
+    <Body width="400" height="200" friction="1.0" density="45" />
+    <ItemComponent characterusable="false">
+      <!-- statuseffect that explodes the grenade when used by something else than a character (e.g. a detonator) -->
+    </ItemComponent>
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,0" throwforce="1.2" msg="ItemMsgPickUpSelect">
+    </Throwable>
+  </Item>
+	</Items>

@@ -1,0 +1,16 @@
+﻿<BruteSwimFast
+  animationtype="SwimFast"
+  legmoveamount="1.0475955"
+  legcyclelength="13.221122"
+  handmoveamount="1.5860472,0.8178532"
+  handmovestrength="0.10000002"
+  handcyclespeed="6.3441887"
+  handmoveoffset="0,0"
+  footangle="0"
+  footrotatestrength="25"
+  steertorque="25"
+  movementspeed="3.5229003"
+  cyclespeed="3.5229003"
+  headangle="61.999996"
+  torsoangle="57"
+  type="Brute" />
