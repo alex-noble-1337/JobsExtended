@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<infotexts language="English" nowhitespace="false" translatedname="English">
+﻿<infotexts language="English" nowhitespace="false" translatedname="English">
 
   <!-- Jobs -->
 <jobname.commanding_officer>Commanding Officer</jobname.commanding_officer>
@@ -141,4 +140,157 @@
 <jobdescription.inmate3>Ascend, for the future of Europa ... and the downfall of your oppressors.</jobdescription.inmate3>
 
 
+	<!-- Items -->
+<entityname.promotionmedal> Promotion Medal  </entityname.promotionmedal>
+<entitydescription.promotionmedal> Medal that makes target eligable for promotion (allows them to change class without xp loss) </entitydescription.promotionmedal>
+<talentname.promotion> Promotion </talentname.promotion> 
+
+<entityname.rotarygrenedelaucher>M32 Rotary Grenade Launcher</entityname.rotarygrenedelaucher>
+<entitydescription.rotarygrenedelaucher>There's nothing stronger than love. Except and M32 Rotary Grenade Launcher. Because Fuck you and everyone near you.</entitydescription.rotarygrenedelaucher>
+
+<entityname.nonlethalshotgunshell>Non lethal shotgun shell</entityname.nonlethalshotgunshell>
+<entitydescription.nonlethalshotgunshell>Shell used for subduing naughty crew.</entitydescription.nonlethalshotgunshell>
+
+<entityname.baton> Baton </entityname.baton>
+<entitydescription.baton> Just a rubber baton. What did you expect? </entitydescription.baton>
+
+<entityname.navpda>Nav-PDA</entityname.navpda>
+<entitydescription.navpda>PDA of an Navigator. It allows you to remotely controll an submarine.</entitydescription.navpda>
+
+<entityname.bigbackpack>Big Backpack</entityname.bigbackpack>
+<entitydescription.navpda>A trusty backpack of an Quatermaster. It can hold a lot of items.</entitydescription.navpda>
+
+<entityname.genespliceromega>Omega Gene Splicer</entityname.genespliceromega>
+
+<entityname.genesplicersuper>Gene Splicer Super</entityname.genesplicersuper>
+
+<entityname.handheldnuke> Hand Held Nuke </entityname.handheldnuke>
+
+<entityname.superDarcher> Super Darcher </entityname.superDarcher>
+
+	<!-- CO-->
+	<!-- Talents description -->
+<talentdescription.xpgain>Also gain [xp] xp.</talentdescription.xpgain>
+
+<talentdescription.tumble2>While affiction is up gain [red] percent damage reduction.</talentdescription.tumble2>
+
+<talentdescription.evasivemaneuvers>Whenever your submarine takes damage from a monster, crew and you gain a bonus of [helmbonus] to the Electrical and Mechanic skills, [perc] percent damage resistance and [move] % movement speed for [seconds] seconds. </talentdescription.evasivemaneuvers>
+
+<talentdescription.downwiththeship>If you are on your submarine and it becomes at least [flooded]% flooded, you and your team gain an additional [swimmingboost]% swimming speed and a bonus of [skillboost] to Mechanical and Electrical skills for [duration] seconds.</talentdescription.downwiththeship>
+
+<talentdescription.commander>All of your shipmates get an Inspiration, giving them [physicalresistance]% physical damage resistance and a bonus of [skillincrease] to all skills.</talentdescription.commander>
+
+<talentdescription.allhandsondeck>All of your shipmates are on alert to your presence, giving them [physicalresistance]% physical damage resistance and a bonus of [skillincrease] to all skills.</talentdescription.allhandsondeck>
+
+
+<talentname.dawnoneuropa>Dawn on Europa</talentname.dawnoneuropa>
+<talentdescription.dawnoneuropa>Your team is so effective, legends are spreading around on your glory. When an ally gains a skill point you have a high chance to gain that point too.</talentdescription.dawnoneuropa>
+
+<talentname.redalarm>Red Alarm</talentname.redalarm>
+<talentdescription.redalarm>Crew is ready on the moments notice. You and them gain [speed]% more speed.</talentdescription.redalarm>
+
+<talentname.positivereinforcment>Positive Reinforcment</talentname.positivereinforcment>
+<talentdescription.positivereinforcment>You read some books on psychology, and got facination on possitive motivation. Crew and you gets +[skill] to all skills and [perc]% damage reduction.</talentdescription.positivereinforcment>
+
+	<!-- Afflictions description -->
+<afflictionname.capitanondeck>Capitan on Deck!</afflictionname.capitanondeck>
+<afflictiondescription.capitanondeck> You are on alert! </afflictiondescription.capitanondeck>
+<afflictionname.redalarm>Red Alarm!</afflictionname.redalarm>
+<afflictiondescription.redalarm> You feel adrenaline pumping, and your heart racing!</afflictiondescription.redalarm>
+<afflictionname.goodmood>Good Mood.</afflictionname.goodmood>
+<afflictiondescription.goodmood> You like the capitan  </afflictiondescription.goodmood>
+
+	<!-- Custodian-->
+	<!-- Talents description -->
+<talentname.supercleaner>Super Cleaner</talentname.supercleaner>
+
+	<!-- Diver-->
+	<!-- Talents description -->
+<talentname.watercombatexpert>Water Combat Expert</talentname.watercombatexpert>
+<talentdescription.watercombatexpert>When crafting an harpoon,there is a chance to gain triple the amount.</talentdescription.watercombatexpert>
+
+<talentname.personalizedequipment>Personalized Equipment</talentname.personalizedequipment>
+<talentdescription.personalizedequipment>When in water. Gain a [name]% more damage to harpoons.</talentdescription.personalizedequipment>
+
+<talentname.watercqc>Water CQC</talentname.watercqc>
+<talentdescription.watercqc>Gain Melee Speed, Damage, Ranged Attack Speed, Swimming Speed scaled based on your Weapons skill up to [perc]% increase.</talentdescription.watercqc>
+
+	<!-- Sec-->
+	<!-- Talents description -->
+<talentname.defenceindepth> Defence in depth </talentname.defenceindepth>
+<talentdescription.defenceindepth>Get 20xp when you level up in weapons.</talentdescription.defenceindepth>
+
+<talentname.nomercy> No Mercy </talentname.nomercy>
+<talentdescription.nomercy>No Mercy to criminals! Gain 50% more money from abandoned outpost and pirate missions. </talentdescription.nomercy>
+
+<talentname.notasingleonegetsthough>Not a single one gets though</talentname.notasingleonegetsthough>
+<talentdescription.notasingleonegetsthough> Gain Turret Power Cost Reduction and Turret Charge Speed scaled based on your Weapons skill up to [perc]% increase. </talentdescription.notasingleonegetsthough>
+
+<talentname.unity>Unity</talentname.unity>
+<talentdescription.unity>When you are below [perc]% health, your team gets buff.</talentdescription.unity>
+
+<talentname.defenceplan>Defence Plan</talentname.defenceplan>
+<talentdescription.defenceplan>A good defensive plan can do wonders! Your team gets a buff to Weapons of 20 and 10% stun resistance. </talentdescription.defenceplan>
+
+<talentname.weaponsmaitnence>Weapons Maitnence</talentname.weaponsmaitnence>
+<talentdescription.weaponsmaitnence> Gain a bonus to Movement Speed, Melee Attack Speed, Ranged Attack Speed, Maximum Health Multiplier according to your Weapons skill up to maximum 20% </talentdescription.weaponsmaitnence>
+
+<afflictionname.gooddefenceplan>Good Defence Plan</afflictionname.gooddefenceplan>
+<afflictiondescription.gooddefenceplan>A good defensive plan can do wonders!</afflictiondescription.gooddefenceplan>
+
+	<!-- Nav-->
+	<!-- Talents description -->
+<talentname.masternavigator>Master Navigator</talentname.masternavigator>
+
+<talentname.targettingmatrix>Targetting Matrix</talentname.targettingmatrix>
+<talentdescription.targettingmatrix>Nearby teamates get a 10% buff to ranged damage and attack speed</talentdescription.targettingmatrix>
+
+<afflictionname.targettingmatrix>Targetting Matrix Online</afflictionname.targettingmatrix>
+
+	<!-- XO -->
+	<!-- Talents description -->
+<talentname.capitanssword>Capitan's Sword</talentname.capitanssword>
+<talentdescription.capitanssword>Gain a dobble damage when using grenades</talentdescription.capitanssword>
+
+<talentname.highlydecoratedindividual>Highly decorated individual</talentname.highlydecoratedindividual>
+<talentdescription.highlydecoratedindividual>Gain an up to 15% buff to Movement Speed, Melee Attack Speed, Ranged Attack Speed.</talentdescription.highlydecoratedindividual>
+
+<talentname.capitansshield>Capitan's Shield</talentname.capitansshield>
+<talentdescription.capitansshield>When you are inside the sumbarine gain 25% resistance. Inflict 25% more stun.</talentdescription.capitansshield>
+
+<talentname.evasion>Evasion</talentname.evasion>
+<talentdescription.evasion>Whenever you ragdoll for at least [seconds] seconds, your attacks with grenades are [damage]% more powerful for the next [duration] seconds.</talentdescription.evasion>
+
+<talentname.firststrike>First strike</talentname.firststrike>
+<talentdescription.firststrike>If it has been longer than [seconds] seconds since you've attacked with grenades, your next attack with grenades is [damage]% more powerful.</talentdescription.firststrike>
+	
+	<!-- QUA -->
+	<!-- Talents description -->
+<talentname.logisticsmaster>Logistics Master</talentname.logisticsmaster>
+<talentdescription.logisticsmaster>Outopsts pay you dobble for transport missons.</talentdescription.logisticsmaster>
+	<!-- Pri -->
+	<!-- Talents description -->
+<talentname.adaptiblity>Adaptibility</talentname.adaptiblity>
+<talentdescription.adaptiblity>You are able to adapt to most tactics that your opressors thow at you.</talentdescription.adaptiblity>
+
+<talentname.combatinstincts>Combat Instincts</talentname.combatinstincts>
+<talentdescription.combatinstincts>You get triple damage when using diving knives.</talentdescription.combatinstincts>
+
+<talentname.deaddrops>Dead Drops</talentname.deaddrops>
+<talentdescription.deaddrops>Gain a free weapons every successfull round.</talentdescription.deaddrops>
+
+<talentname.publicenemynumberone>Public enemy number one </talentname.publicenemynumberone>
+<talentdescription.publicenemynumberone>Gain a free nuke every successfull round.</talentdescription.publicenemynumberone>
+
+<talentname.immunetodeath>Immune to death</talentname.immunetodeath>
+<talentdescription.immunetodeath>You are resistant to the effects of death.</talentdescription.immunetodeath>
+
+<talentname.securitybackground>Security background</talentname.securitybackground>
+
+	<!-- Pas -->
+	<!-- Talents description -->
+<talentname.superadvancedsplicing>Super advanced splicing</talentname.superadvancedsplicing>
+
+<talentname.applicationofreserch>Application of reserch</talentname.applicationofreserch>
+<talentdescription.applicationofreserch>Deal dobble damage against ruin guardians.</talentdescription.applicationofreserch>
 </infotexts>

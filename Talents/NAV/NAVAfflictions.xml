@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Afflictions>
+
+	<Affliction
+		identifier="targettingmatrix"
+		type="targettingmatrix"
+		isbuff="true"
+		limbspecific="false"
+		showiconthreshold="0"
+		maxstrength="5"
+		treatmentthreshold="1000"
+		iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+		<Effect minstrength="0" maxstrength="5" strengthchange="-1" >
+			<StatValue stattype="RangedAttackSpeed" minvalue="0" maxvalue="0.1" />
+			<StatValue stattype="RangedAttackMultiplier" minvalue="0" maxvalue="0.1" />
+		</Effect>
+		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+	</Affliction>
+
+</Afflictions>
