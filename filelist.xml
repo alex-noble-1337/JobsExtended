@@ -12,6 +12,7 @@
   <Submarine file="%ModDir%/Submarines/Dugong [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Herja [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Humpback [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/JE submarine conversion kit.sub" />
   <Submarine file="%ModDir%/Submarines/Kastrull [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Orca [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Orca2 [JE].sub" />
@@ -20,7 +21,13 @@
   <Submarine file="%ModDir%/Submarines/Typhon [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Typhon2 [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Winterhalter [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/JE submarine conversion kit.sub" />
+  <Submarine file="%ModDir%/Submarines/KastrullDrone [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/PowerTestSub [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/RemoraDrone [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Selkie [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Venture [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Camel [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Hemulen [JE].sub" />
   <TalentTrees file="%ModDir%/Talents/TalentTrees.xml" />
   <Talents file="%ModDir%/Talents/TalentsUsedInItems.xml" />
   <Text file="%ModDir%/Texts/English.xml" />
