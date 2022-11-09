@@ -1,9 +1,0 @@
-- Unique diving suits per class with 4 colors
-- Unique weapon per class, CO - handgun and revolver dmg, XO granade damgae and rotary granade laucher, Security Autoshotgun
-- SEC gets target dummy, witch allows you to hone your skills
-- COB mobile turrets and craftable things (get ricky)
-- custom icons!!!!!
-- cuson textures!!!
-- fully incorporate genes+ to passenger skill tree
-- backpack sucks change it
-- i just copied buck of files withouc changing anyhting (almost) bad!!!

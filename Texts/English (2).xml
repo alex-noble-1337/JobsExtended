@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<infotext language="English" nowhitespace="true" translatedname="English">
-  <!--[Items]-->
-  <!--compositetool-->
-  <entityname.compositetool>CompositeTool</entityname.compositetool>
-  <entitydescription.compositetool>This tool must to be handed with both hands, and it has the function of wrench, screwdriver and crowbar.
-  It helps save three slots of inventory.</entitydescription.compositetool>
-</infotext>
