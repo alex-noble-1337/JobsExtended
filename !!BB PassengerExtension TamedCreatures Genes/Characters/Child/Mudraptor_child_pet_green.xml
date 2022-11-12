@@ -1,0 +1,53 @@
+<Character speciesname="Mudraptor_child_pet_green" humanoid="False" group="human" husk="False" needsair="False" canspeak="False" noise="100" visibility="100" blooddecal="blood" eatingspeed="10" speciestranslationoverride="Mudraptor" displayname="" hasinfo="False" usehuskappendage="False" needswater="False" bleedparticleair="blooddrop" bleedparticlewater="waterblood" pathfinderpriority="1" hideinsonar="False" sonardisruption="0">
+  <ragdoll folder="Mods/Pet Mudraptor/Characters/Adult/Ragdolls/Mudraptor_adult_pet_greenDefaultRagdoll.xml" scalemultiplier="0.5"/>
+  <animations folder="Mods/Pet Mudraptor/Characters/Child/Animations/" />
+  <health vitality="120" doesbleed="True" crushdepth="-Infinity" usehealthwindow="False" bleedingreduction="1" burnreduction="0" constanthealthregeneration="0" healthregenerationwheneating="1">
+    <Limb name="Torso" />
+    <Limb name="Head" />
+    <Limb name="LeftLeg" />
+    <Limb name="RightLeg" />
+  </health>
+  <damageemitter particle="gib" drawontop="True" particleamount="10" velocitymin="50" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.25" scalemax="0.5" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <damageemitter particle="gib" particleamount="10" velocitymin="200" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.2" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <bloodemitter particle="blood" particleamount="10" anglemin="0" anglemax="0" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <bloodemitter particle="waterblood" particleamount="1" anglemin="0" anglemax="0" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <gibemitter particle="gib" particleamount="20" velocitymin="200" velocitymax="700" anglemin="0" anglemax="360" scalemin="1" scalemax="1" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <gibemitter particle="heavygib" particleamount="10" velocitymin="50" velocitymax="500" anglemin="0" anglemax="360" scalemin="1" scalemax="1" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <Inventory slots="Any" accessiblewhenalive="True" commonness="1" />
+  <attack damagemultiplier="0.75"/>
+  
+  <ai combatstrength="100" sight="0.75" hearing="1" fleehealththreshold="0" aggressiveboarding="False" aggressiongreed="20" aggressionhurt="300" attackwhenprovoked="True" avoidgunfire="True" enforceaggressivebehaviorformissions="False" targetouterwalls="False" randomattack="False" avoidtime="3" minfleetime="20">
+    <target tag="owner" state="Follow" priority="95" reactdistance="200" attackdistance="0" timer="0" />
+	<target tag="human" state="Follow" priority="90" reactdistance="200" attackdistance="0" timer="0" />
+    <target tag="stronger" state="Avoid" priority="120" reactdistance="1000" attackdistance="0" timer="0" />
+    <target tag="weaker" state="Attack" priority="100" reactdistance="1000" attackdistance="0" timer="0" />
+    <petbehavior maxhappiness="100" happinessdecreaserate="0.016" hungerincreaserate="0.03" playforce="6.0">
+      <eat tag="petfood3" ignorecontained="true" requiredhunger="30-100" hunger="-50" happiness="5" priority="100" />
+      <eat tag="dead" requiredhunger="70-100" hunger="-100" happiness="10" priority="100" />
+      <itemproduction rate="0.0" invhungerrate="0.002" requiredhunger="0-30">
+        <item identifier="poop" commonness="100" />
+      </itemproduction>
+      <itemproduction rate="0.0015" requiredhappiness="50-100" requiredhunger="0-30">
+        <item identifier="hydroxyapatite" />
+      </itemproduction>
+    </petbehavior>
+  </ai> 
+  
+  <sound file="Content/Characters/Mudraptor/MUDRAPTOR_idle1.ogg" state="Idle" range="2000" volume="1" gender="None" />
+  <sound file="Content/Characters/Mudraptor/MUDRAPTOR_idle2.ogg" state="Idle" range="2000" volume="1" gender="None" />
+  <sound file="Content/Characters/Mudraptor/MUDRAPTOR_idle3.ogg" state="Idle" range="2000" volume="1" gender="None" />
+  <sound file="Content/Characters/Mudraptor/MUDRAPTOR_damage1.ogg" state="Damage" range="1000" volume="1" gender="None" />
+  <sound file="Content/Characters/Mudraptor/MUDRAPTOR_damage2.ogg" state="Damage" range="1000" volume="1" gender="None" />
+  <sound file="Mods/Pet Mudraptor/Characters/MUDRAPTOR_happy.ogg" state="Happy" range="1000" volume="1" gender="None" />
+  <sound file="Content/Characters/Mudraptor/MUDRAPTOR_damage3.ogg" state="Unhappy" range="1000" volume="1" gender="None" />
+  <sound file="Content/Characters/Mudraptor/MUDRAPTOR_attack1.ogg" state="Attack" range="3000" volume="1" gender="None" />
+  <sound file="Content/Characters/Mudraptor/MUDRAPTOR_attack2.ogg" state="Attack" range="3000" volume="1" gender="None" />
+  <sound file="Content/Characters/Mudraptor/MUDRAPTOR_attack3.ogg" state="Attack" range="3000" volume="1" gender="None" />
+  <sound file="Content/Characters/Mudraptor/MUDRAPTOR_death1.ogg" state="Die" range="3000" volume="1" gender="None" />
+  <sound file="Content/Characters/Mudraptor/MUDRAPTOR_death2.ogg" state="Die" range="3000" volume="1" gender="None" />
+  
+  <StatusEffect type="Always" target="This"  delay="300.0" stackable="false">
+    <SpawnCharacter speciesname="Mudraptor_adult_pet_green"/>
+    <RemoveCharacter />
+  </StatusEffect>
+</Character>

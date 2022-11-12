@@ -1,0 +1,41 @@
+
+From: Head designer Matthias
+To: Bnllzmcdq Ktbhzm
+
+Latest ongoing project report: 'T.I.T.A.N.' 
+
+With the rampant surge on Europa's envioroment, Marine Corps is going to be forced to change drastically. For record purposes I've got to add how this idea came about, so hang on to the display to read the specs further down in this report:
+
+A dude named Paul, an assistant and last survivor of a Shapeshifter type sub, found one of our A.B.Y.S.S. units in a ballast room. Apparently ballast flora got the worst of them and then they got ambushed by threshers, awfull suff. However, the suit was damaged and in no condition to go help him out. Except this assistant was smart, he grabbed some titanium alloy that was in engineering and with a welder he just taped it into the suit "repairing" it just enough so he could get out. All of this while under a thresher swarm's pressure!
+He says the titanium helped a lot to keep the threshers' bites at bay.
+
+An informant, called himself, "silverwolf123" came at us with this story and how it could make us some profit. Got us thinking.
+
+At first, we dismissed the idea of a suit made out of pure titanium alloy with no treatment due to it's weight, but the idea of being pretty much unkillable outside of the sub was too good to pass, so we got on working.
+This model has helped us making breakthroughs that will help the entire line of warsuits. But that in a later note, right now I have the pleassure to present to you T.I.T.A.N.
+
+Ironically, it uses less titanium-alloys than the A.B.Y.S.S. (at it's maxium potential), however, A.B.Y.S.S. never made use of 100% efficiency on those, there was always a lot of useless leftovers that had to be discarded. T.I.T.A.N. Uses every bit of it without any spoils. The result is a much harder carapace capable of resisting most forms of damage, and making the user virtually inmune to fire and pressure (citation needed), and hardly feel anything that could stun them. To top it all off, the helmet HuD allows for maximun concentration making psychosis a non issue and an assisted movement frame to greatly slow paralysis effects.
+But T.I.T.A.N. goes beyond defensive, it also comes with utility: An integrated sonar, allows it to be hands free while in the ocean, and it's propelled legs allow it to move at deceptive fast speeds underwater. Now the coelanth is not the only leviathan with high speeds in the dephts.
+
+Besides utility and defense, T.I.T.A.N. features unique weaponry meant for the suit itself: the 'Worm Ender' auto cannon, a destructive force capable of holding the line against the biggest of foes; and 'Depth boiler' flamer, a naphalm hot oven capable of cooking crawlers in the coldest of ice, allow the user to be a menace to anything the abyss can throw at us. Both of these are recharged when kept inside the T.I.T.A.N.
+
+This beast of attire does not come without it's drawbacks though: 
+Firsts it must be construcced by an experienced mechanic, and a lot of patience. 
+It is also powered by two custom made internal batteries, the which are kept topped off by the very same sub. In other words, you gotta recharge the suit with submarine energy on a custom made platfrom that connects to the power supply of the submarine.
+The batteries are heavy duty, and can be kept full for long periods of time. But the user should still hurry while far from the sub as if the batteries die, so will the user. 
+Most sytems run along with the battery, specially the oxygen generator and pressure dampers. So while you don't have to fill it with tanks, you MUST keep it powered at all times. When out of power, critical systems start failing. No power saving mode due to technicall issues. 
+The suit is meant to suplement the A.B.Y.S.S. for when a large creature endangers the sub, and It's not recomended to have more than one per sub or to use it regularly, unless supported by other soldiers and/or a high-end reactor.
+
+Hope this project calms your nerves, The nightmares might have evolved, but so have we.
+-- Matthias K.
+
+TL;DR
+
+A new diving suit 'T.I.T.A.N.' designed to recieve and deal great punishment. Grants masive resitances, and greatly slows the proggress of paralysis and psychosis afflictions, but not stop them nor heal them. Powered by the sub. Has an integrated sonar. Moves slow in land and moderatly in water.
+A new platform to charge the suit. Must be wired to work and draws power.
+Two new weapons to work in synergy with the suit, they are recharged/reloaded by keeping them inside the suit's pockets. WHEN USED WITHOUT THE SUIT DEALS HEAVY BURN DAMAGE AND STUN* TO THE USER (* Only the cannon deals stun to the user).
+Crafted ONLY. Everything is named 'T.I.T.A.N.' to find it easily in the fabricator. Hope you got a supply of titanium-aluminium alloys.
+
+Know Issues:
+Balance might be a bit off. Taking suggestions.
+Not really an issue, but worth noting: AI should NEVER wear the suit on their own. Too much maintance needed to trust it to them. Please rerport me if they are using it automatically. They should unequip it on their own.

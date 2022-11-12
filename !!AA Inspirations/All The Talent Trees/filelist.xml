@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="All The Talent Trees" path="Mods/All The Talent Trees/filelist.xml" corepackage="false" gameversion="0.15.22.1" steamworkshopid="2691181887" installtime="1640283075">
+  <TalentTrees file="Mods/All The Talent Trees/TalentTrees.xml" />
+</contentpackage>

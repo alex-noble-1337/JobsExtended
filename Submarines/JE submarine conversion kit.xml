@@ -1,0 +1,16 @@
+<Submarine description="" checkval="161131684" price="1000" initialsuppliesspawned="false" type="Player" class="Undefined" tags="0" gameversion="0.17.15.0" dimensions="0,0" cargocapacity="0" recommendedcrewsizemin="1" recommendedcrewsizemax="2" recommendedcrewexperience="" requiredcontentpackages="Jobs Extended [EN,CN,PTBR]" name="JE submarine conversion kit">
+  <WayPoint ID="3" x="-64" y="360" spawn="Human" idcardtags="id_custodian,id_assistant,ass" job="janitor" />
+  <WayPoint ID="4" x="-113" y="360" spawn="Human" idcardtags="id_passenger,id_assistant,ass" job="passenger" />
+  <WayPoint ID="5" x="240" y="360" spawn="Human" idcardtags="id_captain,id_commanding_officer,cap" job="commanding_officer" />
+  <WayPoint ID="6" x="400" y="360" spawn="Human" idcardtags="id_security,sec" job="security" />
+  <WayPoint ID="7" x="32" y="360" spawn="Human" idcardtags="id_doctor,id_medic,med" job="medicalstaff" />
+  <WayPoint ID="8" x="80" y="360" spawn="Human" idcardtags="id_doctor,id_chief_medical_officer,id_medic,med" job="chiefmedicaldoctor" />
+  <WayPoint ID="9" x="192" y="360" spawn="Human" idcardtags="id_security,id_executive_officer,id_capitan,cap" job="executive_officer" />
+  <WayPoint ID="10" x="288" y="360" spawn="Human" idcardtags="id_captain,id_navigator,cap" job="navigator" />
+  <WayPoint ID="11" x="448" y="360" spawn="Human" idcardtags="id_security,id_head_of_security,sec" job="head_of_security" />
+  <WayPoint ID="12" x="496" y="360" spawn="Human" idcardtags="id_security,id_diver,sec" job="diver" />
+  <WayPoint ID="13" x="-224" y="360" spawn="Human" idcardtags="id_mechanic,id_quartermaster,mec" job="quartermaster" />
+  <WayPoint ID="14" x="-272" y="360" spawn="Human" idcardtags="id_mechanic,mec" job="mechanical" />
+  <WayPoint ID="15" x="-416" y="360" spawn="Human" idcardtags="id_engineer,id_chief_of_the_boat,eng" job="chief" />
+  <WayPoint ID="16" x="-368" y="360" spawn="Human" idcardtags="id_engineer,eng" job="engineering" />
+</Submarine>

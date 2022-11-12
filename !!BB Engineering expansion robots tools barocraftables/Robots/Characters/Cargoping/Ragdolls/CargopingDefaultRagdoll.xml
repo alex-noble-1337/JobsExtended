@@ -1,0 +1,6 @@
+﻿<Ragdoll type="Bruteping" texture="Mods/XanRobots/Characters/Brute/Brute.png" canentersubmarine="True" canwalk="False" spritesheetorientation="0" limbscale="1" jointscale="1" texturescale="1" colliderheightfromfloor="285" impacttolerance="50" draggable="False" mainlimb="Torso">
+  <collider radius="102" width="1" name="Main Collider" height="0" />
+  <limb id="0" name="Limb 0" type="Torso" height="85" width="85" notes="" spriteorientation="NaN" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" attackpriority="1" steerforce="0" radius="0" density="10" ignorecollisions="False" angulardamping="7" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" scale="1" attackforcemultiplier="1" minseverancedamage="1" healthindex="0" friction="0.3" restitution="0.05">
+    <sprite texture="" sourcerect="0,0,100,100" origin="0.5,0.5" depth="0" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
+  </limb>
+</Ragdoll>

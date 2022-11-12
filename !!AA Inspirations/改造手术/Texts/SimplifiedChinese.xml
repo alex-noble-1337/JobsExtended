@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<infotext language="Simplified Chinese" nowhitespace="true" translatedname="中文(简体)">
+  <!--[Items]-->
+  <!--genesplicerprogenoids-->
+  <entityname.progenoids>基因存收腺</entityname.progenoids>
+  <entitydescription.progenoids>星际战士用来确保改造手术正常生效的装置，可随时摘除并改造到其他人类身上，但会对持有者造成致命的内脏损伤</entitydescription.progenoids>
+  <!--genesplicerpsmprogenoids-->
+  <entityname.psmprogenoids>原铸基因存收腺</entityname.psmprogenoids>
+  <entitydescription.psmprogenoids>原铸星际战士需要经历更多的手术，因此他们的基因存收腺和普通星际战士不尽相同</entitydescription.psmprogenoids>
+  <!--geneticmaterialbetchergland-->
+  <entityname.geneticmaterialbetchergland>遗传物质[betcher腺体]</entityname.geneticmaterialbetchergland>
+  <entitydescription.geneticmaterialbetchergland>腺体内有强酸，可以在瞬间向四周喷出并且灼烧敌人，并且因为你体内已经含有强酸，所以其他酸无法再对你造成伤害（按下f使用）</entitydescription.geneticmaterialbetchergland>
+  <!--geneticmaterialsecondaryheart-->
+  <entityname.geneticmaterialsecondaryheart>遗传物质[第二心脏]</entityname.geneticmaterialsecondaryheart>
+  <entitydescription.geneticmaterialsecondaryheart>第二心脏使人类的身体更加的强壮且耐打</entitydescription.geneticmaterialsecondaryheart>
+  <!--geneticmaterialossmodula-->
+  <entityname.geneticmaterialossmodula>遗传物质[骨强化器官]</entityname.geneticmaterialossmodula>
+  <entitydescription.geneticmaterialossmodula>骨强化器官使得人类能抵御更多的伤害</entitydescription.geneticmaterialossmodula>
+  <!--geneticmaterialbiscopea-->
+  <entityname.geneticmaterialbiscopea>遗传物质[肌肉强化器官]</entityname.geneticmaterialbiscopea>
+  <entitydescription.geneticmaterialbiscopea>强化了人类的肌肉力量与密度，增加近战伤害，近战速度以及移动速度</entitydescription.geneticmaterialbiscopea>
+  <!--geneticmaterialhaemastamen-->
+  <entityname.geneticmaterialhaemastamen>遗传物质[血液再造器官]</entityname.geneticmaterialhaemastamen>
+  <entitydescription.geneticmaterialhaemastamen>你体内的血液再生速度很快，失血过多的情况大大减少,同时血液流速加快，供氧能力更强</entitydescription.geneticmaterialhaemastamen>
+  <!--geneticmaterialhaemastamen-->
+  <entityname.geneticmateriallarramanorgan>遗传物质[拉瑞曼器官]</entityname.geneticmateriallarramanorgan>
+  <entitydescription.geneticmateriallarramanorgan>拉瑞曼细胞会快速形成皮肤组织进行止血和治疗暴露的伤口，对烧伤也有一定的效果</entitydescription.geneticmateriallarramanorgan>
+  <!--geneticmaterialcatalepseannode-->
+  <entityname.geneticmaterialcatalepseannode>遗传物质[神经结]</entityname.geneticmaterialcatalepseannode>
+  <entitydescription.geneticmaterialcatalepseannode>神经结的存在不仅使得人类的各项技能水平有所提高，学习速度也得到了提升</entitydescription.geneticmaterialcatalepseannode>
+   <!--geneticmaterialpreomnor-->
+  <entityname.geneticmaterialpreomnor>遗传物质[预置胃]</entityname.geneticmaterialpreomnor>
+  <entitydescription.geneticmaterialpreomnor>预置胃使得人类对毒素的抗性有了一定的提升</entitydescription.geneticmaterialpreomnor>
+    <!--geneticmaterialomophage-->
+  <entityname.geneticmaterialomophage>遗传物质[基因侦测神经]</entityname.geneticmaterialomophage>
+  <entitydescription.geneticmaterialomophage>这种改造可以让你的基因不断优化最终接近完美，使得你受到的所有治疗都更加有效,并且显著降低可能的药物成瘾</entitydescription.geneticmaterialomophage>
+    <!--geneticmaterialmultilung-->
+  <entityname.geneticmaterialmultilung>遗传物质[多肺]</entityname.geneticmaterialmultilung>
+  <entitydescription.geneticmaterialmultilung>人工肺可以让你在无氧环境下坚持的更久，也可以抵抗一些轻微的毒素</entitydescription.geneticmaterialmultilung>
+    <!--geneticmaterialocculobe-->
+  <entityname.geneticmaterialocculobe>遗传物质[视觉控制器官]</entityname.geneticmaterialocculobe>
+  <entitydescription.geneticmaterialocculobe>视觉控制器官使得人类的远程武器操控技巧大幅度提升，枪械在你手中更加致命</entitydescription.geneticmaterialocculobe>
+    <!--geneticmateriallymanear-->
+  <entityname.geneticmateriallymanear>遗传物质[莱曼之耳]</entityname.geneticmateriallymanear>
+  <entitydescription.geneticmateriallymanear>经过改造后的耳朵在外观上和普通人类的耳朵并无差异，但它却可以最大程度的保护人类避免眩晕和恶心感</entitydescription.geneticmateriallymanear>
+    <!--geneticmaterialsusanmembrane-->
+  <entityname.geneticmaterialsusanmembrane>遗传物质[susan脑膜]</entityname.geneticmaterialsusanmembrane>
+  <entitydescription.geneticmaterialsusanmembrane>susan脑膜可以让人类在受到致命伤害后依然保持着清醒</entitydescription.geneticmaterialsusanmembrane>
+    <!--geneticmaterialmelanochromic-->
+  <entityname.geneticmaterialmelanochromic>遗传物质[色素控制球]</entityname.geneticmaterialmelanochromic>
+  <entitydescription.geneticmaterialmelanochromic>色素控制球的主要功能是防止紫外线烧伤，但在木卫二的冰洋下，它也可以对辐射起到一定的抵抗作用</entitydescription.geneticmaterialmelanochromic>
+    <!--geneticmaterialmeloolitickidney-->
+  <entityname.geneticmaterialoolitickidney>遗传物质[卵石肾脏]</entityname.geneticmaterialoolitickidney>
+  <entitydescription.geneticmaterialoolitickidney>卵石肾脏会在必要时刻分泌出大量肾上腺素来抵御疼痛以及增强速度，并且具有轻微的毒素过滤能力</entitydescription.geneticmaterialoolitickidney>
+    <!--geneticmaterialneuroglottis-->
+  <entityname.geneticmaterialneuroglottis>遗传物质[味觉监测神经]</entityname.geneticmaterialneuroglottis>
+  <entitydescription.geneticmaterialneuroglottis>味觉监测神经原本被设计为检测多种毒素，然而在木卫二，位于口腔后部的神经可以有效抑制此处的画皮寄生虫的生长</entitydescription.geneticmaterialneuroglottis>
+    <!--geneticmaterialmucranoid-->
+  <entityname.geneticmaterialmucranoid>遗传物质[汗腺改进器官]</entityname.geneticmaterialmucranoid>
+  <entitydescription.geneticmaterialmucranoid>改造过的汗腺将会在水压和皮肤烧伤中提供一定的保护</entitydescription.geneticmaterialmucranoid>
+    <!--geneticmaterialblackbarapace-->
+  <entityname.geneticmaterialblackbarapace>遗传物质[黑色甲壳]</entityname.geneticmaterialblackbarapace>
+  <entitydescription.geneticmaterialblackbarapace>只有植入了黑色甲壳才能发挥陶钢动力甲的真正实力，并且这些植入的物体也可以让人类在操控炮塔时更为熟练和灵活</entitydescription.geneticmaterialblackbarapace>
+    <!--geneticmaterialsinewcoils-->
+  <entityname.geneticmaterialsinewcoils>遗传物质[肌腱线圈]</entityname.geneticmaterialsinewcoils>
+  <entitydescription.geneticmaterialsinewcoils>强化过的肌肉使得你更加健壮，你甚至可以像战车一样撞向敌人，让他们失去反抗的能力（奔跑时按下空格）</entitydescription.geneticmaterialsinewcoils>
+    <!--geneticmaterialmagnificat-->
+  <entityname.geneticmaterialmagnificat>遗传物质[圣颂垂体]</entityname.geneticmaterialmagnificat>
+  <entitydescription.geneticmaterialmagnificat>这种植入大脑的改造垂体可以更好的激发人体的肌肉密度，使其生命力更加顽强</entitydescription.geneticmaterialmagnificat>
+    <!--geneticmaterialbelisarianfurnace-->
+  <entityname.geneticmaterialbelisarianfurnace>遗传物质[贝利撒留熔炉]</entityname.geneticmaterialbelisarianfurnace>
+  <entitydescription.geneticmaterialbelisarianfurnace>贝利撒留熔炉又被称为起死回生者，可以在人类受到过高伤害时使其进入假死状态，据说很多原铸星际战士都因此逃过一死</entitydescription.geneticmaterialbelisarianfurnace>
+
+    <!--powerarmorummk7-->
+   <entityname.ummk7>星际战士动力甲（极限战士）</entityname.ummk7>
+   <entitydescription.ummk7>陶钢制造而成的动力甲，是为真正的超级士兵准备的，一般人穿上去会寸步难行，也无法达到应有的防御效果</entitydescription.ummk7>
+    <!--powerarmorUMterminator-->
+   <entityname.UMterminator>星际战士终结者动力甲（极限战士）</entityname.UMterminator>
+   <entitydescription.UMterminator>只有星际战士中的佼佼者才能使用的动力甲，防御力更加强大，但略显笨重</entitydescription.UMterminator>
+    <!--servicestud-->
+   <entityname.servicestud>服役钉（银）</entityname.servicestud>
+   <entitydescription.servicestud>一颗银色服役钉象征着50年的作战经验，只有强悍的战士才有资格获得</entitydescription.servicestud>
+    <!--servicestudgold-->
+   <entityname.servicestudgold>服役钉（金）</entityname.servicestudgold>
+   <entitydescription.servicestudgold>一颗金色服役钉象征着100年的作战经验，只有最精良的战士才有资格获得</entitydescription.servicestudgold>
+    <!--purityseal-->
+   <entityname.purityseal>纯洁印记</entityname.purityseal>
+   <entitydescription.purityseal>纯洁印记上充盈着帝皇的赐福，将保护忠诚的战士免受精神伤害以及轻微的物理外伤</entitydescription.purityseal>
+    <!--Standard-->
+   <entityname.Standard>战旗</entityname.Standard>
+   <entitydescription.Standard>高贵的战团战旗，莫要让异端玷污了它</entitydescription.Standard>
+    <!--lasrifle-->
+   <entityname.lasrifle>激光枪</entityname.lasrifle>
+   <entitydescription.lasrifle>星界军的标准武器</entitydescription.lasrifle>
+    <!--laspistol-->
+   <entityname.laspistolwwbc>激光手枪</entityname.laspistolwwbc>
+   <entitydescription.laspistolwwbc>星界军军官经常会一手持剑一手拿着激光手枪作战，相比于激光步枪而言激光手枪更加轻便</entitydescription.laspistolwwbc>
+    <!--laspistolrod-->
+   <entityname.laspistolrodwwbc>激光手枪电池</entityname.laspistolrodwwbc>
+   <entitydescription.laspistolrodwwbc>为激光手枪供能的电池，容量比常规电池略小，但制造起来更容易</entitydescription.laspistolrodwwbc>
+    <!--lasriflerod-->
+   <entityname.lasriflerod>激光枪电池</entityname.lasriflerod>
+   <entitydescription.lasriflerod>大容量的电池，为激光枪供能</entitydescription.lasriflerod>
+    <!--lasriflerod II-->
+   <entityname.lasriflerodII>激光枪电池II型</entityname.lasriflerodII>
+   <entitydescription.lasriflerodII>赞美帝皇，更优秀的电池可以杀死更多的异端</entitydescription.lasriflerodII>
+    <!--plasmagun-->
+   <entityname.plasmagun>等离子枪</entityname.plasmagun>
+   <entitydescription.plasmagun>笨重但却致命的武器，出于安全考虑，它的过载模式被锁定，只能采取标准模式射击，请记住，忠诚的等离子永不过热！</entitydescription.plasmagun>
+    <!--plasmagunrod-->
+   <entityname.plasmagunrod>小型等离子枪能量源</entityname.plasmagunrod>
+   <entitydescription.plasmagunrod>装填着液氢燃料的容器，为了防止过热的出现，里面的燃料量被大大降低，一般只能完成两次射击</entitydescription.plasmagunrod>
+    <!--plasmagunrodII-->
+   <entityname.plasmagunrodII>中型等离子枪能量源</entityname.plasmagunrodII>
+   <entitydescription.plasmagunrodII>装填着液氢燃料的容器，为了防止过热的出现，里面的燃料量被大大降低，一般只能完成四次射击</entitydescription.plasmagunrodII>
+    <!--plasmagunrodIII-->
+   <entityname.plasmagunrodIII>大型等离子枪能量源</entityname.plasmagunrodIII>
+   <entitydescription.plasmagunrodIII>装填着液氢燃料的容器，为了防止过热的出现，里面的燃料量被大大降低，一般只能完成八次射击</entitydescription.plasmagunrodIII>
+    <!--bolter-->
+   <entityname.bolter>爆弹枪</entityname.bolter>
+   <entitydescription.bolter>爆弹枪是星际战士的标准化武器，它们会给帝皇的敌人送去死亡</entitydescription.bolter>
+    <!--bolterstraightmagazine-->
+   <entityname.bolterstraightmagazine>爆弹直型弹匣</entityname.bolterstraightmagazine>
+   <entitydescription.bolterstraightmagazine>直型弹匣非常常见，因为他们更好携带，但同时它们糟糕的弹容量使得它无法胜任激烈的战斗</entitydescription.bolterstraightmagazine>
+    <!--boltermagazine-->
+   <entityname.boltermagazine>爆弹镰式弹匣</entityname.boltermagazine>
+   <entitydescription.boltermagazine>镰式弹匣提供更加充足的弹药，但它们比直型弹匣要少见，且允许携带的数量更少</entitydescription.boltermagazine>
+    <!--bolternormal-->
+   <entityname.bolternormal>爆弹枪</entityname.bolternormal>
+   <entitydescription.bolternormal>爆弹枪是星际战士的标准化武器，它们会给帝皇的敌人送去死亡</entitydescription.bolternormal>
+    <!--bolterstraightmagazinenormal-->
+   <entityname.bolterstraightmagazinenormal>爆弹直型弹匣</entityname.bolterstraightmagazinenormal>
+   <entitydescription.bolterstraightmagazinenormal>直型弹匣非常常见，因为他们更好携带，但同时它们糟糕的弹容量使得它无法胜任激烈的战斗</entitydescription.bolterstraightmagazinenormal>
+    <!--boltermagazinenormal-->
+   <entityname.boltermagazinenormal>爆弹镰式弹匣</entityname.boltermagazinenormal>
+   <entitydescription.boltermagazinenormal>镰式弹匣提供更加充足的弹药，但它们比直型弹匣要少见，且允许携带的数量更少</entitydescription.boltermagazinenormal>
+    <!--bolterdrumnormal-->
+   <entityname.bolterdrumnormal>爆弹弹鼓</entityname.bolterdrumnormal>
+   <entitydescription.bolterdrumnormal>爆弹弹鼓现如今已经很少再被使用，制造它的配方早已不知所踪，只有某些军事哨所可能还保留着一些存货</entitydescription.bolterdrumnormal>
+    <!--krieghelmet-->
+   <entityname.krieghelmet>克里格头盔</entityname.krieghelmet>
+   <entitydescription.krieghelmet>克里格死亡兵团的标准头盔，带有防毒面具</entitydescription.krieghelmet>
+   <!--krieguniform-->
+   <entityname.krieguniform>克里格军装</entityname.krieguniform>
+   <entitydescription.krieguniform>克里格死亡兵团的标准军装，厚实包裹住身体，可以抵挡一些辐射伤害</entitydescription.krieguniform>
+   <!--kriegarmor-->
+   <entityname.kriegarmor>克里格胸甲</entityname.kriegarmor>
+   <entitydescription.kriegarmor>克里格死亡兵团的胸甲，装备于掷弹兵团和军官们，不仅防御力优秀，还是身份的象征</entitydescription.kriegarmor>
+   <!--kriegcommissarcap-->
+   <entityname.kriegcommissarcap>克里格政委帽</entityname.kriegcommissarcap>
+   <entitydescription.kriegcommissarcap>克里格死亡兵团的政委军帽，充满着威严，激励着身边的将士们</entitydescription.kriegcommissarcap>
+   <!--commissarcap-->
+   <entityname.commissarcap>政委帽</entityname.commissarcap>
+   <entitydescription.commissarcap>星界军政委的军帽，充满着威严，激励着身边的将士们</entitydescription.commissarcap>
+    <!--chainsword-->
+   <entityname.chainsword>链锯剑</entityname.chainsword>
+   <entitydescription.chainsword>原本是科技蛮族的武器，现在它将撕碎帝皇之敌</entitydescription.chainsword>
+    <!--combatknife-->
+   <entityname.combatknife>战斗刀</entityname.combatknife>
+   <entitydescription.combatknife>子弹可能会耗尽，能源可能会枯竭，但忠诚的战斗刀永远可以依靠</entitydescription.combatknife>
+    <!--powersword-->
+   <entityname.powersword>动力剑</entityname.powersword>
+   <entitydescription.powersword>每一把动力剑都可谓是神器，它们不仅仅是身份的象征，更能轻易的将敌人斩杀</entitydescription.powersword>
+   <!--powerhammer-->
+   <entityname.powerhammer>动力锤</entityname.powerhammer>
+   <entitydescription.powerhammer>极其强大的武器，只有植入了肌腱线圈的人在身穿动力甲的情况下才能发挥出他的真正威力————将一切生物都砸成肉泥</entitydescription.powerhammer>
+   <!--chainfist-->
+   <entityname.chainfist>链锯拳</entityname.chainfist>
+   <entitydescription.chainfist>装有小型链锯的拳套，也可以在装填了异星电池的情况下爆发出强有力的拳击</entitydescription.chainfist>
+   <!--stormbolter-->
+   <entityname.stormbolter>风暴爆弹枪</entityname.stormbolter>
+   <entitydescription.stormbolter>风暴爆弹枪的火力更猛，毕竟在最激烈的战斗中，换弹匣可能就意味着死亡</entitydescription.stormbolter>
+   <!--stormboltermagazine-->
+   <entityname.stormboltermagazine>风暴爆弹枪弹匣</entityname.stormboltermagazine>
+   <entitydescription.stormboltermagazine>为了供给给风暴爆弹枪足够的火力，这种弹匣里装填有50发爆弹</entitydescription.stormboltermagazine>
+   <!--shovel-->
+   <entityname.shovel>工兵铲</entityname.shovel>
+   <entitydescription.shovel>克里格人经常使用这种轻便的武器，它可以轻易拆开墙体，也可以敲开敌人的脑袋</entitydescription.shovel>
+   <!--40mmradgrenade-->
+   <entityname.40mmradgrenade>40mm辐射榴弹</entityname.40mmradgrenade>
+   <entitydescription.40mmradgrenade>需要通过榴弹发射器发射，会释放出强大的辐射，为了避免伤及使用者自己，爆炸的范围比常规榴弹略小</entitydescription.40mmradgrenade>
+   <!--boardingshield-->
+   <entityname.boardingshield>跳帮盾</entityname.boardingshield>
+   <entitydescription.boardingshield>如果你想在海盗船上抵挡枪林弹雨，跳帮盾是不二之选</entitydescription.boardingshield>
+   <!--autopistol-->
+   <entityname.autopistol>德雷希安自动手枪</entityname.autopistol>
+   <entitydescription.autopistol>自动手枪已经是老旧的武器了，但它依然能用————叛徒们总是愿意使用它</entitydescription.autopistol>
+   <!--pistolmagazine-->
+   <entityname.pistolmagazine>自动手枪弹匣</entityname.pistolmagazine>
+   <entitydescription.pistolmagazine>自动手枪弹匣，容弹量通常为10发。原始，但却有效</entitydescription.pistolmagazine>
+   <!--handsmg-->
+   <entityname.handsmg>沃斯微型冲锋枪</entityname.handsmg>
+   <entitydescription.handsmg>曾经有人在被它打成筛子前取笑过这把武器的性能，希望那个人不是你</entitydescription.handsmg>
+   <!--handsmgmagazine-->
+   <entityname.handsmgmagazine>微型冲锋枪弹匣</entityname.handsmgmagazine>
+   <entitydescription.handsmgmagazine>微型冲锋枪弹匣，能在短时间内将所有子弹倾泻出去</entitydescription.handsmgmagazine>
+   <!--agripinaa-->
+   <entityname.agripinaa>阿格里皮娜式步枪</entityname.agripinaa>
+   <entitydescription.agripinaa>铸造世界打造的武器，枪声聒噪但是伤害足够，任何人都不应该小瞧这把武器</entitydescription.agripinaa>
+   <!--agripinaamagazine-->
+   <entityname.agripinaamagazine>阿格里皮娜式步枪弹匣</entityname.agripinaamagazine>
+   <entitydescription.agripinaamagazine>经过改造后的40发子弹的大型弹匣，为阿格里皮娜式步枪供弹</entitydescription.agripinaamagazine>
+   <!--hammer-->
+   <entityname.hammer>刺锤</entityname.hammer>
+   <entitydescription.hammer>全是钉刺的简易武器，虽然如此，被这玩意击中可不是什么好事</entitydescription.hammer>
+   <!--flamethrower-->
+   <entityname.flamethrower>火焰喷射器</entityname.flamethrower>
+   <entitydescription.flamethrower>为了帝皇，用火焰净化一切</entitydescription.flamethrower>
+   <!--flamethrowerfueltank-->
+   <entityname.flamethrowerfueltank>火焰喷射器燃料</entityname.flamethrowerfueltank>
+   <entitydescription.flamethrowerfueltank>喷火器使用的粘稠燃料，可以使用较长的时间</entitydescription.flamethrowerfueltank>
+   <!--handflamethrower-->
+   <entityname.handflamethrower>火焰喷射手枪</entityname.handflamethrower>
+   <entitydescription.handflamethrower>小巧耐用的火焰喷射手枪，更多用于近距离的自保</entitydescription.handflamethrower>
+   <!--handflamethrowerfueltank-->
+   <entityname.handflamethrowerfueltank>火焰喷射手枪燃料</entityname.handflamethrowerfueltank>
+   <entitydescription.handflamethrowerfueltank>这种燃料罐经过特殊工艺加工，更轻便易携带，但糟糕的容量使它无法担任主要武器的职责</entitydescription.handflamethrowerfueltank>
+   <!--heavybolter-->
+   <entityname.heavybolter>重型爆弹枪</entityname.heavybolter>
+   <entitydescription.heavybolter>用于攻坚的重型武器，枪和弹药都显得比较笨重</entitydescription.heavybolter>
+    <!--heavyboltermagazine-->
+   <entityname.heavyboltermagazine>重型爆弹枪弹匣</entityname.heavyboltermagazine>
+   <entitydescription.heavyboltermagazine>这种弹药口径更大，装药更多，威力也非同寻常。由于过于笨重而携带困难</entitydescription.heavyboltermagazine>
+   <!--assaultcannon-->
+   <entityname.assaultcannon>突击炮</entityname.assaultcannon>
+   <entitydescription.assaultcannon>拥有极高射速的压制型武器，最适合在废船和前哨站等狭小空间作战</entitydescription.assaultcannon>
+   <!--assaultcannonammobox-->
+   <entityname.assaultcannonammobox>突击炮弹药箱</entityname.assaultcannonammobox>
+   <entitydescription.assaultcannonammobox>用于给终结者动力甲所使用的突击炮备弹的弹药箱，容弹500发</entitydescription.assaultcannonammobox>
+   <!--automaticinjectionagent-->
+   <entityname.automaticinjectionagent>自动注射剂</entityname.automaticinjectionagent>
+   <entitydescription.automaticinjectionagent>星际战士动力甲内置有沉思者阵列，会在星际战士生命垂危时注射这种复合型药剂，它几乎能应对各种伤痛。</entitydescription.automaticinjectionagent>
+   <!--bolterpistol-->
+   <entityname.bolterpistol>爆弹手枪</entityname.bolterpistol>
+   <entitydescription.bolterpistol>爆弹手枪子弹容量很少，一般不用于激烈的战斗，一些足够强大的凡人军官会使用这种武器</entitydescription.bolterpistol>
+   <!--bolterpistolmagazine-->
+   <entityname.bolterpistolmagazine>爆弹手枪弹匣</entityname.bolterpistolmagazine>
+   <entitydescription.bolterpistolmagazine>内置8发常规口径的爆弹，威力足够但数量有限，最大的优点是方便携带</entitydescription.bolterpistolmagazine>
+   <!--sunderarmorgrenade-->
+   <entityname.sunderarmorgrenade>破甲手榴弹</entityname.sunderarmorgrenade>
+   <entitydescription.sunderarmorgrenade>人类帝国使用的一种手榴弹，能提供良好的结构损伤以及高伤害</entitydescription.sunderarmorgrenade>
+   <!--concussiongrenade-->
+   <entityname.concussiongrenade>震荡手榴弹</entityname.concussiongrenade>
+   <entitydescription.concussiongrenade>帝国水兵擅长使用这种手榴弹，它的爆炸可以眩晕并且震飞敌人。最重要的是，它的爆炸不会损伤船壳，因此经常被用于跳帮战和反跳帮战</entitydescription.concussiongrenade>
+   <!--boltermagazinenormal_hellfire-->
+   <entityname.boltermagazinenormal_hellfire>地狱火爆弹弹匣</entityname.boltermagazinenormal_hellfire>
+   <entitydescription.boltermagazinenormal_hellfire>用于对付大群敌人时使用的特殊爆弹，命中后会爆炸并在爆炸区域内造成犹如重爆弹一样的伤害</entitydescription.boltermagazinenormal_hellfire>
+   <!--boltermagazinenormal_armored-->
+   <entityname.boltermagazinenormal_armored>被甲爆弹弹匣</entityname.boltermagazinenormal_armored>
+   <entitydescription.boltermagazinenormal_armored>一种专门被设计用来击穿动力甲的特种爆弹</entitydescription.boltermagazinenormal_armored>
+   <!--combatshotgun-->
+   <entityname.combatshotgun>海军霰弹枪</entityname.combatshotgun>
+   <entitydescription.combatshotgun>虽然说武装水兵们的主要武器是激光枪，但在一些特殊情况下依然会使用霰弹枪这种武器作战</entitydescription.combatshotgun>
+   <!--combatshotgunshell_boarding-->
+   <entityname.combatshotgunshell_boarding>跳帮霰弹</entityname.combatshotgunshell_boarding>
+   <entitydescription.combatshotgunshell_boarding>这种霰弹被广泛运用在跳帮和反跳帮作战中，它散布小威力集中且不会损伤船壳</entitydescription.combatshotgunshell_boarding>
+   <!--combatshotgunshell-->
+   <entityname.combatshotgunshell>常规霰弹</entityname.combatshotgunshell>
+   <entitydescription.combatshotgunshell>常规霰弹以在小片区域内射出多个弹片的方式杀伤目标，在近距离内它们的伤害甚至可以超过激光枪</entitydescription.combatshotgunshell>
+   <!--combatshotgunshell_rifledslug-->
+   <entityname.combatshotgunshell_rifledslug>独头霰弹</entityname.combatshotgunshell_rifledslug>
+   <entitydescription.combatshotgunshell_rifledslug>某些人认为独头霰弹不属于霰弹，不过无所谓，它能从霰弹枪里被激发，并且精准命中目标</entitydescription.combatshotgunshell_rifledslug>
+   <!--combatshotgunshell_hellfire-->
+   <entityname.combatshotgunshell_hellfire>地狱火霰弹</entityname.combatshotgunshell_hellfire>
+   <entitydescription.combatshotgunshell_hellfire>类似于星际战士的地狱火爆弹的低配版，通过霰弹枪发射，可以杀伤大量敌人</entitydescription.combatshotgunshell_hellfire>
+   <!--combatshotgunshell_flare-->
+   <entityname.combatshotgunshell_flare>低速照明霰弹</entityname.combatshotgunshell_flare>
+   <entitydescription.combatshotgunshell_flare>克里格工兵们会使用这种照明弹，它们拥有诸多用途：提供光亮，发出信号，标记等等，当然也可以在紧急情况下用来射击敌人</entitydescription.combatshotgunshell_flare>
+   <!--combatshotgunshell_radgas-->
+   <entityname.combatshotgunshell_radgas>辐射毒气霰弹</entityname.combatshotgunshell_radgas>
+   <entitydescription.combatshotgunshell_radgas>实质上是一种微型的辐射榴弹，改装成由霰弹枪发射</entitydescription.combatshotgunshell_radgas>
+   <!--combatshotgunshell_armored-->
+   <entityname.combatshotgunshell_armored>被甲霰弹</entityname.combatshotgunshell_armored>
+   <entitydescription.combatshotgunshell_armored>特别改造的霰弹，每颗弹丸都具有一定的破甲效果，就连穿着动力甲的星际战士都得忌惮三分</entitydescription.combatshotgunshell_armored>
+   <!--combatshotgunshell_stun-->
+   <entityname.combatshotgunshell_stun>眩晕霰弹</entityname.combatshotgunshell_stun>
+   <entitydescription.combatshotgunshell_stun>用于镇压暴动的霰弹，属于非致命武器</entitydescription.combatshotgunshell_stun>
+   <!--radiotoxingrenade-->
+   <entityname.radiotoxingrenade>辐射毒气手榴弹</entityname.radiotoxingrenade>
+   <entitydescription.radiotoxingrenade>内含危险的辐射毒气，通常用于特种任务————比如在不毁坏船体的情况下俘获敌舰</entitydescription.radiotoxingrenade>
+   <!--Medikit-->
+   <entityname.Medikit>战地急救包</entityname.Medikit>
+   <entitydescription.Medikit>星界军班级装备，在每个前哨站都能够买到，一名熟练的医生可以使用急救包快速治疗多种伤害</entitydescription.Medikit>
+   <!--license-->
+   <entityname.license>私掠许可证</entityname.license>
+   <entitydescription.license>这份许可有些年头了，它由帝国的权威机构颁发，赋予持有者私掠权和行商权</entitydescription.license>
+   <!--cargometalcrate-->
+   <entityname.cargometalcrate>运输保险箱</entityname.cargometalcrate>
+   <entitydescription.cargometalcrate>为了确保货物不会被人偷走，帝国往往会使用这种箱子进行货物运送</entitydescription.cargometalcrate>
+   <!--rebeluniform-->
+   <entityname.rebeluniform>叛军服装</entityname.rebeluniform>
+   <entitydescription.rebeluniform>叛徒们常穿的衣服，脏兮兮的</entitydescription.rebeluniform>
+   <!--rebelmask-->
+   <entityname.rebelmask>叛军面具</entityname.rebelmask>
+   <entitydescription.rebelmask>叛徒们常用的面具，懦夫总是怯于露出自己的面目</entitydescription.rebelmask>
+   <!--hellpistol-->
+   <entityname.hellpistol>地狱手枪</entityname.hellpistol>
+   <entitydescription.hellpistol>拥有更大功率的激光手枪，通常配发给高级的军官使用</entitydescription.hellpistol>
+   <!--hellpistolrod-->
+   <entityname.hellpistolrod>地狱手枪电池</entityname.hellpistolrod>
+   <entitydescription.hellpistolrod>地狱手枪本来需要沉重的电池背包为它供电，而在木卫二的机械神教制造出了一种实验性的一次性电池，它能为地狱手枪短暂供能，但无法再次充电，因为过高的热量会直接烧毁电池</entitydescription.hellpistolrod>
+   <!--lasrifleboltround-->
+   <entityname.lasrifleboltround>激光枪弹药</entityname.lasrifleboltround>
+   <!--laspistolboltround-->
+   <entityname.laspistolboltroundwwbc>激光手枪弹药</entityname.laspistolboltroundwwbc>
+   <!--bolterround-->
+   <entityname.bolterround>爆弹枪弹药</entityname.bolterround>
+   <!--stormbolterround-->
+   <entityname.stormbolterround>风暴爆弹枪弹药</entityname.stormbolterround>
+   <!--pistolround-->
+   <entityname.pistolround>手枪弹药</entityname.pistolround>
+   <!--agripinaaround-->
+   <entityname.agripinaaround>步枪弹药</entityname.agripinaaround>
+   <!--heavybolterround-->
+   <entityname.heavybolterround>重爆弹弹药</entityname.heavybolterround>
+   <!--assaultcannonround-->
+   <entityname.assaultcannonround>突击炮弹药</entityname.assaultcannonround>
+   <!--bolterround_hellfire-->
+   <entityname.bolterround_hellfire>地狱火爆弹弹药</entityname.bolterround_hellfire>
+    <!--bolterround_armored-->
+   <entityname.bolterround_armored>被甲爆弹弹药</entityname.bolterround_armored>
+   <!--shotgunshell_flare-->
+   <entityname.shotgunshell_flare>低速照明弹光亮</entityname.shotgunshell_flare>
+   <!--hellpistolboltround-->
+   <entityname.hellpistolboltround>地狱手枪弹药</entityname.hellpistolboltround>
+
+   <missionname.abandonedoutpostpurify>净化前哨站</missionname.abandonedoutpostpurify>
+   <missiondescription.abandonedoutpostpurify>我们与 [location1]失去了联系，叛军已经击败了此处的帝国忠诚派，净化他们的罪孽，一个不留。</missiondescription.abandonedoutpostpurify>
+   <missionsuccess.abandonedoutpostpurify>我们净化了前哨站，愿忠诚的灵魂安息。</missionsuccess.abandonedoutpostpurify>
+   <missionfailure.abandonedoutpostpurify>我们未能净化那些叛军的罪孽。</missionfailure.abandonedoutpostpurify>
+   <missionheader0.abandonedoutpostpurify>已消灭所有敌人</missionheader0.abandonedoutpostpurify>
+   <missionmessage0.abandonedoutpostpurify>赞美神皇，我们已经净化了此地。</missionmessage0.abandonedoutpostpurify>
+
+   <missionname.abandonedoutposthusk>画皮哨站</missionname.abandonedoutposthusk>
+   <missiondescription.abandonedoutposthusk>以研究为由接收了一批画皮卵的[location1]现在和我们失去了联系，我们有理由认为那里已经爆发了生化危机，消灭异形，士兵。</missiondescription.abandonedoutposthusk>
+   <missionsuccess.abandonedoutposthusk>这里的画皮危机被解除</missionsuccess.abandonedoutposthusk>
+   <missionfailure.abandonedoutposthusk>这里的画皮依然活跃</missionfailure.abandonedoutposthusk>
+   <missionheader0.abandonedoutposthusk>已杀死所有感染体</missionheader0.abandonedoutposthusk>
+   <missionmessage0.abandonedoutposthusk>异形，你的下场只能是死亡！</missionmessage0.abandonedoutposthusk>
+
+   <afflictionname.excessiverecoil>过大后坐力</afflictionname.excessiverecoil>
+   <afflictiondescription.excessiverecoil>你也许不应该尝试这种武器，过大的后坐力让你十分痛苦</afflictiondescription.excessiverecoil>
+   <afflictioncauseofdeath.excessiverecoil>死于过大后坐力</afflictioncauseofdeath.excessiverecoil>
+   <afflictioncauseofdeathself.excessiverecoil>下次不要在这样使用武器了</afflictioncauseofdeathself.excessiverecoil>
+   <afflictionname.excessiverecoilplus>过大后坐力</afflictionname.excessiverecoilplus>
+   <afflictiondescription.excessiverecoilplus>你也许不应该尝试这种武器，过大的后坐力让你十分痛苦</afflictiondescription.excessiverecoilplus>
+   <afflictioncauseofdeath.excessiverecoilplus>死于过大后坐力</afflictioncauseofdeath.excessiverecoilplus>
+   <afflictioncauseofdeathself.excessiverecoilplus>下次不要在这样使用武器了</afflictioncauseofdeathself.excessiverecoilplus>
+   <afflictionname.shreddedarmor>破甲伤害</afflictionname.shreddedarmor>
+   <afflictiondescription.shreddedarmor>破甲弹片嵌入了你的身体</afflictiondescription.shreddedarmor>
+   <afflictioncauseofdeath.shreddedarmor>死于破甲伤害</afflictioncauseofdeath.shreddedarmor>
+   <afflictioncauseofdeathself.shreddedarmor>死于破甲伤害</afflictioncauseofdeathself.shreddedarmor>
+
+   <talentname.usepowerarmor>黑色甲壳成功植入</talentname.usepowerarmor>
+   <afflictionname.barapace>动力甲功能已上线</afflictionname.barapace>
+   <afflictionname.barapaceplus>终结者动力甲功能已上线</afflictionname.barapaceplus>
+   <talentname.dashing>肌腱线圈成功植入</talentname.dashing>
+   <talentname.judge>审判之锤</talentname.judge>
+  
+  <!--[Afflictions]-->
+  <!--eyeball-->
+  <afflictionname.eyeball1>betcher腺体</afflictionname.eyeball1>
+  <afflictiondescription.eyeball1>腺体内有强酸，可以在瞬间向四周喷出并且灼烧敌人，并且因为你体内已经含有强酸，所以其他酸无法再对你造成伤害（按下f使用）</afflictiondescription.eyeball1>
+  <!--secondaryheart-->
+  <afflictionname.secondaryheart>第二心脏</afflictionname.secondaryheart>
+  <afflictiondescription.secondaryheart>第二心脏使人类的身体更加的强壮且耐打</afflictiondescription.secondaryheart>
+  <!--ossmodula-->
+  <afflictionname.ossmodula>骨强化器官</afflictionname.ossmodula>
+  <afflictiondescription.ossmodula>骨强化器官使得人类能抵御更多的伤害</afflictiondescription.ossmodula>
+  <!--biscopea-->
+  <afflictionname.biscopea>肌肉强化器官</afflictionname.biscopea>
+  <afflictiondescription.biscopea>强化了人类的肌肉力量与密度，增加近战伤害，近战速度以及移动速度</afflictiondescription.biscopea>
+  <!--haemastamen-->
+  <afflictionname.haemastamen>血液再造器官</afflictionname.haemastamen>
+  <afflictiondescription.haemastamen>你体内的血液再生速度很快，失血过多的情况大大减少,同时血液流速加快，供氧能力更强</afflictiondescription.haemastamen>
+  <!--larramanorgan-->
+  <afflictionname.larramanorgan>拉瑞曼器官</afflictionname.larramanorgan>
+  <afflictiondescription.larramanorgan>拉瑞曼细胞会快速形成皮肤组织进行止血和治疗暴露的伤口，对烧伤也有一定的效果</afflictiondescription.larramanorgan>
+  <!--catalepseannode-->
+  <afflictionname.catalepseannode>神经结</afflictionname.catalepseannode>
+  <afflictiondescription.catalepseannode>神经结的存在不仅使得人类的各项技能水平有所提高，学习速度也得到了提升</afflictiondescription.catalepseannode>
+  <!--preomnor-->
+  <afflictionname.preomnor>预置胃</afflictionname.preomnor>
+  <afflictiondescription.preomnor>预置胃使得人类对毒素的抗性有了一定的提升</afflictiondescription.preomnor>
+  <!--omophage-->
+  <afflictionname.omophage>基因侦测神经</afflictionname.omophage>
+  <afflictiondescription.omophage>这种改造可以让你的基因不断优化最终接近完美，使得你受到的所有治疗都更加有效,并且显著降低可能的药物成瘾</afflictiondescription.omophage>
+  <!--multilung-->
+  <afflictionname.multilung>多肺</afflictionname.multilung>
+  <afflictiondescription.multilung>人工肺可以让你在无氧环境下坚持的更久，也可以抵抗一些轻微的毒素</afflictiondescription.multilung>
+  <!--occulobe-->
+  <afflictionname.occulobe>视觉控制器官</afflictionname.occulobe>
+  <afflictiondescription.occulobe>视觉控制器官使得人类的远程武器操控技巧大幅度提升，枪械在你手中更加致命</afflictiondescription.occulobe>
+  <!--lymanear-->
+  <afflictionname.lymanear>莱曼之耳</afflictionname.lymanear>
+  <afflictiondescription.lymanear>经过改造后的耳朵在外观上和普通人类的耳朵并无差异，但它却可以最大程度的保护人类避免眩晕和恶心感</afflictiondescription.lymanear>
+  <!--susanmembrane-->
+  <afflictionname.susanmembrane>susan脑膜</afflictionname.susanmembrane>
+  <afflictiondescription.susanmembrane>susan脑膜可以让人类在受到致命伤害后依然保持着清醒</afflictiondescription.susanmembrane>
+  <!--melanochromic-->
+  <afflictionname.melanochromic>色素控制球</afflictionname.melanochromic>
+  <afflictiondescription.melanochromic>色素控制球的主要功能是防止紫外线烧伤，但在木卫二的冰洋下，它也可以对辐射起到一定的抵抗作用</afflictiondescription.melanochromic>
+  <!--oolitickidney-->
+  <afflictionname.oolitickidney>卵石肾脏</afflictionname.oolitickidney>
+  <afflictiondescription.oolitickidney>卵石肾脏会在必要时刻分泌出大量肾上腺素来抵御疼痛以及增强速度，并且具有轻微的毒素过滤能力</afflictiondescription.oolitickidney>
+  <!--neuroglottis-->
+  <afflictionname.neuroglottis>味觉监测神经</afflictionname.neuroglottis>
+  <afflictiondescription.neuroglottis>味觉监测神经原本被设计为检测多种毒素，然而在木卫二，位于口腔后部的神经可以有效抑制此处的画皮寄生虫的生长</afflictiondescription.neuroglottis>
+  <!--mucranoid-->
+  <afflictionname.mucranoid>汗腺改进器官</afflictionname.mucranoid>
+  <afflictiondescription.mucranoid>改造过的汗腺将会在水压和皮肤烧伤中提供一定的保护</afflictiondescription.mucranoid>
+  <!--blackbarapace-->
+  <afflictionname.blackbarapace>黑色甲壳</afflictionname.blackbarapace>
+  <afflictiondescription.blackbarapace>只有植入了黑色甲壳才能发挥陶钢动力甲的真正实力，并且这些植入的物体也可以让人类在操控炮塔时更为熟练和灵活</afflictiondescription.blackbarapace>
+  <!--sinewcoils-->
+  <afflictionname.sinewcoils>肌腱线圈</afflictionname.sinewcoils>
+  <afflictiondescription.sinewcoils>强化过的肌肉使得你可以像战车一样撞向敌人，让他们失去反抗的能力（奔跑时按下空格）</afflictiondescription.sinewcoils>
+  <!--magnificat-->
+  <afflictionname.magnificat>圣颂垂体</afflictionname.magnificat>
+  <afflictiondescription.magnificat>这种植入大脑的改造垂体可以更好的激发人体的肌肉密度，使其生命力更加顽强</afflictiondescription.magnificat>
+  <!--belisarianfurnace-->
+  <afflictionname.belisarianfurnace>贝利撒留熔炉</afflictionname.belisarianfurnace>
+  <afflictiondescription.belisarianfurnace>贝利撒留熔炉又被称为起死回生者，可以在人类受到过高伤害时使其进入假死状态，据说很多原铸星际战士都因此逃过一死</afflictiondescription.belisarianfurnace>
+
+  <!--[Characters]-->
+    <!--betchergland-->
+  <character.betchergland>betcher腺体</character.betchergland>
+    <!--secondaryheart-->
+  <character.secondaryheart>第二心脏</character.secondaryheart>
+    <!--ossmodula-->
+  <character.ossmodula>骨强化器官</character.ossmodula>
+    <!--biscopea-->
+  <character.biscopea>肌肉强化器官</character.biscopea>
+    <!--haemastamen-->
+  <character.haemastamen>血液再造器官</character.haemastamen>
+    <!--larramanorgan-->
+  <character.larramanorgan>拉瑞曼器官</character.larramanorgan>
+    <!--catalepseannode-->
+  <character.catalepseannode>神经结</character.catalepseannode>
+    <!--preomnor-->
+  <character.preomnor>预置胃</character.preomnor>
+    <!--omophage-->
+  <character.omophage>基因侦测神经</character.omophage>
+    <!--multilung-->
+  <character.multilung>多肺</character.multilung>
+    <!--occulobe-->
+  <character.occulobe>视觉控制器官</character.occulobe>
+    <!--lymanear-->
+  <character.lymanear>莱曼之耳</character.lymanear>
+    <!--melanochromic-->
+  <character.melanochromic>色素控制球</character.melanochromic>
+    <!--oolitickidney-->
+  <character.oolitickidney>卵石肾脏</character.oolitickidney>
+    <!--neuroglottis-->
+  <character.neuroglottis>味觉监测神经</character.neuroglottis>
+    <!--mucranoid-->
+  <character.mucranoid>汗腺改进器官</character.mucranoid>
+    <!--blackbarapace-->
+  <character.blackbarapace>黑色甲壳</character.blackbarapace>
+    <!--susanmembrane-->
+  <character.susanmembrane>susan脑膜</character.susanmembrane>
+    <!--sinewcoils-->
+  <character.sinewcoils>肌腱线圈</character.sinewcoils>
+    <!--magnificat-->
+  <character.magnificat>圣颂垂体</character.magnificat>
+   <!--belisarianfurnace-->
+  <character.belisarianfurnace>贝利撒留熔炉</character.belisarianfurnace>
+
+<!--event-->
+<eventtext.licensecheck.c1>一名帝国卫兵正在挨个检查来往的人群，他看到了你：“嘿！就是你，过来！我知道你是从其他站点来到这里的，你身上可有帝国发行的私掠许可证？”</eventtext.licensecheck.c1>
+<eventtext.licensecheck.o1>“呃，你说的是私掠许可证么？我当然有啊。”</eventtext.licensecheck.o1>
+<eventtext.licensecheck.o1.c1>卫兵向你伸出手：“给我看看你的证件，这是例行检查。”</eventtext.licensecheck.o1.c1>
+<eventtext.licensecheck.o1.o1>找找自己身上有没有私掠许可证</eventtext.licensecheck.o1.o1>
+<eventtext.licensecheck.o1.o1.c1>“啊，尊敬的行商浪人，很抱歉打扰了你，你现在可以走了。”卫兵将私掠许可证还给了你</eventtext.licensecheck.o1.o1.c1>
+<eventtext.licensecheck.o1.o1.o1>麻烦的卫兵……</eventtext.licensecheck.o1.o1.o1>
+<eventtext.licensecheck.o1.o1.c2>“嘿！如果你身上没有帝国的许可证，那可不是什么好事啊。”卫兵拿出一张新的私掠许可证：“拿着吧，但是你得支付2000点的罚款。”</eventtext.licensecheck.o1.o1.c2>
+<eventtext.licensecheck.o1.o1.o2>真倒霉。</eventtext.licensecheck.o1.o1.o2>
+<eventtext.licensecheck.o2>也许你应该逃跑</eventtext.licensecheck.o2>
+<eventtext.licensecheck.o2.c1>“啊！看那！”你大喊一声，胡乱指了个方向，然后转身就跑</eventtext.licensecheck.o2.c1>
+<eventtext.licensecheck.o2.o1>卫兵在人群中大喊着想追你，但最终还是被你甩掉了</eventtext.licensecheck.o2.o1>
+<eventtext.licensecheck.o2.c2>“老实点！”卫兵举起了手中的武器</eventtext.licensecheck.o2.c2>
+<eventtext.licensecheck.o2.o2>糟糕。</eventtext.licensecheck.o2.o2>
+
+<eventtext.drunkenman.c1>一个醉醺醺的卫兵朝你走了过来，一边走一边叫骂着什么</eventtext.drunkenman.c1>
+<eventtext.drunkenman.o1>看看他要做什么。</eventtext.drunkenman.o1>
+<eventtext.drunkenman.o1.c1>卫兵带着酒气走到你面前，和你撞了个满怀，他愤怒地抬头看向你，刚想发话，却似乎突然认出了你的身份。“抱歉，长官。”他嘟囔着，把一包东西塞到你手里：“别和我的上级提起这事……”</eventtext.drunkenman.o1.c1>
+<eventtext.drunkenman.o1.o1>那是一包钱。</eventtext.drunkenman.o1.o1>
+<eventtext.drunkenman.o1.c2>卫兵嘟嘟囔囔地推搡着你，突然往你的脸上来了一拳</eventtext.drunkenman.o1.c2>
+<eventtext.drunkenman.o1.o2>该死的！</eventtext.drunkenman.o1.o2>
+<eventtext.drunkenman.o2>避免与其接触。</eventtext.drunkenman.o2>
+<eventtext.drunkenman.o2.c1>你混入了人群里，那个酒鬼的叫骂声越来越远。</eventtext.drunkenman.o2.c1>
+<eventtext.drunkenman.o2.o1>酒鬼。</eventtext.drunkenman.o2.o1>
+<eventtext.drunkenman.o2.c2>这个酒鬼大声叫喊着来拉你的衣服，你刚回过头，脸上就挨了一拳</eventtext.drunkenman.o2.c2>
+<eventtext.drunkenman.o2.o2>该死的！</eventtext.drunkenman.o2.o2>
+
+<eventtext.reinforcement.c1>你刚走进前哨站的管理室，一名身穿克里格死亡兵团制服的士兵向你走来：\n\n“向你报到，长官！我来自克里格死亡军团第51团，编号5135-3840，接受上级命令加入你的战舰。”\n</eventtext.reinforcement.c1>
+<eventtext.reinforcement.o1>一名克里格士兵！？</eventtext.reinforcement.o1>
+<eventtext.reinforcement.o1.c1>“我接受到命令，搭载你的潜艇一路抵达渊洋之底。舰长，申请登舰！”</eventtext.reinforcement.o1.c1>
+<eventtext.reinforcement.o1.o1>登舰请求已批准。</eventtext.reinforcement.o1.o1>
+<eventtext.reinforcement.o1.o1.c1>克里格人向你敬了个礼，默默地走进了潜艇</eventtext.reinforcement.o1.o1.c1>
+<eventtext.reinforcement.o1.o2>也许不应该让这个克里格士兵上船，毕竟他们的脾气很古怪。</eventtext.reinforcement.o1.o2>
+<eventtext.reinforcement.o1.o2.c1>“抱歉，士兵，我的潜艇已经满员了。”</eventtext.reinforcement.o1.o2.c1>
+<eventtext.reinforcement.o2>“抱歉，我的船上已经没有更多的空间再搭载一名战士了。”</eventtext.reinforcement.o2>
+<eventtext.reinforcement.o2.c1>克里格人一言不发地离开了</eventtext.reinforcement.o2.c1>
+
+<!--loadingscreentip-->
+<loadingscreentip>欢迎使用“星际战士改造手术和更多的WH40k装备” 玩的开心！</loadingscreentip>
+<loadingscreentip>手术基因很珍贵，尽可能让它们的纯度达到最高</loadingscreentip>
+<loadingscreentip>赞美神皇！赞美神圣泰拉！</loadingscreentip>
+<loadingscreentip>如果没有黑色甲壳，再强大的动力甲都只是摆设</loadingscreentip>
+<loadingscreentip>爆弹枪后座力很大，如果没有动力甲保护，凡人使用会导致受伤</loadingscreentip>
+<loadingscreentip>想尝试爆弹的高威力，又无法激活动力甲？可以去试试爆弹手枪！</loadingscreentip>
+<loadingscreentip>等离子武器威力巨大，门、结构和人体都可以被撕碎，但需要较长时间的准备</loadingscreentip>
+<loadingscreentip>救命！有人能看到这条tip么，我现在被困在亚空间，只能靠这种方式求救！</loadingscreentip>
+<loadingscreentip>风暴爆弹枪只需要一只手就能使用，但是它过大的后座力使得你必需激活终结者动力甲才能正常使用</loadingscreentip>
+<loadingscreentip>阿斯塔特圣典第一条：如果你在使用此mod时出现错误，立刻向创意工坊留言区报告</loadingscreentip>
+<loadingscreentip>重爆弹和突击炮威力巨大，只有终结者动力甲才能驾驭住它们</loadingscreentip>
+<loadingscreentip>跳帮盾很重，如果你是凡人，请不要尝试去拿起它，它不是石中剑</loadingscreentip>
+<loadingscreentip>小心动力剑、破甲手榴弹等破甲武器，它们对于星际战士而言也是致命的</loadingscreentip>
+<loadingscreentip>凡人的装备也很强大，请不要忽视凡人的力量</loadingscreentip>
+<loadingscreentip>星界军步兵班手册第二条：激光武器的电池可以再充电，请在战斗后及时充电</loadingscreentip>
+<loadingscreentip>不要长时间使用突击炮开火，就连终结者动力甲都无法完全抵挡它的强大后座力</loadingscreentip>
+<loadingscreentip>如果你受到了破甲伤害以及后座力伤害，请使用战地急救包进行救治</loadingscreentip>
+<loadingscreentip>不要尝试去偷走运输的物品，帝国会把这些物资都锁起来</loadingscreentip>
+<loadingscreentip>星际战士的火焰喷射器温度很高，甚至能用来切开舱门</loadingscreentip>
+<loadingscreentip>如果你倒下了，你一定会希望你的动力甲里有一剂自动注射剂的</loadingscreentip>
+<loadingscreentip>熟练的帝国水兵总是精通各种霰弹的作用，并在恰当的时机使用它们</loadingscreentip>
+<loadingscreentip>私掠许可证是一种古老的授权证件，如今依然有作用————至少在你面对烦人的卫兵的时候</loadingscreentip>
+<loadingscreentip>克里格的工兵铲拥有很高的结构伤害，并且是一件趁手的武器</loadingscreentip>
+<loadingscreentip>即使能源耗尽，动力剑依然是一把锋利的武器</loadingscreentip>
+<loadingscreentip>星际战士的动力甲都可以携带两个氧气瓶，以及一份药剂</loadingscreentip>
+<loadingscreentip>灵活的在实弹和激光武器之中选择，它们各自有优点和缺陷</loadingscreentip>
+<loadingscreentip>战旗可以发出耀眼的光芒并且照亮四周，在黑暗的环境下相当有用</loadingscreentip>
+<loadingscreentip>一些特殊武器不会对船体造成伤害，优先在跳帮战和反跳帮战中使用它们</loadingscreentip>
+<loadingscreentip>有些废弃的前哨站内盘踞有大量的叛军，肃清他们的时候请务必小心</loadingscreentip>
+<loadingscreentip>对付一名敌对的星际战士的最好办法就是另一名星际战士</loadingscreentip>
+<loadingscreentip>勇气与荣耀！————极限战士战团</loadingscreentip>
+<loadingscreentip>为玛库拉德而战！————极限战士战团</loadingscreentip>
+<loadingscreentip>帝国的根基立于牺牲之上,烈士的鲜血是帝国的火种</loadingscreentip>
+<loadingscreentip>信仰乃吾之盾，愤怒乃吾之剑</loadingscreentip>
+<loadingscreentip>炮烙奸佞,族灭丑类,涤荡垢孽</loadingscreentip>
+<loadingscreentip>激光武器造成的是烧伤，普通的防弹衣无法有效抵挡这种伤害</loadingscreentip>
+<loadingscreentip>链锯剑通过燃料棒提供能量源，而链锯齿本身也是消耗品</loadingscreentip>
+<loadingscreentip>动力剑使用外星电池提供能量，是一把强大的近战武器</loadingscreentip>
+<loadingscreentip>地狱手枪的威力比普通的激光武器要强，但是因为过高的热量，它们的电池会在使用之后被烧毁而无法再充电</loadingscreentip>
+
+<jobname.servitor>机仆</jobname.servitor>
+
+</infotext>

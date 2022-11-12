@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Afflictions>
+<Affliction
+    identifier="barapace"
+    type="barapace"
+    isbuff="true"
+    limbspecific="false"
+    maxstrength="1"
+    iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+    <Effect minstrength="0" maxstrength="1"
+      strengthchange="-1"/>
+    <Icon texture="Content\UI\TalentsIcons2.png" sheetindex="2,4" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+  </Affliction>
+<Affliction
+    identifier="barapaceplus"
+    type="barapaceplus"
+    isbuff="true"
+    limbspecific="false"
+    maxstrength="1"
+    iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+    <Effect minstrength="0" maxstrength="1"
+      strengthchange="-1"/>
+    <Icon texture="Content\UI\TalentsIcons2.png" sheetindex="2,4" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+  </Affliction>
+</Afflictions>

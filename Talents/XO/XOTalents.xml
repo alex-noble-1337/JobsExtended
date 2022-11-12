@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Talents>
+  
+	<Talent identifier="capitanssword">
+		<Description tag="talentdescription.unlockrecipe">
+			<Replace tag="[itemname]" value="entityname.rotarygrenedelaucher" color="gui.orange"/>
+		</Description>
+		<Description tag="talentdescription.capitanssword">
+		</Description>
+		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>    
+		<AddedRecipe itemidentifier="rotarygrenedelaucher"/>
+				<AbilityGroupEffect abilityeffecttype="OnAttack">
+			<Conditions>
+				<AbilityConditionAttackData tags="grenade"/>
+			</Conditions>
+			<Abilities>
+				<CharacterAbilityModifyAttackData addeddamagemultiplier="1" />
+			</Abilities>
+		</AbilityGroupEffect>
+		<AddedRecipe itemidentifier="rotarygrenedelaucher"/>
+  </Talent>
+  
+   <Talent identifier="highlydecoratedindividual">
+		<Description tag="talentdescription.trustedcaptain">
+			<Replace tag="[selfxpgain]" value="275" color="gui.green"/>      
+		</Description>
+		<Description tag="talentdescription.highlydecoratedindividual">      
+		</Description>
+		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,1" sheetelementsize="128,128"/>
+		<AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
+			<Abilities>
+				<CharacterAbilityPutItem itemidentifier="coalitioncommendation"/>
+			</Abilities>
+		</AbilityGroupEffect>
+		<AbilityGroupEffect abilityeffecttype="OnAttack">
+			<Conditions>
+				<AbilityConditionAttackData itemidentifier="coalitioncommendation"/>
+			</Conditions>
+			<Abilities>
+				<CharacterAbilityApplyStatusEffects>
+					<StatusEffects>
+						<StatusEffect type="OnAbility" target="This">
+							<GiveExperience amount="275"/>
+						</StatusEffect>
+					</StatusEffects>
+				</CharacterAbilityApplyStatusEffects>
+			</Abilities>
+		</AbilityGroupEffect>
+		<AbilityGroupInterval interval="0.5">
+			<Abilities>
+				<CharacterAbilityModifyStatToSkill stattype="MovementSpeed" maxvalue="0.15" skillidentifier="weapons"/>
+				<CharacterAbilityModifyStatToSkill stattype="MeleeAttackSpeed" maxvalue="0.15" skillidentifier="weapons"/>
+				<CharacterAbilityModifyStatToSkill stattype="RangedAttackSpeed" maxvalue="0.15" skillidentifier="weapons"/>
+			</Abilities>
+		</AbilityGroupInterval>
+	</Talent>
+  
+   <Talent identifier="capitansshield" >
+		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,5" sheetelementsize="128,128"/>
+		<Description tag="talentdescription.capitansshield">
+		</Description>
+		<AbilityGroupInterval>
+			<Conditions>
+				<AbilityConditionInFriendlySubmarine invert="true" />
+			</Conditions>
+			<Abilities>
+				<CharacterAbilityModifyResistance resistanceid="damage" resistance="0.75"/>
+			</Abilities>
+		</AbilityGroupInterval>
+		<AbilityGroupInterval>
+			<Conditions>
+				<AbilityConditionInFriendlySubmarine />
+			</Conditions>
+			<AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
+				<Abilities>
+					<CharacterAbilityModifyAffliction afflictionidentifiers="stun,incrementalstun,progressivestun" addedmultiplier="0.25" />
+				</Abilities>
+			</AbilityGroupEffect>
+		</AbilityGroupInterval>
+  </Talent>
+  
+  <Talent identifier="evasion"> 
+	 <Description tag="talentdescription.evasion">
+      <Replace tag="[seconds]" value="0.75" color="gui.green"/>
+      <Replace tag="[damage]" value="20" color="gui.green"/>
+      <Replace tag="[duration]" value="2.5" color="gui.green"/>
+    </Description>
+	 <Description tag="talentdescription.tumble2">
+	      <Replace tag="[red]" value="75" color="gui.green"/>
+	 </Description>
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="2,0" sheetelementsize="128,128"/>
+    <AbilityGroupInterval effectdelay="0.5">
+      <Conditions>
+        <AbilityConditionRagdolled/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+              <Affliction identifier="tumbling" amount="2.5"/> 
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="tumbling"/>
+        <AbilityConditionAttackData tags="grenade"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.2"/>
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+  
+  <Talent identifier="firststrike">
+    <Description tag="talentdescription.firststrike">
+      <Replace tag="[seconds]" value="8" color="gui.green"/>
+      <Replace tag="[damage]" value="40" color="gui.green"/>
+    </Description>
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,0" sheetelementsize="128,128"/>
+    <AbilityGroupInterval>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true">
+              <Affliction identifier="quickdrawing" amount="1.0"/>
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="quickdrawing" minimumpercentage="1.0"/>
+        <AbilityConditionAttackData tags="grenade"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.4"/>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="This">
+              <ReduceAffliction identifier="quickdrawing" strength="8.0"/>
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+  
+  
+</Talents>

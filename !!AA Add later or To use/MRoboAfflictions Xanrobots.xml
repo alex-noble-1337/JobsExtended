@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+<!--____________________________________________________________________________________________________________________________________________________________________-->
+  <Affliction 
+   name="" 
+   identifier="robodeactivesignal" 
+   description=""
+   type="stun"
+   limbspecific="false"  
+   indicatorlimb="Head"  
+   activationthreshold="0" 
+   showiconthreshold="1000" 
+   maxstrength="20">
+    <Effect minstrength="0" maxstrength="100" minvitalitydecrease="0" maxvitalitydecrease="0" strengthchange="-1.0">
+      <StatusEffect tags="medical" target="Character">
+        <Affliction identifier="stun" strength="0.5" />
+      </StatusEffect>
+     </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="128,640,128,128" color="195,177,60,255" origin="0,0" />
+  </Affliction>
+<!--____________________________________________________________________________________________________________________________________________________________________-->
+  <Affliction
+   name=""
+   identifier="xrobotx"
+   description=""
+   type="xrobotx"
+   limbspecific="false"
+   indicatorlimb="Torso"
+   activationthreshold="0"
+   showinhealthscannerthreshold="0"
+   showiconthreshold="0"
+   showicontoothersthreshold="0"
+   maxstrength="100">
+    <Effect resistancefor="kidohealdamage" minstrength="100" maxstrength="100" minresistance="1000" maxresistance="1000"/>
+  </Affliction>
+<!--____________________________________________________________________________________________________________________________________________________________________-->
+ <Affliction name="" 
+  identifier="sonyapsyheal" 
+  description="" 
+  isbuff="true" 
+  limbspecific="false" 
+  indicatorlimb="Torso" 
+  showiconthreshold="0"
+  treatmentthreshold="100"
+  maxstrength="100" 
+  iconcolors="94,54,95;163,73,164;200,191,231">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-10">
+      <StatusEffect type="OnActive" tags="medical" target="Character">
+        <ReduceAffliction type="psychosis" amount="0.35" />
+        <ReduceAffliction type="invertcontrols" amount="0.25" />
+        <ReduceAffliction type="watchersgaze" amount="0.15" />
+     </StatusEffect>
+    </Effect>
+   <icon texture="Mods/MantaAutomatons/UI/MantaUIAtlas.png" color="181,230,29,255" origin="0,4.659341E-08" sourcerect="0,2,128,128" />
+  </Affliction>
+<!--____________________________________________________________________________________________________________________________________________________________________-->
+ <Affliction name="" 
+  identifier="kidohealdamage" 
+  description="" 
+  isbuff="true" 
+  limbspecific="false" 
+  indicatorlimb="Torso" 
+  showiconthreshold="0" 
+  treatmentthreshold="100"
+  maxstrength="100" 
+  iconcolors="94,54,95;163,73,164;200,191,231">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-8">
+      <StatusEffect type="OnActive" tags="medical" target="Character">
+        <ReduceAffliction type="bleeding" amount="0.65" />
+        <ReduceAffliction type="burn" amount="0.65" />
+        <ReduceAffliction type="bloodloss" amount="0.65" />
+        <ReduceAffliction type="damage" amount="0.65" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Mods/MantaAutomatons/UI/MantaUIAtlas.png" color="181,230,29,255" origin="0,0" sourcerect="0,129,128,128" />
+  </Affliction>
+<!--____________________________________________________________________________________________________________________________________________________________________-->
+ <Affliction name="" 
+  identifier="autorepairbot" 
+  description="" 
+  isbuff="true" 
+  limbspecific="false" 
+  indicatorlimb="Head" 
+  showiconthreshold="0" 
+  treatmentthreshold="100" 
+  maxstrength="100" 
+  iconcolors="94,54,95;163,73,164;200,191,231">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-7.5">
+	  <AbilityFlag flagtype="IgnoredByEnemyAI" />
+      <StatusEffect tags="medical" target="Character">
+        <ReduceAffliction type="bleeding" amount="0.95" />
+        <ReduceAffliction type="burn" amount="2.2" />
+        <ReduceAffliction type="bloodloss" amount="1.2" />
+        <ReduceAffliction type="damage" amount="0.75" />
+        <Sound file="Mods/MantaAutomatons/Characters/Kidos/KidoSounds/healing.ogg" volume="0.8" range="200" dontmuffle="true" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Mods/MantaAutomatons/UI/MantaUIAtlas.png" color="181,230,29,255" origin="0,0" sourcerect="130,4,131,131" />
+  </Affliction>
+<!--____________________________________________________________________________________________________________________________________________________________________-->
+ <Affliction
+  name=""
+  identifier="disintegration"
+  description=""
+  type="disintegration"
+  limbspecific="false"
+  indicatorlimb="Torso"
+  activationthreshold="0"
+  showinhealthscannerthreshold="1000"
+  showiconthreshold="1000"
+  showicontoothersthreshold="1000"
+  maxstrength="100">
+  <Effect minstrength="0" maxstrength="98" strengthchange="-5" />
+  <Effect minstrength="99" maxstrength="100" strengthchange="-0.5">
+    <StatusEffect target="Character" comparison="Or">
+      <Conditional mass="lt 190"/> 
+	  <Conditional HealthPercentage="lt 10" />
+	  <RemoveCharacter />
+	</StatusEffect>
+  </Effect>
+ </Affliction>
+<!--________Обслуживание роботов______________     __________________________________________________________________________________________________________________________-->
+ <Affliction name="" 
+   identifier="energystatus" 
+   description=""
+   isbuff="true" 
+   type="energystatus"
+   limbspecific="false"  
+   indicatorlimb="Torso"  
+   activationthreshold="0" 
+   showiconthreshold="1000" 
+   maxstrength="501">
+   <Effect minstrength="0" maxstrength="501" strengthchange="-0.25"/>
+ </Affliction>
+ <Affliction name="" 
+   identifier="mechstatus" 
+   description=""
+   isbuff="true" 
+   type="mechstatus"
+   limbspecific="false"  
+   indicatorlimb="Torso"  
+   activationthreshold="0" 
+   showiconthreshold="1000" 
+   maxstrength="501">
+   <Effect minstrength="0" maxstrength="501" strengthchange="-0.25"/>
+ </Affliction>
+ <Affliction name="" 
+   identifier="fixfoamstatus" 
+   description=""
+   isbuff="true" 
+   type="fixfoamstatus"
+   limbspecific="false"  
+   indicatorlimb="Torso"  
+   activationthreshold="0" 
+   showiconthreshold="1000" 
+   maxstrength="501">
+   <Effect minstrength="0" maxstrength="100" strengthchange="-0.05"/>
+ </Affliction>
+ <!--___________________________________________________________________________________________________________________________________________________________________-->
+</Afflictions>

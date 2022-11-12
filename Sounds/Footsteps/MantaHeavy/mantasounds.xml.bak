@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sounds>
+
+  <manta_heavy_footstep file="Mods/MantaAutomatons/Sounds/Footsteps/MantaHeavy/mantaheavyfootstep1.ogg"  volume="0.7" range="500"/>
+  <manta_heavy_footstep file="Mods/MantaAutomatons/Sounds/Footsteps/MantaHeavy/mantaheavyfootstep2.ogg"  volume="0.7" range="500"/>
+  <manta_heavy_footstep file="Mods/MantaAutomatons/Sounds/Footsteps/MantaHeavy/mantaheavyfootstep3.ogg"  volume="0.7" range="500"/>
+  <manta_heavy_footstep file="Mods/MantaAutomatons/Sounds/Footsteps/MantaHeavy/mantaheavyfootstep4.ogg"  volume="0.7" range="500"/>
+
+  <kido_footstep file="Mods/MantaAutomatons/Sounds/Footsteps/Kido/kidofootsteps1.ogg"  volume="0.7" range="400"/>
+  <kido_footstep file="Mods/MantaAutomatons/Sounds/Footsteps/Kido/kidofootsteps2.ogg"  volume="0.7" range="400"/>
+  <kido_footstep file="Mods/MantaAutomatons/Sounds/Footsteps/Kido/kidofootsteps3.ogg"  volume="0.7" range="400"/>
+  <kido_footstep file="Mods/MantaAutomatons/Sounds/Footsteps/Kido/kidofootsteps4.ogg"  volume="0.7" range="400"/>
+  <kido_footstep file="Mods/MantaAutomatons/Sounds/Footsteps/Kido/kidofootsteps5.ogg"  volume="0.7" range="400"/>
+
+</sounds>

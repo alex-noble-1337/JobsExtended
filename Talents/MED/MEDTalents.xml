@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Talents>
+
+  <Talent identifier="mecicalapplications"> 
+    <Description tag="talentdescription.mecicalapplications">
+    </Description>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.medicalsuit" color="gui.orange"/>
+    </Description>
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="2,5" sheetelementsize="128,128"/>   
+    <AddedRecipe itemidentifier="medicalsuit"/>
+  </Talent>
+
+  <Talent identifier="toxinsmaster"> 
+    <Description tag="talentdescription.toxinsmaster">
+    </Description>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.toxinampule" color="gui.orange"/>
+    </Description>
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,5" sheetelementsize="128,128"/>   
+    <AddedRecipe itemidentifier="emptyampule"/>
+  </Talent>
+
+  <Talent identifier="explosivecompoundsaplications"> 
+    <Description tag="talentdescription.explosivecompoundsaplications">
+    </Description>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.explosiveampule" color="gui.orange"/>
+    </Description>
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,5" sheetelementsize="128,128"/>   
+    <AddedRecipe itemidentifier="explosiveampule"/>
+  </Talent>
+  
+  <Talent identifier="reactivematerialsaplications"> 
+    <Description tag="talentdescription.reactivematerialsaplications">
+    </Description>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.potassiumpill" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.potassiumampule" color="gui.orange"/>
+    </Description>
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,5" sheetelementsize="128,128"/>   
+    <AddedRecipe itemidentifier="potassiumampule"/>
+    <AddedRecipe itemidentifier="potassiumpill"/>
+  </Talent>
+  
+  <Talent identifier="synthesis"> 
+    <Description tag="talentdescription.synthesis">
+    </Description>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.synthesisraptorbane" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.synthesisraptorbaneampule" color="gui.orange"/>
+    </Description>
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,5" sheetelementsize="128,128"/>   
+    <AddedRecipe itemidentifier="synthesisraptorbane"/>
+    <AddedRecipe itemidentifier="synthesisraptorbaneampule"/>
+  </Talent>
+  
+  <Talent identifier="offeniveapplicatons"> 
+    <Description tag="talentdescription.offeniveapplicatons">
+    </Description>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.medicgun" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.supersyryngegun" color="gui.orange"/>
+    </Description>
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,5" sheetelementsize="128,128"/>   
+    <AddedRecipe itemidentifier="medicgun"/>
+    <AddedRecipe itemidentifier="supersyryngegun"/>
+  </Talent>
+  
+
+</Talents>

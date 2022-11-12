@@ -1,0 +1,58 @@
+Results of searching ["/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2"] with excluded directories [] and excluded items ["*/.git/*", "*/node_modules/*", "*/lost+found/*", "*/Trash/*", "*/.Trash-*/*", "*/snap/*", "/home/*/.cache/*"]
+Found 56 files with invalid extension.
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Submarines/Barsuk [JE].sub ----- (gz) - gz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Submarines/Remora [JE].sub ----- (gz) - gz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Submarines/Typhon [JE].sub ----- (gz) - gz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Submarines/Herja [JE].sub ----- (gz) - gz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Submarines/Orca2 [JE].sub ----- (gz) - gz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Submarines/Humpback [JE].sub ----- (gz) - gz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Submarines/Gnitterbuss.sub ----- (gz) - gz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Submarines/Gnitterbike.sub ----- (gz) - gz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Submarines/Azimuth [JE].sub ----- (gz) - gz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Submarines/Berilia [JE].sub ----- (gz) - gz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Submarines/Dugong [JE].sub ----- (gz) - gz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Submarines/Kastrull [JE].sub ----- (gz) - gz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Submarines/Orca [JE].sub ----- (gz) - gz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Submarines/R-29 [JE].sub ----- (gz) - gz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Submarines/Typhon2 [JE].sub ----- (gz) - gz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Submarines/Winterhalter [JE].sub ----- (gz) - gz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Submarines/Orca2 [JE] (copy).sub ----- (gz) - gz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/UI/MainIconsAtlas.kra~ ----- (zip) - zip
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/UI/MainIconsAtlas.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/UI/CampaignUIAtlas2.kra~ ----- (zip) - zip
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/UI/CampaignUIAtlas2.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Characters/ramblinsheet.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Map/Walls.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Particles/cultparticles.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Items/Jobgear/OutfitIcons.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Items/Containers/VendingMachine.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Items/Doors/blastdoor.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Items/Electricity/poweritems.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Items/Gardening/GrowableEarth.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Items/Jobgear (copy)/MiscJobGear.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Items/Jobgear (copy)/headgears.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Items/Misc/instruments.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Items/Tools/foldingchair.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Characters/Maggot/Maggot.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Items/Jobgear (copy)/Clown/walldraw.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Items/Jobgear (copy)/Clown/clown.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Items/Jobgear (copy)/RadiationGear/DivingSuit_Legs.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Items/Jobgear (copy)/Scientist/science.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Items/Jobgear (copy)/Scientist/botanist_torso.kra~ ----- (zip) - zip
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Items/Jobgear (copy)/Scientist/botanist_legs.kra~ ----- (zip) - zip
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Items/Jobgear (copy)/Scientist/geneticist_legs.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Items/Jobgear (copy)/Scientist/geneticist_torso.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Items/Jobgear (copy)/Scientist/singularity.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Characters/Gummy/GeneLimbs/thalamus.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Characters/Gummy/GeneLimbs/crawler.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Characters/Gummy/GeneLimbs/Tigerthresher.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Characters/Gummy/GeneLimbs/Hammerhead.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Characters/Gummy/Ragdolls/torso_male_white.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Characters/Gummy/Ragdolls/legs_male.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Characters/Humanhive/Ragdolls/torso_male_white.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Characters/Humanhive/Ragdolls/spare.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Map/Outposts/Art/Art1.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Map/Outposts/Modules/SlumStorageModule_R1.sub ----- (gz) - gz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Items/Electricity/Lights/lightTextures/disco.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Items/Electricity/Lights/lightTextures/fluordirec.png~ ----- (png) - png,pnz
+/home/jakub/Documents/projects/barotrauma modding/!AA Full Mods/Jobs Extended 2/Characters/Humanapostle/Ragdolls/Heads/head_female_asian.png~ ----- (png) - png,pnz

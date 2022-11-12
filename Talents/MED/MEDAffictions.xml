@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Afflictions>
+  <Affliction
+    name="Explosive Dart"
+    identifier="ek_explosivedart"
+    type="damage"
+    causeofdeathdescription="Died of internal injuries"
+    selfcauseofdeathdescription="You have succumbed to your internal injuries."    
+    limbspecific="true"
+    activationthreshold="1.0"
+    showiconthreshold="1000"
+    maxstrength="25">
+    <Effect minstrength="1" maxstrength="24"
+      minvitalitydecrease="0"
+      maxvitalitydecrease="0"
+      strengthchange="1.5" >
+    </Effect>
+    <Effect minstrength="24" maxstrength="25"
+      minvitalitydecrease="0"
+      maxvitalitydecrease="0"
+      strengthchange="-10000" >
+      <StatusEffect target="Limb" disabledeltatime="true">
+        <Affliction identifier="internaldamage" amount="30" />
+        <Affliction identifier="lacerations" amount="40" />
+        <Affliction identifier="burn" amount="10" />
+        <Affliction identifier="bleeding" amount="10" />
+        <Explosion range="200.0" structuredamage="30" itemdamage="15" force="20.0" severlimbsprobability="1" decal="explosion" decalsize="0.05">
+          <Affliction identifier="burn" amount="70" />
+          <Affliction identifier="explosiondamage" amount="50" />
+          <Affliction identifier="stun" amount="5" />
+        </Explosion>  
+        <sound file="Content/Items/Weapons/ExplosionMedium2.ogg" range="1200" />
+		<!--<Affliction identifier="ek_reset_explosivedart" amount="50" />-->
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="106,106,106,255" origin="0,0"/>
+  </Affliction>
+</Afflictions>

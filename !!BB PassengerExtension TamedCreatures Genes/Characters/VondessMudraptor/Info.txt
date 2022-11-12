@@ -1,0 +1,1 @@
+The Vondess Raptor is the only folder with content within it. The Human file is just an override for the Ai to ignore the raptor. This will be removed in the future when humans have a defualt gourp setting. [They finally added it :D]

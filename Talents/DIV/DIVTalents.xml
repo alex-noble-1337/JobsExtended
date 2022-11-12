@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Talents>
+
+  <Talent identifier="watercombatexpert">
+    <Description tag="talentdescription.extraskillfromcrafting">
+      <Replace tag="[amount]" value="125" color="gui.green"/>
+      <Replace tag="[skillname]" value="skillname.weapons" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.watercombatexpert"/>
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="6,3" sheetelementsize="128,128"/>
+    <AbilityGroupEffect abilityeffecttype="OnItemFabricatedAmount">
+      <Conditions>
+        <AbilityConditionServerRandom randomchance="0.5"/>
+        <AbilityConditionItem tags="harpoonammo"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyValue multiplyvalue="3"/>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnItemFabricationSkillGain">
+      <Conditions>
+        <AbilityConditionSkill skillidentifier="weapons"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyValue multiplyvalue="2.25"/>
+      </Abilities>
+    </AbilityGroupEffect>
+	</Talent>
+
+	<Talent identifier="personalizedequipment">
+		<Description tag="talentdescription.unlockrecipe">
+			<Replace tag="[itemname]" value="entityname.spearunique" color="gui.orange"/>
+		</Description>
+		<Description tag="talentdescription.unlockrecipe">
+			<Replace tag="[itemname]" value="entityname.ek_divinggrenade" color="gui.orange"/>
+		</Description>
+		<Description tag="talentdescription.personalizedequipment">
+			<Replace tag="[name]" value="25" color="gui.green"/>
+		</Description>
+		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="6,3" sheetelementsize="128,128"/>
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionAttackData tags="harpoonammo"/>
+        <AbilityConditionInHull invert="true" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.25"/>
+      </Abilities>
+    </AbilityGroupEffect>
+		<AddedRecipe itemidentifier="spearunique"/>
+		<AddedRecipe itemidentifier="ek_divinggrenade"/>
+  </Talent>
+
+   <Talent identifier="watercqc">
+		<Description tag="talentdescription.watercqc">      
+		</Description>
+		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,1" sheetelementsize="128,128"/>
+		<AbilityGroupInterval interval="0.5">
+			<Abilities>
+				<CharacterAbilityModifyStatToSkill stattype="MeleeAttackMultiplier" maxvalue="0.3" skillidentifier="weapons"/>
+				<CharacterAbilityModifyStatToSkill stattype="MeleeAttackSpeed" maxvalue="0.3" skillidentifier="weapons"/>
+				<CharacterAbilityModifyStatToSkill stattype="RangedAttackSpeed" maxvalue="0.3" skillidentifier="weapons"/>
+				<CharacterAbilityModifyStatToSkill stattype="SwimmingSpeed" maxvalue="0.3" skillidentifier="weapons"/>
+			</Abilities>
+		</AbilityGroupInterval>
+	</Talent>
+
+</Talents>

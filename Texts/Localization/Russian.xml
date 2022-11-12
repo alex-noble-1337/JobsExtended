@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Russian" nowhitespace="false" translatedname="Русский">
+
+<character.EngKido>Кидо-Инженер</character.EngKido>
+<character.MechKido>Кидо-Механик</character.MechKido>
+<character.MedKido>Кидо-Медик</character.MedKido>
+<character.SecKido>Кидо-Охранник</character.SecKido>
+<character.Sonya>Соня</character.Sonya>
+<character.SentryTurretCC>Пулемётная турель</character.SentryTurretCC>
+<character.SentryTurretGC>Гаусс-турель</character.SentryTurretGC>
+<character.SentryTurretLC>Лучевая турель</character.SentryTurretLC>
+<character.SentryTurretSC>Паровая турель</character.SentryTurretSC>
+<character.SentryTurretSGC>Гаусс-флак турель</character.SentryTurretSGC>
+
+<entityname.sysporttool>Деактиватор ядра ИИ</entityname.sysporttool>
+<entitydescription.sysporttool>...</entitydescription.sysporttool>
+<entityname.roboservicetool>Мультитул обслуживания</entityname.roboservicetool>
+<entitydescription.roboservicetool>...</entitydescription.roboservicetool>
+<entityname.SentryTurretCC_spawner>Пулемётная турель</entityname.SentryTurretCC_spawner>
+<entitydescription.SentryTurretCC_spawner>...</entitydescription.SentryTurretCC_spawner>
+<entityname.SentryTurretSC_spawner>Паровая турель</entityname.SentryTurretSC_spawner>
+<entitydescription.SentryTurretSC_spawner>...</entitydescription.SentryTurretSC_spawner>
+<entityname.SentryTurretGC_spawner>Гаусс-турель</entityname.SentryTurretGC_spawner>
+<entitydescription.SentryTurretGC_spawner>...</entitydescription.SentryTurretGC_spawner>
+<entityname.SentryTurretSGC_spawner>Гаусс-флак турель</entityname.SentryTurretSGC_spawner>
+<entitydescription.SentryTurretSGC_spawner>...</entitydescription.SentryTurretSGC_spawner>
+<entityname.SentryTurretLC_spawner>Лучевая турель</entityname.SentryTurretLC_spawner>
+<entitydescription.SentryTurretLC_spawner>...</entitydescription.SentryTurretLC_spawner>
+<entityname.medkidospawner>Кидо-Медик</entityname.medkidospawner>
+<entitydescription.medkidospawner>...</entitydescription.medkidospawner>
+<entityname.mechkidospawner>Кидо-Механик</entityname.mechkidospawner>
+<entitydescription.mechkidospawner>...</entitydescription.mechkidospawner>
+<entityname.engkidospawner>Кидо-Инженер</entityname.engkidospawner>
+<entitydescription.engkidospawner>...</entitydescription.engkidospawner>
+<entityname.seckidospawner>Кидо-Охранник</entityname.seckidospawner>
+<entitydescription.seckidospawner>...</entitydescription.seckidospawner>
+<entityname.sonyaspawner>Соня</entityname.sonyaspawner>
+<entitydescription.sonyaspawner>...</entitydescription.sonyaspawner>
+
+<fixfoamstatus>Рем.материалы</fixfoamstatus>
+<mechstatus>Состояние механизма</mechstatus>
+<energystatus>Состояние заряда</energystatus>
+<disintegration>Расщепление</disintegration>
+<autorepairbot>Авто-ремонт</autorepairbot>
+<kidohealdamage>Первая помощь</kidohealdamage>
+<sonyapsyheal>Психологическая помощь</sonyapsyheal>
+<xrobotx>Робот</xrobotx>
+<robodeactivesignal>Деактивация ИИ</robodeactivesignal>
+<afflictionname.fixfoamstatus>Рем.материалы</afflictionname.fixfoamstatus>
+<afflictiondescription.fixfoamstatus>...</afflictiondescription.fixfoamstatus>
+<afflictionname.mechstatus>Состояние механизма</afflictionname.mechstatus>
+<afflictiondescription.mechstatus>...</afflictiondescription.mechstatus>
+<afflictionname.energystatus>Состояние заряда</afflictionname.energystatus>
+<afflictiondescription.energystatus>...</afflictiondescription.energystatus>
+<afflictionname.disintegration>Расщепление</afflictionname.disintegration>
+<afflictiondescription.disintegration>...</afflictiondescription.disintegration>
+<afflictionname.autorepairbot>Авто-ремонт</afflictionname.autorepairbot>
+<afflictiondescription.autorepairbot>...</afflictiondescription.autorepairbot>
+<afflictionname.kidohealdamage>Первая помощь</afflictionname.kidohealdamage>
+<afflictiondescription.kidohealdamage>...</afflictiondescription.kidohealdamage>
+<afflictionname.sonyapsyheal>Психологическая помощь</afflictionname.sonyapsyheal>
+<afflictiondescription.sonyapsyheal>...</afflictiondescription.sonyapsyheal>
+<afflictionname.xrobotx>Робот</afflictionname.xrobotx>
+<afflictiondescription.xrobotx>...</afflictiondescription.xrobotx>
+<afflictionname.robodeactivesignal>Деактивация ИИ</afflictionname.robodeactivesignal>
+<afflictiondescription.robodeactivesignal>...</afflictiondescription.robodeactivesignal>
+
+</infotexts>

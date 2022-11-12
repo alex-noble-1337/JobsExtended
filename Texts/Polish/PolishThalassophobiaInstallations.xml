@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Polish" nowhitespace="false" translatedname="Polski">
+  <!-- Stationary Repairtools -->
+  <entityname.thal_sprinkler>Tryskiwacz</entityname.thal_sprinkler>
+  <entitydescription.thal_sprinkler>Rozpyla wodę na obszarze w celu gaszenia pożarów lub roślin wodnych. Pozostawienie go włączonego przez absurdalnie długi czas może powodować kałuże. Albo gorzej.</entitydescription.thal_sprinkler>
+  
+  <entityname.thal_trashcan>Kosz na śmieci</entityname.thal_trashcan>
+  <entitydescription.thal_trashcan>Kosz może służyć do wyrzucania małych lub średnich przedmiotów. Podłącz trzpień spustowy do zsypu na śmieci i połącz zsyp z puszką, aby przedmiot został przetransportowany.</entitydescription.thal_trashcan>
+  
+  <entityname.thal_trashchute>Zsyp na śmieci</entityname.thal_trashchute>
+  <entitydescription.thal_trashchute>Punkt wyjścia z koszy na śmieci.</entitydescription.thal_trashchute>
+  
+  <entityname.thal_blastdoor>Wybuchowe drzwi</entityname.thal_blastdoor>
+  <entitydescription.thal_blastdoor>Wolniejsze, mocno opancerzone drzwi przesuwne, których potwory nie mogą otworzyć ani rozerwać. Nie posiada wariantu guzikowego ze względu na niepraktyczny charakter.</entitydescription.thal_blastdoor>
+  <msgnocrowbar>Nie można podważyć łomem.</msgnocrowbar>
+  
+  <entityname.thal_glassdoor>Drzwi z pleksiglasu</entityname.thal_glassdoor>
+  <entitydescription.thal_glassdoor>Nieco słabsze, całkowicie przezroczyste drzwi wykonane w całości z metamateriału na bazie pleksiglasu.</entitydescription.thal_glassdoor>
+  
+  <entityname.thal_glassdoorwbuttons>Drzwi ze szkła pleksiglasu z przyciskami</entityname.thal_glassdoorwbuttons>
+  <entitydescription.thal_glassdoorwbuttons>Nieco słabsze, całkowicie przezroczyste drzwi wykonane w całości z metamateriału na bazie pleksiglasu. Posiada zintegrowane przyciski.</entitydescription.thal_glassdoorwbuttons>
+  
+  <entityname.thal_glasshatch>Właz z pleksiglasu</entityname.thal_glasshatch>
+  <entitydescription.thal_glasshatch>Nieco słabszy, całkowicie przezroczysty właz wykonany w całości z metamateriału na bazie pleksiglasu.</entitydescription.thal_glasshatch>
+  
+  <entityname.thal_glasshatchwbuttons>Klapa pleksiglasu z przyciskami</entityname.thal_glasshatchwbuttons>
+  <entitydescription.thal_glasshatchwbuttons>Nieco słabszy, całkowicie przezroczysty właz wykonany w całości z metamateriału na bazie pleksiglasu. Posiada zintegrowane przyciski.</entitydescription.thal_glasshatchwbuttons>
+  
+  <entityname.thal_oxygendock>Stacja dokująca do uzupełniania tlenu</entityname.thal_oxygendock>
+  <entitydescription.thal_oxygendock>Dok mogący pomieścić trzy zbiorniki tlenu lub zbiorniki spawalnicze. Może być podłączony do generatorów tlenu w celu uzupełniania wszelkich znajdujących się w nich zbiorników z tlenem, o ile przepływa tlen. Ma tylko etykietę wentylacyjną dla kompatybilności z placówką; Nie emituje tlenu do kadłuba.</entitydescription.thal_oxygendock>
+  <ItemMsgBreatheUse>[[use]] Odetchnąć</ItemMsgBreatheUse>
+  
+  
+  <entityname.thal_shuttervent>Zasłona wentylacyjna</entityname.thal_shuttervent>
+  <entitydescription.thal_shuttervent>Odpowietrznik umożliwiający włączanie/wyłączanie przepływu tlenu przez okablowanie lub kluczem. Można również przechowywać w nim rzeczy za pomocą klucza, chociaż bystre oko zauważy wystającą pokrywę.</entitydescription.thal_shuttervent>
+  <ItemMsgCrowbarRequired>Wymagany łom</ItemMsgCrowbarRequired>
+  <itemmsgopencrowbarselect>[[select]] Otwórz (Łom)</itemmsgopencrowbarselect>
+  <buttoncloseshutter>Zamknij migawkę powietrza</buttoncloseshutter>
+  <buttonopenshutter>Otwórz migawkę powietrza</buttonopenshutter>
+  <connection.toggleshutter>przełącz migawkę</connection.toggleshutter>
+  <connection.shutterclosed>zamknij migawkę</connection.shutterclosed>
+  
+  <entityname.thal_vacuum>Próżnia tlenowa</entityname.thal_vacuum>
+  <entitydescription.thal_vacuum>Maszyna zdolna do wyciągania tlenu z pomieszczenia, gdy jest odpowiednio zasilana i aktywowana. Wyciąga nieco mniej tlenu niż artefakt. Idealny do pożarów i duszących form życia.</entitydescription.thal_vacuum>
+  
+  <entityname.thal_vendingmachine>Automat z jedzeniem</entityname.thal_vendingmachine>
+  <entitydescription.thal_vendingmachine>Dozuje wszystko, co jest w nim umieszczone. Do otwarcia wymaga łomu, a uzupełnienie kosztuje.</entitydescription.thal_vendingmachine>
+  
+  
+  <!-- Thalamus -->
+  <entityname.thal_thalamuseye>Oko Thalamus'a</entityname.thal_thalamuseye>
+  <entitydescription.thal_thalamuseye>Kosmetyczne oko Thalamus'a, które rozgląda się i wydaje zgniatające dźwięki. Może zostać zniszczony.</entitydescription.thal_thalamuseye>
+  <entityname.thal_thalamusseeds>Nasiono Thalamus'a</entityname.thal_thalamusseeds>
+  <entitydescription.thal_thalamusseeds>Kosmetyczne nasiono Thalamus'a. Nieinteraktywny. Wyglądają jak zęby.</entitydescription.thal_thalamusseeds>
+</infotexts>

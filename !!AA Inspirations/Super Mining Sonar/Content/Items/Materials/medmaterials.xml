@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Override>
+
+
+  <Item name="" sonarsize="30" identifier="fiberplant" category="Material" Tags="smallitem,plant" maxstacksize="8" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="medfabcab" minamount="0" maxamount="4" spawnprobability="1"/>
+    <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="2" spawnprobability="0.06"/>
+    <Price baseprice="100" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.3" sold="false"/>
+      <Price locationtype="city" multiplier="1.25" sold="true" minavailable="3"/>
+      <Price locationtype="research" multiplier="0.9" sold="true" minavailable="6"/>
+      <Price locationtype="military" multiplier="1" sold="false"/>
+      <Price locationtype="mine" multiplier="0.9" sold="false"/>
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="organicfiber" />
+      <Item identifier="organicfiber" />
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+ <!--   <InventoryIcon texture="Content/Items/Materials/LootablePlants.png" sourcerect="0,0,108,166" -->
+    <ContainedSprite texture="Content/Items/Materials/LootablePlants.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible"  depth="0.55" sourcerect="0,0,96,128" origin="0.5,0.5" />
+    <LightComponent lightcolor="208,139,211,150" range="100" powerconsumption="0" flicker="0.0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="0" ison="true" drawbehindsubs="true">
+      <LightTexture texture="Content/Lights/pointlight_rays.png" origin="0.5,0.5" />
+    </LightComponent>
+    <Sprite texture="Content/Items/Materials/LootablePlants.png" depth="0.2" sourcerect="291,386,51,77" origin="0.5,0.5" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.49" sourcerect="95,0,97,128" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.48" sourcerect="191,0,96,128" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.51" sourcerect="95,0,97,128" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.52" sourcerect="191,0,96,128" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.49" sourcerect="95,0,97,128" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.53" sourcerect="191,0,96,128" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="Content/Items/Materials/Minerals.png" depth="0.4" sourcerect="810,893,173,131" offset="0,-40" randomrotation="-20,20" origin="0.5,0.5" />
+    <Body radius="30" height="50" density="12" />
+    <LevelResource deattachduration="1" randomoffsetfromwall="40">
+      <Commonness commonness="0.8" />
+    </LevelResource>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item name="" sonarsize="30" identifier="elastinplant" category="Material" Tags="smallitem,plant" maxstacksize="8" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="medfabcab" minamount="0" maxamount="4" spawnprobability="1"/>
+    <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="2" spawnprobability="0.06"/>
+    <LightComponent lightcolor="139,211,197,100" range="100" powerconsumption="0" flicker="0.0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="0" ison="true" drawbehindsubs="true">
+      <LightTexture texture="Content/Lights/pointlight_rays.png" origin="0.5,0.5" />
+    </LightComponent>
+    <Price baseprice="150" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.3" sold="false"/>
+      <Price locationtype="city" multiplier="1.25" sold="true" minavailable="3"/>
+      <Price locationtype="research" multiplier="0.9" sold="true" minavailable="6"/>
+      <Price locationtype="military" multiplier="1" sold="false"/>
+      <Price locationtype="mine" multiplier="0.9" sold="false"/>
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="elastin" />
+      <Item identifier="elastin" />
+      <Item identifier="elastin" />
+    </Deconstruct>
+    <ContainedSprite texture="Content/Items/Materials/LootablePlants.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible"  depth="0.55" sourcerect="287,0,96,128" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Materials/LootablePlants.png" depth="0.2" sourcerect="349,259,28,54" origin="0.5,0.5" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.49" sourcerect="382,0,97,128" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.48" sourcerect="416,254,96,116" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.51" sourcerect="382,0,97,128" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.52" sourcerect="416,254,96,116" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.49" sourcerect="382,0,97,128" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.53" sourcerect="416,254,96,116" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="Content/Items/Materials/Minerals.png" depth="0.4" sourcerect="810,893,173,131" offset="0,-40" randomrotation="-20,20" origin="0.5,0.5" />
+
+    <Body width="120" height="120" density="12" />
+    <LevelResource deattachduration="1" randomoffsetfromwall="40">
+      <Commonness commonness="0.8" />
+    </LevelResource>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item name="" sonarsize="30" identifier="aquaticpoppy" category="Material" Tags="smallitem,plant" maxstacksize="8" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="medfabcab" minamount="1" maxamount="4" spawnprobability="1"/>
+    <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="2" spawnprobability="0.06"/>
+    <LightComponent lightcolor="139,211,197,100" range="100" powerconsumption="0" flicker="0.0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="0" ison="true" drawbehindsubs="true">
+      <LightTexture texture="Content/Lights/pointlight_rays.png" origin="0.5,0.5" />
+    </LightComponent>
+    <Price baseprice="150" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.3" sold="false"/>
+      <Price locationtype="city" multiplier="1.25" sold="true" minavailable="1"/>
+      <Price locationtype="research" multiplier="0.9" sold="true" minavailable="2"/>
+      <Price locationtype="military" multiplier="1" sold="false"/>
+      <Price locationtype="mine" multiplier="0.9" sold="false"/>
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="opium" />
+      <Item identifier="opium" />
+      <Item identifier="opium" />
+    </Deconstruct>
+    <ContainedSprite texture="Content/Items/Materials/LootablePlants.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible"  depth="0.55" sourcerect="0,128,96,128" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Materials/LootablePlants.png" depth="0.2" sourcerect="287,328,53,53" origin="0.5,0.5" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.49" sourcerect="95,128,97,128" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.48" sourcerect="191,128,96,128" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.51" sourcerect="95,128,97,128" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.52" sourcerect="191,128,96,128" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.49" sourcerect="95,128,97,128" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.53" sourcerect="191,128,96,128" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="Content/Items/Materials/Minerals.png" depth="0.4" sourcerect="810,893,173,131" offset="0,-40" randomrotation="-20,20" origin="0.5,0.5" />
+
+    <Body radius="30" width="30" density="12" />
+    <LevelResource deattachduration="1" randomoffsetfromwall="40">
+      <Commonness commonness="1.0" />
+    </LevelResource>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item name="" sonarsize="30" identifier="yeastshroom" category="Material" Tags="smallitem,plant" maxstacksize="8" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="medfabcab" minamount="0" maxamount="4" spawnprobability="1"/>
+    <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="2" spawnprobability="0.06"/>
+    <LightComponent lightcolor="112,174,199,150" range="100" powerconsumption="0" flicker="0.0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="0" ison="true" drawbehindsubs="true">
+      <LightTexture texture="Content/Lights/pointlight_rays.png" origin="0.5,0.5" />
+    </LightComponent>
+    <Price baseprice="200" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.3" sold="false"/>
+      <Price locationtype="city" multiplier="1.25" sold="true" minavailable="1"/>
+      <Price locationtype="research" multiplier="0.9" sold="true" minavailable="2"/>
+      <Price locationtype="military" multiplier="1" sold="false"/>
+      <Price locationtype="mine" multiplier="0.9" sold="false"/>
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="ethanol" />
+      <Item identifier="ethanol" />
+      <Item identifier="ethanol" />
+    </Deconstruct>
+    <ContainedSprite texture="Content/Items/Materials/LootablePlants.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible"  depth="0.55" sourcerect="287,128,96,128" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Materials/LootablePlants.png" depth="0.2" sourcerect="350,327,33,54" origin="0.5,0.5" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.49" sourcerect="382,128,97,128" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.48" sourcerect="412,374,96,128" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.51" sourcerect="382,128,97,128" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.52" sourcerect="412,374,96,128" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="Content/Items/Materials/Minerals.png" depth="0.4" sourcerect="810,893,173,131" offset="0,-40" randomrotation="-20,20" origin="0.5,0.5" />
+
+    <Body radius="40" width="50" density="12" />
+    <LevelResource deattachduration="1" randomoffsetfromwall="40">
+      <Commonness commonness="1.0" />
+    </LevelResource>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item name="" sonarsize="30" identifier="slimebacteria" category="Material" Tags="smallitem,plant" maxstacksize="8" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="medfabcab" minamount="0" maxamount="4" spawnprobability="1"/>
+    <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="2" spawnprobability="0.06"/>
+    <LightComponent lightcolor="222,153,79,150" range="100" powerconsumption="0" flicker="0.0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="0" ison="true" drawbehindsubs="true">
+      <LightTexture texture="Content/Lights/pointlight_rays.png" origin="0.5,0.5" />
+    </LightComponent>
+    <Price baseprice="150" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.3" sold="false"/>
+      <Price locationtype="city" multiplier="1.25" sold="true" minavailable="1"/>
+      <Price locationtype="research" multiplier="0.9" sold="true" minavailable="2"/>
+      <Price locationtype="military" multiplier="1" sold="false"/>
+      <Price locationtype="mine" multiplier="0.9" sold="false"/>
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="antibiotics" />
+      <Item identifier="antibiotics" />
+      <Item identifier="antibiotics" />
+    </Deconstruct>
+    <ContainedSprite texture="Content/Items/Materials/LootablePlants.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible"  depth="0.55" sourcerect="0,256,96,128" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Materials/LootablePlants.png" depth="0.2" sourcerect="347,397,53,40" origin="0.5,0.5" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.49" sourcerect="95,256,97,128" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.48" sourcerect="191,256,96,128" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.51" sourcerect="95,256,97,128" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.52" sourcerect="191,256,96,128" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.49" sourcerect="95,256,97,128" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="Content/Items/Materials/LootablePlants.png" depth="0.53" sourcerect="191,256,96,128" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="Content/Items/Materials/Minerals.png" depth="0.4" sourcerect="810,893,173,131" offset="0,-40" randomrotation="-20,20" origin="0.5,0.5" />
+
+    <Body radius="40" width="40" density="15" />
+    <LevelResource deattachduration="1" randomoffsetfromwall="40">
+      <Commonness commonness="0.2" />
+    </LevelResource>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  
+</Override>

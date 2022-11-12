@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<infotext language="Simplified Chinese" nowhitespace="true" translatedname="中文(简体)">
+  <!--[Items]-->
+  <!--compositetool-->
+  <entityname.compositetool>复合工具</entityname.compositetool>
+  <entitydescription.compositetool>本工具必须双持使用，有着扳手，螺丝刀和撬棍的功能。
+  可以节省三个背包格子的空间。</entitydescription.compositetool>
+</infotext>

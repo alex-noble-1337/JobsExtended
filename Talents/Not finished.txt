@@ -1,0 +1,276 @@
+
+<!--Engineer -->
+			<TalentOption identifier="minorinmechanics"/> <!-- Good one stays Add to Engineer, COB -->
+			<TalentOption identifier="remotemonitor"/> <!-- Stays, add to engineer -->
+			<TalentOption identifier="phdinnuclearphysics"/> <!-- Good one but pucs might conflict with personalised diving suits, add to engineer -->
+			<TalentOption identifier="militaryapplications"/> <!-- Add it to COB and engineer, and mabe quatermaster -->
+			<TalentOption identifier="strengthenedalloys"/> <!-- Add it to COB and engineer, and mabe quatermaster -->
+			<TalentOption identifier="castledoctrine"/> <!-- Add it to COB and engineer, and mabe quatermaster -->
+			<TalentOption identifier="expandedresearch"/> <!-- Add it to COB and engineer, and mabe quatermaster -->
+			<TalentOption identifier="armsdealer"/> <!-- Add it to COB and engineer, and mabe quatermaster -->	
+			<TalentOption identifier="nuclearoption"/> <!-- Remove RFA, add it as a class weapon, Add it to COB and engineer, and mabe quatermaster -->
+<!--Mechanic -->
+			<TalentOption identifier="quickfix"/> <!-- Add to Mechanic and Quatermaster  -->
+			<TalentOption identifier="hullsealer"/> <!-- Add it to Mechanic -->
+			<TalentOption identifier="letitdrain"/> <!-- Add it to COB and mechanic -->	
+			<TalentOption identifier="aggressiveengineering"/> <!-- Dumb, only the repar part viable add it to Mechanic -->
+			<TalentOption identifier="hullfixer"/> <!-- Fabricate toolls to an Quatermaster, Status monitor to COB, Mechanic -->
+			<TalentOption identifier="crisismanagement"/> <!-- Dumb but can stay in Mechanic and Quatermaster -->
+			
+			
+			<!--<TalentOption identifier="inspiretobattle"/>  Make it eoe and move to navigator, and security tree-->
+<!-- Tree Templates -->
+
+	<SubTree identifier="gunslinger">
+		<TalentOptions>
+			<TalentOption identifier="handsomestranger"/> <!--  Good,  buff it only for CO, add to navigator  -->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="tumble"/> <!--  Rework -->
+			<TalentOption identifier="quickdraw"/>
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="sailorwithnoname"/>
+			<!-- More buffs / when you play harmonica you get xp -->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="bountyhunter"/> <!-- mabe break it down and add to diver -->
+		</TalentOptions>
+	</SubTree>
+	<SubTree identifier="skipper"> 
+		<TalentOptions>
+			<TalentOption identifier="travelingtradesman"/> <!-- mabe break it down and add to diver -->
+		<!-- <TalentOption identifier="evasivemaneuvers"/>  Rework -->
+			<TalentOption identifier="trustedcaptain"/>
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="trucker"/>
+			<!--<TalentOption identifier="trustedcaptain"/> -->
+		</TalentOptions>
+		<TalentOptions>
+		<!-- <TalentOption identifier="trucker"/> Moved-->
+		<!-- <TalentOption identifier="downwiththeship"/> Rework -->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="esteemedcaptain"/> <!-- Rework (ONLY CO)  unlock promotion token -->
+		</TalentOptions>
+    </SubTree>
+	<SubTree identifier="shipmaster"> <!-- make buffs more aoe if possible, add it to CO and XO-->
+		<TalentOptions>
+			<TalentOption identifier="commander"/> <!-- Nefr and make continous -->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="trustbuilding"/>
+			<!-- Talent about getting small buffs, no more than 10% -->
+			<!-- <TalentOption identifier="maintenanceroutine"/>  REWORK Move COB -->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="camaraderie"/> <!-- Buff it -->
+			<!-- Red Alarm, shipwide speed, and small repair buff, when crouched, once a mission/ 10 mission -->
+			<!--<TalentOption identifier="inspiretobattle"/>  Make it eoe and move to navigator, and security tree-->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="allhandsondeck"/> <!--If your team has at least 7 diffrent jobs gain big buff, and unlock all talents in this tree -->
+		</TalentOptions>
+	</SubTree>
+
+<!--Navigator 
+	Flare instead of offenive tree.
+	Tactical offenive tool. CC
+	super flares
+	Super alien flare - massive light range. a long time.
+	flaregun good - They melt hull. 
+	UV Polarisng gogles. - more vison range. - a component of modular headset - tier 4 of utility tree
+	AOE buff when you use shuttle nav terminal - lvl 2 skill -->
+
+	<SubTree identifier="gunslinger">
+		<TalentOptions>
+			<TalentOption identifier="handsomestranger"/> <!--  Good,  buff it only for CO, add to navigator  -->
+		</TalentOptions>
+		<TalentOptions>
+			<!-- <TalentOption identifier="tumble"/>  Rework -->
+			<!-- <TalentOption identifier="quickdraw"/>  Rework -->
+		</TalentOptions>
+		<TalentOptions>
+			<!-- <TalentOption identifier="sailorwithnoname"/>  Rework -->
+			<!-- <TalentOption identifier="drunkensailor"/>  Rework -->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="bountyhunter"/> <!-- mabe break it down and add to diver -->
+		</TalentOptions>
+	</SubTree>
+	<SubTree identifier="skipper"> 
+		<TalentOptions>
+			<TalentOption identifier="travelingtradesman"/> <!-- mabe break it down and add to diver -->
+		<!-- <TalentOption identifier="evasivemaneuvers"/>  Rework -->
+			<TalentOption identifier="trustedcaptain"/>
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="trucker"/>
+			<!-- TODO AOE buff when you use shuttle nav terminal -->
+		</TalentOptions>
+		<TalentOptions>
+		<!-- <TalentOption identifier="trucker"/> Moved-->
+		<!-- TODO UV Polarisng gogles. - more vison range. - a component of modular headset - tier 4 of utility tree -->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="esteemedcaptain"/> <!-- Rework (ONLY CO)  unlock promotion token -->
+		</TalentOptions>
+    </SubTree>
+	<SubTree identifier="shipmaster"> <!-- make buffs more aoe if possible, add it to CO and XO-->
+		<TalentOptions>
+			<TalentOption identifier="commander"/> <!-- Nefr and make continous -->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="trustbuilding"/>
+			<!-- Talent about getting small buffs, no more than 10% -->
+			<!-- <TalentOption identifier="maintenanceroutine"/>  REWORK Move COB -->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="camaraderie"/> <!-- Buff it -->
+			<!-- Red Alarm, shipwide speed, and small repair buff -->
+			<!--<TalentOption identifier="inspiretobattle"/>  Make it eoe and move to navigator, and security tree-->
+		</TalentOptions>
+		<TalentOptions>
+			<TalentOption identifier="allhandsondeck"/> <!--If your team has at least 7 diffrent jobs gain big buff, and unlock all talents in this tree -->
+		</TalentOptions>
+	</SubTree>
+  </TalentTree>
+
+<!--XO -->
+	<SubTree identifier="warden"> <!-- entire tree to security -->
+			<TalentOptions>
+				<TalentOption identifier="enforcer"/> <!--add to security swap with beat cop, remove reciepie add it to munitionsexpertise, and make the buff more ground comabat and buffier--> 
+			</TalentOptions>
+			<TalentOptions>
+				<TalentOption identifier="beatcop"/> <!-- Buff it, add fulgurium stun dart.-->
+				<TalentOption identifier="munitionsexpertise"/> <!-- Add reciepie for Shotgun Shell, add slug shell used for non leathal operations -->
+			</TalentOptions>
+			<TalentOptions>
+				<TalentOption identifier="stonewall"/> <!-- Its okey but make stun resistance 100% -->
+				<TalentOption identifier="bythebook"/> <!-- Afer removing fulgurium stun dart is weak af, into a trash it goes -->
+			</TalentOptions>
+			<TalentOptions>
+				<TalentOption identifier="implacable"/> <!-- Good one but add it to divers also, but with something else than auto shotgun -->
+			</TalentOptions>
+	</SubTree>
+
+
+
+
+
+<!--Chief Medical Officer not remade (yet) -->
+	<TalentTree jobidentifier="chiefmedicaldoctor">
+		<SubTree identifier="med1">
+			<TalentOptions>		        
+				<TalentOption identifier="doubleduty"/>
+				<TalentOption identifier="fieldmedic"/> 
+			</TalentOptions>
+			<TalentOptions>
+				<TalentOption identifier="bedsidemanner"/>
+			</TalentOptions>
+			<TalentOptions>
+				<TalentOption identifier="drsubmarine"/> <!-- Move to medic -->
+				<TalentOption identifier="survivalpackage"/> <!-- TODO Split it, ability to custodian, getting stuff to medic -->
+			</TalentOptions>			
+			<TalentOptions>
+				<TalentOption identifier="mecicalapplications"/> <!-- Medical suit -->
+			</TalentOptions>
+		</SubTree>		
+		<SubTree identifier="medic"> 
+			<TalentOptions>	
+				<TalentOption identifier="firemanscarry"/> <!-- Add to Custodian, add to medic -->
+			</TalentOptions>			
+			<TalentOptions>			
+				<TalentOption identifier="researchanddevelopment"/> <!-- Move to medic -->	
+				<TalentOption identifier="researchgrant"/> <!-- TODO Reciepie move to medic, rest move to passanger -->
+			</TalentOptions>			
+			<TalentOptions>			
+				<TalentOption identifier="mechanicscourse"/> <!-- Rework, dumb, add to medic -->
+			</TalentOptions>			
+			<TalentOptions>			
+				<TalentOption identifier="dontdieonme"/> <!-- split up tot he one below -->
+				<!-- <TalentOption identifier="artificalknowledgeimplatation"/> endocrine booster -->
+			</TalentOptions>
+		</SubTree>	
+		<SubTree identifier="med3"> <!-- TODO name -->
+			<TalentOptions>		
+				<TalentOption identifier="toxinsmaster"/> <!-- craft toxins -->		
+				<TalentOption identifier="explosivecompoundsaplications"/> <!-- craft toxins that make your head explode -->
+			</TalentOptions>			
+			<TalentOptions>	
+				<TalentOption identifier="reactivematerialsaplications"/> <!-- potassium pills -->		
+				<TalentOption identifier="synthesis"/> <!-- synthesize an raptor bane, and it makes it somewhat effective on humans also -->
+			</TalentOptions>			
+			<TalentOptions>			
+				<TalentOption identifier="combatmedic"/> <!-- Stays add to medic -->	
+			</TalentOptions>			
+			<TalentOptions>		
+				<TalentOption identifier="offeniveapplicatons"/> <!-- ek medic gun -->	
+			</TalentOptions>
+		</SubTree>	
+	</TalentTree>
+	<!--Medic -->
+	<TalentTree jobidentifier="medic">
+		<SubTree identifier="med1">
+			<TalentOptions>		        
+				<TalentOption identifier="doubleduty"/>
+				<TalentOption identifier="fieldmedic"/> 
+			</TalentOptions>
+			<TalentOptions>
+				<TalentOption identifier="bedsidemanner"/>
+			</TalentOptions>
+			<TalentOptions>
+				<TalentOption identifier="drsubmarine"/> <!-- Move to medic -->
+				<TalentOption identifier="survivalpackage"/> <!-- TODO Split it, ability to custodian, getting stuff to medic -->
+			</TalentOptions>			
+			<TalentOptions>
+				<TalentOption identifier="mecicalapplications"/> <!-- Medical suit -->
+			</TalentOptions>
+		</SubTree>		
+		<SubTree identifier="medic"> 
+			<TalentOptions>	
+				<TalentOption identifier="firemanscarry"/> <!-- Add to Custodian, add to medic -->
+			</TalentOptions>			
+			<TalentOptions>			
+				<TalentOption identifier="researchanddevelopment"/> <!-- Move to medic -->	
+				<TalentOption identifier="researchgrant"/> <!-- TODO Reciepie move to medic, rest move to passanger -->
+			</TalentOptions>			
+			<TalentOptions>			
+				<TalentOption identifier="mechanicscourse"/> <!-- Rework, dumb, add to medic -->
+			</TalentOptions>			
+			<TalentOptions>			
+				<TalentOption identifier="dontdieonme"/> <!-- split up tot he one below -->
+				<!-- <TalentOption identifier="artificalknowledgeimplatation"/> endocrine booster -->
+			</TalentOptions>
+		</SubTree>	
+		<SubTree identifier="med3"> <!-- TODO name -->
+			<TalentOptions>		
+				<TalentOption identifier="toxinsmaster"/> <!-- craft toxins -->		
+				<TalentOption identifier="explosivecompoundsaplications"/> <!-- craft toxins that make your head explode -->
+			</TalentOptions>			
+			<TalentOptions>	
+				<TalentOption identifier="reactivematerialsaplications"/> <!-- potassium pills -->		
+				<TalentOption identifier="synthesis"/> <!-- synthesize an raptor bane, and it makes it somewhat effective on humans also -->
+			</TalentOptions>			
+			<TalentOptions>			
+				<TalentOption identifier="combatmedic"/> <!-- Stays add to medic -->	
+			</TalentOptions>			
+			<TalentOptions>		
+				<TalentOption identifier="offeniveapplicatons"/> <!-- ek medic gun -->	
+			</TalentOptions>
+		</SubTree>	
+	</TalentTree>
+
+
+	
+
+
+
+
+
+		
+
+
+
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+  <Affliction
+		identifier="gooddefenceplan"
+		type="gooddefenceplan"
+		isbuff="true"
+		limbspecific="false"
+		showiconthreshold="0"
+		maxstrength="5"
+		treatmentthreshold="1000"
+		iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+    <Effect minstrength="0" maxstrength="5" strengthchange="-1"
+			resistancefor="stun"
+			minresistance="0"
+			maxresistance="0.10" >
+			<StatValue stattype="WeaponsSkillBonus" minvalue="0" maxvalue="20" />
+    </Effect>
+    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="1,0" sheetelementsize="128,128" color="5,50,114,255" origin="0,0"/>
+  </Affliction>
+
+
+</Afflictions>
