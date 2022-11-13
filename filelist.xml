@@ -1,33 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="JobsExtended" modversion="1.0.17" corepackage="False" steamworkshopid="2526236489" gameversion="0.18.12.0" altnames="Jobs Extended" expectedhash="A55127A6F71975248C284AA1D272559C">
+<contentpackage name="JobsExtended" modversion="1.0.19" corepackage="False" steamworkshopid="2526236489" gameversion="0.19.14.0" altnames="Jobs Extended">
   <Jobs file="%ModDir%/Jobs.xml" />
-  <Other file="%ModDir%/JobsExtendedThumb.PNG" />
-  <Other file="%ModDir%/JobsHierarchy.png" />
   <Item file="%ModDir%/Items/specialitems.xml" />
   <Item file="%ModDir%/Items/uniforms.xml" />
-  <Other file="%ModDir%/Items/TalentGear.png" />
-  <Submarine file="%ModDir%/Submarines/Azimuth [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Barsuk [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Berilia [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Dugong [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Herja [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Humpback [JE].sub" />
   <Submarine file="%ModDir%/Submarines/JE submarine conversion kit.sub" />
-  <Submarine file="%ModDir%/Submarines/Kastrull [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Orca [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Orca2 [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/R-29 [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Remora [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Typhon [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Typhon2 [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Winterhalter [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/KastrullDrone [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/PowerTestSub [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/RemoraDrone [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Selkie [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Venture [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Camel [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Hemulen [JE].sub" />
   <TalentTrees file="%ModDir%/Talents/TalentTrees.xml" />
   <Talents file="%ModDir%/Talents/TalentsUsedInItems.xml" />
   <Text file="%ModDir%/Texts/English.xml" />
@@ -36,6 +12,26 @@
   <Text file="%ModDir%/Texts/PTBRJobsExtended.xml" />
   <Text file="%ModDir%/Texts/Polish.xml" />
   <Text file="%ModDir%/Texts/Russian.xml" />
-  <Other file="%ModDir%/UI/NewIcons.png" />
   <Item file="%ModDir%/ItemsOverride/guitar.xml" />
+  <Submarine file="%ModDir%/Submarines/Azimuth [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Barsuk [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Berilia [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Camel [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Dugong [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Hemulen [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Herja [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Humpback [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Orca [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Orca2 [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/PowerTestSub [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Kastrull [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/KastrullDrone [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/R-29 [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Remora [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/RemoraDrone [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Selkie [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Typhon [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Typhon2 [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Venture [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Winterhalter [JE].sub" />
 </contentpackage>
