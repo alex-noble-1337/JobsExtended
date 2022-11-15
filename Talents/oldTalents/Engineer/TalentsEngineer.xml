@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Talents>
+
+  <Talent identifier="militaryapplications">
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,6" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.depletedfuel,entityname.coilgunammoboxdepletedfuel" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.skillbonus">
+      <Replace tag="[amount]" value="20"/>
+      <Replace tag="[skillname]" value="skillname.weapons" color="gui.orange"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveStat stattype="WeaponsSkillBonus" value="20"/>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="depletedfuel"/>
+    <AddedRecipe itemidentifier="coilgunammoboxdepletedfuel"/>
+  </Talent>
+
+  <Talent identifier="strengthenedalloys">
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,7" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.wrenchhardened,entityname.screwdriverhardened,entityname.crowbarhardened,entityname.divingknifehardened" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.skillbonus">
+      <Replace tag="[amount]" value="20" color="gui.green"/>
+      <Replace tag="[skillname]" value="skillname.mechanical" color="gui.orange"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveStat stattype="MechanicalSkillBonus" value="20"/>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="wrenchhardened" />
+    <AddedRecipe itemidentifier="screwdriverhardened" />
+    <AddedRecipe itemidentifier="crowbarhardened" />
+    <AddedRecipe itemidentifier="divingknifehardened" />
+  </Talent>
+
+  <Talent identifier="castledoctrine">
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,7" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.dirtybomb" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.increaseattackpowertomonstersinsub">
+      <Replace tag="[attackpowerincrease]" value="35" color="gui.green"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionCharacter targettypes="Enemy,InFriendlySubmarine" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.35" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="dirtybomb" />
+  </Talent>
+  
+  <Talent identifier="armsdealer">
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="4,7" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.smgmagazinedepletedfuel,entityname.revolverrounddepletedfuel" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.gainitemsonmission"/>
+    <Description tag="talentdescription.gainitem">
+      <Replace tag="[amount]" value="6" color="gui.green"/>
+      <Replace tag="[itemname]" value="entityname.magnesium" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.gainitem">
+      <Replace tag="[amount]" value="3" color="gui.green"/>
+      <Replace tag="[itemname]" value="entityname.steel" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.gainitem">
+      <Replace tag="[amount]" value="3" color="gui.green"/>
+      <Replace tag="[itemname]" value="entityname.copper" color="gui.orange"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
+      <Abilities>
+        <CharacterAbilityPutItem itemidentifier="magnesium" amount="6"/>
+        <CharacterAbilityPutItem itemidentifier="steel" amount="3"/>
+        <CharacterAbilityPutItem itemidentifier="copper" amount="3"/>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="smgmagazinedepletedfuel" />
+    <AddedRecipe itemidentifier="revolverrounddepletedfuel" />
+  </Talent>
+
+  <Talent identifier="nuclearoption">
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,7" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.nucleargun" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.nuclearoption"/>
+    <Description tag="talentdescription.singletriggeruntilmission"/>
+    <Description tag="talentdescription.additionalresistanceself">
+      <Replace tag="[amount]" value="100" color="gui.green"/>
+      <Replace tag="[affliction]" value="afflictionname.nausea" color="gui.orange"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveResistance resistanceid="nausea" multiplier="0"/>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
+      <Abilities>
+        <CharacterAbilityGivePermanentStat statidentifier="nuclearoption" value="1" removeondeath="false" giveonaddingfirsttime="true" setvalue="true"/>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnItemFabricatedAmount">
+      <Conditions>
+        <AbilityConditionItem tags="reactorfuel"/>
+        <AbilityConditionHasPermanentStat statidentifier="nuclearoption" min="1" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyValue multiplyvalue="3"/>
+        <CharacterAbilityGivePermanentStat statidentifier="nuclearoption" value="-1" removeondeath="false"/>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="nucleargun" />
+  </Talent>
+
+  <Talent identifier="minorinmechanics">
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="5,7" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.handheldelectricalmonitor" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.simultaneousskillgain">
+      <Replace tag="[skillname1]" value="skillname.electrical" color="gui.orange"/>
+      <Replace tag="[skillname2]" value="skillname.mechanical" color="gui.orange"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="OnGainSkillPoint">
+      <Conditions>
+        <AbilityConditionSkill skillidentifier="electrical"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityGainSimultaneousSkill skillidentifier="mechanical" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="handheldelectricalmonitor"/>
+  </Talent>
+
+  <Talent identifier="intheflow">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,0" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.intheflow">
+      <Replace tag="[repairspeed]" value="70" color="gui.green"/>
+      <Replace tag="[seconds]" value="7" color="gui.green"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="None" >
+      <Abilities>
+        <CharacterAbilityGiveStat stattype="SwimmingSpeed" value="0.25"/>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnRepairComplete" >
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true">
+              <Affliction identifier="repairflow" amount="7.0"/>
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+
+  <Talent identifier="coauthor">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="6,0" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.coauthor">
+      <Replace tag="[seconds]" value="10" color="gui.green"/>
+      <Replace tag="[itemname]" value="entityname.skillbookhandyseaman" color="gui.orange"/>
+      <Replace tag="[experienceamount]" value="125" color="gui.green"/>
+    </Description>
+    <Description tag="talentdescription.singletriggeruntilmission"/>
+    <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
+      <Abilities>
+        <CharacterAbilityGivePermanentStat statidentifier="coauthor" value="1" removeondeath="false" giveonaddingfirsttime="true" setvalue="true"/>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupInterval effectdelay="10" interval="1" >
+      <Conditions>
+        <AbilityConditionCoauthor jobidentifier="mechanic" />
+        <AbilityConditionHasPermanentStat statidentifier="coauthor" min="1" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects applytoselected="true">
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character">
+              <GiveExperience amount="125"/>
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character">
+              <GiveExperience amount="125"/>
+              <SpawnItem identifiers="skillbookhandyseaman" spawnposition="ThisInventory" />
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+        <CharacterAbilityResetPermanentStat statidentifier="coauthor" />
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
+
+  <Talent identifier="polymath">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="1,1" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.polymath">
+      <Replace tag="[skillincrease]" value="10" color="gui.green"/>
+      <Replace tag="[experiencegain]" value="35" color="gui.green"/>
+      <Replace tag="[maximumhealthreduction]" value="25" color="gui.green"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="None" >
+      <Abilities>
+        <CharacterAbilityGiveStat stattype="ExperienceGainMultiplier" value="0.35"/>
+        <CharacterAbilityGiveStat stattype="ElectricalSkillBonus" value="10"/>
+        <CharacterAbilityGiveStat stattype="HelmSkillBonus" value="10"/>
+        <CharacterAbilityGiveStat stattype="MechanicalSkillBonus" value="10"/>
+        <CharacterAbilityGiveStat stattype="MedicalSkillBonus" value="10"/>
+        <CharacterAbilityGiveStat stattype="WeaponsSkillBonus" value="10"/>
+        <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="-0.25"/>
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+
+  <Talent identifier="phdinnuclearphysics">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,1" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.pucs" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.phdinnuclearphysics">
+      <Replace tag="[powerincrease]" value="100" color="gui.green"/>
+    </Description>
+    <Description tag="talentdescription.increasemaxrepairelectrical">
+      <Replace tag="[skilltotal]" value="100" color="gui.green"/>
+      <Replace tag="[percentage]" value="40" color="gui.green"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionAttackData tags="crowbaritem"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="1.25"/>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupInterval interval="0.5" >
+      <Conditions>
+        <AbilityConditionHasSkill skillidentifier="electrical" minvalue="100"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyStat stattype="MaxRepairConditionMultiplierElectrical" value="0.40"/>
+      </Abilities>
+    </AbilityGroupInterval>
+    <AddedRecipe itemidentifier="pucs"/>
+  </Talent>
+
+  <Talent identifier="justascratch">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="0,0" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.lowhealth.regenerate">
+      <Replace tag="[health]" value="50" color="gui.green"/>
+    </Description>
+    <AbilityGroupInterval>
+      <Conditions>
+        <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.5"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character">
+              <ReduceAffliction type="damage" strength="0.1"/>
+              <ReduceAffliction type="burn" strength="0.1"/>
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
+  
+  <Talent identifier="melodicrespite">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="1,0" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.melodicrespite">
+      <Replace tag="[seconds]" value="480" color="gui.green"/>
+    </Description>
+    <Description tag="talentdescription.additionalstattype">
+      <Replace tag="[amount]" value="15" color="gui.green"/>
+      <Replace tag="[stattype]" value="stattypenames.attackmultiplier" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.additionalstattype">
+      <Replace tag="[amount]" value="15" color="gui.green"/>
+      <Replace tag="[stattype]" value="stattypenames.repairspeed" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.additionalresistance">
+      <Replace tag="[amount]" value="15" color="gui.green"/>
+      <Replace tag="[affliction]" value="afflictionname.physicaldamage" color="gui.orange"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="OnUseRangedWeapon">
+      <Conditions>
+        <AbilityConditionItem identifiers="guitar"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffectsToAllies range="600">
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true">
+              <Affliction identifier="melodicrespite" amount="15"/>
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffectsToAllies>
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+
+  <Talent identifier="optimizedpowerflow">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="4,0" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.optimizedpowerflow">
+      <Replace tag="[statamount]" value="50" color="gui.green"/>
+      <Replace tag="[skillamount]" value="1" color="gui.green"/>
+    </Description>
+    <Description tag="talentdescription.bonuslostondeath"/>
+    <AbilityGroupEffect abilityeffecttype="OnRepairComplete">
+      <Abilities>
+        <CharacterAbilityGivePermanentStat statidentifier="optimizedpowerflow" stattype="ElectricalSkillBonus" value="1" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupInterval interval="0.5">
+      <Abilities>
+        <CharacterAbilityModifyStatToSkill stattype="TurretPowerCostReduction" maxvalue="0.5" skillidentifier="electrical"/>
+        <CharacterAbilityModifyStatToSkill stattype="TurretChargeSpeed" maxvalue="0.5" skillidentifier="electrical"/>
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
+
+  <Talent identifier="allseeingeye">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="5,0" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.thermalgoggles" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.gainalltalentsintree"/>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityUnlockTree/>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="thermalgoggles"/>
+  </Talent>
+
+  <Talent identifier="electrochemist">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,0" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.crafthighqualitybatteries">
+      <Replace tag="[qualitybonus]" value="1" color="gui.green"/>
+    </Description>
+    <Description tag="talentdescription.electrochemist">
+      <Replace tag="[seconds]" value="10" color="gui.green"/>
+      <Replace tag="[powerreduction]" value="80" color="gui.green"/>
+      <Replace tag="[stunseconds]" value="4" color="gui.green"/>
+    </Description>
+    <AbilityGroupInterval>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="This" multiplyafflictionsbymaxvitality="true">
+              <Affliction identifier="guarded" amount="1.0"/>
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+    <AbilityGroupEffect abilityeffecttype="OnAttacked">
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="guarded" minimumpercentage="1.0"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.8" />
+        <CharacterAbilityApplyStatusEffectsToAttacker>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character" >
+              <Affliction identifier="stun" amount="4.0"/>
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffectsToAttacker>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnAttackedResult">
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="This">
+              <ReduceAffliction identifier="guarded" strength="10.0"/>
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGivePermanentStat statidentifier="mobilebattery" stattype="IncreaseFabricationQuality" value="1" />
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+  
+  <Talent identifier="remotemonitor">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,1" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.reactorpda" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.crafthighqualityfuelrods">
+      <Replace tag="[qualitybonus]" value="1" color="gui.green"/>
+    </Description>
+    <Description tag="talentdescription.skillbonus">
+      <Replace tag="[amount]" value="15" color="gui.green"/>
+      <Replace tag="[skillname]" value="skillname.electrical" color="gui.orange"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGivePermanentStat statidentifier="reactorfuel" stattype="IncreaseFabricationQuality" value="1" />
+        <CharacterAbilityGiveStat stattype="ElectricalSkillBonus" value="15" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="reactorpda"/>
+  </Talent>
+  
+  <Talent identifier="expandedresearch">
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="2,7" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.expandedresearch">
+      <Replace tag="[experienceamount]" value="140" color="gui.green"/>
+    </Description>
+    <Description tag="talentdescription.maxtriggeruntilmission">
+      <Replace tag="[maxtrigger]" value="3" color="gui.green"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
+      <Abilities>
+        <CharacterAbilityGivePermanentStat statidentifier="expandedresearch" value="3" removeondeath="false" giveonaddingfirsttime="true" setvalue="true"/>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnItemFabricatedAmount">
+      <Conditions>
+        <AbilityConditionItem tags="reactorfuel"/>	  
+        <AbilityConditionHasPermanentStat statidentifier="expandedresearch" min="1" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="This">
+              <GiveExperience amount="140"/>
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+        <CharacterAbilityGivePermanentStat statidentifier="expandedresearch" value="-1" removeondeath="false"/>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnItemFabricatedAmount">
+      <Conditions>
+        <AbilityConditionItem identifiers="depletedfuel"/>	  
+        <AbilityConditionHasPermanentStat statidentifier="expandedresearch" min="1" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="This">
+              <GiveExperience amount="140"/>
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+        <CharacterAbilityGivePermanentStat statidentifier="expandedresearch" value="-1" removeondeath="false"/>
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+
+  <Talent identifier="collegeathletics">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="0,1" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.cargoscooter" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.additionalstattypeself">
+      <Replace tag="[amount]" value="35" color="gui.green"/>
+      <Replace tag="[stattype]" value="stattypenames.maximumhealthmultiplier" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.additionalstattypeself">
+      <Replace tag="[amount]" value="30" color="gui.green"/>
+      <Replace tag="[stattype]" value="stattypenames.swimmingspeed" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.additionalstattypeself">
+      <Replace tag="[amount]" value="20" color="gui.green"/>
+      <Replace tag="[stattype]" value="stattypenames.walkingspeed" color="gui.orange"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.35"/>
+        <CharacterAbilityGiveStat stattype="SwimmingSpeed" value="0.3"/>
+        <CharacterAbilityGiveStat stattype="WalkingSpeed" value="0.2"/>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="cargoscooter"/>
+  </Talent>
+
+  <Talent identifier="hazardousmaterials">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,0" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.fulguriumfuelrodvolatile" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.hazardousmaterials"/>
+    <AbilityGroupEffect abilityeffecttype="OnOpenItemContainer">
+      <Conditions>
+        <AbilityConditionItemOutsideSubmarine/>
+        <AbilityConditionItem tags="reactor"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilitySpawnItemsToContainer oncepercontainer="true">
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="UseTarget" >
+              <SpawnItem identifiers="fulgurium" spawnposition="ThisInventory" spawnifinventoryfull="true" />
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilitySpawnItemsToContainer>
+        <CharacterAbilitySpawnItemsToContainer oncepercontainer="true">
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="UseTarget" spawnitemrandomly="true">
+              <SpawnItem identifiers="physicorium" spawnposition="ThisInventory" spawnifinventoryfull="true" />
+              <SpawnItem identifiers="sulphuriteshard" spawnposition="ThisInventory" spawnifinventoryfull="true" />
+              <SpawnItem identifiers="oxygeniteshard" spawnposition="ThisInventory" spawnifinventoryfull="true" />
+              <SpawnItem identifiers="incendium" spawnposition="ThisInventory" spawnifinventoryfull="true" />
+              <SpawnItem identifiers="fulgurium" spawnposition="ThisInventory" spawnifinventoryfull="true" />
+              <SpawnItem identifiers="dementonite" spawnposition="ThisInventory" spawnifinventoryfull="true" />
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilitySpawnItemsToContainer>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="fulguriumfuelrodvolatile"/>
+  </Talent>
+
+</Talents>

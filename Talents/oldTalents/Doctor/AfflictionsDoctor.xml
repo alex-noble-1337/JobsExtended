@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Afflictions>
+  
+  <Affliction
+    identifier="combatstimulant"
+    type="combatstimulant"
+    isbuff="true"
+    limbspecific="false"
+    maxstrength="100"
+    treatmentthreshold="1000"
+    iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+    <Effect minstrength="0" maxstrength="25"
+      strengthchange="-1"
+      resistancefor="stun"
+      minresistance="0"
+      maxresistance="0.45">
+      <StatusEffect target="Character" setvalue="true">
+        <ReduceAffliction type="damage" strength="0.025"/>
+        <ReduceAffliction type="burn" strength="0.025"/>
+        <ReduceAffliction identifier="bloodloss" strength="0.025"/>
+        <ReduceAffliction identifier="bleeding" strength="0.025"/>
+        <ReduceAffliction identifier="chemwithdrawal" strength="0.025"/>
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="25" maxstrength="100"
+      strengthchange="-1"
+      resistancefor="stun"
+      minresistance="0.45"
+      maxresistance="0.5">
+      <StatusEffect target="Character" setvalue="true">
+        <ReduceAffliction type="damage" strength="0.05"/>
+        <ReduceAffliction type="burn" strength="0.05"/>
+        <ReduceAffliction identifier="bloodloss" strength="0.05"/>
+        <ReduceAffliction identifier="bleeding" strength="0.05"/>
+        <ReduceAffliction identifier="chemwithdrawal" strength="0.05"/>
+      </StatusEffect>
+    </Effect>
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,6" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+  </Affliction>
+  
+  <Affliction
+    identifier="pressurestabilized"
+    type="pressurestabilized"
+    isbuff="true"
+    limbspecific="false"
+    maxstrength="100"
+    treatmentthreshold="1000"
+    iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+    <Effect minstrength="0" maxstrength="100"
+      strengthchange="-1"
+      resistancefor="oxygenlow"
+      minresistance="1"
+      maxresistance="1">
+      <AbilityFlag flagtype="ImmuneToPressure" />
+      <StatusEffect target="Character" setvalue="true">
+        <ReduceAffliction identifier="oxygenlow" strength="0.5"/>
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="512,896,128,128" color="10,193,114,255" origin="0,0"/>
+  </Affliction>
+
+  <Affliction
+    identifier="bedsidemanner"
+    type="bedsidemanner"
+    isbuff="true"
+    limbspecific="false"
+    maxstrength="600"
+    treatmentthreshold="1000"
+    iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+    <Effect 
+      minstrength="0" 
+      maxstrength="600" 
+      strengthchange="-1"
+      resistancefor="damage"
+      minresistance="0.2"
+      maxresistance="0.2">
+      <StatValue stattype="SkillGainSpeed" value="0.25" />
+    </Effect>
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,6" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+  </Affliction>
+  
+  <Affliction
+    identifier="endocrineboosted"
+    type="endocrineboosted"
+    isbuff="true"
+    limbspecific="false"
+    maxstrength="10"
+    treatmentthreshold="1000"
+    iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+    <Effect 
+      minstrength="0" 
+      maxstrength="10" 
+      strengthchange="0">
+      <StatValue stattype="MaximumHealthMultiplier" value="0.25" />
+      <StatValue stattype="HelmSkillBonus" value="15" />
+      <StatValue stattype="ElectricalSkillBonus" value="15" />
+      <StatValue stattype="MedicalSkillBonus" value="15" />
+      <StatValue stattype="MechanicalSkillBonus" value="15" />
+      <StatValue stattype="WeaponsSkillBonus" value="15" />
+    </Effect>
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,6" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+  </Affliction>
+  
+</Afflictions>
