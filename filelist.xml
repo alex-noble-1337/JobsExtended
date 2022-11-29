@@ -13,6 +13,7 @@
   <Text file="%ModDir%/Texts/Polish.xml" />
   <Text file="%ModDir%/Texts/Russian.xml" />
   <Item file="%ModDir%/ItemsOverride/guitar.xml" />
+
   <Submarine file="%ModDir%/Submarines/Azimuth [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Barsuk [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Berilia [JE].sub" />
@@ -34,5 +35,26 @@
   <Submarine file="%ModDir%/Submarines/Typhon2 [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Venture [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Winterhalter [JE].sub" />
+
+  <Talents file="%ModDir%/Talents/CAP/CapitanTalents.xml" />
+  <Afflictions file="%ModDir%/Talents/CAP/AfflictionsOverrides.xml" />
+
+  <Talents file="%ModDir%/Talents/CO/COTalents.xml" />
+  <Afflictions file="%ModDir%/Talents/CO/COAfflictions.xml" />
+
   <Talents file="%ModDir%/Talents/oldTalents/Captain/TalentsCaptain.xml" />
+  <!-- <Talents file="%ModDir%/Talents/oldTalents/Assistant/TalentsAssistant.xml" />
+  <Afflictions file="%ModDir%/Talents/oldTalents/Assistant/AfflictionsAssistant.xml" />
+  <Talents file="%ModDir%/Talents/oldTalents/Doctor/TalentsDoctor.xml" />
+  <Afflictions file="%ModDir%/Talents/oldTalents/Doctor/AfflictionsDoctor.xml" />
+  <Talents file="%ModDir%/Talents/oldTalents/Engineer/TalentsEngineer.xml" />
+  <Afflictions file="%ModDir%/Talents/oldTalents/Engineer/AfflictionsEngineer.xml" />
+  <Talents file="%ModDir%/Talents/oldTalents/Mechanic/TalentsMechanic.xml" />
+  <Afflictions file="%ModDir%/Talents/oldTalents/Mechanic/AfflictionsMechanic.xml" />
+  <Talents file="%ModDir%/Talents/oldTalents/Security/TalentsSecurity.xml" />
+  <Afflictions file="%ModDir%/Talents/oldTalents/Security/AfflictionsSecurity.xml" /> -->
+
+  <!-- TODO Hireable temp fix -->
+  <locationtypes file="%ModDir%/Map/locationTypes.xml" />
+  <locationtypes file="%ModDir%/NPCPrefabs/OutpostNpcs.xml" />
 </contentpackage>

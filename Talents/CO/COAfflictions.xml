@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+        <Affliction identifier="capitanondeck" type="capitanondeck" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="5" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+                <Effect minstrength="0" maxstrength="5" strengthchange="-1" resistancefor="damage" minresistance="0" maxresistance="0.10">
+                        <StatValue stattype="ElectricalSkillBonus" minvalue="0" maxvalue="10" />
+                        <StatValue stattype="HelmSkillBonus" minvalue="0" maxvalue="10" />
+                        <StatValue stattype="MechanicalSkillBonus" minvalue="0" maxvalue="10" />
+                        <StatValue stattype="MedicalSkillBonus" minvalue="0" maxvalue="10" />
+                        <StatValue stattype="WeaponsSkillBonus" minvalue="0" maxvalue="10" />
+                </Effect>
+                <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
+        </Affliction>
+        <Affliction identifier="redalarm" type="redalarm" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="5" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+                <Effect minstrength="0" maxstrength="5" strengthchange="-1" minspeedmultiplier="1.3" maxspeedmultiplier="1.3" />
+                <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
+        </Affliction>
+        <Affliction identifier="goodmood" type="goodmood" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="5" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+                <Effect minstrength="0" maxstrength="5" strengthchange="-1" resistancefor="damage" minresistance="0" maxresistance="0.05">
+                        <StatValue stattype="ElectricalSkillBonus" minvalue="0" maxvalue="5" />
+                        <StatValue stattype="HelmSkillBonus" minvalue="0" maxvalue="5" />
+                        <StatValue stattype="MechanicalSkillBonus" minvalue="0" maxvalue="5" />
+                        <StatValue stattype="MedicalSkillBonus" minvalue="0" maxvalue="5" />
+                        <StatValue stattype="WeaponsSkillBonus" minvalue="0" maxvalue="5" />
+                </Effect>
+                <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
+        </Affliction>
+</Afflictions>

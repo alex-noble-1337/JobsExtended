@@ -115,3 +115,59 @@ CMO - small buffs to injecting (?)
 	   two  two  two - unlock a tool, or something you can give, middle is xp gain
 	   one  one  one - left and right respectivly weapons and diving suits. Two should be buff yourself, or buff team sort of
 		
+
+Movemnt speed buff when holding a sabre
+
+Split more boring skills to an separwte skill tree, that toy pay with skill points (weapons, eng etc)
+
+https://discord.com/channels/103209684680323072/220881718666723328/1003829090836557846
+
+https://discord.com/channels/103209684680323072/220881718666723328/1003002383162429521
+
+https://discord.com/channels/103209684680323072/220881718666723328/1000573551444770906
+
+https://discord.com/channels/103209684680323072/220881718666723328/1000249008679305226
+
+https://discord.com/channels/103209684680323072/220881718666723328/1000191607527702559
+
+https://discord.com/channels/103209684680323072/220881718666723328/1000155091136954428
+
+https://discord.com/channels/103209684680323072/220881718666723328/1000059522804629554
+
+https://discord.com/channels/103209684680323072/220881718666723328/999909690848854036
+
+https://discord.com/channels/103209684680323072/220881718666723328/999889939338633246
+
+https://discord.com/channels/103209684680323072/220881718666723328/999818977746362378
+
+https://discord.com/channels/103209684680323072/668819422919524352/1000450255449509958
+
+https://github.com/Regalis11/Barotrauma/discussions/9625#discussioncomment-3217749
+
+Little big planet like processors that can construct logic and then embed itself to a component
+
+Xo, check if cap is alive, rather than to check if he is nea, when kill something gain helm, when steering gain weapons
+
+CO wide area skills weak, but when giving orders you can give more powerfull ones.
+
+Mec 30% chance of getting +1 when ypu fabricate something, drones that defend you
+
+Qua 3 levels of fabricator. + 1 when you fabricate something 80% chance, 50% chancd of getting dobble output when fabricating materials
+
+Eng. More depleted uranium munitions
+
+Joint effort on getting blueprints, either for money or for materials + skill (hacking)
+
+Cob fabrcator specifocly for electric components, + 1 when you fabricate one max 5 times when you complete a mission, better tools (electric screwdriver wrench, multitool), final tiers upgrade suits 
+
+Yaoman more money
+
+Make compatibiloty patches rather than blocking yourself for making features
+
+Try adding 5th hidden talent row that would unlock all talents in this tree, locked behind a "mission" aka an hidden achivment aka kill 100 crawlers
+
+Make guitar holdable in invenory same as acodeon. For engi.
+
+Specialiations for specific jobs: allows unlockong of entire tree, but locks other specialiations.
+
+Wiartarka
