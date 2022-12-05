@@ -26,9 +26,9 @@
         <!-- For co that like violence and wanna play vioent -->
         <SubTree identifier="gunslinger" type="specialization" requires="captain_primary" blocks="">
             <TalentOptions>
-                <TalentOption identifier="stranger_with_iron" />
+                <TalentOption identifier="stranger_with_iron" /> <!-- upgraded quickdraw + handsome stranger + bounty hunter -->
                 <TalentOption identifier="oldhandsomestranger" />
-                <TalentOption identifier="oldbountyhunter" /> <!-- needs to be as high as possible to faccilitate lifestyle of constant fighting -->
+                <TalentOption identifier="oldbountyhunter" />
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="lonewolf" />
@@ -47,7 +47,7 @@
             </TalentOptions>
         </SubTree>
         <!-- For co that drive the boat and wanna evade threats than fight -->
-        <SubTree identifier="skipper" type="specialization" requires="captain_primary" blocks="">
+        <SubTree identifier="Admiral" type="specialization" requires="captain_primary" blocks="">
             <TalentOptions>
                 <TalentOption identifier="leadingbyexample" />
                 <TalentOption identifier="oldtravelingtradesman" />
@@ -71,7 +71,8 @@
                 <TalentOption identifier="TalentTreeEnchancment2" />
             </TalentOptions>
         </SubTree>
-        <SubTree identifier="shipmaster" type="specialization" requires="captain_primary" blocks="">
+        <!-- Buffing crew and all around buffs -->
+        <SubTree identifier="Shipmaster" type="specialization" requires="captain_primary" blocks="">
             <TalentOptions>
                 <TalentOption identifier="oldcommander" />
                 <!-- passibly 1/5 effect, actively when giving an order you get 5/5 and 10 to Every skill. , also 14% damage reduction, when ally gets a skill point 50% chance he gets 10exp -->
@@ -92,7 +93,7 @@
                 <TalentOption identifier="TalentTreeEnchancment3" />
             </TalentOptions>
         </SubTree>
-        <!-- For co that wanna explot the game, explot faction mechnaics, and give crew more all roind orders -->
+        <!-- New sub tree -->
         <SubTree identifier="politician" type="specialization" requires="captain_primary" blocks="">
             <TalentOptions>
                 <TalentOption identifier="commendations" />
@@ -105,6 +106,7 @@
                     <TalentOption identifier="affiliation_separatists" />
                     <TalentOption identifier="affiliation_huskcult" />
                     <TalentOption identifier="affiliation_clowns" />
+                    <!-- pirates -->
                 </ShowCaseTalent>
             </TalentOptions>
             <TalentOptions>
