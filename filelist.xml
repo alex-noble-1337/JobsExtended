@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="JobsExtended" modversion="1.0.20" corepackage="False" steamworkshopid="2526236489" gameversion="0.19.14.0" altnames="Jobs Extended">
+<contentpackage name="JobsExtended" modversion="1.0.21" corepackage="False" steamworkshopid="2526236489" gameversion="100.10.0.0" altnames="Jobs Extended">
   <Jobs file="%ModDir%/Jobs.xml" />
   <Item file="%ModDir%/Items/specialitems.xml" />
   <Item file="%ModDir%/Items/uniforms.xml" />
@@ -13,48 +13,32 @@
   <Text file="%ModDir%/Texts/Polish.xml" />
   <Text file="%ModDir%/Texts/Russian.xml" />
   <Item file="%ModDir%/ItemsOverride/guitar.xml" />
-
   <Submarine file="%ModDir%/Submarines/Azimuth [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Barsuk [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Berilia [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Camel [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Dugong [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Orca [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/PowerTestSub [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/R-29 [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Remora [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Selkie [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Typhon2 [JE].sub" />
+  <Talents file="%ModDir%/Talents/CAP/CapitanTalents.xml" />
+  <Afflictions file="%ModDir%/Talents/CAP/AfflictionsOverrides.xml" />
+  <Talents file="%ModDir%/Talents/CO/COTalents.xml" />
+  <Afflictions file="%ModDir%/Talents/CO/COAfflictions.xml" />
+  <Talents file="%ModDir%/Talents/oldTalents/Captain/TalentsCaptain.xml" />
+  <LocationTypes file="%ModDir%/Map/locationTypes.xml" />
+  <LocationTypes file="%ModDir%/NPCPrefabs/OutpostNpcs.xml" />
+  <Submarine file="%ModDir%/Submarines/Barsuk [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Hemulen [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Herja [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Humpback [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Orca [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Orca2 [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/PowerTestSub [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Kastrull [JE].sub" />
   <Submarine file="%ModDir%/Submarines/KastrullDrone [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/R-29 [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Remora [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Orca2 [JE].sub" />
   <Submarine file="%ModDir%/Submarines/RemoraDrone [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Selkie [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Typhon [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Typhon2 [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Venture [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Winterhalter [JE].sub" />
-
-  <Talents file="%ModDir%/Talents/CAP/CapitanTalents.xml" />
-  <Afflictions file="%ModDir%/Talents/CAP/AfflictionsOverrides.xml" />
-
-  <Talents file="%ModDir%/Talents/CO/COTalents.xml" />
-  <Afflictions file="%ModDir%/Talents/CO/COAfflictions.xml" />
-
-  <Talents file="%ModDir%/Talents/oldTalents/Captain/TalentsCaptain.xml" />
-  <!-- <Talents file="%ModDir%/Talents/oldTalents/Assistant/TalentsAssistant.xml" />
-  <Afflictions file="%ModDir%/Talents/oldTalents/Assistant/AfflictionsAssistant.xml" />
-  <Talents file="%ModDir%/Talents/oldTalents/Doctor/TalentsDoctor.xml" />
-  <Afflictions file="%ModDir%/Talents/oldTalents/Doctor/AfflictionsDoctor.xml" />
-  <Talents file="%ModDir%/Talents/oldTalents/Engineer/TalentsEngineer.xml" />
-  <Afflictions file="%ModDir%/Talents/oldTalents/Engineer/AfflictionsEngineer.xml" />
-  <Talents file="%ModDir%/Talents/oldTalents/Mechanic/TalentsMechanic.xml" />
-  <Afflictions file="%ModDir%/Talents/oldTalents/Mechanic/AfflictionsMechanic.xml" />
-  <Talents file="%ModDir%/Talents/oldTalents/Security/TalentsSecurity.xml" />
-  <Afflictions file="%ModDir%/Talents/oldTalents/Security/AfflictionsSecurity.xml" /> -->
-
-  <!-- TODO Hireable temp fix -->
-  <locationtypes file="%ModDir%/Map/locationTypes.xml" />
-  <locationtypes file="%ModDir%/NPCPrefabs/OutpostNpcs.xml" />
 </contentpackage>
