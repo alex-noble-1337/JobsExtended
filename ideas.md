@@ -1,3 +1,4 @@
+Adaptive limits on classes? Except co, based on amout of people in the lobby
 Make every class have their version of nuclear pda - That should make people roles more enagaging as they dont need to be in one place (cuz being in one place is not fun, and games are about fun).
 Make Navigator have ist own version just for shuttle.
 Make every class type (capitan-like, engi role) have their own diving suit and weapons, both mele and ranged (engineers should have only big ass crowbar dmg, freeman like). 
@@ -86,7 +87,8 @@ Security and Divers
 	Security will have autoshotguns, and Divers Assault Rifle
 Medic 
 	https://steamcommunity.com/sharedfiles/filedetails/?id=2695068144&searchtext=talent Maybe this as a talent gun
-COB should have many technical staff only and physical vessel buffs. Imagine a tinker skill but it lasts several minutes afterwards.
+COB 
+	should have many technical staff only and physical vessel buffs. Imagine a tinker skill but it lasts several minutes afterwards.
 Random Weapon evey round
 All talents should have 1 thing to give all people, an weapon, and an diving suit colored accordingly
 Themed medals

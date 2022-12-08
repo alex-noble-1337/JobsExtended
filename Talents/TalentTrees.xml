@@ -1,4 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+    Abandoned Outpost x
+    Pirate x
+    Monster x
+    Nest x
+
+    Cargo
+    Beacon
+    Mining
+    Escort
+    
+    Ruin Scan
+    Ruin Clear Combat Mission
+    Salvage
+    
+    Combat (PVP)
+    Go To (Story)
+-->
+
+
 <TalentTrees>
     <!-- CO Multiclass -->
     <TalentTree jobidentifier="commanding_officer">
@@ -23,12 +43,15 @@
                 <TalentOption identifier="steadytune" />
             </TalentOptions>
         </SubTree>
-        <!-- For co that like violence and wanna play vioent -->
-        <SubTree identifier="gunslinger" type="specialization" requires="captain_primary" blocks="">
+        <!-- For co that like violence and wanna play vioent  
+        Mission Buffs: Abandoned Outpost, Pirate, Monster, Nest
+        Bonus to activities: Killing enemies, buyng guns and ammo, 
+        Abilities: CONDITIONAL on fuffuling missions Buffing guns and hull health, getting resouces from enemies, getting unique guns
+        Debuffs to exploration and moving stuff missions
+        -->
+        <SubTree identifier="SubmarineCowboy" type="specialization" requires="captain_primary" blocks="">
             <TalentOptions>
                 <TalentOption identifier="stranger_with_iron" /> <!-- upgraded quickdraw + handsome stranger + bounty hunter -->
-                <TalentOption identifier="oldhandsomestranger" />
-                <TalentOption identifier="oldbountyhunter" />
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="lonewolf" />
@@ -46,8 +69,12 @@
                 <TalentOption identifier="TalentTreeEnchancment1" />
             </TalentOptions>
         </SubTree>
-        <!-- For co that drive the boat and wanna evade threats than fight -->
-        <SubTree identifier="Admiral" type="specialization" requires="captain_primary" blocks="">
+        <!-- For co that drive the boat and wanna evade threats than fight 
+        Mission Buffs: Cargo, Beacon, Mining, Escort
+        Bonus to activities: Selling/Buying, CONDITIONAL on fuffuling missions Discharge coils, engine, Sonar Depth charges, Self sufficency, getting unique items
+        Debuffs to combat and exploration type missions
+        -->
+        <SubTree identifier="Trucker" type="specialization" requires="captain_primary" blocks="">
             <TalentOptions>
                 <TalentOption identifier="leadingbyexample" />
                 <TalentOption identifier="oldtravelingtradesman" />
@@ -71,8 +98,12 @@
                 <TalentOption identifier="TalentTreeEnchancment2" />
             </TalentOptions>
         </SubTree>
-        <!-- Buffing crew and all around buffs -->
-        <SubTree identifier="Shipmaster" type="specialization" requires="captain_primary" blocks="">
+        <!-- Buffing crew and all around buffs 
+        Mission Buffs: Ruin Scan, Ruin Clear, Salvage, Beacon repair
+        Buffs to activities: exploration, salavagin from wrecks (stuff like scrounger perk but for entire crew), CONDITIONAL on fuffuling missions buffs to sub all around, getting more loot from ruins, alien en experimental items
+        DEbuffs to Combat and moving stuff around
+        -->
+        <SubTree identifier="Explorer" type="specialization" requires="captain_primary" blocks="">
             <TalentOptions>
                 <TalentOption identifier="oldcommander" />
                 <!-- passibly 1/5 effect, actively when giving an order you get 5/5 and 10 to Every skill. , also 14% damage reduction, when ally gets a skill point 50% chance he gets 10exp -->
@@ -93,7 +124,7 @@
                 <TalentOption identifier="TalentTreeEnchancment3" />
             </TalentOptions>
         </SubTree>
-        <!-- New sub tree -->
+        <!-- New sub tree, available and excuslive to co -->
         <SubTree identifier="politician" type="specialization" requires="captain_primary" blocks="">
             <TalentOptions>
                 <TalentOption identifier="commendations" />
@@ -139,7 +170,7 @@
                 <TalentOption identifier="steadytune" />
             </TalentOptions>
         </SubTree>
-        <!-- Multiclass, weak when away from capitan, or not taking his orders. better helmet for eveyone, like baro plus, with modular slots -->
+        <!--  Mirrorring capitan 1st tree, but weaker -->
         <SubTree identifier="SpecOpsTraining" type="specialization" requires="captain_primary" blocks="skipper,politician">
             <TalentOptions>
                 <TalentOption identifier="quickdraw"/>
@@ -168,6 +199,7 @@
                 <TalentOption identifier="enchance1" />
             </TalentOptions>
         </SubTree>
+        <!--  Mirrorring capitan 2nd tree, but weaker -->
         <SubTree identifier="Executive_Officer" type="specialization" requires="captain_primary" blocks="gunslinger,politician">
             <TalentOptions>
                 <TalentOption identifier="leadingbyexample"/>
@@ -197,6 +229,7 @@
                 <TalentOption identifier="enchance2" />
             </TalentOptions>
         </SubTree>
+        <!--  Mirrorring capitan 3rd tree, but weaker -->
         <SubTree identifier="Defender" type="specialization" requires="captain_primary" blocks="gunslinger,skipper">
             <TalentOptions>
                 <TalentOption identifier="commendations"/>
@@ -229,8 +262,9 @@
                 <TalentOption identifier="enchance3" />
             </TalentOptions>
         </SubTree>
+        <!--  Mirrorring capitan 4th tree, but weaker -->
     </TalentTree>
-    <!-- Navigator Multiclass weak utility when in submarine, support offensive when outside -->
+    <!-- Navigator Multiclass driving the submarine, gunnery, coordinating dive teams, weak at shooting -->
     <TalentTree jobidentifier="navigator">
         <SubTree identifier="captain_primary" nameidentifier="talenttree.primary" type="primary">
             <TalentOptions maxchosentalents="2">
@@ -338,7 +372,7 @@
         </SubTree>
     </TalentTree>
 
-    <!--Head of security Defence-->
+    <!--Head of security MORE AT TEACHING SKILL AND COORIDINATING SECURITY DUDES, weaker than normal security but with that upward, Gunnery, Buffs to shooting inside to submarine, debuffs when not inside-->
     <TalentTree jobidentifier="head_of_security">
         <SubTree identifier="security_primary" nameidentifier="talenttree.primary" type="primary">
             <TalentOptions maxchosentalents="2">
@@ -443,7 +477,7 @@
             </TalentOptions>
         </SubTree>
     </TalentTree>
-    <!--Security Defence -->
+    <!--Security Gunnery, Buffs to shooting inside to submarine, debuffs when not inside  -->
     <TalentTree jobidentifier="security">
         <SubTree identifier="security_primary" nameidentifier="talenttree.primary" type="primary">
             <TalentOptions maxchosentalents="2">
@@ -543,7 +577,8 @@
             </TalentOptions>
         </SubTree>
     </TalentTree>
-    <!--Diver Offensive -->
+    <!--Diver neutral when fighing inside the submarine, buffs when in watter, bonusses to salage operations, breaching devices (explosives), 
+    can drag people in watter so when submarine is flooded he can help -->
     <TalentTree jobidentifier="diver">
         <SubTree identifier="security_primary" nameidentifier="talenttree.primary" type="primary">
             <TalentOptions maxchosentalents="2">
@@ -650,7 +685,19 @@
         </SubTree>
     </TalentTree>
 
-    <!--COB Support not remade (yet) -->
+    <!--COB Many buffs, 
+    Work With QUA - 
+    Ablility to upgrade the sub by placing new items, or exchaning rescouces for Upgrades (yes the npc ones)
+    Ability to lua-link items (but better IDK use pipes? low range wireing?)
+    Ability to create complex circutry - get 1 component that does same as multitude of components, allowing for more painless wireing
+    Ability to create universal terminal with other engineering classes
+    Ability to make and manage projects to create special items 
+        (XCOM style - reserching is separate to creating an item), 
+        (scientists figuere out what is possbile (eg. enegry weapons reserch), 
+        engineering applies those theories (builds the engergy guns), 
+        prototypes need tests (rimatomics style) and they can fail, destroying the prototype)
+            Projects can be reserched by any class, but they can only be "developed into final product" by engineering (you can only build prototypes - witch can fail without them)
+     -->
     <TalentTree jobidentifier="chief">
         <SubTree identifier="engineer_primary" nameidentifier="talenttree.primary" type="primary">
             <TalentOptions maxchosentalents="2">
