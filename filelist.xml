@@ -41,4 +41,13 @@
   <Submarine file="%ModDir%/Submarines/Typhon [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Venture [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Winterhalter [JE].sub" />
+<<<<<<< Updated upstream
+=======
+  <Afflictions file="%ModDir%/Talents/CO/COAfflictions.xml" />
+  <Talents file="%ModDir%/Talents/CO/COTalents.xml" />
+
+  <Talents file="%ModDir%/Talents/oldTalents/Captain/TalentsCaptain.xml" />
+  <!-- TODO Hireable temp fix -->
+  <locationtypes file="%ModDir%/Map/locationTypes.xml" />
+>>>>>>> Stashed changes
 </contentpackage>

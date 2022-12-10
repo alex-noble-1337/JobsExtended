@@ -1,3 +1,11 @@
+- append all the tings you made to existing classes
+
+- add some kind of automatic spawn and recrutment of new npcs
+
+- remove gunsmith replace it with oldhandsomestranger
+- make oldhandsomestranger give you ablility to craft blueprints for revolver and revolverrounds
+- make every talent do 2 things, except the primary talents
+
 - Unique diving suits per class with 4 colors
 - Unique weapon per class, CO - handgun and revolver dmg, XO granade damgae and rotary granade laucher, Security Autoshotgun
 - SEC gets target dummy, witch allows you to hone your skills
@@ -7,3 +15,4 @@
 - fully incorporate genes+ to passenger skill tree
 - backpack sucks change it
 - i just copied buck of files withouc changing anyhting (almost) bad!!!
+- Make Lua command to make someone prisioner
