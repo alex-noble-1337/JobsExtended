@@ -13,6 +13,7 @@
   <Text file="%ModDir%/Texts/Polish.xml" />
   <Text file="%ModDir%/Texts/Russian.xml" />
   <Item file="%ModDir%/ItemsOverride/guitar.xml" />
+
   <Submarine file="%ModDir%/Submarines/Azimuth [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Berilia [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Camel [JE].sub" />
@@ -23,13 +24,6 @@
   <Submarine file="%ModDir%/Submarines/Remora [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Selkie [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Typhon2 [JE].sub" />
-  <Talents file="%ModDir%/Talents/CAP/CapitanTalents.xml" />
-  <Afflictions file="%ModDir%/Talents/CAP/AfflictionsOverrides.xml" />
-  <Talents file="%ModDir%/Talents/CO/COTalents.xml" />
-  <Afflictions file="%ModDir%/Talents/CO/COAfflictions.xml" />
-  <Talents file="%ModDir%/Talents/oldTalents/Captain/TalentsCaptain.xml" />
-  <LocationTypes file="%ModDir%/Map/locationTypes.xml" />
-  <LocationTypes file="%ModDir%/NPCPrefabs/OutpostNpcs.xml" />
   <Submarine file="%ModDir%/Submarines/Barsuk [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Hemulen [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Herja [JE].sub" />
@@ -41,13 +35,16 @@
   <Submarine file="%ModDir%/Submarines/Typhon [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Venture [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Winterhalter [JE].sub" />
-<<<<<<< Updated upstream
-=======
-  <Afflictions file="%ModDir%/Talents/CO/COAfflictions.xml" />
-  <Talents file="%ModDir%/Talents/CO/COTalents.xml" />
 
+  <Talents file="%ModDir%/Talents/CAP/CapitanTalents.xml" />
+  <Afflictions file="%ModDir%/Talents/CAP/AfflictionsOverrides.xml" />
+  <Talents file="%ModDir%/Talents/CO/COTalents.xml" />
+  <Afflictions file="%ModDir%/Talents/CO/COAfflictions.xml" />
   <Talents file="%ModDir%/Talents/oldTalents/Captain/TalentsCaptain.xml" />
+  
+
+
   <!-- TODO Hireable temp fix -->
   <locationtypes file="%ModDir%/Map/locationTypes.xml" />
->>>>>>> Stashed changes
+  <LocationTypes file="%ModDir%/NPCPrefabs/OutpostNpcs.xml" />
 </contentpackage>

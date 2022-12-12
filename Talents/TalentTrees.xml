@@ -51,6 +51,8 @@
         -->
         <SubTree identifier="SubmarineCowboy" type="specialization" requires="captain_primary" blocks="">
             <TalentOptions>
+            <!-- Add part of these buffs to other crew members
+                Add order buffs -->
                 <TalentOption identifier="stranger_with_iron" /> <!-- upgraded quickdraw + handsome stranger + bounty hunter -->
             </TalentOptions>
             <TalentOptions>
@@ -58,11 +60,15 @@
                 <TalentOption identifier="deputy" />
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="drunkensailor" /> <!-- Drunken sailor + old tumble -->
-                <TalentOption identifier="olddrunkensailor" />
-                <TalentOption identifier="oldtumble" />
+                <!-- Drunken sailor + old tumble TODO add part of these bonuses to the rest of the crew -->
+                <TalentOption identifier="drunkensailor" /> 
+                <!-- <TalentOption identifier="olddrunkensailor" />
+                <TalentOption identifier="oldtumble" /> -->
+                <!-- Change this to give you bonuses related to gunning shit -->
+                <TalentOption identifier="olddownwiththeship" />
             </TalentOptions>
             <TalentOptions>
+                <!-- Add buffs to submarine guns, strenghthen command ability  -->
                 <TalentOption identifier="bigguns" />
             </TalentOptions>
             <TalentOptions>
@@ -76,18 +82,18 @@
         -->
         <SubTree identifier="Trucker" type="specialization" requires="captain_primary" blocks="">
             <TalentOptions>
-                <TalentOption identifier="leadingbyexample" />
+                <TalentOption identifier="oldcommander" />
                 <TalentOption identifier="oldtravelingtradesman" />
                 <TalentOption identifier="oldevasivemaneuvers" />
+                <TalentOption identifier="oldtrucker" />
             </TalentOptions>
             <TalentOptions>
+                <TalentOption identifier="leadingbyexample" />
                 <TalentOption identifier="helmsman" />
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="inspiringpresence" />
-                <TalentOption identifier="trickledown" />
-                <TalentOption identifier="oldtrucker" />
-                <TalentOption identifier="olddownwiththeship" />
+                <TalentOption identifier="oldcamaraderie" />
+                <TalentOption identifier="oldtrustbuilding" />
                 <!-- Changed to when sub floded at least 70% gain a buff -->
             </TalentOptions>
             <TalentOptions>
@@ -107,13 +113,13 @@
             <TalentOptions>
                 <TalentOption identifier="oldcommander" />
                 <!-- passibly 1/5 effect, actively when giving an order you get 5/5 and 10 to Every skill. , also 14% damage reduction, when ally gets a skill point 50% chance he gets 10exp -->
+                <TalentOption identifier="trickledown" />
+                <TalentOption identifier="inspiringpresence" />
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="oldtrustbuilding" />
                 <TalentOption identifier="positivereinforcment" />
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="oldcamaraderie" />
                 <TalentOption identifier="red_alarm" />
             </TalentOptions>
             <TalentOptions>
@@ -128,7 +134,6 @@
         <SubTree identifier="politician" type="specialization" requires="captain_primary" blocks="">
             <TalentOptions>
                 <TalentOption identifier="commendations" />
-                <TalentOption identifier="oldtrustedcaptain" />
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="yourreputation" />
@@ -146,7 +151,6 @@
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="figurehead" />
-                <TalentOption identifier="oldesteemedcaptain" />
             </TalentOptions>
         </SubTree>
     </TalentTree>
