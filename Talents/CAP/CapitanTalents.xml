@@ -117,34 +117,6 @@
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
-    <Talent identifier="oldevasivemaneuvers">
-        <!-- Overriding cuz useless| co Middle 1 2/2 "BRACE!" TODO change name -->
-        <!-- (Changed to when sub is attacked gain a buff, 30% resistance to an stun, 30% to speed, 10% to turret attack speed, 20% Repair Speed, 10 to electrical and 10 to Mechanical) --> 
-        <Description tag="talentdescription.evasivemaneuvers">
-            <!-- TODO descripction -->
-            <Replace tag="[helmbonus]" value="10" color="gui.green" />
-            <Replace tag="[perc]" value="30" color="gui.green" />
-            <Replace tag="[move]" value="30" color="gui.green" />
-            <Replace tag="[seconds]" value="5" color="gui.green" />
-        </Description>
-        <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="5,0" sheetelementsize="128,128" />
-        <!-- TODO texture -->
-        <AbilityGroupEffect abilityeffecttype="AfterSubmarineAttacked">
-            <Conditions>
-                <AbilityConditionEvasiveManeuvers />
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityApplyStatusEffectsToAllies maxdistance="600000" allowself="true">
-                    <StatusEffects>
-                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
-                            <Affliction identifier="evasivemaneuvers" amount="5.0" />
-                            <Affliction identifier="BRACE" amount="2.0" />
-                        </StatusEffect>
-                    </StatusEffects>
-                </CharacterAbilityApplyStatusEffectsToAllies>
-            </Abilities>
-        </AbilityGroupEffect>
-    </Talent>
     <Talent identifier="oldtrustedcaptain">
         <!-- +80% chance when an ally gains a skill point you gain that skill point, and gain expirence when ally gets a skill point -->
         <Description tag="talentdescription.trustedcaptain">

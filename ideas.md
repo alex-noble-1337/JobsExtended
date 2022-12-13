@@ -1,4 +1,7 @@
-Adaptive limits on classes? Except co, based on amout of people in the lobby
+LUA
+	- Adaptive limits on classes? Except co, based on amout of people in the lobby
+
+
 Make every class have their version of nuclear pda - That should make people roles more enagaging as they dont need to be in one place (cuz being in one place is not fun, and games are about fun).
 Make Navigator have ist own version just for shuttle.
 Make every class type (capitan-like, engi role) have their own diving suit and weapons, both mele and ranged (engineers should have only big ass crowbar dmg, freeman like). 

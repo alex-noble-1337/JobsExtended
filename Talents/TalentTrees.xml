@@ -53,7 +53,13 @@
             <TalentOptions>
             <!-- Add part of these buffs to other crew members
                 Add order buffs -->
-                <TalentOption identifier="stranger_with_iron" /> <!-- upgraded quickdraw + handsome stranger + bounty hunter -->
+                <!-- (Pistols) Every second you dont fire, you get damage boost to your shot, from +20% after first second to +840% added damage (might differ on weapon and other stuff) 
+                     TODO 50% chance to guaranee to have at least 1 monster mission at the outpost (added to current mission pool), and better monster rewards, debuffs to exploration and moving stuff missions
+                     Every time you kill a monster you get 25% of its remaining hp (bounty hunter original)
+                     TODO Shop system that allows you to buy blueprints for killed monsters (unique weapons and gear), getting buffs to guns, getting resouces
+                     TODO Give AOE buff to everyone on the submarine and 100m from you that buffs damage and damage resistance. Characters you order gain strenghted version of that buff.
+                -->
+                <TalentOption identifier="stranger_with_iron" />
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="lonewolf" />
@@ -61,14 +67,33 @@
             </TalentOptions>
             <TalentOptions>
                 <!-- Drunken sailor + old tumble TODO add part of these bonuses to the rest of the crew -->
+                <!-- 
+                    Replace affliction 'drunk' to 'druknodebuffs', if you have 'drunknodebuffs' 'stun' is maximum of 25% (you take less timme to be stunned) and nausea is multiplayed by 0
+                    When you play harmonica you have 4% chance (every tick probbably) to give 'randomskill' to random ally on your submarine
+                    (Pistols) If you ragdoll for 0.5s you gain 75%AddedRecipe itemidentifier="rekless_admiral_cap"  resistance to damage (TODO change it so it dissapears over time, and works only if you are holding a pistol), and gain +40% damage when using
+                    TODO Add part of these bonuses to the crew, some resistance to drunkness and buffs when drunk, and much weaker pistol passive
+                    AddedRecipe itemidentifier="rum"
+                 -->
                 <TalentOption identifier="drunkensailor" /> 
-                <!-- <TalentOption identifier="olddrunkensailor" />
-                <TalentOption identifier="oldtumble" /> -->
-                <!-- Change this to give you bonuses related to gunning shit -->
-                <TalentOption identifier="olddownwiththeship" />
+                <!-- 
+                    TODO When submarine is attacked by monster all crew inside gain brief buff to fireing speed of both mounted and handheld
+                    TODO When crewmember is attacked he gains 90% resistance to damage, cooldown 25seconds
+                    When your health is at least 80%:
+                        TODO Order type buff is strenghthended to give twice the buffs (but no more then 75% damage resistance)
+                        TODO Above buffs (first and 2nd opton) is strenghed 2 times
+                    TODO If one of your crew dies, he gets revived (including you), one time per completed mission revive
+                 -->
+                <TalentOption identifier="stillstanding" /> <!-- oldevasivemaneuvers -->
             </TalentOptions>
             <TalentOptions>
-                <!-- Add buffs to submarine guns, strenghthen command ability  -->
+                <!-- TODO Buffs to submarine and handheld guns
+                     TODO Strenghthen command ability
+                     TODO Guaranteed monster type mission at outpost, Even better monster mission rewards
+                     TODO Buying gun type upgrades, and ammo is cheaper
+                     TODO You may select another mission
+                    <AddedRecipe itemidentifier="handcannon"/>
+                    <AddedRecipe itemidentifier="handcannonround"/>
+                -->
                 <TalentOption identifier="bigguns" />
             </TalentOptions>
             <TalentOptions>
@@ -82,6 +107,13 @@
         -->
         <SubTree identifier="Trucker" type="specialization" requires="captain_primary" blocks="">
             <TalentOptions>
+            <!--
+                 
+                 TODO 50% chance to guaranee to have at least 1 monster mission at the outpost (added to current mission pool), and better monster rewards, debuffs to exploration and moving stuff missions 
+                 TODO Gain 25% of pay immidietly after selecting the mission
+                 TODO Shop system that allows you to buy blueprints for completed missions (unique weapons and gear), getting buffs to guns, getting resouces
+                 TODO Give AOE buff to everyone on the submarine and 100m from you that buffs land speed, repair speed and damage resistance. Characters you order gain strenghted version of that buff.
+            -->
                 <TalentOption identifier="oldcommander" />
                 <TalentOption identifier="oldtravelingtradesman" />
                 <TalentOption identifier="oldevasivemaneuvers" />
