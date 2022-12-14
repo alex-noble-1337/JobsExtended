@@ -26,7 +26,9 @@
 			</Abilities>
 		</AbilityGroupEffect>
 		<AddedRecipe itemidentifier="baton"/>
-		<AddedRecipe itemidentifier="nonlethalshotgunshell"/>
+		<!-- Added by vanilla -->
+		<!-- <AddedRecipe itemidentifier="nonlethalshotgunshell"/> -->
+		<AddedRecipe itemidentifier="PepperSpray"/>
 	</Talent>
 
 	<Talent identifier="nomercy">

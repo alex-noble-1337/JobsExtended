@@ -4,7 +4,7 @@
   <Item file="%ModDir%/Items/specialitems.xml" />
   <Item file="%ModDir%/Items/uniforms.xml" />
   <Submarine file="%ModDir%/Submarines/JE submarine conversion kit.sub" />
-  <TalentTrees file="%ModDir%/Talents/TalentTrees.xml" />
+
   <Talents file="%ModDir%/Talents/TalentsUsedInItems.xml" />
   <Text file="%ModDir%/Texts/English.xml" />
   <Text file="%ModDir%/Texts/JobExtendedChinese.xml" />
@@ -36,13 +36,17 @@
   <Submarine file="%ModDir%/Submarines/Venture [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Winterhalter [JE].sub" />
 
-  <Talents file="%ModDir%/Talents/CAP/CapitanTalents.xml" />
+  <TalentTrees file="%ModDir%/Talents/TalentTrees-VanillaTemp.xml" />
+  <TalentTrees file="%ModDir%/Talents/TalentTrees.xml" />
+
+  <!-- <Talents file="%ModDir%/Talents/CAP/CapitanTalents.xml" />
   <Afflictions file="%ModDir%/Talents/CAP/AfflictionsOverrides.xml" />
   <Talents file="%ModDir%/Talents/CO/COTalents.xml" />
   <Afflictions file="%ModDir%/Talents/CO/COAfflictions.xml" />
-  <Talents file="%ModDir%/Talents/oldTalents/Captain/TalentsCaptain.xml" />
+  <Talents file="%ModDir%/Talents/oldTalents/Captain/TalentsCaptain.xml" /> -->
   
-
+  <!-- XO -->
+  <Talents file="%ModDir%/Talents/XO/XOTalents.xml" />
 
   <!-- TODO Hireable temp fix -->
   <locationtypes file="%ModDir%/Map/locationTypes.xml" />

@@ -1,6 +1,253 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Talents>
   
+	<Talent identifier="firststrike">
+		<Description tag="talentdescription.firststrike">
+			<Replace tag="[seconds]" value="8" color="gui.green"/>
+			<Replace tag="[damage]" value="40" color="gui.green"/>
+		</Description>
+		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,0" sheetelementsize="128,128"/>
+		<AbilityGroupInterval>
+			<Abilities>
+				<CharacterAbilityApplyStatusEffects>
+					<StatusEffects>
+						<StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true">
+							<Affliction identifier="quickdrawing" amount="1.0"/>
+						</StatusEffect>
+					</StatusEffects>
+				</CharacterAbilityApplyStatusEffects>
+			</Abilities>
+		</AbilityGroupInterval>
+		<AbilityGroupEffect abilityeffecttype="OnAttack">
+			<Conditions>
+				<AbilityConditionHasAffliction afflictionidentifier="quickdrawing" minimumpercentage="1.0"/>
+				<AbilityConditionAttackData tags="grenade"/>
+			</Conditions>
+			<Abilities>
+				<CharacterAbilityModifyAttackData addeddamagemultiplier="0.4"/>
+				<CharacterAbilityApplyStatusEffects>
+					<StatusEffects>
+						<StatusEffect type="OnAbility" target="This">
+							<ReduceAffliction identifier="quickdrawing" strength="8.0"/>
+						</StatusEffect>
+					</StatusEffects>
+				</CharacterAbilityApplyStatusEffects>
+			</Abilities>
+		</AbilityGroupEffect>
+		<Description tag="talentdescription.unlockrecipe">
+			<Replace tag="[itemname]" value="entityname.baton" color="gui.orange"/>
+		</Description>
+		<Description tag="talentdescription.unlockrecipe">
+			<Replace tag="[itemname]" value="entityname.nonlethalshotgunshell" color="gui.orange"/>
+		</Description>
+		<Description tag="talentdescription.defenceindepth">
+		</Description>
+		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>
+		<AbilityGroupEffect abilityeffecttype="OnGainSkillPoint">
+			<Conditions>
+				<AbilityConditionSkill skillidentifier="weapons"/>
+			</Conditions>
+			<Abilities>
+				<CharacterAbilityApplyStatusEffects>
+					<StatusEffects>
+						<StatusEffect type="OnAbility" target="This">
+							<GiveExperience amount="20"/>
+						</StatusEffect>
+					</StatusEffects>
+				</CharacterAbilityApplyStatusEffects>
+			</Abilities>
+		</AbilityGroupEffect>
+		<AddedRecipe itemidentifier="baton"/>
+		<!-- Added by vanilla -->
+		<!-- <AddedRecipe itemidentifier="nonlethalshotgunshell"/> -->
+		<AddedRecipe itemidentifier="PepperSpray"/>
+		<Description tag="talentdescription.quickdraw">
+			<Replace tag="[seconds]" value="8" color="gui.green"/>
+			<Replace tag="[damage]" value="25" color="gui.green"/>
+		</Description>
+		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,0" sheetelementsize="128,128"/>
+		<AbilityGroupInterval interval="1">
+			<Abilities>
+				<CharacterAbilityApplyStatusEffects>
+					<StatusEffects>
+						<StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true" disabledeltatime="true">
+							<Affliction identifier="quickdrawing" amount="1.0"/>
+						</StatusEffect>
+					</StatusEffects>
+				</CharacterAbilityApplyStatusEffects>
+			</Abilities>
+		</AbilityGroupInterval>
+		<AbilityGroupEffect abilityeffecttype="OnAttack">
+			<Conditions>
+				<AbilityConditionHasAffliction afflictionidentifier="quickdrawing" minimumpercentage="1.0"/>
+				<AbilityConditionAttackData tags="pistolammoitem"/>
+			</Conditions>
+			<Abilities>
+				<CharacterAbilityModifyAttackData addeddamagemultiplier="0.25"/>
+				<CharacterAbilityApplyStatusEffects>
+					<StatusEffects>
+						<StatusEffect type="OnAbility" target="This">
+							<ReduceAffliction identifier="quickdrawing" strength="8.0"/>
+						</StatusEffect>
+					</StatusEffects>
+				</CharacterAbilityApplyStatusEffects>
+			</Abilities>
+		</AbilityGroupEffect>
+	</Talent>
+
+	<Talent identifier="new_nomercy">
+		<Description tag="talentdescription.chanceofextraweapondamage">
+			<Replace tag="[probability]" value="7" color="gui.green"/>
+		</Description>
+		<Description tag="talentdescription.nomercy">
+			<Replace tag="[extra]" value="50" color="gui.green"/>
+		</Description>
+		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="5,0" sheetelementsize="128,128"/>
+		<AbilityGroupEffect abilityeffecttype="OnAttack">
+			<Conditions>
+				<AbilityConditionServerRandom randomchance="0.07"/>
+			</Conditions>
+			<Abilities>
+				<CharacterAbilityModifyAttackData addeddamagemultiplier="0.2" />
+			</Abilities>
+		</AbilityGroupEffect>
+		<AbilityGroupEffect abilityeffecttype="OnGainMissionMoney">
+			<Conditions>
+				<AbilityConditionMission missiontype="Pirate"/>
+			</Conditions>
+			<Abilities>
+				<CharacterAbilityModifyValue addedvalue="0.50"/>
+			</Abilities>
+		</AbilityGroupEffect>
+		<AbilityGroupEffect abilityeffecttype="OnGainMissionMoney">
+			<Conditions>
+				<AbilityConditionMission missiontype="Abandonedoutpost"/>
+			</Conditions>
+			<Abilities>
+				<CharacterAbilityModifyValue addedvalue="0.50"/>
+			</Abilities>
+		</AbilityGroupEffect>
+		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,5" sheetelementsize="128,128"/>
+		<Description tag="talentdescription.lonewolf"/>
+		<Description tag="talentdescription.additionalstattype">
+		  <Replace tag="[amount]" value="20" color="gui.green"/>
+		  <Replace tag="[stattype]" value="stattypenames.physicalresistance" color="gui.orange"/>
+		</Description>
+		<Description tag="talentdescription.additionalstattype">
+		  <Replace tag="[amount]" value="20" color="gui.green"/>
+		  <Replace tag="[stattype]" value="stattypenames.stunresistance" color="gui.orange"/>
+		</Description>
+		<Description tag="talentdescription.additionalstattype">
+		  <Replace tag="[amount]" value="20" color="gui.green"/>
+		  <Replace tag="[stattype]" value="stattypenames.meleedamagebonus" color="gui.orange"/>
+		</Description>
+		<AbilityGroupInterval interval="0.9">
+		  <Conditions>
+			<AbilityConditionAllyNearby distance="2000" truthywhen="NoCharacterMatches"/>
+		  </Conditions>
+		  <Abilities>
+			<CharacterAbilityApplyStatusEffects>
+			  <StatusEffects>
+				<StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+				  <Affliction identifier="lonewolf" amount="1.0"/>
+				</StatusEffect>
+			  </StatusEffects>
+			</CharacterAbilityApplyStatusEffects>
+		  </Abilities>
+		</AbilityGroupInterval>
+	</Talent>
+	<Talent identifier="new_bythebook">
+		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,3" sheetelementsize="128,128"/>
+		<Description tag="talentdescription.bythebook">
+		  <Replace tag="[moneyamount]" value="1250" color="gui.green"/>
+		  <Replace tag="[experienceamount]" value="200" color="gui.green"/>
+		  <Replace tag="[moneyamountmax]" value="2500" color="gui.green"/>
+		  <Replace tag="[experienceamountmax]" value="400" color="gui.green"/>
+		</Description>
+		<AbilityGroupEffect abilityeffecttype="OnRoundEnd">
+		  <Abilities>
+			<CharacterAbilityByTheBook moneyamount="1250" experienceamount="200" max="2" />
+		  </Abilities>
+		</AbilityGroupEffect>
+		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,5" sheetelementsize="128,128"/>
+		<Description tag="talentdescription.deputy">
+		  <Replace tag="[skillbonus1]" value="20" color="gui.green"/>
+		  <Replace tag="[skillbonus2]" value="20" color="gui.green"/>
+		</Description>
+		<AbilityGroupInterval interval="0.9">
+		  <Abilities>
+			<CharacterAbilityApplyStatusEffectsToAllies maxdistance="600" jobs="assistant" allowself="false">
+			  <StatusEffects>
+				<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+				  <Affliction identifier="deputy" strength="1.0"/>
+				</StatusEffect>
+			  </StatusEffects>
+			</CharacterAbilityApplyStatusEffectsToAllies>
+		  </Abilities>
+		</AbilityGroupInterval>
+	  </Talent>
+
+	  <Talent identifier="evasion"> 
+		<Description tag="talentdescription.evasion">
+		 <Replace tag="[seconds]" value="0.75" color="gui.green"/>
+		 <Replace tag="[damage]" value="20" color="gui.green"/>
+		 <Replace tag="[duration]" value="2.5" color="gui.green"/>
+	   </Description>
+		<Description tag="talentdescription.tumble2">
+			 <Replace tag="[red]" value="75" color="gui.green"/>
+		</Description>
+	   <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="2,0" sheetelementsize="128,128"/>
+	   <AbilityGroupInterval effectdelay="0.5">
+		 <Conditions>
+		   <AbilityConditionRagdolled/>
+		 </Conditions>
+		 <Abilities>
+		   <CharacterAbilityApplyStatusEffects>
+			 <StatusEffects>
+			   <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+				 <Affliction identifier="tumbling" amount="2.5"/> 
+			   </StatusEffect>
+			 </StatusEffects>
+		   </CharacterAbilityApplyStatusEffects>
+		 </Abilities>
+	   </AbilityGroupInterval>
+	   <AbilityGroupEffect abilityeffecttype="OnAttack">
+		 <Conditions>
+		   <AbilityConditionHasAffliction afflictionidentifier="tumbling"/>
+		   <AbilityConditionAttackData tags="grenade"/>
+		 </Conditions>
+		 <Abilities>
+		   <CharacterAbilityModifyAttackData addeddamagemultiplier="0.2"/>
+		 </Abilities>
+	   </AbilityGroupEffect>
+		<Description tag="talentdescription.drunkensailor">
+		<Replace tag="[stunresistance]" value="75" color="gui.green"/>
+		</Description>
+		<Description tag="talentdescription.unlockrecipe">
+		<Replace tag="[itemname]" value="entityname.rum" color="gui.orange"/>
+		</Description>
+		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,0" sheetelementsize="128,128"/>
+		<AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
+		<Abilities>
+			<CharacterAbilityModifyAffliction afflictionidentifiers="drunk" replacewith="drunknodebuffs" />
+		</Abilities>
+		<FallbackAbilities>
+			<CharacterAbilityModifyAffliction afflictionidentifiers="drunk" replacewith="drunknodebuffs" />
+		</FallbackAbilities>
+		</AbilityGroupEffect>
+		<AbilityGroupInterval>
+		<Conditions>
+			<AbilityConditionHasAffliction afflictionidentifier="drunknodebuffs"/>
+		</Conditions>
+		<Abilities>
+			<CharacterAbilityModifyResistance resistanceid="stun" multiplier="0.25"/>
+			<CharacterAbilityModifyResistance resistanceid="nausea" multiplier="0"/>
+		</Abilities>
+		</AbilityGroupInterval>
+		<AddedRecipe itemidentifier="rum"/>
+	 </Talent>
+
+
 	<Talent identifier="capitanssword">
 		<Description tag="talentdescription.unlockrecipe">
 			<Replace tag="[itemname]" value="entityname.rotarygrenedelaucher" color="gui.orange"/>
@@ -18,6 +265,24 @@
 			</Abilities>
 		</AbilityGroupEffect>
 		<AddedRecipe itemidentifier="rotarygrenedelaucher"/>
+		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="2,4" sheetelementsize="128,128"/>
+		<Description tag="talentdescription.bigguns">
+		  <Replace tag="[amount]" value="30" color="gui.green"/>
+		</Description>
+		<Description tag="talentdescription.unlockrecipe">
+		  <Replace tag="[itemname]" value="entityname.handcannon, entityname.handcannonround" color="gui.orange"/>
+		</Description>
+		<AddedRecipe itemidentifier="handcannon"/>
+		<AddedRecipe itemidentifier="handcannonround"/>
+		<AbilityGroupEffect abilityeffecttype="OnAttack">
+		  <Conditions>
+			<AbilityConditionCharacter targettypes="Enemy,Monster" />
+			<AbilityConditionAttackData tags="pistolammoitem"/>
+		  </Conditions>
+		  <Abilities>
+			<CharacterAbilityModifyAttackData addeddamagemultiplier="0.3" />
+		  </Abilities>
+		</AbilityGroupEffect>
   </Talent>
   
    <Talent identifier="highlydecoratedindividual">
@@ -79,75 +344,7 @@
 		</AbilityGroupInterval>
   </Talent>
   
-  <Talent identifier="evasion"> 
-	 <Description tag="talentdescription.evasion">
-      <Replace tag="[seconds]" value="0.75" color="gui.green"/>
-      <Replace tag="[damage]" value="20" color="gui.green"/>
-      <Replace tag="[duration]" value="2.5" color="gui.green"/>
-    </Description>
-	 <Description tag="talentdescription.tumble2">
-	      <Replace tag="[red]" value="75" color="gui.green"/>
-	 </Description>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="2,0" sheetelementsize="128,128"/>
-    <AbilityGroupInterval effectdelay="0.5">
-      <Conditions>
-        <AbilityConditionRagdolled/>
-      </Conditions>
-      <Abilities>
-        <CharacterAbilityApplyStatusEffects>
-          <StatusEffects>
-            <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
-              <Affliction identifier="tumbling" amount="2.5"/> 
-            </StatusEffect>
-          </StatusEffects>
-        </CharacterAbilityApplyStatusEffects>
-      </Abilities>
-    </AbilityGroupInterval>
-    <AbilityGroupEffect abilityeffecttype="OnAttack">
-      <Conditions>
-        <AbilityConditionHasAffliction afflictionidentifier="tumbling"/>
-        <AbilityConditionAttackData tags="grenade"/>
-      </Conditions>
-      <Abilities>
-        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.2"/>
-      </Abilities>
-    </AbilityGroupEffect>
-  </Talent>
-  
-  <Talent identifier="firststrike">
-    <Description tag="talentdescription.firststrike">
-      <Replace tag="[seconds]" value="8" color="gui.green"/>
-      <Replace tag="[damage]" value="40" color="gui.green"/>
-    </Description>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,0" sheetelementsize="128,128"/>
-    <AbilityGroupInterval>
-      <Abilities>
-        <CharacterAbilityApplyStatusEffects>
-          <StatusEffects>
-            <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true">
-              <Affliction identifier="quickdrawing" amount="1.0"/>
-            </StatusEffect>
-          </StatusEffects>
-        </CharacterAbilityApplyStatusEffects>
-      </Abilities>
-    </AbilityGroupInterval>
-    <AbilityGroupEffect abilityeffecttype="OnAttack">
-      <Conditions>
-        <AbilityConditionHasAffliction afflictionidentifier="quickdrawing" minimumpercentage="1.0"/>
-        <AbilityConditionAttackData tags="grenade"/>
-      </Conditions>
-      <Abilities>
-        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.4"/>
-        <CharacterAbilityApplyStatusEffects>
-          <StatusEffects>
-            <StatusEffect type="OnAbility" target="This">
-              <ReduceAffliction identifier="quickdrawing" strength="8.0"/>
-            </StatusEffect>
-          </StatusEffects>
-        </CharacterAbilityApplyStatusEffects>
-      </Abilities>
-    </AbilityGroupEffect>
-  </Talent>
+
   
   
 </Talents>
