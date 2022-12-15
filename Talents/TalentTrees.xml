@@ -52,6 +52,7 @@
         Abilities: CONDITIONAL on fuffuling missions Buffing guns and hull health, getting resouces from enemies, getting unique guns
         Debuffs to exploration and moving stuff missions
         -->
+        <!-- Bonuses instead of pistols, smaller bouses to heavy guns, with small aoe -->
         <SubTree identifier="Lancer" type="specialization" requires="captain_primary" blocks="skipper,politician">
             <TalentOptions>
             <!-- CO Talents -->
@@ -66,8 +67,8 @@
                 <!-- <TalentOption identifier="lonewolf"/> -->
                 <!-- <TalentOption identifier="deputy"/> -->
             <!-- XO Talents -->
-                <TalentOption identifier="new_nomercy" />
-                <TalentOption identifier="new_bythebook" />
+                <TalentOption identifier="nomercy-deputy" />
+                <TalentOption identifier="bythebook-deputy" />
             </TalentOptions>
             <TalentOptions>
             <!-- CO Talents -->
@@ -91,25 +92,29 @@
         <SubTree identifier="Second_In_Command" type="specialization" requires="captain_primary" blocks="gunslinger,politician">
             <TalentOptions>
                 <TalentOption identifier="leadingbyexample"/>
-                <TalentOption identifier="frenzy" />
+                <!-- TODO -->
                 <!-- close dmg buff, when close to cap -->
-                <TalentOption identifier="takeabullet" />
+                <TalentOption identifier="frenzy" /> 
+                <!-- TODO -->
                 <!-- close defence buff, when close to cap -->
+                <TalentOption identifier="takeabullet" />
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="helmsman"/>
+                <!-- TODO -->
                 <TalentOption identifier="targetdummytalent"/>
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="inspiringpresence"/>
                 <TalentOption identifier="trickledown"/>
+                <!-- TODO -->
                 <TalentOption identifier="munitionsexpertise" />
                 <!-- TODO -->
                 <TalentOption identifier="gunsmith" />
-                <!-- TODO -->
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="family"/>
+                <!-- TODO merge -->
                 <TalentOption identifier="highlydecoratedindividual" />
                 <!-- trusted capitan but with small bonuses like euiwalent to secuirity tree -->
             </TalentOptions>
@@ -121,6 +126,7 @@
         <SubTree identifier="Defender" type="specialization" requires="captain_primary" blocks="gunslinger,skipper">
             <TalentOptions>
                 <TalentOption identifier="commendations"/>
+                <!-- TODO merge -->
                 <TalentOption identifier="commander" />
             </TalentOptions>
             <TalentOptions>
@@ -132,6 +138,7 @@
                     <TalentOption identifier="affiliation_clowns"/>
                 </ShowCaseTalent>
                 <TalentOption identifier="stonewall" />
+                <!-- Modify it so its unique to XO -->
                 <TalentOption identifier="notasingleonegetsthough" />
             </TalentOptions>
             <TalentOptions>

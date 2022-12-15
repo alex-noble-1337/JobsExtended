@@ -95,7 +95,7 @@
 		</AbilityGroupEffect>
 	</Talent>
 
-	<Talent identifier="new_nomercy">
+	<Talent identifier="nomercy-deputy">
 		<Description tag="talentdescription.chanceofextraweapondamage">
 			<Replace tag="[probability]" value="7" color="gui.green"/>
 		</Description>
@@ -156,7 +156,7 @@
 		  </Abilities>
 		</AbilityGroupInterval>
 	</Talent>
-	<Talent identifier="new_bythebook">
+	<Talent identifier="bythebook-deputy">
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,3" sheetelementsize="128,128"/>
 		<Description tag="talentdescription.bythebook">
 		  <Replace tag="[moneyamount]" value="1250" color="gui.green"/>
