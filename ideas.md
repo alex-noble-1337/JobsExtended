@@ -93,6 +93,8 @@ Medic
 	https://steamcommunity.com/sharedfiles/filedetails/?id=2695068144&searchtext=talent Maybe this as a talent gun
 COB 
 	should have many technical staff only and physical vessel buffs. Imagine a tinker skill but it lasts several minutes afterwards.
+	Fusion reactor yes
+	Alien items YES
 Random Weapon evey round
 All talents should have 1 thing to give all people, an weapon, and an diving suit colored accordingly
 Themed medals

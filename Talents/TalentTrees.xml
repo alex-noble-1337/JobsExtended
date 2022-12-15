@@ -55,11 +55,14 @@
         <!-- Bonuses instead of pistols, smaller bouses to heavy guns, with small aoe -->
         <SubTree identifier="Lancer" type="specialization" requires="captain_primary" blocks="skipper,politician">
             <TalentOptions>
-            <!-- CO Talents -->
-                <!-- <TalentOption identifier="quickdraw"/> -->
             <!-- XO Talents -->
-                <!-- TODO -->
-                <!-- when you kill something gain 5xp -->
+                <!-- TODO Description
+                     On attack with grenede get +40% damage on an quckdraw aginst an enemy
+                     When you gain weapons skill gain helm skill
+                     When you gain helm skill gain weapons skill
+                     Allies you command get weaker commanded buff and you emit even weaker version of it AOE
+                     TODO gain a heavy weapon holster blueprint
+                    -->
                 <TalentOption identifier="firststrike" />
             </TalentOptions>
             <TalentOptions>
@@ -67,13 +70,27 @@
                 <!-- <TalentOption identifier="lonewolf"/> -->
                 <!-- <TalentOption identifier="deputy"/> -->
             <!-- XO Talents -->
-                <TalentOption identifier="nomercy-deputy" />
+                <!-- nomercy+lonewolf 
+                     TODO Description
+                     1/6 Chance of getting twice the damage
+                     TODO Lua? 1/6 chance of not consuming ammunition
+                     Gain +50% money and expirence on Pirate,Abandonedoutpost
+                     gain a weaker version of lonewolf buff
+                -->
+                <TalentOption identifier="Big_Functional_Gun" />
+                <!-- bythebook-deputy
+                     TODO Description
+                     get bythebook effect
+                     gain weapons_skill_stun_-stun_damage_reistance_buff around you
+                     gain a weaker version of weaker-deputy buff applicable to all characters
+                -->
                 <TalentOption identifier="bythebook-deputy" />
             </TalentOptions>
             <TalentOptions>
             <!-- CO Talents -->
                 <!-- <TalentOption identifier="drunkensailor"/> -->
             <!-- XO Talents -->
+                <!-- TODO Exists -->
                 <!-- tumble but 5% grenade dmg increase -->
                 <TalentOption identifier="evasion" />
             </TalentOptions>
@@ -81,8 +98,9 @@
             <!-- CO Talents -->
                 <!-- <TalentOption identifier="bigguns"/> -->
             <!-- XO Talents -->
-                <TalentOption identifier="capitanssword" />
+                <!-- TODO Exists -->
                 <!-- gain bonus to grenades change to unlock rotary grenade laucher -->
+                <TalentOption identifier="capitanssword" />
             </TalentOptions>
             <!-- <TalentOptions>
                 <TalentOption identifier="enchance1" />
@@ -105,7 +123,7 @@
             <!-- CO Talents -->
                 <TalentOption identifier="helmsman"/>
             <!-- XO Talents -->
-                <!-- TODO -->
+                <!-- TODO Exists -->
                 <TalentOption identifier="targetdummytalent"/>
             </TalentOptions>
             <TalentOptions>
@@ -122,7 +140,7 @@
                 <!-- TODO merge -->
             <!-- CO Talents -->
                 <TalentOption identifier="family"/>
-            <!-- XO Talents -->
+            <!-- XO Talents Exists -->
                 <!-- trusted capitan but with small bonuses like euiwalent to secuirity tree -->
                 <TalentOption identifier="highlydecoratedindividual" />
             </TalentOptions>
@@ -176,7 +194,7 @@
             <TalentOptions>
             <!-- CO Talents -->
                 <TalentOption identifier="figurehead"/>
-             <!-- XO Talents -->
+             <!-- XO Talents Exists -->
                 <!-- TODO merge -->
                 <TalentOption identifier="capitansshield" />
                 <!-- get an all round diving suit, and small defence buff when iside the submarine, and dng buff when outside -->
@@ -211,20 +229,18 @@
         <!-- buffs to diving team and offensive when in water, diving suit upgrade sonar beacon and sonar integration-->
             <TalentOptions>
                 <!-- TODO merge -->
-            <!-- CO Talents -->
                 <TalentOption identifier="quickdraw"/>
-            <!-- CAP Talents -->
-                <!-- TODO merge -->
+            <!-- NAV Talents -->
+                <!-- TODO merge  -->
                 <!-- Modify it so its unique to NAV -->
-                <TalentOption identifier="handsomestranger" />
                 <!-- Buffs depended on players inside of game to you, Offense -->
+                <TalentOption identifier="handsomestranger" />
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO merge -->
-            <!-- CO Talents -->
                 <TalentOption identifier="lonewolf"/>
                 <TalentOption identifier="deputy"/>
-            <!-- CAP Talents -->
+            <!-- NAV Talents -->
                 <!-- TODO merge -->
                 <!-- Modify it so its unique to NAV -->
                 <!-- Changed to give you an defence buff 75% of defence buff -->
@@ -233,51 +249,60 @@
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO merge -->
-            <!-- CO Talents -->
                 <TalentOption identifier="drunkensailor"/>
                 <TalentOption identifier="sailorwithnoname" />
                 <TalentOption identifier="drunkensailor" />
-            <!-- CAP Talents -->
+            <!-- NAV Talents -->
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO merge -->
-            <!-- CO Talents -->
                 <TalentOption identifier="bigguns"/>
-            <!-- CAP Talents -->
+            <!-- NAV Talents -->
+                <!-- TODO merge Exists -->
                 <!-- every time you get in new location, gain +1 to all skills, bonus lost on death -->
                 <TalentOption identifier="masternavigator" />
             </TalentOptions>
-            <TalentOptions>
+            <!-- <TalentOptions>
                 <TalentOption identifier="enchance2" />
-            </TalentOptions>
+            </TalentOptions> -->
         </SubTree>
         <SubTree identifier="DiverTraining" type="specialization" requires="captain_primary" blocks="gunslinger,politician">
             <TalentOptions>
                 <TalentOption identifier="leadingbyexample"/>
-                <TalentOption identifier="experimentaldivinggear" />
+            <!-- NAV Talents -->
                 <!-- polarized lens, duel spec ops ability-->
+                <!-- TODO -->
+                <TalentOption identifier="experimentaldivinggear" />
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="helmsman"/>
-                <TalentOption identifier="shuttlecapitan" />
+            <!-- NAV Talents -->
                 <!-- gain buff while in shuttle, emit defence buff while outside -->
-                <TalentOption identifier="proffesional" />
+                <!-- TODO -->
+                <TalentOption identifier="shuttlecapitan" />
                 <!-- buff while in submarine, and buff to helm shkill while piloting -->
+                <!-- TODO -->
+                <TalentOption identifier="proffesional" />
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="inspiringpresence"/>
                 <TalentOption identifier="trickledown"/>
+            <!-- NAV Talents -->
+                <!-- TODO -->
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="family"/>
-                <TalentOption identifier="masternavigator" />
+            <!-- NAV Talents -->
                 <!-- every time you get in new location, gain +1 to all skills, bonus lost on death -->
+                <!-- TODO Exists -->
+                <TalentOption identifier="masternavigator" />
             </TalentOptions>
         </SubTree>
         <SubTree identifier="Navigator" type="specialization" requires="captain_primary" blocks="gunslinger,skipper">
             <TalentOptions>
                 <TalentOption identifier="commendations"/>
                 <TalentOption identifier="physicalconditioning" />
+            <!-- NAV Talents -->
                 <!-- need that one but weaker, no one dies, and your mission is alien ruin, nest, get 20xp -->
             </TalentOptions>
             <TalentOptions>
@@ -288,26 +313,33 @@
                     <TalentOption identifier="affiliation_huskcult"/>
                     <TalentOption identifier="affiliation_clowns"/>
                 </ShowCaseTalent>
-                <TalentOption identifier="targettingmatrix" />
+            <!-- NAV Talents -->
+                <!-- TODO Exists -->
                 <!-- give buff to manning the turet, weapons skill -->
+                <TalentOption identifier="targettingmatrix" />
+                <!-- TODO -->
                 <TalentOption identifier="stonewall" />
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="campaigning"/>
                 <TalentOption identifier="networking"/>
-                <TalentOption identifier="spacialawarness" />
+            <!-- NAV Talents -->
+                <!-- TODO -->
                 <!-- gain defence buff to you and others small range while in water -->
-                <TalentOption identifier="medicaltraining" />
+                <TalentOption identifier="spacialawarness" />
                 <!-- gain health to you and others small range while outside water -->
+                <TalentOption identifier="medicaltraining" />
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="figurehead"/>
-                <TalentOption identifier="navydiver" />
+            <!-- NAV Talents -->
+                <!-- TODO -->
                 <!-- unique diving suit and space for an strafe like in specialist tree,  -->
+                <TalentOption identifier="navydiver" />
             </TalentOptions>
-            <TalentOptions>
+            <!-- <TalentOptions>
                 <TalentOption identifier="enchance3" />
-            </TalentOptions>
+            </TalentOptions> -->
         </SubTree>
     </TalentTree>
 
@@ -335,59 +367,72 @@
             <!-- Same as in normal security -->
             <TalentOptions>
                 <TalentOption identifier="defenceindepth" />
+            <!-- HOS Talents -->
+                <!-- TODO -->
                 <TalentOption identifier="boardingparty"/>
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="beatcop" />
                 <TalentOption identifier="buccaneer" />
+            <!-- HOS Talents -->
+                <!-- TODO -->
                 <TalentOption identifier="scavenger"/>
                 <TalentOption identifier="slayer"/>
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="nomercy" />
                 <TalentOption identifier="bythebook" />
+            <!-- HOS Talents -->
+                <!-- TODO -->
                 <TalentOption identifier="easyturtle"/>
                 <TalentOption identifier="daringdolphin"/>
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="implacable" />
+            <!-- HOS Talents -->
+                <!-- TODO -->
                 <TalentOption identifier="specops"/>
             </TalentOptions>
-            <TalentOptions>
+            <!-- <TalentOptions>
                 <TalentOption identifier="enchance1" />
-            </TalentOptions>
+            </TalentOptions> -->
         </SubTree>
         <SubTree identifier="HeadOfSecurity" type="specialization" requires="security_primary" blocks="frogman,gunner">
         <!-- Unique, should focus on buffs to the team -->
             <TalentOptions>
-                <TalentOption identifier="pacificationkit"/>
                 <TalentOption identifier="enforcer" />
-                <!-- TODO -->
                 <TalentOption identifier="bootcamp" />
+            <!-- HOS Talents -->
                 <!-- TODO -->
+                <TalentOption identifier="pacificationkit"/>
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="beatcop"/>
                 <TalentOption identifier="stonewall"/>
-                <TalentOption identifier="targetdummy" />
+            <!-- HOS Talents -->
                 <!-- ability to call an target dummy, get skill book witch you can only use on teemates, and you get 25% weapon skill when you level them up -->
+                <!-- TODO -->
+                <TalentOption identifier="targetdummy" />
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="crustyseaman"/>
-                <TalentOption identifier="inordinateexsanguination"/>
+                <!-- TODO -->
                 <TalentOption identifier="munitionsexpertise" />
                 <!-- TODO -->
                 <TalentOption identifier="gunsmith" />
+            <!-- HOS Talents -->
                 <!-- TODO -->
+                <TalentOption identifier="crustyseaman"/>
+                <TalentOption identifier="inordinateexsanguination"/>
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="implacable"/>
                 <TalentOption identifier="weaponsmaitnence" />
+            <!-- HOS Talents -->
                 <!-- TODO -->
             </TalentOptions>
-            <TalentOptions>
+            <!-- <TalentOptions>
                 <TalentOption identifier="enchance2" />
-            </TalentOptions>
+            </TalentOptions> -->
         </SubTree>
         <SubTree identifier="Defender" type="specialization" requires="security_primary" blocks="frogman,enforcer">
         <!-- Same as in normal security -->
