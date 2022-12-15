@@ -91,32 +91,40 @@
         <!--  Mirrorring capitan 2nd tree, but weaker -->
         <SubTree identifier="Second_In_Command" type="specialization" requires="captain_primary" blocks="gunslinger,politician">
             <TalentOptions>
+            <!-- CO Talents -->
                 <TalentOption identifier="leadingbyexample"/>
+            <!-- XO Talents -->
                 <!-- TODO -->
                 <!-- close dmg buff, when close to cap -->
-                <TalentOption identifier="frenzy" /> 
+                <TalentOption identifier="frenzy" />
                 <!-- TODO -->
                 <!-- close defence buff, when close to cap -->
                 <TalentOption identifier="takeabullet" />
             </TalentOptions>
             <TalentOptions>
+            <!-- CO Talents -->
                 <TalentOption identifier="helmsman"/>
+            <!-- XO Talents -->
                 <!-- TODO -->
                 <TalentOption identifier="targetdummytalent"/>
             </TalentOptions>
             <TalentOptions>
+            <!-- CO Talents -->
                 <TalentOption identifier="inspiringpresence"/>
                 <TalentOption identifier="trickledown"/>
+            <!-- XO Talents -->
                 <!-- TODO -->
                 <TalentOption identifier="munitionsexpertise" />
                 <!-- TODO -->
                 <TalentOption identifier="gunsmith" />
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="family"/>
                 <!-- TODO merge -->
-                <TalentOption identifier="highlydecoratedindividual" />
+            <!-- CO Talents -->
+                <TalentOption identifier="family"/>
+            <!-- XO Talents -->
                 <!-- trusted capitan but with small bonuses like euiwalent to secuirity tree -->
+                <TalentOption identifier="highlydecoratedindividual" />
             </TalentOptions>
             <!-- <TalentOptions>
                 <TalentOption identifier="enchance2" />
@@ -125,11 +133,17 @@
         <!--  Mirrorring capitan 3rd tree, but weaker -->
         <SubTree identifier="Defender" type="specialization" requires="captain_primary" blocks="gunslinger,skipper">
             <TalentOptions>
-                <TalentOption identifier="commendations"/>
                 <!-- TODO merge -->
+            <!-- CO Talents -->
+                <TalentOption identifier="commendations"/>
+            <!-- XO Talents -->
+                <!-- TODO merge -->
+                <!-- Modify it so its unique to XO -->
                 <TalentOption identifier="commander" />
             </TalentOptions>
             <TalentOptions>
+                <!-- TODO merge -->
+            <!-- CO Talents -->
                 <TalentOption identifier="yourreputation"/>
                 <ShowCaseTalent identifier="affiliation">
                     <TalentOption identifier="affiliation_coalition"/>
@@ -137,19 +151,33 @@
                     <TalentOption identifier="affiliation_huskcult"/>
                     <TalentOption identifier="affiliation_clowns"/>
                 </ShowCaseTalent>
+            <!-- XO Talents -->
+                <!-- TODO merge -->
+                <!-- Modify it so its unique to XO -->
                 <TalentOption identifier="stonewall" />
+                <!-- TODO merge -->
                 <!-- Modify it so its unique to XO -->
                 <TalentOption identifier="notasingleonegetsthough" />
             </TalentOptions>
             <TalentOptions>
+                <!-- TODO merge -->
+            <!-- CO Talents -->
                 <TalentOption identifier="campaigning"/>
                 <TalentOption identifier="networking"/>
+            <!-- XO Talents -->
+                <!-- TODO merge -->
+                <!-- Modify it so its unique to XO -->
                 <TalentOption identifier="unity" />
+                <!-- TODO merge -->
+                <!-- Modify it so its unique to XO -->
                 <!-- when you are low on hp team gets buff	to speed and vigor like-->
                 <TalentOption identifier="firstaidtraining" />
             </TalentOptions>
             <TalentOptions>
+            <!-- CO Talents -->
                 <TalentOption identifier="figurehead"/>
+             <!-- XO Talents -->
+                <!-- TODO merge -->
                 <TalentOption identifier="capitansshield" />
                 <!-- get an all round diving suit, and small defence buff when iside the submarine, and dng buff when outside -->
             </TalentOptions>
@@ -182,26 +210,42 @@
         <SubTree identifier="gunslinger" type="specialization" requires="captain_primary" blocks="skipper,politician">
         <!-- buffs to diving team and offensive when in water, diving suit upgrade sonar beacon and sonar integration-->
             <TalentOptions>
+                <!-- TODO merge -->
+            <!-- CO Talents -->
                 <TalentOption identifier="quickdraw"/>
+            <!-- CAP Talents -->
+                <!-- TODO merge -->
+                <!-- Modify it so its unique to NAV -->
                 <TalentOption identifier="handsomestranger" />
                 <!-- Buffs depended on players inside of game to you, Offense -->
             </TalentOptions>
             <TalentOptions>
+                <!-- TODO merge -->
+            <!-- CO Talents -->
                 <TalentOption identifier="lonewolf"/>
                 <TalentOption identifier="deputy"/>
-                <TalentOption identifier="tumble" />
+            <!-- CAP Talents -->
+                <!-- TODO merge -->
+                <!-- Modify it so its unique to NAV -->
                 <!-- Changed to give you an defence buff 75% of defence buff -->
+                <TalentOption identifier="tumble" />
                 <TalentOption identifier="quickdraw" />
             </TalentOptions>
             <TalentOptions>
+                <!-- TODO merge -->
+            <!-- CO Talents -->
                 <TalentOption identifier="drunkensailor"/>
                 <TalentOption identifier="sailorwithnoname" />
                 <TalentOption identifier="drunkensailor" />
+            <!-- CAP Talents -->
             </TalentOptions>
             <TalentOptions>
+                <!-- TODO merge -->
+            <!-- CO Talents -->
                 <TalentOption identifier="bigguns"/>
-                <TalentOption identifier="masternavigator" />
+            <!-- CAP Talents -->
                 <!-- every time you get in new location, gain +1 to all skills, bonus lost on death -->
+                <TalentOption identifier="masternavigator" />
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="enchance2" />
@@ -894,22 +938,6 @@
                 <!-- spicers from genes+ -->
             </TalentOptions>
         </SubTree>
-        <SubTree identifier="clown">
-            <TalentOptions>
-                <TalentOption identifier="enrollintoclowncollege" />
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="waterprankster" />
-                <TalentOption identifier="inspiringtunes" />
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="psychoclown" />
-                <TalentOption identifier="slapstickexpert" />
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="truepotential" />
-            </TalentOptions>
-        </SubTree>
         <SubTree identifier="grayshirt" type="specialization" requires="assistant_primary" blocks="apprentice,clown">
             <TalentOptions>
                 <TalentOption identifier="thewaitinglist"/>
@@ -945,21 +973,6 @@
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="graduationceremony"/>
-            </TalentOptions>
-        </SubTree>
-        <SubTree identifier="clown" type="specialization" requires="assistant_primary" blocks="grayshirt,apprentice">
-            <TalentOptions>
-                <TalentOption identifier="enrollintoclowncollege"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="waterprankster"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="psychoclown"/>
-                <TalentOption identifier="chonkyhonks"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="truepotential"/>
             </TalentOptions>
         </SubTree>
     </TalentTree>

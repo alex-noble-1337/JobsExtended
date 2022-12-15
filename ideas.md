@@ -1,5 +1,6 @@
 LUA
 	- Adaptive limits on classes? Except co, based on amout of people in the lobby
+	- When you have quickdraw, creaft an item, holster that gives you gain an ability to press q and draw a waepon from your outfit
 
 
 Make every class have their version of nuclear pda - That should make people roles more enagaging as they dont need to be in one place (cuz being in one place is not fun, and games are about fun).
