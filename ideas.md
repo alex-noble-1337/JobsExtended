@@ -2,13 +2,12 @@ LUA
 	- Adaptive limits on classes? Except co, based on amout of people in the lobby
 	- When you have quickdraw, creaft an item, holster that gives you gain an ability to press q and draw a waepon from your outfit
 
+...or make transformers as a craftable item!
 
 Make every class have their version of nuclear pda - That should make people roles more enagaging as they dont need to be in one place (cuz being in one place is not fun, and games are about fun).
 Make Navigator have ist own version just for shuttle.
 Make every class type (capitan-like, engi role) have their own diving suit and weapons, both mele and ranged (engineers should have only big ass crowbar dmg, freeman like). 
 The Exeption is "Commanding Classes", Witch should have its own versions of them, a little more powerfull, but MUCH more expenisve, but only wealded by them. Diving suits should be normal.
-
-new gimmick of "ruling" classes will be aoe buffs (mabe without HoS, cuz idk if i can make it specify targets).
 TREE
 	one  two  one - left and right should be for pda, middle one should have some kind of choice, buff yourself, or be more better for your team
 	two  one  two - Unlock an small recipie and then offensive or defensive choices on left and right, buffing team and yourself very slightly)
@@ -21,17 +20,10 @@ TREE
 		buffs to your team and xp. Capitan like roles should have medals tree instead. Exception is CO
 	3rd column - 
 		upgrades to health, and defence scaled to your skill. Exceptions are "Working" classes, engineers and mechanics.
-Quatermaster
-	In crysis should function excaly as mechanic but without repair bonuses
-	he should have all of production perks from vanilla
-	1st tree - 
-		Ammo restock and crafting
-	2nd tree - 
-		tinkerer and hull sealer
-	3rd tree - 
-		Resuplyer? making misc stuff like oxygen and etc
-	Tree that allows you to create reciepies for class items for a price
+
+new gimmick of "ruling" classes will be aoe buffs (mabe without HoS, cuz idk if i can make it specify targets).
 Navigator
+	Navigator - small, but combat and gun fire rate oriented
 	1st tree
 		Diver offensive tree
 	2nd tree
@@ -54,6 +46,17 @@ Navigator
 	Remote Navigation Controller; remotely controls navigation terminal OR Shuttle Navigation Controller
 	Trustbuilding; while in a shuttle gain passive buff? OR 
 	Helmsman
+Quatermaster
+	In crysis should function excaly as mechanic but without repair bonuses
+	he should have all of production perks from vanilla
+	1st tree - 
+		Ammo restock and crafting
+	2nd tree - 
+		tinkerer and hull sealer
+	3rd tree - 
+		Resuplyer? making misc stuff like oxygen and etc
+	Tree that allows you to create reciepies for class items for a price
+
 Diver
 	Balista gun  - better hapoon gun. - 4st offenive tier, class weapon. added velocity
 	pack a punch
@@ -112,7 +115,6 @@ RobFather#0805: to take it one step further, imagine repairs requiring more tool
 4th talent of a tree gives specialization token, that gives you 1 of 5 talents in line to vanilla skills. then on second one you can get 2nd tier of skill you picked or 1st tier.
 add lua inegration, more skills per class engineer gets no max on engineering skill
 CO - small buffs, but spanning entire sub
-Navigator - small, but combat and gun fire rate oriented
 XO - same as CO but smaller
 COB - small repair oriented
 CMO - small buffs to injecting (?)

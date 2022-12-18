@@ -54,9 +54,9 @@
         -->
         <!-- Bonuses instead of pistols, smaller bouses to heavy guns, with small aoe -->
         <SubTree identifier="Lancer" type="specialization" requires="captain_primary" blocks="skipper,politician">
+            <!-- TODO change bonuses to be appliccable to all heavy weapons -->
             <TalentOptions>
-            <!-- XO Talents -->
-                <!-- TODO Description
+                <!-- TODO Description Icons
                      On attack with grenede get +40% damage on an quckdraw aginst an enemy
                      When you gain weapons skill gain helm skill
                      When you gain helm skill gain weapons skill
@@ -66,40 +66,39 @@
                 <TalentOption identifier="firststrike" />
             </TalentOptions>
             <TalentOptions>
-            <!-- CO Talents -->
-                <!-- <TalentOption identifier="lonewolf"/> -->
-                <!-- <TalentOption identifier="deputy"/> -->
-            <!-- XO Talents -->
                 <!-- nomercy+lonewolf 
-                     TODO Description
-                     1/6 Chance of getting twice the damage
+                     TODO Description Icons
+                     1/6 Chance of getting twice the damage while using greneades 
                      TODO Lua? 1/6 chance of not consuming ammunition
                      Gain +50% money and expirence on Pirate,Abandonedoutpost
-                     gain a weaker version of lonewolf buff
+                     gain a weaker version of lonewolf buff 50% weaker
                 -->
                 <TalentOption identifier="Big_Functional_Gun" />
                 <!-- bythebook-deputy
-                     TODO Description
+                     TODO Description Icons
                      get bythebook effect
                      gain weapons_skill_stun_-stun_damage_reistance_buff around you
-                     gain a weaker version of weaker-deputy buff applicable to all characters
+                     gain a weaker version of weaker-deputy buff applicable to all characters 50% weaker
                 -->
                 <TalentOption identifier="bythebook-deputy" />
             </TalentOptions>
             <TalentOptions>
-            <!-- CO Talents -->
-                <!-- <TalentOption identifier="drunkensailor"/> -->
-            <!-- XO Talents -->
-                <!-- TODO Exists -->
-                <!-- tumble but 5% grenade dmg increase -->
+                <!-- weaker tumble-drunkensailor-steadytunes
+                     TODO Description Icons
+                     get weaker tumble-drunkensailor-steadytunes effect
+                     tumble buffs grenades +80%
+                -->
                 <TalentOption identifier="evasion" />
             </TalentOptions>
             <TalentOptions>
-            <!-- CO Talents -->
-                <!-- <TalentOption identifier="bigguns"/> -->
-            <!-- XO Talents -->
-                <!-- TODO Exists -->
-                <!-- gain bonus to grenades change to unlock rotary grenade laucher -->
+                <!-- weaker tumble-drunkensailor-steadytunes
+                     TODO Description Icons
+                     gain +100% buff to damage aginst enemies while using greneades 
+                     tumble buffs grenades +80%
+		             <AddedRecipe itemidentifier="rotarygrenedelaucher-blueprint"/>Description
+		             <AddedRecipe itemidentifier="handcannon-blueprint"/>
+		             <AddedRecipe itemidentifier="handcannonround-blueprint"/>
+                -->
                 <TalentOption identifier="capitanssword" />
             </TalentOptions>
             <!-- <TalentOptions>
@@ -109,40 +108,58 @@
         <!--  Mirrorring capitan 2nd tree, but weaker -->
         <SubTree identifier="Second_In_Command" type="specialization" requires="captain_primary" blocks="gunslinger,politician">
             <TalentOptions>
-            <!-- CO Talents -->
-                <TalentOption identifier="leadingbyexample"/>
-            <!-- XO Talents -->
-                <!-- TODO -->
-                <!-- close dmg buff, when close to cap -->
+                <!-- TODO Description Icons 
+                     if no crew has died, close fighing buff, weapon skill and movement speed 
+                     + 15% money and expirence from nest and monster missions 
+                     TODO one more option -->
                 <TalentOption identifier="frenzy" />
-                <!-- TODO -->
-                <!-- close defence buff, when close to cap -->
+                <!-- TODO Description Icons
+                     if no crew has died close repair and endurance buff, RepairSpeed RepairToolStructureRepairMultiplier PoisonMultiplier DebuffDurationMultiplier 
+                     + 15% money and expirence fromOutpostDestroy,OutpostRescue,Mineral,Escort
+                     TODO one more option -->
                 <TalentOption identifier="takeabullet" />
             </TalentOptions>
             <TalentOptions>
-            <!-- CO Talents -->
-                <TalentOption identifier="helmsman"/>
-            <!-- XO Talents -->
-                <!-- TODO Exists -->
-                <TalentOption identifier="targetdummytalent"/>
-            </TalentOptions>
-            <TalentOptions>
-            <!-- CO Talents -->
-                <TalentOption identifier="inspiringpresence"/>
-                <TalentOption identifier="trickledown"/>
-            <!-- XO Talents -->
-                <!-- TODO -->
-                <TalentOption identifier="munitionsexpertise" />
-                <!-- TODO -->
-                <TalentOption identifier="gunsmith" />
+                <!-- TODO Description Icons
+                     Gain +5% bonus to performance of all machines on your submarine
+                     Choose an specialization (apprenticeship) (for filling vaccant roles)
+                     (TODO compatibility with neurotrauma) Potency of medical items applied to you is increased (+75%)
+                -->
+                <!-- TODO check if ShowCaseTalent still applies bonuses of talent used to pop up menu -->
+                <ShowCaseTalent identifier="versitile">
+                    <!-- TODO add all your classes here -->
+                    <TalentOption identifier="versitile_doctor"/>
+                    <TalentOption identifier="versitile_security"/>
+                    <TalentOption identifier="versitile_mechanic"/>
+                    <TalentOption identifier="versitile_engineer"/>
+                </ShowCaseTalent>
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO merge -->
-            <!-- CO Talents -->
-                <TalentOption identifier="family"/>
-            <!-- XO Talents Exists -->
-                <!-- trusted capitan but with small bonuses like euiwalent to secuirity tree -->
-                <TalentOption identifier="highlydecoratedindividual" />
+                <!-- CO Talents -->
+                <TalentOption identifier="yourreputation"/>
+                <ShowCaseTalent identifier="affiliation">
+                    <TalentOption identifier="affiliation_coalition"/>
+                    <TalentOption identifier="affiliation_separatists"/>
+                    <TalentOption identifier="affiliation_huskcult"/>
+                    <TalentOption identifier="affiliation_clowns"/>
+                </ShowCaseTalent>
+                <!-- XO Talents -->
+                <!-- TODO merge -->
+                <!-- Modify it so its unique to XO -->
+                <TalentOption identifier="ironcurtain" />
+                <!-- TODO merge -->
+                <!-- Modify it so its unique to XO -->
+                <TalentOption identifier="notasingleonegetsthough" />
+            </TalentOptions>
+            <TalentOptions>
+                <!-- XO Talents Exists -->
+                <!-- TODO Description Icons 
+                     Upgrade frenzy or takeabullet *2 effect strenghths
+                     dish out more stun +25% more
+                     25% defence buff when iside the submarine, and 25% dng buff when outside 
+                     get an all round diving suit (SERE Diving suit) -->
+                <TalentOption identifier="capitansshield" />
             </TalentOptions>
             <!-- <TalentOptions>
                 <TalentOption identifier="enchance2" />
@@ -151,53 +168,56 @@
         <!--  Mirrorring capitan 3rd tree, but weaker -->
         <SubTree identifier="Defender" type="specialization" requires="captain_primary" blocks="gunslinger,skipper">
             <TalentOptions>
-                <!-- TODO merge -->
-            <!-- CO Talents -->
-                <TalentOption identifier="commendations"/>
-            <!-- XO Talents -->
-                <!-- TODO merge -->
-                <!-- Modify it so its unique to XO -->
-                <TalentOption identifier="commander" />
-            </TalentOptions>
-            <TalentOptions>
-                <!-- TODO merge -->
-            <!-- CO Talents -->
-                <TalentOption identifier="yourreputation"/>
-                <ShowCaseTalent identifier="affiliation">
-                    <TalentOption identifier="affiliation_coalition"/>
-                    <TalentOption identifier="affiliation_separatists"/>
-                    <TalentOption identifier="affiliation_huskcult"/>
-                    <TalentOption identifier="affiliation_clowns"/>
+                <!-- TODO Description Icons 
+                    skill gain speed, skill buff, xp buff + one class specific (medical potency, defence buff etc) to departament or much smaller buff to all 
+                    medical: MedicalSkillBonus 20, MedicalSkillGainSpeed +50%, ExperienceGainMultiplier +50%, MedicalItemApplyingMultiplier +20% 
+                    security: WeaponsSkillBonus 20, WeaponsSkillGainSpeed +50%, ExperienceGainMultiplier +50%, AttackMultiplier +20% 
+                    engineering: (Electrical and Mechanical)SkillBonus 20, (Electrical and Mechanical)SkillGainSpeed +50%, ExperienceGainMultiplier +50%, RepairToolStructureRepairMultiplier +20%, RepairSpeed +20% -->
+                <ShowCaseTalent identifier="departamentsupport">
+                    <TalentOption identifier="departamentsupport_medical"/>
+                    <TalentOption identifier="departamentsupport_security"/>
+                    <TalentOption identifier="departamentsupport_engineering"/>
                 </ShowCaseTalent>
-            <!-- XO Talents -->
-                <!-- TODO merge -->
-                <!-- Modify it so its unique to XO -->
-                <TalentOption identifier="stonewall" />
-                <!-- TODO merge -->
-                <!-- Modify it so its unique to XO -->
-                <TalentOption identifier="notasingleonegetsthough" />
+                <!-- TODO Description Icons 
+                    to all classes: 
+                        all skill gain speed + 10%, skill buff +5 to all, xp buff +10%, 
+                        MedicalItemApplyingMultiplier +5%, 
+                        AttackMultiplier +5%, 
+                        RepairToolStructureRepairMultiplier +5%, RepairSpeed +5% -->
+                <TalentOption identifier="thefivepillars" />
             </TalentOptions>
             <TalentOptions>
-                <!-- TODO merge -->
-            <!-- CO Talents -->
-                <TalentOption identifier="campaigning"/>
-                <TalentOption identifier="networking"/>
-            <!-- XO Talents -->
-                <!-- TODO merge -->
-                <!-- Modify it so its unique to XO -->
-                <TalentOption identifier="unity" />
-                <!-- TODO merge -->
-                <!-- Modify it so its unique to XO -->
-                <!-- when you are low on hp team gets buff	to speed and vigor like-->
-                <TalentOption identifier="firstaidtraining" />
+                <!-- TODO Description Icons 
+                    aoe buff WeaponsSkillBonus 10, RepairToolStructureRepairMultiplier 12.5, RepairSpeed 12.5
+                        twice when commanding somebody
+                    OnAllyGainSkillPoint gain 10 xp
+                    OnAnyMissionCompleted gain coalition commederation
+                        if you have highlydecoratedindividual changes to medal -->
+                <TalentOption identifier="fieldcommander" />
             </TalentOptions>
             <TalentOptions>
-            <!-- CO Talents -->
-                <TalentOption identifier="figurehead"/>
-             <!-- XO Talents Exists -->
-                <!-- TODO merge -->
-                <TalentOption identifier="capitansshield" />
-                <!-- get an all round diving suit, and small defence buff when iside the submarine, and dng buff when outside -->
+                <!-- TODO Description Icons 
+                    ...
+                     Upgrade departamentsupport if you at OR Apply the same departamentsupport -->
+                    <ShowCaseTalent identifier="departamentsupport_second">
+                        <TalentOption identifier="departamentsupport_medical_second"/>
+                        <TalentOption identifier="departamentsupport_security_second"/>
+                        <TalentOption identifier="departamentsupport_engineering_second"/>
+                    </ShowCaseTalent>
+                <!-- TODO Description Icons
+                    ...
+                    Upgrade thefivepillars if you already have thefivepillars OR Apply the same thefivepillars -->
+                    <TalentOption identifier="thefivepillars_second" />
+            </TalentOptions>
+            <TalentOptions>
+                <!-- XO Talents Exists -->
+                <!-- TODO Description Icons 
+                     OnAnyMissionCompleted gain medal instead of commedareation
+                        give instant 5 lvl when you give somebody a medal
+                     give yourself 275 xp 
+                     gain max of 55% increase of MovementSpeed, MeleeAttackSpeed, RangedAttackSpeed based on weapons skill
+                      -->
+                <TalentOption identifier="highlydecoratedindividual" />
             </TalentOptions>
             <!-- <TalentOptions>
                 <TalentOption identifier="enchance3" />
@@ -205,7 +225,7 @@
         </SubTree>
         <!--  Mirrorring capitan 4th tree, but weaker -->
     </TalentTree>
-    <!-- Navigator Multiclass driving the submarine, gunnery, coordinating dive teams, weak at shooting -->
+    <!-- Navigator Multiclass -->
     <TalentTree jobidentifier="navigator">
         <SubTree identifier="captain_primary" nameidentifier="talenttree.primary" type="primary">
             <TalentOptions maxchosentalents="2">
@@ -225,22 +245,21 @@
                 <TalentOption identifier="steadytune" />
             </TalentOptions>
         </SubTree>
+        <!-- offensive buffs, gunnery, coordinating dive teams, weak at shooting -->
         <SubTree identifier="gunslinger" type="specialization" requires="captain_primary" blocks="skipper,politician">
-        <!-- buffs to diving team and offensive when in water, diving suit upgrade sonar beacon and sonar integration-->
             <TalentOptions>
                 <!-- TODO merge -->
                 <TalentOption identifier="quickdraw"/>
-            <!-- NAV Talents -->
-                <!-- TODO merge  -->
-                <!-- Modify it so its unique to NAV -->
-                <!-- Buffs depended on players inside of game to you, Offense -->
-                <TalentOption identifier="handsomestranger" />
+                <!-- NAV Talents -->
+                <!-- TODO Description make it better?
+                      -->
+                <TalentOption identifier="stranger_with_iron" />
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO merge -->
                 <TalentOption identifier="lonewolf"/>
                 <TalentOption identifier="deputy"/>
-            <!-- NAV Talents -->
+                <!-- NAV Talents -->
                 <!-- TODO merge -->
                 <!-- Modify it so its unique to NAV -->
                 <!-- Changed to give you an defence buff 75% of defence buff -->
@@ -252,12 +271,12 @@
                 <TalentOption identifier="drunkensailor"/>
                 <TalentOption identifier="sailorwithnoname" />
                 <TalentOption identifier="drunkensailor" />
-            <!-- NAV Talents -->
+                <!-- NAV Talents -->
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO merge -->
                 <TalentOption identifier="bigguns"/>
-            <!-- NAV Talents -->
+                <!-- NAV Talents -->
                 <!-- TODO merge Exists -->
                 <!-- every time you get in new location, gain +1 to all skills, bonus lost on death -->
                 <TalentOption identifier="masternavigator" />
@@ -266,17 +285,18 @@
                 <TalentOption identifier="enchance2" />
             </TalentOptions> -->
         </SubTree>
+        <!-- self buffs and utility items, driving the submarine -->
         <SubTree identifier="DiverTraining" type="specialization" requires="captain_primary" blocks="gunslinger,politician">
             <TalentOptions>
                 <TalentOption identifier="leadingbyexample"/>
-            <!-- NAV Talents -->
+                <!-- NAV Talents -->
                 <!-- polarized lens, duel spec ops ability-->
                 <!-- TODO -->
                 <TalentOption identifier="experimentaldivinggear" />
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="helmsman"/>
-            <!-- NAV Talents -->
+                <!-- NAV Talents -->
                 <!-- gain buff while in shuttle, emit defence buff while outside -->
                 <!-- TODO -->
                 <TalentOption identifier="shuttlecapitan" />
@@ -287,22 +307,23 @@
             <TalentOptions>
                 <TalentOption identifier="inspiringpresence"/>
                 <TalentOption identifier="trickledown"/>
-            <!-- NAV Talents -->
+                <!-- NAV Talents -->
                 <!-- TODO -->
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="family"/>
-            <!-- NAV Talents -->
+                <!-- NAV Talents -->
                 <!-- every time you get in new location, gain +1 to all skills, bonus lost on death -->
                 <!-- TODO Exists -->
                 <TalentOption identifier="masternavigator" />
             </TalentOptions>
         </SubTree>
+        <!-- defensive buffs, coordinating dive teams -->
         <SubTree identifier="Navigator" type="specialization" requires="captain_primary" blocks="gunslinger,skipper">
             <TalentOptions>
                 <TalentOption identifier="commendations"/>
                 <TalentOption identifier="physicalconditioning" />
-            <!-- NAV Talents -->
+                <!-- NAV Talents -->
                 <!-- need that one but weaker, no one dies, and your mission is alien ruin, nest, get 20xp -->
             </TalentOptions>
             <TalentOptions>
@@ -313,7 +334,7 @@
                     <TalentOption identifier="affiliation_huskcult"/>
                     <TalentOption identifier="affiliation_clowns"/>
                 </ShowCaseTalent>
-            <!-- NAV Talents -->
+                <!-- NAV Talents -->
                 <!-- TODO Exists -->
                 <!-- give buff to manning the turet, weapons skill -->
                 <TalentOption identifier="targettingmatrix" />
@@ -323,7 +344,7 @@
             <TalentOptions>
                 <TalentOption identifier="campaigning"/>
                 <TalentOption identifier="networking"/>
-            <!-- NAV Talents -->
+                <!-- NAV Talents -->
                 <!-- TODO -->
                 <!-- gain defence buff to you and others small range while in water -->
                 <TalentOption identifier="spacialawarness" />
@@ -332,7 +353,7 @@
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="figurehead"/>
-            <!-- NAV Talents -->
+                <!-- NAV Talents -->
                 <!-- TODO -->
                 <!-- unique diving suit and space for an strafe like in specialist tree,  -->
                 <TalentOption identifier="navydiver" />
@@ -367,14 +388,14 @@
             <!-- Same as in normal security -->
             <TalentOptions>
                 <TalentOption identifier="defenceindepth" />
-            <!-- HOS Talents -->
+                <!-- HOS Talents -->
                 <!-- TODO -->
                 <TalentOption identifier="boardingparty"/>
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="beatcop" />
                 <TalentOption identifier="buccaneer" />
-            <!-- HOS Talents -->
+                <!-- HOS Talents -->
                 <!-- TODO -->
                 <TalentOption identifier="scavenger"/>
                 <TalentOption identifier="slayer"/>
@@ -382,14 +403,14 @@
             <TalentOptions>
                 <TalentOption identifier="nomercy" />
                 <TalentOption identifier="bythebook" />
-            <!-- HOS Talents -->
+                <!-- HOS Talents -->
                 <!-- TODO -->
                 <TalentOption identifier="easyturtle"/>
                 <TalentOption identifier="daringdolphin"/>
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="implacable" />
-            <!-- HOS Talents -->
+                <!-- HOS Talents -->
                 <!-- TODO -->
                 <TalentOption identifier="specops"/>
             </TalentOptions>
@@ -398,18 +419,18 @@
             </TalentOptions> -->
         </SubTree>
         <SubTree identifier="HeadOfSecurity" type="specialization" requires="security_primary" blocks="frogman,gunner">
-        <!-- Unique, should focus on buffs to the team -->
+            <!-- Unique, should focus on buffs to the team -->
             <TalentOptions>
                 <TalentOption identifier="enforcer" />
                 <TalentOption identifier="bootcamp" />
-            <!-- HOS Talents -->
+                <!-- HOS Talents -->
                 <!-- TODO -->
                 <TalentOption identifier="pacificationkit"/>
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="beatcop"/>
                 <TalentOption identifier="stonewall"/>
-            <!-- HOS Talents -->
+                <!-- HOS Talents -->
                 <!-- ability to call an target dummy, get skill book witch you can only use on teemates, and you get 25% weapon skill when you level them up -->
                 <!-- TODO -->
                 <TalentOption identifier="targetdummy" />
@@ -419,7 +440,7 @@
                 <TalentOption identifier="munitionsexpertise" />
                 <!-- TODO -->
                 <TalentOption identifier="gunsmith" />
-            <!-- HOS Talents -->
+                <!-- HOS Talents -->
                 <!-- TODO -->
                 <TalentOption identifier="crustyseaman"/>
                 <TalentOption identifier="inordinateexsanguination"/>
@@ -427,7 +448,7 @@
             <TalentOptions>
                 <TalentOption identifier="implacable"/>
                 <TalentOption identifier="weaponsmaitnence" />
-            <!-- HOS Talents -->
+                <!-- HOS Talents -->
                 <!-- TODO -->
             </TalentOptions>
             <!-- <TalentOptions>
@@ -435,7 +456,7 @@
             </TalentOptions> -->
         </SubTree>
         <SubTree identifier="Defender" type="specialization" requires="security_primary" blocks="frogman,enforcer">
-        <!-- Same as in normal security -->
+            <!-- Same as in normal security -->
             <TalentOptions>
                 <TalentOption identifier="rifleman"/>
                 <TalentOption identifier="justascratch" />
@@ -482,46 +503,57 @@
             </TalentOptions>
         </SubTree>
         <!-- offensive tree, going out of the submarine and fight in water, upgrade pucs with fins same as slipsuit -->
-        <SubTree identifier="Frogman" type="specialization" requires="security_primary" blocks="enforcer,gunner">
+        <SubTree identifier="whaler" type="specialization" requires="security_primary" blocks="enforcer,gunner">
             <TalentOptions>
                 <TalentOption identifier="boardingparty"/>
                 <TalentOption identifier="watercombatexpert" />
                 <!-- gain more hapoons when harpoon crafting / dumb TODO, add 15xp from killing a monster -->
+                <TalentOption identifier="seadogspirit" />
+                <TalentOption identifier="sealeg" />
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="scavenger"/>
                 <TalentOption identifier="slayer"/>
                 <TalentOption identifier="personalizedequipment" />
                 <TalentOption identifier="buccaneer" />
+                <TalentOption identifier="improvisedutilityharpoons" />
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="easyturtle"/>
                 <TalentOption identifier="daringdolphin"/>
                 <TalentOption identifier="deepseaslayer" />
                 <TalentOption identifier="watercqc" />
+                <TalentOption identifier="buccaneer" />
+                <TalentOption identifier="masterworkexperimentalharpoons" />
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="specops"/>
                 <TalentOption identifier="warlord" />
+                <TalentOption identifier="baneofthecryingseals" />
+                <TalentOption identifier="deadmanwalking" />
                 <!-- Add big ass crossbow here -->
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="enchance1" />
             </TalentOptions>
         </SubTree>
-        <SubTree identifier="Salvor" type="specialization" requires="security_primary" blocks="frogman,gunner">
+        <SubTree identifier="frogman" type="specialization" requires="security_primary" blocks="frogman,gunner">
             <TalentOptions>
                 <TalentOption identifier="pacificationkit"/>
                 <TalentOption identifier="miner" />
                 <!-- 5 xp from mining a mineral -->
                 <TalentOption identifier="scrounger" />
                 <!-- 5 xp from opening a container (already in place) -->
+                <TalentOption identifier="thickblood" />
+                <TalentOption identifier="sppschematics" />
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="beatcop"/>
                 <TalentOption identifier="stonewall"/>
                 <TalentOption identifier="deepseasurvivalguide" />
                 <!-- same as a book talent, but with givning a flares every round-->
+                <TalentOption identifier="pxschematics" />
+                <TalentOption identifier="murkywaters" />
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="crustyseaman"/>
@@ -534,9 +566,13 @@
                 <TalentOption identifier="implacable"/>
                 <TalentOption identifier="prolongedeuropeanoperations" />
                 <!-- Unlock O2 backpack, and rebreather from ek -->
+                <TalentOption identifier="underwaterdemolition" />
+                <TalentOption identifier="commando" />
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="enchance2" />
+                <TalentOption identifier="marinerecon" />
+                <TalentOption identifier="combatdiver" />
             </TalentOptions>
         </SubTree>
         <SubTree identifier="Specialist" type="specialization" requires="security_primary" blocks="frogman,enforcer">
@@ -544,6 +580,8 @@
                 <TalentOption identifier="rifleman"/>
                 <TalentOption identifier="physicalconditioning" />
                 <!-- physicalconditioning, add 20 xp from nobody died if doing a mission wreck salvage, ruin, or cave -->
+                <TalentOption identifier="divinggoodies" />
+                <TalentOption identifier="onewithwater" />
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="tandemfire"/>
@@ -551,17 +589,22 @@
                 <TalentOption identifier="tough" />
                 <!-- vigor when hurt for a short time -->
                 <TalentOption identifier="stonewall" />
+                <TalentOption identifier="strongcurrents" />
+                <TalentOption identifier="scavenger" />
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="gunrunner"/>
                 <TalentOption identifier="extrapowder"/>
                 <TalentOption identifier="justascratch" />
                 <TalentOption identifier="collegeathletics" />
+                <TalentOption identifier="bangstickschematics" />
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="warlord"/>
                 <TalentOption identifier="navydiver" />
                 <!-- navydiver, add water dash -->
+                <TalentOption identifier="dualspecops" />
+                <TalentOption identifier="divinginstructor" />
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="enchance3" />
