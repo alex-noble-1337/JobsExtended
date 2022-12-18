@@ -489,7 +489,7 @@
 		</Description>
 		<Description tag="talentdescription.additionalskill">
 			<Replace tag="[amount]" value="20" color="gui.green"/>
-			<Replace tag="[stattype]" value="stattypenames.weaponsskillbonus" color="gui.orange"/>
+			<Replace tag="[stattype]" value="stattypenames.WeaponsSkillBonus" color="gui.orange"/>
 		</Description>
 		<AbilityGroupEffect abilityeffecttype="None">
 			<Abilities>
@@ -610,7 +610,7 @@
     </Description>
     <Description tag="talentdescription.additionalskill">
       <Replace tag="[amount]" value="20" color="gui.green"/>
-      <Replace tag="[stattype]" value="stattypenames.weaponsskillbonus" color="gui.orange"/>
+      <Replace tag="[stattype]" value="stattypenames.WeaponsSkillBonus" color="gui.orange"/>
     </Description> -->
 		<AbilityGroupInterval interval="1.0">
 			<Conditions>
@@ -881,7 +881,7 @@
     </Description>
     <Description tag="talentdescription.additionalskill">
       <Replace tag="[amount]" value="20" color="gui.green"/>
-      <Replace tag="[stattype]" value="stattypenames.weaponsskillbonus" color="gui.orange"/>
+      <Replace tag="[stattype]" value="stattypenames.WeaponsSkillBonus" color="gui.orange"/>
     </Description> -->
 		<AbilityGroupInterval interval="1.0">
 			<Conditions>

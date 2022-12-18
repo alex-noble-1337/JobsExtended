@@ -217,7 +217,7 @@
         </AbilityGroupInterval>
     </Talent>
     <!-- <Override> -->
-        <Talent identifier="drunkensailor">
+        <Talent identifier="drunkensailor_mod">
             <Description tag="talentdescription.drunkensailor">
                 <Replace tag="[stunresistance]" value="75" color="gui.green"/>
             </Description>
@@ -337,7 +337,7 @@
         </Talent>
 
         <!-- random chance for eveyone to not consume their ammuniton -->
-        <Talent identifier="bigguns">
+        <Talent identifier="bigguns_mod">
             <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="2,4" sheetelementsize="128,128"/>
             <Description tag="talentdescription.bigguns">
                 <Replace tag="[amount]" value="30" color="gui.green"/>
@@ -359,7 +359,7 @@
         </Talent>
     <!-- </override> -->
 
-    <Talent identifier="leadingbyexample">
+    <Talent identifier="leadingbyexample_mod">
         <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="1,5" sheetelementsize="128,128"/>
         <Description tag="talentdescription.leadingbyexample" />
         <Description tag="talentdescription.additionalstattype">
@@ -400,7 +400,7 @@
             </FallbackAbilities>
         </AbilityGroupInterval>
     </Talent>
-    <Talent identifier="helmsman">
+    <Talent identifier="helmsman_mod">
         <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,4" sheetelementsize="128,128"/>
         <Description tag="talentdescription.helmsman">
             <Replace tag="[amount]" value="30" color="gui.green"/>

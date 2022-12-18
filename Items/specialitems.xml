@@ -221,16 +221,16 @@
       <RequiredItem identifier="plastic" />
     </Fabricate>
 
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="0,192,64,64" />
-    <Sprite texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="0,384,112,64" depth="0.55" />
-    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="0,384,112,64" depth="0.83" />
+    <InventoryIcon texture="%ModDir%/Items/InventoryIcons.png" sourcerect="0,192,64,64" />
+    <Sprite texture="%ModDir%/Items/Weapons/weapons_ek.png" sourcerect="0,384,112,64" depth="0.55" />
+    <ContainedSprite name="Depth Fix" allowedcontainertags="weapons_cabinet" texture="%ModDir%/Items/Weapons/weapons_ek.png" sourcerect="0,384,112,64" depth="0.83" />
     <Body width="112" height="48" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="80,10" handle1="-25,-9" msg="ItemMsgPickUpSelect"/>
 
     <RangedWeapon barrelpos="54,22" spread="1" unskilledspread="20" reload="0.33" combatPriority="30" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-      <Sound file="Mods/EK Armory/Items/Weapons/ek_flaregun_mono.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Items/Weapons/ek_flaregun_mono.ogg" type="OnUse" range="3000" />
       <ParticleEmitter particle="ekmuzzleflameshotgun" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="ekmuzzlebreakshotgun" particleamount="1" velocitymin="0" velocitymax="0" />
       <StatusEffect type="OnUse">
@@ -281,8 +281,8 @@
       <RequiredItem identifier="flashpowder" mincondition="0.5" usecondition="true"/>
       <RequiredItem identifier="carbon" mincondition="0.5" usecondition="true"/>
     </Fabricate>
-    <InventoryIcon texture="Mods/EK Armory/Items/InventoryIcons.png" sourcerect="64,192,64,64" />
-    <Sprite texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="276,8,40,20" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/Items/InventoryIcons.png" sourcerect="64,192,64,64" />
+    <Sprite texture="%ModDir%/Items/Weapons/weapons_ek.png" sourcerect="276,8,40,20" depth="0.55" />
     <Body width="48" height="30" density="10.3" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" holdangle="70" aimable="false" msg="ItemMsgPickUpSelect" characterusable="false"/>
     <Projectile characterusable="false" launchimpulse="18.0">
@@ -314,7 +314,7 @@
     </Projectile>
 
     <LightComponent characterusable="false" LightColor="255,50,50,255" Flicker="0.5" range="2048" IsOn="false">
-      <LightTexture texture="Mods/EK Armory/Lights/pointlight_bright_hires.png" origin="0.5, 0.5" size="1.0,1.0" />
+      <LightTexture texture="%ModDir%/Lights/pointlight_bright_hires.png" origin="0.5, 0.5" size="1.0,1.0" />
       <sound file="Content/Items/Tools/FlareLoop.ogg" type="OnActive" range="2000.0" loop="true" />
       <StatusEffect type="OnActive" target="This" Condition="-1">
         <Conditional PhysicsBodyActive="eq true" />
@@ -335,14 +335,14 @@
       </StatusEffect>
     </LightComponent>
     <LightComponent characterusable="false" LightColor="255,50,50,255" Flicker="0.5" range="2048" IsOn="false">
-      <LightTexture texture="Mods/EK Armory/Lights/pointlight_bright_hires.png" origin="0.5, 0.5" size="1.0,1.0" />
+      <LightTexture texture="%ModDir%/Lights/pointlight_bright_hires.png" origin="0.5, 0.5" size="1.0,1.0" />
     </LightComponent>
   </Item>
 
 
   <Item name="ek_flareshell_effect" identifier="ek_flareshell_effect" tags="" sonarsize="5" hideinmenus="true">
     <AiTarget sightrange="1" soundrange="1" sonardisruption="0.4" static="True"/>
-    <Sprite texture="Mods/EK Armory/Items/Weapons/weapons_ek.png" sourcerect="0,0,1,1" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/weapons_ek.png" sourcerect="0,0,1,1" depth="0.55" origin="0.5,0.5" />
     <ItemComponent>
       <StatusEffect type="Always" target="This" disabledeltatime="true" delay="2" stackable="false">
         <Remove />

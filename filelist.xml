@@ -39,21 +39,21 @@
 
   <TalentTrees file="%ModDir%/Talents/TalentTrees-VanillaTemp.xml" />
   <TalentTrees file="%ModDir%/Talents/TalentTrees.xml" />
-  <TalentTrees file="%ModDir%/Talents/CO/COTalents.xml" />
-  <TalentTrees file="%ModDir%/Talents/CO/COAfflictions.xml" />
-  <TalentTrees file="%ModDir%/Talents/XO/XOTalents.xml" />
-  <TalentTrees file="%ModDir%/Talents/XO/XOAfflictions.xml" />
-  <TalentTrees file="%ModDir%/Talents/NAV/NAVTalents.xml" />
-  <TalentTrees file="%ModDir%/Talents/NAV/NAVAfflictions.xml" />
-  <TalentTrees file="%ModDir%/Talents/DIV/DIVTalents.xml" />
+  <Talents file="%ModDir%/Talents/CO/COTalents.xml" />
+  <Afflictions file="%ModDir%/Talents/CO/COAfflictions.xml" />
+  <Talents file="%ModDir%/Talents/XO/XOTalents.xml" />
+  <Afflictions file="%ModDir%/Talents/XO/XOAfflictions.xml" />
+  <Talents file="%ModDir%/Talents/NAV/NAVTalents.xml" />
+  <Afflictions file="%ModDir%/Talents/NAV/NAVAfflictions.xml" />
+  <Talents file="%ModDir%/Talents/DIV/DIVTalents.xml" />
   <!--  -->
-  <TalentTrees file="%ModDir%/Talents/QUA/QUATalents.xml" />
+  <Talents file="%ModDir%/Talents/QUA/QUATalents.xml" />
   <!--  -->
-  <TalentTrees file="%ModDir%/Talents/PAS/PASTalents.xml" />
+  <Talents file="%ModDir%/Talents/PAS/PASTalents.xml" />
   <!--  -->
-  <TalentTrees file="%ModDir%/Talents/CUS/CUSTalents.xml" />
+  <Talents file="%ModDir%/Talents/CUS/CUSTalents.xml" />
   <!--  -->
-  <TalentTrees file="%ModDir%/Talents/PRI/PRITalents.xml" />
+  <Talents file="%ModDir%/Talents/PRI/PRITalents.xml" />
   <!--  -->
 
 

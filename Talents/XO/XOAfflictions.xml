@@ -35,7 +35,7 @@
                 <Effect minstrength="0" maxstrength="1" resistancefor="damage" minresistance="0.25" maxresistance="0.25">
                 </Effect>
                 <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0.25" maxresistance="0.25">
-                        <StatValue stattype="WeaponSkillBonus" minvalue="25" maxvalue="25" />
+                        <StatValue stattype="WeaponsSkillBonus" minvalue="25" maxvalue="25" />
                 </Effect>
                 <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="5,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
         </Affliction>
@@ -130,7 +130,7 @@
                 <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="3,1" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
         </Affliction>
 
-        <Affliction identifier="stonewall" type="talentbuff" isbuff="true" hideiconafterdelay="true" limbspecific="false" maxstrength="4" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Affliction identifier="stonewall_mod" type="talentbuff" isbuff="true" hideiconafterdelay="true" limbspecific="false" maxstrength="4" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
                 <Effect minstrength="0" maxstrength="4" strengthchange="-1" resistancefor="damage,stun" minresistance="0.25" maxresistance="0.25"/>
                 <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="1,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
         </Affliction>

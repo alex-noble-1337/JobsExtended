@@ -59,13 +59,15 @@
         <TalentOption identifier="commendations"/>
       </TalentOptions>
       <TalentOptions>
-        <TalentOption identifier="yourreputation"/>
+        <!-- <TalentOption identifier="yourreputation"/>
         <ShowCaseTalent identifier="affiliation">
           <TalentOption identifier="affiliation_coalition"/>
           <TalentOption identifier="affiliation_separatists"/>
           <TalentOption identifier="affiliation_huskcult"/>
           <TalentOption identifier="affiliation_clowns"/>
-        </ShowCaseTalent>
+        </ShowCaseTalent> -->
+        <TalentOption identifier="effective_co"/>
+        <TalentOption identifier="positive_reinforcment"/>
       </TalentOptions>
       <TalentOptions>
         <TalentOption identifier="campaigning"/>
@@ -141,76 +143,6 @@
       </TalentOptions>
       <TalentOptions>
         <TalentOption identifier="warlord"/>
-      </TalentOptions>
-    </SubTree>
-  </TalentTree>
-  
-  <TalentTree jobidentifier="assistant">
-    <SubTree identifier="assistant_primary" nameidentifier="talenttree.primary" type="primary">
-      <TalentOptions requiredtalents="2" maxchosentalents="4">
-        <TalentOption identifier="playingcatchup"/>
-        <TalentOption identifier="mailman"/>
-        <TalentOption identifier="skedaddle"/>
-        <TalentOption identifier="crewlayabout"/>
-        <!--<TalentOption identifier="thearrival"/>-->
-      </TalentOptions>
-      <TalentOptions requiredtalents="2" maxchosentalents="4">
-        <TalentOption identifier="revengesquad"/>
-        <TalentOption identifier="inspiringtunes"/>
-        <TalentOption identifier="jackinthebox"/>
-        <TalentOption identifier="peerlearning"/>
-      </TalentOptions>
-    </SubTree>
-    <SubTree identifier="grayshirt" type="specialization" requires="assistant_primary" blocks="apprentice,clown">
-      <TalentOptions>
-        <TalentOption identifier="thewaitinglist"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="nonthreatening"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="insurancepolicy"/>
-        <TalentOption identifier="anappleaday"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="thefriendswemade"/>
-      </TalentOptions>
-    </SubTree>
-    <SubTree identifier="apprentice" type="specialization" requires="assistant_primary" blocks="grayshirt,clown">
-      <TalentOptions>
-        <ShowCaseTalent identifier="apprenticeship">
-          <TalentOption identifier="apprenticeship_captain"/>
-          <TalentOption identifier="apprenticeship_doctor"/>
-          <TalentOption identifier="apprenticeship_security"/>
-          <TalentOption identifier="apprenticeship_mechanic"/>
-          <TalentOption identifier="apprenticeship_engineer"/>
-        </ShowCaseTalent>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="logisticssystems"/>
-        <TalentOption identifier="journeyman"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="loyalassistant"/>
-        <TalentOption identifier="disloyalscum"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="graduationceremony"/>
-      </TalentOptions>
-    </SubTree>
-    <SubTree identifier="clown" type="specialization" requires="assistant_primary" blocks="grayshirt,apprentice">
-      <TalentOptions>
-        <TalentOption identifier="enrollintoclowncollege"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="waterprankster"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="psychoclown"/>
-        <TalentOption identifier="chonkyhonks"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="truepotential"/>
       </TalentOptions>
     </SubTree>
   </TalentTree>
