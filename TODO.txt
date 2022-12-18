@@ -16,3 +16,7 @@
 - backpack sucks change it
 - i just copied buck of files withouc changing anyhting (almost) bad!!!
 - Make Lua command to make someone prisioner
+
+- Make guitar holdable in invenory same as acodeon. For engi.
+
+- Jobs extended addons with mod that allowed reloading packages (Making so you dont need to install separate packages to patch 2 mods)

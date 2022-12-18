@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Talents>
 
-  <Talent identifier="stranger_with_iron">
+  <Talent identifier="luckystrike">
     <!-- <Description tag="talentdescription.quickdraw">
         <Replace tag="[seconds]" value="8" color="gui.green"/>
         <Replace tag="[damage]" value="25" color="gui.green"/>
@@ -199,10 +199,9 @@
     </AbilityGroupInterval>
   </Talent>
 
-	<Talent identifier="needalight"> 
-
+	<Talent identifier="targetingmatrixfocus_handheld"> 
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>    
-			<AbilityGroupEffect abilityeffecttype="OnCrewKillCharacter"> <!-- no way to check for affiction on target -->
+			<AbilityGroupEffect abilityeffecttype="OnCrewKillCharacter">
 				<Conditions>
 					<AbilityConditionCharacter targettype="Enemy" />
 				</Conditions>
@@ -216,14 +215,71 @@
 					</CharacterAbilityApplyStatusEffects>
 				</Abilities>
 			</AbilityGroupEffect>
-		<AddedRecipe itemidentifier="ek_flaregun"/>
-		<AddedRecipe itemidentifier="ek_flare_round"/>
+		<AddedRecipe itemidentifier="flare_revolverround-blueprint"/>
 	</Talent>
 
-
-
-  <Talent identifier="masternavigator"> 
+	<Talent identifier="targetingmatrixfocus_shipmounted"> 
+		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>    
+			<AbilityGroupEffect abilityeffecttype="OnCrewKillCharacter">
+				<Conditions>
+					<AbilityConditionCharacter targettype="Enemy" />
+				</Conditions>
+				<Abilities>
+					<CharacterAbilityApplyStatusEffects>
+						<StatusEffects>
+							<StatusEffect type="OnAbility" target="This">
+								<GiveExperience amount="15"/>
+							</StatusEffect>
+						</StatusEffects>
+					</CharacterAbilityApplyStatusEffects>
+				</Abilities>
+			</AbilityGroupEffect>
+		<AddedRecipe itemidentifier="flare_coilgunammobox-blueprint"/>
+	</Talent>
+  
+  <Talent identifier="lightup">
+    <!-- <Description tag="talentdescription.drunkensailor">
+        <Replace tag="[stunresistance]" value="75" color="gui.green"/>
+    </Description>
     <Description tag="talentdescription.unlockrecipe">
+        <Replace tag="[itemname]" value="entityname.rum" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.drunkensailor">
+        <Replace tag="[dmgresistance]" value="25" color="gui.green"/>
+        <Replace tag="[stunresistance]" value="50" color="gui.green"/>
+        <Replace tag="[skillgainprobability]" value="4" color="gui.green"/>
+    </Description>
+    <Description tag="talentdescription.tumble">
+        <Replace tag="[seconds]" value="0.75" color="gui.green" />
+        <Replace tag="[damage]" value="40" color="gui.green" />
+        <Replace tag="[duration]" value="2.5" color="gui.green" />
+    </Description>
+    <Description tag="talentdescription.tumble2">
+        <Replace tag="[red]" value="75" color="gui.green" />
+    </Description> -->
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,0" sheetelementsize="128,128"/>
+      <AbilityGroupInterval>
+        <Conditions>
+          <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.25"/>
+          <AbilityConditionItem tags="smokingitems,pipetobacco"/>
+        </Conditions>
+        <Abilities>
+          <CharacterAbilityApplyStatusEffects>
+            <StatusEffects>
+              <StatusEffect type="OnAbility" target="Character">
+                <ReduceAffliction type="damage" strength="0.1"/>
+                <ReduceAffliction type="burn" strength="0.1"/>
+              </StatusEffect>
+            </StatusEffects>
+          </CharacterAbilityApplyStatusEffects>
+        </Abilities>
+        </AbilityGroupInterval>
+    <AddedRecipe itemidentifier="rum"/>
+</Talent>
+  
+
+  <Talent identifier="ontheroll"> 
+    <!-- <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.navpda" color="gui.orange"/>
     </Description>
     <Description tag="talentdescription.increasereputationgains">
@@ -240,17 +296,8 @@
     </Description>
 	 <Description tag="talentdescription.xpgain">
 			<Replace tag="[xp]" value="20" color="gui.orange"/>
-    </Description>
+    </Description> -->
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>    
-    <AbilityGroupEffect abilityeffecttype="OnGainSkillPoint">
-      <Conditions>
-        <AbilityConditionSkill skillidentifier="weapons"/>
-        <AbilityConditionHasSkill skillidentifier="helm" minvalue="100"/>
-      </Conditions>
-      <Abilities>
-        <CharacterAbilityGainSimultaneousSkill skillidentifier="weapons" />
-      </Abilities>
-    </AbilityGroupEffect>
     <AbilityGroupEffect abilityeffecttype="OnGainSkillPoint">
       <Conditions>
         <AbilityConditionSkill skillidentifier="helm"/>
@@ -271,7 +318,6 @@
         <CharacterAbilityGiveStat stattype="ReputationGainMultiplier" value="0.2"/>
       </Abilities>
     </AbilityGroupEffect>
-    <AddedRecipe itemidentifier="navpda"/>
   </Talent>
   
   <Talent identifier="targettingmatrix"> 

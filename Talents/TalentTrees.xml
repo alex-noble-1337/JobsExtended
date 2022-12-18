@@ -248,38 +248,43 @@
         <!-- offensive buffs, gunnery, coordinating dive teams, weak at shooting -->
         <SubTree identifier="gunslinger" type="specialization" requires="captain_primary" blocks="skipper,politician">
             <TalentOptions>
-                <!-- TODO merge -->
-                <TalentOption identifier="quickdraw"/>
-                <!-- NAV Talents -->
-                <!-- TODO Description make it better?
-                      -->
-                <TalentOption identifier="stranger_with_iron" />
+                <!-- TODO Description and make it better?
+                     Every second you dont fire you get damage buff from +20% to 840% added damage
+                     If you gain weapon skill you gain helm skill and you gain helm when you gain weapon skill
+                     Gain +1 ExtraMissionCount 
+                     gain targettingmatrix
+                        +20% RangedAttackSpeed,RangedAttackMultiplier -->
+                <TalentOption identifier="luckystrike" />
             </TalentOptions>
             <TalentOptions>
-                <!-- TODO merge -->
-                <TalentOption identifier="lonewolf"/>
-                <TalentOption identifier="deputy"/>
-                <!-- NAV Talents -->
-                <!-- TODO merge -->
-                <!-- Modify it so its unique to NAV -->
-                <!-- Changed to give you an defence buff 75% of defence buff -->
-                <TalentOption identifier="tumble" />
-                <TalentOption identifier="quickdraw" />
+                <!-- TODO Description
+                     Modify targettingmatrix to gain players buff to handheld guns:
+                        Damage, Fire speed 
+                     Flare ammo, handheld guns, except not as shitty as vanilla, it melts hull, it also softhens enemies debuffs them
+                     When using navigation terminal give everyone in the submarine buffs + diving team this buff (TLDR: increases its range to a lot) -->
+                <TalentOption identifier="targetingmatrixfocus_handheld" />
+                <!-- TODO Description
+                     Modify targettingmatrix to gain players buff to shipmounted guns
+                        Damage, Fire speed 
+                     Flare ammo, handheld shipmounted guns, except not as shitty as vanilla, it melts hull, it also softhens enemies debuffs them
+                     When using navigation terminal give everyone in the submarine buffs + diving team this buff (TLDR: increases its range to a lot)-->
+                <TalentOption identifier="targetingmatrixfocus_shipmounted" />
             </TalentOptions>
             <TalentOptions>
-                <!-- TODO merge -->
-                <TalentOption identifier="drunkensailor"/>
-                <TalentOption identifier="sailorwithnoname" />
-                <TalentOption identifier="drunkensailor" />
-                <!-- NAV Talents -->
+                <!-- TODO Description
+                     Drunken sailor but instead of drinking its smoking
+                     When smoking you regenrate to 25% health
+                     get flare harpoon -->
+                <TalentOption identifier="lightup"/>
             </TalentOptions>
             <TalentOptions>
-                <!-- TODO merge -->
-                <TalentOption identifier="bigguns"/>
-                <!-- NAV Talents -->
-                <!-- TODO merge Exists -->
-                <!-- every time you get in new location, gain +1 to all skills, bonus lost on death -->
-                <TalentOption identifier="masternavigator" />
+                <!-- TODO Description 
+                     every time you get in new location, gain +1 to all skills, bonus lost on death 
+                     gain +20xp to you and 5xp to everyone when you get in new location
+                     <AddedRecipe itemidentifier="handcannon"/>
+                     <AddedRecipe itemidentifier="handcannonflareround"/>
+                     -->
+                <TalentOption identifier="ontheroll" />
             </TalentOptions>
             <!-- <TalentOptions>
                 <TalentOption identifier="enchance2" />
