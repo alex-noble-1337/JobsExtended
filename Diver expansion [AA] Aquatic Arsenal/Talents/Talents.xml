@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Talents>
+  <!--
+
+
+  -->
+  <Talent identifier="deadmanwalking">
+    <Description tag="talentdescription.cannotfallunconscious"></Description>
+    <Description tag="talentdescription.deadmanwalking"></Description>
+    <Icon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/NewTalentIcons.png" sheetindex="4,2" sheetelementsize="128,128" />
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveFlag flagtype="AlwaysStayConscious" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupInterval effectdelay="4">
+      <Conditions>
+        <AbilityConditionRagdolled />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyFlag flagtype="IgnoredByEnemyAI" />
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
+  <Talent identifier="thickblood">
+    <Icon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/NewTalentIcons.png" sheetindex="1,1" sheetelementsize="128,128" />
+    <Description tag="talentdescription.thickblood">
+      <Replace tag="[50]" value="50" color="gui.green" />
+      <Replace tag="[stun]" value="50" color="gui.green" />
+      <Replace tag="[stunstat]" value="stun" color="gui.orange" />
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Conditions>
+        <AbilityConditionInWater />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityGiveResistance resistanceid="stun" multiplier="0.5" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect>
+      <Conditions>
+        <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.50" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character">
+              <ReduceAffliction type="damage" strength="0.1" />
+              <ReduceAffliction type="bleeding" strength="0.5" />
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+  <Talent identifier="bangstickschematics">
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="Bangstick, Explosive Bang Stick Charge, Stun Bang Stick Charge" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.bangstickschematics"></Description>
+    <Icon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/NewTalentIcons.png" sheetindex="5,0" sheetelementsize="128,128" />
+    <AddedRecipe itemidentifier="bangstick" />
+    <AddedRecipe itemidentifier="explosivebangstickcharge" />
+    <AddedRecipe itemidentifier="stunbangstickcharge" />
+  </Talent>
+  <Talent identifier="underwaterdemolition">
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="Handheld Sonar Decoy" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.underwaterdemolition">
+      <Replace tag="[25]" value="25" color="gui.green" />
+      <Replace tag="[detonates]" value="detonates" color="gui.orange" />
+    </Description>
+    <Icon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/NewTalentIcons.png" sheetindex="3,2" sheetelementsize="128,128" />
+    <AddedRecipe itemidentifier="handheldsonardecoy" />
+  </Talent>
+  <Talent identifier="improvisedutilityharpoons">
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="Flare Harpoon, Glowstick Harpoon, Floating Harpoon, Blunt Tip Flare Harpoon, Blunt Tip Glowstick Harpoon, Blunt Tip Floating Harpoon" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.improvisedutilityharpoons"></Description>
+    <Description tag="talentdescription.extraskillfromcrafting">
+      <Replace tag="[amount]" value="100" color="gui.green" />
+      <Replace tag="[skillname]" value="skillname.weapons" color="gui.orange" />
+    </Description>
+    <Icon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/NewTalentIcons.png" sheetindex="6,2" sheetelementsize="128,128" />
+    <AbilityGroupEffect abilityeffecttype="OnItemFabricationSkillGain">
+      <Conditions>
+        <AbilityConditionSkill skillidentifier="weapons" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyValue multiplyvalue="2" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="flarespear" />
+    <AddedRecipe itemidentifier="glowstickspear" />
+    <AddedRecipe itemidentifier="floatingspear" />
+    <AddedRecipe itemidentifier="blunttipflarespear" />
+    <AddedRecipe itemidentifier="blunttipglowstickspear" />
+    <AddedRecipe itemidentifier="blunttipfloatingspear" />
+  </Talent>
+  <Talent identifier="masterworkexperimentalharpoons">
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="Stun Explosive Harpoon, High-Explosive Harpoon, EMP Explosive Harpoon" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.masterworkexperimentalharpoons"></Description>
+    <Description tag="talentdescription.harpoonmaker">
+      <Replace tag="[probability]" value="50" color="gui.green" />
+      <Replace tag="[extra harpoon]" value="extra harpoon" color="gui.orange" />
+    </Description>
+    <Icon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/NewTalentIcons.png" sheetindex="7,2" sheetelementsize="128,128" />
+    <AbilityGroupEffect abilityeffecttype="OnItemFabricatedAmount">
+      <Conditions>
+        <AbilityConditionServerRandom randomchance="0.5" />
+        <AbilityConditionItem tags="harpoonammo" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyValue multiplyvalue="2" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="stunexplosivespear" />
+    <AddedRecipe itemidentifier="explosivespear" />
+    <AddedRecipe itemidentifier="empexplosivespear" />
+  </Talent>
+  <Talent identifier="divinggoodies">
+    <Icon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/NewTalentIcons.png" sheetindex="4,1" sheetelementsize="128,128" />
+    <Description tag="talentdescription.additionalstattypeself">
+      <Replace tag="[amount]" value="50" color="gui.green" />
+      <Replace tag="[stattype]" value="stattypenames.buffdurationmultiplier" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.gainitemsonmission" />
+    <Description tag="talentdescription.gainitem">
+      <Replace tag="[amount]" value="1" color="gui.green" />
+      <Replace tag="[itemname]" value="entityname.liquidoxygenite" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.gainitem">
+      <Replace tag="[amount]" value="1" color="gui.green" />
+      <Replace tag="[itemname]" value="entityname.pressurestabilizer" color="gui.orange" />
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
+      <Abilities>
+        <CharacterAbilityPutItem itemidentifier="liquidoxygenite" amount="1" />
+        <CharacterAbilityPutItem itemidentifier="pressurestabilizer" amount="1" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <CharacterAbilityGiveStat stattype="BuffDurationMultiplier" value="0.5" />
+    </AbilityGroupEffect>
+  </Talent>
+  <Talent identifier="baneofthecryingseals">
+    <Description tag="talentdescription.extrapowertoharpoons">
+      <Replace tag="[value]" value="25" color="gui.green" />
+    </Description>
+    <Description tag="talentdescription.extrapowertoharpoonsinopensea">
+      <Replace tag="[value]" value="50" color="gui.green" />
+    </Description>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="Crying Seals Ballista, Large Titanium Anchorhead Harpoon, Large Titanium Hammerhead Harpoon" color="gui.orange" />
+    </Description>
+    <Icon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/NewTalentIcons.png" sheetindex="2,1" sheetelementsize="128,128" />
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionAttackData tags="harpoonammo" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.25" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionAttackData tags="harpoonammo" />
+        <AbilityConditionInHull invert="true" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.25" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionAttackData tags="harpoonammo" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.25" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="csb" />
+    <AddedRecipe itemidentifier="csbanchor" />
+    <AddedRecipe itemidentifier="csbhammer" />
+  </Talent>
+  <Talent identifier="sealeg">
+    <Icon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/NewTalentIcons.png" sheetindex="3,1" sheetelementsize="128,128" />
+    <Description tag="talentdescription.sealeg">
+      <Replace tag="[movementspeed]" value="20" color="gui.green" />
+      <Replace tag="[drag]" value="drag bodies with no speed penalty" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.additionalresistanceself">
+      <Replace tag="[amount]" value="100" color="gui.green" />
+      <Replace tag="[affliction]" value="afflictionname.nausea" color="gui.orange" />
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveFlag flagtype="MoveNormallyWhileDragging" />
+        <CharacterAbilityGiveResistance resistanceid="nausea" multiplier="0" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupInterval interval="0.2">
+      <Conditions>
+        <AbilityConditionHasItem tags="metalcrate,securemetalcrate,explosivecrate,chemicalcrate,mediccrate,metalcrate_event,sealedsupplycrate,mobilecontainer,ammobox" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyStat stattype="MovementSpeed" value="0.2" />
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
+  <Talent identifier="onewithwater">
+    <Description tag="talentdescription.additionalstattypeself">
+      <Replace tag="[amount]" value="20" color="gui.green" />
+      <Replace tag="[stattype]" value="stattypenames.maximumhealthmultiplier" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.additionalstattypeself">
+      <Replace tag="[amount]" value="50" color="gui.green" />
+      <Replace tag="[stattype]" value="stattypenames.swimmingspeed" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.additionalresistanceself">
+      <Replace tag="[amount]" value="75" color="gui.green" />
+      <Replace tag="[affliction]" value="afflictionname.oxygenlow" color="gui.orange" />
+    </Description>
+    <Icon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/NewTalentIcons.png" sheetindex="7,1" sheetelementsize="128,128" />
+    <Abilities>
+      <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.20" />
+    </Abilities>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveStat stattype="SwimmingSpeed" value="0.5" />
+        <CharacterAbilityGiveResistance resistanceid="oxygenlow" multiplier="0.75" />
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+  <Talent identifier="seadogspirit">
+    <Description tag="talentdescription.additionalstattypeself">
+      <Replace tag="[amount]" value="20" color="gui.green" />
+      <Replace tag="[stattype]" value="stattypenames.maximumhealthmultiplier" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.lowhealth.effectivehealing">
+      <Replace tag="[health]" value="50" color="gui.green" />
+      <Replace tag="[extraheal]" value="50" color="gui.green" />
+    </Description>
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="6,2" sheetelementsize="128,128" />
+    <Abilities>
+      <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.20" />
+    </Abilities>
+    <AbilityGroupEffect abilityeffecttype="OnReduceAffliction">
+      <Conditions>
+        <AbilityConditionAboveVitality vitalitypercentage="0.5" invert="true" />
+        <AbilityConditionReduceAffliction allowedtypes="damage,bloodloss,burn,bleeding" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyReduceAffliction addedamountmultiplier="0.5" />
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+  <Talent identifier="sppschematics">
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="SPP-1,SPP-1 Steel Bolt" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.sppschematics"></Description>
+    <Icon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/NewTalentIcons.png" sheetindex="4,0" sheetelementsize="128,128" />
+    <AddedRecipe itemidentifier="spp" />
+    <AddedRecipe itemidentifier="sppbolt" />
+  </Talent>
+  <Talent identifier="pxschematics">
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="PX-11,PX-11 Steel Bolt" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.pxschematics"></Description>
+    <Icon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/NewTalentIcons.png" sheetindex="3,0" sheetelementsize="128,128" />
+    <AddedRecipe itemidentifier="px" />
+    <AddedRecipe itemidentifier="pxbolt" />
+  </Talent>
+  <Talent identifier="eyeforaneye">
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="Stingray Shotgun" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.eyeforaneye">
+      <Replace tag="[50]" value="50" color="gui.green" />
+      <Replace tag="[25]" value="25" color="gui.green" />
+      <Replace tag="[seconds]" value="4" color="gui.green" />
+    </Description>
+    <Icon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/NewTalentIcons.png" sheetindex="3,0" sheetelementsize="128,128" />
+    <AbilityGroupEffect abilityeffecttype="OnAttackedResult">
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="This" multiplyafflictionsbymaxvitality="true">
+              <Affliction identifier="stonewall" amount="4.0" />
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="stingrayshotgun" />
+  </Talent>
+  <Talent identifier="marinerecon">
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="ADS Amphibious Rifle,ADS Magazine" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.adsschematics">
+      <Replace tag="[amount]" value="20" color="gui.green" />
+      <Replace tag="[missions]" value="Killing/Termiating/Hunting" color="gui.orange" />
+    </Description>
+    <Icon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/NewTalentIcons.png" sheetindex="0,0" sheetelementsize="128,128" />
+    <AbilityGroupEffect abilityeffecttype="OnGainMissionMoney">
+      <Conditions>
+        <AbilityConditionMission missiontype="Monster" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyValue addedvalue="0.20" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="ads" />
+    <AddedRecipe itemidentifier="adsmagazine" />
+  </Talent>
+  <Talent identifier="combatdiver">
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="APS Amphibious Carbine,APS Magazine" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.apsschematics">
+      <Replace tag="[amount]" value="15" color="gui.green" />
+      <Replace tag="[missions]" value="Destroy Nest, Wreck Salvage, Salvaging an Artifact, Scan Alien Ruins, Clear Alien Ruins" color="gui.orange" />
+    </Description>
+    <Icon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/NewTalentIcons.png" sheetindex="1,0" sheetelementsize="128,128" />
+    <AbilityGroupEffect abilityeffecttype="OnCrewKillCharacter">
+      <Conditions>
+        <AbilityConditionCharacter targettypes="Monster" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityBountyHunter vitalitypercentage="0.15" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnGainMissionMoney">
+      <Conditions>
+        <AbilityConditionMission missiontype="Nest" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyValue addedvalue="0.15" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnGainMissionMoney">
+      <Conditions>
+        <AbilityConditionMission missiontype="Salvage" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyValue addedvalue="0.15" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnGainMissionMoney">
+      <Conditions>
+        <AbilityConditionMission missiontype="ScanAlienRuins" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyValue addedvalue="0.15" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnGainMissionMoney">
+      <Conditions>
+        <AbilityConditionMission missiontype="ClearAlienRuins" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyValue addedvalue="0.15" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="aps" />
+    <AddedRecipe itemidentifier="apsmagazine" />
+  </Talent>
+  <Talent identifier="divinginstructor">
+    <Icon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/NewTalentIcons.png" sheetindex="0,2" sheetelementsize="128,128" />
+    <Description tag="talentdescription.divinginstructor"></Description>
+    <Description tag="talentdescription.divinginstructorstat1">
+      <Replace tag="[amount]" value="10" color="gui.green" />
+      <Replace tag="[stat]" value="Damage Resistance Increase" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.divinginstructorstat2">
+      <Replace tag="[amount]" value="20" color="gui.green" />
+      <Replace tag="[stat]" value="Skill Gain Speed Increase" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.divinginstructorstat3">
+      <Replace tag="[amount]" value="30" color="gui.green" />
+      <Replace tag="[stat]" value="Swimming Speed Increase" color="gui.orange" />
+    </Description>
+    <AbilityGroupInterval>
+      <Conditions>
+        <AbilityConditionInWater />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffectsToAllies range="250">
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true">
+              <Affliction identifier="overwatched" amount="5" />
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffectsToAllies>
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
+  <Talent identifier="murkywaters">
+    <Icon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/NewTalentIcons.png" sheetindex="5,1" sheetelementsize="128,128" />
+    <Description tag="talentdescription.murkywaters">
+      <Replace tag="[statamount1]" value="20" color="gui.green" />
+      <Replace tag="[statamount2]" value="50" color="gui.green" />
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Conditions>
+        <AbilityConditionInWater />
+        <AbilityConditionInHull />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.20" />
+        <CharacterAbilityModifyStat stattype="SwimmingSpeed" value="0.5" />
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+  <Talent identifier="strongcurrents">
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.slipsuit" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.strongcurrents">
+      <Replace tag="[attackpowerreduction]" value="30" color="gui.green" />
+      <Replace tag="[flowresistance]" value="90" color="gui.green" />
+    </Description>
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="2,4" sheetelementsize="128,128" />
+    <AbilityGroupEffect abilityeffecttype="OnAttacked">
+      <Conditions>
+        <AbilityConditionInWater />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.30" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveStat stattype="FlowResistance" value="0.9" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="slipsuit" />
+  </Talent>
+  <!--razorfinned = increased damage under water
+    poaching - increased firespeed and power when in outside the hull
+    feeding grounds = more loot when killing under water
+    like fish in the water = move quicker damage reduction
+    warrior poet into trophy hunter-->
+  <!--Replace tag="[stunstat]" value="stun" color="gui.orange" />
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Conditions>
+        <AbilityConditionInWater />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityGiveResistance resistanceid="stun" multiplier="0.5" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect>
+      <Conditions>
+        <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.50" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character">
+              <ReduceAffliction type="damage" strength="0.1" />
+              <ReduceAffliction type="bleeding" strength="0.5" />
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+-->
+</Talents>

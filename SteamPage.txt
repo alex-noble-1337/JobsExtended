@@ -2,45 +2,45 @@ Normal: https://steamcommunity.com/sharedfiles/filedetails/?id=2526236489
 Beta (testing): https://steamcommunity.com/sharedfiles/filedetails/?id=2764795204
 
 
-SUMMARY
+[h1][b][u]SUMMARY[/u][/b][/h1]
 
 JobsExtended is a realistic, configurable, and more in depth look into roles for Barotrauma. This mod adds in a more realistic set of customizable (and configurable) roles for the crew. JobsExtended is configurable using karma to permit certain players to pick certain roles, perfect for admins to help control security clearances, griefing, and roleplay. The default settings will detur griefers from becoming high level roles, but for more precise control, see the admin/Karma utility section.
 
-THIS MOD DOES NOT WORK WELL IN SINGLE-PLAYER AND HAS LIMITED SUPPORT FOR BOTS
+[b][u]THIS MOD DOES NOT WORK WELL IN SINGLE-PLAYER AND HAS LIMITED SUPPORT FOR BOTS[/u][/b]
 
-ROLES
+[h1][b][u]ROLES[/u][/b][/h1]
 
-Commanding Officer: The Head of the vessel, the daring risk-taker, the ruler; Only one can be in charge!
+[b][u]Commanding Officer:[/u][/b] The Head of the vessel, the daring risk-taker, the ruler; Only one can be in charge! 
 
-Executive Officer: 2nd-in-command. Keeps everyone in line and preforming their job. Deals with issues that the CO cannot be bothered with.
+[b][u]Executive Officer:[/u][/b]  2nd-in-command. Keeps everyone in line and preforming their job. Deals with issues that the CO cannot be bothered with.
 
-Chief of the Boat: Supervisor for all systems and leads all technical personnel, use brute force when necessary.
+[b][u]Chief of the Boat:[/u][/b]  Supervisor for all systems and leads all technical personnel, use brute force when necessary.
 
-Head of Security: Responsible for all security operations on board the submarine and for the armory.
+[b][u]Head of Security:[/u][/b]  Responsible for all security operations on board the submarine and for the armory.
 
-Chief Medical Officer: Manage the infirmary on the submarine and makes sure that the medical supplies never run out and the medical staff operate under the Hippocratic oath (or not).
+[b][u]Chief Medical Officer:[/u][/b] Manage the infirmary on the submarine and makes sure that the medical supplies never run out and the medical staff operate under the Hippocratic oath (or not).
 
-Navigator: Drives the sub if the captain can't or doesn't want to. Depending on the sub, he also could use a separate sonar terminal, help diving squads locating things and use/maintain exploration drones.
+[b][u]Navigator:[/u][/b] Drives the sub if the captain can't or doesn't want to. Depending on the sub, he also could use a separate sonar terminal, help diving squads locating things and use/maintain exploration drones.
 
-Diver: Responsible for performing EVA activities such as mining and salvaging when necessary.
+[b][u]Diver:[/u][/b] Responsible for performing EVA activities such as mining and salvaging when necessary. 
 
-Quartermaster: Material management. With help of the Janitor, he keeps the sub clean, fills every storage cabinet and provides ammunition for all weapons.
+[b][u]Quartermaster:[/u][/b] Material management. With help of the Janitor, he keeps the sub clean, fills every storage cabinet and provides ammunition for all weapons.
 
-Custodian: Assists Quartermasters in keeping the sub well cleaned, supplied, and stockpiled.
+[b][u]Custodian:[/u][/b] Assists Quartermasters in keeping the sub well cleaned, supplied, and stockpiled.
 
-Passenger: Civilian that travels among the crew as a guest, presumably for a price, scientific discovery, or the experience.
+[b][u]Passenger:[/u][/b] Civilian that travels among the crew as a guest, presumably for a price, scientific discovery, or the experience.
 
-Prisoner: Lock Em Up! Can be forced on any individual by using karma commands even with karma disabled!
+[b][u]Prisoner:[/u][/b] Lock Em Up! Can be forced on any individual by using karma commands even with karma disabled!
 
-Vanilla Roles such as medical officer, engineer, mechanic, and security officer have been reworked to have more specialized and engaging roles. Assistant is replaced with passenger and CO is captain.
+[b][u]Vanilla Roles[/u][/b] such as medical, engineer, mechanic, and security have been reworked to have more specialized and engaging roles. Assistant is replaced with passenger and CO is captain.
 
-FEATURES
+[h1][b][u]FEATURES[/u][/b][/h1]
 
-Variety
+[b][u]Variety[/u][/b]
 
 Every Job has three subroles with unique equipment and primary expectations to further specialize each role to an IRL or realistic job title (mostly), for example: CO can choose between a veteran seafarer, a military admiral, or a pirate lord!
 
-Admin/Karma Utility
+[b][u]Admin/Karma Utility[/u][/b]
 
 Through use of the Karma system or commands, moderators can limit players to certain roles. The minimum Karma required for each role is as follows:
 CO: 95

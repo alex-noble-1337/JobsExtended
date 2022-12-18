@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="[AA] Aquatic Arsenal" modversion="1.0.5" corepackage="False" steamworkshopid="2821753992" gameversion="0.19.0.0" expectedhash="A1CFF0EDE125DDD4FDB8591D9B3DBAC7">
+  <Jobs file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Jobs.xml" />
+  <Text file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Texts/English/DiverText.xml" />
+  <Afflictions file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Afflictions.xml" />
+  <Talents file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/Talents.xml" />
+  <TalentTrees file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/TalentTrees.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Clothes/Clothes and Swimsuits.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/ADS/ADS.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/APS/APS.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Stingray Shotgun/Stingray Shotgun.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/SPP-1/SPP-1.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/PX-11/PX-11.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Bang Stick/Bang Stick.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Crying Seals Ballista/Crying Seals Ballista.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Surplus Pistol/Surplus Pistol.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Sketchy Improvised Makeshift Pistol/Sketchy Improvised Makeshift Pistol.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear/Handheld Sonar Decoy.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoon Pistol/Harpoon Pistol.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoon Gun/Harpoon Gun.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Ice Pickaxe/Ice Pickaxe.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Rusty Machete/Rusty Machete.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Kukri/Kukri.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Ammo and Explosives/Ammo and Explosives.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear/Depth Foam Diving Helmet.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear/Foam Diving Visor.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear/Antique Diving Helmet.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear/Silent Sonar Scanner.xml" />
+</contentpackage>

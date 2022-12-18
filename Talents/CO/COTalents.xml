@@ -216,7 +216,7 @@
             </Abilities>
         </AbilityGroupInterval>
     </Talent>
-    <Override>
+    <!-- <Override> -->
         <Talent identifier="drunkensailor">
             <Description tag="talentdescription.drunkensailor">
                 <Replace tag="[stunresistance]" value="75" color="gui.green"/>
@@ -357,7 +357,7 @@
                 </Abilities>
             </AbilityGroupEffect>
         </Talent>
-    </Override>
+    <!-- </override> -->
 
     <Talent identifier="leadingbyexample">
         <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="1,5" sheetelementsize="128,128"/>

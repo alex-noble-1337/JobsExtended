@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Item name="PX-11" identifier="px" description="Px-11 is a rapid firing device developed for underwater use" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun" Scale="0.30" impactsoundtag="impact_metal_light">
+  <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.33" />
+  <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.5" />
+  <Price baseprice="150" soldeverywhere="false">
+    <Price locationtype="outpost" multiplier="1.5" sold="false" />
+    <Price locationtype="city" multiplier="1.25" minavailable="1" />
+    <Price locationtype="research" multiplier="1.25" sold="false" />
+    <Price locationtype="military" multiplier="0.9" minavailable="3" />
+    <Price locationtype="mine" multiplier="1.25" sold="false" />
+  </Price>
+  <Deconstruct time="10">
+    <Item identifier="steel" />
+    <Item identifier="aluminium" />
+  </Deconstruct>
+  <Fabricate suitablefabricators="fabricator" requiredtime="15" requiresrecipe="true">
+    <RequiredSkill identifier="weapons" level="20" />
+    <RequiredItem identifier="steel" />
+    <RequiredItem identifier="aluminium" />
+  </Fabricate>
+  <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal.png" sourcerect="34,256,126,117" origin="0.5,0.5" />
+  <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal.png" sourcerect="47,256,126,117" depth="0.55" origin="0.5,0.5" scale="0.35" />
+  <Body width="82" height="90" density="50" />
+  <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="100,10" handle1="-30,0" handle2="-50,-35" msg="ItemMsgPickUpSelect" />
+  <RangedWeapon reload="0.08" barrelpos="15,30" spread="7" unskilledspread="16" combatPriority="30" drawhudwhenequipped="true" crosshairscale="0.2">
+    <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+    <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+    <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/PX-11/PX-11gunshot1.ogg" type="OnUse" range="500" selectionmode="Random" />
+    <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/PX-11/PX-11gunshot2.ogg" type="OnUse" range="500" />
+    <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/PX-11/PX-11gunshot3.ogg" type="OnUse" range="500" />
+    <ParticleEmitter particle="muzzleflash" scale="0.40" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="0.6,0.6" />
+    <StatusEffect type="OnUse">
+      <Explosion range="100.0" force="1" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
+    </StatusEffect>
+    <RequiredItems items="pxammo" type="Contained" msg="Steel Bolts Required" />
+    <RequiredSkill identifier="weapons" level="35" />
+  </RangedWeapon>
+  <ItemContainer hideitems="true" capacity="1" maxstacksize="6" containedstateindicatorstyle="bullet">
+    <Containable items="pxammo" />
+  </ItemContainer>
+  <aitarget sightrange="0" soundrange="500" fadeouttime="2" />
+  <Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>

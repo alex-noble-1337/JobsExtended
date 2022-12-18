@@ -62,6 +62,8 @@
   </Talent>
 
   <Talent identifier="securitybackground">
+    <Description tag="talentdescription.securitybackground">
+    </Description>
 	 <Description tag="talentdescription.skillbonus">
       <Replace tag="[amount]" value="50" color="gui.green"/>
       <Replace tag="[skillname]" value="skillname.weapons" color="gui.orange"/>

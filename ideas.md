@@ -142,17 +142,21 @@ https://discord.com/channels/103209684680323072/220881718666723328/1003829090836
 - flaregun good - They melt hull.
 - Stick flares to harpoons, Flares deal DOT and illuminate target (Maybe later damage exposure?) (Doesn’t attract enemies)
 
-- AOE buff when you use shuttle nav terminal - lvl 2 skill
-- Driving the sub 
-- small range aoe buffs
-- UV Polarisng gogles. - more vison range. - a component of modular headset - tier 4 of utility tree
-- Tactical offenive tool. CC
-- Spec-ops propulsion ; Polarized Lens
-- Remote Navigation Controller; remotely controls navigation terminal OR Shuttle Navigation Controller, nav terminal and version just for shuttle.
+1st
 - Shuttle Captain, Helmsman
+- Driving the sub 
+- Remote Navigation Controller; remotely controls navigation terminal OR Shuttle Navigation Controller, nav terminal and version just for shuttle.
+- Sonar tech: increases sonar range
+2nd
+- AOE buff when you use shuttle nav terminal - lvl 2 skill
+- small range aoe buffs
+3rd
 - Gills: use 50% less oxygen
 - Auto beacon: a beacon that detects stun or unconsciousness.
-- Sonar tech: increases sonar range
+4th
+- UV Polarisng gogles. - more vison range. - a component of modular headset - tier 4 of utility tree
+- Spec-ops propulsion ; Polarized Lens
+- Tactical offenive tool. CC
 
 - Dive Coordinator;
 - Buffs to surability to you and other people small eoe, but smaller than diver

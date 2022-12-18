@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+  <Affliction identifier="overwatched" type="overwatched" nameidentifier="talentname.overwatch" isbuff="true" limbspecific="false" maxstrength="5" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+    <Effect minstrength="0" maxstrength="5" strengthchange="-1" resistancefor="damage" minresistance="0.10" maxresistance="0.10">
+      <StatValue stattype="SkillGainSpeed" value="0.2" />
+      <StatValue stattype="SwimmingSpeed" value="0.2" />
+    </Effect>
+    <Icon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/NewTalentIcons.png" sheetindex="6,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+</Afflictions>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Item name="SPP-1" identifier="spp" description="The SPP-1 is a unique pistol developed for underwater use" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun" Scale="0.24" impactsoundtag="impact_metal_light">
+  <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.33" />
+  <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.5" />
+  <Price baseprice="150" soldeverywhere="false">
+    <Price locationtype="outpost" multiplier="1.5" sold="false" />
+    <Price locationtype="city" multiplier="1.25" minavailable="1" />
+    <Price locationtype="research" multiplier="1.25" sold="false" />
+    <Price locationtype="military" multiplier="0.9" minavailable="3" />
+    <Price locationtype="mine" multiplier="1.25" sold="false" />
+  </Price>
+  <Deconstruct time="10">
+    <Item identifier="steel" />
+    <Item identifier="aluminium" />
+  </Deconstruct>
+  <Fabricate suitablefabricators="fabricator" requiredtime="15" requiresrecipe="true">
+    <RequiredSkill identifier="weapons" level="20" />
+    <RequiredItem identifier="steel" />
+    <RequiredItem identifier="aluminium" />
+  </Fabricate>
+  <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal.png" sourcerect="16,124,191,131" origin="0.5,0.5" />
+  <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal.png" sourcerect="34,143,152,97" depth="0.55" origin="0.5,0.5" scale="0.28" />
+  <Body width="160" height="110" density="50" />
+  <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="100,10" handle1="-62,-5" msg="ItemMsgPickUpSelect" />
+  <RangedWeapon reload="0.5" barrelpos="35,40" spread="4" unskilledspread="12" combatPriority="30" drawhudwhenequipped="true" crosshairscale="0.2">
+    <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+    <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+    <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/SPP-1/SPP-1gunshot1.ogg" type="OnUse" range="500" selectionmode="Random" />
+    <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/SPP-1/SPP-1gunshot2.ogg" type="OnUse" range="500" />
+    <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/SPP-1/SPP-1gunshot3.ogg" type="OnUse" range="500" />
+    <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/SPP-1/SPP-1gunshot4.ogg" type="OnUse" range="500" />
+    <ParticleEmitter particle="muzzleflash" scale="0.55" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="0.6,0.6" />
+    <StatusEffect type="OnUse">
+      <Explosion range="100.0" force="1" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
+    </StatusEffect>
+    <RequiredItems items="sppammo" type="Contained" msg="Steel Bolts Required" />
+    <RequiredSkill identifier="weapons" level="25" />
+  </RangedWeapon>
+  <ItemContainer hideitems="true" capacity="1" maxstacksize="4" containedstateindicatorstyle="bullet">
+    <Containable items="sppammo" />
+  </ItemContainer>
+  <aitarget sightrange="0" soundrange="500" fadeouttime="2" />
+  <Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>

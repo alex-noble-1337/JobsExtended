@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TalentTrees>
+  <TalentTree jobidentifier="leaddiver">
+    <SubTree identifier="whaler">
+      <TalentOptions>
+        <TalentOption identifier="seadogspirit" />
+        <TalentOption identifier="sealeg" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="improvisedutilityharpoons" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="buccaneer" />
+        <TalentOption identifier="masterworkexperimentalharpoons" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="baneofthecryingseals" />
+        <TalentOption identifier="deadmanwalking" />
+      </TalentOptions>
+    </SubTree>
+    <SubTree identifier="frogman">
+      <TalentOptions>
+        <TalentOption identifier="thickblood" />
+        <TalentOption identifier="sppschematics" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="pxschematics" />
+        <TalentOption identifier="murkywaters" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="underwaterdemolition" />
+        <TalentOption identifier="commando" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="marinerecon" />
+        <TalentOption identifier="combatdiver" />
+      </TalentOptions>
+    </SubTree>
+    <SubTree identifier="divinginstructor">
+      <TalentOptions>
+        <TalentOption identifier="divinggoodies" />
+        <TalentOption identifier="onewithwater" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="strongcurrents" />
+        <TalentOption identifier="scavenger" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="bangstickschematics" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="dualspecops" />
+        <TalentOption identifier="divinginstructor" />
+      </TalentOptions>
+    </SubTree>
+  </TalentTree>
+</TalentTrees>

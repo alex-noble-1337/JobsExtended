@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Item name="Bang Stick" identifier="bangstick" description="A metal rod with a slot for explosives on top of it to keep you safe in the uncharted depths" category="Equipment" Tags="smallitem,weapon,stunner" Scale="0.25" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+  <Deconstruct time="10">
+    <Item identifier="steel" />
+    <Item identifier="plastic" />
+  </Deconstruct>
+  <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <RequiredSkill identifier="weapons" level="30" />
+    <RequiredItem identifier="steel" />
+    <RequiredItem identifier="plastic" />
+  </Fabricate>
+  <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal.png" sourcerect="823,177,160,159" origin="0.5,0.5" />
+  <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal.png" sourcerect="14,850,402,28" depth="0.55" scale="0.25" origin="0.5,0.5" />
+  <Body width="170" height="30" density="30" />
+  <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="45,10" handle1="-35,-0" holdangle="60" reload="0.8" range="300" combatPriority="49" msg="ItemMsgPickUpSelect" preferredcontaineditems="bangstickcharge">
+    <Attack targetimpulse="5" itemdamage="1">
+      <Sound file="Content/Items/Weapons/Smack1.ogg" range="800" />
+      <Affliction identifier="blunttrauma" strength="15" />
+      <Affliction identifier="stun" strength="0.2" />
+    </Attack>
+    <!-- Explosive Bang Stick Charge explosion -->
+    <StatusEffect type="OnUse" target="Character" disabledeltatime="true">
+      <Affliction identifier="explosiondamage" strength="12" />
+      <Affliction identifier="stun" strength="5" />
+      <sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Bang stick/FragGrenade40mmShot1.ogg" selectionmode="random" range="500" />
+      <sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Bang stick/FragGrenade40mmShot1.ogg" range="500" />
+      <RequiredItem items="explosivebangstickcharge" type="Contained" />
+      <Explosion range="450.0" ballastfloradamage="200" structuredamage="30" levelwalldamage="500" itemdamage="1500" force="10.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.3" shockwave="true" underwaterbubble="true" camerashake="10.0" />
+    </StatusEffect>
+    <!-- Stun Bang Stick Charge explosion -->
+    <StatusEffect type="OnUse" target="Character" disabledeltatime="true">
+      <Affliction identifier="explosiondamage" strength="1" />
+      <Affliction identifier="stun" strength="20" />
+      <sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Bang stick/StunGrenade40mmShot1.ogg" selectionmode="random" range="500" />
+      <sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Bang stick/StunGrenade40mmShot1.ogg" range="500" />
+      <RequiredItem items="stunbangstickcharge" type="Contained" />
+      <Explosion range="300.0" ballastfloradamage="50" structuredamage="5" levelwalldamage="100" itemdamage="500" force="10.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.2" shockwave="true" underwaterbubble="true" camerashake="10.0" />
+    </StatusEffect>
+    <!-- Remove any Bang Stick charge inside inside of the weapon after triggering an explosion -->
+    <StatusEffect type="OnUse" target="Contained" Condition="-100.0" disabledeltatime="true">
+      <RequiredItem items="bangstickcharge" type="Contained" />
+      <Remove />
+    </StatusEffect>
+  </MeleeWeapon>
+  <ItemContainer itempos="160,0" hideitems="false" capacity="1" maxstacksize="1" containedstateindicatorstyle="bullet" containedspritedepths="0.551">
+    <Containable items="bangstickcharge" />
+  </ItemContainer>
+  <aitarget sightrange="0" soundrange="500" fadeouttime="1" />
+  <Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>

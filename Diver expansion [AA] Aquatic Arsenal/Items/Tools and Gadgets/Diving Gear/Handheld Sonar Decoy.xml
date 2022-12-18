@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Item name="Handheld Sonar Decoy" identifier="handheldsonardecoy" category="Equipment" tags="mediumitem" Scale="0.35" impactsoundtag="impact_metal_heavy" description="Handheld Decoy emitating sonar signals for you to throw away and disctract whatever is following you. Lasts for 25 seconds before breaking and can be filled with explosives." isshootable="true" hideinmenus="false" maxstacksize="1">
+  <Deconstruct time="15">
+    <Item identifier="fpgacircuit" />
+    <Item identifier="sonarbeacon" />
+    <Item identifier="copper" />
+  </Deconstruct>
+  <Fabricate suitablefabricators="fabricator" requiredtime="20" amount="2">
+    <RequiredSkill identifier="weapons" level="45" />
+    <RequiredItem identifier="fpgacircuit" />
+    <RequiredItem identifier="sonarbeacon" />
+    <RequiredItem identifier="copper" />
+  </Fabricate>
+  <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear.png" sourcerect="477,218,130,118" origin="0.5,0.5" />
+  <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear.png" sourcerect="451,15,183,160" scale="0.35" depth="0.55" origin="0.5,0.5" />
+  <Body width="104" height="86" density="50" />
+  <Throwable slots="Any,RightHand, LeftHand" holdpos="0,0" aimpos="-20,20" holdangle="90" aimangle="135" handle1="-3,10" throwforce="5.0" msg="ItemMsgPickUpSelect" />--&gt;
+    <LightComponent LightColor="1.0,1.0,0.0,1.0" range="75" powerconsumption="0" blinkfrequency="2" IsOn="false" canbeselected="false"><!--<This right here decreases the condition of the sonar decoy as time passes. Normally max condition is 100 which gives us
+    25 seconds of use as each second of active decoy decreases the condition by 4 before exploding and removing it from the game./>--><StatusEffect type="OnActive" targettype="This" Condition="-4"><Sound file="Content/Items/Weapons/SonarDecoy.ogg" loop="true" range="7500" /></StatusEffect></LightComponent><ItemContainer hideitems="true" capacity="1" maxstacksize="1" canbeselected="false"><GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" /><Containable items="smallitem,explosive" /></ItemContainer><ItemComponent characterusable="false"><StatusEffect type="OnBroken" target="Contained" allowwhenbroken="true"><Use /></StatusEffect><StatusEffect type="OnUse" targettype="This" delay="0.5" disabledeltatime="true"><Remove /></StatusEffect></ItemComponent><CustomInterface canbeselected="true" drawhudwhenequipped="true"><GuiFrame relativesize="0.15,0.15" anchor="BottomLeft" absoluteoffset="20,20" style="ItemUI" /><TickBox text="Activate Sonar Decoy"><sound file="Content/Items/Button/Switch1.ogg" type="OnActive" range="250.0" loop="true" volume="0.3" /><StatusEffect type="OnUse" targettype="This" IsOn="true" /><StatusEffect type="OnSecondaryUse" targettype="This" IsOn="false" /></TickBox><Button text="Reset"><StatusEffect type="OnUse" targettype="This" Condition="100" disabledeltatime="true"><sound file="Content/Items/Button/Switch1.ogg" type="OnActive" range="250.0" loop="true" volume="0.3" /></StatusEffect></Button></CustomInterface></Item>

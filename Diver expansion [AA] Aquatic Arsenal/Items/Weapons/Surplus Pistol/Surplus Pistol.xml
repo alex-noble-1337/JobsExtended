@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Item name="Surplus Pistol" identifier="sp" description="Your very own hidden pistol. Surely a better pick than some tools you can come across in the engine room when fighting a crawler" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun" Scale="0.15" impactsoundtag="impact_metal_light">
+  <PreferredContainer primary="secarmcab" minamount="3" maxamount="6" spawnprobability="1" />
+  <Price baseprice="100" soldeverywhere="false">
+    <Price locationtype="outpost" multiplier="1.5" minavailable="2" />
+    <Price locationtype="city" multiplier="1.25" minavailable="4" />
+    <Price locationtype="research" multiplier="1.25" sold="false" />
+    <Price locationtype="military" multiplier="0.9" minavailable="16" />
+    <Price locationtype="mine" multiplier="1.25" sold="false" />
+  </Price>
+  <Deconstruct time="10">
+    <Item identifier="steel" />
+  </Deconstruct>
+  <Fabricate suitablefabricators="fabricator" requiredtime="15">
+    <RequiredSkill identifier="weapons" level="25" />
+    <RequiredItem identifier="steel" />
+  </Fabricate>
+  <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal Part 2.png" sourcerect="480,195,248,198" origin="0.5,0.5" />
+  <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal Part 2.png" sourcerect="510,231,182,144" depth="0.53" origin="0.5,0.5" scale="0.15" />
+  <Body width="72" height="40" density="50" />
+  <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="90,10" handle1="-20,-7" msg="ItemMsgPickUpSelect" />
+  <RangedWeapon reload="0.75" barrelpos="14,6" spread="6" unskilledspread="12" combatPriority="20" drawhudwhenequipped="true" crosshairscale="0.2">
+    <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+    <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+    <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Surplus Pistol/SPgunshot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+    <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Surplus Pistol/SPgunshot2.ogg" type="OnUse" range="3000" />
+    <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Surplus Pistol/SPgunshot3.ogg" type="OnUse" range="3000" />
+    <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+    <StatusEffect type="OnUse">
+      <Explosion range="125.0" force="4" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="5.0" />
+    </StatusEffect>
+    <RequiredItems items="spammo" type="Contained" msg="ItemMsgAmmoRequired" />
+    <RequiredSkill identifier="weapons" level="25" />
+  </RangedWeapon>
+  <ItemContainer capacity="1" maxstacksize="8" hideitems="true" containedstateindicatorstyle="bullet">
+    <Containable items="spammo" />
+  </ItemContainer>
+  <aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
+  <Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>

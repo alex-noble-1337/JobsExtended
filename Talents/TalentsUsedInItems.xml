@@ -3,9 +3,6 @@
   <Talent name="Promotion" identifier="promotion">
     <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,5" sheetelementsize="128,128" />
     <Description tag="talentdescription.graduationceremony" />
-    <Description tag="talentdescription.maximumhealthperlevel">
-      <Replace tag="[maximumhealth]" value="5" color="gui.green" />
-    </Description>
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
         <CharacterAbilityGiveFlag flagtype="RetainExperienceForNewCharacter" />

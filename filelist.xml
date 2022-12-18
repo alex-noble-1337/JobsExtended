@@ -1,9 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <contentpackage name="JobsExtended" modversion="1.0.21" corepackage="False" steamworkshopid="2526236489" gameversion="100.10.0.0" altnames="Jobs Extended">
   <Jobs file="%ModDir%/Jobs.xml" />
-  <Item file="%ModDir%/Items/specialitems.xml" />
   <Item file="%ModDir%/Items/uniforms.xml" />
-  <Submarine file="%ModDir%/Submarines/JE submarine conversion kit.sub" />
+  <Item file="%ModDir%/Items/specialitems.xml" />
+  <Item file="%ModDir%/Items/security_m - Make a HOS uniform ig.xml" />
+  <Item file="%ModDir%/ItemsOverride/guitar.xml" />
+
+  <!-- TODO Hireable temp fix -->
+  <locationtypes file="%ModDir%/Map/locationTypes.xml" />
+  <LocationTypes file="%ModDir%/NPCPrefabs/OutpostNpcs.xml" />
 
   <Talents file="%ModDir%/Talents/TalentsUsedInItems.xml" />
   <Text file="%ModDir%/Texts/English.xml" />
@@ -15,40 +20,66 @@
   <Item file="%ModDir%/ItemsOverride/guitar.xml" />
 
   <Submarine file="%ModDir%/Submarines/Azimuth [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Barsuk [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Berilia [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Camel [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Dugong [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Orca [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/PowerTestSub [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/R-29 [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Remora [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Selkie [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Typhon2 [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Barsuk [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Hemulen [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Herja [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Humpback [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Kastrull [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/KastrullDrone [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Orca [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Orca2 [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/RemoraDrone [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/PowerTestSub [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Kastrull [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/R-29 [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Remora [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Typhon [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Venture [JE].sub" />
+  <Submarine file="%ModDir%/Submarines/Typhon2 [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Winterhalter [JE].sub" />
 
   <TalentTrees file="%ModDir%/Talents/TalentTrees-VanillaTemp.xml" />
   <TalentTrees file="%ModDir%/Talents/TalentTrees.xml" />
+  <TalentTrees file="%ModDir%/Talents/CO/COTalents.xml" />
+  <TalentTrees file="%ModDir%/Talents/CO/COAfflictions.xml" />
+  <TalentTrees file="%ModDir%/Talents/XO/XOTalents.xml" />
+  <TalentTrees file="%ModDir%/Talents/XO/XOAfflictions.xml" />
+  <TalentTrees file="%ModDir%/Talents/NAV/NAVTalents.xml" />
+  <TalentTrees file="%ModDir%/Talents/NAV/NAVAfflictions.xml" />
+  <TalentTrees file="%ModDir%/Talents/DIV/DIVTalents.xml" />
+  <!--  -->
+  <TalentTrees file="%ModDir%/Talents/QUA/QUATalents.xml" />
+  <!--  -->
+  <TalentTrees file="%ModDir%/Talents/PAS/PASTalents.xml" />
+  <!--  -->
+  <TalentTrees file="%ModDir%/Talents/CUS/CUSTalents.xml" />
+  <!--  -->
+  <TalentTrees file="%ModDir%/Talents/PRI/PRITalents.xml" />
+  <!--  -->
 
-  <!-- <Talents file="%ModDir%/Talents/CAP/CapitanTalents.xml" />
-  <Afflictions file="%ModDir%/Talents/CAP/AfflictionsOverrides.xml" />
-  <Talents file="%ModDir%/Talents/CO/COTalents.xml" />
-  <Afflictions file="%ModDir%/Talents/CO/COAfflictions.xml" />
-  <Talents file="%ModDir%/Talents/oldTalents/Captain/TalentsCaptain.xml" /> -->
-  
-  <!-- XO -->
-  <Talents file="%ModDir%/Talents/XO/XOTalents.xml" />
 
-  <!-- TODO Hireable temp fix -->
-  <locationtypes file="%ModDir%/Map/locationTypes.xml" />
-  <LocationTypes file="%ModDir%/NPCPrefabs/OutpostNpcs.xml" />
+  <!-- Lead diver diver -->
+  <Afflictions file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Afflictions.xml" />
+  <Talents file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/Talents.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Clothes/Clothes and Swimsuits.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/ADS/ADS.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/APS/APS.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Stingray Shotgun/Stingray Shotgun.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/SPP-1/SPP-1.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/PX-11/PX-11.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Bang Stick/Bang Stick.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Crying Seals Ballista/Crying Seals Ballista.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Surplus Pistol/Surplus Pistol.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Sketchy Improvised Makeshift Pistol/Sketchy Improvised Makeshift Pistol.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear/Handheld Sonar Decoy.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoon Pistol/Harpoon Pistol.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoon Gun/Harpoon Gun.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Ice Pickaxe/Ice Pickaxe.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Rusty Machete/Rusty Machete.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Kukri/Kukri.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Ammo and Explosives/Ammo and Explosives.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear/Depth Foam Diving Helmet.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear/Foam Diving Visor.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear/Antique Diving Helmet.xml" />
+  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear/Silent Sonar Scanner.xml" />
+
 </contentpackage>

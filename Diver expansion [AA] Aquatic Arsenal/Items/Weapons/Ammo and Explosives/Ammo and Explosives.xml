@@ -1,0 +1,1191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="ADS Magazine" identifier="adsmagazine" description="Magazine for the ADS filled with medium sized steel bolts capable of penetrating walls and targets alike." scale="0.18" tags="smallitem,adsammo" cargocontaineridentifier="metalcrate" category="Equipment" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="ads" minamount="1" maxamount="1" spawnprobability="1" />
+    <Deconstruct time="10">
+      <Item identifier="magnesium" />
+      <Item identifier="steel" />
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="45" />
+      <RequiredItem identifier="magnesium" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="aluminium" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="15">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="magnesium" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="adsmagazine" mincondition="0.0" maxcondition="0.0" usecondition="false" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal Part 2.png" sourcerect="535,424,175,173" />
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal Part 2.png" depth="0.54" sourcerect="559,476,101,112" origin="0.5,0.5" scale="0.18" />
+    <Body width="115" height="88" density="50" />
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <ItemContainer hideitems="true" capacity="1" spawnwithid="adsbolt" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <SpawnItem identifiers="adsbolt" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <Containable items="adsbolt" />
+      <!--Spawn an ADS round on use. Condition -4.76 -> 21 shots per magazine.-->
+      <StatusEffect type="OnUse" target="This" condition="-4.76" disabledeltatime="true"></StatusEffect>
+    </ItemContainer>
+  </Item>
+  <Item name="ADS Bolt" identifier="adsbolt" category="Misc" scale="0.5" hideinmenus="true">
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Vanilla Arsenal.png" sourcerect="143,414,113,9" depth="0.55" />
+    <Body width="170" height="10" density="10" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" launchimpulse="80.0" maxtargetstohit="2" removeonhit="false">
+      <Attack structuredamage="2" itemdamage="30" severlimbsprobability="0.05" penetration="0.7">
+        <Affliction identifier="lacerations" strength="8" />
+        <Affliction identifier="bleeding" strength="10" />
+        <Affliction identifier="internaldamage" strength="4" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This" lifetime="2">
+        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.1" scalemax="0.2" />
+      </StatusEffect>
+      <!-- a 3 second lifetime after being fired -->
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="3">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <!--This is my improvised spaghetti code bullet damage for items such as door and hatches since in barotrauma bullets do NOT deal any damage to those things.-->
+      <StatusEffect type="OnImpact" Condition="-100.0" disabledeltatime="true">
+        <Explosion range="20.0" levelwalldamage="100" itemdamage="200" force="10" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="0"></Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="0" anglemax="360" particleamount="5" velocitymin="-30" velocitymax="-300" scalemin="0.75" scalemax="1" />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="*0.5" />
+  </Item>
+  <Item name="APS Magazine" identifier="apsmagazine" description="Magazine for the APS filled with medium sized steel bolts capable of penetrating walls and targets alike." scale="0.2" tags="smallitem,apsammo" cargocontaineridentifier="metalcrate" category="Equipment" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="aps" minamount="1" maxamount="1" spawnprobability="1" />
+    <Deconstruct time="10">
+      <Item identifier="magnesium" />
+      <Item identifier="steel" />
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="45" />
+      <RequiredItem identifier="magnesium" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="aluminium" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="15">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="magnesium" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="apsmagazine" mincondition="0.0" maxcondition="0.0" usecondition="false" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal.png" sourcerect="353,155,200,214" />
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal.png" depth="0.54" sourcerect="388,192,129,141" origin="0.5,0.5" scale="1" />
+    <Body width="115" height="88" density="50" />
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <ItemContainer hideitems="true" capacity="1" spawnwithid="apsbolt" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <SpawnItem identifiers="apsbolt" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <Containable items="apsbolt" />
+      <!--Spawn an APS round on use. Condition -4 -> 25 shots per magazine.-->
+      <StatusEffect type="OnUse" target="This" condition="-4" disabledeltatime="true">
+        <SpawnItem identifiers="apsbolt" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+  </Item>
+  <Item name="APS Bolt" identifier="apsbolt" category="Misc" scale="0.5" hideinmenus="true">
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Vanilla Arsenal.png" sourcerect="143,414,113,9" depth="0.55" />
+    <Body width="170" height="10" density="10" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" launchimpulse="70.0" maxtargetstohit="2" removeonhit="false">
+      <Attack structuredamage="2" itemdamage="20" severlimbsprobability="0.05" penetration="0.6">
+        <Affliction identifier="lacerations" strength="7" />
+        <Affliction identifier="bleeding" strength="10" />
+        <Affliction identifier="internaldamage" strength="4" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This" lifetime="2">
+        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.1" scalemax="0.2" />
+      </StatusEffect>
+      <!-- a 3 second lifetime after being fired -->
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="3">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <!--This is my improvised spaghetti code bullet damage for items such as door and hatches since in barotrauma bullets do NOT deal any damage to those things.-->
+      <StatusEffect type="OnImpact" Condition="-100.0" disabledeltatime="true">
+        <Explosion range="20.0" levelwalldamage="100" itemdamage="200" force="10" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="0"></Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="0" anglemax="360" particleamount="5" velocitymin="-30" velocitymax="-300" scalemin="0.75" scalemax="1" />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="*0.5" />
+  </Item>
+  <Item name="SPP-1 Steel Bolt" identifier="sppbolt" description="Small steel bolt capable of penetrating walls and targets alike." category="Equipment" maxstacksize="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,sppammo" Scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="spp" minamount="4" maxamount="4" spawnprobability="1" />
+    <Price baseprice="15" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" minavailable="6" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" minavailable="12" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="steel" outcondition="0.125" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="15" amount="8" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="35" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal.png" sourcerect="224,17,157,156" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Vanilla Arsenal.png" sourcerect="143,414,114,10" depth="0.55" origin="0.5,0.5" />
+    <Body width="110" height="10" density="10" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="55.0" maxtargetstohit="2" removeonhit="false">
+      <Attack structuredamage="2" targetforce="1" itemdamage="20" severlimbsprobability="0.05" penetration="0.5">
+        <Affliction identifier="lacerations" strength="8" />
+        <Affliction identifier="bleeding" strength="10" />
+        <Affliction identifier="internaldamage" strength="4" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This" lifetime="2">
+        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.1" scalemax="0.2" />
+      </StatusEffect>
+      <!-- a 3 second lifetime after being fired -->
+      <StatusEffect type="OnImpact" target="This" stackable="false" delay="3">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <!--This is my improvised spaghetti code bullet damage for items such as door and hatches since in barotrauma bullets do NOT deal any damage to those things.-->
+      <StatusEffect type="OnImpact" Condition="-100.0" disabledeltatime="true">
+        <Explosion range="20.0" levelwalldamage="100" itemdamage="200" force="10" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="0"></Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="0" anglemax="360" particleamount="5" velocitymin="-30" velocitymax="-300" scalemin="0.5" scalemax="0.75" />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="PX-11 Steel Bolt" identifier="pxbolt" description="Small steel bolt capable of penetrating walls and targets alike." category="Equipment" maxstacksize="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,pxammo" Scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="px" minamount="6" maxamount="6" spawnprobability="1" />
+    <Price baseprice="12" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" minavailable="6" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" minavailable="12" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="steel" outcondition="0.150" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" amount="6" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal.png" sourcerect="210,196,140,138" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Vanilla Arsenal.png" sourcerect="143,414,114,10" depth="0.55" origin="0.5,0.5" />
+    <Body width="110" height="10" density="10" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="45.0" maxtargetstohit="2" removeonhit="false">
+      <Attack structuredamage="1" itemdamage="10" severlimbsprobability="0.05" penetration="0.5">
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="bleeding" strength="6" />
+        <Affliction identifier="internaldamage" strength="4" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This" lifetime="2">
+        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.1" scalemax="0.2" />
+      </StatusEffect>
+      <!-- a 3 second lifetime after being fired -->
+      <StatusEffect type="OnImpact" target="This" stackable="false" delay="3">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <!--This is my improvised spaghetti code bullet damage for items such as door and hatches since in barotrauma bullets do NOT deal any damage to those things.-->
+      <StatusEffect type="OnImpact" Condition="-100.0" disabledeltatime="true">
+        <Explosion range="20.0" levelwalldamage="100" itemdamage="100" force="10" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="0"></Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="0" anglemax="360" particleamount="5" velocitymin="-30" velocitymax="-300" scalemin="0.5" scalemax="0.75" />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Steel Bolt Shotgun Shell" identifier="steelboltshell" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,specialshotgunammo" Scale="0.33" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="stingrayshotgun" minamount="4" maxamount="4" spawnprobability="1" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.2" />
+    <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="4" spawnprobability="0.33" />
+    <Price baseprice="80" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" minavailable="4" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" minavailable="12" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true" amount="4">
+      <RequiredSkill identifier="weapons" level="45" />
+      <RequiredItem identifier="magnesium" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal Part 2.png" sourcerect="697,657,62,62" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal Part 2.png" sourcerect="705,747,49,22" depth="0.55" origin="0.5,0.5" />
+    <Body width="23" height="10" density="40" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <!--When fired, spawns 8 projectiles simultaneously.-->
+    <Projectile characterusable="false" hitscan="true" hitscancount="8" removeonhit="true" spread="10">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+      <Attack structuredamage="0.5" targetforce="4" itemdamage="15" severlimbsprobability="0.2">
+        <Affliction identifier="bleeding" strength="6" />
+        <Affliction identifier="gunshotwound" strength="8" />
+        <Affliction identifier="stun" strength="0.2" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Explosive Bang Stick Charge" identifier="explosivebangstickcharge" description="A lethal Bang Stick charge, very effective against marine predators." category="Equipment" maxstacksize="2" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,bangstickcharge" Scale="0.20" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="bangstick" minamount="1" maxamount="1" spawnprobability="1" />
+    <Price baseprice="250" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" minavailable="2" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="iron" />
+      <Item identifier="lead" />
+      <Item identifier="uex" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="15">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="iron" />
+      <RequiredItem identifier="lead" />
+      <RequiredItem identifier="uex" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal.png" sourcerect="385,887,120,118" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal.png" sourcerect="274,921,104,45" depth="0.55" scale="0.20" origin="0.5,0.5" />
+    <Body width="38" height="15" density="30" />
+    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Stun Bang Stick Charge" identifier="stunbangstickcharge" description="A non-lethal Bang Stick charge, great for fending off marine predators." category="Equipment" maxstacksize="2" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,bangstickcharge" Scale="0.20" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="bangstick" minamount="1" maxamount="1" spawnprobability="1" />
+    <Price baseprice="120" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" minavailable="4" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="iron" />
+      <Item identifier="lead" />
+      <Item identifier="flashpowder" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="15">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="iron" />
+      <RequiredItem identifier="lead" />
+      <RequiredItem identifier="flashpowder" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal.png" sourcerect="132,893,129,112" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal.png" sourcerect="24,916,97,47" depth="0.55" scale="0.20" origin="0.5,0.5" />
+    <Body width="38" height="15" density="30" />
+    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Large Titanium Anchorhead Harpoon" identifier="csbanchor" description="A large and heavy harpoon with what seems to be a sharpened anchor for it's tip. Provides extreme penetration, the very definition of the unstoppable force" category="Equipment" maxstacksize="3" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,csbammo" Scale="0.22" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="csb" minamount="1" maxamount="1" spawnprobability="1" />
+    <Deconstruct time="5">
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="steel" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal.png" sourcerect="812,376,196,189" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal.png" sourcerect="31,637,582,83" scale="0.22" depth="0.55" origin="0.5,0.5" />
+    <Body width="160" height="10" density="20" />
+    <Holdable slots="Any,RightHand+LeftHand" holdpos="0,-50" handle1="-10,-13" handle2="10,-13" holdangle="-350" aimable="false" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="30.0" hitscan="false" maxtargetstohit="3" sticktocharacters="false">
+      <Attack structuredamage="60" itemdamage="800" stun="2.5" targetforce="6" severlimbsprobability="0.5">
+        <Affliction identifier="lacerations" strength="60" />
+        <Affliction identifier="bleeding" strength="10" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="3" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" lifetime="2">
+        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="8" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="0.6" />
+      </StatusEffect>
+      <!-- Fix for Spears tumbling end-over-end when fired -->
+      <StatusEffect type="OnActive" target="This" disabledeltatime="true" Condition="-5.0">
+        <Conditional Condition="gt 96" />
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" disabledeltatime="true" delay="0.3" stackable="false">
+        <Conditional Condition="gt 50" />
+        <Use />
+      </StatusEffect>
+      <!-- a 0.4 second lifetime after hitting an object to delete the projectile shortly after while still allowing more penetration -->
+      <StatusEffect type="OnImpact" target="This" stackable="false" delay="0.4">
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="10" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="0" anglemax="360" particleamount="6" velocitymin="-30" velocitymax="-300" scalemin="0.75" scalemax="1" />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Large Titanium Hammerhead Harpoon" identifier="csbhammer" description="A large and heavy harpoon with what seems to be a bulky cylinder with a slot for explosives for it's tip. Deals heavy blunt damage. Here's your hammer, now just find an anvil." category="Equipment" maxstacksize="3" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,csbammo" Scale="0.22" impactsoundtag="impact_metal_light">
+    <Deconstruct time="5">
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="fpgacircuit" />
+      <Item identifier="steel" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal.png" sourcerect="792,603,216,216" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal.png" sourcerect="32,740,601,83" scale="0.22" depth="0.55" origin="0.5,0.5" />
+    <Body width="160" height="10" density="20" />
+    <Holdable slots="Any,RightHand+LeftHand" holdpos="0,-50" handle1="-10,-13" handle2="10,-13" holdangle="-350" aimable="false" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="30.0" hitscan="false" maxtargetstohit="1" sticktocharacters="false">
+      <Attack structuredamage="120" itemdamage="800" stun="2.5" targetforce="25" severlimbsprobability="0.5">
+        <Affliction identifier="blunttrauma" strength="100" />
+        <Affliction identifier="bleeding" strength="10" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="3" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" lifetime="2">
+        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="8" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="0.6" />
+      </StatusEffect>
+      <!-- Fix for Spears tumbling end-over-end when fired -->
+      <StatusEffect type="OnActive" target="This" disabledeltatime="true" Condition="-5.0">
+        <Conditional Condition="gt 96" />
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" disabledeltatime="true" delay="0.3" stackable="false">
+        <Conditional Condition="gt 50" />
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="Contained" allowwhenbroken="true">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" stackable="false">
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="10" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="0" anglemax="360" particleamount="6" velocitymin="-30" velocitymax="-300" scalemin="0.75" scalemax="1" />
+      </StatusEffect>
+    </Projectile>
+    <ItemContainer hideitems="true" capacity="1" maxstacksize="1" canbeselected="false">
+      <Containable items="smallitem,explosive" />
+    </ItemContainer>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Override>
+    <Item name="" identifier="spear" description="A ordinary harpoon for the harpoon gun, great for piercing armor." category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo" Scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="harpoongun" minamount="6" maxamount="6" spawnprobability="1" />
+      <PreferredContainer primary="harpoonpistol" minamount="2" maxamount="2" spawnprobability="1" />
+      <PreferredContainer primary="armcab" minamount="0" maxamount="5" spawnprobability="0.25" />
+      <PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="3" spawnprobability="0.25" />
+      <PreferredContainer secondary="abandonedarmcab" minamount="0" maxamount="3" spawnprobability="0.1" />
+      <Price baseprice="30" soldeverywhere="false">
+        <Price locationtype="outpost" multiplier="1.5" sold="false" />
+        <Price locationtype="city" multiplier="1.25" minavailable="6" />
+        <Price locationtype="research" multiplier="1.25" sold="false" />
+        <Price locationtype="military" multiplier="0.9" minavailable="12" />
+        <Price locationtype="mine" multiplier="1.25" sold="false" />
+      </Price>
+      <Deconstruct time="5">
+        <Item identifier="steel" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="10">
+        <RequiredSkill identifier="weapons" level="20" />
+        <RequiredItem identifier="steel" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="197,268,56,54" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="10,14,168,12" depth="0.55" origin="0.5,0.5" />
+      <Body width="160" height="10" density="20" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" sticktoitems="true" sticktostructures="true" stickpermanently="true">
+        <Attack structuredamage="10" itemdamage="100" stun="0.2" targetforce="5" severlimbsprobability="0.1" penetration="0.5">
+          <Affliction identifier="bleeding" strength="25" />
+          <Affliction identifier="lacerations" strength="35" />
+          <Affliction identifier="stun" strength="0.25" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <sound file="Content/Sounds/Damage/LimbSlash1.ogg" type="OnUse" range="1000" selectionmode="Random" />
+          <sound file="Content/Sounds/Damage/LimbSlash2.ogg" type="OnUse" range="1000" />
+          <sound file="Content/Sounds/Damage/LimbSlash3.ogg" type="OnUse" range="1000" />
+          <sound file="Content/Sounds/Damage/LimbSlash4.ogg" type="OnUse" range="1000" />
+          <sound file="Content/Sounds/Damage/LimbSlash5.ogg" type="OnUse" range="1000" />
+          <sound file="Content/Sounds/Damage/LimbSlash6.ogg" type="OnUse" range="1000" />
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+        </StatusEffect>
+      </Projectile>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+  </Override>
+  <Override>
+    <Item name="" identifier="alienspear" description="A strange looking harpoon, these aren't common" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo" Scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="armcab" minamount="0" maxamount="5" spawnprobability="0.125" penetration="0.6" />
+      <Price baseprice="230" soldeverywhere="false">
+        <Price locationtype="outpost" multiplier="1.5" sold="false" />
+        <Price locationtype="city" multiplier="1.25" sold="false" />
+        <Price locationtype="research" multiplier="1.25" sold="false" />
+        <Price locationtype="military" multiplier="0.9" sold="false" />
+        <Price locationtype="mine" multiplier="1.25" sold="false" />
+      </Price>
+      <Deconstruct time="10">
+        <Item identifier="physicorium" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="10">
+        <RequiredSkill identifier="weapons" level="30" />
+        <RequiredItem identifier="physicorium" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="325,268,57,54" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="187,31,168,12" depth="0.55" origin="0.5,0.5" />
+      <Body width="160" height="10" density="20" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" sticktoitems="true" sticktostructures="true" stickpermanently="true" severlimbsprobability="0.1">
+        <Attack structuredamage="5" stun="0.2" itemdamage="100" targetforce="10">
+          <Affliction identifier="bleeding" strength="30" />
+          <Affliction identifier="lacerations" strength="50" />
+          <Affliction identifier="stun" strength="0.25" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+        </StatusEffect>
+      </Projectile>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+  </Override>
+  <Override>
+    <Item name="High-Explosive Harpoon" identifier="explosivespear" description="A harpoon with lethal explosives strapped to it" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo" Scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="armcab" minamount="0" maxamount="5" spawnprobability="0.125" />
+      <PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.25" />
+      <PreferredContainer secondary="abandonedarmcab" minamount="0" maxamount="1" spawnprobability="0.125" penetration="0.2" />
+      <Price baseprice="250" soldeverywhere="false">
+        <Price locationtype="outpost" multiplier="1.5" sold="false" />
+        <Price locationtype="city" multiplier="1.25" minavailable="3" />
+        <Price locationtype="research" multiplier="1.25" sold="false" />
+        <Price locationtype="military" multiplier="0.9" minavailable="6" />
+        <Price locationtype="mine" multiplier="1.25" sold="false" />
+      </Price>
+      <Deconstruct time="5">
+        <Item identifier="spear" />
+        <Item identifier="c4block" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="10" requiresrecipe="true">
+        <RequiredSkill identifier="weapons" level="30" />
+        <RequiredItem identifier="spear" />
+        <RequiredItem identifier="c4block" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="4,367,57,54" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="10,27,168,15" depth="0.55" origin="0.5,0.5" />
+      <Body width="160" height="10" density="20" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" sticktoitems="true" sticktostructures="true" stickpermanently="true" severlimbsprobability="0.1">
+        <Attack structuredamage="10" itemdamage="100">
+          <Affliction identifier="lacerations" strength="20" />
+          <Affliction identifier="bleeding" strength="10" />
+          <Affliction identifier="stun" strength="0.25" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <sound file="Content/Sounds/Damage/LimbSlash1.ogg" type="OnUse" range="1000" selectionmode="Random" />
+          <sound file="Content/Sounds/Damage/LimbSlash2.ogg" type="OnUse" range="1000" />
+          <sound file="Content/Sounds/Damage/LimbSlash3.ogg" type="OnUse" range="1000" />
+          <sound file="Content/Sounds/Damage/LimbSlash4.ogg" type="OnUse" range="1000" />
+          <sound file="Content/Sounds/Damage/LimbSlash5.ogg" type="OnUse" range="1000" />
+          <sound file="Content/Sounds/Damage/LimbSlash6.ogg" type="OnUse" range="1000" />
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" delay="0.5">
+          <sound file="Content/Items/Weapons/ExplosionMedium2.ogg" type="OnUse" range="2000" selectionmode="All" />
+          <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" type="OnUse" range="2000" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" delay="0.5" Condition="-100.0" stun="10.0" disabledeltatime="true">
+          <Explosion range="200.0" structuredamage="10" itemdamage="750" force="5" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
+            <Affliction identifier="bleeding" strength="40" />
+            <Affliction identifier="explosiondamage" strength="30" />
+            <Affliction identifier="stun" strength="2" />
+          </Explosion>
+        </StatusEffect>
+        <!--Destroy this after exploding-->
+        <StatusEffect type="OnUse" delay="0.5" target="This" disabledeltatime="true">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnBroken">
+          <Remove />
+        </StatusEffect>
+      </Projectile>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+  </Override>
+  <Override>
+    <Item name="" identifier="spearunique" description="Great stuff, deals true damage. No amount of armor will help" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true" allowasextracargo="true">
+      <PreferredContainer primary="harpoongun" />
+      <PreferredContainer primary="armcab" />
+      <PreferredContainer secondary="wreckstoragecab" minamount="2" maxamount="5" spawnprobability="0.02" />
+      <PreferredContainer secondary="wreckarmcab" minamount="3" maxamount="5" spawnprobability="0.03" />
+      <PreferredContainer secondary="abandonedarmcab" minamount="3" maxamount="5" spawnprobability="0.02" penetration="1" />
+      <Price baseprice="550" soldeverywhere="false" canbespecial="false">
+        <Price locationtype="outpost" sold="false" />
+        <Price locationtype="city" sold="false" />
+        <Price locationtype="research" sold="false" />
+        <Price locationtype="military" sold="false" />
+        <Price locationtype="mine" sold="false" />
+      </Price>
+      <Deconstruct time="5">
+        <Item identifier="steel" />
+        <Item identifier="iron" />
+      </Deconstruct>
+      <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="261,266,64,58" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="187,9,171,15" depth="0.55" origin="0.5,0.5" />
+      <Body width="160" height="10" density="20" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true">
+        <Attack structuredamage="20" itemdamage="100" targetforce="20" severlimbsprobability="0.2">
+          <Affliction identifier="bleeding" strength="50" />
+          <Affliction identifier="lacerations" strength="70" />
+          <Affliction identifier="stun" strength="3" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <sound file="Content/Sounds/Damage/LimbSlash1.ogg" type="OnUse" range="1000" selectionmode="Random" />
+          <sound file="Content/Sounds/Damage/LimbSlash2.ogg" type="OnUse" range="1000" />
+          <sound file="Content/Sounds/Damage/LimbSlash3.ogg" type="OnUse" range="1000" />
+          <sound file="Content/Sounds/Damage/LimbSlash4.ogg" type="OnUse" range="1000" />
+          <sound file="Content/Sounds/Damage/LimbSlash5.ogg" type="OnUse" range="1000" />
+          <sound file="Content/Sounds/Damage/LimbSlash6.ogg" type="OnUse" range="1000" />
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+        </StatusEffect>
+      </Projectile>
+    </Item>
+  </Override>
+  <Item name="Stun Explosive Harpoon" identifier="stunexplosivespear" description="A harpoon with non-lethal explosives strapped to it" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo" Scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="armcab" minamount="0" maxamount="5" spawnprobability="0.125" />
+    <PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.25" />
+    <PreferredContainer secondary="abandonedarmcab" minamount="0" maxamount="1" spawnprobability="0.125" penetration="0.2" />
+    <Price baseprice="200" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" minavailable="3" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" minavailable="6" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="spear" />
+      <Item identifier="phosphorus" />
+      <Item identifier="flashpowder" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="spear" />
+      <RequiredItem identifier="phosphorus" />
+      <RequiredItem identifier="flashpowder" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="66,366,57,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="15,335,169,15" depth="0.55" origin="0.5,0.35" />
+    <Body width="160" height="10" density="20" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" sticktoitems="true" sticktostructures="true" stickpermanently="true" severlimbsprobability="0.1">
+      <Attack structuredamage="10" stun="0.2" itemdamage="100">
+        <Affliction identifier="lacerations" strength="20" />
+        <Affliction identifier="bleeding" strength="10" />
+        <Affliction identifier="stun" strength="0.25" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <sound file="Content/Sounds/Damage/LimbSlash1.ogg" type="OnUse" range="1000" selectionmode="Random" />
+        <sound file="Content/Sounds/Damage/LimbSlash2.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/LimbSlash3.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/LimbSlash4.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/LimbSlash5.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/LimbSlash6.ogg" type="OnUse" range="1000" />
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" delay="0.5">
+        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" type="OnUse" range="1500" selectionmode="All" />
+        <sound file="Content/Items/Weapons/StunGrenade.ogg" type="OnUse" range="1500" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" delay="0.5" Condition="-100.0" stun="10.0" disabledeltatime="true">
+        <Explosion range="200.0" structuredamage="5" itemdamage="250" stun="2" force="5" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
+          <Affliction identifier="explosiondamage" strength="10" />
+          <Affliction identifier="stun" strength="5" />
+        </Explosion>
+      </StatusEffect>
+      <!--Destroy this after exploding-->
+      <StatusEffect type="OnUse" delay="0.5" target="This" disabledeltatime="true">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="EMP Explosive Harpoon" identifier="empexplosivespear" description="A special explosive harpoon capable of frying the most complex electronics" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo" Scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="armcab" minamount="0" maxamount="5" spawnprobability="0.125" />
+    <PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.25" />
+    <PreferredContainer secondary="abandonedarmcab" minamount="0" maxamount="1" spawnprobability="0.125" penetration="0.2" />
+    <Price baseprice="200" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" minavailable="3" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" minavailable="6" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="spear" />
+      <Item identifier="c4block" />
+      <Item identifier="copper" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="spear" />
+      <RequiredItem identifier="copper" />
+      <RequiredItem identifier="c4block" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="131,366,57,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="14,290,169,15" depth="0.55" origin="0.5,0.35" />
+    <Body width="160" height="10" density="20" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" sticktoitems="true" sticktostructures="true" stickpermanently="true" severlimbsprobability="0.1">
+      <Attack structuredamage="10" stun="0.2" itemdamage="100">
+        <Affliction identifier="lacerations" strength="20" />
+        <Affliction identifier="bleeding" strength="10" />
+        <Affliction identifier="stun" strength="0.25" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <sound file="Content/Sounds/Damage/LimbSlash1.ogg" type="OnUse" range="1000" selectionmode="Random" />
+        <sound file="Content/Sounds/Damage/LimbSlash2.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/LimbSlash3.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/LimbSlash4.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/LimbSlash5.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/LimbSlash6.ogg" type="OnUse" range="1000" />
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" delay="0.5">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" range="1500" selectionmode="All" />
+        <sound file="Content/Items/Weapons/Emp.ogg" range="1500" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" delay="0.5" Condition="-100.0" stun="10.0" disabledeltatime="true">
+        <Explosion range="200.0" structuredamage="5" itemdamage="50" empstrength="3" applyfireeffects="false" stun="2" force="5" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
+          <Affliction identifier="bleeding" strength="20" />
+          <Affliction identifier="explosiondamage" strength="25" />
+          <Affliction identifier="stun" strength="1" />
+        </Explosion>
+      </StatusEffect>
+      <!--Destroy this after exploding-->
+      <StatusEffect type="OnUse" delay="0.5" target="This" disabledeltatime="true">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Flare Harpoon" identifier="flarespear" description="flare harpoon greatly help in illuminating dark caverns, corridors and silhouettes. It's hot and glows brighter than a glowstick." category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo,flare" Scale="0.5" impactsoundtag="impact_metal_light">
+    <Price baseprice="125" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" minavailable="4" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" sold="false" />
+      <Price locationtype="mine" multiplier="1.25" minavailable="8" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="spear" />
+      <Item identifier="antibleeding2" />
+      <Item identifier="flare" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="15" />
+      <RequiredItem identifier="spear" />
+      <RequiredItem identifier="antibleeding2" />
+      <RequiredItem identifier="flare" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="121,177,55,52" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="13,59,168,14" depth="0.55" origin="0.5,0.5" />
+    <Body width="160" height="10" density="20" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <GreaterComponent TimeFrame="0">
+      <StatusEffect type="Always" targettype="this" condition="0" setvalue="true" comparison="and">
+        <Conditional HasTag="deconstructor" targetcontainer="true" />
+        <Conditional TimeFrame="gt 0" />
+      </StatusEffect>
+      <StatusEffect type="Always" targettype="this" condition="100" setvalue="true">
+        <Conditional HasTag="neq deconstructor" targetcontainer="true" />
+      </StatusEffect>
+    </GreaterComponent>
+    <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" sticktoitems="true" sticktostructures="true" stickpermanently="true">
+      <Attack structuredamage="10" itemdamage="100" targetforce="5" severlimbsprobability="0.1" penetration="0.5">
+        <Affliction identifier="burn" strength="10" />
+        <Affliction identifier="bleeding" strength="25" />
+        <Affliction identifier="lacerations" strength="30" />
+        <Affliction identifier="stun" strength="0.25" />
+        <sound file="Content/Items/Tools/FlareIgnite.ogg" range="600.0" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <sound file="Content/Sounds/Damage/LimbSlash1.ogg" type="OnUse" range="1000" selectionmode="Random" />
+        <sound file="Content/Sounds/Damage/LimbSlash2.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/LimbSlash3.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/LimbSlash4.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/LimbSlash5.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/LimbSlash6.ogg" type="OnUse" range="1000" />
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <GreaterComponent>
+        <StatusEffect type="OnNotContained" targettype="This">
+          <sound file="Content/Items/Tools/FlareLoop.ogg" range="800.0" loop="true" />
+          <ParticleEmitter particle="flare" emitinterval="2.1" particleamount="8" particlespersecond="45" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" />
+          <ParticleEmitter particle="FlareBubbles" particlespersecond="30" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" scalemin="0.8" scalemax="1.2" />
+        </StatusEffect>
+      </GreaterComponent>
+      <StatusEffect type="OnUse" targettype="This" TimeFrame=".5" disabledeltatime="true">
+        <Conditional TimeFrame="0" />
+      </StatusEffect>
+      <LightComponent LightColor="255,10,10,175" Flicker="0.5" range="450" IsOn="false">
+        <sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="72,889,77,21" alpha="1.0" origin="0.5,0.5" />
+        <StatusEffect type="Always" targettype="This" IsOn="true" comparison="and">
+          <Conditional TimeFrame="gt 0" />
+          <Conditional TimeFrame="lt 1600" />
+        </StatusEffect>
+        <StatusEffect type="Always" targettype="This" IsOn="false">
+          <Conditional TimeFrame="gte 1600" />
+        </StatusEffect>
+      </LightComponent>
+    </Projectile>
+    <LightComponent LightColor="255,10,10,175" Flicker="0.5" range="450" IsOn="false">
+      <sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="72,889,77,21" alpha="1.0" origin="0.5,0.5" />
+      <StatusEffect type="Always" targettype="This" IsOn="true" comparison="and" TimeFrame="1">
+        <Conditional TimeFrame="gt 0" />
+        <Conditional TimeFrame="lt 1600" />
+      </StatusEffect>
+      <StatusEffect type="Always" targettype="This" IsOn="false">
+        <Conditional TimeFrame="gte 1600" />
+      </StatusEffect>
+    </LightComponent>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Glowstick Harpoon" identifier="glowstickspear" description="A glowstick harpoon, easier to find in the dark than a regular harpoon." category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo" Scale="0.5" impactsoundtag="impact_metal_light">
+    <Price baseprice="125" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" sold="false" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="spear" outcondition="100" />
+      <Item identifier="bandage" outcondition="100" />
+      <Item identifier="glowstick" copycondition="true" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="5" />
+      <RequiredItem identifier="spear" />
+      <RequiredItem identifier="bandage" />
+      <RequiredItem identifier="glowstick" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="5,176,57,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="13,100,168,15" depth="0.55" origin="0.5,0.5" />
+    <Body width="160" height="10" density="20" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <GreaterComponent TimeFrame="0">
+      <StatusEffect type="Always" targettype="this" condition="0" setvalue="true" comparison="and">
+        <Conditional HasTag="deconstructor" targetcontainer="true" />
+        <Conditional TimeFrame="gt 0" />
+      </StatusEffect>
+      <StatusEffect type="Always" targettype="this" condition="100" setvalue="true">
+        <Conditional HasTag="neq deconstructor" targetcontainer="true" />
+      </StatusEffect>
+    </GreaterComponent>
+    <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" sticktoitems="true" sticktostructures="true" stickpermanently="true">
+      <Attack structuredamage="10" itemdamage="100" targetforce="5" severlimbsprobability="0.1" penetration="0.5">
+        <Affliction identifier="bleeding" strength="25" />
+        <Affliction identifier="lacerations" strength="35" />
+        <Affliction identifier="stun" strength="0.25" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <sound file="Content/Sounds/Damage/LimbSlash1.ogg" type="OnUse" range="1000" selectionmode="Random" />
+        <sound file="Content/Sounds/Damage/LimbSlash2.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/LimbSlash3.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/LimbSlash4.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/LimbSlash5.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/LimbSlash6.ogg" type="OnUse" range="1000" />
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This" TimeFrame=".5" disabledeltatime="true">
+        <Conditional TimeFrame="0" />
+      </StatusEffect>
+      <LightComponent LightColor="15,255,15,175" Flicker="0.0" range="350" IsOn="false">
+        <sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="63,122,68,20" alpha="1.0" origin="0.5,0.5" />
+        <StatusEffect type="Always" targettype="This" IsOn="true" comparison="and">
+          <Conditional TimeFrame="gt 0" />
+          <Conditional TimeFrame="lt 1600" />
+        </StatusEffect>
+        <StatusEffect type="Always" targettype="This" IsOn="false">
+          <Conditional TimeFrame="gte 1600" />
+        </StatusEffect>
+      </LightComponent>
+    </Projectile>
+    <LightComponent LightColor="15,255,15,125" Flicker="0.0" range="300" IsOn="false">
+      <sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="63,122,68,20" alpha="1.0" origin="0.5,0.5" />
+      <StatusEffect type="Always" targettype="This" IsOn="true" comparison="and" TimeFrame="1">
+        <Conditional TimeFrame="gt 0" />
+        <Conditional TimeFrame="lt 1600" />
+      </StatusEffect>
+      <StatusEffect type="Always" targettype="This" IsOn="false">
+        <Conditional TimeFrame="gte 1600" />
+      </StatusEffect>
+    </LightComponent>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Floating Harpoon" identifier="floatingspear" description="A harpoon for the harpoon gun balanced out with some rubber. Flies slower but straighter and does not sink after it hits something." category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo" Scale="0.5" impactsoundtag="impact_metal_light">
+    <Price baseprice="100" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" sold="false" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="spear" />
+      <Item identifier="rubber" />
+      <Item identifier="elastin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="5" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="spear" />
+      <RequiredItem identifier="rubber" />
+      <RequiredItem identifier="elastin" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="60,176,57,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="13,144,168,29" depth="0.55" origin="0.5,0.2" />
+    <Body width="160" height="10" density="10" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="17.5" sticktocharacters="true" sticktoitems="true" sticktostructures="true" stickpermanently="true">
+      <Attack structuredamage="10" itemdamage="100" targetforce="5" severlimbsprobability="0.1" penetration="0.5">
+        <Affliction identifier="bleeding" strength="25" />
+        <Affliction identifier="lacerations" strength="35" />
+        <Affliction identifier="stun" strength="0.25" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <sound file="Content/Sounds/Damage/LimbSlash1.ogg" type="OnUse" range="1000" selectionmode="Random" />
+        <sound file="Content/Sounds/Damage/LimbSlash2.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/LimbSlash3.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/LimbSlash4.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/LimbSlash5.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/LimbSlash6.ogg" type="OnUse" range="1000" />
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Blunt Tip Harpoon" identifier="blunttipspear" description="A harpoon with a blunt tip that deals blunt trauma to it's targets, staggers for longer and doesn't stick or pierce very well." category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo" Scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="armcab" minamount="0" maxamount="5" spawnprobability="0.25" />
+    <PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="3" spawnprobability="0.25" />
+    <PreferredContainer secondary="abandonedarmcab" minamount="0" maxamount="3" spawnprobability="0.1" />
+    <Price baseprice="30" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" minavailable="6" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" minavailable="12" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="200,366,57,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="202,246,170,11" depth="0.55" origin="0.5,0.5" />
+    <Body width="160" height="10" density="20" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="20.0">
+      <Attack structuredamage="10" itemdamage="100" stun="0.2" targetforce="8" severlimbsprobability="0.1" penetration="0.2">
+        <Affliction identifier="blunttrauma" strength="45" />
+        <Affliction identifier="stun" strength="0.4" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <sound file="Content/Sounds/Damage/HitArmor1.ogg" type="OnUse" range="1000" selectionmode="Random" />
+        <sound file="Content/Sounds/Damage/HitArmor2.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/HitArmor3.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/HitArmor4.ogg" type="OnUse" range="1000" />
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Blunt Tip Flare Harpoon" identifier="blunttipflarespear" description="Blunt tip flare harpoon greatly help in illuminating dark caverns, corridors and silhouettes. It's hot and glows brighter than a glowstick." category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo,flare" Scale="0.5" impactsoundtag="impact_metal_light">
+    <Price baseprice="125" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" minavailable="4" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" sold="false" />
+      <Price locationtype="mine" multiplier="1.25" minavailable="8" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="blunttipspear" />
+      <Item identifier="antibleeding2" />
+      <Item identifier="flare" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="15" />
+      <RequiredItem identifier="blunttipspear" />
+      <RequiredItem identifier="antibleeding2" />
+      <RequiredItem identifier="flare" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="307,178,57,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="200,59,170,13" depth="0.55" origin="0.5,0.5" />
+    <Body width="160" height="10" density="20" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <GreaterComponent TimeFrame="0">
+      <StatusEffect type="Always" targettype="this" condition="0" setvalue="true" comparison="and">
+        <Conditional HasTag="deconstructor" targetcontainer="true" />
+        <Conditional TimeFrame="gt 0" />
+      </StatusEffect>
+      <StatusEffect type="Always" targettype="this" condition="100" setvalue="true">
+        <Conditional HasTag="neq deconstructor" targetcontainer="true" />
+      </StatusEffect>
+    </GreaterComponent>
+    <Projectile characterusable="false" launchimpulse="20.0">
+      <Attack structuredamage="10" itemdamage="100" targetforce="8" severlimbsprobability="0.1" penetration="0.2">
+        <Affliction identifier="burn" strength="10" />
+        <Affliction identifier="blunttrauma" strength="40" />
+        <Affliction identifier="stun" strength="0.4" />
+        <sound file="Content/Items/Tools/FlareIgnite.ogg" range="600.0" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <sound file="Content/Sounds/Damage/HitArmor1.ogg" type="OnUse" range="1000" selectionmode="Random" />
+        <sound file="Content/Sounds/Damage/HitArmor2.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/HitArmor3.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/HitArmor4.ogg" type="OnUse" range="1000" />
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <GreaterComponent>
+        <StatusEffect type="OnNotContained" targettype="This">
+          <sound file="Content/Items/Tools/FlareLoop.ogg" range="800.0" loop="true" />
+          <ParticleEmitter particle="flare" emitinterval="2.1" particleamount="8" particlespersecond="45" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" />
+          <ParticleEmitter particle="FlareBubbles" particlespersecond="30" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" scalemin="0.8" scalemax="1.2" />
+        </StatusEffect>
+      </GreaterComponent>
+      <StatusEffect type="OnUse" targettype="This" TimeFrame=".5" disabledeltatime="true">
+        <Conditional TimeFrame="0" />
+      </StatusEffect>
+      <LightComponent LightColor="255,10,10,175" Flicker="0.5" range="450" IsOn="false">
+        <sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="72,889,77,21" alpha="1.0" origin="0.5,0.5" />
+        <StatusEffect type="Always" targettype="This" IsOn="true" comparison="and">
+          <Conditional TimeFrame="gt 0" />
+          <Conditional TimeFrame="lt 1600" />
+        </StatusEffect>
+        <StatusEffect type="Always" targettype="This" IsOn="false">
+          <Conditional TimeFrame="gte 1600" />
+        </StatusEffect>
+      </LightComponent>
+    </Projectile>
+    <LightComponent LightColor="255,10,10,175" Flicker="0.5" range="450" IsOn="false">
+      <sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="72,889,77,21" alpha="1.0" origin="0.5,0.5" />
+      <StatusEffect type="Always" targettype="This" IsOn="true" comparison="and" TimeFrame="1">
+        <Conditional TimeFrame="gt 0" />
+        <Conditional TimeFrame="lt 1600" />
+      </StatusEffect>
+      <StatusEffect type="Always" targettype="This" IsOn="false">
+        <Conditional TimeFrame="gte 1600" />
+      </StatusEffect>
+    </LightComponent>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Blunt Tip Glowstick Harpoon" identifier="blunttipglowstickspear" description="A blunt tip glowstick harpoon, easier to find in the dark than a regular harpoon." category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo" Scale="0.5" impactsoundtag="impact_metal_light">
+    <Price baseprice="125" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" sold="false" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="blunttipspear" outcondition="100" />
+      <Item identifier="bandage" outcondition="100" />
+      <Item identifier="glowstick" copycondition="true" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="5" />
+      <RequiredItem identifier="blunttipspear" />
+      <RequiredItem identifier="bandage" />
+      <RequiredItem identifier="glowstick" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="192,178,57,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="200,101,169,15" depth="0.55" origin="0.5,0.5" />
+    <Body width="160" height="10" density="20" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <GreaterComponent TimeFrame="0">
+      <StatusEffect type="Always" targettype="this" condition="0" setvalue="true" comparison="and">
+        <Conditional HasTag="deconstructor" targetcontainer="true" />
+        <Conditional TimeFrame="gt 0" />
+      </StatusEffect>
+      <StatusEffect type="Always" targettype="this" condition="100" setvalue="true">
+        <Conditional HasTag="neq deconstructor" targetcontainer="true" />
+      </StatusEffect>
+    </GreaterComponent>
+    <Projectile characterusable="false" launchimpulse="20.0">
+      <Attack structuredamage="10" itemdamage="100" targetforce="8" severlimbsprobability="0.1" penetration="0.2">
+        <Affliction identifier="blunttrauma" strength="45" />
+        <Affliction identifier="stun" strength="0.4" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <sound file="Content/Sounds/Damage/HitArmor1.ogg" type="OnUse" range="1000" selectionmode="Random" />
+        <sound file="Content/Sounds/Damage/HitArmor2.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/HitArmor3.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/HitArmor4.ogg" type="OnUse" range="1000" />
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This" TimeFrame=".5" disabledeltatime="true">
+        <Conditional TimeFrame="0" />
+      </StatusEffect>
+      <LightComponent LightColor="15,255,15,175" Flicker="0.0" range="350" IsOn="false">
+        <sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="63,122,68,20" alpha="1.0" origin="0.5,0.5" />
+        <StatusEffect type="Always" targettype="This" IsOn="true" comparison="and">
+          <Conditional TimeFrame="gt 0" />
+          <Conditional TimeFrame="lt 1600" />
+        </StatusEffect>
+        <StatusEffect type="Always" targettype="This" IsOn="false">
+          <Conditional TimeFrame="gte 1600" />
+        </StatusEffect>
+      </LightComponent>
+    </Projectile>
+    <LightComponent LightColor="15,255,15,125" Flicker="0.0" range="300" IsOn="false">
+      <sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="63,122,68,20" alpha="1.0" origin="0.5,0.5" />
+      <StatusEffect type="Always" targettype="This" IsOn="true" comparison="and" TimeFrame="1">
+        <Conditional TimeFrame="gt 0" />
+        <Conditional TimeFrame="lt 1600" />
+      </StatusEffect>
+      <StatusEffect type="Always" targettype="This" IsOn="false">
+        <Conditional TimeFrame="gte 1600" />
+      </StatusEffect>
+    </LightComponent>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Blunt tip Floating Harpoon" identifier="blunttipfloatingspear" description="A blunt tip harpoon for the harpoon gun balanced out with some rubber. Flies slower but straighter and does not sink after it hits something." category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo" Scale="0.5" impactsoundtag="impact_metal_light">
+    <Price baseprice="100" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" sold="false" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="blunttipspear" />
+      <Item identifier="rubber" />
+      <Item identifier="elastin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="5" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="blunttipspear" />
+      <RequiredItem identifier="rubber" />
+      <RequiredItem identifier="elastin" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="248,178,57,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Harpoons.png" sourcerect="200,145,169,29" depth="0.55" origin="0.5,0.2" />
+    <Body width="160" height="10" density="10" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="17.5">
+      <Attack structuredamage="10" itemdamage="100" targetforce="8" severlimbsprobability="0.1" penetration="0.2">
+        <Affliction identifier="blunttrauma" strength="45" />
+        <Affliction identifier="stun" strength="0.4" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <sound file="Content/Sounds/Damage/HitArmor1.ogg" type="OnUse" range="1000" selectionmode="Random" />
+        <sound file="Content/Sounds/Damage/HitArmor2.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/HitArmor3.ogg" type="OnUse" range="1000" />
+        <sound file="Content/Sounds/Damage/HitArmor4.ogg" type="OnUse" range="1000" />
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Surplus Round" identifier="surplusround" category="Equipment" maxstacksize="16" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,spammo" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="pap" minamount="8" maxamount="8" spawnprobability="1" />
+    <Price baseprice="10" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" minavailable="16" />
+      <Price locationtype="city" multiplier="1.25" minavailable="24" />
+      <Price locationtype="research" multiplier="1.25" minavailable="8" />
+      <Price locationtype="military" multiplier="0.9" minavailable="36" />
+      <Price locationtype="mine" multiplier="1.25" minavailable="16" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="potassium" outcondition="0.125" />
+      <Item identifier="iron" outcondition="0.125" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="15" amount="16">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="potassium" />
+      <RequiredItem identifier="iron" />
+      <RequiredItem identifier="iron" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Vanilla Arsenal.png" sourcerect="264,304,62,59" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Vanilla Arsenal.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+    <Body width="29" height="10" density="40" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+      <Attack structuredamage="2" targetforce="10" itemdamage="30" severlimbsprobability="0.1">
+        <Affliction identifier="bleeding" strength="10" />
+        <Affliction identifier="gunshotwound" strength="15" />
+        <Affliction identifier="stun" strength="0.15" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+</Items>

@@ -282,199 +282,116 @@
         <!-- self buffs and utility items, driving the submarine -->
         <SubTree identifier="DiverTraining" type="specialization" requires="captain_primary" blocks="gunslinger,politician">
             <TalentOptions>
-                <TalentOption identifier="leadingbyexample"/>
-                <!-- NAV Talents -->
                 <!-- polarized lens, duel spec ops ability-->
-                <!-- TODO -->
-                <TalentOption identifier="experimentaldivinggear" />
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="helmsman"/>
-                <!-- NAV Talents -->
-                <!-- gain buff while in shuttle, emit defence buff while outside -->
-                <!-- TODO -->
-                <TalentOption identifier="shuttlecapitan" />
-                <!-- buff while in submarine, and buff to helm shkill while piloting -->
-                <!-- TODO -->
+                <!-- Driving the Shuttle 
+                     Remote Shuttle Controller
+                     shuttle buffs -->
+                <TalentOption identifier="shuttlecaptain" />
+                <!-- Driving the sub 
+                     Remote submarine Controller
+                     Sonar tech -->
                 <TalentOption identifier="proffesional" />
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="inspiringpresence"/>
-                <TalentOption identifier="trickledown"/>
-                <!-- NAV Talents -->
-                <!-- TODO -->
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="family"/>
-                <!-- NAV Talents -->
-                <!-- every time you get in new location, gain +1 to all skills, bonus lost on death -->
-                <!-- TODO Exists -->
-                <TalentOption identifier="masternavigator" />
-            </TalentOptions>
+                <TalentOption identifier="improvisedutilityharpoons" />
+              </TalentOptions>
+              <TalentOptions>
+                <TalentOption identifier="buccaneer" />
+                <TalentOption identifier="masterworkexperimentalharpoons" />
+              </TalentOptions>
+              <TalentOptions>
+                <TalentOption identifier="baneofthecryingseals" />
+                <TalentOption identifier="deadmanwalking" />
+              </TalentOptions>
         </SubTree>
         <!-- defensive buffs, coordinating dive teams -->
-        <SubTree identifier="Navigator" type="specialization" requires="captain_primary" blocks="gunslinger,skipper">
+        <SubTree identifier="Specialist" type="specialization" requires="security_primary" blocks="frogman,enforcer">
             <TalentOptions>
-                <TalentOption identifier="commendations"/>
-                <TalentOption identifier="physicalconditioning" />
-                <!-- NAV Talents -->
-                <!-- need that one but weaker, no one dies, and your mission is alien ruin, nest, get 20xp -->
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="yourreputation"/>
-                <ShowCaseTalent identifier="affiliation">
-                    <TalentOption identifier="affiliation_coalition"/>
-                    <TalentOption identifier="affiliation_separatists"/>
-                    <TalentOption identifier="affiliation_huskcult"/>
-                    <TalentOption identifier="affiliation_clowns"/>
-                </ShowCaseTalent>
-                <!-- NAV Talents -->
-                <!-- TODO Exists -->
-                <!-- give buff to manning the turet, weapons skill -->
-                <TalentOption identifier="targettingmatrix" />
-                <!-- TODO -->
-                <TalentOption identifier="stonewall" />
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="campaigning"/>
-                <TalentOption identifier="networking"/>
-                <!-- NAV Talents -->
-                <!-- TODO -->
-                <!-- gain defence buff to you and others small range while in water -->
-                <TalentOption identifier="spacialawarness" />
-                <!-- gain health to you and others small range while outside water -->
-                <TalentOption identifier="medicaltraining" />
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="figurehead"/>
-                <!-- NAV Talents -->
-                <!-- TODO -->
-                <!-- unique diving suit and space for an strafe like in specialist tree,  -->
-                <TalentOption identifier="navydiver" />
-            </TalentOptions>
-            <!-- <TalentOptions>
-                <TalentOption identifier="enchance3" />
-            </TalentOptions> -->
+                <TalentOption identifier="divinggoodies" />
+                <TalentOption identifier="onewithwater" />
+              </TalentOptions>
+              <TalentOptions>
+                <TalentOption identifier="strongcurrents" />
+                <TalentOption identifier="scavenger" />
+              </TalentOptions>
+              <TalentOptions>
+                <TalentOption identifier="bangstickschematics" />
+              </TalentOptions>
+              <TalentOptions>
+                <TalentOption identifier="dualspecops" />
+                <TalentOption identifier="divinginstructor" />
+              </TalentOptions>
         </SubTree>
     </TalentTree>
 
     <!--Head of security MORE AT TEACHING SKILL AND COORIDINATING SECURITY DUDES, weaker than normal security but with that upward, Gunnery, Buffs to shooting inside to submarine, debuffs when not inside-->
+    <!-- TODO -->
     <TalentTree jobidentifier="head_of_security">
         <SubTree identifier="security_primary" nameidentifier="talenttree.primary" type="primary">
-            <TalentOptions maxchosentalents="2">
-                <TalentOption identifier="protectandserve"/>
-                <TalentOption identifier="warstories"/>
-                <TalentOption identifier="firstaidtraining"/>
-                <TalentOption identifier="physicalconditioning"/>
-                <TalentOption identifier="swole"/>
-                <TalentOption identifier="buff"/>
+            <TalentOptions requiredtalents="2" maxchosentalents="6">
+              <TalentOption identifier="protectandserve"/>
+              <TalentOption identifier="warstories"/>
+              <TalentOption identifier="firstaidtraining"/>
+              <TalentOption identifier="physicalconditioning"/>
+              <TalentOption identifier="swole"/>
+              <TalentOption identifier="buff"/>
             </TalentOptions>
-            <TalentOptions maxchosentalents="2">
-                <TalentOption identifier="weaponsmith"/>
-                <TalentOption identifier="bythebook"/>
-                <TalentOption identifier="dontpushit"/>
-                <TalentOption identifier="bootcamp"/>
-                <TalentOption identifier="munitionsexpertise"/>
+            <TalentOptions requiredtalents="2" maxchosentalents="5">
+              <TalentOption identifier="weaponsmith"/>
+              <TalentOption identifier="bythebook"/>
+              <TalentOption identifier="dontpushit"/>
+              <TalentOption identifier="bootcamp"/>
+              <TalentOption identifier="munitionsexpertise"/>
             </TalentOptions>
-        </SubTree>
-        <!-- same as secuirity buf more focus on buffs and training, diving suit upgrade aim assist +25 Weapon skill -->
-        <SubTree identifier="Warden" type="specialization" requires="security_primary" blocks="enforcer,gunner">
-            <!-- Same as in normal security -->
+          </SubTree>
+          <SubTree identifier="frogman" type="specialization" requires="security_primary" blocks="enforcer,gunner">
             <TalentOptions>
-                <TalentOption identifier="defenceindepth" />
-                <!-- HOS Talents -->
-                <!-- TODO -->
-                <TalentOption identifier="boardingparty"/>
+              <TalentOption identifier="boardingparty"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="beatcop" />
-                <TalentOption identifier="buccaneer" />
-                <!-- HOS Talents -->
-                <!-- TODO -->
-                <TalentOption identifier="scavenger"/>
-                <TalentOption identifier="slayer"/>
+              <TalentOption identifier="scavenger"/>
+              <TalentOption identifier="slayer"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="nomercy" />
-                <TalentOption identifier="bythebook" />
-                <!-- HOS Talents -->
-                <!-- TODO -->
-                <TalentOption identifier="easyturtle"/>
-                <TalentOption identifier="daringdolphin"/>
+              <TalentOption identifier="easyturtle"/>
+              <TalentOption identifier="daringdolphin"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="implacable" />
-                <!-- HOS Talents -->
-                <!-- TODO -->
-                <TalentOption identifier="specops"/>
+              <TalentOption identifier="specops"/>
             </TalentOptions>
-            <!-- <TalentOptions>
-                <TalentOption identifier="enchance1" />
-            </TalentOptions> -->
-        </SubTree>
-        <SubTree identifier="HeadOfSecurity" type="specialization" requires="security_primary" blocks="frogman,gunner">
-            <!-- Unique, should focus on buffs to the team -->
+          </SubTree>
+          <SubTree identifier="enforcer" type="specialization" requires="security_primary" blocks="frogman,gunner">
             <TalentOptions>
-                <TalentOption identifier="enforcer" />
-                <TalentOption identifier="bootcamp" />
-                <!-- HOS Talents -->
-                <!-- TODO -->
-                <TalentOption identifier="pacificationkit"/>
+              <TalentOption identifier="pacificationkit"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="beatcop"/>
-                <TalentOption identifier="stonewall"/>
-                <!-- HOS Talents -->
-                <!-- ability to call an target dummy, get skill book witch you can only use on teemates, and you get 25% weapon skill when you level them up -->
-                <!-- TODO -->
-                <TalentOption identifier="targetdummy" />
+              <TalentOption identifier="beatcop"/>
+              <TalentOption identifier="stonewall"/>
             </TalentOptions>
             <TalentOptions>
-                <!-- TODO -->
-                <TalentOption identifier="munitionsexpertise" />
-                <!-- TODO -->
-                <TalentOption identifier="gunsmith" />
-                <!-- HOS Talents -->
-                <!-- TODO -->
-                <TalentOption identifier="crustyseaman"/>
-                <TalentOption identifier="inordinateexsanguination"/>
+              <TalentOption identifier="crustyseaman"/>
+              <TalentOption identifier="inordinateexsanguination"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="implacable"/>
-                <TalentOption identifier="weaponsmaitnence" />
-                <!-- HOS Talents -->
-                <!-- TODO -->
+              <TalentOption identifier="implacable"/>
             </TalentOptions>
-            <!-- <TalentOptions>
-                <TalentOption identifier="enchance2" />
-            </TalentOptions> -->
-        </SubTree>
-        <SubTree identifier="Defender" type="specialization" requires="security_primary" blocks="frogman,enforcer">
-            <!-- Same as in normal security -->
+          </SubTree>
+          <SubTree identifier="gunner" type="specialization" requires="security_primary" blocks="frogman,enforcer">
             <TalentOptions>
-                <TalentOption identifier="rifleman"/>
-                <TalentOption identifier="justascratch" />
+              <TalentOption identifier="rifleman"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="tandemfire"/>
-                <TalentOption identifier="commando"/>
-                <TalentOption identifier="stonewall" />
-                <TalentOption identifier="notasingleonegetsthough" />
+              <TalentOption identifier="tandemfire"/>
+              <TalentOption identifier="commando"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="gunrunner"/>
-                <TalentOption identifier="extrapowder"/>
-                <TalentOption identifier="unity" />
-                <TalentOption identifier="firstaidtraining" />
+              <TalentOption identifier="gunrunner"/>
+              <TalentOption identifier="extrapowder"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="warlord"/>
-                <TalentOption identifier="defenceplan" />
+              <TalentOption identifier="warlord"/>
             </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="enchance3" />
-            </TalentOptions>
-        </SubTree>
+          </SubTree>
     </TalentTree>
     <!--Diver neutral when fighing inside the submarine, buffs when in watter, bonusses to salage operations, breaching devices (explosives), 
     can drag people in watter so when submarine is flooded he can help -->
@@ -499,110 +416,55 @@
         <!-- offensive tree, going out of the submarine and fight in water, upgrade pucs with fins same as slipsuit -->
         <SubTree identifier="whaler" type="specialization" requires="security_primary" blocks="enforcer,gunner">
             <TalentOptions>
-                <TalentOption identifier="boardingparty"/>
-                <TalentOption identifier="watercombatexpert" />
-                <!-- gain more hapoons when harpoon crafting / dumb TODO, add 15xp from killing a monster -->
-                <TalentOption identifier="seadogspirit" />
-                <TalentOption identifier="sealeg" />
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="scavenger"/>
-                <TalentOption identifier="slayer"/>
-                <TalentOption identifier="personalizedequipment" />
-                <TalentOption identifier="buccaneer" />
-                <TalentOption identifier="improvisedutilityharpoons" />
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="easyturtle"/>
-                <TalentOption identifier="daringdolphin"/>
-                <TalentOption identifier="deepseaslayer" />
-                <TalentOption identifier="watercqc" />
-                <TalentOption identifier="buccaneer" />
-                <TalentOption identifier="masterworkexperimentalharpoons" />
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="specops"/>
-                <TalentOption identifier="warlord" />
-                <TalentOption identifier="baneofthecryingseals" />
-                <TalentOption identifier="deadmanwalking" />
-                <!-- Add big ass crossbow here -->
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="enchance1" />
-            </TalentOptions>
+                <TalentOption identifier="thickblood" />
+                <TalentOption identifier="sppschematics" />
+              </TalentOptions>
+              <TalentOptions>
+                <TalentOption identifier="pxschematics" />
+                <TalentOption identifier="murkywaters" />
+              </TalentOptions>
+              <TalentOptions>
+                <TalentOption identifier="underwaterdemolition" />
+                <TalentOption identifier="commando" />
+              </TalentOptions>
+              <TalentOptions>
+                <TalentOption identifier="marinerecon" />
+                <TalentOption identifier="combatdiver" />
+              </TalentOptions>
         </SubTree>
         <SubTree identifier="frogman" type="specialization" requires="security_primary" blocks="frogman,gunner">
             <TalentOptions>
-                <TalentOption identifier="pacificationkit"/>
-                <TalentOption identifier="miner" />
-                <!-- 5 xp from mining a mineral -->
-                <TalentOption identifier="scrounger" />
-                <!-- 5 xp from opening a container (already in place) -->
-                <TalentOption identifier="thickblood" />
-                <TalentOption identifier="sppschematics" />
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="beatcop"/>
-                <TalentOption identifier="stonewall"/>
-                <TalentOption identifier="deepseasurvivalguide" />
-                <!-- same as a book talent, but with givning a flares every round-->
-                <TalentOption identifier="pxschematics" />
-                <TalentOption identifier="murkywaters" />
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="crustyseaman"/>
-                <TalentOption identifier="inordinateexsanguination"/>
-                <TalentOption identifier="scavenger" />
-                <TalentOption identifier="excavator" />
-                <!-- small buff to mining, and get floating flares -->
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="implacable"/>
-                <TalentOption identifier="prolongedeuropeanoperations" />
-                <!-- Unlock O2 backpack, and rebreather from ek -->
-                <TalentOption identifier="underwaterdemolition" />
-                <TalentOption identifier="commando" />
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="enchance2" />
-                <TalentOption identifier="marinerecon" />
-                <TalentOption identifier="combatdiver" />
-            </TalentOptions>
+                <TalentOption identifier="seadogspirit" />
+                <TalentOption identifier="sealeg" />
+              </TalentOptions>
+              <TalentOptions>
+                <TalentOption identifier="improvisedutilityharpoons" />
+              </TalentOptions>
+              <TalentOptions>
+                <TalentOption identifier="buccaneer" />
+                <TalentOption identifier="masterworkexperimentalharpoons" />
+              </TalentOptions>
+              <TalentOptions>
+                <TalentOption identifier="baneofthecryingseals" />
+                <TalentOption identifier="deadmanwalking" />
+              </TalentOptions>
         </SubTree>
         <SubTree identifier="Specialist" type="specialization" requires="security_primary" blocks="frogman,enforcer">
             <TalentOptions>
-                <TalentOption identifier="rifleman"/>
-                <TalentOption identifier="physicalconditioning" />
-                <!-- physicalconditioning, add 20 xp from nobody died if doing a mission wreck salvage, ruin, or cave -->
                 <TalentOption identifier="divinggoodies" />
                 <TalentOption identifier="onewithwater" />
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="tandemfire"/>
-                <TalentOption identifier="commando"/>
-                <TalentOption identifier="tough" />
-                <!-- vigor when hurt for a short time -->
-                <TalentOption identifier="stonewall" />
+              </TalentOptions>
+              <TalentOptions>
                 <TalentOption identifier="strongcurrents" />
                 <TalentOption identifier="scavenger" />
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="gunrunner"/>
-                <TalentOption identifier="extrapowder"/>
-                <TalentOption identifier="justascratch" />
-                <TalentOption identifier="collegeathletics" />
+              </TalentOptions>
+              <TalentOptions>
                 <TalentOption identifier="bangstickschematics" />
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="warlord"/>
-                <TalentOption identifier="navydiver" />
-                <!-- navydiver, add water dash -->
+              </TalentOptions>
+              <TalentOptions>
                 <TalentOption identifier="dualspecops" />
                 <TalentOption identifier="divinginstructor" />
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="enchance3" />
-            </TalentOptions>
+              </TalentOptions>
         </SubTree>
     </TalentTree>
 
@@ -754,21 +616,17 @@
         <!-- Crafting better, faster, stronger + fabricator pda, cargo pouches diving suit upgrade -->
         <SubTree identifier="weaponsengineer" type="specialization" requires="mechanic_primary" blocks="machinist,brawler">
             <TalentOptions>
-                <TalentOption identifier="miner"/>
                 <TalentOption identifier="bootcamp" />
                 <!-- Add to quatermaster and security -->
                 <TalentOption identifier="armsdealer" />
                 <!-- Add it to COB and engineer, and mabe quatermaster -->
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="residualwaste"/>
                 <TalentOption identifier="massproduction"/>
                 <TalentOption identifier="militaryapplications" />
                 <!-- Add it to COB and engineer, and mabe quatermaster -->
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="scrapsavant"/>
-                <TalentOption identifier="toolmaintenance"/>
                 <TalentOption identifier="demolitionsexpert" />
                 <!-- Move to quatermaster -->
                 <TalentOption identifier="gunsmith" />

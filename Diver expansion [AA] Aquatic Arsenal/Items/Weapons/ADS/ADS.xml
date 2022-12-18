@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Item name="ADS amphibious rifle" identifier="ads" description="ADS is a slow firing special task carbine developed for underwater use" Scale="0.22" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" impactsoundtag="impact_metal_light">
+  <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" />
+  <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.1" />
+  <Deconstruct time="10">
+    <Item identifier="titaniumaluminiumalloy" />
+    <Item identifier="titaniumaluminiumalloy" />
+    <Item identifier="plastic" />
+    <Item identifier="steel" />
+  </Deconstruct>
+  <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <RequiredSkill identifier="weapons" level="60" />
+    <RequiredItem identifier="titaniumaluminiumalloy" />
+    <RequiredItem identifier="titaniumaluminiumalloy" />
+    <RequiredItem identifier="plastic" />
+    <RequiredItem identifier="steel" />
+  </Fabricate>
+  <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal Part 2.png" sourcerect="12,443,481,140" origin="0.5,0.5" />
+  <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal Part 2.png" sourcerect="12,443,481,140" depth="0.53" origin="0.5,0.5" />
+  <Body width="140" height="60" density="50" />
+  <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-25" aimpos="55,-10" handle1="-85,-22" handle2="60,0" holdangle="-24" msg="ItemMsgPickUpSelect" />
+  <RangedWeapon reload="0.08" barrelpos="125,14" spread="1" unskilledspread="8" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+    <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+    <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+    <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="0.8,0.8" />
+    <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/APS/APSgunshot1.ogg" type="OnUse" range="500" selectionmode="Random" />
+    <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/APS/APSgunshot1.ogg" type="OnUse" range="500" />
+    <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/APS/APSgunshot1.ogg" type="OnUse" range="500" />
+    <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+    <StatusEffect type="OnUse">
+      <Explosion range="50.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
+    </StatusEffect>
+    <!--"Use" contained magazine to spawn projectiles.-->
+    <StatusEffect type="OnUse" targettype="Contained" targets="adsammo" disabledeltatime="true">
+      <RequiredItem items="adsammo" type="Contained" />
+      <Use />
+    </StatusEffect>
+    <StatusEffect type="OnUse" target="This" Condition="0" setvalue="true" delay="0.2" />
+    <StatusEffect type="OnBroken" target="This" Condition="100" setvalue="true" delay="0.6" />
+    <RequiredItems items="adsammo" type="Contained" msg="ItemMsgAmmoRequired" />
+    <RequiredSkill identifier="weapons" level="45" />
+  </RangedWeapon>
+  <ItemContainer capacity="1" spawnwithid="adsbolt" maxstacksize="1" itempos="-135,-57" hideitems="false" containedstateindicatorstyle="bullet">
+    <Containable items="adsammo" />
+  </ItemContainer>
+  <aitarget sightrange="0" soundrange="500" fadeouttime="2" />
+  <Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
