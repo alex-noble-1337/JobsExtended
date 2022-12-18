@@ -298,8 +298,25 @@
     <talentdescription.evasion>Whenever you ragdoll for at least [seconds] seconds, your attacks with grenades are [damage]% more powerful for the next [duration] seconds.</talentdescription.evasion>
     
     <talentname.firststrike>First strike</talentname.firststrike>
-    <talentdescription.firststrike>If it has been longer than [seconds] seconds since you've attacked with grenades, your next attack with grenades is [damage]% more powerful.</talentdescription.firststrike>
-        
+    <talentdescription.firststrike>On attack with grenede get +40% damage on an quckdraw aginst an enemy. When you gain weapons skill gain helm skill. When you gain helm skill gain weapons skill. Allies you command get "ready to fight" buff (+ 10 helm and weapons) and you emit even half of its effects in AOE.</talentdescription.firststrike>
+       
+    <talentname.Big_Functional_Gun>Big Functional Gun</talentname.Big_Functional_Gun>
+    <talentdescription.Big_Functional_Gun>1/6 Chance of getting twice the damage while using greneades. Gain +50% money and expirence on Pirate,Abandonedoutpost. Gain a weaker version of lonewolf buff 50% weaker</talentdescription.Big_Functional_Gun>
+    
+    <talentname.bythebook-deputy>Finesse and precision</talentname.bythebook-deputy>
+    <talentdescription.Big_Functional_Gun>Get bythebook effect, gain weapons_skill, -stun and damage reistance buff around you gain a weaker version of weaker deputy buff applicable to all characters 50% weaker</talentdescription.Big_Functional_Gun>
+
+    <talentname.evasion>Evasion</talentname.evasion>
+    <talentdescription.evasion>gain +100% buff to damage aginst enemies while using greneades. tumble buffs grenades +80%</talentdescription.evasion>
+
+    <talentname.capitanssword>gain +100% buff to damage aginst enemies while using greneades 
+        tumble buffs grenades +80%
+        <AddedRecipe itemidentifier="rotarygrenedelaucher-blueprint"/>
+        <AddedRecipe itemidentifier="handcannon-blueprint"/>
+        <AddedRecipe itemidentifier="handcannonround-blueprint"/></talentname.capitanssword>
+    <talentdescription.capitanssword></talentdescription.capitanssword>
+
+
         <!-- QUA -->
         <!-- Talents description -->
     <talentname.logisticsmaster>Logistics Master</talentname.logisticsmaster>

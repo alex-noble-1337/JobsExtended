@@ -53,7 +53,7 @@
         Debuffs to exploration and moving stuff missions
         -->
         <!-- Bonuses instead of pistols, smaller bouses to heavy guns, with small aoe -->
-        <SubTree identifier="Lancer" type="specialization" requires="captain_primary" blocks="skipper,politician">
+        <SubTree identifier="Lancer" type="specialization" requires="captain_primary" blocks="Second_In_Command,Defender">
             <!-- TODO change bonuses to be appliccable to all heavy weapons -->
             <TalentOptions>
                 <!-- TODO Description Icons
@@ -95,7 +95,7 @@
                      TODO Description Icons
                      gain +100% buff to damage aginst enemies while using greneades 
                      tumble buffs grenades +80%
-		             <AddedRecipe itemidentifier="rotarygrenedelaucher-blueprint"/>Description
+		             <AddedRecipe itemidentifier="rotarygrenedelaucher-blueprint"/>
 		             <AddedRecipe itemidentifier="handcannon-blueprint"/>
 		             <AddedRecipe itemidentifier="handcannonround-blueprint"/>
                 -->
@@ -106,7 +106,7 @@
             </TalentOptions> -->
         </SubTree>
         <!--  Mirrorring capitan 2nd tree, but weaker -->
-        <SubTree identifier="Second_In_Command" type="specialization" requires="captain_primary" blocks="gunslinger,politician">
+        <SubTree identifier="Second_In_Command" type="specialization" requires="captain_primary" blocks="Lancer,Defender">
             <TalentOptions>
                 <!-- TODO Description Icons 
                      if no crew has died, close fighing buff, weapon skill and movement speed 
@@ -235,7 +235,7 @@
             </TalentOptions>
         </SubTree>
         <!-- offensive buffs, gunnery, coordinating dive teams, weak at shooting -->
-        <SubTree identifier="gunslinger" type="specialization" requires="captain_primary" blocks="skipper,politician">
+        <SubTree identifier="gunslinger" type="specialization" requires="captain_primary" blocks="skipper,Specialist">
             <TalentOptions>
                 <!-- TODO Description and make it better?
                      Every second you dont fire you get damage buff from +20% to 840% added damage
@@ -280,7 +280,7 @@
             </TalentOptions> -->
         </SubTree>
         <!-- self buffs and utility items, driving the submarine -->
-        <SubTree identifier="DiverTraining" type="specialization" requires="captain_primary" blocks="gunslinger,politician">
+        <SubTree identifier="DiverTraining" type="specialization" requires="captain_primary" blocks="gunslinger,Specialist">
             <TalentOptions>
                 <!-- polarized lens, duel spec ops ability-->
                 <!-- Driving the Shuttle 
@@ -305,7 +305,7 @@
               </TalentOptions>
         </SubTree>
         <!-- defensive buffs, coordinating dive teams -->
-        <SubTree identifier="Specialist" type="specialization" requires="security_primary" blocks="frogman,enforcer">
+        <SubTree identifier="Specialist" type="specialization" requires="security_primary" blocks="gunslinger,DiverTraining">
             <TalentOptions>
                 <TalentOption identifier="divinggoodies" />
                 <TalentOption identifier="onewithwater" />
@@ -414,7 +414,7 @@
             </TalentOptions>
         </SubTree>
         <!-- offensive tree, going out of the submarine and fight in water, upgrade pucs with fins same as slipsuit -->
-        <SubTree identifier="whaler" type="specialization" requires="security_primary" blocks="enforcer,gunner">
+        <SubTree identifier="whaler" type="specialization" requires="security_primary" blocks="frogman,Specialist">
             <TalentOptions>
                 <TalentOption identifier="thickblood" />
                 <TalentOption identifier="sppschematics" />
@@ -432,7 +432,7 @@
                 <TalentOption identifier="combatdiver" />
               </TalentOptions>
         </SubTree>
-        <SubTree identifier="frogman" type="specialization" requires="security_primary" blocks="frogman,gunner">
+        <SubTree identifier="frogman" type="specialization" requires="security_primary" blocks="whaler,Specialist">
             <TalentOptions>
                 <TalentOption identifier="seadogspirit" />
                 <TalentOption identifier="sealeg" />
@@ -441,7 +441,8 @@
                 <TalentOption identifier="improvisedutilityharpoons" />
               </TalentOptions>
               <TalentOptions>
-                <TalentOption identifier="buccaneer" />
+                <!-- TODO does not exist -->
+                <TalentOption identifier="buccaneer" />  
                 <TalentOption identifier="masterworkexperimentalharpoons" />
               </TalentOptions>
               <TalentOptions>
@@ -449,7 +450,7 @@
                 <TalentOption identifier="deadmanwalking" />
               </TalentOptions>
         </SubTree>
-        <SubTree identifier="Specialist" type="specialization" requires="security_primary" blocks="frogman,enforcer">
+        <SubTree identifier="Specialist" type="specialization" requires="security_primary" blocks="whaler,frogman">
             <TalentOptions>
                 <TalentOption identifier="divinggoodies" />
                 <TalentOption identifier="onewithwater" />
@@ -462,6 +463,7 @@
                 <TalentOption identifier="bangstickschematics" />
               </TalentOptions>
               <TalentOptions>
+                <!-- TODO does not exist -->
                 <TalentOption identifier="dualspecops" />
                 <TalentOption identifier="divinginstructor" />
               </TalentOptions>
@@ -614,19 +616,24 @@
             </TalentOptions>
         </SubTree>
         <!-- Crafting better, faster, stronger + fabricator pda, cargo pouches diving suit upgrade -->
-        <SubTree identifier="weaponsengineer" type="specialization" requires="mechanic_primary" blocks="machinist,brawler">
+        <SubTree identifier="weaponsengineer" type="specialization" requires="mechanic_primary" blocks="crafter,resuplayer">
             <TalentOptions>
+                <!-- TODO does not exist -->
                 <TalentOption identifier="bootcamp" />
                 <!-- Add to quatermaster and security -->
+                <!-- TODO does not exist -->
                 <TalentOption identifier="armsdealer" />
                 <!-- Add it to COB and engineer, and mabe quatermaster -->
             </TalentOptions>
             <TalentOptions>
+                <!-- TODO does not exist -->
                 <TalentOption identifier="massproduction"/>
+                <!-- TODO does not exist -->
                 <TalentOption identifier="militaryapplications" />
                 <!-- Add it to COB and engineer, and mabe quatermaster -->
             </TalentOptions>
             <TalentOptions>
+                <!-- TODO does not exist -->
                 <TalentOption identifier="demolitionsexpert" />
                 <!-- Move to quatermaster -->
                 <TalentOption identifier="gunsmith" />
@@ -638,7 +645,7 @@
                 <!-- Todo think of better thing than rfa Remove RFA, add it as a class weapon, Add it to COB and engineer, and mabe quatermaster -->
             </TalentOptions>
         </SubTree>
-        <SubTree identifier="crafter" type="specialization" requires="mechanic_primary" blocks="scrapper,brawler">
+        <SubTree identifier="crafter" type="specialization" requires="mechanic_primary" blocks="weaponsengineer,resuplayer">
             <!-- TODO name -->
             <TalentOptions>
                 <TalentOption identifier="hullfixer"/>
@@ -646,46 +653,50 @@
                 <!-- Add to Quatermaster -->
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="tinkerer"/>
                 <TalentOption identifier="quickfixer"/>
                 <TalentOption identifier="massproduction" />
                 <!-- Add it to Quatermaster-->
-                <TalentOption identifier="quickfix" />
                 <!-- Add to Mechanic and Quatermaster  -->
             </TalentOptions>
             <TalentOptions>
+                <!-- TODO does not exist -->
+                <TalentOption identifier="strengthenedalloys" />
                 <TalentOption identifier="letitdrain"/>
-                <TalentOption identifier="hullfixer" />
                 <!-- TODO Fabricate toolls to an Quatermaster, Status monitor to COB, Mechanic -->
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="robotics"/>
-                <TalentOption identifier="strengthenedalloys" />
                 <!-- Add it to COB and engineer, and mabe quatermaster -->
+                <!-- TODO does not exist -->
                 <TalentOption identifier="artisansmith" />
                 <!-- Move to quatermaster -->
             </TalentOptions>
         </SubTree>
-        <SubTree identifier="resuplayer" type="specialization" requires="mechanic_primary" blocks="machinist,scrapper">
+        <SubTree identifier="resuplayer" type="specialization" requires="mechanic_primary" blocks="weaponsengineer,crafter">
             <!-- TODO name -->
             <TalentOptions>
                 <TalentOption identifier="iamthatguy"/>
+                <!-- TODO does not exist -->
                 <TalentOption identifier="cannedheat" />
                 <!-- Move to quatermaster -->
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="heavylifting"/>
                 <TalentOption identifier="mudraptorwrestler"/>
+                <!-- TODO does not exist -->
                 <TalentOption identifier="crisismanagement" />
                 <!-- Dumb but can stay in Mechanic and Quatermaster -->
+                <!-- TODO does not exist -->
                 <TalentOption identifier="overclocking" />
                 <!-- Add it to Quatermaster and COB -->
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="foolhardy"/>
                 <TalentOption identifier="berserker"/>
+                <!-- TODO does not exist -->
                 <TalentOption identifier="castledoctrine" />
                 <!-- Add it to COB and engineer, and mabe quatermaster -->
+                <!-- TODO does not exist -->
                 <TalentOption identifier="expandedresearch" />
                 <!-- Add it to COB and engineer, and mabe quatermaster -->
             </TalentOptions>
@@ -844,29 +855,35 @@
             </TalentOptions>
         </SubTree>
         <!-- Genes and ruin exploration + clown, TODO in future BaroPlus integration, diving suit upgrade, add moloch shell  -->
-        <SubTree identifier="xenologist">
+        <SubTree identifier="xenologist" type="specialization" requires="assistant_primary" blocks="apprentice,scientist">
             <TalentOptions>
                 <TalentOption identifier="curiosity" />
             </TalentOptions>
             <TalentOptions>
+                <!-- TODO does not exist -->
                 <TalentOption identifier="researchersintuition" />
                 <TalentOption identifier="applicationofreserch" />
                 <!-- Gain more damgage aginst ruin guardians  -->
             </TalentOptions>
             <TalentOptions>
+                 <!-- TODO does not exist -->
                 <TalentOption identifier="alienhoarder" />
+                <!-- TODO does not exist -->
                 <TalentOption identifier="reverseengineer" />
             </TalentOptions>
             <TalentOptions>
+                <!-- TODO does not exist -->
                 <TalentOption identifier="atmosmachine" />
             </TalentOptions>
         </SubTree>
-        <SubTree identifier="scientist">
+        <SubTree identifier="scientist" type="specialization" requires="assistant_primary" blocks="xenologist,apprentice">
             <TalentOptions>
+                <!-- TODO does not exist -->
                 <TalentOption identifier="genetherapist" />
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="geneharvester" />
+                <!-- TODO does not exist -->
                 <TalentOption identifier="geneticstability" />
             </TalentOptions>
             <TalentOptions>
@@ -878,22 +895,7 @@
                 <!-- spicers from genes+ -->
             </TalentOptions>
         </SubTree>
-        <SubTree identifier="grayshirt" type="specialization" requires="assistant_primary" blocks="apprentice,clown">
-            <TalentOptions>
-                <TalentOption identifier="thewaitinglist"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="nonthreatening"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="insurancepolicy"/>
-                <TalentOption identifier="anappleaday"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="thefriendswemade"/>
-            </TalentOptions>
-        </SubTree>
-        <SubTree identifier="apprentice" type="specialization" requires="assistant_primary" blocks="grayshirt,clown">
+        <SubTree identifier="apprentice" type="specialization" requires="assistant_primary" blocks="xenologist,scientist">
             <TalentOptions>
                 <ShowCaseTalent identifier="apprenticeship">
                     <TalentOption identifier="apprenticeship_captain"/>
@@ -934,7 +936,7 @@
             </TalentOptions>
         </SubTree>
         <!-- Cleaning, roombas, joke class + super clown, better suits, upgrade suits to an equivalent to a pirate suits, but they look the part -->
-        <SubTree identifier="cleaner">
+        <SubTree identifier="cleaner" type="specialization" requires="assistant_primary" blocks="jackofalltrades,clown">
             <!-- TODO name -->
             <TalentOptions>
                 <TalentOption identifier="supercleaner" />
@@ -943,88 +945,45 @@
             <TalentOptions>
                 <TalentOption identifier="firemanscarry" />
                 <!-- Add to Custodian, add to medic -->
+                <!-- TODO does not exist -->
                 <TalentOption identifier="stillkicking" />
                 <!-- ROOMBA -->
             </TalentOptions>
             <TalentOptions>
+                <!-- TODO does not exist -->
                 <TalentOption identifier="crewlayabout" />
+                <!-- TODO does not exist -->
                 <TalentOption identifier="survivalpackage" />
             </TalentOptions>
             <TalentOptions>
+                <!-- TODO does not exist -->
                 <TalentOption identifier="graduationceremony" />
                 <!-- neurotoxin ammo for dasher cleaner -->
             </TalentOptions>
         </SubTree>
-        <SubTree identifier="jackofalltrades">
+        <SubTree identifier="jackofalltrades" type="specialization" requires="assistant_primary" blocks="cleaner,clown">
             <TalentOptions>
+                <!-- TODO does not exist -->
                 <TalentOption identifier="multitasker" />
+                <!-- TODO does not exist -->
                 <TalentOption identifier="apprenticeship" />
             </TalentOptions>
             <TalentOptions>
+                <!-- TODO does not exist -->
                 <TalentOption identifier="standanddeliver" />
             </TalentOptions>
             <TalentOptions>
+                <!-- TODO does not exist -->
                 <TalentOption identifier="richinknowledge" />
+                <!-- TODO does not exist -->
                 <TalentOption identifier="aceofalltrades" />
             </TalentOptions>
             <TalentOptions>
+                <!-- TODO does not exist -->
                 <TalentOption identifier="olympian" />
             </TalentOptions>
         </SubTree>
-        <SubTree identifier="clown">
-            <TalentOptions>
-                <TalentOption identifier="enrollintoclowncollege" />
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="waterprankster" />
-                <TalentOption identifier="inspiringtunes" />
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="psychoclown" />
-                <TalentOption identifier="slapstickexpert" />
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="truepotential" />
-            </TalentOptions>
-        </SubTree>
-        <SubTree identifier="grayshirt" type="specialization" requires="assistant_primary" blocks="apprentice,clown">
-            <TalentOptions>
-                <TalentOption identifier="thewaitinglist"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="nonthreatening"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="insurancepolicy"/>
-                <TalentOption identifier="anappleaday"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="thefriendswemade"/>
-            </TalentOptions>
-        </SubTree>
-        <SubTree identifier="apprentice" type="specialization" requires="assistant_primary" blocks="grayshirt,clown">
-            <TalentOptions>
-                <ShowCaseTalent identifier="apprenticeship">
-                    <TalentOption identifier="apprenticeship_captain"/>
-                    <TalentOption identifier="apprenticeship_doctor"/>
-                    <TalentOption identifier="apprenticeship_security"/>
-                    <TalentOption identifier="apprenticeship_mechanic"/>
-                    <TalentOption identifier="apprenticeship_engineer"/>
-                </ShowCaseTalent>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="logisticssystems"/>
-                <TalentOption identifier="journeyman"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="loyalassistant"/>
-                <TalentOption identifier="disloyalscum"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="graduationceremony"/>
-            </TalentOptions>
-        </SubTree>
-        <SubTree identifier="clown" type="specialization" requires="assistant_primary" blocks="grayshirt,apprentice">
+        <SubTree identifier="clown" type="specialization" requires="assistant_primary" blocks="cleaner,jackofalltrades">
             <TalentOptions>
                 <TalentOption identifier="enrollintoclowncollege"/>
             </TalentOptions>
@@ -1058,7 +1017,7 @@
             </TalentOptions>
         </SubTree>
         <!-- Troll class -->
-        <SubTree identifier="violent">
+        <SubTree identifier="violent" type="specialization" requires="assistant_primary" blocks="cooperative,trolling">
             <!-- TODO name -->
             <TalentOptions>
                 <TalentOption identifier="pyromaniac" />
@@ -1080,7 +1039,7 @@
                 <TalentOption identifier="physicalconditioning" />
             </TalentOptions>
         </SubTree>
-        <SubTree identifier="trolling">
+        <SubTree identifier="trolling" type="specialization" requires="assistant_primary" blocks="violent,cooperative">
             <!-- TODO name -->
             <TalentOptions>
                 <TalentOption identifier="skedaddle" />
@@ -1103,7 +1062,7 @@
                 <!-- get a nuke each round  -->
             </TalentOptions>
         </SubTree>
-        <SubTree identifier="cooperative">
+        <SubTree identifier="cooperative" type="specialization" requires="assistant_primary" blocks="violent,trolling">
             <!-- TODO name -->
             <TalentOptions>
                 <TalentOption identifier="playingcatchup" />
@@ -1114,66 +1073,17 @@
                 <!-- Move it to a prisoner -->
             </TalentOptions>
             <TalentOptions>
+                <!-- TODO does not exist -->
                 <TalentOption identifier="apprenticeship" />
                 <!-- Move it to a prisoner -->
+                <!-- TODO does not exist -->
                 <TalentOption identifier="standanddeliver" />
                 <!-- Move it to a prisoner -->
             </TalentOptions>
             <TalentOptions>
+                <!-- TODO does not exist -->
                 <TalentOption identifier="graduationceremony" />
                 <!-- Add it to prisoner, and Custodian -->
-            </TalentOptions>
-        </SubTree>
-        <SubTree identifier="grayshirt" type="specialization" requires="assistant_primary" blocks="apprentice,clown">
-            <TalentOptions>
-                <TalentOption identifier="thewaitinglist"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="nonthreatening"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="insurancepolicy"/>
-                <TalentOption identifier="anappleaday"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="thefriendswemade"/>
-            </TalentOptions>
-        </SubTree>
-        <SubTree identifier="apprentice" type="specialization" requires="assistant_primary" blocks="grayshirt,clown">
-            <TalentOptions>
-                <ShowCaseTalent identifier="apprenticeship">
-                    <TalentOption identifier="apprenticeship_captain"/>
-                    <TalentOption identifier="apprenticeship_doctor"/>
-                    <TalentOption identifier="apprenticeship_security"/>
-                    <TalentOption identifier="apprenticeship_mechanic"/>
-                    <TalentOption identifier="apprenticeship_engineer"/>
-                </ShowCaseTalent>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="logisticssystems"/>
-                <TalentOption identifier="journeyman"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="loyalassistant"/>
-                <TalentOption identifier="disloyalscum"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="graduationceremony"/>
-            </TalentOptions>
-        </SubTree>
-        <SubTree identifier="clown" type="specialization" requires="assistant_primary" blocks="grayshirt,apprentice">
-            <TalentOptions>
-                <TalentOption identifier="enrollintoclowncollege"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="waterprankster"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="psychoclown"/>
-                <TalentOption identifier="chonkyhonks"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="truepotential"/>
             </TalentOptions>
         </SubTree>
     </TalentTree>

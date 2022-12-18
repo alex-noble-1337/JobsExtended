@@ -2,26 +2,13 @@
 <Talents>
 
 	<Talent identifier="firststrike">
-		<Description tag="talentdescription.firststrike">
-			<Replace tag="[seconds]" value="8" color="gui.green"/>
-			<Replace tag="[damage]" value="40" color="gui.green"/>
-		</Description>
-		<!-- <Description tag="talentdescription.unlockrecipe">
-			<Replace tag="[itemname]" value="entityname.baton" color="gui.orange"/>
-		</Description>
 		<Description tag="talentdescription.unlockrecipe">
-			<Replace tag="[itemname]" value="entityname.nonlethalshotgunshell" color="gui.orange"/>
-		</Description>
-		<Description tag="talentdescription.defenceindepth">
-		</Description>
-		<AddedRecipe itemidentifier="PepperSpray"/>
-		<Description tag="talentdescription.quickdraw">
-			<Replace tag="[seconds]" value="8" color="gui.green"/>
-			<Replace tag="[damage]" value="25" color="gui.green"/>
-		</Description> -->
+			<Replace tag="[itemname]" value="entityname.baton-blueprint" color="gui.orange"/>
+		  </Description>
+		  <Description tag="talentdescription.unlockrecipe">
+			<Replace tag="[itemname]" value="entityname.heavy_weapon_holster-blueprint" color="gui.orange"/>
+		  </Description>
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,0" sheetelementsize="128,128"/>
-		<!-- <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,0" sheetelementsize="128,128"/>
-		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/> -->
 		<AbilityGroupEffect abilityeffecttype="OnAttack">
 			<Conditions>
 				<AbilityConditionHasAffliction afflictionidentifier="quickdrawing" minimumpercentage="1.0"/>
@@ -83,8 +70,8 @@
 				</CharacterAbilityApplyStatusEffectsToAllies>
 			</Abilities>
 		</AbilityGroupInterval>
-		<!-- <AddedRecipe itemidentifier="baton"/>
-		Added by vanilla -->
+		<AddedRecipe itemidentifier="baton-blueprint"/>
+		<!-- Added by vanilla -->
 		<AddedRecipe itemidentifier="heavy_weapon_holster-blueprint"/>
 	</Talent>
 
@@ -293,7 +280,7 @@
 				<CharacterAbilityModifyAttackData addeddamagemultiplier="0.8" />
 			</Abilities>
 		</AbilityGroupEffect>
-		<AddedRecipe itemidentifier="rum"/>
+		<AddedRecipe itemidentifier="rum-blueprint"/>
 	</Talent>
 
 	<Talent identifier="capitanssword">
@@ -308,6 +295,15 @@
 		<Description tag="talentdescription.unlockrecipe">
 		  <Replace tag="[itemname]" value="entityname.handcannon, entityname.handcannonround" color="gui.orange"/>
 		</Description> -->
+		<Description tag="talentdescription.unlockrecipe">
+			<Replace tag="[itemname]" value="entityname.rotarygrenedelaucher-blueprint" color="gui.orange"/>
+		  </Description>
+		  <Description tag="talentdescription.unlockrecipe">
+			<Replace tag="[itemname]" value="entityname.handcannon-blueprint" color="gui.orange"/>
+		  </Description>
+		  <Description tag="talentdescription.unlockrecipe">
+			<Replace tag="[itemname]" value="entityname.handcannonround-blueprint" color="gui.orange"/>
+		  </Description>
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>
 		<AbilityGroupEffect abilityeffecttype="OnAttack">
 			<Conditions>

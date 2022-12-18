@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!-- <Item name="Template-Blueprint" description="This blueprint allows you to understand template construction. (Works like endocrine booster)" identifier="template-blueprint" category="Misc" cargocontaineridentifier="metalcrate" Tags="smallitem,blueprint,itemblueprint" maxstacksize="8" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="storagecab,crewcab" />
+    <Deconstruct time="20">
+      <RequiredItem identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <InventoryIcon texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
+    <Sprite texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" depth="0.6" />
+    <Body width="67" height="37" density="20" />
+    <MeleeWeapon slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" holdangle="80" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-20" />
+      <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+        <Conditional Condition="lte 0" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <GiveTalentInfo talentidentifiers="template-blueprint" />
+        <RemoveItem />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item> -->
+  <Item name="Flare revolverround-Blueprint" description="This blueprint allows you to understand flare_revolverround construction. (Works like endocrine booster)" identifier="flare_revolverround-blueprint" category="Misc" cargocontaineridentifier="metalcrate" Tags="smallitem,blueprint,itemblueprint" maxstacksize="8" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="storagecab,crewcab" />
+    <Deconstruct time="20">
+      <RequiredItem identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <InventoryIcon texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
+    <Sprite texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" depth="0.6" />
+    <Body width="67" height="37" density="20" />
+    <MeleeWeapon slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" holdangle="80" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-20" />
+      <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+        <Conditional Condition="lte 0" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <GiveTalentInfo talentidentifiers="flare_revolverround-blueprint" />
+        <RemoveItem />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="Flare coilgunammobox-Blueprint" description="This blueprint allows you to understand flare_coilgunammobox construction. (Works like endocrine booster)" identifier="flare_coilgunammobox-blueprint" category="Misc" cargocontaineridentifier="metalcrate" Tags="smallitem,blueprint,itemblueprint" maxstacksize="8" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="storagecab,crewcab" />
+    <Deconstruct time="20">
+      <RequiredItem identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <InventoryIcon texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
+    <Sprite texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" depth="0.6" />
+    <Body width="67" height="37" density="20" />
+    <MeleeWeapon slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" holdangle="80" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-20" />
+      <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+        <Conditional Condition="lte 0" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <GiveTalentInfo talentidentifiers="flare_coilgunammobox-blueprint" />
+        <RemoveItem />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="rum-blueprint" description="This blueprint allows you to understand rum construction. (Works like endocrine booster)" identifier="rum-blueprint" category="Misc" cargocontaineridentifier="metalcrate" Tags="smallitem,blueprint,itemblueprint" maxstacksize="8" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="storagecab,crewcab" />
+    <Deconstruct time="20">
+      <RequiredItem identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <InventoryIcon texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
+    <Sprite texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" depth="0.6" />
+    <Body width="67" height="37" density="20" />
+    <MeleeWeapon slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" holdangle="80" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-20" />
+      <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+        <Conditional Condition="lte 0" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <GiveTalentInfo talentidentifiers="rum-blueprint" />
+        <RemoveItem />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="packofsmokes-blueprint" description="This blueprint allows you to understand packofsmokes construction. (Works like endocrine booster)" identifier="packofsmokes-blueprint" category="Misc" cargocontaineridentifier="metalcrate" Tags="smallitem,blueprint,itemblueprint" maxstacksize="8" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="storagecab,crewcab" />
+    <Deconstruct time="20">
+      <RequiredItem identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <InventoryIcon texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
+    <Sprite texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" depth="0.6" />
+    <Body width="67" height="37" density="20" />
+    <MeleeWeapon slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" holdangle="80" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-20" />
+      <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+        <Conditional Condition="lte 0" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <GiveTalentInfo talentidentifiers="packofsmokes-blueprint" />
+        <RemoveItem />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="baton-Blueprint" description="This blueprint allows you to understand baton construction. (Works like endocrine booster)" identifier="baton-blueprint" category="Misc" cargocontaineridentifier="metalcrate" Tags="smallitem,blueprint,itemblueprint" maxstacksize="8" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="storagecab,crewcab" />
+    <Deconstruct time="20">
+      <RequiredItem identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <InventoryIcon texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
+    <Sprite texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" depth="0.6" />
+    <Body width="67" height="37" density="20" />
+    <MeleeWeapon slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" holdangle="80" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-20" />
+      <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+        <Conditional Condition="lte 0" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <GiveTalentInfo talentidentifiers="baton-blueprint" />
+        <RemoveItem />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="heavy_weapon_holster-Blueprint" description="This blueprint allows you to understand heavy_weapon_holster construction. (Works like endocrine booster)" identifier="heavy_weapon_holster-blueprint" category="Misc" cargocontaineridentifier="metalcrate" Tags="smallitem,blueprint,itemblueprint" maxstacksize="8" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="storagecab,crewcab" />
+    <Deconstruct time="20">
+      <RequiredItem identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <InventoryIcon texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
+    <Sprite texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" depth="0.6" />
+    <Body width="67" height="37" density="20" />
+    <MeleeWeapon slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" holdangle="80" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-20" />
+      <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+        <Conditional Condition="lte 0" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <GiveTalentInfo talentidentifiers="heavy_weapon_holster-blueprint" />
+        <RemoveItem />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="rubberslug-Blueprint" description="This blueprint allows you to understand rubberslug construction. (Works like endocrine booster)" identifier="rubberslug-blueprint" category="Misc" cargocontaineridentifier="metalcrate" Tags="smallitem,blueprint,itemblueprint" maxstacksize="8" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="storagecab,crewcab" />
+    <Deconstruct time="20">
+      <RequiredItem identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <InventoryIcon texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
+    <Sprite texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" depth="0.6" />
+    <Body width="67" height="37" density="20" />
+    <MeleeWeapon slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" holdangle="80" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-20" />
+      <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+        <Conditional Condition="lte 0" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <GiveTalentInfo talentidentifiers="rubberslug-blueprint" />
+        <RemoveItem />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="rotarygrenedelaucher-Blueprint" description="This blueprint allows you to understand rotarygrenedelaucher construction. (Works like endocrine booster)" identifier="rotarygrenedelaucher-blueprint" category="Misc" cargocontaineridentifier="metalcrate" Tags="smallitem,blueprint,itemblueprint" maxstacksize="8" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="storagecab,crewcab" />
+    <Deconstruct time="20">
+      <RequiredItem identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <InventoryIcon texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
+    <Sprite texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" depth="0.6" />
+    <Body width="67" height="37" density="20" />
+    <MeleeWeapon slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" holdangle="80" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-20" />
+      <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+        <Conditional Condition="lte 0" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <GiveTalentInfo talentidentifiers="rotarygrenedelaucher-blueprint" />
+        <RemoveItem />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="handcannon-Blueprint" description="This blueprint allows you to understand handcannon construction. (Works like endocrine booster)" identifier="handcannon-blueprint" category="Misc" cargocontaineridentifier="metalcrate" Tags="smallitem,blueprint,itemblueprint" maxstacksize="8" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="storagecab,crewcab" />
+    <Deconstruct time="20">
+      <RequiredItem identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <InventoryIcon texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
+    <Sprite texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" depth="0.6" />
+    <Body width="67" height="37" density="20" />
+    <MeleeWeapon slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" holdangle="80" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-20" />
+      <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+        <Conditional Condition="lte 0" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <GiveTalentInfo talentidentifiers="handcannon-blueprint" />
+        <RemoveItem />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="handcannonround-Blueprint" description="This blueprint allows you to understand handcannonround construction. (Works like endocrine booster)" identifier="handcannonround-blueprint" category="Misc" cargocontaineridentifier="metalcrate" Tags="smallitem,blueprint,itemblueprint" maxstacksize="8" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="storagecab,crewcab" />
+    <Deconstruct time="20">
+      <RequiredItem identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <InventoryIcon texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
+    <Sprite texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" depth="0.6" />
+    <Body width="67" height="37" density="20" />
+    <MeleeWeapon slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" holdangle="80" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-20" />
+      <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+        <Conditional Condition="lte 0" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <GiveTalentInfo talentidentifiers="handcannonround-blueprint" />
+        <RemoveItem />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="handcannonround-Blueprint" description="This blueprint allows you to understand handcannonround construction. (Works like endocrine booster)" identifier="handcannonround-blueprint" category="Misc" cargocontaineridentifier="metalcrate" Tags="smallitem,blueprint,itemblueprint" maxstacksize="8" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="storagecab,crewcab" />
+    <Deconstruct time="20">
+      <RequiredItem identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <InventoryIcon texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
+    <Sprite texture="Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" depth="0.6" />
+    <Body width="67" height="37" density="20" />
+    <MeleeWeapon slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" holdangle="80" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-20" />
+      <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+        <Conditional Condition="lte 0" />
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <GiveTalentInfo talentidentifiers="handcannonround-blueprint" />
+        <RemoveItem />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+</Items>

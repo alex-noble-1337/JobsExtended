@@ -2,7 +2,7 @@
 <Talents>
   <Talent name="Promotion" identifier="promotion">
     <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,5" sheetelementsize="128,128" />
-    <Description tag="talentdescription.graduationceremony" />
+    <Description tag="talentdescription.promotion" />
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
         <CharacterAbilityGiveFlag flagtype="RetainExperienceForNewCharacter" />
@@ -14,4 +14,84 @@
       </Abilities>
     </AbilityGroupInterval>
   </Talent>
+  <!-- Blueprints -->
+  <!-- <Talent nameidentifier="template-blueprint" identifier="template-blueprint">
+    <Icon texture="%ModDir%/Items/Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.template" color="gui.orange"/>
+    </Description>
+    <AddedRecipe itemidentifier="template"/>
+  </Talent> -->
+  <Talent nameidentifier="flare_revolverround-blueprint" identifier="flare_revolverround-blueprint">
+    <Icon texture="%ModDir%/Items/Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.flare_revolverround" color="gui.orange"/>
+    </Description>
+    <AddedRecipe itemidentifier="flare_revolverround"/>
+  </Talent>
+  <Talent nameidentifier="flare_revolverround-blueprint" identifier="flare_coilgunammobox-blueprint">
+    <Icon texture="%ModDir%/Items/Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.flare_coilgunammobox" color="gui.orange"/>
+    </Description>
+    <AddedRecipe itemidentifier="flare_coilgunammobox"/>
+  </Talent>
+  <Talent nameidentifier="rum-blueprint" identifier="rum-blueprint">
+    <Icon texture="%ModDir%/Items/Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.rum" color="gui.orange"/>
+    </Description>
+    <AddedRecipe itemidentifier="rum"/>
+  </Talent>
+  <Talent nameidentifier="packofsmokes-blueprint" identifier="packofsmokes-blueprint">
+    <Icon texture="%ModDir%/Items/Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.packofsmokes" color="gui.orange"/>
+    </Description>
+    <AddedRecipe itemidentifier="packofsmokes"/>
+  </Talent>
+  <Talent nameidentifier="baton-blueprint" identifier="baton-blueprint">
+    <Icon texture="%ModDir%/Items/Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.baton" color="gui.orange"/>
+    </Description>
+    <AddedRecipe itemidentifier="baton"/>
+  </Talent>
+  <Talent nameidentifier="heavy_weapon_holster-blueprint" identifier="heavy_weapon_holster-blueprint">
+    <Icon texture="%ModDir%/Items/Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.heavy_weapon_holster" color="gui.orange"/>
+    </Description>
+    <AddedRecipe itemidentifier="heavy_weapon_holster"/>
+  </Talent>
+  <Talent nameidentifier="rubberslug-blueprint" identifier="rubberslug-blueprint">
+    <Icon texture="%ModDir%/Items/Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.rubberslug" color="gui.orange"/>
+    </Description>
+    <AddedRecipe itemidentifier="rubberslug"/>
+  </Talent>
+  <Talent nameidentifier="rotarygrenedelaucher-blueprint" identifier="rotarygrenedelaucher-blueprint">
+    <Icon texture="%ModDir%/Items/Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.rotarygrenedelaucher" color="gui.orange"/>
+    </Description>
+    <AddedRecipe itemidentifier="rotarygrenedelaucher"/>
+  </Talent>
+  <Talent nameidentifier="handcannon-blueprint" identifier="handcannon-blueprint">
+    <Icon texture="%ModDir%/Items/Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.handcannon" color="gui.orange"/>
+    </Description>
+    <AddedRecipe itemidentifier="handcannon"/>
+  </Talent>
+  <Talent nameidentifier="handcannonround-blueprint" identifier="handcannonround-blueprint">
+    <Icon texture="%ModDir%/Items/Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.handcannonround" color="gui.orange"/>
+    </Description>
+    <AddedRecipe itemidentifier="handcannonround"/>
+  </Talent>
+
+  
 </Talents>

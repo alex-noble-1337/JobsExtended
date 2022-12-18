@@ -3,8 +3,8 @@
 
         <Affliction identifier="weaker-ready_to_fight" type="talentbuff" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="10" duration="1" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
                 <Effect minstrength="0" maxstrength="10" resistancefor="damage" minresistance="0" maxresistance="0.5">
-                        <StatValue stattype="HelmSkillBonus" minvalue="0" maxvalue="5" />
-                        <StatValue stattype="WeaponsSkillBonus" minvalue="0" maxvalue="5" />
+                        <StatValue stattype="HelmSkillBonus" minvalue="0" maxvalue="10" />
+                        <StatValue stattype="WeaponsSkillBonus" minvalue="0" maxvalue="10" />
                 </Effect>
                 <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
         </Affliction>
