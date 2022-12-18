@@ -136,16 +136,6 @@
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO merge -->
-                <!-- CO Talents -->
-                <TalentOption identifier="yourreputation"/>
-                <ShowCaseTalent identifier="affiliation">
-                    <TalentOption identifier="affiliation_coalition"/>
-                    <TalentOption identifier="affiliation_separatists"/>
-                    <TalentOption identifier="affiliation_huskcult"/>
-                    <TalentOption identifier="affiliation_clowns"/>
-                </ShowCaseTalent>
-                <!-- XO Talents -->
-                <!-- TODO merge -->
                 <!-- Modify it so its unique to XO -->
                 <TalentOption identifier="ironcurtain" />
                 <!-- TODO merge -->
@@ -153,7 +143,6 @@
                 <TalentOption identifier="notasingleonegetsthough" />
             </TalentOptions>
             <TalentOptions>
-                <!-- XO Talents Exists -->
                 <!-- TODO Description Icons 
                      Upgrade frenzy or takeabullet *2 effect strenghths
                      dish out more stun +25% more
@@ -253,7 +242,7 @@
                      If you gain weapon skill you gain helm skill and you gain helm when you gain weapon skill
                      Gain +1 ExtraMissionCount 
                      gain targettingmatrix
-                        +20% RangedAttackSpeed,RangedAttackMultiplier -->
+                        +20% RangedAttackSp                <!-- XO Talents Exists -->                <!-- XO Talents Exists -->                <!-- XO Talents Exists -->                <!-- XO Talents Exists -->                <!-- XO Talents Exists -->                <!-- XO Talents Exists -->eed,RangedAttackMultiplier -->
                 <TalentOption identifier="luckystrike" />
             </TalentOptions>
             <TalentOptions>
