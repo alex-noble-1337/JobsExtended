@@ -241,8 +241,8 @@
                      Every second you dont fire you get damage buff from +20% to 840% added damage
                      If you gain weapon skill you gain helm skill and you gain helm when you gain weapon skill
                      Gain +1 ExtraMissionCount 
-                     gain targettingmatrix
-                        +20% RangedAttackSp                <!-- XO Talents Exists -->                <!-- XO Talents Exists -->                <!-- XO Talents Exists -->                <!-- XO Talents Exists -->                <!-- XO Talents Exists -->                <!-- XO Talents Exists -->eed,RangedAttackMultiplier -->
+                     gain targettingmatrix, passive half as effective, when ordering a character gain full buff
+                        +20% RangedAttackSpeed,RangedAttackMultiplier -->
                 <TalentOption identifier="luckystrike" />
             </TalentOptions>
             <TalentOptions>
@@ -250,13 +250,13 @@
                      Modify targettingmatrix to gain players buff to handheld guns:
                         Damage, Fire speed 
                      Flare ammo, handheld guns, except not as shitty as vanilla, it melts hull, it also softhens enemies debuffs them
-                     When using navigation terminal give everyone in the submarine buffs + diving team this buff (TLDR: increases its range to a lot) -->
+                     TODO Lua When using navigation terminal give everyone in the submarine buffs + diving team this buff (TLDR: increases its range to a lot) -->
                 <TalentOption identifier="targetingmatrixfocus_handheld" />
                 <!-- TODO Description
                      Modify targettingmatrix to gain players buff to shipmounted guns
-                        Damage, Fire speed 
+                        additional +20% TurretAttackSpeed, TurretPowerCostReduction, TurretChargeSpeed
                      Flare ammo, handheld shipmounted guns, except not as shitty as vanilla, it melts hull, it also softhens enemies debuffs them
-                     When using navigation terminal give everyone in the submarine buffs + diving team this buff (TLDR: increases its range to a lot)-->
+                     TODO Lua When using navigation terminal give everyone in the submarine buffs + diving team this buff (TLDR: increases its range to a lot)-->
                 <TalentOption identifier="targetingmatrixfocus_shipmounted" />
             </TalentOptions>
             <TalentOptions>

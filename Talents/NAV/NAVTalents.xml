@@ -180,7 +180,11 @@
         </Abilities>
     </AbilityGroupEffect>
     <AbilityGroupInterval interval="1.0">
-        <Abilities>
+        <Conditions>
+            <AbilityConditionHasTalent identifier="targetingmatrixfocus_handheld" truthywhen="HasTalent"/>
+            <AbilityConditionHasTalent identifier="targetingmatrixfocus_shipmounted" truthywhen="HasTalent"/>
+        </Conditions>
+        <FallbackAbilities>
             <CharacterAbilityApplyStatusEffectsToLastOrderedCharacter>
                 <StatusEffects>
                     <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="false" delay="1">
@@ -195,45 +199,59 @@
                     </StatusEffect>
                 </StatusEffects>
             </CharacterAbilityApplyStatusEffectsToAllies>
+        </FallbackAbilities>
+    </AbilityGroupInterval>
+    <AbilityGroupInterval interval="1.0">
+        <Conditions>
+            <AbilityConditionHasTalent identifier="targetingmatrixfocus_handheld" truthywhen="HasTalent"/>
+        </Conditions>
+        <Abilities>
+            <CharacterAbilityApplyStatusEffectsToLastOrderedCharacter>
+                <StatusEffects>
+                    <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="false" delay="1">
+                        <Affliction identifier="targettingmatrix-handheld" amount="2.0" />
+                    </StatusEffect>
+                </StatusEffects>
+            </CharacterAbilityApplyStatusEffectsToLastOrderedCharacter>
+            <CharacterAbilityApplyStatusEffectsToAllies maxdistance="6000" allowself="true">
+                <StatusEffects>
+                    <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="false" delay="1">
+                        <Affliction identifier="targettingmatrix-handheld" amount="1.0" />
+                    </StatusEffect>
+                </StatusEffects>
+            </CharacterAbilityApplyStatusEffectsToAllies>
+        </Abilities>
+    </AbilityGroupInterval>
+    <AbilityGroupInterval interval="1.0">
+        <Conditions>
+            <AbilityConditionHasTalent identifier="targetingmatrixfocus_shipmounted" truthywhen="HasTalent"/>
+        </Conditions>
+        <Abilities>
+            <CharacterAbilityApplyStatusEffectsToLastOrderedCharacter>
+                <StatusEffects>
+                    <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="false" delay="1">
+                        <Affliction identifier="targettingmatrix-shipmounted" amount="2.0" />
+                    </StatusEffect>
+                </StatusEffects>
+            </CharacterAbilityApplyStatusEffectsToLastOrderedCharacter>
+            <CharacterAbilityApplyStatusEffectsToAllies maxdistance="6000" allowself="true">
+                <StatusEffects>
+                    <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="false" delay="1">
+                        <Affliction identifier="targettingmatrix-shipmounted" amount="1.0" />
+                    </StatusEffect>
+                </StatusEffects>
+            </CharacterAbilityApplyStatusEffectsToAllies>
         </Abilities>
     </AbilityGroupInterval>
   </Talent>
 
 	<Talent identifier="targetingmatrixfocus_handheld"> 
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>    
-			<AbilityGroupEffect abilityeffecttype="OnCrewKillCharacter">
-				<Conditions>
-					<AbilityConditionCharacter targettype="Enemy" />
-				</Conditions>
-				<Abilities>
-					<CharacterAbilityApplyStatusEffects>
-						<StatusEffects>
-							<StatusEffect type="OnAbility" target="This">
-								<GiveExperience amount="15"/>
-							</StatusEffect>
-						</StatusEffects>
-					</CharacterAbilityApplyStatusEffects>
-				</Abilities>
-			</AbilityGroupEffect>
 		<AddedRecipe itemidentifier="flare_revolverround-blueprint"/>
 	</Talent>
 
 	<Talent identifier="targetingmatrixfocus_shipmounted"> 
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>    
-			<AbilityGroupEffect abilityeffecttype="OnCrewKillCharacter">
-				<Conditions>
-					<AbilityConditionCharacter targettype="Enemy" />
-				</Conditions>
-				<Abilities>
-					<CharacterAbilityApplyStatusEffects>
-						<StatusEffects>
-							<StatusEffect type="OnAbility" target="This">
-								<GiveExperience amount="15"/>
-							</StatusEffect>
-						</StatusEffects>
-					</CharacterAbilityApplyStatusEffects>
-				</Abilities>
-			</AbilityGroupEffect>
 		<AddedRecipe itemidentifier="flare_coilgunammobox-blueprint"/>
 	</Talent>
   
@@ -274,7 +292,8 @@
           </CharacterAbilityApplyStatusEffects>
         </Abilities>
         </AbilityGroupInterval>
-    <AddedRecipe itemidentifier="rum"/>
+    <AddedRecipe itemidentifier="rum-blueprint"/>
+    <AddedRecipe itemidentifier="packofsmokes-blueprint"/>
 </Talent>
   
 
@@ -304,13 +323,6 @@
       </Conditions>
       <Abilities>
         <CharacterAbilityGainSimultaneousSkill skillidentifier="weapons" />
-        <CharacterAbilityApplyStatusEffects>
-          <StatusEffects>
-            <StatusEffect type="OnAbility" target="This">
-              <GiveExperience amount="20"/>
-            </StatusEffect>
-          </StatusEffects>
-        </CharacterAbilityApplyStatusEffects>
       </Abilities>
     </AbilityGroupEffect>
     <AbilityGroupEffect abilityeffecttype="None">
@@ -318,24 +330,30 @@
         <CharacterAbilityGiveStat stattype="ReputationGainMultiplier" value="0.2"/>
       </Abilities>
     </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnLocationDiscovered">
+        <Abilities>
+            <CharacterAbilityGivePermanentStat statidentifier="ontherollE" stattype="HelmSkillBonus" value="1" removeOnDeath="true" />
+            <CharacterAbilityGivePermanentStat statidentifier="ontherollW" stattype="WeaponsSkillBonus" value="1" removeOnDeath="true" />
+            <CharacterAbilityGivePermanentStat statidentifier="ontherollM" stattype="MedicalSkillBonus" value="1" removeOnDeath="true" />
+            <CharacterAbilityGivePermanentStat statidentifier="ontherollE" stattype="ElectricalSkillBonus" value="1" removeOnDeath="true" />
+            <CharacterAbilityGivePermanentStat statidentifier="ontherollMec" stattype="MechanicalSkillBonus" value="1" removeOnDeath="true" />
+            <CharacterAbilityGiveMoney amount="500"/>
+            <CharacterAbilityApplyStatusEffects>
+                <StatusEffect type="OnAbility" target="This">
+                    <GiveExperience amount="15"/>
+                </StatusEffect>
+            </CharacterAbilityApplyStatusEffects>
+            <CharacterAbilityApplyStatusEffectsToAllies maxdistance="600000" allowself="true">
+                <StatusEffects>
+                    <StatusEffect type="OnAbility" target="This">
+                        <GiveExperience amount="5"/>
+                    </StatusEffect>
+                </StatusEffects>
+            </CharacterAbilityApplyStatusEffectsToAllies>
+        </Abilities>
+    </AbilityGroupEffect>
   </Talent>
   
-  <Talent identifier="targettingmatrix"> 
-    <Description tag="talentdescription.targettingmatrix">
-    </Description>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,1" sheetelementsize="128,128"/>
-    <AbilityGroupInterval>
-      <Abilities>
-        <CharacterAbilityApplyStatusEffectsToAllies maxdistance="6000" allowself="true">
-          <StatusEffects>
-            <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
-						<Affliction identifier="targettingmatrix" amount="5.0"/> <!-- give buff to manning the turet, weapons skill -->
-            </StatusEffect>
-          </StatusEffects>
-		</CharacterAbilityApplyStatusEffectsToAllies>
-      </Abilities>
-    </AbilityGroupInterval>
-  </Talent>
 
 
 </Talents>
