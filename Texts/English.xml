@@ -285,6 +285,8 @@
     
         <!-- XO -->
         <!-- Talents description -->
+    <talenttree.Lancer>Lancer</talenttree.Lancer>
+    
     <talentname.capitanssword>Capitan's Sword</talentname.capitanssword>
     <talentdescription.capitanssword>Gain a dobble damage when using grenades</talentdescription.capitanssword>
     
@@ -307,15 +309,26 @@
     <talentdescription.Big_Functional_Gun>Get bythebook effect, gain weapons_skill, -stun and damage reistance buff around you gain a weaker version of weaker deputy buff applicable to all characters 50% weaker</talentdescription.Big_Functional_Gun>
 
     <talentname.evasion>Evasion</talentname.evasion>
-    <talentdescription.evasion>gain +100% buff to damage aginst enemies while using greneades. tumble buffs grenades +80%</talentdescription.evasion>
+    <talentdescription.evasion>get weaker tumble-drunkensailor-steadytunes effect tumble buffs grenades +80%</talentdescription.evasion>
 
-    <talentname.capitanssword>gain +100% buff to damage aginst enemies while using greneades 
-        tumble buffs grenades +80%
-        <AddedRecipe itemidentifier="rotarygrenedelaucher-blueprint"/>
-        <AddedRecipe itemidentifier="handcannon-blueprint"/>
-        <AddedRecipe itemidentifier="handcannonround-blueprint"/></talentname.capitanssword>
-    <talentdescription.capitanssword></talentdescription.capitanssword>
+    <talentname.capitanssword>Capitan's sword</talentname.capitanssword>
+    <talentdescription.capitanssword>gain +100% buff to damage aginst enemies while using greneades</talentdescription.capitanssword>
 
+
+    <talenttree.Second_In_Command>Second In Command</talenttree.Second_In_Command>
+
+    <talentname.frenzy>Frenzy</talentname.frenzy>
+    <talentdescription.frenzy>if no crew has died, close fighing buff, weapon skill and movement speed, + 15% money and expirence from nest and monster missions </talentdescription.frenzy>
+
+    <talentname.takeabullet>Take a bullet</talentname.takeabullet>
+    <talentdescription.takeabullet>Gain +5% bonus to performance of all machines on your submarine, Choose an specialization (apprenticeship) (for filling vaccant roles), (TODO compatibility with neurotrauma) Potency of medical items applied to you is increased (+75%)</talentdescription.takeabullet>
+
+    <talentname.versitile>Versitile</talentname.versitile>
+    <talentdescription.versitile>Gain +5% bonus to performance of all machines on your submarine, Choose an specialization (apprenticeship) (for filling vaccant roles), Potency of medical items applied to you is increased (+75%)</talentdescription.versitile>
+    <talentdescription.versitile_doctor>Medical Skill Bonus +20</talentdescription.versitile_doctor>
+    <talentdescription.versitile_security>Weapons Skill Bonus +20</talentdescription.versitile_security>
+    <talentdescription.versitile_mechanic>Mechanical Skill Bonus +20</talentdescription.versitile_mechanic>
+    <talentdescription.versitile_engineer>Electrical Skill Bonus +20</talentdescription.versitile_engineer>
 
         <!-- QUA -->
         <!-- Talents description -->

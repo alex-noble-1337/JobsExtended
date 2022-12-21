@@ -539,7 +539,7 @@
         <CharacterAbilityApplyStatusEffects>
           <StatusEffects>
             <StatusEffect type="OnAbility" target="This" multiplyafflictionsbymaxvitality="true">
-              <Affliction identifier="stonewall" amount="4.0"/>
+              <Affliction identifier="stonewall_mod" amount="4.0"/>
             </StatusEffect>
           </StatusEffects>
         </CharacterAbilityApplyStatusEffects>

@@ -216,7 +216,7 @@
     <AppropriateOrders>
       <Order identifier="reportbrokendevices" />
     </AppropriateOrders>
-  </Job> -->
+      </Job> -->
       <Job identifier="navigator" initialcount="1" idlebehavior="Active" uicolor="0.0,0.53,0.53" vitalitymodifier="-20" minkarma="65">
             <Jobicon>
                   <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,256,128,128" origin="0.5,0.5" />
