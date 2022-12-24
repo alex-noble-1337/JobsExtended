@@ -539,7 +539,7 @@
         <CharacterAbilityApplyStatusEffects>
           <StatusEffects>
             <StatusEffect type="OnAbility" target="This" multiplyafflictionsbymaxvitality="true">
-              <Affliction identifier="stonewall_mod" amount="4.0"/>
+              <Affliction identifier="ironcurtain" amount="4.0"/>
             </StatusEffect>
           </StatusEffects>
         </CharacterAbilityApplyStatusEffects>
@@ -556,8 +556,8 @@
 			  <AbilityConditionEvasiveManeuvers/>
 			</Conditions>
 			<Abilities>
-				<CharacterAbilityModifyStatToSkill stattype="TurretPowerCostReduction" maxvalue="0.5" skillidentifier="weapons"/>
-				<CharacterAbilityModifyStatToSkill stattype="TurretChargeSpeed" maxvalue="0.5" skillidentifier="weapons"/>
+				<CharacterAbilityModifyStatToSkill stattype="TurretPowerCostReduction" maxvalue="1.5" skillidentifier="weapons"/>
+				<CharacterAbilityModifyStatToSkill stattype="TurretChargeSpeed" maxvalue="1.5" skillidentifier="weapons"/>
 			</Abilities>
     	</AbilityGroupEffect>
 	</Talent>
@@ -704,6 +704,9 @@
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,5" sheetelementsize="128,128"/>
 		<Description tag="talentdescription.capitansshield">
 		</Description>
+		<Description tag="talentdescription.unlockrecipe">
+			<Replace tag="[itemname]" value="entityname.seredivingsuit-blueprint" color="gui.orange"/>
+		  </Description>
 		<AbilityGroupInterval interval="1.0">
 			<Abilities>
 				<CharacterAbilityApplyStatusEffectsToAllies allowself="true" requiresalive="true" allowclientsimulation="false">

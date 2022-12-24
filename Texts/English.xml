@@ -330,6 +330,43 @@
     <talentdescription.versitile_mechanic>Mechanical Skill Bonus +20</talentdescription.versitile_mechanic>
     <talentdescription.versitile_engineer>Electrical Skill Bonus +20</talentdescription.versitile_engineer>
 
+    <talentname.ironcurtain>Iron Curtain</talentname.ironcurtain>
+    <talentdescription.ironcurtain>On being attacked gain Iron Curtain buff: Giving yo +20% to repair speed both hull and devices, -95% poison effectivenss and debuff duration on you.</talentdescription.ironcurtain>
+
+    <talentname.notasingleonegetsthrough>Not a single one gets through!</talentname.notasingleonegetsthrough>
+    <talentdescription.notasingleonegetsthrough>Turret Power Cost Reduction and Turret Charge Speed up to +150% at 100 weapon skill</talentdescription.notasingleonegetsthrough>
+
+    <talentname.capitansshield>Capitan's Shield</talentname.capitansshield>
+    <talentdescription.capitansshield>Upgrade frenzy or takeabullet times 2 effect strenghths. dish out more stun +25% more. 25% defence buff when iside the submarine, and 25% dng buff when outside.</talentdescription.capitansshield>
+
+    <talentname.departamentsupport>Departament support</talentname.departamentsupport>
+    <talentdescription.departamentsupport>Choose an departament you want to support.</talentdescription.departamentsupport>
+    <talentname.departamentsupport_medical>Medical departament support</talentname.departamentsupport_medical>
+    <talentdescription.departamentsupport_medical>MedicalSkillBonus 20, MedicalSkillGainSpeed +50%, ExperienceGainMultiplier +50%, MedicalItemApplyingMultiplier +20%</talentdescription.departamentsupport_medical>
+    <talentname.departamentsupport_security>Security departament support</talentname.departamentsupport_security>
+    <talentdescription.departamentsupport_security>WeaponsSkillBonus 20, WeaponsSkillGainSpeed +50%, ExperienceGainMultiplier +50%, AttackMultiplier +20%</talentdescription.departamentsupport_security>
+    <talentname.departamentsupport_engineering>Engineering departament support</talentname.departamentsupport_engineering>
+    <talentdescription.departamentsupport_engineering>Electrical and Mechanical SkillBonus 20, Electrical and Mechanical SkillGainSpeed +50%, ExperienceGainMultiplier +50%, RepairToolStructureRepairMultiplier +20%, RepairSpeed +20%</talentdescription.departamentsupport_engineering>
+
+    <talentname.thefivepillars>The five pillars</talentname.thefivepillars>
+    <talentdescription.thefivepillars>All skill gain speed +10%, skill buff +5 to all, xp buff +10%, MedicalItemApplyingMultiplier +5%, AttackMultiplier +5%, RepairToolStructureRepairMultiplier +5%, RepairSpeed +5%</talentdescription.thefivepillars>
+
+    <talentname.fieldcommander>Field Commander</talentname.fieldcommander>
+    <talentdescription.fieldcommander>Aoe buff WeaponsSkillBonus 10, RepairToolStructureRepairMultiplier 12.5, RepairSpeed 12.5: twice when commanding somebody, OnAllyGainSkillPoint gain 10 xp, OnAnyMissionCompleted gain coalition commederation: if you have highlydecoratedindividual changes to medal</talentdescription.fieldcommander>
+
+    <talentname.departamentsupport_second>Departament support (Second choice)</talentname.departamentsupport_second>
+    <talentdescription.departamentsupport_second>Choose an departament you want to support. If you chose the same as previous departament support you strenghen the buff.</talentdescription.departamentsupport_second>
+    <talentname.departamentsupport_medical_second>Medical departament support</talentname.departamentsupport_medical_second>
+    <talentdescription.departamentsupport_medical_second>MedicalSkillBonus 20, MedicalSkillGainSpeed +50%, ExperienceGainMultiplier +50%, MedicalItemApplyingMultiplier +20%</talentdescription.departamentsupport_medical_second>
+    <talentname.departamentsupport_security_second>Security departament support</talentname.departamentsupport_security_second>
+    <talentdescription.departamentsupport_security_second>WeaponsSkillBonus 20, WeaponsSkillGainSpeed +50%, ExperienceGainMultiplier +50%, AttackMultiplier +20%</talentdescription.departamentsupport_security_second>
+    <talentname.departamentsupport_engineering_second>Engineering departament support</talentname.departamentsupport_engineering_second>
+    <talentdescription.departamentsupport_engineering_second>Electrical and Mechanical SkillBonus 20, Electrical and Mechanical SkillGainSpeed +50%, ExperienceGainMultiplier +50%, RepairToolStructureRepairMultiplier +20%, RepairSpeed +20%</talentdescription.departamentsupport_engineering_second>
+
+    <talentname.thefivepillars_second>The five pillars</talentname.thefivepillars_second>
+    <talentdescription.thefivepillars_second>All skill gain speed +10%, skill buff +5 to all, xp buff +10%, MedicalItemApplyingMultiplier +5%, AttackMultiplier +5%, RepairToolStructureRepairMultiplier +5%, RepairSpeed +5%</talentdescription.thefivepillars_second>
+
+
         <!-- QUA -->
         <!-- Talents description -->
     <talentname.logisticsmaster>Logistics Master</talentname.logisticsmaster>

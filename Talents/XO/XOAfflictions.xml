@@ -66,7 +66,7 @@
                 <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="4,1" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
         </Affliction>
 
-        <Affliction identifier="steelwall" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="1" maxstrength="10" treatmentthreshold="1000" showbarinhealthmenu="false" iconcolors="227,247,249">
+        <Affliction identifier="ironcurtain" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="1" maxstrength="10" treatmentthreshold="1000" showbarinhealthmenu="false" iconcolors="227,247,249">
                 <Effect minstrength="0" maxstrength="10" strengthchange="-1" resistancefor="damage" minresistance="0.2" maxresistance="0.2">
                         <StatValue stattype="RepairSpeed"  minvalue="0" maxvalue="0.2" />
                         <StatValue stattype="RepairToolStructureRepairMultiplier"  minvalue="0" maxvalue="0.2" />
