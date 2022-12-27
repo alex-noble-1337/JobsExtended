@@ -2,6 +2,8 @@
 
 - add some kind of automatic spawn and recrutment of new npcs
 
+- replace all upgrades of buffs from numerical affliction max to new affliction
+
 - remove gunsmith replace it with oldhandsomestranger
 - make oldhandsomestranger give you ablility to craft blueprints for revolver and revolverrounds
 - make every talent do 2 things, except the primary talents

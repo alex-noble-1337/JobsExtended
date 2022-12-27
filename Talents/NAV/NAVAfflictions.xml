@@ -27,6 +27,10 @@
 		</Effect>
 		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
 	</Affliction>
-
+	<Affliction identifier="nicotinehigh" type="talentbuff" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="60" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+		<Effect minstrength="0" maxstrength="60" strengthchange="-1" resistancefor="damage" minresistance="0.75" maxresistance="0.75">
+		</Effect>
+		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+	</Affliction>
 
 </Afflictions>

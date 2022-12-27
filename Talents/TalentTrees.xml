@@ -1,22 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- 
-    Abandoned Outpost x
-    Pirate x
-    Monster x
-    Nest x
-
-    Cargo
-    Beacon
-    Mining
-    Escort
-    
-    Ruin Scan
-    Ruin Clear Combat Mission
-    Salvage
-    
-    Combat (PVP)
-    Go To (Story)
--->
 
 
 <TalentTrees>
@@ -203,9 +185,8 @@
                 <!-- TODO Description Icons 
                      OnAnyMissionCompleted gain medal instead of commedareation
                         give instant 5 lvl when you give somebody a medal
-                     give yourself 275 xp 
-                     gain max of 55% increase of MovementSpeed, MeleeAttackSpeed, RangedAttackSpeed based on weapons skill
-                      -->
+                        give yourself 275 xp 
+                     gain max of 55% increase of MovementSpeed, MeleeAttackSpeed, RangedAttackSpeed based on weapons skill -->
                 <TalentOption identifier="highlydecoratedindividual" />
             </TalentOptions>
             <!-- <TalentOptions>
@@ -235,7 +216,7 @@
             </TalentOptions>
         </SubTree>
         <!-- offensive buffs, gunnery, coordinating dive teams, weak at shooting -->
-        <SubTree identifier="gunslinger" type="specialization" requires="captain_primary" blocks="skipper,Specialist">
+        <SubTree identifier="Illuminator" type="specialization" requires="captain_primary" blocks="Specialist,Specialist">
             <TalentOptions>
                 <!-- TODO Description and make it better?
                      Every second you dont fire you get damage buff from +20% to 840% added damage
@@ -256,7 +237,7 @@
                      Modify targettingmatrix to gain players buff to shipmounted guns
                         additional +20% TurretAttackSpeed, TurretPowerCostReduction, TurretChargeSpeed
                      Flare ammo, handheld shipmounted guns, except not as shitty as vanilla, it melts hull, it also softhens enemies debuffs them
-                     TODO Lua When using navigation terminal give everyone in the submarine buffs + diving team this buff (TLDR: increases its range to a lot)-->
+                     TODO Lua When using navigation terminal give everyone in the submarine buffs + diving team this buff (TLDR: increases its range to a lot) -->
                 <TalentOption identifier="targetingmatrixfocus_shipmounted" />
             </TalentOptions>
             <TalentOptions>
@@ -280,7 +261,7 @@
             </TalentOptions> -->
         </SubTree>
         <!-- self buffs and utility items, driving the submarine -->
-        <SubTree identifier="DiverTraining" type="specialization" requires="captain_primary" blocks="gunslinger,Specialist">
+        <SubTree identifier="Specialist" type="specialization" requires="captain_primary" blocks="Illuminator,DiverTraining">
             <TalentOptions>
                 <!-- polarized lens, duel spec ops ability-->
                 <!-- Driving the Shuttle 
@@ -305,7 +286,7 @@
               </TalentOptions>
         </SubTree>
         <!-- defensive buffs, coordinating dive teams -->
-        <SubTree identifier="Specialist" type="specialization" requires="security_primary" blocks="gunslinger,DiverTraining">
+        <SubTree identifier="DiverTraining" type="specialization" requires="security_primary" blocks="Illuminator,Specialist">
             <TalentOptions>
                 <TalentOption identifier="divinggoodies" />
                 <TalentOption identifier="onewithwater" />

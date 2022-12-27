@@ -22,10 +22,10 @@
     </Description>
     <AddedRecipe itemidentifier="template"/>
   </Talent> -->
-  <Talent nameidentifier="flare_revolverround-blueprint" identifier="flare_revolverround-blueprint">
+  <Talent nameidentifier="flare_handheldrounds-blueprint" identifier="flare_handheldrounds-blueprint">
     <Icon texture="%ModDir%/Items/Blueprint.png" sheetindex="1,1" sheetelementsize="67,37" />
     <Description tag="talentdescription.unlockrecipe">
-      <Replace tag="[itemname]" value="entityname.flare_revolverround" color="gui.orange"/>
+      <Replace tag="[itemname]" value="entityname.flare_handheldrounds" color="gui.orange"/>
     </Description>
     <AddedRecipe itemidentifier="flare_revolverround"/>
   </Talent>

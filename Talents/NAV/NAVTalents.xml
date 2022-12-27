@@ -2,30 +2,8 @@
 <Talents>
 
   <Talent identifier="luckystrike">
-    <!-- <Description tag="talentdescription.quickdraw">
-        <Replace tag="[seconds]" value="8" color="gui.green"/>
-        <Replace tag="[damage]" value="25" color="gui.green"/>
-    </Description> -->
-    <!-- Good,  buff it only for CO, add to navigator -->
-    <!-- +When you give someone an order of category fight, it gets health bonus, and weapon bonus, same rules as commander -->
-    <!-- <Description tag="talentdescription.unlockrecipe">
-        <Replace tag="[itemname]" value="entityname.revolverround" color="gui.orange" />
-    </Description> -->
-    <!-- <Description tag="talentdescription.increasereputationgains">
-        <Replace tag="[value]" value="20" color="gui.green" />
-    </Description> -->
-    <!-- <Description tag="talentdescription.simultaneousskillgain">
-        <Replace tag="[skillname1]" value="skillname.helm" color="gui.orange" />
-        <Replace tag="[skillname2]" value="skillname.weapons" color="gui.orange" />
+    <Description tag="talentdescription.luckystrike">
     </Description>
-    <Description tag="talentdescription.gaindoubleskillatskill">
-        <Replace tag="[skillname1]" value="skillname.helm" color="gui.orange" />
-        <Replace tag="[skilltotal]" value="100" color="gui.orange" />
-        <Replace tag="[skillname2]" value="skillname.weapons" color="gui.orange" />
-    </Description>
-    <Description tag="talentdescription.xpgain">
-        <Replace tag="[xp]" value="20" color="gui.orange" />
-    </Description> -->
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,0" sheetelementsize="128,128"/>
     <AbilityGroupInterval interval="1">
         <Abilities>
@@ -246,77 +224,76 @@
   </Talent>
 
 	<Talent identifier="targetingmatrixfocus_handheld"> 
-		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>    
-		<AddedRecipe itemidentifier="flare_revolverround-blueprint"/>
+		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.targetingmatrixfocus_handheld">
+        </Description>
+        <Description tag="talentdescription.unlockrecipe">
+            <Replace tag="[itemname]" value="entityname.flare_handheldrounds-blueprint" color="gui.orange" />
+        </Description>  
+		<AddedRecipe itemidentifier="flare_handheldrounds-blueprint"/>
 	</Talent>
 
 	<Talent identifier="targetingmatrixfocus_shipmounted"> 
-		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>    
+		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.targetingmatrixfocus_shipmounted">
+        </Description>
+        <Description tag="talentdescription.unlockrecipe">
+            <Replace tag="[itemname]" value="entityname.flare_coilgunammobox-blueprint" color="gui.orange" />
+        </Description>
 		<AddedRecipe itemidentifier="flare_coilgunammobox-blueprint"/>
 	</Talent>
   
   <Talent identifier="lightup">
-    <!-- <Description tag="talentdescription.drunkensailor">
-        <Replace tag="[stunresistance]" value="75" color="gui.green"/>
-    </Description>
-    <Description tag="talentdescription.unlockrecipe">
-        <Replace tag="[itemname]" value="entityname.rum" color="gui.orange"/>
-    </Description>
-    <Description tag="talentdescription.drunkensailor">
-        <Replace tag="[dmgresistance]" value="25" color="gui.green"/>
-        <Replace tag="[stunresistance]" value="50" color="gui.green"/>
-        <Replace tag="[skillgainprobability]" value="4" color="gui.green"/>
-    </Description>
-    <Description tag="talentdescription.tumble">
-        <Replace tag="[seconds]" value="0.75" color="gui.green" />
-        <Replace tag="[damage]" value="40" color="gui.green" />
-        <Replace tag="[duration]" value="2.5" color="gui.green" />
-    </Description>
-    <Description tag="talentdescription.tumble2">
-        <Replace tag="[red]" value="75" color="gui.green" />
-    </Description> -->
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,0" sheetelementsize="128,128"/>
-      <AbilityGroupInterval>
+    <Description tag="talentdescription.lightup">
+    </Description>
+    <AbilityGroupInterval>
         <Conditions>
-          <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.25"/>
-          <AbilityConditionItem tags="smokingitems,pipetobacco"/>
+            <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.25"/>
+            <AbilityConditionItem tags="smokingitems,pipetobacco"/>
         </Conditions>
         <Abilities>
-          <CharacterAbilityApplyStatusEffects>
+            <CharacterAbilityApplyStatusEffects>
             <StatusEffects>
-              <StatusEffect type="OnAbility" target="Character">
+                <StatusEffect type="OnAbility" target="Character">
                 <ReduceAffliction type="damage" strength="0.1"/>
                 <ReduceAffliction type="burn" strength="0.1"/>
-              </StatusEffect>
+                </StatusEffect>
             </StatusEffects>
-          </CharacterAbilityApplyStatusEffects>
+            </CharacterAbilityApplyStatusEffects>
         </Abilities>
-        </AbilityGroupInterval>
+    </AbilityGroupInterval>
+    <AbilityGroupInterval>
+        <Conditions>
+            <AbilityConditionItem tags="smokingitems,pipetobacco"/>
+        </Conditions>
+        <Abilities>
+            <CharacterAbilityApplyStatusEffects>
+                <StatusEffects>
+                    <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="false" delay="1">
+                        <Affliction identifier="nicotinehigh" amount="1.0" />
+                    </StatusEffect>
+                </StatusEffects>
+            </CharacterAbilityApplyStatusEffects>
+        </Abilities>
+    </AbilityGroupInterval>
+    <Description tag="talentdescription.unlockrecipe">
+        <Replace tag="[itemname]" value="entityname.rum-blueprint" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.unlockrecipe">
+        <Replace tag="[itemname]" value="entityname.packofsmokes-blueprint" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.unlockrecipe">
+        <Replace tag="[itemname]" value="entityname.flare_harpoons-blueprint" color="gui.orange" />
+    </Description>
     <AddedRecipe itemidentifier="rum-blueprint"/>
     <AddedRecipe itemidentifier="packofsmokes-blueprint"/>
+    <AddedRecipe itemidentifier="flare_harpoons-blueprint"/>
 </Talent>
   
 
   <Talent identifier="ontheroll"> 
-    <!-- <Description tag="talentdescription.unlockrecipe">
-      <Replace tag="[itemname]" value="entityname.navpda" color="gui.orange"/>
-    </Description>
-    <Description tag="talentdescription.increasereputationgains">
-      <Replace tag="[value]" value="20" color="gui.green"/>
-    </Description>
-    <Description tag="talentdescription.simultaneousskillgain">
-      <Replace tag="[skillname1]" value="skillname.helm" color="gui.orange"/>
-      <Replace tag="[skillname2]" value="skillname.weapons" color="gui.orange"/>
-    </Description>
-    <Description tag="talentdescription.gaindoubleskillatskill">
-      <Replace tag="[skillname1]" value="skillname.helm" color="gui.orange"/>
-      <Replace tag="[skilltotal]" value="100" color="gui.orange"/>
-      <Replace tag="[skillname2]" value="skillname.weapons" color="gui.orange"/>
-    </Description>
-	 <Description tag="talentdescription.xpgain">
-			<Replace tag="[xp]" value="20" color="gui.orange"/>
-    </Description> -->
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>    
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>
     <AbilityGroupEffect abilityeffecttype="OnGainSkillPoint">
       <Conditions>
         <AbilityConditionSkill skillidentifier="helm"/>
@@ -354,6 +331,4 @@
     </AbilityGroupEffect>
   </Talent>
   
-
-
 </Talents>

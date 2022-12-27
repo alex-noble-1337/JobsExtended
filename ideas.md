@@ -1,4 +1,7 @@
 # Pragmas:
+- buff (affilction) icon same as the one talent giving you the buff
+- about 2 new items per specialization tree.
+
 - The range of the effects is irrelevant tbh in everything. Making a role in its entirety based on its range is counterproductive but thinking more on a personal talent by talent basis is more effective. You have the right idea with XO but maybe think more like health, speed, and skill boosts.
 - All talents should have 1 thing to give all people, an weapon, and an diving suit colored accordingly
 
@@ -134,6 +137,7 @@ https://discord.com/channels/103209684680323072/220881718666723328/1003829090836
 ### Yaoman
 - more money
 ### Navigator NAV:
+- burnedman - 95% burn resistance and eny immunity for flares, 100% bonus to fire damage - to all other damage type. gain the .45 colt pistol
 - Flare Cannon; Handcannon flare edition and alien flares ammunition
 - small, but combat and gun fire rate oriented
 - Flare instead of offenive tree.

@@ -2,17 +2,17 @@
 <Talents>
 
 	<Talent identifier="firststrike">
-		<Description tag="talentdescription.unlockrecipe">
-			<Replace tag="[itemname]" value="entityname.baton-blueprint" color="gui.orange"/>
-		  </Description>
-		  <Description tag="talentdescription.unlockrecipe">
-			<Replace tag="[itemname]" value="entityname.heavy_weapon_holster-blueprint" color="gui.orange"/>
-		  </Description>
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,0" sheetelementsize="128,128"/>
+		<Description tag="talentdescription.firststrike">
+			<Replace tag="[bonuspercdamage]" value="40%" color="gui.green"/>
+			<Replace tag="[whenthisskill]" value="weapons" color="gui.green"/>
+			<Replace tag="[gainthisskill]" value="helm" color="gui.green"/>
+		</Description>
+		<!-- Quickdrawing grenade lauchers and heavy weapons -->
 		<AbilityGroupEffect abilityeffecttype="OnAttack">
 			<Conditions>
 				<AbilityConditionHasAffliction afflictionidentifier="quickdrawing" minimumpercentage="1.0"/>
-				<AbilityConditionAttackData tags="grenade"/>
+				<AbilityConditionAttackData tags="grenade,heavyweaponammo"/>
 			</Conditions>
 			<Abilities>
 				<CharacterAbilityModifyAttackData addeddamagemultiplier="0.4"/>
@@ -25,6 +25,18 @@
 				</CharacterAbilityApplyStatusEffects>
 			</Abilities>
 		</AbilityGroupEffect>
+		<AbilityGroupInterval interval="1">
+			<Abilities>
+				<CharacterAbilityApplyStatusEffects>
+					<StatusEffects>
+						<StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true" disabledeltatime="true">
+							<Affliction identifier="quickdrawing" amount="1.0"/>
+						</StatusEffect>
+					</StatusEffects>
+				</CharacterAbilityApplyStatusEffects>
+			</Abilities>
+		</AbilityGroupInterval>
+		<!-- Gain Weapon skill and Helm and vice versa -->
 		<AbilityGroupEffect abilityeffecttype="OnGainSkillPoint">
 			<Conditions>
 				<AbilityConditionSkill skillidentifier="weapons" />
@@ -41,62 +53,41 @@
 				<CharacterAbilityGainSimultaneousSkill skillidentifier="helm" />
 			</Abilities>
 		</AbilityGroupEffect>
-		<AbilityGroupInterval interval="1">
-			<Abilities>
-				<CharacterAbilityApplyStatusEffects>
-					<StatusEffects>
-						<StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true" disabledeltatime="true">
-							<Affliction identifier="quickdrawing" amount="1.0"/>
-						</StatusEffect>
-					</StatusEffects>
-				</CharacterAbilityApplyStatusEffects>
-			</Abilities>
-		</AbilityGroupInterval>
+		<!-- Aoe effect and when ordered -->
 		<AbilityGroupInterval>
 			<Abilities>
 				<CharacterAbilityApplyStatusEffectsToLastOrderedCharacter>
 					<StatusEffects>
-						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true" delay="1">
-							<Affliction identifier="weaker-ready_to_fight" amount="5.0" />
+						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true" delay="0.9">
+							<Affliction identifier="inspiringorders" amount="1.0" />
 						</StatusEffect>
 					</StatusEffects>
 				</CharacterAbilityApplyStatusEffectsToLastOrderedCharacter>
 				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="6000" allowself="true">
 					<StatusEffects>
-						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true" delay="1">
-							<Affliction identifier="weaker-ready_to_fight" amount="5.0" />
+						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true" delay="0.9">
+							<Affliction identifier="ready_to_fight" amount="1.0" />
 						</StatusEffect>
 					</StatusEffects>
 				</CharacterAbilityApplyStatusEffectsToAllies>
 			</Abilities>
 		</AbilityGroupInterval>
+		<!-- Items -->
+		<Description tag="talentdescription.unlockrecipe">
+		<Replace tag="[itemname]" value="entityname.baton-blueprint" color="gui.orange"/>
+		</Description>
+		<Description tag="talentdescription.unlockrecipe">
+		<Replace tag="[itemname]" value="entityname.heavy_weapon_holster-blueprint" color="gui.orange"/>
+		</Description>
 		<AddedRecipe itemidentifier="baton-blueprint"/>
-		<!-- Added by vanilla -->
 		<AddedRecipe itemidentifier="heavy_weapon_holster-blueprint"/>
 	</Talent>
 
 	<Talent identifier="Big_Functional_Gun">
-		<!-- <Description tag="talentdescription.chanceofextraweapondamage">
-			<Replace tag="[probability]" value="7" color="gui.green"/>
-		</Description>
-		<Description tag="talentdescription.nomercy">
-			<Replace tag="[extra]" value="50" color="gui.green"/>
-		</Description>
-		<Description tag="talentdescription.lonewolf"/>
-		<Description tag="talentdescription.additionalstattype">
-		  <Replace tag="[amount]" value="20" color="gui.green"/>
-		  <Replace tag="[stattype]" value="stattypenames.physicalresistance" color="gui.orange"/>
-		</Description> -->
-		<!-- <Description tag="talentdescription.additionalstattype">
-		  <Replace tag="[amount]" value="20" color="gui.green"/>
-		  <Replace tag="[stattype]" value="stattypenames.stunresistance" color="gui.orange"/>
-		</Description>
-		<Description tag="talentdescription.additionalstattype">
-		  <Replace tag="[amount]" value="20" color="gui.green"/>
-		  <Replace tag="[stattype]" value="stattypenames.meleedamagebonus" color="gui.orange"/>
-		</Description> -->
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="5,0" sheetelementsize="128,128"/>
-		<!-- <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,5" sheetelementsize="128,128"/> -->
+		<Description tag="talentdescription.Big_Functional_Gun">
+		</Description>
+		<!-- 1/6 chance of getting twice the damage -->
 		<AbilityGroupEffect abilityeffecttype="OnAttack">
 			<Conditions>
 				<AbilityConditionServerRandom randomchance="0.1667"/>
@@ -105,6 +96,7 @@
 				<CharacterAbilityModifyAttackData addeddamagemultiplier="1.0" />
 			</Abilities>
 		</AbilityGroupEffect>
+		<!-- Gain 50% more money and expirece from pirate missions and abbondoned outpost missions -->
 		<AbilityGroupEffect abilityeffecttype="OnGainMissionMoney">
 			<Conditions>
 				<AbilityConditionMission missiontype="Pirate"/>
@@ -137,6 +129,7 @@
 				<CharacterAbilityModifyValue addedvalue="0.50"/>
 			</Abilities>
 		</AbilityGroupEffect>
+		<!-- Alone in the room, gain weaker version of lonewolf -->
 		<AbilityGroupInterval interval="1.0">
 			<Conditions>
 				<AbilityConditionAllyNearby distance="2000" truthywhen="NoCharacterMatches"/>
@@ -151,25 +144,23 @@
 				</CharacterAbilityApplyStatusEffects>
 			</Abilities>
 		</AbilityGroupInterval>
+		<Description tag="talentdescription.unlockrecipe">
+			<Replace tag="[itemname]" value="entityname.HESHshell-blueprint" color="gui.orange"/>
+		</Description>
+		<AddedRecipe itemidentifier="HESHshell-blueprint"/>
 	</Talent>
+
 	<Talent identifier="bythebook-deputy">
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,3" sheetelementsize="128,128"/>
-		<Description tag="talentdescription.bythebook">
-			<Replace tag="[moneyamount]" value="1250" color="gui.green"/>
-			<Replace tag="[experienceamount]" value="200" color="gui.green"/>
-			<Replace tag="[moneyamountmax]" value="2500" color="gui.green"/>
-			<Replace tag="[experienceamountmax]" value="400" color="gui.green"/>
+		<Description tag="talentdescription.bythebook-deputy">
 		</Description>
-		<!-- <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,5" sheetelementsize="128,128"/> -->
-		<!-- <Description tag="talentdescription.deputy">
-		  <Replace tag="[skillbonus1]" value="20" color="gui.green"/>
-		  <Replace tag="[skillbonus2]" value="20" color="gui.green"/>
-		</Description> -->
+		<!-- Gain +1250 and 200xp for every enemy human captured after the end of the mission. Up to 4 humans captured. -->
 		<AbilityGroupEffect abilityeffecttype="OnRoundEnd">
 			<Abilities>
-				<CharacterAbilityByTheBook moneyamount="1250" experienceamount="200" max="2" />
+				<CharacterAbilityByTheBook moneyamount="1250" experienceamount="200" max="10" />
 			</Abilities>
 		</AbilityGroupEffect>
+		<!-- Give low range weapon skill damage reduction, stun reduction, except you. -->
 		<AbilityGroupInterval interval="1.0">
 			<Abilities>
 				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="1000" allowself="false">
@@ -181,9 +172,10 @@
 				</CharacterAbilityApplyStatusEffectsToAllies>
 			</Abilities>
 		</AbilityGroupInterval>
+		<!-- Gain weaker deputy -->
 		<AbilityGroupInterval interval="1.0">
 			<Abilities>
-				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="600" jobs="assistant" allowself="false">
+				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="600" jobs="assistant,passenger,janitor" allowself="false">
 					<StatusEffects>
 						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
 							<Affliction identifier="weaker-deputy" strength="1.0"/>
@@ -192,30 +184,17 @@
 				</CharacterAbilityApplyStatusEffectsToAllies>
 			</Abilities>
 		</AbilityGroupInterval>
+		<!-- New items -->
+		<Description tag="talentdescription.unlockrecipe">
+			<Replace tag="[itemname]" value="entityname.rubberslug-blueprint" color="gui.orange"/>
+		</Description>
 		<AddedRecipe itemidentifier="rubberslug-blueprint"/>
 	</Talent>
 
 	<Talent identifier="evasion">
-		<!-- <Description tag="talentdescription.drunkensailor">
-			<Replace tag="[stunresistance]" value="75" color="gui.green"/>
-		</Description>
-		<Description tag="talentdescription.unlockrecipe">
-			<Replace tag="[itemname]" value="entityname.rum" color="gui.orange"/>
-		</Description>
-		<Description tag="talentdescription.drunkensailor">
-			<Replace tag="[dmgresistance]" value="25" color="gui.green"/>
-			<Replace tag="[stunresistance]" value="50" color="gui.green"/>
-			<Replace tag="[skillgainprobability]" value="4" color="gui.green"/>
-		</Description>
-		<Description tag="talentdescription.tumble">
-			<Replace tag="[seconds]" value="0.75" color="gui.green" />
-			<Replace tag="[damage]" value="40" color="gui.green" />
-			<Replace tag="[duration]" value="2.5" color="gui.green" />
-		</Description> -->
-		<!-- <Description tag="talentdescription.tumble2">
-			<Replace tag="[red]" value="75" color="gui.green" />
-		</Description> -->
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,0" sheetelementsize="128,128"/>
+		<Description tag="talentdescription.evasion">
+		</Description>
 		<AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
 			<Abilities>
 				<CharacterAbilityModifyAffliction afflictionidentifiers="drunk" replacewith="drunknodebuffs" />
@@ -280,31 +259,16 @@
 				<CharacterAbilityModifyAttackData addeddamagemultiplier="0.8" />
 			</Abilities>
 		</AbilityGroupEffect>
+		<Description tag="talentdescription.unlockrecipe">
+			<Replace tag="[itemname]" value="entityname.rum-blueprint" color="gui.orange"/>
+		</Description>
 		<AddedRecipe itemidentifier="rum-blueprint"/>
 	</Talent>
 
 	<Talent identifier="capitanssword">
-		<!-- <Description tag="talentdescription.unlockrecipe">
-			<Replace tag="[itemname]" value="entityname.rotarygrenedelaucher" color="gui.orange"/>
-		</Description>
-		<Description tag="talentdescription.capitanssword">
-		</Description> -->
-		<!-- <Description tag="talentdescription.bigguns">
-		  <Replace tag="[amount]" value="30" color="gui.green"/>
-		</Description>
-		<Description tag="talentdescription.unlockrecipe">
-		  <Replace tag="[itemname]" value="entityname.handcannon, entityname.handcannonround" color="gui.orange"/>
-		</Description> -->
-		<Description tag="talentdescription.unlockrecipe">
-			<Replace tag="[itemname]" value="entityname.rotarygrenedelaucher-blueprint" color="gui.orange"/>
-		  </Description>
-		  <Description tag="talentdescription.unlockrecipe">
-			<Replace tag="[itemname]" value="entityname.handcannon-blueprint" color="gui.orange"/>
-		  </Description>
-		  <Description tag="talentdescription.unlockrecipe">
-			<Replace tag="[itemname]" value="entityname.handcannonround-blueprint" color="gui.orange"/>
-		  </Description>
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>
+		<Description tag="talentdescription.capitanssword">
+		</Description>
 		<AbilityGroupEffect abilityeffecttype="OnAttack">
 			<Conditions>
 				<AbilityConditionAttackData tags="grenade"/>
@@ -314,6 +278,15 @@
 				<CharacterAbilityModifyAttackData addeddamagemultiplier="1" />
 			</Abilities>
 		</AbilityGroupEffect>
+		<Description tag="talentdescription.unlockrecipe">
+			<Replace tag="[itemname]" value="entityname.rotarygrenedelaucher-blueprint" color="gui.orange"/>
+		  </Description>
+		  <Description tag="talentdescription.unlockrecipe">
+			<Replace tag="[itemname]" value="entityname.handcannon-blueprint" color="gui.orange"/>
+		  </Description>
+		  <Description tag="talentdescription.unlockrecipe">
+			<Replace tag="[itemname]" value="entityname.handcannonround-blueprint" color="gui.orange"/>
+		  </Description>
 		<AddedRecipe itemidentifier="rotarygrenedelaucher-blueprint"/>
 		<AddedRecipe itemidentifier="handcannon-blueprint"/>
 		<AddedRecipe itemidentifier="handcannonround-blueprint"/>
@@ -322,19 +295,8 @@
 
 	<Talent identifier="frenzy">
 		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="1,5" sheetelementsize="128,128"/>
-		<!-- <Description tag="talentdescription.leadingbyexample" />
-    <Description tag="talentdescription.additionalstattype">
-      <Replace tag="[amount]" value="20" color="gui.green"/>
-      <Replace tag="[stattype]" value="stattypenames.repairspeed" color="gui.orange"/>
-    </Description>
-    <Description tag="talentdescription.additionalstattype">
-      <Replace tag="[amount]" value="20" color="gui.green"/>
-      <Replace tag="[stattype]" value="stattypenames.repairtoolstructurerepairmultiplier" color="gui.orange"/>
-    </Description>
-    <Description tag="talentdescription.additionalstattype">
-      <Replace tag="[amount]" value="5" color="gui.green"/>
-      <Replace tag="[stattype]" value="stattypenames.movementspeed" color="gui.orange"/>
-    </Description> -->
+		<Description tag="talentdescription.frenzy">
+		</Description>
 		<AbilityGroupInterval interval="1.0">
 			<Conditions>
 				<AbilityConditionNoCrewDied/>
@@ -369,19 +331,8 @@
 
 	<Talent identifier="takeabullet">
 		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="1,5" sheetelementsize="128,128"/>
-		<!-- <Description tag="talentdescription.leadingbyexample" />
-    <Description tag="talentdescription.additionalstattype">
-      <Replace tag="[amount]" value="20" color="gui.green"/>
-      <Replace tag="[stattype]" value="stattypenames.repairspeed" color="gui.orange"/>
-    </Description>
-    <Description tag="talentdescription.additionalstattype">
-      <Replace tag="[amount]" value="20" color="gui.green"/>
-      <Replace tag="[stattype]" value="stattypenames.repairtoolstructurerepairmultiplier" color="gui.orange"/>
-    </Description>
-    <Description tag="talentdescription.additionalstattype">
-      <Replace tag="[amount]" value="5" color="gui.green"/>
-      <Replace tag="[stattype]" value="stattypenames.movementspeed" color="gui.orange"/>
-    </Description> -->
+		<Description tag="talentdescription.takeabullet">
+		</Description>
 		<AbilityGroupInterval interval="1.0">
 			<Conditions>
 				<AbilityConditionHasTalent identifier="capitansshield" truthywhen="HasTalent"/>
@@ -410,12 +361,8 @@
 
 	<Talent identifier="versitile">
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,4" sheetelementsize="128,128"/>
-		<!-- <Description tag="talentdescription.helmsman">
-      <Replace tag="[amount]" value="30" color="gui.green"/>
-    </Description>
-    <Description tag="talentdescription.increaseeffectiveness">
-      <Replace tag="[amount]" value="20" color="gui.green"/>
-    </Description> -->
+		<Description tag="talentdescription.versitile">
+		</Description>
 		<AbilityGroupEffect abilityeffecttype="None">
 			<Abilities>
 				<CharacterAbilityGiveStat stattype="HelmSkillBonus" value="30"/>
@@ -464,12 +411,7 @@
 	</Talent>
 	<Talent identifier="versitile_doctor" nameidentifier="jobname.medicaldoctor" coloroverride="0.81,0.31,0.19">
 		<Icon texture="Content/UI/MainIconsAtlas.png" sourcerect="512,256,128,128" origin="0.5,0.5"/>
-		<Description tag="talentdescription.apprenticeshipjob">
-			<Replace tag="[job]" value="jobname.medicaldoctor" color="0.81,0.31,0.19"/>
-		</Description>
-		<Description tag="talentdescription.additionalskill">
-			<Replace tag="[amount]" value="20" color="gui.green"/>
-			<Replace tag="[stattype]" value="stattypenames.medicalskillbonus" color="gui.orange"/>
+		<Description tag="talentdescription.versitile_doctor">
 		</Description>
 		<AbilityGroupEffect abilityeffecttype="None">
 			<Abilities>
@@ -480,12 +422,7 @@
 	</Talent>
 	<Talent identifier="versitile_security" nameidentifier="jobname.securityofficer" coloroverride="0.57,0.48,0.43">
 		<Icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5"/>
-		<Description tag="talentdescription.apprenticeshipjob">
-			<Replace tag="[job]" value="jobname.securityofficer" color="0.57,0.48,0.43"/>
-		</Description>
-		<Description tag="talentdescription.additionalskill">
-			<Replace tag="[amount]" value="20" color="gui.green"/>
-			<Replace tag="[stattype]" value="stattypenames.WeaponsSkillBonus" color="gui.orange"/>
+		<Description tag="talentdescription.versitile_security">
 		</Description>
 		<AbilityGroupEffect abilityeffecttype="None">
 			<Abilities>
@@ -496,12 +433,7 @@
 	</Talent>
 	<Talent identifier="versitile_mechanic" nameidentifier="jobname.mechanic" coloroverride="0.5,0.86,0.9">
 		<Icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,256,128,128" origin="0.5,0.5"/>
-		<Description tag="talentdescription.apprenticeshipjob">
-			<Replace tag="[job]" value="jobname.mechanic" color="0.5,0.86,0.9"/>
-		</Description>
-		<Description tag="talentdescription.additionalskill">
-			<Replace tag="[amount]" value="20" color="gui.green"/>
-			<Replace tag="[stattype]" value="stattypenames.mechanicalskillbonus" color="gui.orange"/>
+		<Description tag="talentdescription.versitile_mechanic">
 		</Description>
 		<AbilityGroupEffect abilityeffecttype="None">
 			<Abilities>
@@ -512,12 +444,7 @@
 	</Talent>
 	<Talent identifier="versitile_engineer" nameidentifier="jobname.engineer" coloroverride="0.88,0.72,0.43">
 		<Icon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,256,128,128" origin="0.5,0.5"/>
-		<Description tag="talentdescription.apprenticeshipjob">
-			<Replace tag="[job]" value="jobname.engineer" color="0.88,0.72,0.43"/>
-		</Description>
-		<Description tag="talentdescription.additionalskill">
-			<Replace tag="[amount]" value="20" color="gui.green"/>
-			<Replace tag="[stattype]" value="stattypenames.electricalskillbonus" color="gui.orange"/>
+		<Description tag="talentdescription.versitile_engineer">
 		</Description>
 		<AbilityGroupEffect abilityeffecttype="None">
 			<Abilities>
@@ -528,13 +455,10 @@
 	</Talent>
 
   <Talent identifier="ironcurtain">
-    <Description tag="talentdescription.stonewall">
-      <Replace tag="[physicaldamagereduction]" value="25" color="gui.green"/>
-      <Replace tag="[stunresistance]" value="25" color="gui.green"/>
-      <Replace tag="[seconds]" value="4" color="gui.green"/>
-    </Description>
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,3" sheetelementsize="128,128"/>
-    <AbilityGroupEffect abilityeffecttype="OnAttackedResult">
+    <Description tag="talentdescription.ironcurtain">
+    </Description>
+	<AbilityGroupEffect abilityeffecttype="OnAttackedResult">
       <Abilities>
         <CharacterAbilityApplyStatusEffects>
           <StatusEffects>
@@ -549,7 +473,6 @@
 	<Talent identifier="notasingleonegetsthough">
 		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="4,0" sheetelementsize="128,128"/>
 		<Description tag="talentdescription.notasingleonegetsthough">
-			<Replace tag="[perc]" value="50" color="gui.green"/>
 		</Description>
 		<AbilityGroupEffect abilityeffecttype="AfterSubmarineAttacked">
 			<Conditions>
@@ -564,17 +487,13 @@
 
 	<Talent identifier="departamentsupport">
 		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,5" sheetelementsize="128,128"/>
-		<!-- <Description tag="talentdescription.apprenticeshipbase"/> -->
+		<Description tag="talentdescription.departamentsupport">
+		</Description>
 	</Talent>
 	<Talent identifier="departamentsupport_medical" nameidentifier="jobname.medicaldoctor" coloroverride="0.81,0.31,0.19">
 		<Icon texture="Content/UI/MainIconsAtlas.png" sourcerect="512,256,128,128" origin="0.5,0.5"/>
-		<!-- <Description tag="talentdescription.apprenticeshipjob">
-      <Replace tag="[job]" value="jobname.medicaldoctor" color="0.81,0.31,0.19"/>
-    </Description>
-    <Description tag="talentdescription.additionalskill">
-      <Replace tag="[amount]" value="20" color="gui.green"/>
-      <Replace tag="[stattype]" value="stattypenames.medicalskillbonus" color="gui.orange"/>
-    </Description> -->
+		<Description tag="talentdescription.departamentsupport_medical">
+		</Description>
 		<AbilityGroupInterval interval="1.0">
 			<Conditions>
 				<AbilityConditionHasTalent identifier="departamentsupport_medical_second" truthywhen="HasTalent"/>
@@ -601,13 +520,8 @@
 	</Talent>
 	<Talent identifier="departamentsupport_security" nameidentifier="jobname.securityofficer" coloroverride="0.57,0.48,0.43">
 		<Icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5"/>
-		<!-- <Description tag="talentdescription.apprenticeshipjob">
-      <Replace tag="[job]" value="jobname.securityofficer" color="0.57,0.48,0.43"/>
-    </Description>
-    <Description tag="talentdescription.additionalskill">
-      <Replace tag="[amount]" value="20" color="gui.green"/>
-      <Replace tag="[stattype]" value="stattypenames.WeaponsSkillBonus" color="gui.orange"/>
-    </Description> -->
+		<Description tag="talentdescription.departamentsupport_security">
+		</Description>
 		<AbilityGroupInterval interval="1.0">
 			<Conditions>
 				<AbilityConditionHasTalent identifier="departamentsupport_security_second" truthywhen="HasTalent"/>
@@ -634,13 +548,8 @@
 	</Talent>
 	<Talent identifier="departamentsupport_engineering" nameidentifier="talentname.engineering" coloroverride="0.88,0.72,0.43">
 		<Icon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,256,128,128" origin="0.5,0.5"/>
-		<!-- <Description tag="talentdescription.apprenticeshipjob">
-      <Replace tag="[job]" value="jobname.engineer" color="0.88,0.72,0.43"/>
-    </Description>
-    <Description tag="talentdescription.additionalskill">
-      <Replace tag="[amount]" value="20" color="gui.green"/>
-      <Replace tag="[stattype]" value="stattypenames.electricalskillbonus" color="gui.orange"/>
-    </Description> -->
+		<Description tag="talentdescription.departamentsupport_engineering">
+		</Description>
 		<AbilityGroupInterval interval="1.0">
 			<Conditions>
 				<AbilityConditionHasTalent identifier="departamentsupport_engineering_second" truthywhen="HasTalent"/>
@@ -668,13 +577,8 @@
 
 	<Talent identifier="thefivepillars">
 		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,5" sheetelementsize="128,128"/>
-		<!-- <Description tag="talentdescription.apprenticeshipjob">
-      <Replace tag="[job]" value="jobname.medicaldoctor" color="0.81,0.31,0.19"/>
-    </Description>
-    <Description tag="talentdescription.additionalskill">
-      <Replace tag="[amount]" value="20" color="gui.green"/>
-      <Replace tag="[stattype]" value="stattypenames.medicalskillbonus" color="gui.orange"/>
-    </Description> -->
+		<Description tag="talentdescription.thefivepillars">
+		</Description>
 		<AbilityGroupInterval interval="1.0">
 			<Conditions>
 				<AbilityConditionHasTalent identifier="thefivepillars_second" truthywhen="HasTalent"/>
@@ -704,9 +608,6 @@
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,5" sheetelementsize="128,128"/>
 		<Description tag="talentdescription.capitansshield">
 		</Description>
-		<Description tag="talentdescription.unlockrecipe">
-			<Replace tag="[itemname]" value="entityname.seredivingsuit-blueprint" color="gui.orange"/>
-		  </Description>
 		<AbilityGroupInterval interval="1.0">
 			<Abilities>
 				<CharacterAbilityApplyStatusEffectsToAllies allowself="true" requiresalive="true" allowclientsimulation="false">
@@ -735,16 +636,16 @@
 				<CharacterAbilityModifyAffliction afflictionidentifiers="stun,incrementalstun,progressivestun" addedmultiplier="0.25" />
 			</Abilities>
 		</AbilityGroupEffect>
+		<Description tag="talentdescription.unlockrecipe">
+			<Replace tag="[itemname]" value="entityname.seredivingsuit-blueprint" color="gui.orange"/>
+		</Description>
 		<AddedRecipe itemidentifier="seredivingsuit-blueprint"/>
 	</Talent>
 
 	<Talent identifier="fieldcommander">
-		<!-- <Description tag="talentdescription.commander">
-		<Replace tag="[physicalresistance]" value="25" color="gui.green" />
-		<Replace tag="[skillincrease]" value="10" color="gui.green" />
-		</Description> -->
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,1" sheetelementsize="128,128" />
-		<!-- <Description tag="talentdescription.commanderreminder" /> -->
+		<Description tag="talentdescription.fieldcommander">
+		</Description>
 		<AbilityGroupInterval>
 			<Abilities>
 				<CharacterAbilityApplyStatusEffectsToLastOrderedCharacter>
@@ -847,17 +748,13 @@
 
 	  <Talent identifier="departamentsupport_second">
 		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,5" sheetelementsize="128,128"/>
-		<!-- <Description tag="talentdescription.apprenticeshipbase"/> -->
+		<Description tag="talentdescription.departamentsupport_second">
+		</Description>
 	</Talent>
 	<Talent identifier="departamentsupport_medical_second" nameidentifier="jobname.medicaldoctor" coloroverride="0.81,0.31,0.19">
 		<Icon texture="Content/UI/MainIconsAtlas.png" sourcerect="512,256,128,128" origin="0.5,0.5"/>
-		<!-- <Description tag="talentdescription.apprenticeshipjob">
-      <Replace tag="[job]" value="jobname.medicaldoctor" color="0.81,0.31,0.19"/>
-    </Description>
-    <Description tag="talentdescription.additionalskill">
-      <Replace tag="[amount]" value="20" color="gui.green"/>
-      <Replace tag="[stattype]" value="stattypenames.medicalskillbonus" color="gui.orange"/>
-    </Description> -->
+		<Description tag="talentdescription.departamentsupport_medical_second">
+		</Description>
 		<AbilityGroupInterval interval="1.0">
 			<Conditions>
 				<AbilityConditionHasTalent identifier="departamentsupport_medical" truthywhen="HasTalent"/>
@@ -875,13 +772,8 @@
 	</Talent>
 	<Talent identifier="departamentsupport_security_second" nameidentifier="jobname.securityofficer" coloroverride="0.57,0.48,0.43">
 		<Icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5"/>
-		<!-- <Description tag="talentdescription.apprenticeshipjob">
-      <Replace tag="[job]" value="jobname.securityofficer" color="0.57,0.48,0.43"/>
-    </Description>
-    <Description tag="talentdescription.additionalskill">
-      <Replace tag="[amount]" value="20" color="gui.green"/>
-      <Replace tag="[stattype]" value="stattypenames.WeaponsSkillBonus" color="gui.orange"/>
-    </Description> -->
+		<Description tag="talentdescription.departamentsupport_security_second">
+		</Description>
 		<AbilityGroupInterval interval="1.0">
 			<Conditions>
 				<AbilityConditionHasTalent identifier="departamentsupport_security" truthywhen="HasTalent"/>
@@ -899,13 +791,8 @@
 	</Talent>
 	<Talent identifier="departamentsupport_engineering_second" nameidentifier="talentname.engineering" coloroverride="0.88,0.72,0.43">
 		<Icon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,256,128,128" origin="0.5,0.5"/>
-		<!-- <Description tag="talentdescription.apprenticeshipjob">
-      <Replace tag="[job]" value="jobname.engineer" color="0.88,0.72,0.43"/>
-    </Description>
-    <Description tag="talentdescription.additionalskill">
-      <Replace tag="[amount]" value="20" color="gui.green"/>
-      <Replace tag="[stattype]" value="stattypenames.electricalskillbonus" color="gui.orange"/>
-    </Description> -->
+		<Description tag="talentdescription.departamentsupport_engineering_second">
+		</Description>
 		<AbilityGroupInterval interval="1.0">
 			<Conditions>
 				<AbilityConditionHasTalent identifier="departamentsupport_engineering" truthywhen="HasTalent"/>
@@ -924,13 +811,8 @@
 
 	<Talent identifier="thefivepillars_second">
 		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,5" sheetelementsize="128,128"/>
-		<!-- <Description tag="talentdescription.apprenticeshipjob">
-      <Replace tag="[job]" value="jobname.medicaldoctor" color="0.81,0.31,0.19"/>
-    </Description>
-    <Description tag="talentdescription.additionalskill">
-      <Replace tag="[amount]" value="20" color="gui.green"/>
-      <Replace tag="[stattype]" value="stattypenames.medicalskillbonus" color="gui.orange"/>
-    </Description> -->
+		<Description tag="talentdescription.thefivepillars_second">
+		</Description>
 		<AbilityGroupInterval interval="1.0">
 			<Conditions>
 				<AbilityConditionHasTalent identifier="thefivepillars" truthywhen="HasTalent"/>
@@ -948,12 +830,9 @@
 	</Talent>
 
 	<Talent identifier="highlydecoratedindividual">
-		<!-- <Description tag="talentdescription.trustedcaptain">
-			<Replace tag="[selfxpgain]" value="275" color="gui.green"/>
-		</Description>
-		<Description tag="talentdescription.highlydecoratedindividual">
-		</Description> -->
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,1" sheetelementsize="128,128"/>
+		<Description tag="talentdescription.highlydecoratedindividual">
+		</Description>
 		<AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
 			<Abilities>
 				<CharacterAbilityPutItem itemidentifier="coalitioncommendation"/>
@@ -989,8 +868,5 @@
 			</Abilities>
 		</AbilityGroupEffect>
 	</Talent>
-
-
-
 
 </Talents>

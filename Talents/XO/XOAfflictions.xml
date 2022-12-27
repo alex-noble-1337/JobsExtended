@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Afflictions>
 
-        <Affliction identifier="weaker-ready_to_fight" type="talentbuff" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="10" duration="1" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-                <Effect minstrength="0" maxstrength="10" resistancefor="damage" minresistance="0" maxresistance="0.5">
-                        <StatValue stattype="HelmSkillBonus" minvalue="0" maxvalue="10" />
-                        <StatValue stattype="WeaponsSkillBonus" minvalue="0" maxvalue="10" />
+        <Affliction identifier="ready_to_fight" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="0" maxstrength="1" duration="5" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+                <Effect minstrength="0" maxstrength="1" resistancefor="damage" minresistance="0" maxresistance="0.25">
+                        <StatValue stattype="HelmSkillBonus" value="5" />
+                        <StatValue stattype="WeaponsSkillBonus" value="5" />
                 </Effect>
-                <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+                <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="166,186,89,255" origin="0,0"/>
+        </Affliction>
+        <Affliction identifier="iamthedanger" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="0" maxstrength="1" duration="5" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+                <Effect minstrength="0" maxstrength="1" resistancefor="damage" minresistance="0" maxresistance="0.5">
+                        <StatValue stattype="HelmSkillBonus" value="10" />
+                        <StatValue stattype="WeaponsSkillBonus" value="10" />
+                </Effect>
+                <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="166,186,89,255" origin="0,0"/>
+        </Affliction>
+        <Affliction identifier="inspiringorders" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="0" maxstrength="1" duration="5" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+                <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0" maxresistance="0.25">
+                        <StatValue stattype="HelmSkillBonus" value="5" />
+                        <StatValue stattype="WeaponsSkillBonus" value="5" />
+                </Effect>
+                <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="166,186,89,255" origin="0,0"/>
+        </Affliction>
+        <Affliction identifier="tacticaninthefield" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="0" maxstrength="1" duration="5" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+                <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0" maxresistance="0.5">
+                        <StatValue stattype="HelmSkillBonus" value="10" />
+                        <StatValue stattype="WeaponsSkillBonus" value="10" />
+                </Effect>
+                <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="166,186,89,255" origin="0,0"/>
         </Affliction>
 
-        <Affliction identifier="weaker-lonewolf" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="1" maxstrength="1" duration="1" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Affliction identifier="weaker-lonewolf" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="0" maxstrength="1" duration="1" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
                 <Effect minstrength="0" maxstrength="1">
                         <StatValue stattype="MeleeAttackMultiplier"  minvalue="0" maxvalue="0.1" />
                 </Effect>
@@ -17,10 +38,10 @@
                 </Effect>
                 <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0.1" maxresistance="0.1">
                 </Effect>
-                <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,1" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+                <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,1" sheetelementsize="128,128" color="166,186,89,255" origin="0,0"/>
         </Affliction>
 
-        <Affliction identifier="weaker-deputy" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="1" maxstrength="1" duration="1" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Affliction identifier="weaker-deputy" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="0" maxstrength="1" duration="1" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
                 <Effect minstrength="0" maxstrength="1">
                         <StatValue stattype="HelmSkillBonus"  minvalue="0" maxvalue="10" />
                         <StatValue stattype="WeaponsSkillBonus"  minvalue="0" maxvalue="10" />
@@ -28,7 +49,7 @@
                         <StatValue stattype="HelmSkillGainSpeed"  minvalue="0" maxvalue="0.5" />
                 </Effect>
                 <!-- FIXME icon -->
-                <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="3,1" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+                <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="3,1" sheetelementsize="128,128" color="166,186,89,255" origin="0,0"/>
         </Affliction>
 
         <Affliction identifier="weapons_skill_-stun_damage_reistance_buff" type="talentbuff" isbuff="true" limbspecific="false" maxstrength="1" duration="1" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
@@ -37,46 +58,46 @@
                 <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0.25" maxresistance="0.25">
                         <StatValue stattype="WeaponsSkillBonus" minvalue="25" maxvalue="25" />
                 </Effect>
-                <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="5,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
+                <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="5,7" sheetelementsize="128,128" color="166,186,89,255" origin="0,0" />
         </Affliction>
 
-        <Affliction identifier="frenzied" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="1" maxstrength="10" showbarinhealthmenu="false" treatmentthreshold="1000" iconcolors="227,247,249">
+        <Affliction identifier="frenzied" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="0" maxstrength="10" showbarinhealthmenu="false" treatmentthreshold="1000" iconcolors="227,247,249">
                 <Effect minstrength="0" maxstrength="10" strengthchange="-1">
                         <StatValue stattype="WeaponsSkillBonus"  minvalue="0" maxvalue="10" />
                         <StatValue stattype="MovementSpeed"  minvalue="0" maxvalue="0.05" />
                 </Effect>
-                <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="4,1" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+                <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="4,1" sheetelementsize="128,128" color="166,186,89,255" origin="0,0"/>
         </Affliction>
 
-        <Affliction identifier="fightin" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="1" maxstrength="10" treatmentthreshold="1000" showbarinhealthmenu="false" iconcolors="227,247,249">
+        <Affliction identifier="fightin" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="0" maxstrength="10" treatmentthreshold="1000" showbarinhealthmenu="false" iconcolors="227,247,249">
                 <Effect minstrength="0" maxstrength="10" strengthchange="-1">
                         <StatValue stattype="WeaponsSkillBonus"  minvalue="0" maxvalue="20" />
                         <StatValue stattype="MovementSpeed"  minvalue="0" maxvalue="0.1" />
                 </Effect>
-                <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="5,1" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+                <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="5,1" sheetelementsize="128,128" color="166,186,89,255" origin="0,0"/>
         </Affliction>
 
-        <Affliction identifier="durable" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="1" maxstrength="10" showbarinhealthmenu="false" treatmentthreshold="1000" iconcolors="227,247,249">
+        <Affliction identifier="durable" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="0" maxstrength="10" showbarinhealthmenu="false" treatmentthreshold="1000" iconcolors="227,247,249">
                 <Effect minstrength="0" maxstrength="10" strengthchange="-1" resistancefor="damage" minresistance="0.1" maxresistance="0.1">
                         <StatValue stattype="RepairSpeed"  minvalue="0" maxvalue="0.1" />
                         <StatValue stattype="RepairToolStructureRepairMultiplier"  minvalue="0" maxvalue="0.1" />
                         <StatValue stattype="PoisonMultiplier"  minvalue="0" maxvalue="0.1" />
                         <StatValue stattype="DebuffDurationMultiplier"  minvalue="0" maxvalue="0.1" />
                 </Effect>
-                <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="4,1" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+                <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="4,1" sheetelementsize="128,128" color="166,186,89,255" origin="0,0"/>
         </Affliction>
 
-        <Affliction identifier="ironcurtain" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="1" maxstrength="10" treatmentthreshold="1000" showbarinhealthmenu="false" iconcolors="227,247,249">
+        <Affliction identifier="ironcurtain" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="0" maxstrength="10" treatmentthreshold="1000" showbarinhealthmenu="false" iconcolors="227,247,249">
                 <Effect minstrength="0" maxstrength="10" strengthchange="-1" resistancefor="damage" minresistance="0.2" maxresistance="0.2">
                         <StatValue stattype="RepairSpeed"  minvalue="0" maxvalue="0.2" />
                         <StatValue stattype="RepairToolStructureRepairMultiplier"  minvalue="0" maxvalue="0.2" />
                         <StatValue stattype="PoisonMultiplier"  minvalue="0" maxvalue="0.05" />
                         <StatValue stattype="DebuffDurationMultiplier"  minvalue="0" maxvalue="0.05" />
                 </Effect>
-                <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="5,1" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+                <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="5,1" sheetelementsize="128,128" color="166,186,89,255" origin="0,0"/>
         </Affliction>
 
-        <Affliction identifier="xosupport_medical" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="1" maxstrength="2" duration="1" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Affliction identifier="xosupport_medical" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="0" maxstrength="2" duration="1" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
                 <Effect minstrength="0" maxstrength="2">
                         <StatValue stattype="MedicalSkillBonus"  minvalue="0" maxvalue="40" />
                         <StatValue stattype="MedicalSkillGainSpeed"  minvalue="0" maxvalue="2.0" />
@@ -84,9 +105,9 @@
                         <StatValue stattype="MedicalItemApplyingMultiplier"  minvalue="0" maxvalue="1.4" />
                 </Effect>
                 <!-- TODO icon same as talent -->
-                <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="3,1" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+                <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="3,1" sheetelementsize="128,128" color="166,186,89,255" origin="0,0"/>
         </Affliction>
-        <Affliction identifier="xosupport_security" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="1" maxstrength="2" duration="1" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Affliction identifier="xosupport_security" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="0" maxstrength="2" duration="1" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
                 <Effect minstrength="0" maxstrength="2">
                         <StatValue stattype="WeaponsSkillBonus"  minvalue="0" maxvalue="40" />
                         <StatValue stattype="WeaponsSkillGainSpeed"  minvalue="0" maxvalue="2.0" />
@@ -94,9 +115,9 @@
                         <StatValue stattype="AttackMultiplier"  minvalue="0" maxvalue="1.4" />
                 </Effect>
                 <!-- TODO icon same as talent -->
-                <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="3,1" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+                <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="3,1" sheetelementsize="128,128" color="166,186,89,255" origin="0,0"/>
         </Affliction>
-        <Affliction identifier="xosupport_engineering" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="1" maxstrength="2" duration="1" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Affliction identifier="xosupport_engineering" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="0" maxstrength="2" duration="1" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
                 <Effect minstrength="0" maxstrength="2">
                         <StatValue stattype="ElectricalSkillBonus"  minvalue="0" maxvalue="40" />
                         <StatValue stattype="ElectricalSkillGainSpeed"  minvalue="0" maxvalue="2.0" />
@@ -107,10 +128,10 @@
                         <StatValue stattype="RepairSpeed"  minvalue="0" maxvalue="1.4" />
                 </Effect>
                 <!-- TODO icon same as talent -->
-                <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="3,1" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+                <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="3,1" sheetelementsize="128,128" color="166,186,89,255" origin="0,0"/>
         </Affliction>
 
-        <Affliction identifier="xosupport" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="1" maxstrength="2" duration="1" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Affliction identifier="xosupport" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="0" maxstrength="2" duration="1" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
                 <Effect minstrength="0" maxstrength="2">
                         <StatValue stattype="ExperienceGainMultiplier"  minvalue="0" maxvalue="1.2" />
                         <StatValue stattype="SkillGainSpeed"  minvalue="0" maxvalue="1.2" />
@@ -127,22 +148,22 @@
                         <StatValue stattype="RepairSpeed"  minvalue="0" maxvalue="1.1" />
                 </Effect>
                 <!-- TODO icon same as talent -->
-                <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="3,1" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+                <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="3,1" sheetelementsize="128,128" color="166,186,89,255" origin="0,0"/>
         </Affliction>
 
         <Affliction identifier="stonewall_mod" type="talentbuff" isbuff="true" hideiconafterdelay="true" limbspecific="false" maxstrength="4" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
                 <Effect minstrength="0" maxstrength="4" strengthchange="-1" resistancefor="damage" minresistance="0.25" maxresistance="0.25"/>
                 <Effect minstrength="0" maxstrength="4" strengthchange="-1" resistancefor="stun" minresistance="0.25" maxresistance="0.25"/>
-                <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="1,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+                <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="1,0" sheetelementsize="128,128" color="166,186,89,255" origin="0,0"/>
         </Affliction>
 
-        <Affliction identifier="standtogether" type="talentbuff" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="10" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Affliction identifier="standtogether" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="0" maxstrength="10" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
                 <Effect minstrength="0" maxstrength="10" strengthchange="-1" resistancefor="damage" minresistance="0" maxresistance="0.25">
                         <StatValue stattype="WeaponsSkillBonus" minvalue="0" maxvalue="20" />
                         <StatValue stattype="RepairToolStructureRepairMultiplier" minvalue="0" maxvalue="1.25" />
                         <StatValue stattype="RepairSpeed" minvalue="0" maxvalue="1.25" />
                 </Effect>
-                <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
+                <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="166,186,89,255" origin="0,0" />
         </Affliction>
 
 </Afflictions>

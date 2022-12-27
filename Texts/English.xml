@@ -1,7 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<infotexts language="English"
-           nowhitespace="false"
-           translatedname="English">
+<infotexts language="English" nowhitespace="false" translatedname="English">
     <!-- Jobs -->
     <jobname.commanding_officer>Commanding Officer</jobname.commanding_officer>
     <jobdescription.commanding_officer>The Commanding Officer (CO) is the individual in command and manages the crew aboard the submarine. The CO is indirectly responsible and in charge of all crew and operations onboard the vessel. A strict adherance to coalition rules and regulations is advised but not always the most lucrative option.</jobdescription.commanding_officer>
@@ -128,185 +126,105 @@
     <!-- Items -->
     <entityname.promotionmedal> Promotion Medal  </entityname.promotionmedal>
     <entitydescription.promotionmedal> Medal that makes target eligable for promotion (allows them to change class without xp loss) </entitydescription.promotionmedal>
-    <talentname.promotion> Promotion </talentname.promotion> 
-    
+    <talentname.promotion> Promotion </talentname.promotion>
+
     <entityname.rotarygrenedelaucher>M32 Rotary Grenade Launcher</entityname.rotarygrenedelaucher>
     <entitydescription.rotarygrenedelaucher>There's nothing stronger than love. Except and M32 Rotary Grenade Launcher. Because Fuck you and everyone near you.</entitydescription.rotarygrenedelaucher>
-    
+
     <entityname.nonlethalshotgunshell>Non lethal shotgun shell</entityname.nonlethalshotgunshell>
     <entitydescription.nonlethalshotgunshell>Shell used for subduing naughty crew.</entitydescription.nonlethalshotgunshell>
-    
+
     <entityname.baton> Baton </entityname.baton>
     <entitydescription.baton> Just a rubber baton. What did you expect? </entitydescription.baton>
-    
+
     <entityname.navpda>Nav-PDA</entityname.navpda>
     <entitydescription.navpda>PDA of an Navigator. It allows you to remotely controll an submarine.</entitydescription.navpda>
-    
+
     <entityname.bigbackpack>Big Backpack</entityname.bigbackpack>
     <entitydescription.navpda>A trusty backpack of an Quatermaster. It can hold a lot of items.</entitydescription.navpda>
-    
+
     <entityname.genespliceromega>Omega Gene Splicer</entityname.genespliceromega>
-    
+
     <entityname.genesplicersuper>Gene Splicer Super</entityname.genesplicersuper>
-    
+
     <entityname.handheldnuke> Hand Held Nuke </entityname.handheldnuke>
-    
+
     <entityname.superDarcher> Super Darcher </entityname.superDarcher>
-    
-        <!-- CO-->
-        <!-- Talents description -->
+
+    <!-- CO-->
+    <!-- Talents description -->
     <talentdescription.xpgain>Also gain [xp] xp.</talentdescription.xpgain>
-    
+
     <talentdescription.tumble2>While affiction is up gain [red] percent damage reduction.</talentdescription.tumble2>
-    
+
     <talentdescription.evasivemaneuvers>Whenever your submarine takes damage from a monster, crew and you gain a bonus of [helmbonus] to the Electrical and Mechanic skills, [perc] percent damage resistance and [move] % movement speed for [seconds] seconds. </talentdescription.evasivemaneuvers>
-    
+
     <talentdescription.downwiththeship>If you are on your submarine and it becomes at least [flooded]% flooded, you and your team gain an additional [swimmingboost]% swimming speed and a bonus of [skillboost] to Mechanical and Electrical skills for [duration] seconds.</talentdescription.downwiththeship>
-    
+
     <talentdescription.commander>All of your shipmates get an Inspiration, giving them [physicalresistance]% physical damage resistance and a bonus of [skillincrease] to all skills.</talentdescription.commander>
-    
+
     <talentdescription.allhandsondeck>All of your shipmates are on alert to your presence, giving them [physicalresistance]% physical damage resistance and a bonus of [skillincrease] to all skills.</talentdescription.allhandsondeck>
-    
-    
+
+
     <talentname.dawnoneuropa>Dawn on Europa</talentname.dawnoneuropa>
     <talentdescription.dawnoneuropa>Your team is so effective, legends are spreading around on your glory. When an ally gains a skill point you have a high chance to gain that point too.</talentdescription.dawnoneuropa>
-    
+
     <talentname.redalarm>Red Alarm</talentname.redalarm>
     <talentdescription.redalarm>Crew is ready on the moments notice. You and them gain [speed]% more speed.</talentdescription.redalarm>
-    
+
     <talentname.positivereinforcment>Positive Reinforcment</talentname.positivereinforcment>
     <talentdescription.positivereinforcment>You read some books on psychology, and got facination on possitive motivation. Crew and you gets +[skill] to all skills and [perc]% damage reduction.</talentdescription.positivereinforcment>
-    
-        <!-- Afflictions description -->
+
+    <!-- Afflictions description -->
     <afflictionname.capitanondeck>Capitan on Deck!</afflictionname.capitanondeck>
     <afflictiondescription.capitanondeck> You are on alert! </afflictiondescription.capitanondeck>
     <afflictionname.redalarm>Red Alarm!</afflictionname.redalarm>
     <afflictiondescription.redalarm> You feel adrenaline pumping, and your heart racing!</afflictiondescription.redalarm>
     <afflictionname.goodmood>Good Mood.</afflictionname.goodmood>
     <afflictiondescription.goodmood> You like the capitan  </afflictiondescription.goodmood>
-    
-        <!-- Custodian-->
-        <!-- Talents description -->
-    <talentname.supercleaner>Super Cleaner</talentname.supercleaner>
-    
-        <!-- Diver-->
-        <!-- Talents description -->
 
-  <!-- talent trees -->
-  <talenttree.whaler>Whaler</talenttree.whaler>
-  <talenttree.frogman>Frogman</talenttree.frogman>
-  <talenttree.divinginstructor>Diving Instructor</talenttree.divinginstructor>
-  <!-- talent info-->
-  <talentname.strongcurrents>Strong Currents</talentname.strongcurrents>
-  <talentdescription.strongcurrents>Attacks you suffer are [attackpowerreduction]% less powerful while you are in water. Additionally your training allows you to fight water currents more easily and resist [flowresistance]% water impact.</talentdescription.strongcurrents>
-  <talentname.murkywaters>Murky Waters</talentname.murkywaters>
-  <talentdescription.murkywaters>When submerged in water inside of a submarine you receive [statamount1]% damage resistance and [statamount2]% swimming speed.</talentdescription.murkywaters>
-  <talentname.trophyhunter>Trophy Hunter</talentname.trophyhunter>
-  <talentdescription.trophyhunter>Whenever you or an allied crewmember kills a monster, your crew gains additional marks equal to [percentage]% of the creature's maximum health.</talentdescription.trophyhunter>
-  <talentname.seadogspirit>Seadog Spirit</talentname.seadogspirit>
-  <talentname.onewithwater>One With Water</talentname.onewithwater>
-  <talentname.sealeg>Sea Leg</talentname.sealeg>
-  <talentdescription.sealeg>Your strong leg allows you to carry containers and body bags [movementspeed]% quicker than the rest of the crew and [drag].</talentdescription.sealeg>
-  <talentname.improvisedutilityharpoons>Improvised Utility Harpoons</talentname.improvisedutilityharpoons>
-  <talentdescription.improvisedutilityharpoons>Your knowledge of metal forging and creativity has led you to discovering new harpoons to gut aliens with.</talentdescription.improvisedutilityharpoons>
-  <talentname.masterworkexperimentalharpoons>Masterwork Experimental Harpoons</talentname.masterworkexperimentalharpoons>
-  <talentdescription.masterworkexperimentalharpoons>Your expertise and unmatched skill in harpoon-making allow you to produce experimental harpoons. You're also a quick learner.</talentdescription.masterworkexperimentalharpoons>
-  <talentdescription.harpoonmaker>Additionally, years of forging harpoons taught you to make them with your eyes closed. You have a [probability]% chance of crafting an [extra harpoon] each time you craft one.</talentdescription.harpoonmaker>
-  <talentname.baneofthecryingseals>Bane Of The Crying Seals</talentname.baneofthecryingseals>
-  <talentdescription.baneofthecryingseals>Unlocks you a schematic of a gigantic harpoon cannon, it's the closest thing to a coilgun that you can carry with you. Best used with a laser guide.</talentdescription.baneofthecryingseals>
-  <talentname.deadmanwalking>Dead Man Walking</talentname.deadmanwalking>
-  <talentdescription.deadmanwalking>Moreover your critical state deceives enemies making them ignore you when you've been ragdolled for at least 4 seconds.</talentdescription.deadmanwalking>
-  <talentname.divinggoodies>Diving Goodies</talentname.divinggoodies>
-  <talentdescription.divinggoodies>Whenever you finish at least one mission you will receive the following supplies: </talentdescription.divinggoodies>
-  <talentname.sppschematics>SPP-1 Schematics</talentname.sppschematics>
-  <talentdescription.sppschematics>Your only friend that you can trust on this ship, also middle finger to the power tripping security. When things get bad you won't have to depend on anyone. Shoots steel bolts and can penetrate armor.</talentdescription.sppschematics>
-  <talentname.pxschematics>PX-11 Schematics</talentname.pxschematics>
-  <talentdescription.pxschematics>This experimental smg made for use underwater will surely work wonders in the dark depths of Europa. Quickly eats through ammo reserves and can penetrate armor with it's steel bolts.</talentdescription.pxschematics>
-  <talentname.eyeforaneye>Eye For An Eye</talentname.eyeforaneye>
-  <talentdescription.eyeforaneye>When attacked, your next shot will deal [50]% more damage. Additionally you deal [25]% more damage with shotguns.</talentdescription.eyeforaneye>
-  <talentname.underwaterdemolition>Underwater Demolition</talentname.underwaterdemolition>
-  <talentdescription.underwaterdemolition>Gain access to a prototype handheld sonar decoy that you can use as a distraction. After activation a countdown will start giving you [25] seconds to get rid of it before it breaks and [detonates] whatever you put inside of it.</talentdescription.underwaterdemolition>
-  <talentname.bangstickschematics>Bangstick Schematics</talentname.bangstickschematics>
-  <talentdescription.bangstickschematics>Bangstick is the closest thing to a practical melee weapon for aquatic combat. A diving knife often struggles piercing hard scales, why not blow them open with explosives on a metal rod?</talentdescription.bangstickschematics>
-  <talentname.marinerecon>Marine Recon</talentname.marinerecon>
-  <talentdescription.adsschematics>ADS amphibious rifle is a unique burst rifle allowing for shooting underwater with little to no problems. Best known for it's unrivalled armor penetration. Additionally you're paid [amount]% more marks for completing [missions] missions.</talentdescription.adsschematics>
-  <talentname.combatdiver>Combat Diver</talentname.combatdiver>
-  <talentdescription.apsschematics>APS amphibious carbine is a fully automatic rifle that is excellent for clearing out caves, wrecks and locations submerged in water. Provides good armor penetration capabilities. You are also paid [amount]% more marks for completing [missions] missions.</talentdescription.apsschematics>
-  <talentname.divinginstructor>Diving Instructor</talentname.divinginstructor>
-  <talentdescription.divinginstructor>Your diving courses and underwater competence that you share with your crew greatly increases morale and proficiency when in water. Players near you gain:</talentdescription.divinginstructor>
-  <talentdescription.divinginstructorstat1>[amount]% [stat]</talentdescription.divinginstructorstat1>
-  <talentdescription.divinginstructorstat2>[amount]% [stat]</talentdescription.divinginstructorstat2>
-  <talentdescription.divinginstructorstat3>[amount]% [stat]</talentdescription.divinginstructorstat3>
-  <afflictionname.overwatched>Overwatched by Lead Diver</afflictionname.overwatched>
-  <afflictiondescription.overwatched>This person is being supervised by a lead diver who boosts morale and enchances abilities of other divers near him.</afflictiondescription.overwatched>
-  <talentname.thickblood>Thick Blood</talentname.thickblood>
-  <talentdescription.thickblood>When lower than [50]% health your wounds slowly stop bleeding and you regenerate. Additionally you gain [stun]% [stunstat] resistance when underwater.</talentdescription.thickblood>
 
-    <talentname.watercombatexpert>Water Combat Expert</talentname.watercombatexpert>
-    <talentdescription.watercombatexpert>When crafting an harpoon,there is a chance to gain triple the amount.</talentdescription.watercombatexpert>
-    
-    <talentname.personalizedequipment>Personalized Equipment</talentname.personalizedequipment>
-    <talentdescription.personalizedequipment>When in water. Gain a [name]% more damage to harpoons.</talentdescription.personalizedequipment>
-    
-    <talentname.watercqc>Water CQC</talentname.watercqc>
-    <talentdescription.watercqc>Gain Melee Speed, Damage, Ranged Attack Speed, Swimming Speed scaled based on your Weapons skill up to [perc]% increase.</talentdescription.watercqc>
-    
-        <!-- Sec-->
-        <!-- Talents description -->
-    <talentname.defenceindepth> Defence in depth </talentname.defenceindepth>
-    <talentdescription.defenceindepth>Get 20xp when you level up in weapons.</talentdescription.defenceindepth>
-    
-    <talentname.nomercy> No Mercy </talentname.nomercy>
-    <talentdescription.nomercy>No Mercy to criminals! Gain 50% more money from abandoned outpost and pirate missions. </talentdescription.nomercy>
-    
-    <talentname.notasingleonegetsthough>Not a single one gets though</talentname.notasingleonegetsthough>
-    <talentdescription.notasingleonegetsthough> Gain Turret Power Cost Reduction and Turret Charge Speed scaled based on your Weapons skill up to [perc]% increase. </talentdescription.notasingleonegetsthough>
-    
-    <talentname.unity>Unity</talentname.unity>
-    <talentdescription.unity>When you are below [perc]% health, your team gets buff.</talentdescription.unity>
-    
-    <talentname.defenceplan>Defence Plan</talentname.defenceplan>
-    <talentdescription.defenceplan>A good defensive plan can do wonders! Your team gets a buff to Weapons of 20 and 10% stun resistance. </talentdescription.defenceplan>
-    
-    <talentname.weaponsmaitnence>Weapons Maitnence</talentname.weaponsmaitnence>
-    <talentdescription.weaponsmaitnence> Gain a bonus to Movement Speed, Melee Attack Speed, Ranged Attack Speed, Maximum Health Multiplier according to your Weapons skill up to maximum 20% </talentdescription.weaponsmaitnence>
-    
-    <afflictionname.gooddefenceplan>Good Defence Plan</afflictionname.gooddefenceplan>
-    <afflictiondescription.gooddefenceplan>A good defensive plan can do wonders!</afflictiondescription.gooddefenceplan>
-    
-        <!-- Nav-->
-        <!-- Talents description -->
-    <talentname.masternavigator>Master Navigator</talentname.masternavigator>
-    
-    <talentname.targettingmatrix>Targetting Matrix</talentname.targettingmatrix>
-    <talentdescription.targettingmatrix>Nearby teamates get a 10% buff to ranged damage and attack speed</talentdescription.targettingmatrix>
-    
-    <afflictionname.targettingmatrix>Targetting Matrix Online</afflictionname.targettingmatrix>
-    
-        <!-- XO -->
-        <!-- Talents description -->
-    <talenttree.Lancer>Lancer</talenttree.Lancer>
-    
-    <talentname.capitanssword>Capitan's Sword</talentname.capitanssword>
+
+    <!-- XO -->
+    <!-- Talents description -->
+
+    <!-- Old
+         <talentname.capitanssword>Capitan's Sword</talentname.capitanssword>
     <talentdescription.capitanssword>Gain a dobble damage when using grenades</talentdescription.capitanssword>
-    
+
     <talentname.highlydecoratedindividual>Highly decorated individual</talentname.highlydecoratedindividual>
     <talentdescription.highlydecoratedindividual>Gain an up to 15% buff to Movement Speed, Melee Attack Speed, Ranged Attack Speed.</talentdescription.highlydecoratedindividual>
-    
+
     <talentname.capitansshield>Capitan's Shield</talentname.capitansshield>
     <talentdescription.capitansshield>When you are inside the sumbarine gain 25% resistance. Inflict 25% more stun.</talentdescription.capitansshield>
-    
+
     <talentname.evasion>Evasion</talentname.evasion>
-    <talentdescription.evasion>Whenever you ragdoll for at least [seconds] seconds, your attacks with grenades are [damage]% more powerful for the next [duration] seconds.</talentdescription.evasion>
-    
+    <talentdescription.evasion>Whenever you ragdoll for at least [seconds] seconds, your attacks with grenades are [damage]% more powerful for the next [duration] seconds.</talentdescription.evasion> -->
+
+    <talenttree.Lancer>Lancer</talenttree.Lancer>
+
     <talentname.firststrike>First strike</talentname.firststrike>
-    <talentdescription.firststrike>On attack with grenede get +40% damage on an quckdraw aginst an enemy. When you gain weapons skill gain helm skill. When you gain helm skill gain weapons skill. Allies you command get "ready to fight" buff (+ 10 helm and weapons) and you emit even half of its effects in AOE.</talentdescription.firststrike>
-       
+    <talentdescription.firststrike>On attack with grenede get [bonuspercdamage] added damage on an quckdraw aginst an enemy. When you gain [whenthisskill] skill gain [gainthisskill] skill. When you gain helm skill gain weapons skill. Allies you command get "ready to fight" buff (+5 helm and weapons, 25% stun resistance) and you emit Inspiring orders aura (+5 helm and weapons, 25% damage resistance).</talentdescription.firststrike>
+    <afflictionname.ready_to_fight>Ready to fight!</afflictionname.ready_to_fight>
+    <afflictiondescription.ready_to_fight>Helm Skill Bonus, Weapons Skill Bonus +5. Damage resistance 25%.</afflictiondescription.ready_to_fight>
+    <afflictionname.iamthedanger>I am the danger</afflictionname.iamthedanger>
+    <afflictiondescription.iamthedanger>Helm Skill Bonus, Weapons Skill Bonus +10. Damage resistance 50%.</afflictiondescription.iamthedanger>
+    <afflictionname.inspiringorders>Inspiring orders</afflictionname.inspiringorders>
+    <afflictiondescription.inspiringorders>Helm Skill Bonus, Weapons Skill Bonus +5. Stun resistance 25%.</afflictiondescription.inspiringorders>
+    <afflictionname.tacticaninthefield>Tactican in the field</afflictionname.tacticaninthefield>
+    <afflictiondescription.tacticaninthefield>Helm Skill Bonus, Weapons Skill Bonus +10. Stun resistance 50%.</afflictiondescription.tacticaninthefield>
+
     <talentname.Big_Functional_Gun>Big Functional Gun</talentname.Big_Functional_Gun>
-    <talentdescription.Big_Functional_Gun>1/6 Chance of getting twice the damage while using greneades. Gain +50% money and expirence on Pirate,Abandonedoutpost. Gain a weaker version of lonewolf buff 50% weaker</talentdescription.Big_Functional_Gun>
-    
+    <talentdescription.Big_Functional_Gun>1/6 Chance of getting twice the damage while using greneades. Gain +50% money and expirence on Pirate,Abandonedoutpost. Gain "Dog of war" buff: Added mele damage +10%, 10% resistance for damage and stun.</talentdescription.Big_Functional_Gun>
+    <afflictionname.weaker-lonewolf>Dog of war</afflictionname.weaker-lonewolf>
+    <afflictiondescription.weaker-lonewolf>Added mele damage +10%, 10% resistance for damage and stun.</afflictiondescription.weaker-lonewolf>
+
     <talentname.bythebook-deputy>Finesse and precision</talentname.bythebook-deputy>
-    <talentdescription.Big_Functional_Gun>Get bythebook effect, gain weapons_skill, -stun and damage reistance buff around you gain a weaker version of weaker deputy buff applicable to all characters 50% weaker</talentdescription.Big_Functional_Gun>
+    <talentdescription.Big_Functional_Gun>Gain +1250 and 200xp for every enemy human captured after the end of the mission. Up to 4 humans captured., gain weapons_skill, -stun and damage reistance buff around you gain a weaker version of weaker deputy buff applicable to all characters 50% weaker</talentdescription.Big_Functional_Gun>
+    <afflictionname.weapons_skill_-stun_damage_reistance_buff>Steady</afflictionname.weapons_skill_-stun_damage_reistance_buff>
+    <afflictiondescription.weapons_skill_-stun_damage_reistance_buff>+25 weapon skill, 25% resistance to stun and damage.</afflictiondescription.weapons_skill_-stun_damage_reistance_buff>
+    <afflictionname.weaker-deputy>Loyal flock</afflictionname.weaker-deputy>
+    <afflictiondescription.weaker-deputy>Helm, Weapons +50% skill gain speed and +10 bonus points.</afflictiondescription.weaker-deputy>
 
     <talentname.evasion>Evasion</talentname.evasion>
     <talentdescription.evasion>get weaker tumble-drunkensailor-steadytunes effect tumble buffs grenades +80%</talentdescription.evasion>
@@ -339,6 +257,9 @@
     <talentname.capitansshield>Capitan's Shield</talentname.capitansshield>
     <talentdescription.capitansshield>Upgrade frenzy or takeabullet times 2 effect strenghths. dish out more stun +25% more. 25% defence buff when iside the submarine, and 25% dng buff when outside.</talentdescription.capitansshield>
 
+
+    <talenttree.Defender>Defender</talenttree.Defender>
+
     <talentname.departamentsupport>Departament support</talentname.departamentsupport>
     <talentdescription.departamentsupport>Choose an departament you want to support.</talentdescription.departamentsupport>
     <talentname.departamentsupport_medical>Medical departament support</talentname.departamentsupport_medical>
@@ -363,37 +284,162 @@
     <talentname.departamentsupport_engineering_second>Engineering departament support</talentname.departamentsupport_engineering_second>
     <talentdescription.departamentsupport_engineering_second>Electrical and Mechanical SkillBonus 20, Electrical and Mechanical SkillGainSpeed +50%, ExperienceGainMultiplier +50%, RepairToolStructureRepairMultiplier +20%, RepairSpeed +20%</talentdescription.departamentsupport_engineering_second>
 
-    <talentname.thefivepillars_second>The five pillars</talentname.thefivepillars_second>
-    <talentdescription.thefivepillars_second>All skill gain speed +10%, skill buff +5 to all, xp buff +10%, MedicalItemApplyingMultiplier +5%, AttackMultiplier +5%, RepairToolStructureRepairMultiplier +5%, RepairSpeed +5%</talentdescription.thefivepillars_second>
+    <talentname.thefivepillars_second>The five pillars (Second choice)</talentname.thefivepillars_second>
+    <talentdescription.thefivepillars_second>All skill gain speed +10%, skill buff +5 to all, xp buff +10%, MedicalItemApplyingMultiplier +5%, AttackMultiplier +5%, RepairToolStructureRepairMultiplier +5%, RepairSpeed +5%. If you chosen this option previously strenghthen the buff.</talentdescription.thefivepillars_second>
+
+    <talentname.highlydecoratedindividual>Highly decorated individual</talentname.highlydecoratedindividual>
+    <talentdescription.highlydecoratedindividual>OnAnyMissionCompleted gain medal instead of commedareation: give instant 5 lvl when you give somebody a medal, give yourself 275 xp, and the person you give medal to. Gain max of 55% increase of MovementSpeed, MeleeAttackSpeed, RangedAttackSpeed based on weapons skill</talentdescription.highlydecoratedindividual>
 
 
-        <!-- QUA -->
-        <!-- Talents description -->
+
+    <!-- Nav-->
+    <!-- Talents description -->
+    <talenttree.Illuminator>Illuminator</talenttree.Illuminator>
+
+    <talentname.luckystrike>Lucky strike</talentname.luckystrike>
+    <talentdescription.luckystrike>Gain targetting matrix to players that are close. Every second you dont fire you get damage buff from +20% to 840% added damage. If you gain weapon skill you gain helm skill and you gain helm when you gain weapon skill. Gain +1 ExtraMissionCount. Gain targettingmatrix, passive half as effective, when ordering a character gain full buff: +20% RangedAttackSpeed,RangedAttackMultiplier.</talentdescription.luckystrike>
+
+    <talentname.targetingmatrixfocus_handheld>Targeting matrix focus: Handheld</talentname.targetingmatrixfocus_handheld>
+    <talentdescription.targetingmatrixfocus_handheld>Gain targeting matrix with focus to handheld guns: Damage, Fire speed. Flare ammo, handheld guns, except not as shitty as vanilla, it melts hull, it also softhens enemies debuffs them</talentdescription.targetingmatrixfocus_handheld>
+
+    <talentname.targetingmatrixfocus_shipmounted>Targeting matrix focus: Shipmounted</talentname.targetingmatrixfocus_shipmounted>
+    <talentdescription.targetingmatrixfocus_shipmounted>Modify targettingmatrix to gain players buff to shipmounted guns: additional +20% TurretAttackSpeed, TurretPowerCostReduction, TurretChargeSpeed. Flare ammo, handheld shipmounted guns, except not as shitty as vanilla, it melts hull, it also softhens enemies debuffs them.</talentdescription.targetingmatrixfocus_shipmounted>
+
+    <talentname.lightup>Light up</talentname.lightup>
+    <talentdescription.lightup>Gain 75% stun resistance while and 60s after smoking. When smoking you regenrate to 25% health</talentdescription.lightup>
+
+    <talentname.ontheroll>On the roll</talentname.ontheroll>
+    <talentdescription.ontheroll>Every time you get in new location, gain +1 to all skills +20xp to you and 5xp to other crewmembers when you get in new location. Bonus to skills lost on death.</talentdescription.ontheroll>
+
+    <talentname.masternavigator>Master Navigator</talentname.masternavigator>
+
+    <talentname.targettingmatrix>Targetting Matrix</talentname.targettingmatrix>
+    <talentdescription.targettingmatrix>Nearby teamates get a 10% buff to ranged damage and attack speed</talentdescription.targettingmatrix>
+
+    <afflictionname.targettingmatrix>Targetting Matrix Online</afflictionname.targettingmatrix>
+
+
+
+    <!-- Diver-->
+    <!-- Talents description -->
+
+    <!-- talent trees -->
+    <talenttree.whaler>Whaler</talenttree.whaler>
+    <talenttree.frogman>Frogman</talenttree.frogman>
+    <talenttree.divinginstructor>Diving Instructor</talenttree.divinginstructor>
+    <!-- talent info-->
+    <talentname.strongcurrents>Strong Currents</talentname.strongcurrents>
+    <talentdescription.strongcurrents>Attacks you suffer are [attackpowerreduction]% less powerful while you are in water. Additionally your training allows you to fight water currents more easily and resist [flowresistance]% water impact.</talentdescription.strongcurrents>
+    <talentname.murkywaters>Murky Waters</talentname.murkywaters>
+    <talentdescription.murkywaters>When submerged in water inside of a submarine you receive [statamount1]% damage resistance and [statamount2]% swimming speed.</talentdescription.murkywaters>
+    <talentname.trophyhunter>Trophy Hunter</talentname.trophyhunter>
+    <talentdescription.trophyhunter>Whenever you or an allied crewmember kills a monster, your crew gains additional marks equal to [percentage]% of the creature's maximum health.</talentdescription.trophyhunter>
+    <talentname.seadogspirit>Seadog Spirit</talentname.seadogspirit>
+    <talentname.onewithwater>One With Water</talentname.onewithwater>
+    <talentname.sealeg>Sea Leg</talentname.sealeg>
+    <talentdescription.sealeg>Your strong leg allows you to carry containers and body bags [movementspeed]% quicker than the rest of the crew and [drag].</talentdescription.sealeg>
+    <talentname.improvisedutilityharpoons>Improvised Utility Harpoons</talentname.improvisedutilityharpoons>
+    <talentdescription.improvisedutilityharpoons>Your knowledge of metal forging and creativity has led you to discovering new harpoons to gut aliens with.</talentdescription.improvisedutilityharpoons>
+    <talentname.masterworkexperimentalharpoons>Masterwork Experimental Harpoons</talentname.masterworkexperimentalharpoons>
+    <talentdescription.masterworkexperimentalharpoons>Your expertise and unmatched skill in harpoon-making allow you to produce experimental harpoons. You're also a quick learner.</talentdescription.masterworkexperimentalharpoons>
+    <talentdescription.harpoonmaker>Additionally, years of forging harpoons taught you to make them with your eyes closed. You have a [probability]% chance of crafting an [extra harpoon] each time you craft one.</talentdescription.harpoonmaker>
+    <talentname.baneofthecryingseals>Bane Of The Crying Seals</talentname.baneofthecryingseals>
+    <talentdescription.baneofthecryingseals>Unlocks you a schematic of a gigantic harpoon cannon, it's the closest thing to a coilgun that you can carry with you. Best used with a laser guide.</talentdescription.baneofthecryingseals>
+    <talentname.deadmanwalking>Dead Man Walking</talentname.deadmanwalking>
+    <talentdescription.deadmanwalking>Moreover your critical state deceives enemies making them ignore you when you've been ragdolled for at least 4 seconds.</talentdescription.deadmanwalking>
+    <talentname.divinggoodies>Diving Goodies</talentname.divinggoodies>
+    <talentdescription.divinggoodies>Whenever you finish at least one mission you will receive the following supplies: </talentdescription.divinggoodies>
+    <talentname.sppschematics>SPP-1 Schematics</talentname.sppschematics>
+    <talentdescription.sppschematics>Your only friend that you can trust on this ship, also middle finger to the power tripping security. When things get bad you won't have to depend on anyone. Shoots steel bolts and can penetrate armor.</talentdescription.sppschematics>
+    <talentname.pxschematics>PX-11 Schematics</talentname.pxschematics>
+    <talentdescription.pxschematics>This experimental smg made for use underwater will surely work wonders in the dark depths of Europa. Quickly eats through ammo reserves and can penetrate armor with it's steel bolts.</talentdescription.pxschematics>
+    <talentname.eyeforaneye>Eye For An Eye</talentname.eyeforaneye>
+    <talentdescription.eyeforaneye>When attacked, your next shot will deal [50]% more damage. Additionally you deal [25]% more damage with shotguns.</talentdescription.eyeforaneye>
+    <talentname.underwaterdemolition>Underwater Demolition</talentname.underwaterdemolition>
+    <talentdescription.underwaterdemolition>Gain access to a prototype handheld sonar decoy that you can use as a distraction. After activation a countdown will start giving you [25] seconds to get rid of it before it breaks and [detonates] whatever you put inside of it.</talentdescription.underwaterdemolition>
+    <talentname.bangstickschematics>Bangstick Schematics</talentname.bangstickschematics>
+    <talentdescription.bangstickschematics>Bangstick is the closest thing to a practical melee weapon for aquatic combat. A diving knife often struggles piercing hard scales, why not blow them open with explosives on a metal rod?</talentdescription.bangstickschematics>
+    <talentname.marinerecon>Marine Recon</talentname.marinerecon>
+    <talentdescription.adsschematics>ADS amphibious rifle is a unique burst rifle allowing for shooting underwater with little to no problems. Best known for it's unrivalled armor penetration. Additionally you're paid [amount]% more marks for completing [missions] missions.</talentdescription.adsschematics>
+    <talentname.combatdiver>Combat Diver</talentname.combatdiver>
+    <talentdescription.apsschematics>APS amphibious carbine is a fully automatic rifle that is excellent for clearing out caves, wrecks and locations submerged in water. Provides good armor penetration capabilities. You are also paid [amount]% more marks for completing [missions] missions.</talentdescription.apsschematics>
+    <talentname.divinginstructor>Diving Instructor</talentname.divinginstructor>
+    <talentdescription.divinginstructor>Your diving courses and underwater competence that you share with your crew greatly increases morale and proficiency when in water. Players near you gain:</talentdescription.divinginstructor>
+    <talentdescription.divinginstructorstat1>[amount]% [stat]</talentdescription.divinginstructorstat1>
+    <talentdescription.divinginstructorstat2>[amount]% [stat]</talentdescription.divinginstructorstat2>
+    <talentdescription.divinginstructorstat3>[amount]% [stat]</talentdescription.divinginstructorstat3>
+    <afflictionname.overwatched>Overwatched by Lead Diver</afflictionname.overwatched>
+    <afflictiondescription.overwatched>This person is being supervised by a lead diver who boosts morale and enchances abilities of other divers near him.</afflictiondescription.overwatched>
+    <talentname.thickblood>Thick Blood</talentname.thickblood>
+    <talentdescription.thickblood>When lower than [50]% health your wounds slowly stop bleeding and you regenerate. Additionally you gain [stun]% [stunstat] resistance when underwater.</talentdescription.thickblood>
+
+    <talentname.watercombatexpert>Water Combat Expert</talentname.watercombatexpert>
+    <talentdescription.watercombatexpert>When crafting an harpoon,there is a chance to gain triple the amount.</talentdescription.watercombatexpert>
+
+    <talentname.personalizedequipment>Personalized Equipment</talentname.personalizedequipment>
+    <talentdescription.personalizedequipment>When in water. Gain a [name]% more damage to harpoons.</talentdescription.personalizedequipment>
+
+    <talentname.watercqc>Water CQC</talentname.watercqc>
+    <talentdescription.watercqc>Gain Melee Speed, Damage, Ranged Attack Speed, Swimming Speed scaled based on your Weapons skill up to [perc]% increase.</talentdescription.watercqc>
+
+
+
+    <!-- Custodian-->
+    <!-- Talents description -->
+    <talentname.supercleaner>Super Cleaner</talentname.supercleaner>
+
+    
+
+    <!-- Sec-->
+    <!-- Talents description -->
+    <talentname.defenceindepth> Defence in depth </talentname.defenceindepth>
+    <talentdescription.defenceindepth>Get 20xp when you level up in weapons.</talentdescription.defenceindepth>
+
+    <talentname.nomercy> No Mercy </talentname.nomercy>
+    <talentdescription.nomercy>No Mercy to criminals! Gain 50% more money from abandoned outpost and pirate missions. </talentdescription.nomercy>
+
+    <talentname.notasingleonegetsthough>Not a single one gets though</talentname.notasingleonegetsthough>
+    <talentdescription.notasingleonegetsthough> Gain Turret Power Cost Reduction and Turret Charge Speed scaled based on your Weapons skill up to [perc]% increase. </talentdescription.notasingleonegetsthough>
+
+    <talentname.unity>Unity</talentname.unity>
+    <talentdescription.unity>When you are below [perc]% health, your team gets buff.</talentdescription.unity>
+
+    <talentname.defenceplan>Defence Plan</talentname.defenceplan>
+    <talentdescription.defenceplan>A good defensive plan can do wonders! Your team gets a buff to Weapons of 20 and 10% stun resistance. </talentdescription.defenceplan>
+
+    <talentname.weaponsmaitnence>Weapons Maitnence</talentname.weaponsmaitnence>
+    <talentdescription.weaponsmaitnence> Gain a bonus to Movement Speed, Melee Attack Speed, Ranged Attack Speed, Maximum Health Multiplier according to your Weapons skill up to maximum 20% </talentdescription.weaponsmaitnence>
+
+    <afflictionname.gooddefenceplan>Good Defence Plan</afflictionname.gooddefenceplan>
+    <afflictiondescription.gooddefenceplan>A good defensive plan can do wonders!</afflictiondescription.gooddefenceplan>
+
+    <!-- QUA -->
+    <!-- Talents description -->
     <talentname.logisticsmaster>Logistics Master</talentname.logisticsmaster>
     <talentdescription.logisticsmaster>Outopsts pay you dobble for transport missons.</talentdescription.logisticsmaster>
-        <!-- Pri -->
-        <!-- Talents description -->
+    <!-- Pri -->
+    <!-- Talents description -->
     <talentname.adaptiblity>Adaptibility</talentname.adaptiblity>
     <talentdescription.adaptiblity>You are able to adapt to most tactics that your opressors thow at you.</talentdescription.adaptiblity>
-    
+
     <talentname.combatinstincts>Combat Instincts</talentname.combatinstincts>
     <talentdescription.combatinstincts>You get triple damage when using diving knives.</talentdescription.combatinstincts>
-    
+
     <talentname.deaddrops>Dead Drops</talentname.deaddrops>
     <talentdescription.deaddrops>Gain a free weapons every successfull round.</talentdescription.deaddrops>
-    
+
     <talentname.publicenemynumberone>Public enemy number one </talentname.publicenemynumberone>
     <talentdescription.publicenemynumberone>Gain a free nuke every successfull round.</talentdescription.publicenemynumberone>
-    
+
     <talentname.immunetodeath>Immune to death</talentname.immunetodeath>
     <talentdescription.immunetodeath>You are resistant to the effects of death.</talentdescription.immunetodeath>
-    
+
     <talentname.securitybackground>Security background</talentname.securitybackground>
-    
-        <!-- Pas -->
-        <!-- Talents description -->
+
+    <!-- Pas -->
+    <!-- Talents description -->
     <talentname.superadvancedsplicing>Super advanced splicing</talentname.superadvancedsplicing>
-    
+
     <talentname.applicationofreserch>Application of reserch</talentname.applicationofreserch>
     <talentdescription.applicationofreserch>Deal dobble damage against ruin guardians.</talentdescription.applicationofreserch>
 </infotexts>
