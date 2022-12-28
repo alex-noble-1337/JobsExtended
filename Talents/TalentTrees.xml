@@ -216,7 +216,7 @@
             </TalentOptions>
         </SubTree>
         <!-- offensive buffs, gunnery, coordinating dive teams, weak at shooting -->
-        <SubTree identifier="Illuminator" type="specialization" requires="captain_primary" blocks="Specialist,Specialist">
+        <SubTree identifier="Illuminator" type="specialization" requires="captain_primary" blocks="Specialist,DiveCoordinator">
             <TalentOptions>
                 <!-- TODO Description and make it better?
                      Every second you dont fire you get damage buff from +20% to 840% added damage
@@ -261,7 +261,7 @@
             </TalentOptions> -->
         </SubTree>
         <!-- self buffs and utility items, driving the submarine -->
-        <SubTree identifier="Specialist" type="specialization" requires="captain_primary" blocks="Illuminator,DiverTraining">
+        <SubTree identifier="Specialist" type="specialization" requires="captain_primary" blocks="Illuminator,DiveCoordinator">
             <TalentOptions>
                 <!-- polarized lens, duel spec ops ability-->
                 <!-- Driving the Shuttle 
@@ -286,7 +286,7 @@
               </TalentOptions>
         </SubTree>
         <!-- defensive buffs, coordinating dive teams -->
-        <SubTree identifier="DiverTraining" type="specialization" requires="security_primary" blocks="Illuminator,Specialist">
+        <SubTree identifier="DiveCoordinator" type="specialization" requires="security_primary" blocks="Illuminator,Specialist">
             <TalentOptions>
                 <TalentOption identifier="divinggoodies" />
                 <TalentOption identifier="onewithwater" />

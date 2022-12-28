@@ -162,7 +162,8 @@ https://discord.com/channels/103209684680323072/220881718666723328/1003829090836
 - Spec-ops propulsion ; Polarized Lens
 - Tactical offenive tool. CC
 
-- Dive Coordinator;
+Dive Coordinator
+- abilites of a diver with bonuses and bilites of buffing shit
 - Buffs to surability to you and other people small eoe, but smaller than diver
 - Slipsuits; +25% movement speed while in slipsuit OR physical conditioning melee attack replaced with slow regen (Half of just a scratch when in water)
 - Trustbuilding; while in a shuttle gain passive buff? OR

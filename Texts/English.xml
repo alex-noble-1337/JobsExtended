@@ -220,7 +220,7 @@
     <afflictiondescription.weaker-lonewolf>Added mele damage +10%, 10% resistance for damage and stun.</afflictiondescription.weaker-lonewolf>
 
     <talentname.bythebook-deputy>Finesse and precision</talentname.bythebook-deputy>
-    <talentdescription.Big_Functional_Gun>Gain +1250 and 200xp for every enemy human captured after the end of the mission. Up to 4 humans captured., gain weapons_skill, -stun and damage reistance buff around you gain a weaker version of weaker deputy buff applicable to all characters 50% weaker</talentdescription.Big_Functional_Gun>
+    <talentdescription.bythebook-deputy>Gain +1250 and 200xp for every enemy human captured after the end of the mission. Up to 4 humans captured., gain weapons_skill, -stun and damage reistance buff around you gain a weaker version of weaker deputy buff applicable to all characters 50% weaker</talentdescription.bythebook-deputy>
     <afflictionname.weapons_skill_-stun_damage_reistance_buff>Steady</afflictionname.weapons_skill_-stun_damage_reistance_buff>
     <afflictiondescription.weapons_skill_-stun_damage_reistance_buff>+25 weapon skill, 25% resistance to stun and damage.</afflictiondescription.weapons_skill_-stun_damage_reistance_buff>
     <afflictionname.weaker-deputy>Loyal flock</afflictionname.weaker-deputy>
@@ -236,10 +236,14 @@
     <talenttree.Second_In_Command>Second In Command</talenttree.Second_In_Command>
 
     <talentname.frenzy>Frenzy</talentname.frenzy>
-    <talentdescription.frenzy>if no crew has died, close fighing buff, weapon skill and movement speed, + 15% money and expirence from nest and monster missions </talentdescription.frenzy>
+    <talentdescription.frenzy>If no crew has died, you and your allies gain buff, +10 Weapon skill and +5% movement speed. Gain +15% money and expirence from nest and monster missions.</talentdescription.frenzy>
+    <afflictionname.frenzied>Frenzied</afflictionname.frenzied>
+    <afflictiondescription.frenzied>+10 Weapon skill and +5% movement speed buff.</afflictiondescription.frenzied>
 
     <talentname.takeabullet>Take a bullet</talentname.takeabullet>
-    <talentdescription.takeabullet>Gain +5% bonus to performance of all machines on your submarine, Choose an specialization (apprenticeship) (for filling vaccant roles), (TODO compatibility with neurotrauma) Potency of medical items applied to you is increased (+75%)</talentdescription.takeabullet>
+    <talentdescription.takeabullet>If no crew has died, you and your allies gain buff, +10% RepairSpeed (Hull and Devices), -90% Debuff Duration, 10% damage reduction. Gain +15% money and expirence from Outpost, Mining and Escort missions.</talentdescription.takeabullet>
+    <afflictionname.durable>Durable</afflictionname.durable>
+    <afflictiondescription.durable>+10% RepairSpeed (Hull and Devices), -90% Debuff Duration, 10% damage reduction</afflictiondescription.durable>
 
     <talentname.versitile>Versitile</talentname.versitile>
     <talentdescription.versitile>Gain +5% bonus to performance of all machines on your submarine, Choose an specialization (apprenticeship) (for filling vaccant roles), Potency of medical items applied to you is increased (+75%)</talentdescription.versitile>
@@ -249,13 +253,16 @@
     <talentdescription.versitile_engineer>Electrical Skill Bonus +20</talentdescription.versitile_engineer>
 
     <talentname.ironcurtain>Iron Curtain</talentname.ironcurtain>
-    <talentdescription.ironcurtain>On being attacked gain Iron Curtain buff: Giving yo +20% to repair speed both hull and devices, -95% poison effectivenss and debuff duration on you.</talentdescription.ironcurtain>
+    <talentdescription.ironcurtain>On being attacked gain Iron Curtain buff: Giving yo +20% Repair Speed (Hull and Devices), -95% Debuff Duration, 20% damage reduction.</talentdescription.ironcurtain>
+    <afflictionname.ironcurtain>Iron curtain</afflictionname.ironcurtain>
+    <afflictiondescription.ironcurtain>+20% Repair Speed (Hull and Devices), -95% Debuff Duration, 20% damage reduction</afflictiondescription.ironcurtain>
 
     <talentname.notasingleonegetsthrough>Not a single one gets through!</talentname.notasingleonegetsthrough>
-    <talentdescription.notasingleonegetsthrough>Turret Power Cost Reduction and Turret Charge Speed up to +150% at 100 weapon skill</talentdescription.notasingleonegetsthrough>
+    <talentdescription.notasingleonegetsthrough>When submarine is attacked gain, Turret Power Cost Reduction and Turret Charge Speed up to +150% at 100 weapon skill (scaled with weapon skill).</talentdescription.notasingleonegetsthrough>
 
     <talentname.capitansshield>Capitan's Shield</talentname.capitansshield>
-    <talentdescription.capitansshield>Upgrade frenzy or takeabullet times 2 effect strenghths. dish out more stun +25% more. 25% defence buff when iside the submarine, and 25% dng buff when outside.</talentdescription.capitansshield>
+    <!-- TODO Upgrade frenzy or takeabullet times 2 effect strenghths -->
+    <talentdescription.capitansshield>Deal +25% more stun. When inside gain 25% damage reduction, and 25% damage buff when outside.</talentdescription.capitansshield>
 
 
     <talenttree.Defender>Defender</talenttree.Defender>
@@ -264,31 +271,51 @@
     <talentdescription.departamentsupport>Choose an departament you want to support.</talentdescription.departamentsupport>
     <talentname.departamentsupport_medical>Medical departament support</talentname.departamentsupport_medical>
     <talentdescription.departamentsupport_medical>MedicalSkillBonus 20, MedicalSkillGainSpeed +50%, ExperienceGainMultiplier +50%, MedicalItemApplyingMultiplier +20%</talentdescription.departamentsupport_medical>
+    <afflictionname.xosupport_medical>XO support - Medical</afflictionname.xosupport_medical>
+    <afflictiondescription.xosupport_medical>MedicalSkillBonus 20, MedicalSkillGainSpeed +50%, ExperienceGainMultiplier +50%, MedicalItemApplyingMultiplier +20%</afflictiondescription.xosupport_medical>
+    <afflictionname.strengthed_xosupport_medical>Strenghtened XO support - Medical</afflictionname.strengthed_xosupport_medical>
+    <afflictiondescription.strengthed_xosupport_medical>MedicalSkillBonus 40, MedicalSkillGainSpeed +100%, ExperienceGainMultiplier +100%, MedicalItemApplyingMultiplier +40%</afflictiondescription.strengthed_xosupport_medical>
     <talentname.departamentsupport_security>Security departament support</talentname.departamentsupport_security>
     <talentdescription.departamentsupport_security>WeaponsSkillBonus 20, WeaponsSkillGainSpeed +50%, ExperienceGainMultiplier +50%, AttackMultiplier +20%</talentdescription.departamentsupport_security>
+    <afflictionname.xosupport_security>XO support - Security</afflictionname.xosupport_security>
+    <afflictiondescription.xosupport_security>WeaponsSkillBonus 20, WeaponsSkillGainSpeed +50%, ExperienceGainMultiplier +50%, AttackMultiplier +20%</afflictiondescription.xosupport_security>
+    <afflictionname.strengthed_xosupport_security>Strenghtened XO support - Security</afflictionname.strengthed_xosupport_security>
+    <afflictiondescription.strengthed_xosupport_security>WeaponsSkillBonus 40, WeaponsSkillGainSpeed +100%, ExperienceGainMultiplier +100%, AttackMultiplier +40%</afflictiondescription.strengthed_xosupport_security>
     <talentname.departamentsupport_engineering>Engineering departament support</talentname.departamentsupport_engineering>
     <talentdescription.departamentsupport_engineering>Electrical and Mechanical SkillBonus 20, Electrical and Mechanical SkillGainSpeed +50%, ExperienceGainMultiplier +50%, RepairToolStructureRepairMultiplier +20%, RepairSpeed +20%</talentdescription.departamentsupport_engineering>
+    <afflictionname.xosupport_engineering>XO support - Engineering</afflictionname.xosupport_engineering>
+    <afflictiondescription.xosupport_engineering>Electrical and Mechanical SkillBonus 20, Electrical and Mechanical SkillGainSpeed +50%, ExperienceGainMultiplier +50%, +20% Repair Speed (Hull and Devices)</afflictiondescription.xosupport_engineering>
+    <afflictionname.strengthed_xosupport_engineering>Strenghtened XO support - Security</afflictionname.strengthed_xosupport_engineering>
+    <afflictiondescription.strengthed_xosupport_engineering>Electrical and Mechanical SkillBonus 40, Electrical and Mechanical SkillGainSpeed +100%, ExperienceGainMultiplier +100%, +40% Repair Speed (Hull and Devices)</afflictiondescription.strengthed_xosupport_engineering>
 
     <talentname.thefivepillars>The five pillars</talentname.thefivepillars>
-    <talentdescription.thefivepillars>All skill gain speed +10%, skill buff +5 to all, xp buff +10%, MedicalItemApplyingMultiplier +5%, AttackMultiplier +5%, RepairToolStructureRepairMultiplier +5%, RepairSpeed +5%</talentdescription.thefivepillars>
+    <talentdescription.thefivepillars>All skill gain speed +10%, xp buff +10%, skill buff +5 to all skills, MedicalItemApplyingMultiplier +5%, AttackMultiplier +5%, +5% Repair Speed (Hull and Devices)</talentdescription.thefivepillars>
+    <afflictionname.xosupport>XO support</afflictionname.xosupport>
+    <afflictiondescription.xosupport>All skill gain speed +10%, xp buff +10%, skill buff +5 to all skills, MedicalItemApplyingMultiplier +5%, AttackMultiplier +5%, +5% Repair Speed (Hull and Devices)</afflictiondescription.xosupport>
+    <afflictionname.strengthed_xosupport>Strenghtened XO support</afflictionname.strengthed_xosupport>
+    <afflictiondescription.strengthed_xosupport>All skill gain speed +20%, xp buff +20%, skill buff +10 to all skills, MedicalItemApplyingMultiplier +10%, AttackMultiplier +10%, +10% Repair Speed (Hull and Devices)</afflictiondescription.strengthed_xosupport>
 
     <talentname.fieldcommander>Field Commander</talentname.fieldcommander>
-    <talentdescription.fieldcommander>Aoe buff WeaponsSkillBonus 10, RepairToolStructureRepairMultiplier 12.5, RepairSpeed 12.5: twice when commanding somebody, OnAllyGainSkillPoint gain 10 xp, OnAnyMissionCompleted gain coalition commederation: if you have highlydecoratedindividual changes to medal</talentdescription.fieldcommander>
+    <talentdescription.fieldcommander>Aoe buff Weapons Skill +10, +12.5% Repair Speed (Hull and Devices): applied twice when commanding somebody. When ally gains skill point gain 10 xp. On completed mission gain coalition commederation</talentdescription.fieldcommander>
+    <afflictionname.standtogether>Stand together</afflictionname.standtogether>
+    <afflictiondescription.standtogether>Weapons Skill +10, +12.5% Repair Speed (Hull and Devices)</afflictiondescription.standtogether>
+    <afflictionname.commanded_standtogether>Commanded by Tactician</afflictionname.commanded_standtogether>
+    <afflictiondescription.commanded_standtogether>Weapons Skill +10, +12.5% Repair Speed (Hull and Devices)</afflictiondescription.commanded_standtogether>
 
     <talentname.departamentsupport_second>Departament support (Second choice)</talentname.departamentsupport_second>
     <talentdescription.departamentsupport_second>Choose an departament you want to support. If you chose the same as previous departament support you strenghen the buff.</talentdescription.departamentsupport_second>
     <talentname.departamentsupport_medical_second>Medical departament support</talentname.departamentsupport_medical_second>
-    <talentdescription.departamentsupport_medical_second>MedicalSkillBonus 20, MedicalSkillGainSpeed +50%, ExperienceGainMultiplier +50%, MedicalItemApplyingMultiplier +20%</talentdescription.departamentsupport_medical_second>
+    <!-- <talentdescription.departamentsupport_medical_second>MedicalSkillBonus 20, MedicalSkillGainSpeed +50%, ExperienceGainMultiplier +50%, MedicalItemApplyingMultiplier +20%</talentdescription.departamentsupport_medical_second> -->
     <talentname.departamentsupport_security_second>Security departament support</talentname.departamentsupport_security_second>
-    <talentdescription.departamentsupport_security_second>WeaponsSkillBonus 20, WeaponsSkillGainSpeed +50%, ExperienceGainMultiplier +50%, AttackMultiplier +20%</talentdescription.departamentsupport_security_second>
+    <!-- <talentdescription.departamentsupport_security_second>WeaponsSkillBonus 20, WeaponsSkillGainSpeed +50%, ExperienceGainMultiplier +50%, AttackMultiplier +20%</talentdescription.departamentsupport_security_second> -->
     <talentname.departamentsupport_engineering_second>Engineering departament support</talentname.departamentsupport_engineering_second>
-    <talentdescription.departamentsupport_engineering_second>Electrical and Mechanical SkillBonus 20, Electrical and Mechanical SkillGainSpeed +50%, ExperienceGainMultiplier +50%, RepairToolStructureRepairMultiplier +20%, RepairSpeed +20%</talentdescription.departamentsupport_engineering_second>
+    <!-- <talentdescription.departamentsupport_engineering_second>Electrical and Mechanical SkillBonus 20, Electrical and Mechanical SkillGainSpeed +50%, ExperienceGainMultiplier +50%, RepairToolStructureRepairMultiplier +20%, RepairSpeed +20%</talentdescription.departamentsupport_engineering_second> -->
 
     <talentname.thefivepillars_second>The five pillars (Second choice)</talentname.thefivepillars_second>
     <talentdescription.thefivepillars_second>All skill gain speed +10%, skill buff +5 to all, xp buff +10%, MedicalItemApplyingMultiplier +5%, AttackMultiplier +5%, RepairToolStructureRepairMultiplier +5%, RepairSpeed +5%. If you chosen this option previously strenghthen the buff.</talentdescription.thefivepillars_second>
 
     <talentname.highlydecoratedindividual>Highly decorated individual</talentname.highlydecoratedindividual>
-    <talentdescription.highlydecoratedindividual>OnAnyMissionCompleted gain medal instead of commedareation: give instant 5 lvl when you give somebody a medal, give yourself 275 xp, and the person you give medal to. Gain max of 55% increase of MovementSpeed, MeleeAttackSpeed, RangedAttackSpeed based on weapons skill</talentdescription.highlydecoratedindividual>
+    <talentdescription.highlydecoratedindividual>On completed mission gain medal instead of commedareation: give instant 5 lvl when you give somebody a medal, give yourself 275 xp, and the person you give medal to. Gain max of 55% increase of MovementSpeed, MeleeAttackSpeed, RangedAttackSpeed based on weapons skill</talentdescription.highlydecoratedindividual>
 
 
 
@@ -297,7 +324,13 @@
     <talenttree.Illuminator>Illuminator</talenttree.Illuminator>
 
     <talentname.luckystrike>Lucky strike</talentname.luckystrike>
-    <talentdescription.luckystrike>Gain targetting matrix to players that are close. Every second you dont fire you get damage buff from +20% to 840% added damage. If you gain weapon skill you gain helm skill and you gain helm when you gain weapon skill. Gain +1 ExtraMissionCount. Gain targettingmatrix, passive half as effective, when ordering a character gain full buff: +20% RangedAttackSpeed,RangedAttackMultiplier.</talentdescription.luckystrike>
+    <talentdescription.luckystrike>Gain targetting matrix to players that are close. Every second you dont fire you get +25% damage to your next pistol shot up to 8s of damage. If you gain weapon skill you gain helm skill and you gain helm when you gain weapon skill. Gain +1 ExtraMissionCount. Gain Targetting matrix: +20% Ranged Attack Speed and Ranged Attack Damage to people in close proximity.</talentdescription.luckystrike>
+    <afflictionname.targettingmatrix>Targetting Matrix</afflictionname.targettingmatrix>
+    <afflictiondescription.targettingmatrix>+20% Ranged attack speed and Ranged attack damage</afflictiondescription.targettingmatrix>
+    <afflictionname.targettingmatrix-handheld>Focused targeting matrix: Handheld</afflictionname.targettingmatrix-handheld>
+    <afflictiondescription.targettingmatrix-handheld>+40% Ranged attack speed and Ranged attack damage</afflictiondescription.targettingmatrix-handheld>
+    <afflictionname.targetingmatrixfocus_shipmounted>Focused targeting matrix: Shipmounted</afflictionname.targetingmatrixfocus_shipmounted>
+    <afflictiondescription.targetingmatrixfocus_shipmounted>+20% Ranged attack speed and Ranged attack damage, +20% Turret attack speed, power cost reduction and charge speed.</afflictiondescription.targetingmatrixfocus_shipmounted>
 
     <talentname.targetingmatrixfocus_handheld>Targeting matrix focus: Handheld</talentname.targetingmatrixfocus_handheld>
     <talentdescription.targetingmatrixfocus_handheld>Gain targeting matrix with focus to handheld guns: Damage, Fire speed. Flare ammo, handheld guns, except not as shitty as vanilla, it melts hull, it also softhens enemies debuffs them</talentdescription.targetingmatrixfocus_handheld>
@@ -306,7 +339,9 @@
     <talentdescription.targetingmatrixfocus_shipmounted>Modify targettingmatrix to gain players buff to shipmounted guns: additional +20% TurretAttackSpeed, TurretPowerCostReduction, TurretChargeSpeed. Flare ammo, handheld shipmounted guns, except not as shitty as vanilla, it melts hull, it also softhens enemies debuffs them.</talentdescription.targetingmatrixfocus_shipmounted>
 
     <talentname.lightup>Light up</talentname.lightup>
-    <talentdescription.lightup>Gain 75% stun resistance while and 60s after smoking. When smoking you regenrate to 25% health</talentdescription.lightup>
+    <talentdescription.lightup>Gain 75% damage resistance for the same amout of time you smoked, but not more than 60s. When smoking you regenrate to 25% health</talentdescription.lightup>
+    <afflictionname.nicotinehigh>Nicotine high</afflictionname.nicotinehigh>
+    <afflictiondescription.nicotinehigh>Numb to pain. 75% damage resistance.</afflictiondescription.nicotinehigh>
 
     <talentname.ontheroll>On the roll</talentname.ontheroll>
     <talentdescription.ontheroll>Every time you get in new location, gain +1 to all skills +20xp to you and 5xp to other crewmembers when you get in new location. Bonus to skills lost on death.</talentdescription.ontheroll>

@@ -144,6 +144,7 @@
 				</CharacterAbilityApplyStatusEffects>
 			</Abilities>
 		</AbilityGroupInterval>
+		<!-- Items -->
 		<Description tag="talentdescription.unlockrecipe">
 			<Replace tag="[itemname]" value="entityname.HESHshell-blueprint" color="gui.orange"/>
 		</Description>
@@ -184,7 +185,7 @@
 				</CharacterAbilityApplyStatusEffectsToAllies>
 			</Abilities>
 		</AbilityGroupInterval>
-		<!-- New items -->
+		<!-- Items -->
 		<Description tag="talentdescription.unlockrecipe">
 			<Replace tag="[itemname]" value="entityname.rubberslug-blueprint" color="gui.orange"/>
 		</Description>
@@ -195,6 +196,7 @@
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,0" sheetelementsize="128,128"/>
 		<Description tag="talentdescription.evasion">
 		</Description>
+		<!-- Weaker version of stun and nause resistance when drunk -->
 		<AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
 			<Abilities>
 				<CharacterAbilityModifyAffliction afflictionidentifiers="drunk" replacewith="drunknodebuffs" />
@@ -220,6 +222,7 @@
 				<CharacterAbilityModifyResistance resistanceid="damage" resistance="0.375"/>
 			</Abilities>
 		</AbilityGroupInterval>
+		<!-- Gain random skill 2% chance when playing harmonica -->
 		<AbilityGroupEffect abilityeffecttype="OnUseRangedWeapon">
 			<Conditions>
 				<AbilityConditionItem identifiers="harmonica"/>
@@ -235,6 +238,7 @@
 				</CharacterAbilityApplyStatusEffectsToRandomAlly>
 			</Abilities>
 		</AbilityGroupEffect>
+		<!-- When ragdolling gain tumbling affliction for a short time. While tubling is up attack with grenades to gain 80% damage buff -->
 		<AbilityGroupInterval effectdelay="0.5">
 			<Conditions>
 				<AbilityConditionRagdolled />
@@ -259,6 +263,7 @@
 				<CharacterAbilityModifyAttackData addeddamagemultiplier="0.8" />
 			</Abilities>
 		</AbilityGroupEffect>
+		<!-- Items -->
 		<Description tag="talentdescription.unlockrecipe">
 			<Replace tag="[itemname]" value="entityname.rum-blueprint" color="gui.orange"/>
 		</Description>
@@ -278,6 +283,7 @@
 				<CharacterAbilityModifyAttackData addeddamagemultiplier="1" />
 			</Abilities>
 		</AbilityGroupEffect>
+		<!-- Items -->
 		<Description tag="talentdescription.unlockrecipe">
 			<Replace tag="[itemname]" value="entityname.rotarygrenedelaucher-blueprint" color="gui.orange"/>
 		  </Description>
@@ -297,6 +303,7 @@
 		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="1,5" sheetelementsize="128,128"/>
 		<Description tag="talentdescription.frenzy">
 		</Description>
+		<!-- If no crew has died you and your allies gain frenzied buff -->
 		<AbilityGroupInterval interval="1.0">
 			<Conditions>
 				<AbilityConditionNoCrewDied/>
@@ -305,12 +312,13 @@
 				<CharacterAbilityApplyStatusEffectsToAllies allowself="true" requiresalive="true" allowclientsimulation="false">
 					<StatusEffects>
 						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
-							<Affliction identifier="frenzied" amount="10.0"/>
+							<Affliction identifier="frenzied" amount="1.0"/>
 						</StatusEffect>
 					</StatusEffects>
 				</CharacterAbilityApplyStatusEffectsToAllies>
 			</Abilities>
 		</AbilityGroupInterval>
+		<!-- Gain +15% Monster,Nest Mission money and expirence -->
 		<AbilityGroupEffect abilityeffecttype="OnGainMissionExperience">
 			<Conditions>
 				<AbilityConditionMission missiontype="Monster,Nest"/>
@@ -333,22 +341,30 @@
 		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="1,5" sheetelementsize="128,128"/>
 		<Description tag="talentdescription.takeabullet">
 		</Description>
+		<!-- If no crew has died you and your allies gain durable buff -->
 		<AbilityGroupInterval interval="1.0">
 			<Conditions>
-				<AbilityConditionHasTalent identifier="capitansshield" truthywhen="HasTalent"/>
 				<AbilityConditionNoCrewDied/>
 			</Conditions>
-			<FallbackAbilities>
+			<Abilities>
 				<CharacterAbilityApplyStatusEffectsToAllies allowself="true" requiresalive="true" allowclientsimulation="false">
 					<StatusEffects>
 						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
-							<Affliction identifier="durable" amount="10.0"/>
-							<ReduceAffliction identifier="steelwall" strength="10.0"/>
+							<Affliction identifier="durable" amount="1.0"/>
 						</StatusEffect>
 					</StatusEffects>
 				</CharacterAbilityApplyStatusEffectsToAllies>
-			</FallbackAbilities>
+			</Abilities>
 		</AbilityGroupInterval>
+		<!-- Gain +15% OutpostDestroy,OutpostRescue,Mineral,Escort Mission money and expirence -->
+		<AbilityGroupEffect abilityeffecttype="OnGainMissionExperience">
+			<Conditions>
+				<AbilityConditionMission missiontype="OutpostDestroy,OutpostRescue,Mineral,Escort"/>
+			</Conditions>
+			<Abilities>
+				<CharacterAbilityModifyValue multiplyvalue="1.15"/>
+			</Abilities>
+		</AbilityGroupEffect>
 		<AbilityGroupEffect abilityeffecttype="OnGainMissionMoney">
 			<Conditions>
 				<AbilityConditionMission missiontype="OutpostDestroy,OutpostRescue,Mineral,Escort"/>
@@ -359,19 +375,22 @@
 		</AbilityGroupEffect>
 	</Talent>
 
+	<!-- TODO check if it works for sure -->
 	<Talent identifier="versitile">
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,4" sheetelementsize="128,128"/>
 		<Description tag="talentdescription.versitile">
 		</Description>
+		<!-- Gain +30 Helm skill -->
 		<AbilityGroupEffect abilityeffecttype="None">
 			<Abilities>
 				<CharacterAbilityGiveStat stattype="HelmSkillBonus" value="30"/>
 			</Abilities>
 		</AbilityGroupEffect>
+		<!-- Improve performance of everything in the submarine by 5% -->
 		<!-- I have faith in devs that it works as promised -->
 		<AbilityGroupInterval interval="60">
 			<Abilities>
-				<!-- electrical and machine tag for support of modded items -->
+				<!-- TODO electrical and machine tag for support of modded items -->
 				<CharacterAbilityGiveItemStatToTags tags="junctionbox,battery,supercapacitor,reactor,electrical,engine,fabricator,medicalfabricator,pump,deconstructor,machine" stattype="DetoriationSpeed" value="0.95" />
 				<CharacterAbilityGiveItemStatToTags tags="battery,supercapacitor" stattype="BatteryCapacity" value="1.05" />
 				<CharacterAbilityGiveItemStatToTags tags="engine" stattype="EngineSpeed" value="1.05" />
@@ -386,7 +405,7 @@
 		</AbilityGroupInterval>
 		<AbilityGroupEffect abilityeffecttype="None">
 			<Abilities>
-				<!-- electrical and machine tag for support of modded items -->
+				<!-- TODO electrical and machine tag for support of modded items -->
 				<CharacterAbilityGiveItemStatToTags tags="junctionbox,battery,supercapacitor,reactor,electrical,engine,fabricator,medicalfabricator,pump,deconstructor,machine" stattype="DetoriationSpeed" value="0.95" />
 				<CharacterAbilityGiveItemStatToTags tags="battery,supercapacitor" stattype="BatteryCapacity" value="1.05" />
 				<CharacterAbilityGiveItemStatToTags tags="engine" stattype="EngineSpeed" value="1.05" />
@@ -399,6 +418,7 @@
 				<CharacterAbilityGiveItemStatToTags tags="fabricator" stattype="FabricationSpeed" value="1.05" />
 			</Abilities>
 		</AbilityGroupEffect>
+		<!-- Medical items applied to you are +75% effective -->
 		<AbilityGroupEffect abilityeffecttype="OnReduceAffliction">
 			<Conditions>
 				<AbilityConditionAboveVitality vitalitypercentage="0.5" invert="true"/>
@@ -413,9 +433,11 @@
 		<Icon texture="Content/UI/MainIconsAtlas.png" sourcerect="512,256,128,128" origin="0.5,0.5"/>
 		<Description tag="talentdescription.versitile_doctor">
 		</Description>
+		<!-- Medical skill bonus -->
+		<!-- TODO add something for verical progression -->
 		<AbilityGroupEffect abilityeffecttype="None">
 			<Abilities>
-				<CharacterAbilityGivePermanentStat stattype="Apprenticeship" statidentifier="medicaldoctor" value="1" />
+				<CharacterAbilityGivePermanentStat stattype="versitility" statidentifier="medicaldoctor" value="1" />
 				<CharacterAbilityGiveStat stattype="MedicalSkillBonus" value="20"/>
 			</Abilities>
 		</AbilityGroupEffect>
@@ -424,9 +446,11 @@
 		<Icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5"/>
 		<Description tag="talentdescription.versitile_security">
 		</Description>
+		<!-- Weapon skill bonus -->
+		<!-- TODO add something for verical progression -->
 		<AbilityGroupEffect abilityeffecttype="None">
 			<Abilities>
-				<CharacterAbilityGivePermanentStat stattype="Apprenticeship" statidentifier="securityofficer" value="1" />
+				<CharacterAbilityGivePermanentStat stattype="versitility" statidentifier="securityofficer" value="1" />
 				<CharacterAbilityGiveStat stattype="WeaponsSkillBonus" value="20"/>
 			</Abilities>
 		</AbilityGroupEffect>
@@ -435,9 +459,11 @@
 		<Icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,256,128,128" origin="0.5,0.5"/>
 		<Description tag="talentdescription.versitile_mechanic">
 		</Description>
+		<!-- Mechanical skill bonus -->
+		<!-- TODO add something for verical progression -->
 		<AbilityGroupEffect abilityeffecttype="None">
 			<Abilities>
-				<CharacterAbilityGivePermanentStat stattype="Apprenticeship" statidentifier="mechanic" value="1" />
+				<CharacterAbilityGivePermanentStat stattype="versitility" statidentifier="mechanic" value="1" />
 				<CharacterAbilityGiveStat stattype="MechanicalSkillBonus" value="20"/>
 			</Abilities>
 		</AbilityGroupEffect>
@@ -446,9 +472,11 @@
 		<Icon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,256,128,128" origin="0.5,0.5"/>
 		<Description tag="talentdescription.versitile_engineer">
 		</Description>
+		<!-- Electrical skill bonus -->
+		<!-- TODO add something for verical progression -->
 		<AbilityGroupEffect abilityeffecttype="None">
 			<Abilities>
-				<CharacterAbilityGivePermanentStat stattype="Apprenticeship" statidentifier="engineer" value="1" />
+				<CharacterAbilityGivePermanentStat stattype="versitility" statidentifier="engineer" value="1" />
 				<CharacterAbilityGiveStat stattype="ElectricalSkillBonus" value="20"/>
 			</Abilities>
 		</AbilityGroupEffect>
@@ -458,6 +486,7 @@
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,3" sheetelementsize="128,128"/>
     <Description tag="talentdescription.ironcurtain">
     </Description>
+	<!-- On being attacked gain ironcurtain buff -->
 	<AbilityGroupEffect abilityeffecttype="OnAttackedResult">
       <Abilities>
         <CharacterAbilityApplyStatusEffects>
@@ -469,146 +498,29 @@
         </CharacterAbilityApplyStatusEffects>
       </Abilities>
     </AbilityGroupEffect>
+	<!-- TODO one more stuff -->
   </Talent>
+
 	<Talent identifier="notasingleonegetsthough">
 		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="4,0" sheetelementsize="128,128"/>
 		<Description tag="talentdescription.notasingleonegetsthough">
 		</Description>
 		<AbilityGroupEffect abilityeffecttype="AfterSubmarineAttacked">
 			<Conditions>
-			  <AbilityConditionEvasiveManeuvers/>
+				<AbilityConditionEvasiveManeuvers/>
 			</Conditions>
 			<Abilities>
 				<CharacterAbilityModifyStatToSkill stattype="TurretPowerCostReduction" maxvalue="1.5" skillidentifier="weapons"/>
 				<CharacterAbilityModifyStatToSkill stattype="TurretChargeSpeed" maxvalue="1.5" skillidentifier="weapons"/>
 			</Abilities>
-    	</AbilityGroupEffect>
-	</Talent>
-
-	<Talent identifier="departamentsupport">
-		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,5" sheetelementsize="128,128"/>
-		<Description tag="talentdescription.departamentsupport">
-		</Description>
-	</Talent>
-	<Talent identifier="departamentsupport_medical" nameidentifier="jobname.medicaldoctor" coloroverride="0.81,0.31,0.19">
-		<Icon texture="Content/UI/MainIconsAtlas.png" sourcerect="512,256,128,128" origin="0.5,0.5"/>
-		<Description tag="talentdescription.departamentsupport_medical">
-		</Description>
-		<AbilityGroupInterval interval="1.0">
-			<Conditions>
-				<AbilityConditionHasTalent identifier="departamentsupport_medical_second" truthywhen="HasTalent"/>
-			</Conditions>
-			<Abilites>
-				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" jobs="medicaldoctor,chiefmedicaldoctor,medicalstaff" allowself="false" delay="1">
-					<StatusEffects>
-						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
-							<Affliction identifier="xosupport_medical" strength="2.0"/>
-						</StatusEffect>
-					</StatusEffects>
-				</CharacterAbilityApplyStatusEffectsToAllies>
-			</Abilites>
-			<FallbackAbilites>
-				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" jobs="medicaldoctor,chiefmedicaldoctor,medicalstaff" allowself="false" delay="1">
-					<StatusEffects>
-						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
-							<Affliction identifier="xosupport_medical" strength="1.0"/>
-						</StatusEffect>
-					</StatusEffects>
-				</CharacterAbilityApplyStatusEffectsToAllies>
-			</FallbackAbilites>
-		</AbilityGroupInterval>
-	</Talent>
-	<Talent identifier="departamentsupport_security" nameidentifier="jobname.securityofficer" coloroverride="0.57,0.48,0.43">
-		<Icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5"/>
-		<Description tag="talentdescription.departamentsupport_security">
-		</Description>
-		<AbilityGroupInterval interval="1.0">
-			<Conditions>
-				<AbilityConditionHasTalent identifier="departamentsupport_security_second" truthywhen="HasTalent"/>
-			</Conditions>
-			<Abilites>
-				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" jobs="head_of_security,security,diver" allowself="false" delay="1">
-					<StatusEffects>
-						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
-							<Affliction identifier="xosupport_security" strength="2.0"/>
-						</StatusEffect>
-					</StatusEffects>
-				</CharacterAbilityApplyStatusEffectsToAllies>
-			</Abilites>
-			<FallbackAbilites>
-				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" jobs="head_of_security,security,diver" allowself="false" delay="1">
-					<StatusEffects>
-						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
-							<Affliction identifier="xosupport_security" strength="1.0"/>
-						</StatusEffect>
-					</StatusEffects>
-				</CharacterAbilityApplyStatusEffectsToAllies>
-			</FallbackAbilites>
-		</AbilityGroupInterval>
-	</Talent>
-	<Talent identifier="departamentsupport_engineering" nameidentifier="talentname.engineering" coloroverride="0.88,0.72,0.43">
-		<Icon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,256,128,128" origin="0.5,0.5"/>
-		<Description tag="talentdescription.departamentsupport_engineering">
-		</Description>
-		<AbilityGroupInterval interval="1.0">
-			<Conditions>
-				<AbilityConditionHasTalent identifier="departamentsupport_engineering_second" truthywhen="HasTalent"/>
-			</Conditions>
-			<Abilites>
-				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" jobs="chief,engineering,mechanical,quartermaster" allowself="false" delay="1">
-					<StatusEffects>
-						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
-							<Affliction identifier="xosupport_engineering" strength="2.0"/>
-						</StatusEffect>
-					</StatusEffects>
-				</CharacterAbilityApplyStatusEffectsToAllies>
-			</Abilites>
-			<FallbackAbilites>
-				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" jobs="chief,engineering,mechanical,quartermaster" allowself="false" delay="1">
-					<StatusEffects>
-						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
-							<Affliction identifier="xosupport_engineering" strength="1.0"/>
-						</StatusEffect>
-					</StatusEffects>
-				</CharacterAbilityApplyStatusEffectsToAllies>
-			</FallbackAbilites>
-		</AbilityGroupInterval>
-	</Talent>
-
-	<Talent identifier="thefivepillars">
-		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,5" sheetelementsize="128,128"/>
-		<Description tag="talentdescription.thefivepillars">
-		</Description>
-		<AbilityGroupInterval interval="1.0">
-			<Conditions>
-				<AbilityConditionHasTalent identifier="thefivepillars_second" truthywhen="HasTalent"/>
-			</Conditions>
-			<Abilites>
-				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" allowself="false" delay="1">
-					<StatusEffects>
-						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
-							<Affliction identifier="xosupport" strength="2.0"/>
-						</StatusEffect>
-					</StatusEffects>
-				</CharacterAbilityApplyStatusEffectsToAllies>
-			</Abilites>
-			<FallbackAbilites>
-				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" allowself="false" delay="1">
-					<StatusEffects>
-						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
-							<Affliction identifier="xosupport" strength="1.0"/>
-						</StatusEffect>
-					</StatusEffects>
-				</CharacterAbilityApplyStatusEffectsToAllies>
-			</FallbackAbilites>
-		</AbilityGroupInterval>
+		</AbilityGroupEffect>
 	</Talent>
 
 	<Talent identifier="capitansshield">
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,5" sheetelementsize="128,128"/>
 		<Description tag="talentdescription.capitansshield">
 		</Description>
-		<AbilityGroupInterval interval="1.0">
+		<!-- <AbilityGroupInterval interval="1.0">
 			<Abilities>
 				<CharacterAbilityApplyStatusEffectsToAllies allowself="true" requiresalive="true" allowclientsimulation="false">
 					<StatusEffects>
@@ -619,7 +531,8 @@
 					</StatusEffects>
 				</CharacterAbilityApplyStatusEffectsToAllies>
 			</Abilities>
-		</AbilityGroupInterval>
+		</AbilityGroupInterval> -->
+		<!-- Damage buff 25% when inside, 25% damage reduction when ouside -->
 		<AbilityGroupInterval>
 			<Conditions>
 				<AbilityConditionInFriendlySubmarine invert="true" />
@@ -631,39 +544,171 @@
 				<CharacterAbilityGiveStat stattype="AttackMultiplier" resistance="0.25"/>
 			</FallbackAbilities>
 		</AbilityGroupInterval>
+		<!-- Deal 25% more stun -->
 		<AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
 			<Abilities>
 				<CharacterAbilityModifyAffliction afflictionidentifiers="stun,incrementalstun,progressivestun" addedmultiplier="0.25" />
 			</Abilities>
 		</AbilityGroupEffect>
+		<!-- Items -->
 		<Description tag="talentdescription.unlockrecipe">
 			<Replace tag="[itemname]" value="entityname.seredivingsuit-blueprint" color="gui.orange"/>
 		</Description>
 		<AddedRecipe itemidentifier="seredivingsuit-blueprint"/>
 	</Talent>
 
+
+	<Talent identifier="departamentsupport">
+		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,5" sheetelementsize="128,128"/>
+		<Description tag="talentdescription.departamentsupport">
+		</Description>
+	</Talent>
+	<Talent identifier="departamentsupport_medical">
+		<Icon texture="Content/UI/MainIconsAtlas.png" sourcerect="512,256,128,128" origin="0.5,0.5"/>
+		<Description tag="talentdescription.departamentsupport_medical">
+		</Description>
+		<!-- Give buff to medical departament xosupport_medical, and if you have departamentsupport_medical_second, strengthed_xosupport_medical -->
+		<AbilityGroupInterval interval="1.0">
+			<Conditions>
+				<AbilityConditionHasTalent identifier="departamentsupport_medical_second" truthywhen="HasTalent"/>
+			</Conditions>
+			<Abilites>
+				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" jobs="medicaldoctor,chiefmedicaldoctor,medicalstaff" allowself="false">
+					<StatusEffects>
+						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+							<Affliction identifier="strengthed_xosupport_medical" strength="1.0"/>
+						</StatusEffect>
+					</StatusEffects>
+				</CharacterAbilityApplyStatusEffectsToAllies>
+			</Abilites>
+			<FallbackAbilites>
+				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" jobs="medicaldoctor,chiefmedicaldoctor,medicalstaff" allowself="false">
+					<StatusEffects>
+						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+							<Affliction identifier="xosupport_medical" strength="1.0"/>
+						</StatusEffect>
+					</StatusEffects>
+				</CharacterAbilityApplyStatusEffectsToAllies>
+			</FallbackAbilites>
+		</AbilityGroupInterval>
+		<!-- TODO one more vertical stuff -->
+	</Talent>
+	<Talent identifier="departamentsupport_security">
+		<Icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5"/>
+		<Description tag="talentdescription.departamentsupport_security">
+		</Description>
+		<!-- Give buff to security departament xosupport_medical, and if you have departamentsupport_security_second, strengthed_xosupport_security -->
+		<AbilityGroupInterval interval="1.0">
+			<Conditions>
+				<AbilityConditionHasTalent identifier="departamentsupport_security_second" truthywhen="HasTalent"/>
+			</Conditions>
+			<Abilites>
+				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" jobs="head_of_security,security,diver" allowself="false">
+					<StatusEffects>
+						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+							<Affliction identifier="strengthed_xosupport_security" strength="1.0"/>
+						</StatusEffect>
+					</StatusEffects>
+				</CharacterAbilityApplyStatusEffectsToAllies>
+			</Abilites>
+			<FallbackAbilites>
+				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" jobs="head_of_security,security,diver" allowself="false">
+					<StatusEffects>
+						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+							<Affliction identifier="xosupport_security" strength="1.0"/>
+						</StatusEffect>
+					</StatusEffects>
+				</CharacterAbilityApplyStatusEffectsToAllies>
+			</FallbackAbilites>
+		</AbilityGroupInterval>
+		<!-- TODO one more vertical stuff -->
+	</Talent>
+	<Talent identifier="departamentsupport_engineering">
+		<Icon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,256,128,128" origin="0.5,0.5"/>
+		<Description tag="talentdescription.departamentsupport_engineering">
+		</Description>
+		<!-- Give buff to engineering departament xosupport_engineering, and if you have departamentsupport_engineering_second, strengthed_xosupport_engineering -->
+		<AbilityGroupInterval interval="1.0">
+			<Conditions>
+				<AbilityConditionHasTalent identifier="departamentsupport_engineering_second" truthywhen="HasTalent"/>
+			</Conditions>
+			<Abilites>
+				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" jobs="chief,engineering,mechanical,quartermaster" allowself="false">
+					<StatusEffects>
+						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+							<Affliction identifier="strengthed_xosupport_engineering" strength="2.0"/>
+						</StatusEffect>
+					</StatusEffects>
+				</CharacterAbilityApplyStatusEffectsToAllies>
+			</Abilites>
+			<FallbackAbilites>
+				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" jobs="chief,engineering,mechanical,quartermaster" allowself="false">
+					<StatusEffects>
+						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+							<Affliction identifier="xosupport_engineering" strength="1.0"/>
+						</StatusEffect>
+					</StatusEffects>
+				</CharacterAbilityApplyStatusEffectsToAllies>
+			</FallbackAbilites>
+		</AbilityGroupInterval>
+		<!-- TODO one more vertical stuff -->
+	</Talent>
+
+	<Talent identifier="thefivepillars">
+		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,5" sheetelementsize="128,128"/>
+		<Description tag="talentdescription.thefivepillars">
+		</Description>
+		<!-- Give xosupport to all classes, if you have thefivepillars_second give strengthed_xosupport -->
+		<AbilityGroupInterval interval="1.0">
+			<Conditions>
+				<AbilityConditionHasTalent identifier="thefivepillars_second" truthywhen="HasTalent"/>
+			</Conditions>
+			<Abilites>
+				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" allowself="false">
+					<StatusEffects>
+						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+							<Affliction identifier="strengthed_xosupport" strength="1.0"/>
+						</StatusEffect>
+					</StatusEffects>
+				</CharacterAbilityApplyStatusEffectsToAllies>
+			</Abilites>
+			<FallbackAbilites>
+				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" allowself="false">
+					<StatusEffects>
+						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+							<Affliction identifier="xosupport" strength="1.0"/>
+						</StatusEffect>
+					</StatusEffects>
+				</CharacterAbilityApplyStatusEffectsToAllies>
+			</FallbackAbilites>
+		</AbilityGroupInterval>
+		<!-- TODO one more vertical stuff -->
+	</Talent>
+
 	<Talent identifier="fieldcommander">
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,1" sheetelementsize="128,128" />
 		<Description tag="talentdescription.fieldcommander">
 		</Description>
-		<AbilityGroupInterval>
+		<!-- Aoe buff standtogether when not ordered, if ordered additional commanded_standtogether -->
+		<AbilityGroupInterval interval="1.0">
 			<Abilities>
 				<CharacterAbilityApplyStatusEffectsToLastOrderedCharacter>
 					<StatusEffects>
-						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true" delay="1">
-							<Affliction identifier="standtogether" amount="5.0" />
+						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+							<Affliction identifier="commanded_standtogether" amount="1.0" />
 						</StatusEffect>
 					</StatusEffects>
 				</CharacterAbilityApplyStatusEffectsToLastOrderedCharacter>
 				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="6000" allowself="true">
 					<StatusEffects>
-						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true" delay="1">
-							<Affliction identifier="standtogether" amount="5.0" />
+						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+							<Affliction identifier="standtogether" amount="1.0" />
 						</StatusEffect>
 					</StatusEffects>
 				</CharacterAbilityApplyStatusEffectsToAllies>
 			</Abilities>
 		</AbilityGroupInterval>
+		<!-- When ally gain skill point you gain +10 expirence -->
 		<AbilityGroupEffect abilityeffecttype="OnAllyGainSkillPoint">
 			<Conditions>
 				<AbilityConditionServerRandom randomchance="0.5" />
@@ -678,6 +723,7 @@
 				</CharacterAbilityApplyStatusEffectsToAllies>
 			</Abilities>
 		</AbilityGroupEffect>
+		<!-- Medals -->
 		<AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
 			<Conditions>
 			  <AbilityConditionHasTalent identifier="highlydecoratedindividual"/>
@@ -751,96 +797,100 @@
 		<Description tag="talentdescription.departamentsupport_second">
 		</Description>
 	</Talent>
-	<Talent identifier="departamentsupport_medical_second" nameidentifier="jobname.medicaldoctor" coloroverride="0.81,0.31,0.19">
+	<Talent identifier="departamentsupport_medical_second">
 		<Icon texture="Content/UI/MainIconsAtlas.png" sourcerect="512,256,128,128" origin="0.5,0.5"/>
-		<Description tag="talentdescription.departamentsupport_medical_second">
+		<Description tag="talentdescription.departamentsupport_medical">
 		</Description>
+		<!-- Give buff to medical departament xosupport_medical, and if you have departamentsupport_medical_second, strengthed_xosupport_medical -->
 		<AbilityGroupInterval interval="1.0">
 			<Conditions>
 				<AbilityConditionHasTalent identifier="departamentsupport_medical" truthywhen="HasTalent"/>
 			</Conditions>
-			<FallbackAbilities>
-				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" jobs="medicaldoctor,chiefmedicaldoctor,medicalstaff" allowself="false" delay="1">
+			<FallbackAbilites>
+				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" jobs="medicaldoctor,chiefmedicaldoctor,medicalstaff" allowself="false">
 					<StatusEffects>
 						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
 							<Affliction identifier="xosupport_medical" strength="1.0"/>
 						</StatusEffect>
 					</StatusEffects>
 				</CharacterAbilityApplyStatusEffectsToAllies>
-			</FallbackAbilities>
+			</FallbackAbilites>
 		</AbilityGroupInterval>
+		<!-- TODO one more vertical stuff -->
 	</Talent>
-	<Talent identifier="departamentsupport_security_second" nameidentifier="jobname.securityofficer" coloroverride="0.57,0.48,0.43">
+	<Talent identifier="departamentsupport_security_second">
 		<Icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5"/>
-		<Description tag="talentdescription.departamentsupport_security_second">
+		<Description tag="talentdescription.departamentsupport_security">
 		</Description>
+		<!-- Give buff to security departament xosupport_medical, and if you have departamentsupport_security_second, strengthed_xosupport_security -->
 		<AbilityGroupInterval interval="1.0">
 			<Conditions>
 				<AbilityConditionHasTalent identifier="departamentsupport_security" truthywhen="HasTalent"/>
 			</Conditions>
-			<FallbackAbilities>
-				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" jobs="head_of_security,security,diver" allowself="false" delay="1">
+			<FallbackAbilites>
+				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" jobs="head_of_security,security,diver" allowself="false">
 					<StatusEffects>
 						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
 							<Affliction identifier="xosupport_security" strength="1.0"/>
 						</StatusEffect>
 					</StatusEffects>
 				</CharacterAbilityApplyStatusEffectsToAllies>
-			</FallbackAbilities>
+			</FallbackAbilites>
 		</AbilityGroupInterval>
+		<!-- TODO one more vertical stuff -->
 	</Talent>
-	<Talent identifier="departamentsupport_engineering_second" nameidentifier="talentname.engineering" coloroverride="0.88,0.72,0.43">
+	<Talent identifier="departamentsupport_engineering_second">
 		<Icon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,256,128,128" origin="0.5,0.5"/>
-		<Description tag="talentdescription.departamentsupport_engineering_second">
+		<Description tag="talentdescription.departamentsupport_engineering">
 		</Description>
+		<!-- Give buff to engineering departament xosupport_engineering, and if you have departamentsupport_engineering_second, strengthed_xosupport_engineering -->
 		<AbilityGroupInterval interval="1.0">
 			<Conditions>
 				<AbilityConditionHasTalent identifier="departamentsupport_engineering" truthywhen="HasTalent"/>
 			</Conditions>
-			<FallbackAbilities>
-				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" jobs="chief,engineering,mechanical,quartermaster" allowself="false" delay="1">
+			<FallbackAbilites>
+				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" jobs="chief,engineering,mechanical,quartermaster" allowself="false">
 					<StatusEffects>
 						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
 							<Affliction identifier="xosupport_engineering" strength="1.0"/>
 						</StatusEffect>
 					</StatusEffects>
 				</CharacterAbilityApplyStatusEffectsToAllies>
-			</FallbackAbilities>
+			</FallbackAbilites>
 		</AbilityGroupInterval>
+		<!-- TODO one more vertical stuff -->
 	</Talent>
 
 	<Talent identifier="thefivepillars_second">
 		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,5" sheetelementsize="128,128"/>
 		<Description tag="talentdescription.thefivepillars_second">
 		</Description>
+		<!-- Give xosupport to all classes, if you have thefivepillars_second give strengthed_xosupport -->
 		<AbilityGroupInterval interval="1.0">
 			<Conditions>
 				<AbilityConditionHasTalent identifier="thefivepillars" truthywhen="HasTalent"/>
 			</Conditions>
-			<Abilities>
-				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" allowself="false" delay="1">
+			<FallbackAbilites>
+				<CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" allowself="false">
 					<StatusEffects>
-						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true" delay="1">
+						<StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
 							<Affliction identifier="xosupport" strength="1.0"/>
 						</StatusEffect>
 					</StatusEffects>
 				</CharacterAbilityApplyStatusEffectsToAllies>
-			</Abilities>
+			</FallbackAbilites>
 		</AbilityGroupInterval>
+		<!-- TODO one more vertical stuff -->
 	</Talent>
 
 	<Talent identifier="highlydecoratedindividual">
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,1" sheetelementsize="128,128"/>
 		<Description tag="talentdescription.highlydecoratedindividual">
 		</Description>
-		<AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
-			<Abilities>
-				<CharacterAbilityPutItem itemidentifier="coalitioncommendation"/>
-			</Abilities>
-		</AbilityGroupEffect>
+		<!-- Medal shit -->
 		<AbilityGroupEffect abilityeffecttype="OnAttack">
 			<Conditions>
-				<AbilityConditionAttackData itemidentifier="coalitioncommendation"/>
+				<AbilityConditionAttackData itemidentifier="coalitionmedal"/>
 			</Conditions>
 			<Abilities>
 				<CharacterAbilityApplyStatusEffects>
@@ -852,13 +902,6 @@
 				</CharacterAbilityApplyStatusEffects>
 			</Abilities>
 		</AbilityGroupEffect>
-		<AbilityGroupInterval interval="0.5">
-			<Abilities>
-				<CharacterAbilityModifyStatToSkill stattype="MovementSpeed" maxValue="0.55" skillidentifier="weapons"/>
-				<CharacterAbilityModifyStatToSkill stattype="MeleeAttackSpeed" maxValue="0.55" skillidentifier="weapons"/>
-				<CharacterAbilityModifyStatToSkill stattype="RangedAttackSpeed" maxValue="0.55" skillidentifier="weapons"/>
-			</Abilities>
-		</AbilityGroupInterval>
 		<AbilityGroupEffect abilityeffecttype="OnAttack">
 			<Conditions>
 			  <AbilityConditionAttackData itemidentifier="coalitionmedal"/>
@@ -867,6 +910,14 @@
 			  <CharacterAbilityGiveExperience level="5"/>
 			</Abilities>
 		</AbilityGroupEffect>
+		<!-- Gaining movement speed mele  and ranged attack speed from weapons -->
+		<AbilityGroupInterval interval="0.5">
+			<Abilities>
+				<CharacterAbilityModifyStatToSkill stattype="MovementSpeed" maxValue="0.55" skillidentifier="weapons"/>
+				<CharacterAbilityModifyStatToSkill stattype="MeleeAttackSpeed" maxValue="0.55" skillidentifier="weapons"/>
+				<CharacterAbilityModifyStatToSkill stattype="RangedAttackSpeed" maxValue="0.55" skillidentifier="weapons"/>
+			</Abilities>
+		</AbilityGroupInterval>
 	</Talent>
 
 </Talents>
