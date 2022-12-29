@@ -1,15 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="JobsExtendedBeta" modversion="1.0.01" corepackage="False" gameversion="100.10.0.0" altnames="JobsExtended, Jobs Extended Beta">
+<contentpackage name="JobsExtendedBeta" modversion="1.0.2" corepackage="False" steamworkshopid="2908735458" gameversion="0.20.16.1" altnames="JobsExtended,Jobs Extended Beta">
   <Jobs file="%ModDir%/Jobs.xml" />
   <Item file="%ModDir%/Items/uniforms.xml" />
   <Item file="%ModDir%/Items/specialitems.xml" />
   <Item file="%ModDir%/Items/security_m - Make a HOS uniform ig.xml" />
   <Item file="%ModDir%/ItemsOverride/guitar.xml" />
-
-  <!-- TODO Hireable temp fix -->
-  <locationtypes file="%ModDir%/Map/locationTypes.xml" />
+  <LocationTypes file="%ModDir%/Map/locationTypes.xml" />
   <LocationTypes file="%ModDir%/NPCPrefabs/OutpostNpcs.xml" />
-
   <Talents file="%ModDir%/Talents/TalentsUsedInItems.xml" />
   <Text file="%ModDir%/Texts/English.xml" />
   <Text file="%ModDir%/Texts/JobExtendedChinese.xml" />
@@ -18,7 +15,6 @@
   <Text file="%ModDir%/Texts/Polish.xml" />
   <Text file="%ModDir%/Texts/Russian.xml" />
   <Item file="%ModDir%/ItemsOverride/guitar.xml" />
-
   <Submarine file="%ModDir%/Submarines/Azimuth [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Barsuk [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Berilia [JE].sub" />
@@ -36,7 +32,6 @@
   <Submarine file="%ModDir%/Submarines/Typhon [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Typhon2 [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Winterhalter [JE].sub" />
-
   <TalentTrees file="%ModDir%/Talents/TalentTrees-VanillaTemp.xml" />
   <TalentTrees file="%ModDir%/Talents/TalentTrees.xml" />
   <Talents file="%ModDir%/Talents/CO/COTalents.xml" />
@@ -46,18 +41,10 @@
   <Talents file="%ModDir%/Talents/NAV/NAVTalents.xml" />
   <Afflictions file="%ModDir%/Talents/NAV/NAVAfflictions.xml" />
   <Talents file="%ModDir%/Talents/DIV/DIVTalents.xml" />
-  <!--  -->
   <Talents file="%ModDir%/Talents/QUA/QUATalents.xml" />
-  <!--  -->
   <Talents file="%ModDir%/Talents/PAS/PASTalents.xml" />
-  <!--  -->
   <Talents file="%ModDir%/Talents/CUS/CUSTalents.xml" />
-  <!--  -->
   <Talents file="%ModDir%/Talents/PRI/PRITalents.xml" />
-  <!--  -->
-
-
-  <!-- Lead diver diver -->
   <Afflictions file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Afflictions.xml" />
   <Talents file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/Talents.xml" />
   <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Clothes/Clothes and Swimsuits.xml" />
@@ -81,5 +68,4 @@
   <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear/Foam Diving Visor.xml" />
   <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear/Antique Diving Helmet.xml" />
   <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear/Silent Sonar Scanner.xml" />
-
 </contentpackage>
