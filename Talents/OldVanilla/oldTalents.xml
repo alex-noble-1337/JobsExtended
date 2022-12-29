@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Talents>
+<Talent identifier="artisansmith">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="0,3" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.wrenchdementonite,entityname.crowbardementonite,entityname.screwdriverdementonite,entityname.divingknifedementonite" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.crafthighqualitytools">
+      <Replace tag="[qualitybonus]" value="1" color="gui.green"/>
+    </Description>
+    <Description tag="talentdescription.skillbonus">
+      <Replace tag="[amount]" value="30" color="gui.green"/>
+      <Replace tag="[skillname]" value="skillname.mechanical" color="gui.orange"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGivePermanentStat statidentifier="simpletool" stattype="IncreaseFabricationQuality" value="1" />
+        <CharacterAbilityGiveStat stattype="MechanicalSkillBonus" value="30"/>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="wrenchdementonite"/>
+    <AddedRecipe itemidentifier="crowbardementonite"/>
+    <AddedRecipe itemidentifier="screwdriverdementonite"/>
+    <AddedRecipe itemidentifier="divingknifedementonite"/>
+  </Talent>
+</Talents>

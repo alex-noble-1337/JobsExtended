@@ -1,0 +1,79 @@
+[h1][b][u]Supported languages: EN,CN,PTBR,PL,RUS [/u][/b][/h1]
+
+JobsExtended is a realistic, configurable, and more in depth look into roles for Barotrauma. This mod adds in a more realistic set of customizable (and configurable) roles for the crew. JobsExtended is configurable using karma to permit certain players to pick certain roles, perfect for admins to help control security clearances, griefing, and roleplay. The default settings will deter griefers from becoming high level roles, but for more precise control, see the admin/Karma utility section.
+[h1][b][u][DISCLAIMER][/u][/b][/h1]
+
+[b][u]You Cannot Buy Modded Bots from Stations, only the vanilla 5 roles[/u][/b]
+[b][u]You will spawn with low skill, this is to encourage job specialization[/u][/b]
+[b][u]This mod can easily improve Immersive, Roleplay, OR Traitor gameplay.[/u][/b]
+
+[h1][b][u]NEW ROLES[/u][/b][/h1]
+
+[b][u]Commanding Officer:[/u][/b] The Head of the vessel, the daring risk-taker, the ruler; Only 1 can be in charge! 
+
+[b][u]Executive Officer:[/u][/b]  2nd-in-command, Keeps everyone in line and preforming their job or defends the CO and executes his will.
+
+[b][u]Chief of the Boat:[/u][/b]  3rd and Supervisor for all systems and leads all technical personnel, use brute force when necessary.
+
+[b][u]Head of Security:[/u][/b]  Responsible for all security operations on board the submarine and for the armory.
+
+[b][u]Chief Medical Officer:[/u][/b] Manage the infirmary on the submarine and makes sure that the medical supplies never run out and the medical staff operate under the Hippocratic oath (or not).
+
+[b][u]Navigator:[/u][/b] Drives da Boat. Depending on the sub, he could locate minerals, lead the diving team, or use/maintain exploration drones.
+
+[b][u]Diver:[/u][/b] Responsible for performing EVA activities such as mining and salvaging when necessary. 
+
+[b][u]Quartermaster:[/u][/b] Material management. With help of the Janitor, he keeps the sub clean, fills every storage cabinet and provides ammunition for all weapons.
+
+[b][u]Custodian:[/u][/b] Assists Quartermasters in keeping the sub well cleaned, supplied, and stockpiled.
+
+[b][u]Passenger:[/u][/b] Civilian that travels among the crew as a guest, presumably for a price, scientific discovery, or the experience.
+
+[b][u]Prisoner:[/u][/b] Lock Em Up! Can be forced on any individual by using karma commands even with karma disabled!
+
+[b][u]Vanilla Roles[/u][/b] such as medical, engineer, mechanic, and security have been reworked to have more specialized roles. Assistant and captain are replaced.
+
+[h1][b][u]FEATURES[/u][/b][/h1]
+
+[b][u]Variety[/u][/b]
+
+Every one of the 15 Jobs has 3 subroles with unique equipment and primary expectations to further specialize each role to an IRL or realistic job title (mostly), for example: CO can choose between a veteran seafarer, a military admiral, or a pirate lord!
+
+[b][u]Talents[/u][/b]
+
+Talents are being developed to further add variety to the jobs.
+
+[b][u]Items[/u][/b]
+
+Clothes are deconstructable, contain pockets, and provide special job specific protection.
+
+[b][u]Admin/Karma Utility[/u][/b]
+
+Through use of the Karma system or commands, moderators can limit players to certain roles. The minimum Karma required for each role is as follows:
+CO: 95
+XO: 85
+COB: 85
+HOS: 75
+CMO: 75
+NAV: 65
+QM: 55
+SO: 55
+DIV: 50
+DR: 50
+ENG: 45
+MEC: 25
+JAN: 15
+PAS: 5
+PRIS: 0
+
+[h1][b][u]Special Thanks[/u][/b][/h1]
+EagleWolfQueen and Specter The Unchained for Chinese translation.
+Polaris for Brazilian Portuguese translation.
+Kaofan for Polish translation (nawet jesli jestem polakiem, raczej malo mi sie chcialo bo nie gram wiec dzieki ~M)
+Anti4iteR for Russian translation (hope it works havent reached author yet)
+
+[h1][b][u]Submarine collection[/u][/b][/h1]
+https://steamcommunity.com/workshop/filedetails/?id=2814494991
+
+[h1][b][u]Other stuff[/u][/b][/h1]
+Be sure to check out [url=https://discord.gg/EATEhZWmkY] Barotraumatic Discord! [/url] We hang out there very often, so you can get updates on when we play, chat with us, or even get sneak peaks of upcoming updates of mods!

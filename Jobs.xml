@@ -3,7 +3,7 @@
 <Jobs>
   <Job identifier="commanding_officer" initialcount="1" maxnumber="1" uicolor="0.65,0.73,0.84" idlebehavior="StayInHull" pricemultiplier="2.3" vitalitymodifier="-10" minkarma="95">
     <Jobicon>
-      <sprite texture="%ModDir%/UI/NewIcons.png" sourcerect="0,0,128,128" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/UI/NewIconsJobs.png" sourcerect="0,0,128,128" origin="0.5,0.5" />
     </Jobicon>
     <JobiconSmall>
       <sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,669,28,28" origin="0.5,0.5" />
@@ -81,7 +81,7 @@
   </Job>
   <Job identifier="executive_officer" maxnumber="1" idlebehavior="Patrol" uicolor="0.65,0.73,0.35" vitalitymodifier="0" minkarma="85">
     <Jobicon>
-      <sprite texture="%ModDir%/UI/NewIcons.png" sourcerect="128,0,128,128" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/UI/NewIconsJobs.png" sourcerect="128,0,128,128" origin="0.5,0.5" />
     </Jobicon>
     <JobiconSmall>
       <sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,640,28,28" origin="0.5,0.5" />
@@ -190,7 +190,7 @@
   <!--
   <Job identifier="yeoman" maxnumber="0"  uicolor="0.65,0.73,0.84" vitalitymodifier="-20">
     <Jobicon>
-      <sprite texture="Mods/JobsExtended/Jobs/NewIcons.png" sourcerect="128,0,128,128" origin="0.5,0.5" />
+      <sprite texture="Mods/JobsExtended/Jobs/NewIconsJobs.png" sourcerect="128,0,128,128" origin="0.5,0.5" />
     </Jobicon>
     <JobiconSmall>
       <sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,669,28,28" origin="0.5,0.5"/>
@@ -608,7 +608,7 @@
   </Job>
   <Job identifier="quartermaster" maxnumber="1" idlebehavior="StayInHull" uicolor="0.5,0.46,0.9" vitalitymodifier="-10" minkarma="55">
     <Jobicon>
-      <sprite texture="%ModDir%/UI/NewIcons.png" sourcerect="256,0,128,128" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/UI/NewIconsJobs.png" sourcerect="256,0,128,128" origin="0.5,0.5" />
     </Jobicon>
     <JobiconSmall>
       <sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="641,640,28,28" origin="0.5,0.5" />
@@ -727,7 +727,7 @@
   </Job>
   <Job identifier="head_of_security" idlebehavior="Patrol" maxnumber="1" uicolor="0.57,0.48,0.43" vitalitymodifier="0" minkarma="75">
     <Jobicon>
-      <sprite texture="%ModDir%/UI/NewIcons.png" sourcerect="896,0,128,128" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/UI/NewIconsJobs.png" sourcerect="896,0,128,128" origin="0.5,0.5" />
     </Jobicon>
     <JobiconSmall>
       <sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,640,28,28" origin="0.5,0.5" />
@@ -911,7 +911,7 @@
   </Job>
   <Job identifier="diver" idlebehavior="Active" uicolor="0.0,0.53,0.53" vitalitymodifier="0" minkarma="50">
     <Jobicon>
-      <sprite texture="%ModDir%/UI/NewIcons.png" sourcerect="0,128,128,128" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/UI/NewIconsJobs.png" sourcerect="0,128,128,128" origin="0.5,0.5" />
     </Jobicon>
     <JobiconSmall>
       <sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,640,28,28" origin="0.5,0.5" />
@@ -1224,7 +1224,7 @@
   </Job>
   <Job identifier="passenger" idlebehavior="StayInHull" vitalitymodifier="-20" minkarma="0">
     <Jobicon>
-      <sprite texture="%ModDir%/UI/NewIcons.png" sourcerect="768,0,128,128" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/UI/NewIconsJobs.png" sourcerect="768,0,128,128" origin="0.5,0.5" />
     </Jobicon>
     <JobiconSmall>
       <sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="641,669,28,28" origin="0.5,0.5" />
@@ -1294,7 +1294,7 @@
   </Job>
   <Job identifier="janitor" idlebehavior="Active" uicolor="1.0,0.0,1.0" vitalitymodifier="-10" minkarma="15">
     <Jobicon>
-      <sprite texture="%ModDir%/UI/NewIcons.png" sourcerect="640,0,128,128" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/UI/NewIconsJobs.png" sourcerect="640,0,128,128" origin="0.5,0.5" />
     </Jobicon>
     <JobiconSmall>
       <sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="641,640,28,28" origin="0.5,0.5" />
@@ -1372,7 +1372,7 @@
   </Job>
   <Job identifier="inmate" idlebehavior="Active" vitalitymodifier="-20" allowalways="true" uicolor="0,1.0,0" minkarma="-2">
     <Jobicon>
-      <sprite texture="%ModDir%/UI/NewIcons.png" sourcerect="128,128,128,128" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/UI/NewIconsJobs.png" sourcerect="128,128,128,128" origin="0.5,0.5" />
     </Jobicon>
     <JobiconSmall>
       <sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="641,669,28,28" origin="0.5,0.5" />

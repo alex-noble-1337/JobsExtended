@@ -123,20 +123,11 @@
         <TalentOption identifier="commendations"/>
       </TalentOptions>
       <TalentOptions>
-        <!-- <TalentOption identifier="yourreputation"/>
-        <ShowCaseTalent identifier="affiliation">
-          <TalentOption identifier="affiliation_coalition"/>
-          <TalentOption identifier="affiliation_separatists"/>
-          <TalentOption identifier="affiliation_huskcult"/>
-          <TalentOption identifier="affiliation_clowns"/>
-        </ShowCaseTalent> -->
-        <!-- These two needed to be changed -->
         <TalentOption identifier="effective_co"/> 
         <TalentOption identifier="positive_reinforcment"/>
       </TalentOptions>
       <TalentOptions>
-        <!-- <TalentOption identifier="campaigning"/> -->
-        <!-- <TalentOption identifier="networking"/> -->
+        <TalentOption identifier="red_alarm"/>
       </TalentOptions>
       <TalentOptions>
         <TalentOption identifier="figurehead"/>
