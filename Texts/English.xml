@@ -124,8 +124,8 @@
     <jobname.inmate3>Cultist</jobname.inmate3>
     <jobdescription.inmate3>Ascend, for the future of Europa ... and the downfall of your oppressors.</jobdescription.inmate3>
     <!-- Items -->
-    <entityname.promotionmedal> Promotion Medal  </entityname.promotionmedal>
-    <entitydescription.promotionmedal> Medal that makes target eligable for promotion (allows them to change class without xp loss) </entitydescription.promotionmedal>
+    <entityname.promotionmedal>Promotion Medal</entityname.promotionmedal>
+    <entitydescription.promotionmedal>Medal that makes target eligable for promotion (allows them to change class without xp loss, stab a person with it, then tell that person to hit new character button before the start of the next roud, change job pefrence, and at the start of the next roud that person will spawn as his desired job)</entitydescription.promotionmedal>
     <talentname.promotion> Promotion </talentname.promotion>
 
     <entityname.rotarygrenedelaucher>M32 Rotary Grenade Launcher</entityname.rotarygrenedelaucher>
