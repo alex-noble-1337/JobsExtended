@@ -193,6 +193,9 @@ Dive Coordinator
 - Fusion reactor yes
 - Alien items YES
 - fabrcator specifocly for electric components, + 1 when you fabricate one max 5 times when you complete a mission, better tools (electric screwdriver wrench, multitool), final tiers upgrade suits
+- show all sensor ranges, max ranges of turrets, and any other stuff that is showed in sub editor
+- show grid when placing an item
+- sensors, and high-tech expensive, IO to gather data inside and outside of submarine
 ### Quatermaster QUA:
 - In crysis should function excaly as mechanic but without repair bonuses
 - he should have all of production perks from vanilla
