@@ -36,6 +36,10 @@ Wiartarka
 Tear gas
 
 # LUA things (impossible in xml)
+- IMPORTANT seemles translation
+	- auto-creation of spawnpoints (waypoints but with job thingy)
+	- auto-change of (player) vanilla classes
+
 - Adaptive limits on classes? Except co, based on amout of people in the lobby
 - When you have quickdraw, creaft an item, holster that gives you gain an ability to press q and draw a waepon from your outfit
 - Split more boring skills to an separwte skill tree, that you pay with "skill" points (weapons, eng etc) like passive bonuses
