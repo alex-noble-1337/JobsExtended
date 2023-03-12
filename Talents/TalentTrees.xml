@@ -266,7 +266,7 @@
                 <!-- polarized lens, duel spec ops ability-->
                 <!-- Driving the Shuttle 
                      Remote Shuttle Controller
-                     shuttle buffs -->
+                     shuttle buffs - mabe as a cap -->
                 <TalentOption identifier="shuttlecaptain" />
                 <!-- Driving the sub 
                      Remote submarine Controller
@@ -274,15 +274,16 @@
                 <TalentOption identifier="proffesional" />
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="improvisedutilityharpoons" />
+                <!-- polarized lens - item that increases your vision inside watter but reduces outside
+                     when sonar operated by you is on and you scan a monster that monster gets debuff
+                     when you in water your crewmates near you get better visiblity -->
               </TalentOptions>
               <TalentOptions>
-                <TalentOption identifier="buccaneer" />
-                <TalentOption identifier="masterworkexperimentalharpoons" />
+                <!-- upgrades to shuttlecaptain, better controller stronger buffs that you can wear or same effect if you havent picked it -->
+                <!-- upgrades to proffesional, better controller you can wear stronger buffs or same effect if you havent picked it -->
               </TalentOptions>
               <TalentOptions>
-                <TalentOption identifier="baneofthecryingseals" />
-                <TalentOption identifier="deadmanwalking" />
+                <!-- arrow where is the closest enemy?, only if sonar detected it. upgrade to lens -->
               </TalentOptions>
         </SubTree>
         <!-- defensive buffs, coordinating dive teams -->
