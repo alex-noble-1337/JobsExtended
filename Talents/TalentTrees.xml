@@ -288,19 +288,22 @@
         <!-- defensive buffs, coordinating dive teams -->
         <SubTree identifier="DiveCoordinator" type="specialization" requires="security_primary" blocks="Illuminator,Specialist">
             <TalentOptions>
-                <TalentOption identifier="divinggoodies" />
-                <TalentOption identifier="onewithwater" />
+                <!-- Diver training:
+                        - max health depending on number of divers or
+                        - swim speed depending on number of divers or
+                        - staying alive when downed in water for longer depending on number of divers
+                        - gain long range position detection if in cave or in ruins or in wrecks (next room range) -->
               </TalentOptions>
               <TalentOptions>
-                <TalentOption identifier="strongcurrents" />
-                <TalentOption identifier="scavenger" />
+                <!-- position detection isnt limited to be only in cave or ruins -->
+                <!-- position detection gains ability to detect wrecks, ruins, if inside them detects chest and items with loot -->
               </TalentOptions>
               <TalentOptions>
-                <TalentOption identifier="bangstickschematics" />
+                <!-- better decoys -->
+                <!-- drug that makes you less visible to sonar -->
               </TalentOptions>
               <TalentOptions>
-                <TalentOption identifier="dualspecops" />
-                <TalentOption identifier="divinginstructor" />
+                <!-- diving suit with built in sonar scanner, and ability to slot in polirised glasses from other tree, flare laucher slot, weakpoint and long range position detection if wearing any suit with nav. this suit conumes much more oxygen outside of water -->
               </TalentOptions>
         </SubTree>
     </TalentTree>
@@ -325,20 +328,21 @@
               <TalentOption identifier="munitionsexpertise"/>
             </TalentOptions>
           </SubTree>
+          <!-- Middle tree -->
           <SubTree identifier="frogman" type="specialization" requires="security_primary" blocks="enforcer,gunner">
             <TalentOptions>
-              <TalentOption identifier="boardingparty"/>
+              <!-- training dummy, with training guns and blank ammo for use with it -->
+              <!-- paintball ammo as atraining -->
             </TalentOptions>
             <TalentOptions>
-              <TalentOption identifier="scavenger"/>
-              <TalentOption identifier="slayer"/>
+              <!-- book talent with skill gain depending on number of monsters killed by the person multipleyed by number of monsters killed by HOS, if skill maxed gain small amout of talent xp -->
             </TalentOptions>
             <TalentOptions>
-              <TalentOption identifier="easyturtle"/>
-              <TalentOption identifier="daringdolphin"/>
+              <!-- turrent defence buff -->
+              <!-- handheld guns buff -->
             </TalentOptions>
             <TalentOptions>
-              <TalentOption identifier="specops"/>
+              <!-- after killing abyss monster you gain a trinket that gives buff to a person you gave it. dissapears on death, does not stack -->
             </TalentOptions>
           </SubTree>
           <SubTree identifier="enforcer" type="specialization" requires="security_primary" blocks="frogman,gunner">
@@ -548,17 +552,27 @@
         </SubTree>
         <SubTree identifier="electrician" type="specialization" requires="engineer_primary" blocks="weaponsengineer,physicist">
             <TalentOptions>
-                <TalentOption identifier="gridmaintainer"/>
+                <!-- fabricator creation, and creation of submarine items through custom fabricator. 
+                     custom items you placed give you small buff to everything while in submarine (also electrical components) 
+                        - electrical gain ee repair speed and ee skill gain, if maxed gain part of skill point
+                        - mechanical gain mech repar speed and mech skill gain, if maxed gain part of skill point
+                        - guns increase your ranged fireing speed and aim (weapon skill)
+                        - static defence increase your mele speed and damage
+                        - items related to medical increase your drug intake effectivness and small buff to medics on the sumbarine -->
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="pyromaniac"/>
-                <TalentOption identifier="unlimitedpower"/>
+                <!-- discharge coils crafting -->
+                <!-- spikes (static defence) crafting -->
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="betterthannew"/>
+                <!-- your placed items gain small reduction to deteroration speed, dependent on amout of items placed
+                     unlock medium tier variants of placables -->
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="lightningwizard"/>
+                <!-- deus ex machina 
+                    ability to create turret emplacements that can turn into turrets with materials
+                    all items on submarine gain small part of your buff from 1st talent depndent on amout of items placed by you
+                    gain quest to unlock high tech tier of placables -->
             </TalentOptions>
         </SubTree>
         <SubTree identifier="physicist" type="specialization" requires="engineer_primary" blocks="weaponsengineer,electrician">
@@ -581,6 +595,12 @@
     <TalentTree jobidentifier="quartermaster">
         <SubTree identifier="mechanic_primary" nameidentifier="talenttree.primary" type="primary">
             <TalentOptions maxchosentalents="2">
+                <!-- if somebody gain reciepie from talent you gain that too, all crafted things are affected by other people crafting passives:
+                        like for example COB one
+                        or security one
+                        they also gain all the benefits and small part of skills -->
+            </TalentOptions>
+            <TalentOptions maxchosentalents="2">
                 <TalentOption identifier="salvagecrew"/>
                 <TalentOption identifier="machinemaniac"/>
                 <TalentOption identifier="safetyfirst"/>
@@ -596,7 +616,8 @@
                 <TalentOption identifier="retrofit"/>
             </TalentOptions>
         </SubTree>
-        <!-- Crafting better, faster, stronger + fabricator pda, cargo pouches diving suit upgrade -->
+        <!-- Crafting guns and ammo better, faster, stronger + fabricator pda, cargo pouches diving suit upgrade -->
+        <!-- gain reciepies from talent row from other classes, 1st tree, bonsuses to creating guns and ammo -->
         <SubTree identifier="weaponsengineer" type="specialization" requires="mechanic_primary" blocks="crafter,resuplayer">
             <TalentOptions>
                 <!-- TODO does not exist -->
@@ -628,6 +649,7 @@
         </SubTree>
         <SubTree identifier="crafter" type="specialization" requires="mechanic_primary" blocks="weaponsengineer,resuplayer">
             <!-- TODO name -->
+            <!-- gain reciepies from talent row from other classes, 1st tree. gain ability to create pockets and upgaded clothing for other classes -->
             <TalentOptions>
                 <TalentOption identifier="hullfixer"/>
                 <TalentOption identifier="tinkerer" />
@@ -653,6 +675,7 @@
                 <!-- Move to quatermaster -->
             </TalentOptions>
         </SubTree>
+        <!-- gain reciepies from talent row from other classes, bonuses to creating defensive equpment -->
         <SubTree identifier="resuplayer" type="specialization" requires="mechanic_primary" blocks="weaponsengineer,crafter">
             <!-- TODO name -->
             <TalentOptions>

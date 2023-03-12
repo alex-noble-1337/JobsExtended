@@ -30,6 +30,8 @@
         <sprite name="Captain's Uniform 3 Left Leg" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 3 Left Shoe" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 3 Right Shoe" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds, blunttrauma" damagemultiplier="0.9" />
       </Wearable>
     </Item>
     <Item name="Executive Officer Uniform" identifier="captainsuniform32" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
@@ -59,6 +61,8 @@
         <sprite name="Captain's Uniform 3 Left Leg" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 3 Left Shoe" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 3 Right Shoe" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds, blunttrauma" damagemultiplier="0.9" />
       </Wearable>
     </Item>
     <Item name="Executive Officer Uniform" identifier="captainsuniform33" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
@@ -88,6 +92,8 @@
         <sprite name="Captain's Uniform 3 Left Leg" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 3 Left Shoe" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 3 Right Shoe" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds, blunttrauma" damagemultiplier="0.9" />
       </Wearable>
     </Item>
   <!-- NAV -->
@@ -118,6 +124,8 @@
         <sprite name="Captain's Uniform 2 Left Leg" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 2 Left Shoe" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 2 Right Shoe" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds, blunttrauma" damagemultiplier="0.9" />
       </Wearable>
     </Item>
     <Item name="Navigator Uniform" identifier="captainsuniform22" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
@@ -147,6 +155,8 @@
         <sprite name="Captain's Uniform 2 Left Leg" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 2 Left Shoe" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 2 Right Shoe" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds, blunttrauma" damagemultiplier="0.9" />
       </Wearable>
     </Item>
     <Item name="Navigator Uniform" identifier="captainsuniform23" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
@@ -176,6 +186,8 @@
         <sprite name="Captain's Uniform 2 Left Leg" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 2 Left Shoe" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 2 Right Shoe" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds, blunttrauma" damagemultiplier="0.9" />
       </Wearable>
     </Item>
 
@@ -211,6 +223,8 @@
         <sprite name="VIP's Clothes 2 Left Leg" texture="Content/Items/Jobgear/Commoner/VIP2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="VIP's Clothes 2 Right Shoe" texture="Content/Items/Jobgear/Commoner/VIP2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="VIP's Clothes 2 Left Shoe" texture="Content/Items/Jobgear/Commoner/VIP2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
       </Wearable>
     </Item>
     <Item name="Defense Director Uniform" identifier="defensedirectoruniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
@@ -242,12 +256,9 @@
         <sprite name="Defense Director Left Leg" texture="Content/Items/Jobgear/Commoner/researcher.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Defense Director Left Shoe" texture="Content/Items/Jobgear/Commoner/researcher.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Defense Director Right Shoe" texture="Content/Items/Jobgear/Commoner/researcher.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
-        <SkillModifier skillidentifier="weapons" skillvalue="10" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
       </Wearable>
-      <ItemContainer capacity="2" hideitems="true">
-        <Containable items="smallitem" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,toolbox,mediumitem,bigitem" />
-      </ItemContainer>
     </Item>
     <Item name="Sergeant at Arms Uniform" identifier="sergeantatarmsuniform" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
       <Price baseprice="150" soldeverywhere="false">
@@ -278,12 +289,9 @@
         <sprite name="Commoner's Clothes 5 Left Leg" texture="Content/Items/Jobgear/Commoner/commoner_5.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Commoner's Clothes 5 Left Shoe" texture="Content/Items/Jobgear/Commoner/commoner_5.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Commoner's Clothes 5 Right Shoe" texture="Content/Items/Jobgear/Commoner/commoner_5.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
-        <SkillModifier skillidentifier="weapons" skillvalue="10" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
       </Wearable>
-      <ItemContainer capacity="2" hideitems="true">
-        <Containable items="smallitem" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,toolbox,mediumitem,bigitem" />
-      </ItemContainer>
     </Item>
   <!-- DIV -->
     <Item name="Miner outfit" identifier="minerclothes" nameidentifier="mineroutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
@@ -316,11 +324,9 @@
         <sprite name="Miner Left Leg" texture="Content/Items/Jobgear/Commoner/miner.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Miner Left Shoe" texture="Content/Items/Jobgear/Commoner/miner.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Miner Right Shoe" texture="Content/Items/Jobgear/Commoner/miner.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="burns,blunttrauma,lacerations,bitewounds" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
       </Wearable>
-      <ItemContainer capacity="3" hideitems="true">
-        <Containable items="smallitem" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,toolbox,mediumitem,bigitem" />
-      </ItemContainer>
     </Item>
     <Item name="Diving Harness" identifier="divingharness" category="Equipment" tags="smallitem,clothing" fireproof="true" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
@@ -351,11 +357,9 @@
         <sprite name="Diving Harness Left Leg" texture="Content/Items/Jobgear/Commoner/Commoner2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Diving Harness Right Shoe" texture="Content/Items/Jobgear/Commoner/Commoner2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Diving Harness Left Shoe" texture="Content/Items/Jobgear/Commoner/Commoner2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,bitewounds" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
       </Wearable>
-      <ItemContainer capacity="2" hideitems="true">
-        <Containable items="smallitem" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,toolbox,mediumitem,bigitem" />
-      </ItemContainer>
     </Item>
     <!-- TODO Missing 1 securityuniform1 -->
 
@@ -390,11 +394,13 @@
         <sprite name="Crew Chief Left Leg" texture="Content/Items/Jobgear/Commoner/crewchief.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Crew Chief Left Shoe" texture="Content/Items/Jobgear/Commoner/crewchief.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Crew Chief Right Shoe" texture="Content/Items/Jobgear/Commoner/crewchief.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictiontypes="radiationsickness" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictiontypes="radiationsickness" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.9125" deflectprojectiles="false" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.95" />
       </Wearable>
       <ItemContainer capacity="3" hideitems="true">
-        <Containable items="smallitem" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,toolbox,mediumitem,bigitem" />
+        <Containable items="simpletool,tool,wire,logic,signal" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,toolbox,mediumitem,bigitem" />
       </ItemContainer>
     </Item>
     <Item name="" identifier="crewchiefclothes2" nameidentifier="crewchiefoutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
@@ -427,11 +433,13 @@
         <sprite name="Crew Chief Left Leg" texture="Content/Items/Jobgear/Commoner/crewchief.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Crew Chief Left Shoe" texture="Content/Items/Jobgear/Commoner/crewchief.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Crew Chief Right Shoe" texture="Content/Items/Jobgear/Commoner/crewchief.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictiontypes="radiationsickness" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictiontypes="radiationsickness" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.9125" deflectprojectiles="false" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.95" />
       </Wearable>
       <ItemContainer capacity="3" hideitems="true">
-        <Containable items="smallitem" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,toolbox,mediumitem,bigitem" />
+        <Containable items="simpletool,tool,wire,logic,signal" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,toolbox,mediumitem,bigitem" />
       </ItemContainer>
     </Item>
     <Item name="" identifier="crewchiefclothes3" nameidentifier="crewchiefoutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
@@ -464,11 +472,13 @@
         <sprite name="Crew Chief Left Leg" texture="Content/Items/Jobgear/Commoner/crewchief.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Crew Chief Left Shoe" texture="Content/Items/Jobgear/Commoner/crewchief.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Crew Chief Right Shoe" texture="Content/Items/Jobgear/Commoner/crewchief.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictiontypes="radiationsickness" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictiontypes="radiationsickness" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.9125" deflectprojectiles="false" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.95" />
       </Wearable>
       <ItemContainer capacity="3" hideitems="true">
-        <Containable items="smallitem" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,toolbox,mediumitem,bigitem" />
+        <Containable items="simpletool,tool,wire,logic,signal" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,toolbox,mediumitem,bigitem" />
       </ItemContainer>
     </Item>
   <!-- QUA -->
@@ -504,7 +514,7 @@
         <sprite name="Quartermaster Right Shoe" texture="Content/Items/Jobgear/Commoner/quartermaster.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       </Wearable>
       <ItemContainer capacity="6" hideitems="true">
-        <Containable items="smallitem" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,mediumitem,bigitem" />
+        <Containable items="scrap,ore,carbon,iron,tin,lead,phosphorus,copper,zinc,sodium,silicon,calcium,aluminium,uranium,potassium,titanium,magnesium,lithium,chlorine,thorium,steel,titaniumaluminiumalloy,plastic,ballisticfiber,organicfiber,rubber,flashpowder,scrap,incendium,fulgurium,physicorium,dementonite,Material,plant" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,mediumitem,bigitem" />
       </ItemContainer>
     </Item>
     <Item name="Quartermaster Uniform" identifier="quartermasterclothes2" nameidentifier="quartermasteroutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
@@ -539,7 +549,7 @@
         <sprite name="Quartermaster Right Shoe" texture="Content/Items/Jobgear/Commoner/quartermaster.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       </Wearable>
       <ItemContainer capacity="6" hideitems="true">
-        <Containable items="smallitem" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,mediumitem,bigitem" />
+        <Containable items="scrap,ore,carbon,iron,tin,lead,phosphorus,copper,zinc,sodium,silicon,calcium,aluminium,uranium,potassium,titanium,magnesium,lithium,chlorine,thorium,steel,titaniumaluminiumalloy,plastic,ballisticfiber,organicfiber,rubber,flashpowder,scrap,incendium,fulgurium,physicorium,dementonite,Material,plant" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,mediumitem,bigitem" />
       </ItemContainer>
     </Item>
     <Item name="Chemist Uniform" identifier="researcherclothes" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
@@ -573,8 +583,8 @@
         <sprite name="Quartermaster Left Shoe" texture="Content/Items/Jobgear/Commoner/researcher.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Quartermaster Right Shoe" texture="Content/Items/Jobgear/Commoner/researcher.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       </Wearable>
-      <ItemContainer capacity="4" hideitems="true">
-        <Containable items="smallitem" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,mediumitem,bigitem" />
+      <ItemContainer capacity="6" hideitems="true">
+        <Containable items="scrap,ore,carbon,iron,tin,lead,phosphorus,copper,zinc,sodium,silicon,calcium,aluminium,uranium,potassium,titanium,magnesium,lithium,chlorine,thorium,steel,titaniumaluminiumalloy,plastic,ballisticfiber,organicfiber,rubber,flashpowder,scrap,incendium,fulgurium,physicorium,dementonite,Material,plant" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,mediumitem,bigitem" />
       </ItemContainer>
     </Item>
 
@@ -609,6 +619,7 @@
         <sprite name="MedicalOfficer's Uniform Right Shoe" texture="Content/Items/Jobgear/Commoner/MedicalOfficer.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="MedicalOfficer's Uniform Left Shoe" texture="Content/Items/Jobgear/Commoner/MedicalOfficer.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <SkillModifier skillidentifier="medical" skillvalue="10" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds" damagemultiplier="0.95" />
       </Wearable>
       <ItemContainer capacity="4" hideitems="true">
         <Containable items="smallalienartifact,chem,medical" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,toolbox,mediumitem,bigitem" />
@@ -645,6 +656,7 @@
         <sprite name="MedicalOfficer's Uniform Right Shoe" texture="Content/Items/Jobgear/Commoner/MedicalOfficer.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="MedicalOfficer's Uniform Left Shoe" texture="Content/Items/Jobgear/Commoner/MedicalOfficer.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <SkillModifier skillidentifier="medical" skillvalue="10" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds" damagemultiplier="0.95" />
       </Wearable>
       <ItemContainer capacity="4" hideitems="true">
         <Containable items="smallalienartifact,chem,medical" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,toolbox,mediumitem,bigitem" />
@@ -681,6 +693,7 @@
         <sprite name="MedicalOfficer's Uniform Right Shoe" texture="Content/Items/Jobgear/Commoner/MedicalOfficer.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="MedicalOfficer's Uniform Left Shoe" texture="Content/Items/Jobgear/Commoner/MedicalOfficer.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <SkillModifier skillidentifier="medical" skillvalue="10" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds" damagemultiplier="0.95" />
       </Wearable>
       <ItemContainer capacity="4" hideitems="true">
         <Containable items="smallalienartifact,chem,medical" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,toolbox,mediumitem,bigitem" />
@@ -718,6 +731,12 @@
         <sprite name="Commoner's Clothes 1 Left Leg" texture="Content/Items/Jobgear/Commoner/Commoner1.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Commoner's Clothes 1 Right Shoe" texture="Content/Items/Jobgear/Commoner/Commoner1.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Commoner's Clothes 1 Left Shoe" texture="Content/Items/Jobgear/Commoner/Commoner1.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <SkillModifier skillidentifier="electrical" skillvalue="5" />
+        <SkillModifier skillidentifier="helm" skillvalue="5" />
+        <SkillModifier skillidentifier="mechanical" skillvalue="5" />
+        <SkillModifier skillidentifier="medical" skillvalue="5" />
+        <SkillModifier skillidentifier="weapons" skillvalue="5" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds" damagemultiplier="0.95" />
       </Wearable>
       <ItemContainer capacity="2" hideitems="true">
         <Containable items="smallitem" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,toolbox,mediumitem,bigitem" />
@@ -752,6 +771,12 @@
         <sprite name="MedicalOfficer's Uniform Left Leg" texture="Content/Items/Jobgear/Commoner/MedicalOfficer.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="MedicalOfficer's Uniform Right Shoe" texture="Content/Items/Jobgear/Commoner/MedicalOfficer.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="MedicalOfficer's Uniform Left Shoe" texture="Content/Items/Jobgear/Commoner/MedicalOfficer.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <SkillModifier skillidentifier="electrical" skillvalue="5" />
+        <SkillModifier skillidentifier="helm" skillvalue="5" />
+        <SkillModifier skillidentifier="mechanical" skillvalue="5" />
+        <SkillModifier skillidentifier="medical" skillvalue="5" />
+        <SkillModifier skillidentifier="weapons" skillvalue="5" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds" damagemultiplier="0.95" />
       </Wearable>
       <ItemContainer capacity="4" hideitems="true">
         <Containable items="smallalienartifact,chem,medical" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,toolbox,mediumitem,bigitem" />
@@ -789,6 +814,12 @@
         <sprite name="Commoner's Clothes 3 Left Leg" texture="Content/Items/Jobgear/Commoner/Commoner3.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Commoner's Clothes 3 Right Shoe" texture="Content/Items/Jobgear/Commoner/Commoner3.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Commoner's Clothes 3 Left Shoe" texture="Content/Items/Jobgear/Commoner/Commoner3.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <SkillModifier skillidentifier="electrical" skillvalue="5" />
+        <SkillModifier skillidentifier="helm" skillvalue="5" />
+        <SkillModifier skillidentifier="mechanical" skillvalue="5" />
+        <SkillModifier skillidentifier="medical" skillvalue="5" />
+        <SkillModifier skillidentifier="weapons" skillvalue="5" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds" damagemultiplier="0.95" />
       </Wearable>
       <ItemContainer capacity="2" hideitems="true">
         <Containable items="smallitem" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,toolbox,mediumitem,bigitem" />
