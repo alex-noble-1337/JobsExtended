@@ -263,7 +263,6 @@
         <!-- self buffs and utility items, driving the submarine -->
         <SubTree identifier="Specialist" type="specialization" requires="captain_primary" blocks="Illuminator,DiveCoordinator">
             <TalentOptions>
-                <!-- polarized lens, duel spec ops ability-->
                 <!-- Driving the Shuttle 
                      Remote Shuttle Controller
                      shuttle buffs - mabe as a cap -->
@@ -320,7 +319,6 @@
     </TalentTree>
 
     <!--Head of security MORE AT TEACHING SKILL AND COORIDINATING SECURITY DUDES, weaker than normal security but with that upward, Gunnery, Buffs to shooting inside to submarine, debuffs when not inside-->
-    <!-- TODO -->
     <TalentTree jobidentifier="head_of_security">
         <SubTree identifier="security_primary" nameidentifier="talenttree.primary" type="primary">
             <TalentOptions requiredtalents="2" maxchosentalents="6">
@@ -343,17 +341,23 @@
           <SubTree identifier="frogman" type="specialization" requires="security_primary" blocks="enforcer,gunner">
             <TalentOptions>
               <!-- training dummy, with training guns and blank ammo for use with it -->
+              <TalentOption identifier="trainingdummy"/>
               <!-- paintball ammo as a training -->
+              <TalentOption identifier="paintball"/>
             </TalentOptions>
             <TalentOptions>
               <!-- book talent with skill gain depending on number of monsters killed by the person multipleyed by number of monsters killed by HOS, if skill maxed gain small amout of talent xp -->
+              <TalentOption identifier="themoreyoukill"/>
             </TalentOptions>
             <TalentOptions>
               <!-- turrent defence buff -->
+              <TalentOption identifier="turrentdefencebuff"/>
               <!-- handheld guns buff -->
+              <TalentOption identifier="handheldgunsbuff"/>
             </TalentOptions>
             <TalentOptions>
               <!-- after killing abyss monster you gain a trinket that gives buff to a person you gave it. dissapears on death, does not stack -->
+              <TalentOption identifier="abyssmonsterkillier"/>
             </TalentOptions>
           </SubTree>
           <SubTree identifier="enforcer" type="specialization" requires="security_primary" blocks="frogman,gunner">
@@ -610,12 +614,10 @@
     <!--Quatermaster Support, make it have simmilar 2 tlaent trees as mechanic -->
     <TalentTree jobidentifier="quartermaster">
         <SubTree identifier="mechanic_primary" nameidentifier="talenttree.primary" type="primary">
-            <TalentOptions maxchosentalents="2">
-                <!-- if somebody gain reciepie from talent you gain that too, all crafted things are affected by other people crafting passives:
+                <!-- TODO if somebody gain reciepie from talent you gain that too, all crafted things are affected by other people crafting passives:
                         like for example COB one
                         or security one
                         they also gain all the benefits and small part of skills -->
-            </TalentOptions>
             <TalentOptions maxchosentalents="2">
                 <TalentOption identifier="salvagecrew"/>
                 <TalentOption identifier="machinemaniac"/>
@@ -829,6 +831,7 @@
                    <TalentOption identifier="DivingSonar" />
             </TalentOptions>
             <TalentOptions>
+                <TalentOption identifier="DivingSonar" />
             </TalentOptions>
             <TalentOptions>
               <!-- turrent defence buff -->
