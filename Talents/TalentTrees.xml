@@ -263,7 +263,6 @@
         <!-- self buffs and utility items, driving the submarine -->
         <SubTree identifier="Specialist" type="specialization" requires="captain_primary" blocks="Illuminator,DiveCoordinator">
             <TalentOptions>
-                <!-- polarized lens, duel spec ops ability-->
                 <!-- Driving the Shuttle 
                      Remote Shuttle Controller
                      shuttle buffs - mabe as a cap -->
@@ -274,17 +273,21 @@
                 <TalentOption identifier="proffesional" />
             </TalentOptions>
             <TalentOptions>
+                <TalentOption identifier="shuttlecaptain" />
                 <!-- polarized lens - item that increases your vision inside watter but reduces outside
                      when sonar operated by you is on and you scan a monster that monster gets debuff
                      when you in water your crewmates near you get better visiblity -->
-              </TalentOptions>
-              <TalentOptions>
+            </TalentOptions>
+            <TalentOptions>
                 <!-- upgrades to shuttlecaptain, better controller stronger buffs that you can wear or same effect if you havent picked it -->
+                <TalentOption identifier="shuttlecaptain" />
                 <!-- upgrades to proffesional, better controller you can wear stronger buffs or same effect if you havent picked it -->
-              </TalentOptions>
-              <TalentOptions>
+                <TalentOption identifier="shuttlecaptain" />
+            </TalentOptions>
+            <TalentOptions>
                 <!-- arrow where is the closest enemy?, only if sonar detected it. upgrade to lens -->
-              </TalentOptions>
+                <TalentOption identifier="shuttlecaptain" />
+            </TalentOptions>
         </SubTree>
         <!-- defensive buffs, coordinating dive teams -->
         <SubTree identifier="DiveCoordinator" type="specialization" requires="security_primary" blocks="Illuminator,Specialist">
@@ -294,23 +297,28 @@
                         - swim speed depending on number of divers or
                         - staying alive when downed in water for longer depending on number of divers
                         - gain long range position detection if in cave or in ruins or in wrecks (next room range) -->
+                <TalentOption identifier="DiverTraining" />
               </TalentOptions>
               <TalentOptions>
                 <!-- position detection isnt limited to be only in cave or ruins -->
+                <TalentOption identifier="PositionDetection" />
                 <!-- position detection gains ability to detect wrecks, ruins, if inside them detects chest and items with loot -->
+                <TalentOption identifier="GoodiesDetection" />
               </TalentOptions>
               <TalentOptions>
                 <!-- better decoys -->
+                <TalentOption identifier="BetterDecoys" />
                 <!-- drug that makes you less visible to sonar -->
+                <TalentOption identifier="DrugSonar" />
               </TalentOptions>
               <TalentOptions>
                 <!-- diving suit with built in sonar scanner, and ability to slot in polirised glasses from other tree, flare laucher slot, weakpoint and long range position detection if wearing any suit with nav. this suit conumes much more oxygen outside of water -->
+                <TalentOption identifier="DivingSonar" />
               </TalentOptions>
         </SubTree>
     </TalentTree>
 
     <!--Head of security MORE AT TEACHING SKILL AND COORIDINATING SECURITY DUDES, weaker than normal security but with that upward, Gunnery, Buffs to shooting inside to submarine, debuffs when not inside-->
-    <!-- TODO -->
     <TalentTree jobidentifier="head_of_security">
         <SubTree identifier="security_primary" nameidentifier="talenttree.primary" type="primary">
             <TalentOptions requiredtalents="2" maxchosentalents="6">
@@ -333,17 +341,23 @@
           <SubTree identifier="frogman" type="specialization" requires="security_primary" blocks="enforcer,gunner">
             <TalentOptions>
               <!-- training dummy, with training guns and blank ammo for use with it -->
+              <TalentOption identifier="trainingdummy"/>
               <!-- paintball ammo as a training -->
+              <TalentOption identifier="paintball"/>
             </TalentOptions>
             <TalentOptions>
               <!-- book talent with skill gain depending on number of monsters killed by the person multipleyed by number of monsters killed by HOS, if skill maxed gain small amout of talent xp -->
+              <TalentOption identifier="themoreyoukill"/>
             </TalentOptions>
             <TalentOptions>
               <!-- turrent defence buff -->
+              <TalentOption identifier="turrentdefencebuff"/>
               <!-- handheld guns buff -->
+              <TalentOption identifier="handheldgunsbuff"/>
             </TalentOptions>
             <TalentOptions>
               <!-- after killing abyss monster you gain a trinket that gives buff to a person you gave it. dissapears on death, does not stack -->
+              <TalentOption identifier="abyssmonsterkillier"/>
             </TalentOptions>
           </SubTree>
           <SubTree identifier="enforcer" type="specialization" requires="security_primary" blocks="frogman,gunner">
@@ -560,20 +574,25 @@
                         - guns increase your ranged fireing speed and aim (weapon skill)
                         - static defence increase your mele speed and damage
                         - items related to medical increase your drug intake effectivness and small buff to medics on the sumbarine -->
+                        <TalentOption identifier="DivingSonar" />
             </TalentOptions>
             <TalentOptions>
                 <!-- discharge coils crafting -->
+                <TalentOption identifier="DivingSonar" />
                 <!-- spikes (static defence) crafting -->
+                <TalentOption identifier="DivingSonar" />
             </TalentOptions>
             <TalentOptions>
                 <!-- your placed items gain small reduction to deteroration speed, dependent on amout of items placed
                      unlock medium tier variants of placables -->
+                     <TalentOption identifier="DivingSonar" />
             </TalentOptions>
             <TalentOptions>
                 <!-- deus ex machina 
                     ability to create turret emplacements that can turn into turrets with materials
                     all items on submarine gain small part of your buff from 1st talent depndent on amout of items placed by you
                     gain quest to unlock high tech tier of placables -->
+                    <TalentOption identifier="DivingSonar" />
             </TalentOptions>
         </SubTree>
         <SubTree identifier="physicist" type="specialization" requires="engineer_primary" blocks="weaponsengineer,electrician">
@@ -595,12 +614,10 @@
     <!--Quatermaster Support, make it have simmilar 2 tlaent trees as mechanic -->
     <TalentTree jobidentifier="quartermaster">
         <SubTree identifier="mechanic_primary" nameidentifier="talenttree.primary" type="primary">
-            <TalentOptions maxchosentalents="2">
-                <!-- if somebody gain reciepie from talent you gain that too, all crafted things are affected by other people crafting passives:
+                <!-- TODO if somebody gain reciepie from talent you gain that too, all crafted things are affected by other people crafting passives:
                         like for example COB one
                         or security one
                         they also gain all the benefits and small part of skills -->
-            </TalentOptions>
             <TalentOptions maxchosentalents="2">
                 <TalentOption identifier="salvagecrew"/>
                 <TalentOption identifier="machinemaniac"/>
@@ -811,16 +828,20 @@
             <TalentOptions>
               <!-- ability to create first aid kits that can slow down deteriorating status of a patients
                    every time you save a person you gain a medical magazine, that increases medical gain speed and assists in gaining medical skill  depending on number of people saved by the CMO, if skill maxed gain small amout of talent xp -->
+                   <TalentOption identifier="DivingSonar" />
             </TalentOptions>
             <TalentOptions>
-              
+                <TalentOption identifier="DivingSonar" />
             </TalentOptions>
             <TalentOptions>
               <!-- turrent defence buff -->
+              <TalentOption identifier="DivingSonar" />
               <!-- handheld guns buff -->
+              <TalentOption identifier="DivingSonar" />
             </TalentOptions>
             <TalentOptions>
               <!-- after killing abyss monster you gain a trinket that gives buff to a person you gave it. dissapears on death, does not stack -->
+              <TalentOption identifier="DivingSonar" />
             </TalentOptions>
           </SubTree>
         <SubTree identifier="scientist" type="specialization" requires="medical_primary" blocks="xenologist,medic">

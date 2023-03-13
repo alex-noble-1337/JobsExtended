@@ -1,220 +1,219 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Talents>
 
-  <Talent identifier="luckystrike">
-    <Description tag="talentdescription.luckystrike">
-    </Description>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,0" sheetelementsize="128,128"/>
-    <!-- Quickdraw on pistols, but upgraded after each second you gain +25% pistol damage up to 8s -->
-    <AbilityGroupInterval interval="1">
-        <Abilities>
-            <CharacterAbilityApplyStatusEffects>
-                <StatusEffects>
-                    <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true" disabledeltatime="true">
-                        <Affliction identifier="quickdrawing" amount="1.0"/>
-                    </StatusEffect>
-                </StatusEffects>
-            </CharacterAbilityApplyStatusEffects>
-        </Abilities>
-    </AbilityGroupInterval>
-    <AbilityGroupEffect abilityeffecttype="OnAttack">
-        <Conditions>
-            <AbilityConditionHasAffliction afflictionidentifier="quickdrawing" minimumpercentage="1.0" maximumpercentage="12.5" />
-            <AbilityConditionAttackData tags="pistolammoitem"/>
-        </Conditions>
-        <Abilities>
-            <CharacterAbilityModifyAttackData addeddamagemultiplier="0.25"/>
-            <CharacterAbilityApplyStatusEffects>
-                <StatusEffects>
-                    <StatusEffect type="OnAbility" target="This">
-                        <ReduceAffliction identifier="quickdrawing" strength="8.0"/>
-                    </StatusEffect>
-                </StatusEffects>
-            </CharacterAbilityApplyStatusEffects>
-        </Abilities>
-    </AbilityGroupEffect>
-    <AbilityGroupEffect abilityeffecttype="OnAttack">
-        <Conditions>
-            <AbilityConditionHasAffliction afflictionidentifier="quickdrawing" minimumpercentage="12.5" maximumpercentage="25.0" />
-            <AbilityConditionAttackData tags="pistolammoitem"/>
-        </Conditions>
-        <Abilities>
-            <CharacterAbilityModifyAttackData addeddamagemultiplier="0.5"/>
-            <CharacterAbilityApplyStatusEffects>
-                <StatusEffects>
-                    <StatusEffect type="OnAbility" target="This">
-                        <ReduceAffliction identifier="quickdrawing" strength="8.0"/>
-                    </StatusEffect>
-                </StatusEffects>
-            </CharacterAbilityApplyStatusEffects>
-        </Abilities>
-    </AbilityGroupEffect>
-    <AbilityGroupEffect abilityeffecttype="OnAttack">
-        <Conditions>
-            <AbilityConditionHasAffliction afflictionidentifier="quickdrawing" minimumpercentage="25.0" maximumpercentage="37.5" />
-            <AbilityConditionAttackData tags="pistolammoitem"/>
-        </Conditions>
-        <Abilities>
-            <CharacterAbilityModifyAttackData addeddamagemultiplier="0.75"/>
-            <CharacterAbilityApplyStatusEffects>
-                <StatusEffects>
-                    <StatusEffect type="OnAbility" target="This">
-                        <ReduceAffliction identifier="quickdrawing" strength="8.0"/>
-                    </StatusEffect>
-                </StatusEffects>
-            </CharacterAbilityApplyStatusEffects>
-        </Abilities>
-    </AbilityGroupEffect>
-    <AbilityGroupEffect abilityeffecttype="OnAttack">
-        <Conditions>
-            <AbilityConditionHasAffliction afflictionidentifier="quickdrawing" minimumpercentage="37.5" maximumpercentage="50.0" />
-            <AbilityConditionAttackData tags="pistolammoitem"/>
-        </Conditions>
-        <Abilities>
-            <CharacterAbilityModifyAttackData addeddamagemultiplier="1.0"/>
-            <CharacterAbilityApplyStatusEffects>
-                <StatusEffects>
-                    <StatusEffect type="OnAbility" target="This">
-                        <ReduceAffliction identifier="quickdrawing" strength="8.0"/>
-                    </StatusEffect>
-                </StatusEffects>
-            </CharacterAbilityApplyStatusEffects>
-        </Abilities>
-    </AbilityGroupEffect>
-    <AbilityGroupEffect abilityeffecttype="OnAttack">
-        <Conditions>
-            <AbilityConditionHasAffliction afflictionidentifier="quickdrawing" minimumpercentage="50.0" maximumpercentage="62.5" />
-            <AbilityConditionAttackData tags="pistolammoitem"/>
-        </Conditions>
-        <Abilities>
-            <CharacterAbilityModifyAttackData addeddamagemultiplier="1.25"/>
-            <CharacterAbilityApplyStatusEffects>
-                <StatusEffects>
-                    <StatusEffect type="OnAbility" target="This">
-                        <ReduceAffliction identifier="quickdrawing" strength="8.0"/>
-                    </StatusEffect>
-                </StatusEffects>
-            </CharacterAbilityApplyStatusEffects>
-        </Abilities>
-    </AbilityGroupEffect>
-    <AbilityGroupEffect abilityeffecttype="OnAttack">
-        <Conditions>
-            <AbilityConditionHasAffliction afflictionidentifier="quickdrawing" minimumpercentage="62.5" maximumpercentage="75.0" />
-            <AbilityConditionAttackData tags="pistolammoitem"/>
-        </Conditions>
-        <Abilities>
-            <CharacterAbilityModifyAttackData addeddamagemultiplier="1.5"/>
-            <CharacterAbilityApplyStatusEffects>
-                <StatusEffects>
-                    <StatusEffect type="OnAbility" target="This">
-                        <ReduceAffliction identifier="quickdrawing" strength="8.0"/>
-                    </StatusEffect>
-                </StatusEffects>
-            </CharacterAbilityApplyStatusEffects>
-        </Abilities>
-    </AbilityGroupEffect>
-    <AbilityGroupEffect abilityeffecttype="OnAttack">
-        <Conditions>
-            <AbilityConditionHasAffliction afflictionidentifier="quickdrawing" minimumpercentage="75.0" maximumpercentage="87.5"/>
-            <AbilityConditionAttackData tags="pistolammoitem"/>
-        </Conditions>
-        <Abilities>
-            <CharacterAbilityModifyAttackData addeddamagemultiplier="1.75"/>
-            <CharacterAbilityApplyStatusEffects>
-                <StatusEffects>
-                    <StatusEffect type="OnAbility" target="This">
-                        <ReduceAffliction identifier="quickdrawing" strength="8.0"/>
-                    </StatusEffect>
-                </StatusEffects>
-            </CharacterAbilityApplyStatusEffects>
-        </Abilities>
-    </AbilityGroupEffect>
-    <AbilityGroupEffect abilityeffecttype="OnAttack">
-        <Conditions>
-            <AbilityConditionHasAffliction afflictionidentifier="quickdrawing" minimumpercentage="87.5"/>
-            <AbilityConditionAttackData tags="pistolammoitem"/>
-        </Conditions>
-        <Abilities>
-            <CharacterAbilityModifyAttackData addeddamagemultiplier="2.0"/>
-            <CharacterAbilityApplyStatusEffects>
-                <StatusEffects>
-                    <StatusEffect type="OnAbility" target="This">
-                        <ReduceAffliction identifier="quickdrawing" strength="8.0"/>
-                    </StatusEffect>
-                </StatusEffects>
-            </CharacterAbilityApplyStatusEffects>
-        </Abilities>
-    </AbilityGroupEffect>
-    <!--  Gain helm when weapons, gain weapons when helm  -->
-    <AbilityGroupEffect abilityeffecttype="OnGainSkillPoint">
-        <Conditions>
-            <AbilityConditionSkill skillidentifier="weapons" />
-            <AbilityConditionHasSkill skillidentifier="helm" minvalue="100" />
-        </Conditions>
-        <Abilities>
-            <CharacterAbilityGainSimultaneousSkill skillidentifier="weapons" />
-        </Abilities>
-    </AbilityGroupEffect>
-    <AbilityGroupEffect abilityeffecttype="OnGainSkillPoint">
-        <Conditions>
-            <AbilityConditionSkill skillidentifier="helm" />
-        </Conditions>
-        <Abilities>
-            <CharacterAbilityGainSimultaneousSkill skillidentifier="weapons" />
-        </Abilities>
-    </AbilityGroupEffect>
-    <!-- Extra mission count -->
-    <AbilityGroupEffect abilityeffecttype="None">
-        <Abilities>
-            <CharacterAbilityGiveStat stattype="ExtraMissionCount" value="1" />
-        </Abilities>
-    </AbilityGroupEffect>
-    <!-- Targetting matrix -->
-    <AbilityGroupInterval interval="1.0">
-        <Conditions>
-            <AbilityConditionHasTalent identifier="targetingmatrixfocus_handheld" truthywhen="HasTalent"/>
-            <AbilityConditionHasTalent identifier="targetingmatrixfocus_shipmounted" truthywhen="HasTalent"/>
-        </Conditions>
-        <FallbackAbilities>
-            <CharacterAbilityApplyStatusEffectsToAllies maxdistance="1000" allowself="true">
-                <StatusEffects>
-                    <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="false" delay="1">
-                        <Affliction identifier="targettingmatrix" amount="1.0" />
-                    </StatusEffect>
-                </StatusEffects>
-            </CharacterAbilityApplyStatusEffectsToAllies>
-        </FallbackAbilities>
-    </AbilityGroupInterval>
-    <AbilityGroupInterval interval="1.0">
-        <Conditions>
-            <AbilityConditionHasTalent identifier="targetingmatrixfocus_handheld" truthywhen="HasTalent"/>
-        </Conditions>
-        <Abilities>
-            <CharacterAbilityApplyStatusEffectsToAllies maxdistance="1000" allowself="true">
-                <StatusEffects>
-                    <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="false" delay="1">
-                        <Affliction identifier="targettingmatrix-handheld" amount="1.0" />
-                    </StatusEffect>
-                </StatusEffects>
-            </CharacterAbilityApplyStatusEffectsToAllies>
-        </Abilities>
-    </AbilityGroupInterval>
-    <AbilityGroupInterval interval="1.0">
-        <Conditions>
-            <AbilityConditionHasTalent identifier="targetingmatrixfocus_shipmounted" truthywhen="HasTalent"/>
-        </Conditions>
-        <Abilities>
-            <CharacterAbilityApplyStatusEffectsToAllies maxdistance="1000" allowself="true">
-                <StatusEffects>
-                    <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="false" delay="1">
-                        <Affliction identifier="targettingmatrix-shipmounted" amount="1.0" />
-                    </StatusEffect>
-                </StatusEffects>
-            </CharacterAbilityApplyStatusEffectsToAllies>
-        </Abilities>
-    </AbilityGroupInterval>
-  </Talent>
-
+    <Talent identifier="luckystrike">
+        <Description tag="talentdescription.luckystrike">
+        </Description>
+        <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,0" sheetelementsize="128,128"/>
+        <!-- Quickdraw on pistols, but upgraded after each second you gain +25% pistol damage up to 8s -->
+        <AbilityGroupInterval interval="1">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true" disabledeltatime="true">
+                            <Affliction identifier="quickdrawing" amount="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="quickdrawing" minimumpercentage="1.0" maximumpercentage="12.5" />
+                <AbilityConditionAttackData tags="pistolammoitem"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.25"/>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="This">
+                            <ReduceAffliction identifier="quickdrawing" strength="8.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="quickdrawing" minimumpercentage="12.5" maximumpercentage="25.0" />
+                <AbilityConditionAttackData tags="pistolammoitem"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.5"/>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="This">
+                            <ReduceAffliction identifier="quickdrawing" strength="8.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="quickdrawing" minimumpercentage="25.0" maximumpercentage="37.5" />
+                <AbilityConditionAttackData tags="pistolammoitem"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.75"/>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="This">
+                            <ReduceAffliction identifier="quickdrawing" strength="8.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="quickdrawing" minimumpercentage="37.5" maximumpercentage="50.0" />
+                <AbilityConditionAttackData tags="pistolammoitem"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="1.0"/>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="This">
+                            <ReduceAffliction identifier="quickdrawing" strength="8.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="quickdrawing" minimumpercentage="50.0" maximumpercentage="62.5" />
+                <AbilityConditionAttackData tags="pistolammoitem"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="1.25"/>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="This">
+                            <ReduceAffliction identifier="quickdrawing" strength="8.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="quickdrawing" minimumpercentage="62.5" maximumpercentage="75.0" />
+                <AbilityConditionAttackData tags="pistolammoitem"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="1.5"/>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="This">
+                            <ReduceAffliction identifier="quickdrawing" strength="8.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="quickdrawing" minimumpercentage="75.0" maximumpercentage="87.5"/>
+                <AbilityConditionAttackData tags="pistolammoitem"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="1.75"/>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="This">
+                            <ReduceAffliction identifier="quickdrawing" strength="8.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="quickdrawing" minimumpercentage="87.5"/>
+                <AbilityConditionAttackData tags="pistolammoitem"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="2.0"/>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="This">
+                            <ReduceAffliction identifier="quickdrawing" strength="8.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupEffect>
+        <!--  Gain helm when weapons, gain weapons when helm  -->
+        <AbilityGroupEffect abilityeffecttype="OnGainSkillPoint">
+            <Conditions>
+                <AbilityConditionSkill skillidentifier="weapons" />
+                <AbilityConditionHasSkill skillidentifier="helm" minvalue="100" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGainSimultaneousSkill skillidentifier="weapons" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnGainSkillPoint">
+            <Conditions>
+                <AbilityConditionSkill skillidentifier="helm" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGainSimultaneousSkill skillidentifier="weapons" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <!-- Extra mission count -->
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Abilities>
+                <CharacterAbilityGiveStat stattype="ExtraMissionCount" value="1" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <!-- Targetting matrix -->
+        <AbilityGroupInterval interval="1.0">
+            <Conditions>
+                <AbilityConditionHasTalent identifier="targetingmatrixfocus_handheld" truthywhen="HasTalent"/>
+                <AbilityConditionHasTalent identifier="targetingmatrixfocus_shipmounted" truthywhen="HasTalent"/>
+            </Conditions>
+            <FallbackAbilities>
+                <CharacterAbilityApplyStatusEffectsToAllies maxdistance="1000" allowself="true">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="false" delay="1">
+                            <Affliction identifier="targettingmatrix" amount="1.0" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffectsToAllies>
+            </FallbackAbilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="1.0">
+            <Conditions>
+                <AbilityConditionHasTalent identifier="targetingmatrixfocus_handheld" truthywhen="HasTalent"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffectsToAllies maxdistance="1000" allowself="true">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="false" delay="1">
+                            <Affliction identifier="targettingmatrix-handheld" amount="1.0" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffectsToAllies>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="1.0">
+            <Conditions>
+                <AbilityConditionHasTalent identifier="targetingmatrixfocus_shipmounted" truthywhen="HasTalent"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffectsToAllies maxdistance="1000" allowself="true">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="false" delay="1">
+                            <Affliction identifier="targettingmatrix-shipmounted" amount="1.0" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffectsToAllies>
+            </Abilities>
+        </AbilityGroupInterval>
+    </Talent>
 	<Talent identifier="targetingmatrixfocus_handheld"> 
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>
         <Description tag="talentdescription.targetingmatrixfocus_handheld">
@@ -225,7 +224,6 @@
         </Description>  
 		<AddedRecipe itemidentifier="flare_handheldrounds-blueprint"/>
 	</Talent>
-
 	<Talent identifier="targetingmatrixfocus_shipmounted"> 
 		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>
         <Description tag="talentdescription.targetingmatrixfocus_shipmounted">
@@ -236,97 +234,129 @@
         </Description>
 		<AddedRecipe itemidentifier="flare_coilgunammobox-blueprint"/>
 	</Talent>
-  
-  <Talent identifier="lightup">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,0" sheetelementsize="128,128"/>
-    <Description tag="talentdescription.lightup">
-    </Description>
-    <!-- When smoking heal to 25% health 
-         TODO neurotrauma compatibility -->
-    <AbilityGroupInterval interval="1.0">
-        <Conditions>
-            <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.25"/>
-            <AbilityConditionItem tags="smokingitems,pipetobacco"/>
-        </Conditions>
-        <Abilities>
-            <CharacterAbilityApplyStatusEffects>
-            <StatusEffects>
-                <StatusEffect type="OnAbility" target="Character">
-                <ReduceAffliction type="damage" strength="0.1"/>
-                <ReduceAffliction type="burn" strength="0.1"/>
-                </StatusEffect>
-            </StatusEffects>
-            </CharacterAbilityApplyStatusEffects>
-        </Abilities>
-    </AbilityGroupInterval>
-    <!-- Gain +75% damage reduction after smoking -->
-    <AbilityGroupInterval interval="1.0">
-        <Conditions>
-            <AbilityConditionItem tags="smokingitems,pipetobacco"/>
-        </Conditions>
-        <Abilities>
-            <CharacterAbilityApplyStatusEffects>
+    <Talent identifier="lightup">
+        <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,0" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.lightup">
+        </Description>
+        <!-- When smoking heal to 25% health 
+            TODO neurotrauma compatibility -->
+        <AbilityGroupInterval interval="1.0">
+            <Conditions>
+                <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.25"/>
+                <AbilityConditionItem tags="smokingitems,pipetobacco"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
                 <StatusEffects>
-                    <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="false">
-                        <Affliction identifier="nicotinehigh" amount="1.0" />
+                    <StatusEffect type="OnAbility" target="Character">
+                    <ReduceAffliction type="damage" strength="0.1"/>
+                    <ReduceAffliction type="burn" strength="0.1"/>
                     </StatusEffect>
                 </StatusEffects>
-            </CharacterAbilityApplyStatusEffects>
-        </Abilities>
-    </AbilityGroupInterval>
-    <!-- Items -->
-    <Description tag="talentdescription.unlockrecipe">
-        <Replace tag="[itemname]" value="entityname.rum-blueprint" color="gui.orange" />
-    </Description>
-    <Description tag="talentdescription.unlockrecipe">
-        <Replace tag="[itemname]" value="entityname.packofsmokes-blueprint" color="gui.orange" />
-    </Description>
-    <Description tag="talentdescription.unlockrecipe">
-        <Replace tag="[itemname]" value="entityname.flare_harpoons-blueprint" color="gui.orange" />
-    </Description>
-    <AddedRecipe itemidentifier="rum-blueprint"/>
-    <AddedRecipe itemidentifier="packofsmokes-blueprint"/>
-    <AddedRecipe itemidentifier="flare_harpoons-blueprint"/>
-</Talent>
-  
-
-  <Talent identifier="ontheroll"> 
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>
-    <AbilityGroupEffect abilityeffecttype="OnGainSkillPoint">
-      <Conditions>
-        <AbilityConditionSkill skillidentifier="helm"/>
-      </Conditions>
-      <Abilities>
-        <CharacterAbilityGainSimultaneousSkill skillidentifier="weapons" />
-      </Abilities>
-    </AbilityGroupEffect>
-    <AbilityGroupEffect abilityeffecttype="None">
-      <Abilities>
-        <CharacterAbilityGiveStat stattype="ReputationGainMultiplier" value="0.2"/>
-      </Abilities>
-    </AbilityGroupEffect>
-    <AbilityGroupEffect abilityeffecttype="OnLocationDiscovered">
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <!-- Gain +75% damage reduction after smoking -->
+        <AbilityGroupInterval interval="1.0">
+            <Conditions>
+                <AbilityConditionItem tags="smokingitems,pipetobacco"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="false">
+                            <Affliction identifier="nicotinehigh" amount="1.0" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <!-- Items -->
+        <Description tag="talentdescription.unlockrecipe">
+            <Replace tag="[itemname]" value="entityname.rum-blueprint" color="gui.orange" />
+        </Description>
+        <Description tag="talentdescription.unlockrecipe">
+            <Replace tag="[itemname]" value="entityname.packofsmokes-blueprint" color="gui.orange" />
+        </Description>
+        <Description tag="talentdescription.unlockrecipe">
+            <Replace tag="[itemname]" value="entityname.flare_harpoons-blueprint" color="gui.orange" />
+        </Description>
+        <AddedRecipe itemidentifier="rum-blueprint"/>
+        <AddedRecipe itemidentifier="packofsmokes-blueprint"/>
+        <AddedRecipe itemidentifier="flare_harpoons-blueprint"/>
+    </Talent>
+    <Talent identifier="ontheroll"> 
+        <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <AbilityGroupEffect abilityeffecttype="OnGainSkillPoint">
+        <Conditions>
+            <AbilityConditionSkill skillidentifier="helm"/>
+        </Conditions>
         <Abilities>
-            <CharacterAbilityGivePermanentStat statidentifier="ontherollE" stattype="HelmSkillBonus" value="1" removeOnDeath="true" />
-            <CharacterAbilityGivePermanentStat statidentifier="ontherollW" stattype="WeaponsSkillBonus" value="1" removeOnDeath="true" />
-            <CharacterAbilityGivePermanentStat statidentifier="ontherollM" stattype="MedicalSkillBonus" value="1" removeOnDeath="true" />
-            <CharacterAbilityGivePermanentStat statidentifier="ontherollE" stattype="ElectricalSkillBonus" value="1" removeOnDeath="true" />
-            <CharacterAbilityGivePermanentStat statidentifier="ontherollMec" stattype="MechanicalSkillBonus" value="1" removeOnDeath="true" />
-            <CharacterAbilityGiveMoney amount="500"/>
-            <CharacterAbilityApplyStatusEffects>
-                <StatusEffect type="OnAbility" target="This">
-                    <GiveExperience amount="15"/>
-                </StatusEffect>
-            </CharacterAbilityApplyStatusEffects>
-            <CharacterAbilityApplyStatusEffectsToAllies maxdistance="600000" allowself="true">
-                <StatusEffects>
+            <CharacterAbilityGainSimultaneousSkill skillidentifier="weapons" />
+        </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="None">
+        <Abilities>
+            <CharacterAbilityGiveStat stattype="ReputationGainMultiplier" value="0.2"/>
+        </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnLocationDiscovered">
+            <Abilities>
+                <CharacterAbilityGivePermanentStat statidentifier="ontherollE" stattype="HelmSkillBonus" value="1" removeOnDeath="true" />
+                <CharacterAbilityGivePermanentStat statidentifier="ontherollW" stattype="WeaponsSkillBonus" value="1" removeOnDeath="true" />
+                <CharacterAbilityGivePermanentStat statidentifier="ontherollM" stattype="MedicalSkillBonus" value="1" removeOnDeath="true" />
+                <CharacterAbilityGivePermanentStat statidentifier="ontherollE" stattype="ElectricalSkillBonus" value="1" removeOnDeath="true" />
+                <CharacterAbilityGivePermanentStat statidentifier="ontherollMec" stattype="MechanicalSkillBonus" value="1" removeOnDeath="true" />
+                <CharacterAbilityGiveMoney amount="500"/>
+                <CharacterAbilityApplyStatusEffects>
                     <StatusEffect type="OnAbility" target="This">
-                        <GiveExperience amount="5"/>
+                        <GiveExperience amount="15"/>
                     </StatusEffect>
-                </StatusEffects>
-            </CharacterAbilityApplyStatusEffectsToAllies>
+                </CharacterAbilityApplyStatusEffects>
+                <CharacterAbilityApplyStatusEffectsToAllies maxdistance="600000" allowself="true">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="This">
+                            <GiveExperience amount="5"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffectsToAllies>
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+
+  <Talent identifier="shuttlecaptain"> 
+    <Description tag="talentdescription.shuttlecaptain">
+    </Description>
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>
+    <AbilityGroupInterval interval="1.0">
+        <Conditions>
+            <!-- when using shuttle nav terminal -->
+            <AbilityConditionItem tags="secondarynavterminal"/>
+        </Conditions>
+        <Abilities>
+            <!-- TODO give out buff in small range -->
         </Abilities>
-    </AbilityGroupEffect>
+    </AbilityGroupInterval>
+    <!-- Remote Shuttle Controller -->
+    <Description tag="talentdescription.unlockrecipe">
+        <Replace tag="[itemname]" value="entityname.RemoteShuttleController-blueprint" color="gui.orange" />
+    </Description>
+    <AddedRecipe itemidentifier="RemoteShuttleController-blueprint"/>
+    <!-- give buffs to shuttle items TODO make barocraftables an requrement -->
+    <AbilityGroupInterval interval="60">
+        <Abilities>
+            <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="DetoriationSpeed" value="0.95" />
+            <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="BatteryCapacity" value="1.05" />
+            <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="EngineSpeed" value="1.05" />
+            <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="EngineMaxSpeed" value="1.05" />
+            <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="PumpSpeed" value="1.05" />
+            <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="PumpMaxFlow" value="1.05" />
+            <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="ReactorMaxOutput" value="1.05" />
+            <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="ReactorFuelEfficiency" value="1.05" />
+            <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="DeconstructorSpeed" value="1.05" />
+            <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="FabricationSpeed" value="1.05" />
+        </Abilities>
+    </AbilityGroupInterval>
   </Talent>
   
 </Talents>
