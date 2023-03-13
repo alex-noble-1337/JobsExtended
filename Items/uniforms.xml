@@ -522,9 +522,9 @@
         <sprite name="Crew Chief Left Leg" texture="Content/Items/Jobgear/Commoner/crewchief.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Crew Chief Left Shoe" texture="Content/Items/Jobgear/Commoner/crewchief.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Crew Chief Right Shoe" texture="Content/Items/Jobgear/Commoner/crewchief.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier armorsector="0.0,360.0" afflictiontypes="radiationsickness" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.9125" deflectprojectiles="false" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.9" deflectprojectiles="false" />
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.95" />
       </Wearable>
       <ItemContainer capacity="3" hideitems="true">
@@ -561,9 +561,9 @@
         <sprite name="Crew Chief Left Leg" texture="Content/Items/Jobgear/Commoner/crewchief.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Crew Chief Left Shoe" texture="Content/Items/Jobgear/Commoner/crewchief.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Crew Chief Right Shoe" texture="Content/Items/Jobgear/Commoner/crewchief.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
         <damagemodifier armorsector="0.0,360.0" afflictiontypes="radiationsickness" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
-        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.9125" deflectprojectiles="false" />
+        <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.9" deflectprojectiles="false" />
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.95" />
       </Wearable>
       <ItemContainer capacity="3" hideitems="true">
@@ -602,9 +602,16 @@
         <sprite name="Quartermaster Left Shoe" texture="Content/Items/Jobgear/Commoner/quartermaster.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Quartermaster Right Shoe" texture="Content/Items/Jobgear/Commoner/quartermaster.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       </Wearable>
-      <ItemContainer capacity="6" hideitems="true">
+      <ItemContainer capacity="2" hideitems="true">
+      <Containable items="smallitem" excludeditems="storage_clothing,toolbelt,toolbox,bandolier" />
+      <SlotIcon slotindex="2" texture="Content/UI/InventoryUIAtlas.png" sourcerect="443,341,491,389" origin="0.5,0.5" />
+      <SlotIcon slotindex="3" texture="Content/UI/InventoryUIAtlas.png" sourcerect="443,341,491,389" origin="0.5,0.5" />
+      <SlotIcon slotindex="4" texture="Content/UI/InventoryUIAtlas.png" sourcerect="443,341,491,389" origin="0.5,0.5" />
+      <SlotIcon slotindex="5" texture="Content/UI/InventoryUIAtlas.png" sourcerect="443,341,491,389" origin="0.5,0.5" />
+      <SubContainer capacity="4">
         <Containable items="scrap,ore,carbon,iron,tin,lead,phosphorus,copper,zinc,sodium,silicon,calcium,aluminium,uranium,potassium,titanium,magnesium,lithium,chlorine,thorium,steel,titaniumaluminiumalloy,plastic,ballisticfiber,organicfiber,rubber,flashpowder,scrap,incendium,fulgurium,physicorium,dementonite,Material,plant" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,mediumitem,bigitem" />
-      </ItemContainer>
+      </SubContainer>
+	  </ItemContainer>
     </Item>
     <Item name="Quartermaster Uniform" identifier="quartermasterclothes2" nameidentifier="quartermasteroutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.5" />
