@@ -1,4 +1,6 @@
-- fix locationtypes.xml
+- -add draconis-
+- add pockets for all (Draconis) Forked
+
 
 - buffs should be visible from the glance when they will end. Make affliction max instead of delay // done from fenzied somewaht
 - add max range for aoe into their descriptions

@@ -1042,6 +1042,7 @@
             </AutonomousObjectives>
       </Job>
 
+
       <Job identifier="chiefmedicaldoctor" maxnumber="1" idlebehavior="StayInHull" uicolor="1.0,0.25,0.25" vitalitymodifier="-10" minkarma="75">
             <Jobicon>
                   <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="512,256,128,128" origin="0.5,0.5" />
@@ -1244,6 +1245,7 @@
             </AutonomousObjectives>
       </Job>
 
+      
       <Job identifier="passenger" idlebehavior="StayInHull" vitalitymodifier="-20" minkarma="0">
             <Jobicon>
                   <sprite texture="%ModDir%/UI/NewIconsJobs.png" sourcerect="768,0,128,128" origin="0.5,0.5" />

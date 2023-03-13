@@ -382,6 +382,101 @@
         <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
       </Wearable>
     </Item>
+  <!-- Sec -->
+    <Override>
+      <Item name="" identifier="securityuniform1" aliases="securityuniform" category="Equipment" descriptionidentifier="yes" description="Tactical slot can hold one large item, with -20% movement" tags="smallitem,clothing,storage_clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+        <PreferredContainer primary="crewcab" />
+        <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.05" />
+        <Price baseprice="150" minavailable="1">
+          <Price storeidentifier="merchantoutpost" minavailable="1" />
+          <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+          <Price storeidentifier="merchantresearch" minavailable="1" />
+          <Price storeidentifier="merchantmilitary" minavailable="1" />
+          <Price storeidentifier="merchantmine" minavailable="1" />
+        </Price>
+        <Deconstruct time="10">
+          <Item identifier="organicfiber" />
+        </Deconstruct>
+        <InventoryIcon name="Security Officer's Uniform 1 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="383,151,129,105" origin="0.5,0.5" />
+        <Sprite name="Security Officer's Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="509,151,121,66" depth="0.6" origin="0.5,0.5" />
+        <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
+        <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
+        <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
+          <sprite name="Security Officer's Uniform 1 Torso" texture="Content/Items/Jobgear/Security/SecurityOfficer1.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 1 Right Hand" texture="Content/Items/Jobgear/Security/SecurityOfficer1.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 1 Left Hand" texture="Content/Items/Jobgear/Security/SecurityOfficer1.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 1 Left Lower Arm" texture="Content/Items/Jobgear/Security/SecurityOfficer1.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 1 Right Lower Arm" texture="Content/Items/Jobgear/Security/SecurityOfficer1.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 1 Left Upper Arm" texture="Content/Items/Jobgear/Security/SecurityOfficer1.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 1 Right Upper Arm" texture="Content/Items/Jobgear/Security/SecurityOfficer1.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 1 Waist" texture="Content/Items/Jobgear/Security/SecurityOfficer1.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 1 Right Thigh" texture="Content/Items/Jobgear/Security/SecurityOfficer1.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 1 Left Thigh" texture="Content/Items/Jobgear/Security/SecurityOfficer1.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 1 Right Leg" texture="Content/Items/Jobgear/Security/SecurityOfficer1.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 1 Left Leg" texture="Content/Items/Jobgear/Security/SecurityOfficer1.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 1 Right Shoe" texture="Content/Items/Jobgear/Security/SecurityOfficer1.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 1 Left Shoe" texture="Content/Items/Jobgear/Security/SecurityOfficer1.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+          <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
+          <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="0.8" setvalue="true">
+            <Conditional hastag="eq mediumitem" />
+          </StatusEffect>
+        </Wearable>
+        <ItemContainer capacity="2">
+          <Containable items="smallitem" excludeditems="storage_clothing,toolbelt,toolbox,bandolier" />
+          <SlotIcon slotindex="2" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="255,770,128,128" origin="0.5,0.5" />
+          <SubContainer capacity="1">
+            <Containable items="mediumitem" excludeditems="smallitem,storage_clothing,toolbelt,toolbox,bandolier" />
+          </SubContainer>
+        </ItemContainer>
+      </Item>
+      <Item name="" identifier="securityuniform2" category="Equipment" descriptionidentifier="yes" description="Tactical slot can hold one large item, with -20% movement" tags="smallitem,clothing,storage_clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+        <PreferredContainer primary="crewcab" />
+        <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.05" />
+        <Price baseprice="150" minavailable="1">
+          <Price storeidentifier="merchantoutpost" minavailable="1" />
+          <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+          <Price storeidentifier="merchantresearch" minavailable="1" />
+          <Price storeidentifier="merchantmilitary" minavailable="1" />
+          <Price storeidentifier="merchantmine" minavailable="1" />
+        </Price>
+        <Deconstruct time="10">
+          <Item identifier="organicfiber" />
+        </Deconstruct>
+        <InventoryIcon name="Security Officer's Uniform 2 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,274,128,110" origin="0.5,0.5" />
+        <Sprite name="Security Officer's Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="639,146,119,70" depth="0.6" origin="0.5,0.5" />
+        <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
+        <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
+        <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
+          <sprite name="Security Officer's Uniform 2 Torso" texture="Content/Items/Jobgear/Security/SecurityOfficer2.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 2 Right Hand" texture="Content/Items/Jobgear/Security/SecurityOfficer2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 2 Left Hand" texture="Content/Items/Jobgear/Security/SecurityOfficer2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 2 Left Lower Arm" texture="Content/Items/Jobgear/Security/SecurityOfficer2.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 2 Right Lower Arm" texture="Content/Items/Jobgear/Security/SecurityOfficer2.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 2 Left Upper Arm" texture="Content/Items/Jobgear/Security/SecurityOfficer2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 2 Right Upper Arm" texture="Content/Items/Jobgear/Security/SecurityOfficer2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 2 Waist" texture="Content/Items/Jobgear/Security/SecurityOfficer2.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 2 Right Thigh" texture="Content/Items/Jobgear/Security/SecurityOfficer2.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 2 Left Thigh" texture="Content/Items/Jobgear/Security/SecurityOfficer2.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 2 Right Leg" texture="Content/Items/Jobgear/Security/SecurityOfficer2.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 2 Left Leg" texture="Content/Items/Jobgear/Security/SecurityOfficer2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 2 Right Shoe" texture="Content/Items/Jobgear/Security/SecurityOfficer2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Security Officer's Uniform 2 Left Shoe" texture="Content/Items/Jobgear/Security/SecurityOfficer2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
+          <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
+          <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="0.8" setvalue="true">
+            <Conditional hastag="eq mediumitem" />
+          </StatusEffect>
+        </Wearable>
+        <ItemContainer capacity="2">
+          <Containable items="smallitem" excludeditems="storage_clothing,toolbelt,toolbox,bandolier" />
+          <SlotIcon slotindex="2" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="255,770,128,128" origin="0.5,0.5" />
+          <SubContainer capacity="1">
+            <Containable items="mediumitem" excludeditems="smallitem,storage_clothing,toolbelt,toolbox,bandolier" />
+          </SubContainer>
+        </ItemContainer>
+      </Item>
+    </Override>
   <!-- DIV -->
     <Item name="Miner outfit" identifier="minerclothes" nameidentifier="mineroutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.5" />
@@ -638,6 +733,7 @@
         <sprite name="Quartermaster Right Shoe" texture="Content/Items/Jobgear/Commoner/quartermaster.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       </Wearable>
       <ItemContainer capacity="6" hideitems="true">
+        <!-- TODO add icon of that slot -->
         <Containable items="scrap,ore,carbon,iron,tin,lead,phosphorus,copper,zinc,sodium,silicon,calcium,aluminium,uranium,potassium,titanium,magnesium,lithium,chlorine,thorium,steel,titaniumaluminiumalloy,plastic,ballisticfiber,organicfiber,rubber,flashpowder,scrap,incendium,fulgurium,physicorium,dementonite,Material,plant" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,clothing,mobilecontainer,mediumitem,bigitem" />
       </ItemContainer>
     </Item>
@@ -677,6 +773,102 @@
       </ItemContainer>
     </Item>
 
+  <!-- Medical -->
+    <Override>
+      <Item name="" identifier="doctorsuniform1" aliases="doctorsuniform" category="Equipment" descriptionidentifier="yes" description="Lightly armored field medic uniform, with two addtional pockets for medical items" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,storage_clothing" scale="0.5" impactsoundtag="impact_soft">
+        <PreferredContainer primary="crewcab" />
+        <PreferredContainer primary="outpostcrewcabinet" amount="1" spawnprobability="0.05" />
+        <Price baseprice="150" minavailable="1">
+          <Price storeidentifier="merchantoutpost" minavailable="1" />
+          <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+          <Price storeidentifier="merchantresearch" minavailable="1" />
+          <Price storeidentifier="merchantmilitary" minavailable="1" />
+          <Price storeidentifier="merchantmine" minavailable="1" />
+        </Price>
+        <Deconstruct time="10">
+          <Item identifier="organicfiber" />
+        </Deconstruct>
+        <InventoryIcon name="Medic Uniform 1 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="128,151,128,105" origin="0.5,0.5" />
+        <Sprite name="Medic Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="504,84,123,60" depth="0.6" origin="0.5,0.5" />
+        <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
+        <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
+        <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
+          <sprite name="Medic Uniform 1 Torso" texture="Content/Items/Jobgear/Medic/Medic1.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Right Hand" texture="Content/Items/Jobgear/Medic/Medic1.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Left Hand" texture="Content/Items/Jobgear/Medic/Medic1.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Right Lower Arm" texture="Content/Items/Jobgear/Medic/Medic1.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Left Lower Arm" texture="Content/Items/Jobgear/Medic/Medic1.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Right Upper Arm" texture="Content/Items/Jobgear/Medic/Medic1.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Left Upper Arm" texture="Content/Items/Jobgear/Medic/Medic1.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Waist" texture="Content/Items/Jobgear/Medic/Medic1.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Right Thigh" texture="Content/Items/Jobgear/Medic/Medic1.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Left Thigh" texture="Content/Items/Jobgear/Medic/Medic1.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Right Leg" texture="Content/Items/Jobgear/Medic/Medic1.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Left Leg" texture="Content/Items/Jobgear/Medic/Medic1.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Right Shoe" texture="Content/Items/Jobgear/Medic/Medic1.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 1 Left Shoe" texture="Content/Items/Jobgear/Medic/Medic1.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations, bitewounds, bleeding, blunttrauma, gunshotwound" damagemultiplier="0.95" />
+          <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.90" />
+          <SkillModifier skillidentifier="medical" skillvalue="5" />
+        </Wearable>
+        <ItemContainer capacity="2">
+          <Containable items="smallitem" excludeditems="storage_clothing,toolbelt,toolbox,bandolier" />
+          <SlotIcon slotindex="2" texture="Content/UI/ContainerIndicators.png" sourcerect="2,155,120,29" origin="0.5,0.5" />
+          <SlotIcon slotindex="3" texture="Content/UI/ContainerIndicators.png" sourcerect="2,155,120,29" origin="0.5,0.5" />
+          <SubContainer capacity="2">
+            <Containable items="chem,medical" excludeditems="storage_clothing,toolbelt,toolbox,bandolier" />
+          </SubContainer>
+        </ItemContainer>
+      </Item>
+    </Override>
+    <!-- paramedicsuniform -->
+    <Override>
+      <Item name="" identifier="doctorsuniform2" category="Equipment" cargocontaineridentifier="metalcrate" description="Lightly armored field medic uniform, with two addtional pockets for medical items" tags="smallitem,clothing,storage_clothing" scale="0.5" impactsoundtag="impact_soft">
+        <PreferredContainer primary="crewcab" />
+        <PreferredContainer primary="outpostcrewcabinet" amount="1" spawnprobability="0.05" />
+        <Price baseprice="150" minavailable="1">
+          <Price storeidentifier="merchantoutpost" minavailable="1" />
+          <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+          <Price storeidentifier="merchantresearch" minavailable="1" />
+          <Price storeidentifier="merchantmilitary" minavailable="1" />
+          <Price storeidentifier="merchantmine" minavailable="1" />
+        </Price>
+        <Deconstruct time="10">
+          <Item identifier="organicfiber" />
+        </Deconstruct>
+        <InventoryIcon name="Medic Uniform 2 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="256,151,128,105" origin="0.5,0.5" />
+        <Sprite name="Medic Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="640,70,124,74" depth="0.6" origin="0.5,0.5" />
+        <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
+        <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
+        <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
+          <sprite name="Medic Uniform 2 Torso" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Right Hand" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Left Hand" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Right Lower Arm" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Left Lower Arm" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Right Upper Arm" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Left Upper Arm" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Waist" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Right Thigh" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Left Thigh" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Right Leg" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Left Leg" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Right Shoe" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Medic Uniform 2 Left Shoe" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations, bitewounds, bleeding, blunttrauma, gunshotwound" damagemultiplier="0.95" />
+          <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.90" />
+          <SkillModifier skillidentifier="medical" skillvalue="5" />
+        </Wearable>
+        <ItemContainer capacity="2">
+          <Containable items="smallitem" excludeditems="storage_clothing,toolbelt,toolbox,bandolier" />
+          <SlotIcon slotindex="2" texture="Content/UI/ContainerIndicators.png" sourcerect="2,155,120,29" origin="0.5,0.5" />
+          <SlotIcon slotindex="3" texture="Content/UI/ContainerIndicators.png" sourcerect="2,155,120,29" origin="0.5,0.5" />
+          <SubContainer capacity="2">
+            <Containable items="chem,medical" excludeditems="storage_clothing,toolbelt,toolbox,bandolier" />
+          </SubContainer>
+        </ItemContainer>
+      </Item>
+    </Override>
   <!-- CMO -->
     <Item name="Chief Medical Officer Uniform" identifier="medicalofficerclothes1" nameidentifier="medicalofficeroutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
       <Price baseprice="150" soldeverywhere="false">
@@ -837,6 +1029,50 @@
     </Override>
     <!-- assistantclothes -->
     <Override>
+      <Item name="" identifier="bluejumpsuit2" category="Equipment" descriptionidentifier="yes" description="Mechanics uniform with a loop for a spare welding/oxygen bottle" tags="smallitem,clothing,storage_clothing" fireproof="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+        <PreferredContainer primary="crewcab" />
+        <PreferredContainer primary="outpostcrewcabinet" amount="1" spawnprobability="0.1" />
+        <Price baseprice="150" minavailable="1">
+          <Price storeidentifier="merchantoutpost" minavailable="1" />
+          <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+          <Price storeidentifier="merchantresearch" minavailable="1" />
+          <Price storeidentifier="merchantmilitary" minavailable="1" />
+          <Price storeidentifier="merchantmine" minavailable="1" />
+        </Price>
+        <Deconstruct time="10">
+          <Item identifier="organicfiber" />
+        </Deconstruct>
+        <InventoryIcon name="Mechanic Uniform 2 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="129,274,128,110" origin="0.5,0.5" />
+        <Sprite name="Mechanic Uniform 2" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="637,7,121,56" depth="0.6" origin="0.5,0.5" />
+        <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
+        <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
+        <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
+          <sprite name="Mechanic's Uniform 2 Torso" texture="Content/Items/Jobgear/Mechanic/mechanic_2.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Right Hand" texture="Content/Items/Jobgear/Mechanic/mechanic_2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Left Hand" texture="Content/Items/Jobgear/Mechanic/mechanic_2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Right Lower Arm" texture="Content/Items/Jobgear/Mechanic/mechanic_2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Left Lower Arm" texture="Content/Items/Jobgear/Mechanic/mechanic_2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Right Upper Arm" texture="Content/Items/Jobgear/Mechanic/mechanic_2.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Left Upper Arm" texture="Content/Items/Jobgear/Mechanic/mechanic_2.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Waist" texture="Content/Items/Jobgear/Mechanic/mechanic_2.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Right Thigh" texture="Content/Items/Jobgear/Mechanic/mechanic_2.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Left Thigh" texture="Content/Items/Jobgear/Mechanic/mechanic_2.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Right Leg" texture="Content/Items/Jobgear/Mechanic/mechanic_2.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Left Leg" texture="Content/Items/Jobgear/Mechanic/mechanic_2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Left Shoe" texture="Content/Items/Jobgear/Mechanic/mechanic_2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <sprite name="Mechanic's Uniform 2 Right Shoe" texture="Content/Items/Jobgear/Mechanic/mechanic_2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+          <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.9" />
+          <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.85" />
+          <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.8" />
+        </Wearable>
+        <ItemContainer capacity="2">
+          <Containable items="smallitem" excludeditems="storage_clothing,toolbelt,toolbox,bandolier" />
+          <SlotIcon slotindex="2" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="768,768,128,128" origin="0.5,0.5" />
+          <SubContainer capacity="1" maxstacksize="1">
+            <Containable items="oxygensource,weldingtoolfuel" />
+          </SubContainer>
+        </ItemContainer>
+      </Item>
     </Override>
   <!-- Eng -->
     <Override>
@@ -930,6 +1166,7 @@
         </ItemContainer>
       </Item>
     </Override>
+
 
   <!-- Cus -->
     <!-- TODO duplicate usage commonerclothes1 -->
