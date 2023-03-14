@@ -1,3 +1,6 @@
+[h1][b][u]Announcement![/u][/b][/h1]
+Beta version has been released: https://steamcommunity.com/sharedfiles/filedetails/?id=2908735458
+
 [h1][b][u]Supported languages: EN,CN,PTBR,PL,RUS [/u][/b][/h1]
 
 JobsExtended is a realistic, configurable, and more in depth look into roles for Barotrauma. This mod adds in a more realistic set of customizable (and configurable) roles for the crew. JobsExtended is configurable using karma to permit certain players to pick certain roles, perfect for admins to help control security clearances, griefing, and roleplay. The default settings will deter griefers from becoming high level roles, but for more precise control, see the admin/Karma utility section.
