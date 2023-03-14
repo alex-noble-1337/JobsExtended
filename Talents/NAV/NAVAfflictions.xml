@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Afflictions>
 <!-- TODO color of the afflictions matching Nav job color -->
-
-
 	<Affliction identifier="targettingmatrix" type="talentbuff" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="1" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
 		<Effect minstrength="0" maxstrength="1" strengthchange="-1">
 			<StatValue stattype="RangedAttackSpeed" value="0.2" />
@@ -10,7 +8,6 @@
 		</Effect>
 		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
 	</Affliction>
-
 	<Affliction identifier="targettingmatrix-handheld" type="talentbuff" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="1" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
 		<Effect minstrength="0" maxstrength="1" strengthchange="-1">
 			<StatValue stattype="RangedAttackSpeed" value="0.4" />
@@ -18,7 +15,6 @@
 		</Effect>
 		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
 	</Affliction>
-
 	<Affliction identifier="targettingmatrix-shipmounted" type="talentbuff" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="1" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
 		<Effect minstrength="0" maxstrength="1" strengthchange="-1">
 			<StatValue stattype="RangedAttackSpeed" value="0.2" />
@@ -29,9 +25,31 @@
 		</Effect>
 		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
 	</Affliction>
-
 	<Affliction identifier="nicotinehigh" type="talentbuff" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="60" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
 		<Effect minstrength="0" maxstrength="60" strengthchange="-1" resistancefor="damage" minresistance="0.75" maxresistance="0.75">
+		</Effect>
+		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+	</Affliction>
+
+	
+	<Affliction identifier="shuttlecapitan" type="talentbuff" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="1" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+		<Effect minstrength="0" maxstrength="1" strengthchange="-1">
+			<StatValue stattype="RangedAttackSpeed" value="0.15" />
+			<StatValue stattype="RangedAttackMultiplier" value="0.15" />
+			<StatValue stattype="TurretAttackSpeed" value="0.15" />
+			<StatValue stattype="TurretPowerCostReduction" value="0.15" />
+			<StatValue stattype="TurretChargeSpeed" value="0.15" />
+			<StatValue stattype="FlowResistance" value="0.15" />
+		</Effect>
+		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+	</Affliction>
+	<Affliction identifier="navigatoronstation" type="talentbuff" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="1" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+		<Effect minstrength="0" maxstrength="1" strengthchange="-1">
+			<StatValue stattype="RangedAttackSpeed" value="0.05" />
+			<StatValue stattype="RangedAttackMultiplier" value="0.05" />
+			<StatValue stattype="TurretAttackSpeed" value="0.05" />
+			<StatValue stattype="TurretPowerCostReduction" value="0.05" />
+			<StatValue stattype="TurretChargeSpeed" value="0.05" />
 		</Effect>
 		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
 	</Affliction>

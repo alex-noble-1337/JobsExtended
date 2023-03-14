@@ -263,20 +263,22 @@
         <!-- self buffs and utility items, driving the submarine -->
         <SubTree identifier="Specialist" type="specialization" requires="captain_primary" blocks="Illuminator,DiveCoordinator">
             <TalentOptions>
-                <!-- Driving the Shuttle 
+                <!-- TODO make an affliction,talent description name and color
+                     Driving the Shuttle 
                      Remote Shuttle Controller
                      shuttle buffs - mabe as a cap -->
                 <TalentOption identifier="shuttlecaptain" />
-                <!-- Driving the sub 
+                <!-- TODO make an affliction,talent description name and color
+                     Driving the sub 
                      Remote submarine Controller
                      Sonar tech -->
                 <TalentOption identifier="proffesional" />
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="shuttlecaptain" />
                 <!-- polarized lens - item that increases your vision inside watter but reduces outside
                      when sonar operated by you is on and you scan a monster that monster gets debuff
                      when you in water your crewmates near you get better visiblity -->
+                <TalentOption identifier="polarizedlens" />
             </TalentOptions>
             <TalentOptions>
                 <!-- upgrades to shuttlecaptain, better controller stronger buffs that you can wear or same effect if you havent picked it -->
