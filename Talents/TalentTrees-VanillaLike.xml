@@ -59,11 +59,12 @@
         <TalentOption identifier="commendations"/>
       </TalentOptions>
       <TalentOptions>
-        <TalentOption identifier="effective_co"/> 
-        <TalentOption identifier="positive_reinforcment"/>
+        <TalentOption identifier="yourreputation"/>
+        <TalentOption identifier="affiliation"/>
       </TalentOptions>
       <TalentOptions>
-        <TalentOption identifier="red_alarm"/>
+        <TalentOption identifier="campaigning"/>
+        <TalentOption identifier="networking"/>
       </TalentOptions>
       <TalentOptions>
         <TalentOption identifier="figurehead"/>

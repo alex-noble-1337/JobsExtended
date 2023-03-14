@@ -28,13 +28,9 @@
   <Submarine file="%ModDir%/Submarines/Orca2 [JE].sub" />
   <Submarine file="%ModDir%/Submarines/PowerTestSub [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Kastrull [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/KastrullDrone [JE].sub" />
   <Submarine file="%ModDir%/Submarines/R-29 [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Remora [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/RemoraDrone [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Selkie [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Typhon [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Typhon2 [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/Venture [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Winterhalter [JE].sub" />
 </contentpackage>
