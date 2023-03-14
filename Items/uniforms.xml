@@ -353,7 +353,7 @@
 	</Item>
 
   <!-- HOS -->
-    <Item name="Detective's Uniform" identifier="detectiveuniform" category="Equipment" description="A concealed vest pocket fits medical items or a small weapon" tags="mediumitem,clothing,storage_clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Item name="Detective's Uniform" identifier="detectiveuniform" category="Equipment" description="A concealed vest pocket fits medical items or a small weapon" tags="mediumitem,clothing,storage_clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
       <Price baseprice="150">
         <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
         <Price storeidentifier="merchantcity" multiplier="0.9" sold="false" />
@@ -396,7 +396,7 @@
 	    </SubContainer>
 	    </ItemContainer>
 	</Item>
-    <Item name="Defense Director Uniform" identifier="defensedirectoruniform" category="Equipment" description="Asymetrical holsters carry weapons or a 6 round speedloader on the left and weapons, cuffs or batteries on the right" tags="mediumitem,clothing,storage_clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Item name="Defense Director Uniform" identifier="defensedirectoruniform" category="Equipment" description="Asymetrical holsters carry weapons or a 6 round speedloader on the left and weapons, cuffs or batteries on the right" tags="mediumitem,clothing,storage_clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
       <Price baseprice="150" soldeverywhere="false">
         <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
         <Price storeidentifier="merchantcity" multiplier="1" sold="false" />
@@ -440,8 +440,6 @@
         <Containable items="pistolitem,weapon,battery,handlocker" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,mobilecontainer,toolbox,mediumitem,bigitem,storage_clothing,toolbelt,bandolier" /> 
 	</SubContainer>
 	</ItemContainer>
-	</Item>
-	
 	</Item>
     <Item name="Sergeant at Arms Uniform" identifier="sergeantatarmsuniform" category="Equipment" description="Asymetrical holsters carry weapons or a 6 round speedloader on the left and weapons, cuffs or batteries on the right" cargocontaineridentifier="metalcrate" tags="mediumitem,clothing,storage_clothing" scale="0.5" impactsoundtag="impact_soft">
       <Price baseprice="150" soldeverywhere="false">
@@ -728,7 +726,6 @@
         </SubContainer>
 	  </ItemContainer>
     </Item>
-    </Item>
     <Item name="" identifier="crewchiefclothes2" nameidentifier="crewchiefoutfit" category="Equipment" description="Chiefs attire is rigged to carry electrical components and a spare O2/weld bottle" cargocontaineridentifier="metalcrate" tags="mediumitem,clothing,storage_clothing" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.5" />
       <Price baseprice="75">
@@ -777,7 +774,6 @@
         <Containable items="oxygensource,weldingtoolfuel" />
         </SubContainer>
 	  </ItemContainer>
-    </Item>
     </Item>
     <Item name="" identifier="crewchiefclothes3" nameidentifier="crewchiefoutfit" category="Equipment" description="Chiefs attire is rigged to carry electrical components and a spare O2/weld bottle" cargocontaineridentifier="metalcrate" tags="mediumitem,clothing,storage_clothing" scale="0.5" impactsoundtag="impact_soft">
       <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.5" />
@@ -1779,7 +1775,7 @@
         <Containable items="smallitem" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,mobilecontainer,toolbox,mediumitem,bigitem,storage_clothing,toolbelt,bandolier" />   />
       </ItemContainer>
     </Item>
-    <Item name="Gunner Uniform" identifier="gunneruniform" category="Equipment" Description="Tactical slot can hold one large item, with -20% movement" tags="mediumitem,clothing,storage_clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Item name="Gunner Uniform" identifier="gunneruniform" category="Equipment" Description="Tactical slot can hold one large item, with -20% movement" tags="mediumitem,clothing,storage_clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
       <Price baseprice="150" soldeverywhere="false">
         <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
         <Price storeidentifier="merchantcity" multiplier="1" sold="false" />
@@ -1824,7 +1820,7 @@
           </SubContainer>
         </ItemContainer>
     </Item>
-    <Item name="Guard Uniform" identifier="guarduniform" category="Equipment" Description="Patrol holsters carry weapons, handcuffs and battery stacks" tags="mediumitem,clothing,storage_clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Item name="Guard Uniform" identifier="guarduniform" category="Equipment" Description="Patrol holsters carry weapons, handcuffs and battery stacks" tags="mediumitem,clothing,storage_clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
       <Price baseprice="150" soldeverywhere="false">
         <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
         <Price storeidentifier="merchantcity" multiplier="1" sold="false" />
@@ -1991,7 +1987,7 @@
       </SubContainer>
     </ItemContainer>
     </Item>
-    <Item name="Admiral's Uniform" identifier="admiralsuniform" category="Equipment" description="Small holster carries pistols, pistol ammo and loose shells" tags="mediumitem,clothing,storage_clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Item name="Admiral's Uniform" identifier="admiralsuniform" category="Equipment" description="Small holster carries pistols, pistol ammo and loose shells" tags="mediumitem,clothing,storage_clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
       <Price baseprice="150">
         <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
         <Price storeidentifier="merchantcity" multiplier="0.9" sold="false" />
