@@ -119,8 +119,8 @@
         <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
         <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
         <sprite name="Captain's Uniform 3 Torso" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Captain's Uniform 3 Right Lower Arm" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Captain's Uniform 3 Left Lower Arm" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Captain's Uniform 3 Right Lower Arm" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Captain's Uniform 3 Left Lower Arm" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 3 Right Upper Arm" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 3 Left Upper Arm" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 3 Waist" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -161,8 +161,8 @@
         <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
         <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
         <sprite name="Captain's Uniform 3 Torso" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Captain's Uniform 3 Right Lower Arm" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Captain's Uniform 3 Left Lower Arm" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Captain's Uniform 3 Right Lower Arm" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Captain's Uniform 3 Left Lower Arm" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 3 Right Upper Arm" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 3 Left Upper Arm" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 3 Waist" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -203,8 +203,8 @@
         <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
         <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
         <sprite name="Captain's Uniform 3 Torso" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Captain's Uniform 3 Right Lower Arm" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Captain's Uniform 3 Left Lower Arm" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Captain's Uniform 3 Right Lower Arm" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Captain's Uniform 3 Left Lower Arm" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 3 Right Upper Arm" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 3 Left Upper Arm" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 3 Waist" texture="Content/Items/Jobgear/Captain/captain_3.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -246,8 +246,8 @@
         <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
         <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
         <sprite name="Captain's Uniform 2 Torso" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Captain's Uniform 2 Right Lower Arm" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Captain's Uniform 2 Left Lower Arm" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Captain's Uniform 2 Right Lower Arm" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Captain's Uniform 2 Left Lower Arm" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 2 Right Upper Arm" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 2 Left Upper Arm" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 2 Waist" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -287,8 +287,8 @@
         <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
         <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
         <sprite name="Captain's Uniform 2 Torso" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Captain's Uniform 2 Right Lower Arm" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Captain's Uniform 2 Left Lower Arm" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Captain's Uniform 2 Right Lower Arm" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Captain's Uniform 2 Left Lower Arm" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 2 Right Upper Arm" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 2 Left Upper Arm" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 2 Waist" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -328,8 +328,8 @@
         <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
         <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
         <sprite name="Captain's Uniform 2 Torso" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Captain's Uniform 2 Right Lower Arm" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Captain's Uniform 2 Left Lower Arm" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Captain's Uniform 2 Right Lower Arm" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Captain's Uniform 2 Left Lower Arm" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 2 Right Upper Arm" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 2 Left Upper Arm" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Captain's Uniform 2 Waist" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -653,8 +653,8 @@
         <sprite name="Diving Harness Torso" texture="Content/Items/Jobgear/Commoner/Commoner2.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Diving Harness Left Upper Arm" texture="Content/Items/Jobgear/Commoner/Commoner2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Diving Harness Right Upper Arm" texture="Content/Items/Jobgear/Commoner/Commoner2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Diving Harness Left Lower Arm" texture="Content/Items/Jobgear/Commoner/Commoner2.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Diving Harness Right Lower Arm" texture="Content/Items/Jobgear/Commoner/Commoner2.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Diving Harness Left Lower Arm" texture="Content/Items/Jobgear/Commoner/Commoner2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Diving Harness Right Lower Arm" texture="Content/Items/Jobgear/Commoner/Commoner2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Diving Harness Waist" texture="Content/Items/Jobgear/Commoner/Commoner2.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Diving Harness Right Thigh" texture="Content/Items/Jobgear/Commoner/Commoner2.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Diving Harness Left Thigh" texture="Content/Items/Jobgear/Commoner/Commoner2.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -1443,8 +1443,8 @@
         <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
         <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect"> 
         <sprite name="prisoner Torso" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="prisoner Right Lower Arm" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="prisoner Left Lower Arm" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="prisoner Right Lower Arm" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="prisoner Left Lower Arm" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="prisoner Right Upper Arm" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="prisoner Left Upper Arm" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="prisoner Waist" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -1478,8 +1478,8 @@
         <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
         <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
         <sprite name="prisoner Torso" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="prisoner Right Lower Arm" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="prisoner Left Lower Arm" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="prisoner Right Lower Arm" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="prisoner Left Lower Arm" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="prisoner Right Upper Arm" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="prisoner Left Upper Arm" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="prisoner Waist" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -1513,8 +1513,8 @@
         <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
         <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
         <sprite name="prisoner Torso" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="prisoner Right Lower Arm" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="prisoner Left Lower Arm" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="prisoner Right Lower Arm" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="prisoner Left Lower Arm" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="prisoner Right Upper Arm" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="prisoner Left Upper Arm" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="prisoner Waist" texture="Content/Items/Jobgear/Commoner/prisoner.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -1926,8 +1926,8 @@
         <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
         <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
         <sprite name="securitypatrol Torso" texture="Content/Items/Jobgear/Commoner/securitypatrol.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="securitypatrol Right Lower Arm" texture="Content/Items/Jobgear/Commoner/securitypatrol.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="securitypatrol Left Lower Arm" texture="Content/Items/Jobgear/Commoner/securitypatrol.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="securitypatrol Right Lower Arm" texture="Content/Items/Jobgear/Commoner/securitypatrol.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="securitypatrol Left Lower Arm" texture="Content/Items/Jobgear/Commoner/securitypatrol.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="securitypatrol Right Upper Arm" texture="Content/Items/Jobgear/Commoner/securitypatrol.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="securitypatrol Left Upper Arm" texture="Content/Items/Jobgear/Commoner/securitypatrol.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="securitypatrol Waist" texture="Content/Items/Jobgear/Commoner/securitypatrol.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -1967,8 +1967,8 @@
         <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
         <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
         <sprite name="administrator Torso" texture="Content/Items/Jobgear/Commoner/administrator.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="administrator Right Lower Arm" texture="Content/Items/Jobgear/Commoner/administrator.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="administrator Left Lower Arm" texture="Content/Items/Jobgear/Commoner/administrator.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="administrator Right Lower Arm" texture="Content/Items/Jobgear/Commoner/administrator.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="administrator Left Lower Arm" texture="Content/Items/Jobgear/Commoner/administrator.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="administrator Right Upper Arm" texture="Content/Items/Jobgear/Commoner/administrator.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="administrator Left Upper Arm" texture="Content/Items/Jobgear/Commoner/administrator.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="administrator Waist" texture="Content/Items/Jobgear/Commoner/administrator.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
