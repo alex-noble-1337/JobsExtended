@@ -1,50 +1,177 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Override>
-  <Items>
-    <Item name="Promotion Medal" description="Medal that makes target eligable for promotion (allows them to change class without xp loss)" identifier="promotionmedal" category="Equipment" Tags="smallitem" cargocontaineridentifier="metalcrate" maxstacksize="8" scale="0.5" impactsoundtag="impact_soft">
-      <Fabricate suitablefabricators="fabricator" requiredtime="5">
-        <RequiredItem identifier="coalitionmedal" />
-        <RequiredItem identifier="coalitioncommendation" />
-      </Fabricate>
-      <Deconstruct time="5">
-        <Item identifier="coalitionmedal" />
-        <Item identifier="coalitioncommendation" />
-      </Deconstruct>
-      <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="228,365,37,65" origin="0.5,0.5" />
-      <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="33,4,24,43" depth="0.6" origin="0.5,0.5" />
-      <Body width="19" height="40" density="20" />
-      <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
-        <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
-        <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
-        <StatusEffect tags="medical" type="OnUse" target="Character">
-          <!-- <Sound file="Content/Items/Medical/Syringe.ogg" range="500" /> -->
-          <GiveTalentInfo giverandom="false" talentidentifiers="promotion" />
-        </StatusEffect>
-        <StatusEffect tags="medical" type="OnFailure" target="Character">
-          <!-- <Sound file="Content/Items/Medical/Syringe.ogg" range="500" /> -->
-          <GiveTalentInfo giverandom="false" talentidentifiers="promotion" />
-        </StatusEffect>
-        <StatusEffect type="OnBroken" target="This">
-          <Remove />
-        </StatusEffect>
-      </MeleeWeapon>
-    </Item>
-    <!-- Soon to be talent items -->
-    <Item name="Navigation PDA" description="PDA of an Navigator. It allows you to remotely controll an submarine." identifier="navpda" category="Equipment" Tags="smallitem, pda" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-      <Deconstruct time="15">
-        <Item identifier="fpgacircuit" />
-        <Item identifier="plastic" />
-      </Deconstruct>
-      <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
-        <RequiredSkill identifier="electrical" level="30" />
-        <RequiredItem identifier="fpgacircuit" />
-        <RequiredItem identifier="plastic" />
-      </Fabricate>
-      <InventoryIcon texture="TalentGear.png" sourcerect="160,1,40,58" origin="0.5,0.5" />
-      <Sprite texture="TalentGear.png" sourcerect="64,32,29,39" depth="0.55" origin="0.5,0.5" />
-      <Body width="30" height="40" density="8" />
-      <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-10,0" msg="ItemMsgPickUpSelect" />
-      <RemoteController target="navterminal" onlyinownsub="true" msg="ItemMsgInteractSelect" AllowInGameEditing="false" drawhudwhenequipped="true" />
-    </Item>
-  </Items>
-</Override>
+<Items>
+  <Item name="Promotion Medal" identifier="promotionmedal" category="Equipment" Tags="smallitem" cargocontaineridentifier="metalcrate" maxstacksize="8" scale="0.5" impactsoundtag="impact_soft">
+    <Fabricate suitablefabricators="fabricator" requiredtime="5">
+      <RequiredItem identifier="coalitionmedal" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" requiredtime="5">
+      <RequiredItem identifier="coalitioncommendation" />
+    </Fabricate>
+    <Deconstruct time="5">
+    </Deconstruct>
+    <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="228,365,37,65" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="33,4,24,43" depth="0.6" origin="0.5,0.5" />
+    <Body width="19" height="40" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect tags="medical" type="OnUse" target="Character">
+        <!-- <Sound file="Content/Items/Medical/Syringe.ogg" range="500" /> -->
+        <GiveTalentInfo giverandom="false" talentidentifiers="promotion" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="Character">
+        <!-- <Sound file="Content/Items/Medical/Syringe.ogg" range="500" /> -->
+        <GiveTalentInfo giverandom="false" talentidentifiers="promotion" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <!-- Soon to be talent items -->
+  <Item name="Navigation PDA" description="PDA of an Navigator. It allows you to remotely controll an submarine." identifier="navpda" category="Equipment" Tags="smallitem, pda" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <Deconstruct time="15">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
+      <RequiredSkill identifier="electrical" level="30" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <InventoryIcon texture="TalentGear.png" sourcerect="160,1,40,58" origin="0.5,0.5" />
+    <Sprite texture="TalentGear.png" sourcerect="64,32,29,39" depth="0.55" origin="0.5,0.5" />
+    <Body width="30" height="40" density="8" />
+    <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-10,0" msg="ItemMsgPickUpSelect" />
+    <RemoteController target="navterminal" onlyinownsub="true" msg="ItemMsgInteractSelect" AllowInGameEditing="false" drawhudwhenequipped="true" />
+  </Item>
+
+  <Item name="" identifier="rotarygrenedelaucher" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith" Scale="0.5" impactsoundtag="impact_metal_light">
+
+    <Fabricate suitablefabricators="fabricator" requiredtime="70" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
+      <RequiredItem identifier="dementonite" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
+    </Fabricate>
+    <Deconstruct time="30">
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="dementonite" />
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+
+    <InventoryIcon texture="TalentGear.png" sourcerect="447,267,64,64" origin="0.5,0.5" />
+    <Sprite texture="TalentGear.png" sourcerect="0,244,186,65" depth="0.55" origin="0.5,0.5" />
+    <Body width="170" height="40" density="50" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="40,-20" aimpos="45,-10" handle1="-33,-15" handle2="26,5" holdangle="-25" />
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="Grenade Launcher Worn" texture="TalentGear.png" canbehiddenbyotherwearables="false" sourcerect="0,244,186,65" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.5,0.8" />
+    </Wearable>
+    <RangedWeapon barrelpos="80,11" spread="1" unskilledspread="10" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflashchaingun" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="0.6" />
+      <ParticleEmitter particle="explosionsmoke" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="0.6" />
+      <Sound file="Content/Items/Weapons/GrenadeLauncherShot1.ogg" type="OnUse" selectionmode="Random"/>
+      <Sound file="Content/Items/Weapons/GrenadeLauncherShot2.ogg" type="OnUse" />
+      <Sound file="Content/Items/Weapons/GrenadeLauncherShot3.ogg" type="OnUse" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="6.0" />
+      </StatusEffect>
+      <RequiredItems items="grenade" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="60" />
+    </RangedWeapon>
+
+    <ItemContainer capacity="6" maxstacksize="1" itempos="27,10" iteminterval="0,-4" hideitems="true" containedstateindicatorstyle="bullet">
+      <Containable items="grenade" />
+    </ItemContainer>
+    <aitarget sightrange="500" soundrange="500" fadeouttime="3" />
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.1"/>
+    </Quality>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+
+  <!-- TODO make batton from EHA -->
+
+  <Item name="" identifier="handheldnuke" category="Equipment" maxstacksize="1" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive" scale="0.5" impactsoundtag="impact_metal_heavy">
+    <Fabricate suitablefabricators="fabricator" requiredtime="3" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="80" />
+      <RequiredItem identifier="uex" />
+    </Fabricate>
+    <InventoryIcon texture="weaponicons.png" sourcerect="0,255,255,255" origin="0.5,0.5" />
+    <Sprite texture="weapons.png" sourcerect="209,82,47,87" depth="0.55" origin="0.5,0.5" />
+    <Body radius="20" height="10" density="30" />
+    <ItemComponent characterusable="false">
+      <!-- statuseffect that explodes the grenade when used by something else than a character (e.g. a detonator) -->
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" type="OnUse" range="20000" selectionmode="All" />
+        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" type="OnUse" range="20000" />
+        <Explosion range="2400.0" structuredamage="500" ballastfloradamage="9999" itemdamage="9999" force="100" severlimbsprobability="5.0" decal="explosion" decalsize="10.0">
+          <Affliction identifier="bleeding" strength="100" />
+          <Affliction identifier="explosiondamage" strength="999" />
+          <Affliction identifier="stun" strength="100"/>
+          <Affliction identifier="radiationsickness" strength="100" />
+          <Affliction identifier="pressure" strength="100" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="20.0" disabledeltatime="true" checkconditionalalways="true" />
+    </Throwable>
+  </Item>
+
+  <Item name="" identifier="superDarcher" category="Equipment" Tags="smallitem,tool" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_light">
+
+    <InventoryIcon texture="InventoryIcon_Cleaner.png" sourcerect="118,271,84,36" origin="0.5,0.5" />
+    <Sprite texture="Darcher_tools.png" sourcerect="320,163,185,79" depth="0.55" origin="0.5,0.5" />
+    <!-- the item takes 25 seconds to break down in a deconstructor and turns into steel and plastic -->
+    <Deconstruct time="45">
+      <Item identifier="steel" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="55">
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="aluminium" />
+    </Fabricate>
+    <!-- physics body -->
+    <Body width="150" height="60" density="40" />
+    <!-- the character will hold the item 50 pixels in front of him, with his hands at the handle1 and handle2 positions -->
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="50,-10" handle1="-79,-15" handle2="-30,-10" msg="ItemMsgPickUpSelect" />
+    <Sprayer barrelpos="83,12" spread="0" unskilledspread="0" drawhudwhenequipped="true" crosshairscale="0.1" spraystrength="50.0" range="800">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="spray" copyentityangle="true" anglemin="-20" anglemax="20" scalemin="2" scalemax="3" velocitymin="700.0" velocitymax="1000.0" particlespersecond="1500" />
+      <RequiredItems items="ethanol, paint" type="Contained" msg="ItemMsgPaintOrCleaningAgentRequired" />
+      <sound file="Darcher_Cleaner.ogg" type="OnUse" range="1000.0" loop="true" />
+      <!--When containing paint, reduce its condition by 1.5 when used-->
+      <StatusEffect type="OnUse" target="Contained" Condition="-5.5">
+        <RequiredItem items="paint" type="Contained" />
+      </StatusEffect>
+      <!--Reduce ethanol condition slower than paint-->
+      <StatusEffect type="OnUse" target="Contained" Condition="-1.55">
+        <RequiredItem items="ethanol" type="Contained" />
+      </StatusEffect>
+      <PaintColors>
+        <PaintColor paintitem="ethanol" color="200,200,200,0" />
+        <PaintColor paintitem="redpaint" color="128,0,0,180" />
+        <PaintColor paintitem="greenpaint" color="0,128,0,180" />
+        <PaintColor paintitem="bluepaint" color="0,0,128,180" />
+        <PaintColor paintitem="blackpaint" color="0,0,0,180" />
+        <PaintColor paintitem="whitepaint" color="128,128,128,180" />
+      </PaintColors>
+    </Sprayer>
+    <!-- one welding fuel or oxygen tank can be contained inside the welding tool -->
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="-45,-45" containedspritedepth="0.56" containedstateindicatorstyle="tank">
+      <Containable items="ethanol, paint" />
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="500" fadeouttime="3" />
+  </Item>
+
+  <!-- TODO flaregun from ek but better -->
+</Items>
