@@ -2008,8 +2008,8 @@
         <sprite name="Vip Torso" texture="Content/Items/Jobgear/Commoner/VIP1.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Vip Left Upper Arm" texture="Content/Items/Jobgear/Commoner/VIP1.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Vip Right Upper Arm" texture="Content/Items/Jobgear/Commoner/VIP1.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Vip Left Lower Arm" texture="Content/Items/Jobgear/Commoner/VIP1.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-        <sprite name="Vip Right Lower Arm" texture="Content/Items/Jobgear/Commoner/VIP1.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="vip Right Lower Arm" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="vip Left Lower Arm" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Vip Waist" texture="Content/Items/Jobgear/Commoner/VIP1.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Vip Right Thigh" texture="Content/Items/Jobgear/Commoner/VIP1.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Vip Left Thigh" texture="Content/Items/Jobgear/Commoner/VIP1.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
