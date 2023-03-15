@@ -1426,7 +1426,7 @@
     <!-- TODO is usage of assistantclothes -->
   <!-- Pri -->
   <!-- I added two pockets as usual but also gave the PFA melee buff, but only 5%, its subtle but prevents this from being a complete throw away, consider 10% melee or something in addtion to 5% -->  
-  <Item name="Prisoner Uniform" identifier="prisonerclothes1" category="Equipment" description="High Visibily convict uniform, The stigma combined with rough material seems to only inspire further bad behavior." cargocontaineridentifier="metalcrate" tags="mediumitem,clothing,storage_clothing" scale="0.5" impactsoundtag="impact_soft">
+  <Item name="Prisoner Uniform" identifier="prisonerclothes1" category="Equipment" description="High Visibily convict uniform, The stigma combined with rough material seems to only inspire further bad behavior. +5% Melee Speed" cargocontaineridentifier="metalcrate" tags="mediumitem,clothing,storage_clothing" scale="0.5" impactsoundtag="impact_soft">
       <Price baseprice="75">
         <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
         <Price storeidentifier="merchantcity" multiplier="0.9" sold="false" />
@@ -1461,7 +1461,7 @@
       <Containable items="smallitem" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,mobilecontainer,toolbox,mediumitem,bigitem,storage_clothing,toolbelt,bandolier" /> 
     </ItemContainer>
 	</Item>
-    <Item name="Prisoner Uniform" identifier="prisonerclothes2" category="Equipment" description="High Visibily convict uniform, The stigma combined with rough material seems to only inspire further bad behavior." cargocontaineridentifier="metalcrate" tags="mediumitem,clothing,storage_clothing" scale="0.5" impactsoundtag="impact_soft">
+    <Item name="Prisoner Uniform" identifier="prisonerclothes2" category="Equipment" description="High Visibily convict uniform, The stigma combined with rough material seems to only inspire further bad behavior. +5% Melee Speed" cargocontaineridentifier="metalcrate" tags="mediumitem,clothing,storage_clothing" scale="0.5" impactsoundtag="impact_soft">
       <Price baseprice="75">
         <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
         <Price storeidentifier="merchantcity" multiplier="0.9" sold="false" />
@@ -1496,7 +1496,7 @@
       <Containable items="smallitem" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,mobilecontainer,toolbox,mediumitem,bigitem,storage_clothing,toolbelt,bandolier" /> 
     </ItemContainer>
 	</Item>
-    <Item name="Prisoner Uniform" identifier="prisonerclothes3" category="Equipment" description="High Visibily convict uniform, The stigma combined with rough material seems to only inspire further bad behavior." cargocontaineridentifier="metalcrate" tags="mediumitem,clothing,storage_clothing" scale="0.5" impactsoundtag="impact_soft">
+    <Item name="Prisoner Uniform" identifier="prisonerclothes3" category="Equipment" description="High Visibily convict uniform, The stigma combined with rough material seems to only inspire further bad behavior. +5% Melee Speed" cargocontaineridentifier="metalcrate" tags="mediumitem,clothing,storage_clothing" scale="0.5" impactsoundtag="impact_soft">
       <Price baseprice="75">
         <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
         <Price storeidentifier="merchantcity" multiplier="0.9" sold="false" />
