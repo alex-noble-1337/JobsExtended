@@ -1750,8 +1750,8 @@
         <Item identifier="organicfiber" />
       </Deconstruct>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,320,64,64" origin="0.5,0.5" />
-      <Sprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="202,2,185,69" depth="0.6" origin="0.5,0.5" />
-      <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+      <Sprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="123,144,121,62" depth="0.6" origin="0.5,0.5" />
+	<Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
         <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
         <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
         <sprite name="Watchman Torso" texture="Content/Items/Jobgear/Watchman/watchman.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -1768,7 +1768,7 @@
         <sprite name="Watchman Left Leg" texture="Content/Items/Jobgear/Watchman/watchman.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Watchman Left Shoe" texture="Content/Items/Jobgear/Watchman/watchman.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Watchman Right Shoe" texture="Content/Items/Jobgear/Watchman/watchman.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-       <!-- 60% Burn protection with 10% to three damage types and three pockets seems excessive especially with suit or safety harness added on, 15% burn and 2 pockets but no speed buff like in PFA, tough guy suit -->
+       <!-- 60% Burn protection with 10% to three damage types and three pockets seems excessive especially with suit or safety harness added on, 15% burn and 2 pockets but no speed buff like in PFA, tough guy suit, engineers are full burn -->
 		<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,bitewounds" damagemultiplier="0.9" deflectprojectiles="false" />
         <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.85" />
       </Wearable>
