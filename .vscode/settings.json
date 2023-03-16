@@ -1,0 +1,8 @@
+{   
+    "Lua.diagnostics.libraryFiles": "Enable",
+    "Lua.workspace.library": [
+        "G:\\globalShare\\Documents\\luatypes\\types\\client",
+        "G:\\globalShare\\Documents\\luatypes\\types\\server",
+        "G:\\globalShare\\Documents\\luatypes\\types\\shared",
+    ]
+}
