@@ -15,7 +15,7 @@ local function ChangePlayerCharacterInfo(Client, targetJobId)
     return new_player_CharacterInfo
 end
 
-local function CreateByIdAndClientAndTakeControll(client, targetJobId)
+local function CreateHumanJob(client, targetJobId)
     -- Note: If we plan only running this server-side, we could grab the CharacterInfo from client instead, which will have all their info already set, like name and hair style.
     local info = ChangePlayerCharacterInfo(client, targetJobId)
     -- info.Job = Job(JobPrefab.Get(targetJobId))
@@ -35,11 +35,21 @@ local function CreateByIdAndClientAndTakeControll(client, targetJobId)
     character.TeamID = CharacterTeamType.Team1
     character.GiveJobItems()
 
+    return character
+end
+
+local function ForceClientTo_prisoner(client)
+    -- create an prisoner job
+    local newcharacter = CreateHumanJob(client, "inmate")
+    -- take controll to prisoner character
+    local oldcharacter = Character.Controlled
     if CLIENT then
-        Character.Controlled = character
+        Character.Controlled = newcharacter
     else
-        client.SetClientCharacter(character)
+        client.SetClientCharacter(newcharacter)
     end
+    -- kill previous character
+    oldcharacter.Kill(CauseOfDeathType.Unknown)
 end
 
 Hook.Add("chatMessage", "examples.humanSpawning", function (message, client)
@@ -54,7 +64,15 @@ Hook.Add("chatMessage", "examples.humanSpawning", function (message, client)
     end
 end)
 
+Hook.Add("chatMessage", "jobsextended.imprisonment", function (message, client)
+    if SERVER or (not Game.IsMultiplayer) then
+        if message ~= "!prisoner" then return end
 
+        ForceClientTo_prisoner(client)
+
+        return true -- returning true allows us to hide the message
+    end
+end)
 
 local function ChangePlayerCharacter(Client, targetJobId)
     local player_character = Client.Character

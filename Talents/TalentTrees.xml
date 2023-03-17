@@ -11,20 +11,20 @@
     <TalentTree jobidentifier="executive_officer">
         <SubTree identifier="captain_primary" nameidentifier="talenttree.primary" type="primary">
             <TalentOptions maxchosentalents="2">
-                <TalentOption identifier="bountyhunter" />
-                <TalentOption identifier="logisticsexpert" />
-                <TalentOption identifier="prodigy" />
-                <TalentOption identifier="inspirationalleader" />
-                <TalentOption identifier="veteran" />
-                <TalentOption identifier="travelingtradesman" />
+                <TalentOption identifier="bountyhunter"/>
+                <TalentOption identifier="logisticsexpert"/>
+                <TalentOption identifier="prodigy"/>
+                <TalentOption identifier="inspirationalleader"/>
+                <TalentOption identifier="veteran"/>
+                <TalentOption identifier="travelingtradesman"/>
             </TalentOptions>
             <TalentOptions maxchosentalents="2">
-                <TalentOption identifier="emergencymaneuvers" />
-                <TalentOption identifier="sailorwithnoname" />
-                <TalentOption identifier="camaraderie" />
-                <TalentOption identifier="downwiththeship" />
-                <TalentOption identifier="gunsmith" />
-                <TalentOption identifier="steadytune" />
+                <TalentOption identifier="emergencymaneuvers"/>
+                <TalentOption identifier="sailorwithnoname"/>
+                <TalentOption identifier="camaraderie"/>
+                <TalentOption identifier="downwiththeship"/>
+                <TalentOption identifier="gunsmith"/>
+                <TalentOption identifier="steadytune"/>
             </TalentOptions>
         </SubTree>
         <!--  Mirrorring capitan 1st tree, but weaker 
@@ -45,7 +45,7 @@
                      Allies you command get weaker commanded buff and you emit even weaker version of it AOE
                      TODO gain a heavy weapon holster blueprint
                     -->
-                <TalentOption identifier="firststrike" />
+                <TalentOption identifier="firststrike"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- nomercy+lonewolf 
@@ -55,14 +55,14 @@
                      Gain +50% money and expirence on Pirate,Abandonedoutpost
                      gain a weaker version of lonewolf buff 50% weaker
                 -->
-                <TalentOption identifier="Big_Functional_Gun" />
+                <TalentOption identifier="Big_Functional_Gun"/>
                 <!-- bythebook-deputy
                      TODO Description Icons
                      get bythebook effect
                      gain weapons_skill_stun_-stun_damage_reistance_buff around you
                      gain a weaker version of weaker-deputy buff applicable to all characters 50% weaker
                 -->
-                <TalentOption identifier="bythebook-deputy" />
+                <TalentOption identifier="bythebook-deputy"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- weaker tumble-drunkensailor-steadytunes
@@ -70,7 +70,7 @@
                      get weaker tumble-drunkensailor-steadytunes effect
                      tumble buffs grenades +80%
                 -->
-                <TalentOption identifier="evasion" />
+                <TalentOption identifier="evasion"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- weaker tumble-drunkensailor-steadytunes
@@ -81,10 +81,10 @@
 		             <AddedRecipe itemidentifier="handcannon-blueprint"/>
 		             <AddedRecipe itemidentifier="handcannonround-blueprint"/>
                 -->
-                <TalentOption identifier="capitanssword" />
+                <TalentOption identifier="capitanssword"/>
             </TalentOptions>
             <!-- <TalentOptions>
-                <TalentOption identifier="enchance1" />
+                <TalentOption identifier="enchance1"/>
             </TalentOptions> -->
         </SubTree>
         <!--  Mirrorring capitan 2nd tree, but weaker -->
@@ -94,12 +94,12 @@
                      if no crew has died, close fighing buff, weapon skill and movement speed 
                      + 15% money and expirence from nest and monster missions 
                      TODO one more option -->
-                <TalentOption identifier="frenzy" />
+                <TalentOption identifier="frenzy"/>
                 <!-- TODO Description Icons
                      if no crew has died close repair and endurance buff, RepairSpeed RepairToolStructureRepairMultiplier PoisonMultiplier DebuffDurationMultiplier 
                      + 15% money and expirence fromOutpostDestroy,OutpostRescue,Mineral,Escort
                      TODO one more option -->
-                <TalentOption identifier="takeabullet" />
+                <TalentOption identifier="takeabullet"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO Description Icons
@@ -119,10 +119,10 @@
             <TalentOptions>
                 <!-- TODO merge -->
                 <!-- Modify it so its unique to XO -->
-                <TalentOption identifier="ironcurtain" />
+                <TalentOption identifier="ironcurtain"/>
                 <!-- TODO merge -->
                 <!-- Modify it so its unique to XO -->
-                <TalentOption identifier="notasingleonegetsthough" />
+                <TalentOption identifier="notasingleonegetsthough"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO Description Icons 
@@ -130,10 +130,10 @@
                      dish out more stun +25% more
                      25% defence buff when iside the submarine, and 25% dng buff when outside 
                      get an all round diving suit (SERE Diving suit) -->
-                <TalentOption identifier="capitansshield" />
+                <TalentOption identifier="capitansshield"/>
             </TalentOptions>
             <!-- <TalentOptions>
-                <TalentOption identifier="enchance2" />
+                <TalentOption identifier="enchance2"/>
             </TalentOptions> -->
         </SubTree>
         <!--  Mirrorring capitan 3rd tree, but weaker -->
@@ -155,7 +155,7 @@
                         MedicalItemApplyingMultiplier +5%, 
                         AttackMultiplier +5%, 
                         RepairToolStructureRepairMultiplier +5%, RepairSpeed +5% -->
-                <TalentOption identifier="thefivepillars" />
+                <TalentOption identifier="thefivepillars"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO Description Icons 
@@ -164,7 +164,7 @@
                     OnAllyGainSkillPoint gain 10 xp
                     OnAnyMissionCompleted gain coalition commederation
                         if you have highlydecoratedindividual changes to medal -->
-                <TalentOption identifier="fieldcommander" />
+                <TalentOption identifier="fieldcommander"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO Description Icons 
@@ -178,7 +178,7 @@
                 <!-- TODO Description Icons
                     ...
                     Upgrade thefivepillars if you already have thefivepillars OR Apply the same thefivepillars -->
-                    <TalentOption identifier="thefivepillars_second" />
+                    <TalentOption identifier="thefivepillars_second"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- XO Talents Exists -->
@@ -187,10 +187,10 @@
                         give instant 5 lvl when you give somebody a medal
                         give yourself 275 xp 
                      gain max of 55% increase of MovementSpeed, MeleeAttackSpeed, RangedAttackSpeed based on weapons skill -->
-                <TalentOption identifier="highlydecoratedindividual" />
+                <TalentOption identifier="highlydecoratedindividual"/>
             </TalentOptions>
             <!-- <TalentOptions>
-                <TalentOption identifier="enchance3" />
+                <TalentOption identifier="enchance3"/>
             </TalentOptions> -->
         </SubTree>
         <!--  Mirrorring capitan 4th tree, but weaker -->
@@ -199,20 +199,20 @@
     <TalentTree jobidentifier="navigator">
         <SubTree identifier="captain_primary" nameidentifier="talenttree.primary" type="primary">
             <TalentOptions maxchosentalents="2">
-                <TalentOption identifier="bountyhunter" />
-                <TalentOption identifier="logisticsexpert" />
-                <TalentOption identifier="prodigy" />
-                <TalentOption identifier="inspirationalleader" />
-                <TalentOption identifier="veteran" />
-                <TalentOption identifier="travelingtradesman" />
+                <TalentOption identifier="bountyhunter"/>
+                <TalentOption identifier="logisticsexpert"/>
+                <TalentOption identifier="prodigy"/>
+                <TalentOption identifier="inspirationalleader"/>
+                <TalentOption identifier="veteran"/>
+                <TalentOption identifier="travelingtradesman"/>
             </TalentOptions>
             <TalentOptions maxchosentalents="2">
-                <TalentOption identifier="emergencymaneuvers" />
-                <TalentOption identifier="sailorwithnoname" />
-                <TalentOption identifier="camaraderie" />
-                <TalentOption identifier="downwiththeship" />
-                <TalentOption identifier="gunsmith" />
-                <TalentOption identifier="steadytune" />
+                <TalentOption identifier="emergencymaneuvers"/>
+                <TalentOption identifier="sailorwithnoname"/>
+                <TalentOption identifier="camaraderie"/>
+                <TalentOption identifier="downwiththeship"/>
+                <TalentOption identifier="gunsmith"/>
+                <TalentOption identifier="steadytune"/>
             </TalentOptions>
         </SubTree>
         <!-- offensive buffs, gunnery, coordinating dive teams, weak at shooting -->
@@ -224,7 +224,7 @@
                      Gain +1 ExtraMissionCount 
                      gain targettingmatrix, passive half as effective, when ordering a character gain full buff
                         +20% RangedAttackSpeed,RangedAttackMultiplier -->
-                <TalentOption identifier="luckystrike" />
+                <TalentOption identifier="luckystrike"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO Description
@@ -232,13 +232,13 @@
                         Damage, Fire speed 
                      Flare ammo, handheld guns, except not as shitty as vanilla, it melts hull, it also softhens enemies debuffs them
                      TODO Lua When using navigation terminal give everyone in the submarine buffs + diving team this buff (TLDR: increases its range to a lot) -->
-                <TalentOption identifier="targetingmatrixfocus_handheld" />
+                <TalentOption identifier="targetingmatrixfocus_handheld"/>
                 <!-- TODO Description
                      Modify targettingmatrix to gain players buff to shipmounted guns
                         additional +20% TurretAttackSpeed, TurretPowerCostReduction, TurretChargeSpeed
                      Flare ammo, handheld shipmounted guns, except not as shitty as vanilla, it melts hull, it also softhens enemies debuffs them
                      TODO Lua When using navigation terminal give everyone in the submarine buffs + diving team this buff (TLDR: increases its range to a lot) -->
-                <TalentOption identifier="targetingmatrixfocus_shipmounted" />
+                <TalentOption identifier="targetingmatrixfocus_shipmounted"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO Description
@@ -254,10 +254,10 @@
                      <AddedRecipe itemidentifier="handcannon"/>
                      <AddedRecipe itemidentifier="handcannonflareround"/>
                      -->
-                <TalentOption identifier="ontheroll" />
+                <TalentOption identifier="ontheroll"/>
             </TalentOptions>
             <!-- <TalentOptions>
-                <TalentOption identifier="enchance2" />
+                <TalentOption identifier="enchance2"/>
             </TalentOptions> -->
         </SubTree>
         <!-- self buffs and utility items, driving the submarine -->
@@ -267,28 +267,28 @@
                      Driving the Shuttle 
                      Remote Shuttle Controller
                      shuttle buffs - mabe as a cap -->
-                <TalentOption identifier="shuttlecaptain" />
+                <TalentOption identifier="shuttlecaptain"/>
                 <!-- TODO make an affliction,talent description name and color
                      Driving the sub 
                      Remote submarine Controller
                      Sonar tech -->
-                <TalentOption identifier="proffesional" />
+                <TalentOption identifier="proffesional"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- polarized lens - item that increases your vision inside watter but reduces outside
                      when sonar operated by you is on and you scan a monster that monster gets debuff
                      when you in water your crewmates near you get better visiblity -->
-                <TalentOption identifier="polarizedlens" />
+                <TalentOption identifier="polarizedlens"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- upgrades to shuttlecaptain, better controller stronger buffs that you can wear or same effect if you havent picked it -->
-                <TalentOption identifier="shuttlecaptain" />
+                <TalentOption identifier="shuttlecaptain"/>
                 <!-- upgrades to proffesional, better controller you can wear stronger buffs or same effect if you havent picked it -->
-                <TalentOption identifier="shuttlecaptain" />
+                <TalentOption identifier="shuttlecaptain"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- arrow where is the closest enemy?, only if sonar detected it. upgrade to lens -->
-                <TalentOption identifier="shuttlecaptain" />
+                <TalentOption identifier="shuttlecaptain"/>
             </TalentOptions>
         </SubTree>
         <!-- defensive buffs, coordinating dive teams -->
@@ -299,23 +299,23 @@
                         - swim speed depending on number of divers or
                         - staying alive when downed in water for longer depending on number of divers
                         - gain long range position detection if in cave or in ruins or in wrecks (next room range) -->
-                <TalentOption identifier="DiverTraining" />
+                <TalentOption identifier="DiverTraining"/>
               </TalentOptions>
               <TalentOptions>
                 <!-- position detection isnt limited to be only in cave or ruins -->
-                <TalentOption identifier="PositionDetection" />
+                <TalentOption identifier="PositionDetection"/>
                 <!-- position detection gains ability to detect wrecks, ruins, if inside them detects chest and items with loot -->
-                <TalentOption identifier="GoodiesDetection" />
+                <TalentOption identifier="GoodiesDetection"/>
               </TalentOptions>
               <TalentOptions>
                 <!-- better decoys -->
-                <TalentOption identifier="BetterDecoys" />
+                <TalentOption identifier="BetterDecoys"/>
                 <!-- drug that makes you less visible to sonar -->
-                <TalentOption identifier="DrugSonar" />
+                <TalentOption identifier="DrugSonar"/>
               </TalentOptions>
               <TalentOptions>
                 <!-- diving suit with built in sonar scanner, and ability to slot in polirised glasses from other tree, flare laucher slot, weakpoint and long range position detection if wearing any suit with nav. this suit conumes much more oxygen outside of water -->
-                <TalentOption identifier="DivingSonar" />
+                <TalentOption identifier="DivingSonar"/>
               </TalentOptions>
         </SubTree>
     </TalentTree>
@@ -418,56 +418,56 @@
         <!-- offensive tree, going out of the submarine and fight in water, upgrade pucs with fins same as slipsuit -->
         <SubTree identifier="whaler" type="specialization" requires="security_primary" blocks="frogman,Specialist">
             <TalentOptions>
-                <TalentOption identifier="thickblood" />
-                <TalentOption identifier="sppschematics" />
+                <TalentOption identifier="thickblood"/>
+                <TalentOption identifier="sppschematics"/>
               </TalentOptions>
               <TalentOptions>
-                <TalentOption identifier="pxschematics" />
-                <TalentOption identifier="murkywaters" />
+                <TalentOption identifier="pxschematics"/>
+                <TalentOption identifier="murkywaters"/>
               </TalentOptions>
               <TalentOptions>
-                <TalentOption identifier="underwaterdemolition" />
-                <TalentOption identifier="commando" />
+                <TalentOption identifier="underwaterdemolition"/>
+                <TalentOption identifier="commando"/>
               </TalentOptions>
               <TalentOptions>
-                <TalentOption identifier="marinerecon" />
-                <TalentOption identifier="combatdiver" />
+                <TalentOption identifier="marinerecon"/>
+                <TalentOption identifier="combatdiver"/>
               </TalentOptions>
         </SubTree>
         <SubTree identifier="frogman" type="specialization" requires="security_primary" blocks="whaler,Specialist">
             <TalentOptions>
-                <TalentOption identifier="seadogspirit" />
-                <TalentOption identifier="sealeg" />
+                <TalentOption identifier="seadogspirit"/>
+                <TalentOption identifier="sealeg"/>
               </TalentOptions>
               <TalentOptions>
-                <TalentOption identifier="improvisedutilityharpoons" />
+                <TalentOption identifier="improvisedutilityharpoons"/>
               </TalentOptions>
               <TalentOptions>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="buccaneer" />  
-                <TalentOption identifier="masterworkexperimentalharpoons" />
+                <TalentOption identifier="buccaneer"/>  
+                <TalentOption identifier="masterworkexperimentalharpoons"/>
               </TalentOptions>
               <TalentOptions>
-                <TalentOption identifier="baneofthecryingseals" />
-                <TalentOption identifier="deadmanwalking" />
+                <TalentOption identifier="baneofthecryingseals"/>
+                <TalentOption identifier="deadmanwalking"/>
               </TalentOptions>
         </SubTree>
         <SubTree identifier="Specialist" type="specialization" requires="security_primary" blocks="whaler,frogman">
             <TalentOptions>
-                <TalentOption identifier="divinggoodies" />
-                <TalentOption identifier="onewithwater" />
+                <TalentOption identifier="divinggoodies"/>
+                <TalentOption identifier="onewithwater"/>
               </TalentOptions>
               <TalentOptions>
-                <TalentOption identifier="strongcurrents" />
-                <TalentOption identifier="scavenger" />
+                <TalentOption identifier="strongcurrents"/>
+                <TalentOption identifier="scavenger"/>
               </TalentOptions>
               <TalentOptions>
-                <TalentOption identifier="bangstickschematics" />
+                <TalentOption identifier="bangstickschematics"/>
               </TalentOptions>
               <TalentOptions>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="dualspecops" />
-                <TalentOption identifier="divinginstructor" />
+                <TalentOption identifier="dualspecops"/>
+                <TalentOption identifier="divinginstructor"/>
               </TalentOptions>
         </SubTree>
     </TalentTree>
@@ -505,51 +505,51 @@
         <!-- Buffing the submarine by crafing stuff to place, diving suits, no more view obstruction -->
         <!-- <SubTree identifier="electrician">
             <TalentOptions>
-                <TalentOption identifier="minorinmechanics" />
-                <TalentOption identifier="justascratch" />
+                <TalentOption identifier="minorinmechanics"/>
+                <TalentOption identifier="justascratch"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="melodicrespite" />
-                <TalentOption identifier="intheflow" />
+                <TalentOption identifier="melodicrespite"/>
+                <TalentOption identifier="intheflow"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="electrochemist" />
-                <TalentOption identifier="optimizedpowerflow" />
+                <TalentOption identifier="electrochemist"/>
+                <TalentOption identifier="optimizedpowerflow"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="allseeingeye" />
+                <TalentOption identifier="allseeingeye"/>
             </TalentOptions>
         </SubTree>
         <SubTree identifier="shipmaster">
             <TalentOptions>
-                <TalentOption identifier="commander" />
+                <TalentOption identifier="commander"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="trustbuilding" />
-                <TalentOption identifier="maintenanceroutine" />
+                <TalentOption identifier="trustbuilding"/>
+                <TalentOption identifier="maintenanceroutine"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="camaraderie" />
-                <TalentOption identifier="inspiretobattle" />
+                <TalentOption identifier="camaraderie"/>
+                <TalentOption identifier="inspiretobattle"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="allhandsondeck" />
+                <TalentOption identifier="allhandsondeck"/>
             </TalentOptions>
         </SubTree>
         <SubTree identifier="physicist">
             <TalentOptions>
-                <TalentOption identifier="remotemonitor" />
+                <TalentOption identifier="remotemonitor"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="coauthor" />
-                <TalentOption identifier="hazardousmaterials" />
+                <TalentOption identifier="coauthor"/>
+                <TalentOption identifier="hazardousmaterials"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="collegeathletics" />
-                <TalentOption identifier="polymath" />
+                <TalentOption identifier="collegeathletics"/>
+                <TalentOption identifier="polymath"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="phdinnuclearphysics" />
+                <TalentOption identifier="phdinnuclearphysics"/>
             </TalentOptions>
         </SubTree> -->
         <SubTree identifier="weaponsengineer" type="specialization" requires="engineer_primary" blocks="electrician,physicist">
@@ -576,25 +576,25 @@
                         - guns increase your ranged fireing speed and aim (weapon skill)
                         - static defence increase your mele speed and damage
                         - items related to medical increase your drug intake effectivness and small buff to medics on the sumbarine -->
-                        <TalentOption identifier="DivingSonar" />
+                        <TalentOption identifier="DivingSonar"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- discharge coils crafting -->
-                <TalentOption identifier="DivingSonar" />
+                <TalentOption identifier="DivingSonar"/>
                 <!-- spikes (static defence) crafting -->
-                <TalentOption identifier="DivingSonar" />
+                <TalentOption identifier="DivingSonar"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- your placed items gain small reduction to deteroration speed, dependent on amout of items placed
                      unlock medium tier variants of placables -->
-                     <TalentOption identifier="DivingSonar" />
+                     <TalentOption identifier="DivingSonar"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- deus ex machina 
                     ability to create turret emplacements that can turn into turrets with materials
                     all items on submarine gain small part of your buff from 1st talent depndent on amout of items placed by you
                     gain quest to unlock high tech tier of placables -->
-                    <TalentOption identifier="DivingSonar" />
+                    <TalentOption identifier="DivingSonar"/>
             </TalentOptions>
         </SubTree>
         <SubTree identifier="physicist" type="specialization" requires="engineer_primary" blocks="weaponsengineer,electrician">
@@ -641,29 +641,29 @@
         <SubTree identifier="weaponsengineer" type="specialization" requires="mechanic_primary" blocks="crafter,resuplayer">
             <TalentOptions>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="bootcamp" />
+                <TalentOption identifier="bootcamp"/>
                 <!-- Add to quatermaster and security -->
                 <!-- TODO does not exist -->
-                <TalentOption identifier="armsdealer" />
+                <TalentOption identifier="armsdealer"/>
                 <!-- Add it to COB and engineer, and mabe quatermaster -->
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO does not exist -->
                 <TalentOption identifier="massproduction"/>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="militaryapplications" />
+                <TalentOption identifier="militaryapplications"/>
                 <!-- Add it to COB and engineer, and mabe quatermaster -->
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="demolitionsexpert" />
+                <TalentOption identifier="demolitionsexpert"/>
                 <!-- Move to quatermaster -->
-                <TalentOption identifier="gunsmith" />
+                <TalentOption identifier="gunsmith"/>
                 <!-- Move to quatermaster -->
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="ironstorm"/>
-                <TalentOption identifier="nuclearoption" />
+                <TalentOption identifier="nuclearoption"/>
                 <!-- Todo think of better thing than rfa Remove RFA, add it as a class weapon, Add it to COB and engineer, and mabe quatermaster -->
             </TalentOptions>
         </SubTree>
@@ -672,18 +672,18 @@
             <!-- gain reciepies from talent row from other classes, 1st tree. gain ability to create pockets and upgaded clothing for other classes -->
             <TalentOptions>
                 <TalentOption identifier="hullfixer"/>
-                <TalentOption identifier="tinkerer" />
+                <TalentOption identifier="tinkerer"/>
                 <!-- Add to Quatermaster -->
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="quickfixer"/>
-                <TalentOption identifier="massproduction" />
+                <TalentOption identifier="massproduction"/>
                 <!-- Add it to Quatermaster-->
                 <!-- Add to Mechanic and Quatermaster  -->
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="strengthenedalloys" />
+                <TalentOption identifier="strengthenedalloys"/>
                 <TalentOption identifier="letitdrain"/>
                 <!-- TODO Fabricate toolls to an Quatermaster, Status monitor to COB, Mechanic -->
             </TalentOptions>
@@ -691,7 +691,7 @@
                 <TalentOption identifier="robotics"/>
                 <!-- Add it to COB and engineer, and mabe quatermaster -->
                 <!-- TODO does not exist -->
-                <TalentOption identifier="artisansmith" />
+                <TalentOption identifier="artisansmith"/>
                 <!-- Move to quatermaster -->
             </TalentOptions>
         </SubTree>
@@ -701,32 +701,32 @@
             <TalentOptions>
                 <TalentOption identifier="iamthatguy"/>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="cannedheat" />
+                <TalentOption identifier="cannedheat"/>
                 <!-- Move to quatermaster -->
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="heavylifting"/>
                 <TalentOption identifier="mudraptorwrestler"/>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="crisismanagement" />
+                <TalentOption identifier="crisismanagement"/>
                 <!-- Dumb but can stay in Mechanic and Quatermaster -->
                 <!-- TODO does not exist -->
-                <TalentOption identifier="overclocking" />
+                <TalentOption identifier="overclocking"/>
                 <!-- Add it to Quatermaster and COB -->
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="foolhardy"/>
                 <TalentOption identifier="berserker"/>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="castledoctrine" />
+                <TalentOption identifier="castledoctrine"/>
                 <!-- Add it to COB and engineer, and mabe quatermaster -->
                 <!-- TODO does not exist -->
-                <TalentOption identifier="expandedresearch" />
+                <TalentOption identifier="expandedresearch"/>
                 <!-- Add it to COB and engineer, and mabe quatermaster -->
             </TalentOptions>
             <TalentOptions>
                 <TalentOption identifier="powerarmor"/>
-                <TalentOption identifier="logisticsmaster" />
+                <TalentOption identifier="logisticsmaster"/>
                 <!-- craft big ass backpack and diving suit -->
             </TalentOptions>
         </SubTree>
@@ -754,60 +754,60 @@
         <!-- same as normal doc, but with more focus on medical training diving suit life support witch can save you in emergancies -->
         <!-- <SubTree identifier="xenologist">
             <TalentOptions>
-                <TalentOption identifier="researchersintuition" />
+                <TalentOption identifier="researchersintuition"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="curiosity" />
-                <TalentOption identifier="doubleduty" />
+                <TalentOption identifier="curiosity"/>
+                <TalentOption identifier="doubleduty"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="alienhoarder" />
-                <TalentOption identifier="reverseengineer" />
+                <TalentOption identifier="alienhoarder"/>
+                <TalentOption identifier="reverseengineer"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="atmosmachine" />
+                <TalentOption identifier="atmosmachine"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="enchance1" />
+                <TalentOption identifier="enchance1"/>
             </TalentOptions>
         </SubTree>
         <SubTree identifier="medic">
             <TalentOptions>
-                <TalentOption identifier="fieldmedic" />
+                <TalentOption identifier="fieldmedic"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="mechanicscourse" />
-                <TalentOption identifier="firemanscarry" />
+                <TalentOption identifier="mechanicscourse"/>
+                <TalentOption identifier="firemanscarry"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="bedsidemanner" />
-                <TalentOption identifier="combatmedic" />
+                <TalentOption identifier="bedsidemanner"/>
+                <TalentOption identifier="combatmedic"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="dontdieonme" />
+                <TalentOption identifier="dontdieonme"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="enchance2" />
+                <TalentOption identifier="enchance2"/>
             </TalentOptions>
         </SubTree>
         <SubTree identifier="scientist">
             <TalentOptions>
-                <TalentOption identifier="drsubmarine" />
-                <TalentOption identifier="genetherapist" />
+                <TalentOption identifier="drsubmarine"/>
+                <TalentOption identifier="genetherapist"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="researchgrant" />
-                <TalentOption identifier="researchanddevelopment" />
+                <TalentOption identifier="researchgrant"/>
+                <TalentOption identifier="researchanddevelopment"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="geneharvester" />
-                <TalentOption identifier="geneticstability" />
+                <TalentOption identifier="geneharvester"/>
+                <TalentOption identifier="geneticstability"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="advancedsplicing" />
+                <TalentOption identifier="advancedsplicing"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="enchance3" />
+                <TalentOption identifier="enchance3"/>
             </TalentOptions>
         </SubTree> -->
         <SubTree identifier="medic" type="specialization" requires="medical_primary" blocks="xenologist,scientist">
@@ -830,20 +830,20 @@
             <TalentOptions>
               <!-- ability to create first aid kits that can slow down deteriorating status of a patients
                    every time you save a person you gain a medical magazine, that increases medical gain speed and assists in gaining medical skill  depending on number of people saved by the CMO, if skill maxed gain small amout of talent xp -->
-                   <TalentOption identifier="DivingSonar" />
+                   <TalentOption identifier="DivingSonar"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="DivingSonar" />
+                <TalentOption identifier="DivingSonar"/>
             </TalentOptions>
             <TalentOptions>
               <!-- turrent defence buff -->
-              <TalentOption identifier="DivingSonar" />
+              <TalentOption identifier="DivingSonar"/>
               <!-- handheld guns buff -->
-              <TalentOption identifier="DivingSonar" />
+              <TalentOption identifier="DivingSonar"/>
             </TalentOptions>
             <TalentOptions>
               <!-- after killing abyss monster you gain a trinket that gives buff to a person you gave it. dissapears on death, does not stack -->
-              <TalentOption identifier="DivingSonar" />
+              <TalentOption identifier="DivingSonar"/>
             </TalentOptions>
           </SubTree>
         <SubTree identifier="scientist" type="specialization" requires="medical_primary" blocks="xenologist,medic">
@@ -885,41 +885,41 @@
         <!-- Genes and ruin exploration + clown, TODO in future BaroPlus integration, diving suit upgrade, add moloch shell  -->
         <SubTree identifier="xenologist" type="specialization" requires="assistant_primary" blocks="apprentice,scientist">
             <TalentOptions>
-                <TalentOption identifier="curiosity" />
+                <TalentOption identifier="curiosity"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="researchersintuition" />
-                <TalentOption identifier="applicationofreserch" />
+                <TalentOption identifier="researchersintuition"/>
+                <TalentOption identifier="applicationofreserch"/>
                 <!-- Gain more damgage aginst ruin guardians  -->
             </TalentOptions>
             <TalentOptions>
                  <!-- TODO does not exist -->
-                <TalentOption identifier="alienhoarder" />
+                <TalentOption identifier="alienhoarder"/>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="reverseengineer" />
+                <TalentOption identifier="reverseengineer"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="atmosmachine" />
+                <TalentOption identifier="atmosmachine"/>
             </TalentOptions>
         </SubTree>
         <SubTree identifier="scientist" type="specialization" requires="assistant_primary" blocks="xenologist,apprentice">
             <TalentOptions>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="genetherapist" />
+                <TalentOption identifier="genetherapist"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="geneharvester" />
+                <TalentOption identifier="geneharvester"/>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="geneticstability" />
+                <TalentOption identifier="geneticstability"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="advancedsplicing" />
+                <TalentOption identifier="advancedsplicing"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- <TalentOption identifier="advancedxenology"/>  Mudraptor breeding -->
-                <TalentOption identifier="superadvancedsplicing" />
+                <TalentOption identifier="superadvancedsplicing"/>
                 <!-- spicers from genes+ -->
             </TalentOptions>
         </SubTree>
@@ -967,48 +967,48 @@
         <SubTree identifier="cleaner" type="specialization" requires="assistant_primary" blocks="jackofalltrades,clown">
             <!-- TODO name -->
             <TalentOptions>
-                <TalentOption identifier="supercleaner" />
+                <TalentOption identifier="supercleaner"/>
                 <!-- add crafting of dasher cleaner -->
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="firemanscarry" />
+                <TalentOption identifier="firemanscarry"/>
                 <!-- Add to Custodian, add to medic -->
                 <!-- TODO does not exist -->
-                <TalentOption identifier="stillkicking" />
+                <TalentOption identifier="stillkicking"/>
                 <!-- ROOMBA -->
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="crewlayabout" />
+                <TalentOption identifier="crewlayabout"/>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="survivalpackage" />
+                <TalentOption identifier="survivalpackage"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="graduationceremony" />
+                <TalentOption identifier="graduationceremony"/>
                 <!-- neurotoxin ammo for dasher cleaner -->
             </TalentOptions>
         </SubTree>
         <SubTree identifier="jackofalltrades" type="specialization" requires="assistant_primary" blocks="cleaner,clown">
             <TalentOptions>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="multitasker" />
+                <TalentOption identifier="multitasker"/>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="apprenticeship" />
+                <TalentOption identifier="apprenticeship"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="standanddeliver" />
+                <TalentOption identifier="standanddeliver"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="richinknowledge" />
+                <TalentOption identifier="richinknowledge"/>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="aceofalltrades" />
+                <TalentOption identifier="aceofalltrades"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="olympian" />
+                <TalentOption identifier="olympian"/>
             </TalentOptions>
         </SubTree>
         <SubTree identifier="clown" type="specialization" requires="assistant_primary" blocks="cleaner,jackofalltrades">
@@ -1048,69 +1048,69 @@
         <SubTree identifier="violent" type="specialization" requires="assistant_primary" blocks="cooperative,trolling">
             <!-- TODO name -->
             <TalentOptions>
-                <TalentOption identifier="pyromaniac" />
+                <TalentOption identifier="pyromaniac"/>
                 <!-- add to prisoner -->
-                <TalentOption identifier="combatinstincts" />
+                <TalentOption identifier="combatinstincts"/>
                 <!-- more damage when using diving kinves -->
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="deaddrops" />
+                <TalentOption identifier="deaddrops"/>
                 <!-- Gain free weapons every round  -->
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="implacable" />
+                <TalentOption identifier="implacable"/>
                 <!-- when dead revive a short while after  -->
-                <TalentOption identifier="adaptiblity" />
+                <TalentOption identifier="adaptiblity"/>
                 <!-- 100% stun resistance  -->
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="physicalconditioning" />
+                <TalentOption identifier="physicalconditioning"/>
             </TalentOptions>
         </SubTree>
         <SubTree identifier="trolling" type="specialization" requires="assistant_primary" blocks="violent,cooperative">
             <!-- TODO name -->
             <TalentOptions>
-                <TalentOption identifier="skedaddle" />
+                <TalentOption identifier="skedaddle"/>
                 <!-- Move to prisoner -->
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="stillkicking" />
+                <TalentOption identifier="stillkicking"/>
                 <!-- Move it to a prisoner -->
-                <TalentOption identifier="immunetodeath" />
+                <TalentOption identifier="immunetodeath"/>
                 <!-- resisstance to reaper tax-->
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="securitybackground" />
+                <TalentOption identifier="securitybackground"/>
                 <!-- 50 weapons skill -->
-                <TalentOption identifier="stonewall" />
+                <TalentOption identifier="stonewall"/>
                 <!-- 50% resistance to everthing -->
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="publicenemynumberone" />
+                <TalentOption identifier="publicenemynumberone"/>
                 <!-- get a nuke each round  -->
             </TalentOptions>
         </SubTree>
         <SubTree identifier="cooperative" type="specialization" requires="assistant_primary" blocks="violent,trolling">
             <!-- TODO name -->
             <TalentOptions>
-                <TalentOption identifier="playingcatchup" />
+                <TalentOption identifier="playingcatchup"/>
                 <!-- Move to prisoner Should be in all classes -->
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="insurancepolicy" />
+                <TalentOption identifier="insurancepolicy"/>
                 <!-- Move it to a prisoner -->
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="apprenticeship" />
+                <TalentOption identifier="apprenticeship"/>
                 <!-- Move it to a prisoner -->
                 <!-- TODO does not exist -->
-                <TalentOption identifier="standanddeliver" />
+                <TalentOption identifier="standanddeliver"/>
                 <!-- Move it to a prisoner -->
             </TalentOptions>
             <TalentOptions>
                 <!-- TODO does not exist -->
-                <TalentOption identifier="graduationceremony" />
+                <TalentOption identifier="graduationceremony"/>
                 <!-- Add it to prisoner, and Custodian -->
             </TalentOptions>
         </SubTree>
