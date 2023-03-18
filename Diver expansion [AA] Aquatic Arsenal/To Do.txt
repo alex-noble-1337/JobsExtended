@@ -1,0 +1,49 @@
+Debug
+-Fix Flare Harpoons
+
+-naprawić csb i handheldsonardecoy żeby nie dało się edytować light componentów
+
+-ustawić światła na handheldsonardecoyu i silentsonarscanner, zmienić dźwięk
+
+-handheldsonardecoy nie znika po wybuchu
+
+-ustawić do rzucania handheldsonardecoy i pomyśleć o zmianie nazwy handheldsonar decoy i silentsonarscanner.
+
+-Error in talent thickblood: Ability Barotrauma.Abilities.CharacterAbilityGiveResistance does not have an implementation for VerifyState!
+ This ability does not work in interval ability groups. (naprawic thickblood)
+
+-Invalid stat type type "PhysicalDamageReduction" in CharacterTalent (murkywaters)
+
+
+Dodać:
+
+Skille:
+Deep Breath: (-50% low o2 accumulation) Slow down your breath just like in the training. Allows you to stay under water longer without oxygen.
+Swimming Fins: (+40% swimming speed) When exiting the claustrophobic spaces of submarine you feel like fish in the water. Swim faster than your crewmates.
+Bangstick Blueprints:
+2. When sub is filled with water get damage reduction/start growing vigor
+3. Fabricate Diving Equipment 1 higher quality
+4. Fabricating Oxygen Tanks has 25% to produce an extra one.
+8. Sea Shanties that reduce physosis for .
+9. restorative ethanol remedy - the more you're drunk the more your health regens, also gain damage resistance
+10. Whale Bomb.
+11. Killing stuff grants 100% experience in creature's health pool.
+12. Shotgun+50% damage on the next shot when hit. cooldown 10 seconds.
+13. Trophy Collector. Killing a monster gives 25% chance for it to spawn it's head in it's inventory that you can exchange for money or decraft for materials/genetics.
+
+Dodatkowo
+Odporność na fale tak jak safety harness na diving suitach
+
+
+Changelog:
+
+Notable Changes:
+-Added a new job with a talent tree and perks
+-Added 3 starting clothes for the new job and it's 3 loadouts
+-Added new harpoons
+-Added 2 new diving masks
+-Added a bangstick and a large harpoon cannon
+-Added new weapon type that shoots steel bolts instead of harpoons or bullets.
+-Added a harpoon pistol to go along the harpoon gun. You can dual wield them or take one and a flashlight.
+-Overriden old harpoons, updated flavor text and allowed them to load up to 6 different harpoon types instead of a stack of 6 of one type
+-Overriden harpoon gun to be shown before the harpoons so that as you move loaded harpoons don't pop in and out in front of it's model

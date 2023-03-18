@@ -203,68 +203,76 @@
   </TalentTree>
   <TalentTree jobidentifier="diver">
     <SubTree identifier="security_primary" nameidentifier="talenttree.primary" type="primary">
-      <TalentOptions requiredtalents="2" maxchosentalents="6">
-        <TalentOption identifier="protectandserve"/>
-        <TalentOption identifier="warstories"/>
-        <TalentOption identifier="firstaidtraining"/>
-        <TalentOption identifier="physicalconditioning"/>
-        <TalentOption identifier="swole"/>
-        <TalentOption identifier="buff"/>
-      </TalentOptions>
-      <TalentOptions requiredtalents="2" maxchosentalents="5">
-        <TalentOption identifier="weaponsmith"/>
-        <TalentOption identifier="bythebook"/>
-        <TalentOption identifier="dontpushit"/>
-        <TalentOption identifier="bootcamp"/>
-        <TalentOption identifier="munitionsexpertise"/>
-      </TalentOptions>
+        <TalentOptions maxchosentalents="2">
+            <TalentOption identifier="protectandserve"/>
+            <TalentOption identifier="warstories"/>
+            <TalentOption identifier="firstaidtraining"/>
+            <TalentOption identifier="physicalconditioning"/>
+            <TalentOption identifier="swole"/>
+            <TalentOption identifier="buff"/>
+        </TalentOptions>
+        <TalentOptions maxchosentalents="2">
+            <TalentOption identifier="weaponsmith"/>
+            <TalentOption identifier="bythebook"/>
+            <TalentOption identifier="dontpushit"/>
+            <TalentOption identifier="bootcamp"/>
+            <TalentOption identifier="munitionsexpertise"/>
+        </TalentOptions>
     </SubTree>
-    <SubTree identifier="scrapper" type="specialization" requires="mechanic_primary" blocks="machinist,brawler">
-      <TalentOptions>
-        <TalentOption identifier="miner"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="residualwaste"/>
-        <TalentOption identifier="massproduction"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="scrapsavant"/>
-        <TalentOption identifier="toolmaintenance"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="ironstorm"/>
-      </TalentOptions>
+    <!-- offensive tree, going out of the submarine and fight in water, upgrade pucs with fins same as slipsuit -->
+    <SubTree identifier="whaler" type="specialization" requires="security_primary" blocks="frogman,Specialist">
+        <TalentOptions>
+            <TalentOption identifier="thickblood"/>
+            <TalentOption identifier="sppschematics"/>
+          </TalentOptions>
+          <TalentOptions>
+            <TalentOption identifier="pxschematics"/>
+            <TalentOption identifier="murkywaters"/>
+          </TalentOptions>
+          <TalentOptions>
+            <TalentOption identifier="underwaterdemolition"/>
+            <TalentOption identifier="commando"/>
+          </TalentOptions>
+          <TalentOptions>
+            <TalentOption identifier="marinerecon"/>
+            <TalentOption identifier="combatdiver"/>
+          </TalentOptions>
     </SubTree>
-    <SubTree identifier="frogman" type="specialization" requires="security_primary" blocks="enforcer,gunner">
-      <TalentOptions>
-        <TalentOption identifier="boardingparty"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="scavenger"/>
-        <TalentOption identifier="slayer"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="easyturtle"/>
-        <TalentOption identifier="daringdolphin"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="specops"/>
-      </TalentOptions>
+    <SubTree identifier="frogman" type="specialization" requires="security_primary" blocks="whaler,Specialist">
+        <TalentOptions>
+            <TalentOption identifier="seadogspirit"/>
+            <TalentOption identifier="sealeg"/>
+          </TalentOptions>
+          <TalentOptions>
+            <TalentOption identifier="improvisedutilityharpoons"/>
+          </TalentOptions>
+          <TalentOptions>
+            <!-- TODO does not exist -->
+            <TalentOption identifier="buccaneer"/>  
+            <TalentOption identifier="masterworkexperimentalharpoons"/>
+          </TalentOptions>
+          <TalentOptions>
+            <TalentOption identifier="baneofthecryingseals"/>
+            <TalentOption identifier="deadmanwalking"/>
+          </TalentOptions>
     </SubTree>
-    <SubTree identifier="gunslinger" type="specialization" requires="captain_primary" blocks="skipper,politician">
-      <TalentOptions>
-        <TalentOption identifier="quickdraw"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="lonewolf"/>
-        <TalentOption identifier="deputy"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="drunkensailor"/>
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="bigguns"/>
-      </TalentOptions>
+    <SubTree identifier="Specialist" type="specialization" requires="security_primary" blocks="whaler,frogman">
+        <TalentOptions>
+            <TalentOption identifier="divinggoodies"/>
+            <TalentOption identifier="onewithwater"/>
+          </TalentOptions>
+          <TalentOptions>
+            <TalentOption identifier="strongcurrents"/>
+            <TalentOption identifier="scavenger"/>
+          </TalentOptions>
+          <TalentOptions>
+            <TalentOption identifier="bangstickschematics"/>
+          </TalentOptions>
+          <TalentOptions>
+            <!-- TODO does not exist -->
+            <TalentOption identifier="dualspecops"/>
+            <TalentOption identifier="divinginstructor"/>
+          </TalentOptions>
     </SubTree>
   </TalentTree>
 

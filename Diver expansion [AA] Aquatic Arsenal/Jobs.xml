@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Jobs>
+  <Job identifier="leaddiver" maxnumber="2" minkarma="40" uicolor="0.54,0.41,0.76" vitalitymodifier="0" pricemultiplier="1.15" idlebehavior="Patrol">
+    <Jobicon>
+      <!-- rgb(0.35,0.22,0.61)  -->
+      <sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" sourcerect="252,2,123,125" origin="0.5,0.5" />
+    </Jobicon>
+    <JobiconSmall>
+      <sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" sourcerect="432,70,28,28" origin="0.5,0.5" />
+    </JobiconSmall>
+    <Skills>
+      <Skill identifier="weapons" level="35,45" primary="true" />
+      <Skill identifier="medical" level="15,25" />
+      <Skill identifier="mechanical" level="20,25" />
+      <Skill identifier="electrical" level="20,25" />
+      <Skill identifier="helm" level="20,30" />
+    </Skills>
+    <ItemSet>
+      <Item identifier="whalerregalia" equip="true" outfit="true" />
+      <Item identifier="oldseadoghat" equip="true" />
+      <Item identifier="idcard" equip="true" showpreview="false" />
+      <Item identifier="harpoongun">
+        <Item identifier="spear" showpreview="false" />
+        <Item identifier="spear" showpreview="false" />
+        <Item identifier="spear" showpreview="false" />
+        <Item identifier="spear" showpreview="false" />
+        <Item identifier="spear" showpreview="false" />
+        <Item identifier="spear" showpreview="false" />
+      </Item>
+      <Item identifier="flashlight">
+        <Item identifier="batterycell" showpreview="false" />
+      </Item>
+      <Item identifier="spear" />
+      <Item identifier="spear" />
+      <Item identifier="spear" />
+      <Item identifier="spear" />
+      <Item identifier="handheldsonar">
+        <Item identifier="batterycell" showpreview="false" />
+      </Item>
+      <Item identifier="divingmask" equip="false">
+        <Item identifier="oxygentank" showpreview="false" />
+      </Item>
+      <Item identifier="headset" equip="true" showpreview="false">
+        <Item identifier="batterycell" showpreview="false" />
+      </Item>
+      <PreviewSprites dims="120,109">
+        <sprite texture="Content/Items/Jobgear/Security/securityofficer_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
+        <sprite texture="Content/Items/Jobgear/Security/securityofficer_torso_[GENDER]_1.png" sourcerect="121,0,76,80" offset="-20,15" />
+      </PreviewSprites>
+    </ItemSet>
+    <ItemSet>
+      <Item identifier="frogmanvestments" equip="true" outfit="true" />
+      <Item identifier="advanceddivingmask" equip="true" />
+      <Item identifier="idcard" equip="true" showpreview="false" />
+      <Item identifier="spp">
+        <Item identifier="sppbolt" showpreview="false" />
+        <Item identifier="sppbolt" showpreview="false" />
+        <Item identifier="sppbolt" showpreview="false" />
+        <Item identifier="sppbolt" showpreview="false" />
+      </Item>
+      <Item identifier="flashlight">
+        <Item identifier="batterycell" showpreview="false" />
+      </Item>
+      <Item identifier="sppbolt" />
+      <Item identifier="sppbolt" />
+      <Item identifier="sppbolt" />
+      <Item identifier="sppbolt" />
+      <Item identifier="sppbolt" />
+      <Item identifier="sppbolt" />
+      <Item identifier="sppbolt" />
+      <Item identifier="sppbolt" />
+      <Item identifier="sppbolt" />
+      <Item identifier="sppbolt" />
+      <Item identifier="sppbolt" />
+      <Item identifier="sppbolt" />
+      <Item identifier="divingknife" equip="false" />
+      <Item identifier="sonarbeacon">
+        <Item identifier="batterycell" showpreview="false" />
+      </Item>
+      <Item identifier="oxygentank" showpreview="false" />
+      <Item identifier="headset" equip="true" showpreview="false">
+        <Item identifier="batterycell" showpreview="false" />
+      </Item>
+      <PreviewSprites dims="120,109">
+        <sprite texture="Content/Items/Jobgear/Security/securityofficer_torso_[GENDER]_2.png" sourcerect="2,38,120,109" offset="0,0" />
+        <sprite texture="Content/Items/Jobgear/Security/securityofficer_torso_[GENDER]_2.png" sourcerect="121,0,76,80" offset="-20,15" />
+      </PreviewSprites>
+    </ItemSet>
+    <ItemSet>
+      <Item identifier="divinginstructorgarments" equip="true" outfit="true" />
+      <Item identifier="bluebeanie" equip="true" />
+      <Item identifier="idcard" equip="true" showpreview="false" />
+      <Item identifier="harpoonpistol">
+        <Item identifier="spear" showpreview="false" />
+        <Item identifier="spear" showpreview="false" />
+      </Item>
+      <Item identifier="flashlight">
+        <Item identifier="batterycell" showpreview="false" />
+      </Item>
+      <Item identifier="spear" />
+      <Item identifier="spear" />
+      <Item identifier="spear" />
+      <Item identifier="spear" />
+      <Item identifier="spear" />
+      <Item identifier="spear" />
+      <Item identifier="divingknife" equip="false" />
+      <Item identifier="underwaterscooter">
+        <Item identifier="batterycell" showpreview="false" />
+      </Item>
+      <Item identifier="divingmask" equip="false">
+        <Item identifier="oxygentank" showpreview="false" />
+      </Item>
+      <Item identifier="headset" equip="true" showpreview="false">
+        <Item identifier="batterycell" showpreview="false" />
+      </Item>
+      <PreviewSprites dims="120,109">
+        <sprite texture="Content/Items/Jobgear/Security/securityofficer_torso_[GENDER]_3.png" sourcerect="2,38,120,109" offset="0,0" />
+        <sprite texture="Content/Items/Jobgear/Security/securityofficer_torso_[GENDER]_3.png" sourcerect="121,0,76,80" offset="-20,15" />
+      </PreviewSprites>
+    </ItemSet>
+    <PortraitClothing>
+      <sprite name="Portrait Clothing Lead Diver" texture="Content/Items/Jobgear/PortraitClothing.png" sheetindex="0,1" />
+    </PortraitClothing>
+    <AutonomousObjectives>
+      <Order identifier="fightintruders" prioritymodifier="1" />
+      <Order identifier="rescue" prioritymodifier="1" />
+      <Order identifier="extinguishfires" prioritymodifier="0.75" />
+    </AutonomousObjectives>
+    <AppropriateOrders>
+      <Order identifier="operateweapons" />
+      <Order identifier="fightintruders" />
+    </AppropriateOrders>
+  </Job>
+</Jobs>

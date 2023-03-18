@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+  <!-- Jobs -->
+  <jobname.leaddiver>Lead Diver</jobname.leaddiver>
+  <jobdescription.leaddiver>Lead diver is a special role whose special traits excel the most when submerged in the water unlike the rest of the crew that prefers to stay in the cozy spaces of a submarine. Has basic knowledge of sailing a submarine.</jobdescription.leaddiver>
+  <jobname.leaddiver1>Whaler</jobname.leaddiver1>
+  <jobname.leaddiver2>Frogman</jobname.leaddiver2>
+  <jobname.leaddiver3>Diving Instructor</jobname.leaddiver3>
+  <jobdescription.leaddiver1>Whaler is a subclass that operates new weapons working similarly to the harpoon gun, crafts new experimental harpoons.</jobdescription.leaddiver1>
+  <jobdescription.leaddiver2>Frogman puts all his trust not in local means of defence but legacy prototype weapons used on Earth in marine environment</jobdescription.leaddiver2>
+  <jobdescription.leaddiver3>Diving instructor excels in coordinating diving operations and proving overall utility and support underwater</jobdescription.leaddiver3>
+  <!-- talent trees -->
+  <talenttree.whaler>Whaler</talenttree.whaler>
+  <talenttree.frogman>Frogman</talenttree.frogman>
+  <talenttree.divinginstructor>Diving Instructor</talenttree.divinginstructor>
+  <!-- talent info-->
+  <talentname.strongcurrents>Strong Currents</talentname.strongcurrents>
+  <talentdescription.strongcurrents>Attacks you suffer are [attackpowerreduction]% less powerful while you are in water. Additionally your training allows you to fight water currents more easily and resist [flowresistance]% water impact.</talentdescription.strongcurrents>
+  <talentname.murkywaters>Murky Waters</talentname.murkywaters>
+  <talentdescription.murkywaters>When submerged in water inside of a submarine you receive [statamount1]% damage resistance and [statamount2]% swimming speed.</talentdescription.murkywaters>
+  <talentname.trophyhunter>Trophy Hunter</talentname.trophyhunter>
+  <talentdescription.trophyhunter>Whenever you or an allied crewmember kills a monster, your crew gains additional marks equal to [percentage]% of the creature's maximum health.</talentdescription.trophyhunter>
+  <talentname.seadogspirit>Seadog Spirit</talentname.seadogspirit>
+  <talentname.onewithwater>One With Water</talentname.onewithwater>
+  <talentname.sealeg>Sea Leg</talentname.sealeg>
+  <talentdescription.sealeg>Your strong leg allows you to carry containers and body bags [movementspeed]% quicker than the rest of the crew and [drag].</talentdescription.sealeg>
+  <talentname.improvisedutilityharpoons>Improvised Utility Harpoons</talentname.improvisedutilityharpoons>
+  <talentdescription.improvisedutilityharpoons>Your knowledge of metal forging and creativity has led you to discovering new harpoons to gut aliens with.</talentdescription.improvisedutilityharpoons>
+  <talentname.masterworkexperimentalharpoons>Masterwork Experimental Harpoons</talentname.masterworkexperimentalharpoons>
+  <talentdescription.masterworkexperimentalharpoons>Your expertise and unmatched skill in harpoon-making allow you to produce experimental harpoons. You're also a quick learner.</talentdescription.masterworkexperimentalharpoons>
+  <talentdescription.harpoonmaker>Additionally, years of forging harpoons taught you to make them with your eyes closed. You have a [probability]% chance of crafting an [extra harpoon] each time you craft one.</talentdescription.harpoonmaker>
+  <talentname.baneofthecryingseals>Bane Of The Crying Seals</talentname.baneofthecryingseals>
+  <talentdescription.baneofthecryingseals>Unlocks you a schematic of a gigantic harpoon cannon, it's the closest thing to a coilgun that you can carry with you. Best used with a laser guide.</talentdescription.baneofthecryingseals>
+  <talentname.deadmanwalking>Dead Man Walking</talentname.deadmanwalking>
+  <talentdescription.deadmanwalking>Moreover your critical state deceives enemies making them ignore you when you've been ragdolled for at least 4 seconds.</talentdescription.deadmanwalking>
+  <talentname.divinggoodies>Diving Goodies</talentname.divinggoodies>
+  <talentdescription.divinggoodies>Whenever you finish at least one mission you will receive the following supplies: </talentdescription.divinggoodies>
+  <talentname.sppschematics>SPP-1 Schematics</talentname.sppschematics>
+  <talentdescription.sppschematics>Your only friend that you can trust on this ship, also middle finger to the power tripping security. When things get bad you won't have to depend on anyone. Shoots steel bolts and can penetrate armor.</talentdescription.sppschematics>
+  <talentname.pxschematics>PX-11 Schematics</talentname.pxschematics>
+  <talentdescription.pxschematics>This experimental smg made for use underwater will surely work wonders in the dark depths of Europa. Quickly eats through ammo reserves and can penetrate armor with it's steel bolts.</talentdescription.pxschematics>
+  <talentname.eyeforaneye>Eye For An Eye</talentname.eyeforaneye>
+  <talentdescription.eyeforaneye>When attacked, your next shot will deal [50]% more damage. Additionally you deal [25]% more damage with shotguns.</talentdescription.eyeforaneye>
+  <talentname.underwaterdemolition>Underwater Demolition</talentname.underwaterdemolition>
+  <talentdescription.underwaterdemolition>Gain access to a prototype handheld sonar decoy that you can use as a distraction. After activation a countdown will start giving you [25] seconds to get rid of it before it breaks and [detonates] whatever you put inside of it.</talentdescription.underwaterdemolition>
+  <talentname.bangstickschematics>Bangstick Schematics</talentname.bangstickschematics>
+  <talentdescription.bangstickschematics>Bangstick is the closest thing to a practical melee weapon for aquatic combat. A diving knife often struggles piercing hard scales, why not blow them open with explosives on a metal rod?</talentdescription.bangstickschematics>
+  <talentname.marinerecon>Marine Recon</talentname.marinerecon>
+  <talentdescription.adsschematics>ADS amphibious rifle is a unique burst rifle allowing for shooting underwater with little to no problems. Best known for it's unrivalled armor penetration. Additionally you're paid [amount]% more marks for completing [missions] missions.</talentdescription.adsschematics>
+  <talentname.combatdiver>Combat Diver</talentname.combatdiver>
+  <talentdescription.apsschematics>APS amphibious carbine is a fully automatic rifle that is excellent for clearing out caves, wrecks and locations submerged in water. Provides good armor penetration capabilities. You are also paid [amount]% more marks for completing [missions] missions.</talentdescription.apsschematics>
+  <talentname.divinginstructor>Diving Instructor</talentname.divinginstructor>
+  <talentdescription.divinginstructor>Your diving courses and underwater competence that you share with your crew greatly increases morale and proficiency when in water. Players near you gain:</talentdescription.divinginstructor>
+  <talentdescription.divinginstructorstat1>[amount]% [stat]</talentdescription.divinginstructorstat1>
+  <talentdescription.divinginstructorstat2>[amount]% [stat]</talentdescription.divinginstructorstat2>
+  <talentdescription.divinginstructorstat3>[amount]% [stat]</talentdescription.divinginstructorstat3>
+  <afflictionname.overwatched>Overwatched by Lead Diver</afflictionname.overwatched>
+  <afflictiondescription.overwatched>This person is being supervised by a lead diver who boosts morale and enchances abilities of other divers near him.</afflictiondescription.overwatched>
+  <talentname.thickblood>Thick Blood</talentname.thickblood>
+  <talentdescription.thickblood>When lower than [50]% health your wounds slowly stop bleeding and you regenerate. Additionally you gain [stun]% [stunstat] resistance when underwater.</talentdescription.thickblood>
+</infotexts>

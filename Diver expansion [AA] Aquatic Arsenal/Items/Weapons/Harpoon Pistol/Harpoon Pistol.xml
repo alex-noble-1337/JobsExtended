@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Item name="Harpoon Pistol" identifier="harpoonpistol" description="Harpoon pistol, the smaller counter part of the harpoon gun" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun" Scale="0.37" impactsoundtag="impact_metal_light">
+  <PreferredContainer primary="armcab" minamount="1" maxamount="2" spawnprobability="1" />
+  <PreferredContainer primary="wreckarmcab" minamount="0" maxamount="1" spawnprobability="0.25" />
+  <Price baseprice="100" soldeverywhere="false">
+    <Price locationtype="outpost" multiplier="1.5" minavailable="1" />
+    <Price locationtype="city" multiplier="1.25" minavailable="3" />
+    <Price locationtype="research" multiplier="1.25" minavailable="1" />
+    <Price locationtype="military" multiplier="0.9" minavailable="6" />
+    <Price locationtype="mine" multiplier="1.25" minavailable="1" />
+  </Price>
+  <Deconstruct time="10">
+    <Item identifier="steel" />
+    <Item identifier="carbon" />
+  </Deconstruct>
+  <Fabricate suitablefabricators="fabricator" requiredtime="20">
+    <RequiredSkill identifier="weapons" level="15" />
+    <RequiredItem identifier="steel" />
+    <RequiredItem identifier="carbon" />
+  </Fabricate>
+  <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal.png" sourcerect="32,44,158,65" origin="0.5,0.5" />
+  <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal.png" sourcerect="32,44,158,65" depth="0.50" origin="0.5,0.5" Scale="0.37" />
+  <Body width="160" height="50" density="50" />
+  <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="100,-5" handle1="-52,0" msg="ItemMsgPickUpSelect" />
+  <RangedWeapon reload="1.3" barrelpos="6,12" spread="3" unskilledspread="9" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
+    <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+    <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+    <Sound file="Content/Items/Weapons/HarpoonGun1.ogg" type="OnUse" selectionmode="Random" />
+    <Sound file="Content/Items/Weapons/HarpoonGun2.ogg" type="OnUse" />
+    <Sound file="Content/Items/Weapons/HarpoonGun3.ogg" type="OnUse" />
+    <StatusEffect type="OnUse">
+      <Explosion range="100.0" force="3" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
+    </StatusEffect>
+    <RequiredItems items="harpoonammo" type="Contained" msg="ItemMsgSpearRequired" />
+    <RequiredSkill identifier="weapons" level="20" />
+  </RangedWeapon>
+  <ItemContainer itempos="27,10" iteminterval="0,6" hideitems="false" capacity="2" maxstacksize="1" containedstateindicatorstyle="spear" containedspritedepths="0.551,0.552">
+    <Containable items="harpoonammo" />
+  </ItemContainer>
+  <aitarget sightrange="1200" soundrange="500" fadeouttime="2" />
+</Item>

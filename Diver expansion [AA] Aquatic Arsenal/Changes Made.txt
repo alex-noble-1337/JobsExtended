@@ -1,0 +1,9 @@
+Notable Changes:
+-Added a new job with a talent tree and perks
+-Added new harpoons
+-Added 3 new clothes that act as a diving suit
+-Added 2 new diving masks
+-Added a few new guns, melee weapons, a bangstick and a large harpoon cannon
+-Added a harpoon pistol to go along the harpoon gun. You can dual wield them or take one and a flashlight.
+-Overriden old harpoons, updated flavor text
+-Overriden harpoon gun to be shown before the harpoons so that as you move loaded harpoons don't pop in and out in front of it's model

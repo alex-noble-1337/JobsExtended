@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Item name="Crying Seals Balista" identifier="csb" category="Equipment" description="State of art technology condesing questionable amount of power into this modified spear gun powered by compressed air. Would make a seal cry." cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.22" impactsoundtag="impact_metal_light">
+  <Deconstruct time="10">
+    <Item identifier="titaniumaluminiumalloy" />
+    <Item identifier="fulgurium" />
+    <Item identifier="physicorium" />
+    <Item identifier="incendium" />
+    <Item identifier="steel" />
+  </Deconstruct>
+  <Fabricate suitablefabricators="fabricator" requiredtime="150">
+    <RequiredSkill identifier="weapons" level="60" />
+    <RequiredItem identifier="titaniumaluminiumalloy" />
+    <RequiredItem identifier="fulgurium" />
+    <RequiredItem identifier="physicorium" />
+    <RequiredItem identifier="incendium" />
+    <RequiredItem identifier="steel" />
+  </Fabricate>
+  <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal.png" sourcerect="18,386,609,220" origin="0.5,0.5" />
+  <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal.png" sourcerect="18,386,609,220" depth="0.5" scale="0.22" origin="0.5,0.5" />
+  <Body width="200" height="100" density="50" />
+  <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="30,-40" aimpos="50,-40" handle1="-260,0" handle2="-60,60" holdangle="-340" msg="ItemMsgPickUpSelect" />
+  <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+    <sprite name="Crying Seals Ballista Worn" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal.png" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" depth="0.6" sourcerect="18,386,609,220" limb="Torso" scale="0.22" origin="0.5,1.1" />
+  </Wearable>
+  <RangedWeapon barrelpos="60,0" reload="12" spread="1" unskilledspread="6" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
+    <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+    <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+    <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Crying Seals Ballista/CSBgunshot1.ogg" type="OnUse" range="4500" selectionmode="Random" />
+    <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Crying Seals Ballista/CSBgunshot2.ogg" type="OnUse" range="4500" />
+    <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Crying Seals Ballista/CSBgunshot3.ogg" type="OnUse" range="4500" />
+    <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Crying Seals Ballista/CSBgunshot4.ogg" type="OnUse" range="4500" />
+    <ParticleEmitter particle="muzzleflash" scale="1.5" particleamount="1" velocitymin="0" velocitymax="0" />
+    <!-- This statuseffect will make smoke, bubbles and screenshaking effect while shooting -->
+    <StatusEffect type="OnUse">
+      <Explosion range="50.0" force="15" shockwave="true" smoke="true" flames="false" flash="false" sparks="false" underwaterbubble="true" camerashake="12.0" />
+    </StatusEffect>
+    <!-- Reload 12, exhale 0.5, inhale 10 -->
+    <!-- Oxygen Tank hissing the air out, delayed by 0.5 seconds. -->
+    <StatusEffect type="OnUse" delay="0.5">
+      <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Crying Seals Ballista/Exhale1.ogg" type="OnUse" range="5000" selectionmode="Random" />
+      <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Crying Seals Ballista/Exhale2.ogg" type="OnUse" range="5000" />
+      <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Crying Seals Ballista/Exhale3.ogg" type="OnUse" range="5000" />
+      <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Crying Seals Ballista/Exhale4.ogg" type="OnUse" range="5000" />
+    </StatusEffect>
+    <!-- Oxygen Tank hissing the air out, delayed by 10.0 seconds. -->
+    <StatusEffect type="OnUse" delay="10">
+      <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Crying Seals Ballista/Inhale1.ogg" type="OnUse" range="2000" selectionmode="Random" />
+      <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Crying Seals Ballista/Inhale2.ogg" type="OnUse" range="2000" />
+      <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Crying Seals Ballista/Inhale3.ogg" type="OnUse" range="2000" />
+      <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Crying Seals Ballista/Inhale4.ogg" type="OnUse" range="2000" />
+    </StatusEffect>
+    <!--Check that ammo container and battery are inside. If not shooting will be terminated with "exception" asking for missing item-->
+    <RequiredItems items="csbammo" type="Contained" msg="Large Harpoon Required" />
+    <RequiredItems items="oxygentank" type="Contained" msg="Oxygen Tank Required" />
+    <RequiredSkill identifier="weapons" level="60" />
+    <StatusEffect type="OnUse" target="Contained">
+      <Use />
+    </StatusEffect>
+    <!--Oxygen tank lasts for 2 shots before it has to be replaced to continue shooting (100condition -2x(50condition).-->
+    <StatusEffect type="OnUse" targettype="contained" targets="oxygentank" identifier="oxygentank" Condition="-50.0" disabledeltatime="true">
+      <RequiredItem items="oxygentank" type="Contained" />
+    </StatusEffect>
+    <!--Also uses ONE entire large harpoon-->
+    <StatusEffect type="OnUse" targettype="contained" targets="csbammo">
+      <RequiredItem items="csbammo" type="Contained" />
+    </StatusEffect>
+  </RangedWeapon>
+  <ItemContainer itempos="105,-7" iteminterval="0,-4" hideitems="false" capacity="2" maxstacksize="1" containedstateindicatorstyle="spear" containedspritedepths="0.551,0.552">
+    <Containable items="csbammo,oxygentank" />
+  </ItemContainer>
+  <LightComponent LightColor="255,50,50,255" Flicker="0.02" range="700" powerconsumption="0" IsOn="false" canbeselected="true">
+    <LightTexture texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Crying Seals Ballista/CSB Laser.png" origin="-0.055, 0.52" size="0.8,0.05" />
+  </LightComponent>
+  <CustomInterface canbeselected="true" drawhudwhenequipped="true">
+    <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="256,32" style="ItemUI" />
+    <TickBox text="Harpoon Guide">
+      <StatusEffect type="OnUse" target="This" IsOn="true" />
+      <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
+    </TickBox>
+  </CustomInterface>
+  <aitarget sightrange="0" soundrange="1500" fadeouttime="3" />
+  <Quality>
+    <QualityStat stattype="AttackMultiplier" value="0.1" />
+  </Quality>
+</Item>

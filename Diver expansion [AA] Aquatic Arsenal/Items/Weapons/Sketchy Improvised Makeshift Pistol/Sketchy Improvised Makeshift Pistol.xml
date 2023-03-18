@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Item name="Sketchy Improvised Makeshift Pistol" identifier="simp" description="...or SIMP for short. Seems to feed shotgun shells" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun" Scale="0.2" impactsoundtag="impact_metal_light">
+  <Price baseprice="125" soldeverywhere="false">
+    <Price locationtype="outpost" multiplier="1.5" minavailable="1" />
+    <Price locationtype="city" multiplier="1.25" minavailable="2" />
+    <Price locationtype="research" multiplier="1.25" sold="false" />
+    <Price locationtype="military" multiplier="0.9" sold="false" />
+    <Price locationtype="mine" multiplier="1.25" sold="false" />
+  </Price>
+  <Deconstruct time="10">
+    <Item identifier="steel" />
+    <Item identifier="iron" />
+  </Deconstruct>
+  <Fabricate suitablefabricators="fabricator" requiredtime="15">
+    <RequiredSkill identifier="weapons" level="30" />
+    <RequiredItem identifier="steel" />
+    <RequiredItem identifier="iron" />
+  </Fabricate>
+  <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal Part 2.png" sourcerect="702,189,320,222" origin="0.5,0.5" />
+  <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Aquatic Arsenal Part 2.png" sourcerect="728,231,258,137" depth="0.53" origin="0.5,0.5" scale="0.2" />
+  <Body width="72" height="40" density="50" />
+  <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="90,10" handle1="-35,-5" msg="ItemMsgPickUpSelect" />
+  <RangedWeapon reload="3" barrelpos="14,6" spread="3" unskilledspread="6" combatPriority="20" drawhudwhenequipped="true" crosshairscale="0.2">
+    <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+    <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+    <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Sketchy Improvised Makeshift Pistol/SIMPgunshot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+    <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Sketchy Improvised Makeshift Pistol/SIMPgunshot1.ogg" type="OnUse" range="3000" />
+    <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Sketchy Improvised Makeshift Pistol/SIMPgunshot1.ogg" type="OnUse" range="3000" />
+    <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+    <!-- Metal click after shooting delayed by 2.7 second to let you you know you can shoot again -->
+    <StatusEffect type="OnUse" delay="2.7">
+      <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Sketchy Improvised Makeshift Pistol/Click1.ogg" type="OnUse" range="500" selectionmode="Random" />
+      <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Sketchy Improvised Makeshift Pistol/Click2.ogg" type="OnUse" range="500" />
+      <Sound file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Sketchy Improvised Makeshift Pistol/Click3.ogg" type="OnUse" range="500" />
+    </StatusEffect>
+    <StatusEffect type="OnUse">
+      <Explosion range="20.0" force="8" shockwave="false" smoke="true" flames="false" sparks="true" underwaterbubble="false" camerashake="5.0" />
+    </StatusEffect>
+    <RequiredItems items="shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
+    <RequiredSkill identifier="weapons" level="30" />
+  </RangedWeapon>
+  <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
+    <Containable items="shotgunammo" />
+  </ItemContainer>
+  <aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
+  <Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
