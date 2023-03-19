@@ -171,11 +171,11 @@ Hook.Add("roundStart", "JobsExtendedSpawnWaypoints", function()
     end
 end)
 
-Hook.Add("chatMessage", "test.SpawnpointSpawning", function (message, client)
-    if message == "!SubmarineTest" then
-        if SERVER or (not Game.IsMultiplayer) then
-            SpawnJobsExtendedWaypoints()
-        end
-    end
-    return false
-end)
+-- Hook.Add("chatMessage", "test.SpawnpointSpawning", function (message, client)
+--     if message == "!SubmarineTest" then
+--         if SERVER or (not Game.IsMultiplayer) then
+--             SpawnJobsExtendedWaypoints()
+--         end
+--     end
+--     return false
+-- end)
