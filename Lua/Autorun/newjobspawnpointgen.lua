@@ -1,81 +1,181 @@
-local spawnpointSeparation = 20
+local spawnpointSeparation = 40
 
 LuaUserData.MakeMethodAccessible(Descriptors["Barotrauma.WayPoint"], "set_AssignedJob")
 LuaUserData.MakeMethodAccessible(Descriptors["Barotrauma.WayPoint"], "set_IdCardTags")
 
-function SpawnNewWaypoint(jobID, position, cardPerms)
+local function SpawnNewWaypoint_sub(jobID, position, cardPerms, submarine)
     -- get any spawnpoint as a "prefab"
-    local oldSpawnpoint = WayPoint.SelectCrewSpawnPoints({((Client.ClientList)[1]).CharacterInfo}, submarine)[1]
+    -- local oldSpawnpoint = WayPoint.SelectCrewSpawnPoints({((Client.ClientList)[1]).CharacterInfo}, submarine)[1]
     
     -- , position, SpawnType.Human,
     -- clone creates new waypoint
-    local newWaypoint = WayPoint(WayPoint.Type.SpawnPoint, Rectangle(position.X, position.Y, 6, 6), submarine)
-
+    -- local newWaypoint = WayPoint(WayPoint.Type.SpawnPoint, Rectangle(position.X, position.Y, 6, 6), submarine)
+    local newWaypoint = WayPoint(position, SpawnType.Human, submarine)
     -- changing the newly created waypoint (unsure if changing oldSpawnpoint var would make changes to old waypoint in game)
     -- change the job Id
     newWaypoint.set_AssignedJob(JobPrefab.Get(jobID))
     -- hope it works, havent seen it defined inside Waypoint.cs
     -- IdCardTags is a string[] so if that does not work create a function that iterates over adn append one by one
     newWaypoint.set_IdCardTags(cardPerms)
+
+    print("Created Spawnpoint for " .. newWaypoint.AssignedJob.Identifier.ToString() .. " with cardperms " .. table.concat(newWaypoint.IdCardTags).. " on coordinates " .. newWaypoint.WorldPosition.ToString() .. " in submarine on position " ..  newWaypoint.Submarine.WorldPosition.ToString())
+    -- Networking.CreateEntityEvent(newWaypoint)
+    return newWaypoint
 end
 
-if CLIENT or (not Game.IsMultiplayer) then
-    Networking.Receive("sync.SpawnNewWaypoint", function (msg)
-        SpawnNewWaypoint(msg.ReadSingle(), msg.ReadSingle(), msg.ReadSingle())
-    end)
+
+function SpawnNewSpawnpoint(vanillaSpawnPoint, targetJobId, offsetx, additionalcardperms)
+    local cardperms = additionalcardperms
+
+    -- TODO check if it requires comma between individual cardperm
+    if vanillaSpawnPoint.IdCardTags ~= nil then
+        for _, cardperm in pairs(vanillaSpawnPoint.IdCardTags) do
+            table.insert(cardperms, cardperm)
+        end
+    end
+
+    local positionofspawnpoint = vanillaSpawnPoint.Position
+    positionofspawnpoint = Vector2(positionofspawnpoint.X + offsetx, positionofspawnpoint.Y)
+
+    local submarine = vanillaSpawnPoint.Submarine
+
+    local cardpermtoadd = "id_" .. targetJobId
+    local exists = false
+    for _, cardperm in pairs(cardperms) do
+        if cardpermtoadd == cardperm then
+            exists = true
+        end
+    end
+    if exists == false then
+        table.insert(cardperms, cardpermtoadd)
+    end
+
+    SpawnNewWaypoint_sub(targetJobId, positionofspawnpoint, cardperms, submarine)
+end
+
+
+function SetPlayerCharacter(client)
+    local character
+    if client == nil then
+        character = Character.Controlled
+    else
+        character = client.Character
+    end
+
+    return character
 end
 
 Hook.Add("chatMessage", "test.SpawnpointSpawning", function (message, client)
-    if message ~= "!SpawnpointSpawning" then return end
-    
-    if SERVER or (not Game.IsMultiplayer) then
+    if message == "!SpawnpointSpawning" then
+        -- for testing
+        local character = SetPlayerCharacter(client)
 
-        print(client)
+        -- requred values in function
+        -- no default
+        local vanillaSpawnPoint = WayPoint.SelectCrewSpawnPoints({character.Info}, character.Submarine)[1]
 
-        local targetJobId = "executive_officer"
-        print((client.Character).Position)
-        SpawnNewWaypoint(targetJobId, (client.Character).Position, {"id_executive_officer"})
-
-        -- lets send a net message to all clients so they add our link
-        local msg = Networking.Start("sync.SpawnNewWaypoint")
-        msg.WriteSingle(targetJobId)
-        msg.WriteSingle((client.Character).Position)
-        msg.WriteSingle({"id_executive_officer"})
-
-        return true -- returning true allows us to hide the message
+        SpawnNewSpawnpoint(vanillaSpawnPoint, "executive_officer", 20, {})
+        return true -- returning true allows us to hide the message 
     end
 end)
 
-if SERVER or (not Game.IsMultiplayer) then
+local function isInsidearray(argument, array)
+    for _, element in pairs(array) do
+        -- print(argument .. "to" .. element)
+        if argument == element then
+            return true
+        end
+    end
+    return false
+end
+
+
+local newjobs = {"commanding_officer", "executive_officer", "navigator",
+                 "chief", "engineering", "mechanical", "quartermaster", 
+                 "head_of_security", "security", "diver", 
+                 "chiefmedicaldoctor", "medicalstaff", 
+                 "passenger", "janitor", "inmate"}
+
+
+function SpawnNewSpawnpoint_noDups(vanillaSpawnPoint, targetJobId, offsetx, additionalcardperms, spawnPointsJE)
+    local positionofspawnpoint = Vector2(vanillaSpawnPoint.Position.X + offsetx, vanillaSpawnPoint.Position.Y)
+    if not isInsidearray(positionofspawnpoint, spawnPointsJE) then
+        SpawnNewSpawnpoint(vanillaSpawnPoint, targetJobId, offsetx, additionalcardperms)
+    end
+end
+
+function SpawnJobsExtendedWaypoints()
+    local offsetx = spawnpointSeparation
+
+    -- get all JobsExtended Spawnpoints in one list
+    local spawnPointsJE = {}
+    for _, WayPoint in pairs(WayPoint.WayPointList) do
+        if WayPoint.AssignedJob ~= nil then
+            if isInsidearray(WayPoint.AssignedJob.Identifier.ToString(), newjobs) then
+                table.insert(spawnPointsJE, WayPoint.Position)
+            end
+        end
+    end
+    -- for _, element in pairs(spawnPointsJE) do
+    --     print(element.AssignedJob.Identifier.ToString())
+    -- end
+    
     -- use this or SelectCrewSpawnPoints if that does not work
     for _, WayPoint in pairs(WayPoint.WayPointList) do
         -- job changing sheneanegans
-        if WayPoint.AssignedJob == "captain" then
-            WayPoint.AssignedJob = "commanding_officer"
-            -- create executive_officer spawnpoint with spawnpointSeparation 
-            -- create navigator spawnpoint with spawnpointSeparation 
-        end
-        if WayPoint.AssignedJob == "engineer" then
-            WayPoint.AssignedJob = "engineering"
-            -- create chief spawnpoint with spawnpointSeparation
-        end
-        if WayPoint.AssignedJob == "mechanic" then
-            WayPoint.AssignedJob = "mechanical"
-            -- create quartermaster spawnpoint with spawnpointSeparation 
-        end
-        if WayPoint.AssignedJob == "securityofficer" then
-            WayPoint.AssignedJob = "security"
-            -- create head_of_security spawnpoint with spawnpointSeparation 
-            -- create diver spawnpoint with spawnpointSeparation 
-        end
-        if WayPoint.AssignedJob == "medicaldoctor" then
-            WayPoint.AssignedJob = "medicalstaff"
-            -- create chiefmedicaldoctor spawnpoint with spawnpointSeparation 
-        end
-        if WayPoint.AssignedJob == "assistant" then
-            WayPoint.AssignedJob = "passenger"
-            -- create janitor spawnpoint with spawnpointSeparation 
-            -- create inmate spawnpoint with spawnpointSeparation 
+        if WayPoint.AssignedJob ~= nil then
+            if WayPoint.AssignedJob.Identifier.ToString() == "captain" then
+                SpawnNewSpawnpoint_noDups(WayPoint, "commanding_officer", 0, {}, spawnPointsJE)
+                -- create executive_officer spawnpoint with spawnpointSeparation 
+                SpawnNewSpawnpoint_noDups(WayPoint, "executive_officer", offsetx, {}, spawnPointsJE)
+                -- create navigator spawnpoint with spawnpointSeparation 
+                SpawnNewSpawnpoint_noDups(WayPoint, "navigator", -1*offsetx, {}, spawnPointsJE)
+            end
+            if WayPoint.AssignedJob.Identifier.ToString() == "engineer" then
+                SpawnNewSpawnpoint_noDups(WayPoint, "engineering", 0, {}, spawnPointsJE)
+                -- create chief spawnpoint with spawnpointSeparation 
+                SpawnNewSpawnpoint_noDups(WayPoint, "chief", offsetx, {}, spawnPointsJE)
+            end
+            if WayPoint.AssignedJob.Identifier.ToString() == "mechanic" then
+                SpawnNewSpawnpoint_noDups(WayPoint, "mechanical", 0, {}, spawnPointsJE)
+                -- create quartermaster spawnpoint with spawnpointSeparation 
+                SpawnNewSpawnpoint_noDups(WayPoint, "quartermaster", offsetx, {}, spawnPointsJE)
+            end
+            if WayPoint.AssignedJob.Identifier.ToString() == "securityofficer" then
+                SpawnNewSpawnpoint_noDups(WayPoint, "security", 0, {}, spawnPointsJE)
+                -- create head_of_security spawnpoint with spawnpointSeparation 
+                SpawnNewSpawnpoint_noDups(WayPoint, "head_of_security", offsetx, {}, spawnPointsJE)
+                -- create diver spawnpoint with spawnpointSeparation 
+                SpawnNewSpawnpoint_noDups(WayPoint, "diver", -1*offsetx, {}, spawnPointsJE)
+            end
+            if WayPoint.AssignedJob.Identifier.ToString() == "medicaldoctor" then
+                SpawnNewSpawnpoint_noDups(WayPoint, "medicalstaff", 0, {}, spawnPointsJE)
+                -- create chiefmedicaldoctor spawnpoint with spawnpointSeparation 
+                SpawnNewSpawnpoint_noDups(WayPoint, "chiefmedicaldoctor", offsetx, {}, spawnPointsJE)
+                
+            end
+            if WayPoint.AssignedJob.Identifier.ToString() == "assistant" then
+                SpawnNewSpawnpoint_noDups(WayPoint, "passenger", 0, {}, spawnPointsJE)
+                -- create janitor spawnpoint with spawnpointSeparation 
+                SpawnNewSpawnpoint_noDups(WayPoint, "janitor", offsetx, {}, spawnPointsJE)
+                -- create inmate spawnpoint with spawnpointSeparation 
+                SpawnNewSpawnpoint_noDups(WayPoint, "inmate", -1*offsetx, {}, spawnPointsJE)
+            end
         end
     end
 end
+
+Hook.Add("roundStart", "JobsExtendedSpawnWaypoints", function()
+    if SERVER or (not Game.IsMultiplayer) then
+        SpawnJobsExtendedWaypoints()
+    end
+end)
+
+-- Hook.Add("chatMessage", "test.SpawnpointSpawning", function (message, client)
+--     if message == "!SubmarineTest" then
+--         if SERVER or (not Game.IsMultiplayer) then
+--             SpawnJobsExtendedWaypoints()
+--         end
+--     end
+--     return false
+-- end)

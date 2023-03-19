@@ -1,4 +1,11 @@
 local function ChangePlayerCharacterInfo(Client, targetJobId)
+    -- local skills = {}
+    -- skills.append(Client.Job.GetSkill("helm"))
+    -- skills.append(Client.Job.GetSkill("weapons"))
+    -- skills.append(Client.Job.GetSkill("mechanical"))
+    -- skills.append(Client.Job.GetSkill("electrical"))
+    -- skills.append(Client.Job.GetSkill("medical"))
+
     -- empty info kek
     -- local empty_info = CharacterInfo("human", "Robert")
     -- empty_info.Job = Job(JobPrefab.Get("assistant"))
@@ -15,7 +22,7 @@ local function ChangePlayerCharacterInfo(Client, targetJobId)
     return new_player_CharacterInfo
 end
 
-local function CreateByIdAndClientAndTakeControll(client, targetJobId)
+local function CreateHumanJob(client, targetJobId)
     -- Note: If we plan only running this server-side, we could grab the CharacterInfo from client instead, which will have all their info already set, like name and hair style.
     local info = ChangePlayerCharacterInfo(client, targetJobId)
     -- info.Job = Job(JobPrefab.Get(targetJobId))
@@ -35,26 +42,60 @@ local function CreateByIdAndClientAndTakeControll(client, targetJobId)
     character.TeamID = CharacterTeamType.Team1
     character.GiveJobItems()
 
-    if CLIENT then
-        Character.Controlled = character
-    else
-        client.SetClientCharacter(character)
-    end
+    return character
 end
 
-Hook.Add("chatMessage", "examples.humanSpawning", function (message, client)
+local function ForceClientTo(client, newjobid)
+    -- create an prisoner job
+    local newcharacter = CreateHumanJob(client, newjobid)
+    -- take controll to prisoner character
+    local oldcharacter
+    if CLIENT then
+        oldcharacter = Character.Controlled
+        Character.Controlled = newcharacter
+    else
+        oldcharacter = client.Character
+        client.SetClientCharacter(newcharacter)
+    end
+    -- kill previous character
+    oldcharacter.Kill(CauseOfDeathType.Unknown)
+end
+
+-- Hook.Add("chatMessage", "jobsextended.changerolecommand", function (message, client)
+--     if SERVER or (not Game.IsMultiplayer) then
+--         if client.HasPermission(ClientPermissions.Ban) then
+--             local allClients = Player.GetAllClients()
+--             for _, playerclient in pairs(allClients) do
+--                 if message ~= nil then
+--                     print(playerclient.Character.Name)
+--                     if message == "!prisoner" .. " ".. playerclient.Character.Name then
+--                         ForceClientTo(playerclient, "inmate")
+--                     end
+--                 end
+--             end  
+--         end
+
+--         return true -- returning true allows us to hide the message
+--     end
+-- end)
+
+Hook.Add("chatMessage", "jobsextended.imprisonment", function (message, client)
     if SERVER or (not Game.IsMultiplayer) then
-        if message ~= "!humanspawning" then return end
-
-        local targetJobId = "executive_officer"
-
-        CreateByIdAndClientAndTakeControll(client, targetJobId)
+        if client.HasPermission(ClientPermissions.Ban) then
+            local allClients = Player.GetAllClients()
+            for _, playerclient in pairs(allClients) do
+                if message ~= nil then
+                    print(playerclient.Character.Name)
+                    if message == "!prisoner" .. " ".. playerclient.Character.Name then
+                        ForceClientTo(playerclient, "inmate")
+                    end
+                end
+            end  
+        end
 
         return true -- returning true allows us to hide the message
     end
 end)
-
-
 
 local function ChangePlayerCharacter(Client, targetJobId)
     local player_character = Client.Character
