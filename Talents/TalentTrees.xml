@@ -282,13 +282,13 @@
             </TalentOptions>
             <TalentOptions>
                 <!-- upgrades to shuttlecaptain, better controller stronger buffs that you can wear or same effect if you havent picked it -->
-                <TalentOption identifier="shuttlecaptain"/>
+                <TalentOption identifier="231nav"/>
                 <!-- upgrades to proffesional, better controller you can wear stronger buffs or same effect if you havent picked it -->
-                <TalentOption identifier="shuttlecaptain"/>
+                <TalentOption identifier="232nav"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- arrow where is the closest enemy?, only if sonar detected it. upgrade to lens -->
-                <TalentOption identifier="shuttlecaptain"/>
+                <TalentOption identifier="241nav"/>
             </TalentOptions>
         </SubTree>
         <!-- defensive buffs, coordinating dive teams -->
@@ -299,23 +299,23 @@
                         - swim speed depending on number of divers or
                         - staying alive when downed in water for longer depending on number of divers
                         - gain long range position detection if in cave or in ruins or in wrecks (next room range) -->
-                <TalentOption identifier="DiverTraining"/>
+                <TalentOption identifier="311nav"/>
               </TalentOptions>
               <TalentOptions>
                 <!-- position detection isnt limited to be only in cave or ruins -->
-                <TalentOption identifier="PositionDetection"/>
+                <TalentOption identifier="321nav"/>
                 <!-- position detection gains ability to detect wrecks, ruins, if inside them detects chest and items with loot -->
-                <TalentOption identifier="GoodiesDetection"/>
+                <TalentOption identifier="322nav"/>
               </TalentOptions>
               <TalentOptions>
                 <!-- better decoys -->
-                <TalentOption identifier="BetterDecoys"/>
+                <TalentOption identifier="331nav"/>
                 <!-- drug that makes you less visible to sonar -->
-                <TalentOption identifier="DrugSonar"/>
+                <TalentOption identifier="332nav"/>
               </TalentOptions>
               <TalentOptions>
                 <!-- diving suit with built in sonar scanner, and ability to slot in polirised glasses from other tree, flare laucher slot, weakpoint and long range position detection if wearing any suit with nav. this suit conumes much more oxygen outside of water -->
-                <TalentOption identifier="DivingSonar"/>
+                <TalentOption identifier="341nav"/>
               </TalentOptions>
         </SubTree>
     </TalentTree>
@@ -339,29 +339,6 @@
               <TalentOption identifier="munitionsexpertise"/>
             </TalentOptions>
           </SubTree>
-          <!-- Middle tree -->
-          <SubTree identifier="frogman" type="specialization" requires="security_primary" blocks="enforcer,gunner">
-            <TalentOptions>
-              <!-- training dummy, with training guns and blank ammo for use with it -->
-              <TalentOption identifier="trainingdummy"/>
-              <!-- paintball ammo as a training -->
-              <TalentOption identifier="paintball"/>
-            </TalentOptions>
-            <TalentOptions>
-              <!-- book talent with skill gain depending on number of monsters killed by the person multipleyed by number of monsters killed by HOS, if skill maxed gain small amout of talent xp -->
-              <TalentOption identifier="themoreyoukill"/>
-            </TalentOptions>
-            <TalentOptions>
-              <!-- turrent defence buff -->
-              <TalentOption identifier="turrentdefencebuff"/>
-              <!-- handheld guns buff -->
-              <TalentOption identifier="handheldgunsbuff"/>
-            </TalentOptions>
-            <TalentOptions>
-              <!-- after killing abyss monster you gain a trinket that gives buff to a person you gave it. dissapears on death, does not stack -->
-              <TalentOption identifier="abyssmonsterkillier"/>
-            </TalentOptions>
-          </SubTree>
           <SubTree identifier="enforcer" type="specialization" requires="security_primary" blocks="frogman,gunner">
             <TalentOptions>
               <TalentOption identifier="pacificationkit"/>
@@ -376,6 +353,29 @@
             </TalentOptions>
             <TalentOptions>
               <TalentOption identifier="implacable"/>
+            </TalentOptions>
+          </SubTree>
+          <!-- Middle tree -->
+          <SubTree identifier="frogman" type="specialization" requires="security_primary" blocks="enforcer,gunner">
+            <TalentOptions>
+              <!-- training dummy, with training guns and blank ammo for use with it -->
+              <TalentOption identifier="211hos"/>
+              <!-- paintball ammo as a training -->
+              <TalentOption identifier="212hos"/>
+            </TalentOptions>
+            <TalentOptions>
+              <!-- book talent with skill gain depending on number of monsters killed by the person multipleyed by number of monsters killed by HOS, if skill maxed gain small amout of talent xp -->
+              <TalentOption identifier="221hos"/>
+            </TalentOptions>
+            <TalentOptions>
+              <!-- turrent defence buff -->
+              <TalentOption identifier="231hos"/>
+              <!-- handheld guns buff -->
+              <TalentOption identifier="232hos"/>
+            </TalentOptions>
+            <TalentOptions>
+              <!-- after killing abyss monster you gain a trinket that gives buff to a person you gave it. dissapears on death, does not stack -->
+              <TalentOption identifier="241hos"/>
             </TalentOptions>
           </SubTree>
           <SubTree identifier="gunner" type="specialization" requires="security_primary" blocks="frogman,enforcer">
@@ -503,55 +503,6 @@
             </TalentOptions>
         </SubTree>
         <!-- Buffing the submarine by crafing stuff to place, diving suits, no more view obstruction -->
-        <!-- <SubTree identifier="electrician">
-            <TalentOptions>
-                <TalentOption identifier="minorinmechanics"/>
-                <TalentOption identifier="justascratch"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="melodicrespite"/>
-                <TalentOption identifier="intheflow"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="electrochemist"/>
-                <TalentOption identifier="optimizedpowerflow"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="allseeingeye"/>
-            </TalentOptions>
-        </SubTree>
-        <SubTree identifier="shipmaster">
-            <TalentOptions>
-                <TalentOption identifier="commander"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="trustbuilding"/>
-                <TalentOption identifier="maintenanceroutine"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="camaraderie"/>
-                <TalentOption identifier="inspiretobattle"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="allhandsondeck"/>
-            </TalentOptions>
-        </SubTree>
-        <SubTree identifier="physicist">
-            <TalentOptions>
-                <TalentOption identifier="remotemonitor"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="coauthor"/>
-                <TalentOption identifier="hazardousmaterials"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="collegeathletics"/>
-                <TalentOption identifier="polymath"/>
-            </TalentOptions>
-            <TalentOptions>
-                <TalentOption identifier="phdinnuclearphysics"/>
-            </TalentOptions>
-        </SubTree> -->
         <SubTree identifier="weaponsengineer" type="specialization" requires="engineer_primary" blocks="electrician,physicist">
             <TalentOptions>
                 <TalentOption identifier="militaryapplications"/>
@@ -576,25 +527,25 @@
                         - guns increase your ranged fireing speed and aim (weapon skill)
                         - static defence increase your mele speed and damage
                         - items related to medical increase your drug intake effectivness and small buff to medics on the sumbarine -->
-                        <TalentOption identifier="DivingSonar"/>
+                <TalentOption identifier="211cob"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- discharge coils crafting -->
-                <TalentOption identifier="DivingSonar"/>
+                <TalentOption identifier="221cob"/>
                 <!-- spikes (static defence) crafting -->
-                <TalentOption identifier="DivingSonar"/>
+                <TalentOption identifier="222cob"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- your placed items gain small reduction to deteroration speed, dependent on amout of items placed
                      unlock medium tier variants of placables -->
-                     <TalentOption identifier="DivingSonar"/>
+                     <TalentOption identifier="231cob"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- deus ex machina 
                     ability to create turret emplacements that can turn into turrets with materials
                     all items on submarine gain small part of your buff from 1st talent depndent on amout of items placed by you
                     gain quest to unlock high tech tier of placables -->
-                    <TalentOption identifier="DivingSonar"/>
+                    <TalentOption identifier="241cob"/>
             </TalentOptions>
         </SubTree>
         <SubTree identifier="physicist" type="specialization" requires="engineer_primary" blocks="weaponsengineer,electrician">
@@ -830,22 +781,22 @@
             <TalentOptions>
               <!-- ability to create first aid kits that can slow down deteriorating status of a patients
                    every time you save a person you gain a medical magazine, that increases medical gain speed and assists in gaining medical skill  depending on number of people saved by the CMO, if skill maxed gain small amout of talent xp -->
-                   <TalentOption identifier="DivingSonar"/>
+                <TalentOption identifier="211cmo"/>
             </TalentOptions>
             <TalentOptions>
-                <TalentOption identifier="DivingSonar"/>
+                <TalentOption identifier="221cmo"/>
             </TalentOptions>
             <TalentOptions>
               <!-- turrent defence buff -->
-              <TalentOption identifier="DivingSonar"/>
+              <TalentOption identifier="231cmo"/>
               <!-- handheld guns buff -->
-              <TalentOption identifier="DivingSonar"/>
+              <TalentOption identifier="232cmo"/>
             </TalentOptions>
             <TalentOptions>
               <!-- after killing abyss monster you gain a trinket that gives buff to a person you gave it. dissapears on death, does not stack -->
-              <TalentOption identifier="DivingSonar"/>
+              <TalentOption identifier="241cmo"/>
             </TalentOptions>
-          </SubTree>
+        </SubTree>
         <SubTree identifier="scientist" type="specialization" requires="medical_primary" blocks="xenologist,medic">
             <TalentOptions>
                 <TalentOption identifier="plaguedoctor"/>
