@@ -1,4 +1,4 @@
-local spawnpointSeparation = 20
+local spawnpointSeparation = 40
 
 LuaUserData.MakeMethodAccessible(Descriptors["Barotrauma.WayPoint"], "set_AssignedJob")
 LuaUserData.MakeMethodAccessible(Descriptors["Barotrauma.WayPoint"], "set_IdCardTags")
@@ -19,7 +19,7 @@ local function SpawnNewWaypoint_sub(jobID, position, cardPerms, submarine)
     newWaypoint.set_IdCardTags(cardPerms)
 
     print("Created Spawnpoint for " .. newWaypoint.AssignedJob.Identifier.ToString() .. " with cardperms " .. table.concat(newWaypoint.IdCardTags).. " on coordinates " .. newWaypoint.WorldPosition.ToString() .. " in submarine on position " ..  newWaypoint.Submarine.WorldPosition.ToString())
-    Networking.CreateEntityEvent(newWaypoint)
+    -- Networking.CreateEntityEvent(newWaypoint)
     return newWaypoint
 end
 
@@ -105,7 +105,7 @@ function SpawnNewSpawnpoint_noDups(vanillaSpawnPoint, targetJobId, offsetx, addi
 end
 
 function SpawnJobsExtendedWaypoints()
-    local offsetx = 40
+    local offsetx = spawnpointSeparation
 
     -- get all JobsExtended Spawnpoints in one list
     local spawnPointsJE = {}
@@ -171,11 +171,11 @@ Hook.Add("roundStart", "JobsExtendedSpawnWaypoints", function()
     end
 end)
 
--- Hook.Add("chatMessage", "test.SpawnpointSpawning", function (message, client)
---     if message == "!SubmarineTest" then
---         if SERVER or (not Game.IsMultiplayer) then
---             SpawnJobsExtendedWaypoints()
---         end
---     end
---     return false
--- end)
+Hook.Add("chatMessage", "test.SpawnpointSpawning", function (message, client)
+    if message == "!SubmarineTest" then
+        if SERVER or (not Game.IsMultiplayer) then
+            SpawnJobsExtendedWaypoints()
+        end
+    end
+    return false
+end)
