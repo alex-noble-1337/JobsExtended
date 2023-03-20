@@ -165,17 +165,20 @@ function SpawnJobsExtendedWaypoints()
     end
 end
 
-Hook.Add("roundStart", "JobsExtendedSpawnWaypoints", function()
-    if SERVER or (not Game.IsMultiplayer) then
-        SpawnJobsExtendedWaypoints()
-    end
-end)
-
--- Hook.Add("chatMessage", "test.SpawnpointSpawning", function (message, client)
---     if message == "!SubmarineTest" then
---         if SERVER or (not Game.IsMultiplayer) then
---             SpawnJobsExtendedWaypoints()
---         end
+-- Hook.Add("roundStart", "JobsExtendedSpawnWaypoints", function()
+--     if SERVER or (not Game.IsMultiplayer) then
+--         SpawnJobsExtendedWaypoints()
 --     end
---     return false
 -- end)
+
+Hook.Add("chatMessage", "test.SpawnpointSpawning", function (message, client)
+    if client.HasPermission(ClientPermissions.Ban) then
+        if message == "!SubmarineTest" then
+            if SERVER or (not Game.IsMultiplayer) then
+                SpawnJobsExtendedWaypoints()
+            end
+        end
+        return false
+    end
+    
+end)

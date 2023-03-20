@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="JobsExtended" modversion="1.0.23" corepackage="False" steamworkshopid="2526236489" gameversion="1.0.8.0" altnames="Jobs Extended">
+<contentpackage name="JobsExtended" modversion="1.0.24" corepackage="False" steamworkshopid="2526236489" gameversion="1.0.8.0" altnames="Jobs Extended">
   <Jobs file="%ModDir%/Jobs.xml" />
   <Item file="%ModDir%/Items/specialitems.xml" />
   <Item file="%ModDir%/Items/uniforms.xml" />
