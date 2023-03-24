@@ -287,8 +287,11 @@
                 <TalentOption identifier="232nav"/>
             </TalentOptions>
             <TalentOptions>
-                <!-- arrow where is the closest enemy?, only if sonar detected it. upgrade to lens -->
-                <TalentOption identifier="241nav"/>
+                <!-- I-Luminator better handheld sonar make it requre some advanced and hard to get shit
+                        - change colors for sonar effect on, humans, your team so you can track them on map, and hostiles
+                        - in radio range it shares sensors with others
+                     navigator gains ability of I-Luminator when using navterminal, both shuttle and normal -->
+                <TalentOption identifier="iluminator"/>
             </TalentOptions>
         </SubTree>
         <!-- defensive buffs, coordinating dive teams -->
@@ -299,23 +302,29 @@
                         - swim speed depending on number of divers or
                         - staying alive when downed in water for longer depending on number of divers
                         - gain long range position detection if in cave or in ruins or in wrecks (next room range) -->
-                <TalentOption identifier="311nav"/>
+                <TalentOption identifier="divertraining"/>
               </TalentOptions>
               <TalentOptions>
                 <!-- position detection isnt limited to be only in cave or ruins -->
-                <TalentOption identifier="321nav"/>
+                <TalentOption identifier="longrangesignaturedetection"/>
                 <!-- position detection gains ability to detect wrecks, ruins, if inside them detects chest and items with loot -->
-                <TalentOption identifier="322nav"/>
+                <TalentOption identifier="precisesignaturedetection"/>
               </TalentOptions>
               <TalentOptions>
                 <!-- better decoys -->
-                <TalentOption identifier="331nav"/>
-                <!-- drug that makes you less visible to sonar -->
-                <TalentOption identifier="332nav"/>
+                <TalentOption identifier="evadeanddecive"/>
+                <!-- drug that makes you less visible to sonar, makes you weak, but its very effective -->
+                <TalentOption identifier="antiultrasonicsstyrofoamdrug"/>
               </TalentOptions>
               <TalentOptions>
-                <!-- diving suit with built in sonar scanner, and ability to slot in polirised glasses from other tree, flare laucher slot, weakpoint and long range position detection if wearing any suit with nav. this suit conumes much more oxygen outside of water -->
-                <TalentOption identifier="341nav"/>
+                <!-- 1st reconcommand diving suit with 
+                        - if slotted iluminator get its abilites
+                        - if slotted polarised glasses get its abilites
+                        - if slotted sonic scanner get its abilites
+                        - flare laucher slot, 
+                        - this suit conumes much more oxygen outside of water 
+                     sonic scanner - weakpoint detection -->
+                <TalentOption identifier="reconandcommandsuit"/>
               </TalentOptions>
         </SubTree>
     </TalentTree>
@@ -359,9 +368,9 @@
           <SubTree identifier="frogman" type="specialization" requires="security_primary" blocks="enforcer,gunner">
             <TalentOptions>
               <!-- training dummy, with training guns and blank ammo for use with it -->
-              <TalentOption identifier="211hos"/>
+              <TalentOption identifier="trainingdummy"/>
               <!-- paintball ammo as a training -->
-              <TalentOption identifier="212hos"/>
+              <TalentOption identifier="bulkammo"/>
             </TalentOptions>
             <TalentOptions>
               <!-- book talent with skill gain depending on number of monsters killed by the person multipleyed by number of monsters killed by HOS, if skill maxed gain small amout of talent xp -->
@@ -518,7 +527,7 @@
                 <TalentOption identifier="nuclearoption"/>
             </TalentOptions>
         </SubTree>
-        <SubTree identifier="electrician" type="specialization" requires="engineer_primary" blocks="weaponsengineer,physicist">
+        <SubTree identifier="Shipwright" type="specialization" requires="engineer_primary" blocks="weaponsengineer,physicist">
             <TalentOptions>
                 <!-- fabricator creation, and creation of submarine items through custom fabricator. 
                      custom items you placed give you small buff to everything while in submarine (also electrical components) 
@@ -527,25 +536,25 @@
                         - guns increase your ranged fireing speed and aim (weapon skill)
                         - static defence increase your mele speed and damage
                         - items related to medical increase your drug intake effectivness and small buff to medics on the sumbarine -->
-                <TalentOption identifier="211cob"/>
+                <TalentOption identifier="AdditiveManufacturingSpecialist"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- discharge coils crafting -->
-                <TalentOption identifier="221cob"/>
+                <TalentOption identifier="HighVoltageSpecialist"/>
                 <!-- spikes (static defence) crafting -->
-                <TalentOption identifier="222cob"/>
+                <TalentOption identifier="RazorSteelCurtain"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- your placed items gain small reduction to deteroration speed, dependent on amout of items placed
                      unlock medium tier variants of placables -->
-                     <TalentOption identifier="231cob"/>
+                     <TalentOption identifier="FabricationMastery"/>
             </TalentOptions>
             <TalentOptions>
                 <!-- deus ex machina 
                     ability to create turret emplacements that can turn into turrets with materials
                     all items on submarine gain small part of your buff from 1st talent depndent on amout of items placed by you
                     gain quest to unlock high tech tier of placables -->
-                    <TalentOption identifier="241cob"/>
+                    <TalentOption identifier="DeusExMachina"/>
             </TalentOptions>
         </SubTree>
         <SubTree identifier="physicist" type="specialization" requires="engineer_primary" blocks="weaponsengineer,electrician">

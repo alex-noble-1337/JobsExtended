@@ -324,87 +324,88 @@
         </AbilityGroupEffect>
     </Talent>
 
-  <Talent identifier="shuttlecaptain"> 
-    <Description tag="talentdescription.shuttlecaptain">
-    </Description>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>
-    <AbilityGroupInterval interval="1.0">
-        <Conditions>
-            <!-- when using shuttle nav terminal -->
-            <AbilityConditionItem tags="secondarynavterminal"/>
-        </Conditions>
-        <Abilities>
-            <!-- apply small buff in big range -->
-            <CharacterAbilityApplyStatusEffectsToAllies maxdistance="100" allowself="True">
-                <StatusEffects>
-                    <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
-                        <!-- TODO make good texture, color and name -->
-                        <Affliction identifier="shuttlecapitan" strength="1.0"/>
-                    </StatusEffect>
-                </StatusEffects>
-            </CharacterAbilityApplyStatusEffectsToAllies>
-        </Abilities>
-    </AbilityGroupInterval>
-    <!-- Remote Shuttle Controller -->
-    <Description tag="talentdescription.unlockrecipe">
-        <Replace tag="[itemname]" value="entityname.RemoteShuttleController-blueprint" color="gui.orange" />
-    </Description>
-    <AddedRecipe itemidentifier="RemoteShuttleController-blueprint"/>
-    <!-- give buffs to shuttle items TODO add shuttle tag to shuttle items -->
-    <AbilityGroupInterval interval="60">
-        <Abilities>
-            <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="DetoriationSpeed" value="0.90" />
-            <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="BatteryCapacity" value="1.1" />
-            <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="EngineSpeed" value="1.1" />
-            <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="EngineMaxSpeed" value="1.1" />
-            <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="PumpSpeed" value="1.1" />
-            <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="PumpMaxFlow" value="1.1" />
-            <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="ReactorMaxOutput" value="1.1" />
-            <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="ReactorFuelEfficiency" value="1.1" />
-            <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="DeconstructorSpeed" value="1.1" />
-            <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="FabricationSpeed" value="1.1" />
-        </Abilities>
-    </AbilityGroupInterval>
-  </Talent>
-  <Talent identifier="proffesional"> 
-    <Description tag="talentdescription.proffesional">
-    </Description>
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>
-    <AbilityGroupInterval interval="1.0">
-        <Conditions>
-            <!-- when using nav terminal -->
-            <AbilityConditionItem tags="primarynavterminal"/>
-        </Conditions>
-        <Abilities>
-            <!-- apply small buff in big range -->
-            <CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" allowself="True">
-                <StatusEffects>
-                    <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
-                        <!-- TODO make good texture, color and name -->
-                        <Affliction identifier="navigatoronstation" strength="1.0"/>
-                    </StatusEffect>
-                </StatusEffects>
-            </CharacterAbilityApplyStatusEffectsToAllies>
-        </Abilities>
-    </AbilityGroupInterval>
-    <!-- Remote Navigation Controller -->
-    <Description tag="talentdescription.unlockrecipe">
-        <Replace tag="[itemname]" value="entityname.RemoteNavigationController-blueprint" color="gui.orange" />
-    </Description>
-    <AddedRecipe itemidentifier="RemoteNavigationController-blueprint"/>
-    <!-- give buffs to engine and pump items TODO check if good -->
-    <AbilityGroupInterval interval="60">
-        <Conditions>
-            <!-- when using nav terminal -->
-            <AbilityConditionItem tags="primarynavterminal"/>
-        </Conditions>
-        <Abilities>
-            <CharacterAbilityGiveItemStatToTags tags="engine" stattype="EngineSpeed" value="1.1" />
-            <CharacterAbilityGiveItemStatToTags tags="engine" stattype="EngineMaxSpeed" value="1.1" />
-            <CharacterAbilityGiveItemStatToTags tags="pump" stattype="PumpSpeed" value="1.1" />
-            <CharacterAbilityGiveItemStatToTags tags="pump" stattype="PumpMaxFlow" value="1.1" />
-        </Abilities>
-    </AbilityGroupInterval>
-  </Talent>
+    <Talent identifier="shuttlecaptain"> 
+        <Description tag="talentdescription.shuttlecaptain">
+        </Description>
+        <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <AbilityGroupInterval interval="1.0">
+            <Conditions>
+                <!-- when using shuttle nav terminal -->
+                <AbilityConditionItem tags="secondarynavterminal"/>
+            </Conditions>
+            <Abilities>
+                <!-- apply small buff in big range -->
+                <CharacterAbilityApplyStatusEffectsToAllies maxdistance="100" allowself="True">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <!-- TODO make good texture, color and name -->
+                            <Affliction identifier="shuttlecapitan" strength="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffectsToAllies>
+            </Abilities>
+        </AbilityGroupInterval>
+        <!-- Remote Shuttle Controller -->
+        <Description tag="talentdescription.unlockrecipe">
+            <Replace tag="[itemname]" value="entityname.RemoteShuttleController-blueprint" color="gui.orange" />
+        </Description>
+        <AddedRecipe itemidentifier="RemoteShuttleController-blueprint"/>
+        <!-- give buffs to shuttle items TODO add shuttle tag to shuttle items -->
+        <AbilityGroupInterval interval="60">
+            <Abilities>
+                <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="DetoriationSpeed" value="0.90" />
+                <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="BatteryCapacity" value="1.1" />
+                <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="EngineSpeed" value="1.1" />
+                <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="EngineMaxSpeed" value="1.1" />
+                <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="PumpSpeed" value="1.1" />
+                <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="PumpMaxFlow" value="1.1" />
+                <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="ReactorMaxOutput" value="1.1" />
+                <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="ReactorFuelEfficiency" value="1.1" />
+                <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="DeconstructorSpeed" value="1.1" />
+                <CharacterAbilityGiveItemStatToTags tags="shuttle" stattype="FabricationSpeed" value="1.1" />
+            </Abilities>
+        </AbilityGroupInterval>
+    </Talent>
+    <Talent identifier="proffesional"> 
+        <Description tag="talentdescription.proffesional">
+        </Description>
+        <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <AbilityGroupInterval interval="1.0">
+            <Conditions>
+                <!-- when using nav terminal -->
+                <AbilityConditionItem tags="primarynavterminal"/>
+            </Conditions>
+            <Abilities>
+                <!-- apply small buff in big range -->
+                <CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" allowself="True">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <!-- TODO make good texture, color and name -->
+                            <Affliction identifier="navigatoronstation" strength="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffectsToAllies>
+            </Abilities>
+        </AbilityGroupInterval>
+        <!-- Remote Navigation Controller -->
+        <Description tag="talentdescription.unlockrecipe">
+            <Replace tag="[itemname]" value="entityname.RemoteNavigationController-blueprint" color="gui.orange" />
+        </Description>
+        <AddedRecipe itemidentifier="RemoteNavigationController-blueprint"/>
+        <!-- give buffs to engine and pump items TODO check if good -->
+        <AbilityGroupInterval interval="60">
+            <Conditions>
+                <!-- when using nav terminal -->
+                <AbilityConditionItem tags="primarynavterminal"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveItemStatToTags tags="engine" stattype="EngineSpeed" value="1.1" />
+                <CharacterAbilityGiveItemStatToTags tags="engine" stattype="EngineMaxSpeed" value="1.1" />
+                <CharacterAbilityGiveItemStatToTags tags="pump" stattype="PumpSpeed" value="1.1" />
+                <CharacterAbilityGiveItemStatToTags tags="pump" stattype="PumpMaxFlow" value="1.1" />
+            </Abilities>
+        </AbilityGroupInterval>
+    </Talent>
+    
   
 </Talents>

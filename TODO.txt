@@ -1,20 +1,15 @@
-- -add draconis-
-- add pockets for all (Draconis) Forked
-
+- add some kind of automatic spawn and recrutment of new npcs
+- Make Lua command to make someone prisioner
 
 - buffs should be visible from the glance when they will end. Make affliction max instead of delay // done from fenzied somewaht
 - add max range for aoe into their descriptions
-
-- append all the tings you made to existing classes
-
-- add some kind of automatic spawn and recrutment of new npcs
 
 - replace all upgrades of buffs from numerical affliction max to new affliction
 - make tumbling work
 
 - remove gunsmith replace it with oldhandsomestranger
 - make oldhandsomestranger give you ablility to craft blueprints for revolver and revolverrounds
-- make every talent do 2 things, except the primary talents
+- make every talent do 3 things, except the primary talents
 
 - Unique diving suits per class with 4 colors
 - Unique weapon per class, CO - handgun and revolver dmg, XO granade damgae and rotary granade laucher, Security Autoshotgun
@@ -25,6 +20,5 @@
 - fully incorporate genes+ to passenger skill tree
 - backpack sucks change it
 - i just copied buck of files withouc changing anyhting (almost) bad!!!
-- Make Lua command to make someone prisioner
 
 - Jobs extended addons with mod that allowed reloading packages (Making so you dont need to install separate packages to patch 2 mods)
