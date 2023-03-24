@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="JobsExtended" modversion="1.0.24" corepackage="False" steamworkshopid="2526236489" gameversion="1.0.8.0" altnames="Jobs Extended">
+<contentpackage name="JobsExtended" modversion="1.0.25" corepackage="False" steamworkshopid="2526236489" gameversion="1.0.8.0" altnames="Jobs Extended">
   <Jobs file="%ModDir%/Jobs.xml" />
   <Item file="%ModDir%/Items/specialitems.xml" />
-  <Item file="%ModDir%/Items/uniforms.xml" />
+  <Item file="%ModDir%/Items/Clothes/uniforms.xml" />
   <TalentTrees file="%ModDir%/Talents/TalentTrees.xml" />
   <TalentTrees file="%ModDir%/Talents/TalentTrees-VanillaLike.xml" />
   <Talents file="%ModDir%/Talents/CO/COTalents.xml" />
@@ -36,7 +36,7 @@
   <Talents file="%ModDir%/Talents/DIV/DIVTalents.xml" />
   <Afflictions file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Afflictions.xml" />
   <Talents file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/Talents.xml" />
-  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Clothes/Clothes and Swimsuits.xml" />
+  <Item file="%ModDir%/Items/Clothes/Clothes_and_Swimsuits.xml" />
   <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/ADS/ADS.xml" />
   <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/APS/APS.xml" />
   <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Stingray Shotgun/Stingray Shotgun.xml" />

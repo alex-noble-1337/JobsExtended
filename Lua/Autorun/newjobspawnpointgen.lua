@@ -3,14 +3,15 @@ local spawnpointSeparation = 40
 LuaUserData.MakeMethodAccessible(Descriptors["Barotrauma.WayPoint"], "set_AssignedJob")
 LuaUserData.MakeMethodAccessible(Descriptors["Barotrauma.WayPoint"], "set_IdCardTags")
 
-local function SpawnNewWaypoint_sub(jobID, position, cardPerms, submarine)
+
+local function SpawnNewWaypoint_sub(jobID, position, cardPerms)
     -- get any spawnpoint as a "prefab"
     -- local oldSpawnpoint = WayPoint.SelectCrewSpawnPoints({((Client.ClientList)[1]).CharacterInfo}, submarine)[1]
     
     -- , position, SpawnType.Human,
     -- clone creates new waypoint
     -- local newWaypoint = WayPoint(WayPoint.Type.SpawnPoint, Rectangle(position.X, position.Y, 6, 6), submarine)
-    local newWaypoint = WayPoint(position, SpawnType.Human, submarine)
+    local newWaypoint = WayPoint(position, SpawnType.Human, Submarine.MainSub)
     -- changing the newly created waypoint (unsure if changing oldSpawnpoint var would make changes to old waypoint in game)
     -- change the job Id
     newWaypoint.set_AssignedJob(JobPrefab.Get(jobID))
@@ -18,11 +19,58 @@ local function SpawnNewWaypoint_sub(jobID, position, cardPerms, submarine)
     -- IdCardTags is a string[] so if that does not work create a function that iterates over adn append one by one
     newWaypoint.set_IdCardTags(cardPerms)
 
-    print("Created Spawnpoint for " .. newWaypoint.AssignedJob.Identifier.ToString() .. " with cardperms " .. table.concat(newWaypoint.IdCardTags).. " on coordinates " .. newWaypoint.WorldPosition.ToString() .. " in submarine on position " ..  newWaypoint.Submarine.WorldPosition.ToString())
+    print("Created Spawnpoint for " .. newWaypoint.AssignedJob.Identifier.ToString() .. " with cardperms " .. table.concat(newWaypoint.IdCardTags).. " on coordinates " .. newWaypoint.WorldPosition.ToString() .. " in submarine on position " ..  Submarine.MainSub.WorldPosition.ToString())
     -- Networking.CreateEntityEvent(newWaypoint)
+
+    -- local message = Networking.Start("syncwaypoints")
+    -- message.WriteString(jobID)
+    -- message.WriteSingle(position.X)
+    -- message.WriteSingle(position.Y)
+
+    -- local lengthNum = 0
+    -- for k, v in pairs(cardPerms) do -- for every key in the table with a corresponding non-nil value 
+    --     lengthNum = lengthNum + 1
+    -- end
+
+    -- message.WriteSingle(lengthNum)
+    -- for _, cardPerm in ipairs(cardPerms) do
+    --     message.WriteString(cardPerm)
+    -- end
+    -- -- message.Write
+    -- Networking.Send(message)
+
     return newWaypoint
 end
 
+if CLIENT then
+    Networking.Receive("syncwaypoints", function (message, client)
+        local jobID = message.ReadString()
+        local position = Vector2(message.ReadSingle(), message.ReadSingle())
+        local cardPermsNum = message.ReadSingle()
+        local cardPerms = {}
+        if cardPermsNum >= 0 then
+            for i = 1, cardPermsNum, 1 do
+                table.insert(cardperms, message.ReadString())
+            end
+        end
+
+        -- get any spawnpoint as a "prefab"
+        -- local oldSpawnpoint = WayPoint.SelectCrewSpawnPoints({((Client.ClientList)[1]).CharacterInfo}, submarine)[1]
+        
+        -- , position, SpawnType.Human,
+        -- clone creates new waypoint
+        -- local newWaypoint = WayPoint(WayPoint.Type.SpawnPoint, Rectangle(position.X, position.Y, 6, 6), submarine)
+        local newWaypoint = WayPoint(position, SpawnType.Human, Submarine.MainSub)
+        -- changing the newly created waypoint (unsure if changing oldSpawnpoint var would make changes to old waypoint in game)
+        -- change the job Id
+        newWaypoint.set_AssignedJob(JobPrefab.Get(jobID))
+        -- hope it works, havent seen it defined inside Waypoint.cs
+        -- IdCardTags is a string[] so if that does not work create a function that iterates over adn append one by one
+        newWaypoint.set_IdCardTags(cardPerms)
+
+        print("Created Spawnpoint for " .. newWaypoint.AssignedJob.Identifier.ToString() .. " with cardperms " .. table.concat(newWaypoint.IdCardTags).. " on coordinates " .. newWaypoint.WorldPosition.ToString() .. " in submarine on position " ..  Submarine.MainSub.WorldPosition.ToString())
+    end)
+end
 
 function SpawnNewSpawnpoint(vanillaSpawnPoint, targetJobId, offsetx, additionalcardperms)
     local cardperms = additionalcardperms
@@ -37,8 +85,6 @@ function SpawnNewSpawnpoint(vanillaSpawnPoint, targetJobId, offsetx, additionalc
     local positionofspawnpoint = vanillaSpawnPoint.Position
     positionofspawnpoint = Vector2(positionofspawnpoint.X + offsetx, positionofspawnpoint.Y)
 
-    local submarine = vanillaSpawnPoint.Submarine
-
     local cardpermtoadd = "id_" .. targetJobId
     local exists = false
     for _, cardperm in pairs(cardperms) do
@@ -50,7 +96,7 @@ function SpawnNewSpawnpoint(vanillaSpawnPoint, targetJobId, offsetx, additionalc
         table.insert(cardperms, cardpermtoadd)
     end
 
-    SpawnNewWaypoint_sub(targetJobId, positionofspawnpoint, cardperms, submarine)
+    SpawnNewWaypoint_sub(targetJobId, positionofspawnpoint, cardperms)
 end
 
 
@@ -171,14 +217,35 @@ end
 --     end
 -- end)
 
-Hook.Add("chatMessage", "test.SpawnpointSpawning", function (message, client)
-    if client.HasPermission(ClientPermissions.Ban) then
-        if message == "!SubmarineTest" then
-            if SERVER or (not Game.IsMultiplayer) then
-                SpawnJobsExtendedWaypoints()
+Hook.Add("chatMessage", "JobsExtended.SpawnpointSpawning", function (message, client)
+    local allowed = false
+    if (not Game.IsMultiplayer) then
+        allowed = true
+    end
+    if allowed == false then
+        if client ~= nil then
+            if client.HasPermission(ClientPermissions.Ban) then
+                allowed = true
             end
         end
-        return false
+    end
+    if allowed then
+        if message == "!SpawnpointSpawning" then
+            if SERVER or (not Game.IsMultiplayer) then
+                SpawnJobsExtendedWaypoints()
+                -- TODO this is stupid fix it, use per-waypoint messege instead of this, per waypoint is up
+                local message = Networking.Start("syncwaypoints")
+                -- message.Write
+                Networking.Send(message)
+                return false
+            end
+        end
     end
     
 end)
+
+if CLIENT then
+    Networking.Receive("syncwaypoints", function (message, client)
+        SpawnJobsExtendedWaypoints()
+    end)
+end
