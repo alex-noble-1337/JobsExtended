@@ -3,6 +3,7 @@
   <Jobs file="%ModDir%/Jobs.xml" />
   <Item file="%ModDir%/Items/specialitems.xml" />
   <Item file="%ModDir%/Items/Clothes/uniforms.xml" />
+  <Item file="%ModDir%/Items/clown.xml" />
   <TalentTrees file="%ModDir%/Talents/TalentTrees.xml" />
   <TalentTrees file="%ModDir%/Talents/TalentTrees-VanillaLike.xml" />
   <Talents file="%ModDir%/Talents/CO/COTalents.xml" />
