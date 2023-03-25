@@ -18,20 +18,20 @@
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
     <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="Whaler's Torso" texture="whaler.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Whaler's Right Hand" texture="whaler.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Whaler's Left Hand" texture="whaler.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Whaler's Right Lower Arm" texture="whaler.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Whaler's Left Lower Arm" texture="whaler.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Whaler's Right Upper Arm" texture="whaler.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Whaler's Left Upper Arm" texture="whaler.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Whaler's Waist" texture="whaler.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Whaler's Right Thigh" texture="whaler.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Whaler's Left Thigh" texture="whaler.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Whaler's Right Leg" texture="whaler.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Whaler's Left Leg" texture="whaler.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Whaler's Left Shoe" texture="whaler.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Whaler's Right Stump" texture="whaler.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sound="footstep_armor_heavy" />
+      <sprite name="Whaler's Torso" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Clothes/whaler.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Right Hand" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Clothes/whaler.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Left Hand" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Clothes/whaler.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Right Lower Arm" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Clothes/whaler.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Left Lower Arm" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Clothes/whaler.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Right Upper Arm" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Clothes/whaler.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Left Upper Arm" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Clothes/whaler.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Waist" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Clothes/whaler.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Right Thigh" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Clothes/whaler.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Left Thigh" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Clothes/whaler.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Right Leg" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Clothes/whaler.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Left Leg" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Clothes/whaler.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Left Shoe" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Clothes/whaler.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Right Stump" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Clothes/whaler.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sound="footstep_armor_heavy" />
       <damagemodifier afflictionidentifiers="lacerations,,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.9" />
 	  <damagemodifier afflictionidentifiers="blunttrauma,gunshotwound,bleeding,burn" armorsector="0.0,360.0" damagemultiplier="0.95" />
 
