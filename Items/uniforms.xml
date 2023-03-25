@@ -687,7 +687,7 @@
       <Containable items="smallitem" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,mobilecontainer,toolbox,mediumitem,bigitem,storage_clothing,toolbelt,bandolier" /> 
     	<SlotIcon slotindex="2" texture="Content/UI/TalentsIcons1.png" sourcerect="896,0,128,128" origin="0.5,0.5" />
       <SubContainer capacity="1">
-        <Containable items="tool,reactorpda,pda,handheldelectricalmonitor,handhelditemfinder,sonar,explosive,pistolitem,weapon,chem,medical" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,mobilecontainer,toolbox,mediumitem,bigitem,storage_clothing,toolbelt,bandolier" /> 
+        <Containable items="tool,reactorpda,pda,handheldelectricalmonitor,handhelditemfinder,sonar,explosive,pistolitem,weapon,chem,medical,grenade" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,mobilecontainer,toolbox,mediumitem,bigitem,storage_clothing,toolbelt,bandolier" /> 
       </SubContainer>
 	</ItemContainer>
 	</Item>
@@ -1867,7 +1867,8 @@
         <sprite name="Security Officer's Uniform 3 Right Shoe" texture="Content/Items/Jobgear/Security/SecurityOfficer3.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="Security Officer's Uniform 3 Left Shoe" texture="Content/Items/Jobgear/Security/SecurityOfficer3.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <!-- 30% armor seems excessive 10% across those damage types is still very strong, gave outpost security duty holsters -->
-		<damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.90" damagesound="LimbArmor" deflectprojectiles="true" />
+	    <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.95" damagesound="LimbArmor" deflectprojectiles="true" />
+		<damagemodifier afflictionidentifiers="lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.90" damagesound="LimbArmor" deflectprojectiles="true" />
       </Wearable>
     <ItemContainer capacity="2" hideitems="true">
       <Containable items="smallitem" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,mobilecontainer,toolbox,mediumitem,bigitem,storage_clothing,toolbelt,bandolier" />   />
@@ -1955,8 +1956,9 @@
         <sprite name="securitypatrol Left Shoe" texture="Content/Items/Jobgear/Commoner/securitypatrol.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <sprite name="securitypatrol Right Shoe" texture="Content/Items/Jobgear/Commoner/securitypatrol.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
         <!-- 30% armor seems excessive 10% across those damage types is still very strong, gave outpost security duty holsters -->
-		<damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.90" damagesound="LimbArmor" deflectprojectiles="true" />
-      </Wearable>
+		<damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.95" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier afflictionidentifiers="lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.90" damagesound="LimbArmor" deflectprojectiles="true" />
+	  </Wearable>
     <ItemContainer capacity="2" hideitems="true">
       <Containable items="smallitem" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,mobilecontainer,toolbox,mediumitem,bigitem,storage_clothing,toolbelt,bandolier" />  
     <SlotIcon slotindex="2" texture="Content/UI/TalentsIcons1.png" sourcerect="128,0,128,128" origin="0.5,0.5" />
@@ -2382,7 +2384,7 @@
       </SubContainer>
     </ItemContainer>
   </Item>
-  <Item name="Dockyard Dweller Outfit" identifier="commonerclothes5" description="+10% Device repair speed and Hull repair speed and a loop for welding/o2 bottles" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,clothing,storage_clothing" scale="0.5" impactsoundtag="impact_soft">
+  <Item name="Dockyard Dweller Outfit" identifier="commonerclothes5" description="Less protective and restrictive, +10% Device repair speed and Hull repair speed and a loop for welding/o2 bottles" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,clothing,storage_clothing" scale="0.5" impactsoundtag="impact_soft">
     <PreferredContainer primary="outpostcrewcabinet" amount="1" spawnprobability="0.2" />
     <PreferredContainer primary="crewcab" />
     <Price baseprice="75">
@@ -2563,7 +2565,7 @@
       </SubContainer>
     </ItemContainer>
   </Item>
-  <Item name="" identifier="quartermasterclothes" description="Hip mounted hard case holds any PDA or Sonar, +20% Movement Speed while holding submarine ammo or crates" nameidentifier="quartermasteroutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,clothing,storage_clothing" scale="0.5" impactsoundtag="impact_soft">
+  <Item name="" identifier="quartermasterclothes" description="Hip mounted hard case holds any PDA or Sonar, +10% Movement Speed while holding submarine ammo or crates" nameidentifier="quartermasteroutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,clothing,storage_clothing" scale="0.5" impactsoundtag="impact_soft">
     <PreferredContainer primary="outpostcrewcabinet" amount="1" spawnprobability="0.2" />
     <PreferredContainer primary="crewcab" />
     <Price baseprice="75">
@@ -2598,16 +2600,16 @@
       <!--TESTING-->
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.95" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound, bitewounds" damagemultiplier="0.9" />
-      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="1.2" setvalue="true">
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="1.1" setvalue="true">
         <Conditional hastag="eq crate" targetcontaineditem="true" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="1.2" setvalue="true">
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="1.1" setvalue="true">
         <Conditional hastag="eq ammobox" targetcontaineditem="true" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="1.2" setvalue="true">
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="1.1" setvalue="true">
         <Conditional hastag="eq railgunammo" targetcontaineditem="true" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="1.2" setvalue="true">
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="1.1" setvalue="true">
         <Conditional hastag="eq depthchargeammo" targetcontaineditem="true" />
       </StatusEffect>
     </Wearable>
@@ -2710,7 +2712,7 @@
       </SubContainer>
     </ItemContainer>
   </Item>
-  <Item name="" identifier="administratorclothes" description="+20% Reputation Gain, One PDA/Sonar pocket and a place for useful chems" nameidentifier="stationadminoutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,clothing,storage_clothing" scale="0.5" impactsoundtag="impact_soft">
+  <Item name="" identifier="administratorclothes" description="Middle management attire, you may even know what you are doing. Has a PDA/Sonar pocket and a place for useful chems" nameidentifier="stationadminoutfit" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,clothing,storage_clothing" scale="0.5" impactsoundtag="impact_soft">
     <PreferredContainer primary="outpostcrewcabinet" amount="1" spawnprobability="0.2" />
     <PreferredContainer primary="crewcab" />
     <Price baseprice="75">
@@ -2743,7 +2745,6 @@
       <sprite name="Administrator Suit Left Shoe" texture="Content/Items/Jobgear/Commoner/administrator.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Administrator Suit Right Shoe" texture="Content/Items/Jobgear/Commoner/administrator.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations, bitewounds" damagemultiplier="0.95" deflectprojectiles="false" />
-      <StatValue stattype="ReputationGainMultiplier" value="0.2" />
       <SkillModifier skillidentifier="helm" skillvalue="5" />
     </Wearable>
     <ItemContainer capacity="2">
@@ -3368,7 +3369,7 @@
     <SlotIcon slotindex="4" texture="Content/UI/TalentsIcons1.png" sourcerect="896,0,128,128" origin="0.5,0.5" />
 	<SlotIcon slotindex="5" texture="Content/UI/TalentsIcons1.png" sourcerect="896,0,128,128" origin="0.5,0.5" />
       <SubContainer capacity="2">
-        <Containable items="tool,reactorpda,pda,handheldelectricalmonitor,handhelditemfinder,sonar,explosive,pistolitem,weapon,chem,medical" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,mobilecontainer,toolbox,mediumitem,bigitem,storage_clothing,toolbelt,bandolier" /> 
+        <Containable items="tool,reactorpda,pda,handheldelectricalmonitor,handhelditemfinder,sonar,explosive,pistolitem,weapon,chem,medical,grenade" excludeditems="backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,mobilecontainer,toolbox,mediumitem,bigitem,storage_clothing,toolbelt,bandolier" /> 
       </SubContainer>
 	</ItemContainer>
   </Item>
