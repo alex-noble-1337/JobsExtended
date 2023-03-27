@@ -27,7 +27,6 @@
   <Submarine file="%ModDir%/Submarines/Humpback [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Orca [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Orca2 [JE].sub" />
-  <Submarine file="%ModDir%/Submarines/PowerTestSub [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Kastrull [JE].sub" />
   <Submarine file="%ModDir%/Submarines/R-29 [JE].sub" />
   <Submarine file="%ModDir%/Submarines/Remora [JE].sub" />
@@ -59,4 +58,5 @@
   <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear/Antique Diving Helmet.xml" />
   <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear/Silent Sonar Scanner.xml" />
   <Text file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Texts/English/DiverText.xml" />
+  <Submarine file="%ModDir%/!!AA TestingSpace JobsExtended.sub" />
 </contentpackage>
