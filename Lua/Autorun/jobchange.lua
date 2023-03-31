@@ -112,6 +112,7 @@ local function ChangePlayerJob(Client, newJobId)
     ChangePlayerCharacterInfo(Client)
 end
 
+
 if SERVER or (not Game.IsMultiplayer) then
     for _, player in pairs(Client.ClientList) do
         local player_character = player.Character

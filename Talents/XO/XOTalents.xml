@@ -267,7 +267,6 @@
 		<Description tag="talentdescription.unlockrecipe">
 			<Replace tag="[itemname]" value="entityname.rum-blueprint" color="gui.orange"/>
 		</Description>
-		<AddedRecipe itemidentifier="rum-blueprint"/>
 	</Talent>
 
 	<Talent identifier="capitanssword">
@@ -294,8 +293,6 @@
 			<Replace tag="[itemname]" value="entityname.handcannonround-blueprint" color="gui.orange"/>
 		  </Description>
 		<AddedRecipe itemidentifier="rotarygrenedelaucher-blueprint"/>
-		<AddedRecipe itemidentifier="handcannon-blueprint"/>
-		<AddedRecipe itemidentifier="handcannonround-blueprint"/>
 	</Talent>
 
 
@@ -482,24 +479,24 @@
 		</AbilityGroupEffect>
 	</Talent>
 
-  <Talent identifier="ironcurtain">
-    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,3" sheetelementsize="128,128"/>
-    <Description tag="talentdescription.ironcurtain">
-    </Description>
-	<!-- On being attacked gain ironcurtain buff -->
-	<AbilityGroupEffect abilityeffecttype="OnAttackedResult">
-      <Abilities>
-        <CharacterAbilityApplyStatusEffects>
-          <StatusEffects>
-            <StatusEffect type="OnAbility" target="This" multiplyafflictionsbymaxvitality="true">
-              <Affliction identifier="ironcurtain" amount="4.0"/>
-            </StatusEffect>
-          </StatusEffects>
-        </CharacterAbilityApplyStatusEffects>
-      </Abilities>
-    </AbilityGroupEffect>
-	<!-- TODO one more stuff -->
-  </Talent>
+	<Talent identifier="ironcurtain">
+		<Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,3" sheetelementsize="128,128"/>
+		<Description tag="talentdescription.ironcurtain">
+		</Description>
+		<!-- On being attacked gain ironcurtain buff -->
+		<AbilityGroupEffect abilityeffecttype="OnAttackedResult">
+		<Abilities>
+			<CharacterAbilityApplyStatusEffects>
+			<StatusEffects>
+				<StatusEffect type="OnAbility" target="This" multiplyafflictionsbymaxvitality="true">
+				<Affliction identifier="ironcurtain" amount="4.0"/>
+				</StatusEffect>
+			</StatusEffects>
+			</CharacterAbilityApplyStatusEffects>
+		</Abilities>
+		</AbilityGroupEffect>
+		<!-- TODO one more stuff -->
+	</Talent>
 
 	<Talent identifier="notasingleonegetsthough">
 		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="4,0" sheetelementsize="128,128"/>

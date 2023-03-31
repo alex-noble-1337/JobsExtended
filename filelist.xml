@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <contentpackage name="JobsExtendedBeta" modversion="1.0.5" corepackage="False" steamworkshopid="2908735458" gameversion="0.21.6.0" altnames="JobsExtended,Jobs Extended Beta">
   <Jobs file="%ModDir%/Jobs.xml" />
-  <Item file="%ModDir%/Items/uniforms.xml" />
+  <Item file="%ModDir%/Items/Clothes/uniforms.xml" />
+  <Item file="%ModDir%/Items/Clothes/Clothes_and_Swimsuits.xml" />
   <Item file="%ModDir%/Items/specialitems.xml" />
   <Item file="%ModDir%/Items/security_m - Make a HOS uniform ig.xml" />
   <Item file="%ModDir%/ItemsOverride/guitar.xml" />
@@ -30,7 +31,6 @@
   <Talents file="%ModDir%/Talents/PRI/PRITalents.xml" />
   <Afflictions file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Afflictions.xml" />
   <Talents file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Talents/Talents.xml" />
-  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Clothes/Clothes and Swimsuits.xml" />
   <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/ADS/ADS.xml" />
   <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/APS/APS.xml" />
   <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Stingray Shotgun/Stingray Shotgun.xml" />

@@ -574,6 +574,7 @@
         </SubTree>
     </TalentTree>
     <!--Quatermaster Support, make it have simmilar 2 tlaent trees as mechanic -->
+    <!-- items for moving to another submarine -->
     <TalentTree jobidentifier="quartermaster">
         <SubTree identifier="mechanic_primary" nameidentifier="talenttree.primary" type="primary">
                 <!-- TODO if somebody gain reciepie from talent you gain that too, all crafted things are affected by other people crafting passives:
@@ -864,6 +865,7 @@
                 <TalentOption identifier="atmosmachine"/>
             </TalentOptions>
         </SubTree>
+        <!--  -->
         <SubTree identifier="scientist" type="specialization" requires="assistant_primary" blocks="xenologist,apprentice">
             <TalentOptions>
                 <!-- TODO does not exist -->
