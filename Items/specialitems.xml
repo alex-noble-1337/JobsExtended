@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <!-- TODO heavyweaponholster -->
-  <!-- TODO name, description refrencing deus ex, battery drain, damage, fabrication recipie, make auto-override to enchanced armaments if your textures is good enough -->
+  <!-- TODO name, description refrencing deus ex, fabrication recipie, make auto-override to enchanced armaments if your textures is good enough -->
   <Item name="Riot Prod Baton" identifier="riotprodbatton" description="" category="Weapon" subcategory="Melee" Tags="smallitem,weapon,stunner,gunsmith" Scale="0.45" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" RequireAimToUse="True">
     <!-- TODO add spawning in wrecks, balanced probbability -->
     <PreferredContainer secondary="locker"/>
@@ -24,40 +24,74 @@
     <InventoryIcon name="riotprodbattoninv" texture="%ModDir%/Items/TalentGear.png" sourcerect="442,443,69,66" origin="0.5,0.5"/>
     <Sprite texture="%ModDir%/Items/TalentGear.png" sourcerect="0,459,313,49" depth="0.55" origin="0.4954025,0.7936202"/>
     <Body width="170" height="20" density="30"/>
-    <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="45,10" handle1="-45,5" holdangle="55" reload="0.95" range="100" combatPriority="49" msg="ItemMsgPickUpSelect">
+    <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="45,10" handle1="-45,5" holdangle="55" reload="1.2" range="100" combatPriority="49" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="7" itemdamage="1">
-        <Sound file="Content/Items/Weapons/Smack1.ogg" range="800"/>
+        <StatusEffect type="OnUse" target="UseTarget">
+          <Conditional entitytype="eq Character" />
+          <Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500" />
+          <Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
+        </StatusEffect>
         <Affliction identifier="blunttrauma" strength="4"/>
         <Affliction identifier="stun" strength="0.5"/>
         <Affliction identifier="stun" strength="0.75" probability="0.4"/>
         <Affliction identifier="progressivestun" strength="2" probability="0.1"/>
       </Attack>
-      <StatusEffect type="OnUse" target="This">
-        <ParticleEmitter particle="ElectricShock" particlespersecond="4.0" particleamount="4" emitinterval="2.1" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.2" />
+      <StatusEffect type="OnUse" target="UseTarget">
+        <Conditional entitytype="eq Character" />
+        <Affliction identifier="stun" strength="15" />
+        <Affliction identifier="incrementalstun" strength="85" />
+        <sound file="Content/Items/Weapons/StunBaton1.ogg" selectionmode="random" range="500" />
+        <sound file="Content/Items/Weapons/StunBaton2.ogg" range="500" />
+        <sound file="Content/Items/Weapons/StunBaton3.ogg" range="500" />
+        <sound file="Content/Items/Weapons/StunBaton4.ogg" range="500" />
+        <RequiredItem items="mobilebattery" type="Contained" msg="ItemMsgBatteryCellRequired" />
+        <Explosion range="150.0" force="0.5" shockwave="false" flames="false" smoke="true" underwaterbubble="false" camerashake="6.0" />
+        <Conditional mass="lt 250" />
+        <ParticleEmitter particle="ElectricShock" particlespersecond="8.0" particleamount="8" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.2" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained,UseTarget" Condition="-25.0" disabledeltatime="true">
+        <RequiredItem items="mobilebattery" type="Contained" msg="ItemMsgBatteryCellRequired" />
+        <Conditional entitytype="eq Character" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="UseTarget">
+        <sound file="%ModDir%/Items/ProdFire.ogg" range="500" />
+        <RequiredItem items="mobilebattery" type="Contained" msg="ItemMsgBatteryCellRequired" />
+        <Conditional entitytype="eq Character" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" setvalue="True" reload="1.2">
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" setvalue="True" reload="4.0">
+        <RequiredItem items="mobilebattery" type="Contained" msg="ItemMsgBatteryCellRequired" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This">
+        <RequiredItem items="mobilebattery" type="Contained" msg="ItemMsgBatteryCellRequired" />
+        <ParticleEmitter particle="ElectricShock" particlespersecond="4.0" particleamount="4" emitinterval="2.1" anglemin="0" anglemax="360" scalemin="0.11" scalemax="0.11" />
       </StatusEffect>
     </MeleeWeapon>
-    <StatusEffect type="OnUse" target="This">
-      <ParticleEmitter particle="ElectricShock" particlespersecond="4.0" particleamount="4" emitinterval="2.1" anglemin="0" anglemax="360" scalemin="0.11" scalemax="0.11" />
-    </StatusEffect>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <Containable items="mobilebattery" />
+    </ItemContainer>
     <aitarget sightrange="500" soundrange="500" fadeouttime="1"/>
     <Quality>
       <QualityStat stattype="StrikingSpeedMultiplier" value="0.1"/>
     </Quality>
   </Item>
   <!-- TODO HVDPshell High Velocity Dual Purpouse -->
-  <Item name="" identifier="40mmHVDP" category="Weapon" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,grenade" Scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="grenadelauncher" amount="1" spawnprobability="1" />
+  <Item name="40mm HVDP grenade High Velocity Dual Purpouse" identifier="40mmHVDP" category="Weapon" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,grenade" Scale="0.5" impactsoundtag="impact_metal_light">
+    <!-- TODO add spawning in wrecks, balanced probbability -->
     <PreferredContainer secondary="wreckarmcab,abandonedarmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
     <PreferredContainer primary="secarmcab" secondary="armcab" />
-    <Price baseprice="100" sold="false">
+    <!-- <Price baseprice="100" sold="false">
       <Price storeidentifier="merchantoutpost" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
       <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="4" />
       <Price storeidentifier="merchantmine" multiplier="1.25" />
       <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="4" />
-    </Price>
-    <Deconstruct time="5">
+    </Price> -->
+    <!-- TODO for reciepies awaiting xml to spreadsheet conveter -->
+    <!-- <Deconstruct time="5">
       <Item identifier="iron" />
       <Item identifier="sodium" />
     </Deconstruct>
@@ -65,15 +99,19 @@
       <RequiredSkill identifier="weapons" level="30" />
       <RequiredItem identifier="iron" />
       <RequiredItem identifier="uex" />
-    </Fabricate>
+    </Fabricate> -->
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="215,286,41,17" depth="0.55" origin="0.5,0.5" />
     <Body width="38" height="15" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-    <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="false">
+    <Projectile characterusable="false" launchimpulse="35.0" sticktocharacters="false">
       <Attack structuredamage="40" penetration="1" severlimbsprobability="5">
         <Affliction identifier="explosiondamage" strength="50" />
       </Attack>
+      <StatusEffect type="OnActive" target="This" lifetime="2">
+        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="1" velocitymin="-10" velocitymax="-100" scalemin="1" scalemax="1.5" />
+      </StatusEffect>
+      <!-- sound should be fater and more high pitched -->
       <sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="3000" selectionmode="Random" />
       <sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="3000" />
       <!--Grenade launcher ammo explodes on impact-->
