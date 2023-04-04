@@ -1,3 +1,5 @@
+- xo focus
+
 - add some kind of automatic spawn and recrutment of new npcs
 - Make Lua command to make someone prisioner
 
