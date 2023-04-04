@@ -16,8 +16,8 @@
     <InventoryIcon name="Whaler's regalia" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" sourcerect="8,139,127,123" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" name="Whaler's regalia" sourcerect="22,263,202,86" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
-    <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
-    <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
+      <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
+      <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
       <sprite name="Whaler's Torso" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Clothes/whaler.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Whaler's Right Hand" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Clothes/whaler.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Whaler's Left Hand" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Clothes/whaler.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -56,8 +56,8 @@
     <InventoryIcon name="Frogman's vestments" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" sourcerect="137,135,138,127" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" name="Frogman's vestments sprite" sourcerect="242,268,204,76" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
-    <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
-    <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
+      <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
+      <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
       <sprite name="Frogman's Torso" texture="frogman.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Frogman's Right Hand" texture="frogman.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Frogman's Left Hand" texture="frogman.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -100,8 +100,8 @@
     <InventoryIcon name="Diving Instructor's garments" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" sourcerect="279,147,124,115" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" name="Diving Instructor's garments sprite" sourcerect="16,377,213,63" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
-    <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
-    <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
+      <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
+      <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
       <sprite name="Diving Instructor's Torso" texture="divinginstructor.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Diving Instructor's Right Hand" texture="divinginstructor.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Diving Instructor's Left Hand" texture="divinginstructor.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -187,7 +187,7 @@
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.95" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier afflictiontypes="concussion" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="concussion" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="" deflectprojectiles="true" />
       <SkillModifier skillidentifier="weapons" skillvalue="5" />
       <sprite name="Advanced Diving Mask Wearable" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.75" hidewearablesoftype="moustache,beard" sourcerect="474,80,64,74" origin="0.40,0.40" />
       <StatusEffect type="OnWearing" target="Character" HideFace="true" SpeedMultiplier="1" setvalue="true" disabledeltatime="true" />
@@ -286,8 +286,8 @@
     <InventoryIcon name="Depth-Foam Wetsuit" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" sourcerect="279,147,124,115" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" name="Depth-Foam Wetsuit Sprite" sourcerect="16,377,213,63" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
-    <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect" />
-    <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
+      <Holdable slots="RightHand,LeftHand" holdpos="40,-30" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" allowswappingwhenpicked="false" />
+      <Wearable slots="InnerClothes" msg="ItemMsgPickUpSelect">
       <sprite name="Depth-Foam Wetsuit's Torso" texture="depth-foam wetsuit.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Depth-Foam Wetsuit's Right Hand" texture="depth-foam wetsuit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Depth-Foam Wetsuit's Left Hand" texture="depth-foam wetsuit.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
