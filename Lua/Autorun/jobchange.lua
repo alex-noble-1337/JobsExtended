@@ -1,3 +1,5 @@
+-- LuaUserData.MakeMethodAccessible(Descriptors["Barotrauma.Skill"], "get_level")
+
 local function ChangePlayerCharacterInfo(Client, targetJobId)
     -- local skills = {}
     -- skills.append(Client.Job.GetSkill("helm"))
@@ -10,7 +12,7 @@ local function ChangePlayerCharacterInfo(Client, targetJobId)
     -- local empty_info = CharacterInfo("human", "Robert")
     -- empty_info.Job = Job(JobPrefab.Get("assistant"))
 
-    local new_player_CharacterInfo = Client.CharacterInfo
+    local new_player_CharacterInfo = Client.Character.Info
     -- ERROR cannot access this
     -- print(Client.CharacterInfo.GetUnlockedTalentsInTree)
     -- new_player_CharacterInfo.AdditionalTalentPoints = #(new_player_CharacterInfo.UnlockedTalentsInTree) + new_player_CharacterInfo.AdditionalTalentPoints
@@ -18,6 +20,19 @@ local function ChangePlayerCharacterInfo(Client, targetJobId)
     -- replace old character info with new one that has job-specific talents 0'ed
     new_player_CharacterInfo.Job = Job(JobPrefab.Get(targetJobId))
     -- new_player_CharacterInfo.UnlockedTalents = Client.CharacterInfo.UnlockedTalents
+
+    for skillold in Client.Character.Info.Job.GetSkills() do
+        for skillnew in new_player_CharacterInfo.Job.GetSkills() do
+            if skillold.Identifier == skillnew.Identifier then
+                local oldskilllevel = skillold.Level
+                print(skillold.Identifier, " ",skillnew.Identifier)
+                print(math.floor(oldskilllevel), " ",math.floor(skillnew.Level))
+                print(math.floor(Client.Character.GetSkillLevel(skillnew.Identifier)))
+                skillnew.Level = oldskilllevel
+            end
+        end
+    end
+
 
     return new_player_CharacterInfo
 end

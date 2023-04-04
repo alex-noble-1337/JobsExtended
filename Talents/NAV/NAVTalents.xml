@@ -406,6 +406,50 @@
             </Abilities>
         </AbilityGroupInterval>
     </Talent>
-    
-  
+    <Talent identifier="polarizedlens"> 
+        <Description tag="talentdescription.polarizedlens">
+        </Description>
+        <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <!-- when sonar operated by you is on and you scan a monster that monster gets debuff -->
+        <AbilityGroupInterval interval="1.0">
+            <Conditions>
+                <!-- when using shuttle nav terminal -->
+                <AbilityConditionItem tags="secondarynavterminal"/>
+            </Conditions>
+            <Abilities>
+                <!-- apply small debuff in big range to monsters -->
+                <CharacterAbilityApplyStatusEffectsToAllies maxdistance="10000" allowself="True">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <!-- TODO make good texture, color and name -->
+                            <Affliction identifier="scanned" strength="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffectsToAllies>
+            </Abilities>
+        </AbilityGroupInterval>
+        <!-- when you in water your crewmates near you get better visiblity -->
+        <AbilityGroupInterval interval="1.0">
+            <Conditions>
+                <!-- when in water -->
+                <AbilityConditionInWater/>
+            </Conditions>
+            <Abilities>
+                <!-- apply visiblity buff to allies near you -->
+                <CharacterAbilityApplyStatusEffectsToAllies maxdistance="200" allowself="True">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <!-- TODO make good texture, color and name -->
+                            <Affliction identifier="trainedperception" strength="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffectsToAllies>
+            </Abilities>
+        </AbilityGroupInterval>
+        <!-- polarizedlens - item that increases your vision inside watter but reduces outside -->
+        <Description tag="talentdescription.unlockrecipe">
+            <Replace tag="[itemname]" value="entityname.polarizedlens-blueprint" color="gui.orange" />
+        </Description>
+        <AddedRecipe itemidentifier="polarizedlens-blueprint"/>
+    </Talent>
 </Talents>

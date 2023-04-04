@@ -53,5 +53,17 @@
 		</Effect>
 		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
 	</Affliction>
+	<Affliction identifier="scanned" type="talentbuff" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="1" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+		<Effect minstrength="0" maxstrength="1" strengthchange="-1"
+			minvitalitydecrease="0.9"
+			maxvitalitydecrease="0.9"
+			minspeedmultiplier="0.9"
+			maxspeedmultiplier="0.9"/>
+		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+	</Affliction>
+	<Affliction identifier="trainedperception" type="talentbuff" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="1" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+		<Effect minstrength="0" maxstrength="1" strengthchange="-1"/>
+		<Icon texture="Content/UI/TalentsIcons2.png" sheetindex="7,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
+	</Affliction>
 
 </Afflictions>
