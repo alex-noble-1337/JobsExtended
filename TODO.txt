@@ -1,20 +1,35 @@
-- xo focus
-
+Issues:
+Dr.arielpro 2 hours ago 
+Hey, does the Apprenticeship talent, and other talents related to it (journeyman, loyal assistant) currently interact with the custom jobs? If not, would it be possible to make it that so that it interacts with the whole related wing you are specializing in? E.g. security covering HoS, Diver and Security Officer. Captain specialization covering CO, XO and Navigator and so on.
+- jobs extended problem with old diving helmet
+Features:
+- bring xo talents and items into workable status
+    - create heavyweaponholster
+    - create HVDPshell High Velocity Dual Purpouse ammo, basically super-piercing ammo
+	- finish XO items
+	- XO granade damgae and rotary granade laucher
+- XO polish textures, TODO's and item values
+- he diver class, JE, an item, PUPS, from Alien
+- A resprited, neutrally buoyant grenade that applies slowness and weakness to enemies it passes nearby
+- An item that, when thrown, spawns an entity that pathfinds towards the nearest hostile creature, (EK homing shell style,) and shocks it while making a noise that alerts the thrower it has found something
+- Jobs Extended Beta navigator finish and make items from blueprints
+- je save converter
+- lock down gene spicers to passenger Genes+ Revived and Expanded, and make gene from blood for passenger tree
+- enhanced armaments jobs extended beta integration, starting guns and loadouts, guns unlock from talents etc
+- warden job jobs extended beta integration - make a robotocist tree (job from ss13) 
+- barocraftables integration for jobs extended beta
+- add Old Crew Outfits mod
 - add some kind of automatic spawn and recrutment of new npcs
 - Make Lua command to make someone prisioner
-
 - buffs should be visible from the glance when they will end. Make affliction max instead of delay // done from fenzied somewaht
 - add max range for aoe into their descriptions
-
 - replace all upgrades of buffs from numerical affliction max to new affliction
 - make tumbling work
-
 - remove gunsmith replace it with oldhandsomestranger
 - make oldhandsomestranger give you ablility to craft blueprints for revolver and revolverrounds
 - make every talent do 3 things, except the primary talents
-
 - Unique diving suits per class with 4 colors
-- Unique weapon per class, CO - handgun and revolver dmg, XO granade damgae and rotary granade laucher, Security Autoshotgun
+- Unique weapon per class, CO - handgun and revolver dmg, Security Autoshotgun
 - SEC gets target dummy, witch allows you to hone your skills
 - COB mobile turrets and craftable things (get ricky)
 - custom icons!!!!!
@@ -22,5 +37,13 @@
 - fully incorporate genes+ to passenger skill tree
 - backpack sucks change it
 - i just copied buck of files withouc changing anyhting (almost) bad!!!
-
 - Jobs extended addons with mod that allowed reloading packages (Making so you dont need to install separate packages to patch 2 mods)
+- Jobs Extended Talent rework, then continued work and expansion of roles.
+- Alien tier of cybernetics
+- Diving sut mod
+- Add bongo to musitian
+- Coelanth fang and endworm fang harpoons that do massive damage like ahab spears
+- Integrate Modular headset
+- Integrate Genes+
+- Integrate Barocraftbles+
+- Integrate Status Monitor mod

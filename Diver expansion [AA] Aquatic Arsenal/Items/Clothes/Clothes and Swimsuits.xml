@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Whaler's regalia" identifier="whalerregalia" description="cool garments" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.125" />
+    <Price baseprice="175">
+      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" minavailable="1" />
+      <Price locationtype="research" multiplier="1" minavailable="1" />
+      <Price locationtype="military" multiplier="1" minavailable="1" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <InventoryIcon name="Whaler's regalia" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" sourcerect="8,139,127,123" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" name="Whaler's regalia" sourcerect="22,263,202,86" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Whaler's Torso" texture="whaler.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Right Hand" texture="whaler.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Left Hand" texture="whaler.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Right Lower Arm" texture="whaler.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Left Lower Arm" texture="whaler.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Right Upper Arm" texture="whaler.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Left Upper Arm" texture="whaler.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Waist" texture="whaler.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Right Thigh" texture="whaler.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Left Thigh" texture="whaler.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Right Leg" texture="whaler.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Left Leg" texture="whaler.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Left Shoe" texture="whaler.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Whaler's Right Stump" texture="whaler.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sound="footstep_armor_heavy" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.9" />
+    </Wearable>
+  </Item>
+  <Item name="Frogman's vestments" identifier="frogmanvestments" description="cool vestments i guess" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.125" />
+    <Price baseprice="175">
+      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" minavailable="1" />
+      <Price locationtype="research" multiplier="1" minavailable="1" />
+      <Price locationtype="military" multiplier="1" minavailable="1" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <InventoryIcon name="Frogman's vestments" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" sourcerect="137,135,138,127" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" name="Frogman's vestments sprite" sourcerect="242,268,204,76" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Frogman's Torso" texture="frogman.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Frogman's Right Hand" texture="frogman.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Frogman's Left Hand" texture="frogman.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Frogman's Right Lower Arm" texture="frogman.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Frogman's Left Lower Arm" texture="frogman.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Frogman's Right Upper Arm" texture="frogman.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Frogman's Left Upper Arm" texture="frogman.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Frogman's Waist" texture="frogman.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Frogman's Right Thigh" texture="frogman.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Frogman's Left Thigh" texture="frogman.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Frogman's Right Leg" texture="frogman.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Frogman's Left Leg" texture="frogman.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Frogman's Left Shoe" texture="frogman.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Frogman's Right Shoe" texture="frogman.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.9" />
+    </Wearable>
+  </Item>
+  <Item name="Diving Instructor's garments" identifier="divinginstructorgarments" description="cool garments i guess" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.125" />
+    <Price baseprice="175">
+      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" minavailable="1" />
+      <Price locationtype="research" multiplier="1" minavailable="1" />
+      <Price locationtype="military" multiplier="1" minavailable="1" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <InventoryIcon name="Diving Instructor's garments" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" sourcerect="279,147,124,115" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" name="Diving Instructor's garments sprite" sourcerect="16,377,213,63" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" variants="1" msg="ItemMsgPickUpSelect">
+      <sprite name="Diving Instructor's Torso" texture="divinginstructor.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Diving Instructor's Right Hand" texture="divinginstructor.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Diving Instructor's Left Hand" texture="divinginstructor.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Diving Instructor's Right Lower Arm" texture="divinginstructor.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Diving Instructor's Left Lower Arm" texture="divinginstructor.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Diving Instructor's Right Upper Arm" texture="divinginstructor.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Diving Instructor's Left Upper Arm" texture="divinginstructor.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Diving Instructor's Waist" texture="divinginstructor.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Diving Instructor's Right Thigh" texture="divinginstructor.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Diving Instructor's Left Thigh" texture="divinginstructor.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Diving Instructor's Right Leg" texture="divinginstructor.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Diving Instructor's Left Leg" texture="divinginstructor.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Diving Instructor's Left Shoe" texture="divinginstructor.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Diving Instructor's Right Shoe" texture="divinginstructor.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.9" />
+    </Wearable>
+  </Item>
+  <Item name="Old Seadog Hat" identifier="oldseadoghat" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft" scale="0.40">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.1" />
+    <PreferredContainer primary="locker" minamount="0" maxamount="1" spawnprobability="0.1" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="2" spawnprobability="0.1" />
+    <PreferredContainer primary="outposttrashcan" minamount="0" maxamount="1" spawnprobability="0.1" />
+    <Price baseprice="150" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.3" minavailable="6" />
+      <Price locationtype="city" multiplier="1.2" minavailable="5" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="0.9" minavailable="2" />
+      <Price locationtype="mine" multiplier="1" minavailable="3" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+      <Item identifier="iron" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="20" />
+      <RequiredItem identifier="organicfiber" />
+      <RequiredItem identifier="iron" />
+    </Fabricate>
+    <InventoryIcon name="Old Seadog Hat" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" sourcerect="570,0,77,69" origin="0.5,0.5" />
+    <Sprite name="Old Seadog Hat Sprite" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" sourcerect="570,0,77,69" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" density="50" />
+    <Wearable slots="Any,Head" armorvalue="5.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.8" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding,lacerations" armorsector="0.0,360.0" damagemultiplier="0.8" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" deflectprojectiles="true" />
+      <SkillModifier skillidentifier="electrical" skillvalue="5" />
+      <SkillModifier skillidentifier="mechanical" skillvalue="5" />
+      <sprite name="Old Seadog Hat Wearable" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidewearablesoftype="hair" sourcerect="567,87,92,53" origin="0.51,0.9" />
+    </Wearable>
+  </Item>
+  <Item name="Advanced Diving Mask" identifier="advanceddivingmask" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light" scale="0.45">
+    <Price baseprice="250" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.3" sold="false" />
+      <Price locationtype="city" multiplier="1.2" sold="false" />
+      <Price locationtype="research" multiplier="1" minavailable="2" />
+      <Price locationtype="military" multiplier="0.9" minavailable="3" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+      <Item identifier="rubber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredItem identifier="ballisticfiber" />
+      <RequiredItem identifier="rubber" />
+    </Fabricate>
+    <InventoryIcon name="Advanced Diving Mask" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" sourcerect="476,6,61,60" origin="0.5,0.5" />
+    <Sprite name="Advanced Diving Mask Sprite" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" sourcerect="474,80,64,74" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" density="50" />
+    <Wearable slots="Any,Head" armorvalue="15.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <SkillModifier skillidentifier="weapons" skillvalue="5" />
+      <sprite name="Advanced Diving Mask Wearable" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.75" hidewearablesoftype="moustache,beard" sourcerect="474,80,64,74" origin="0.40,0.40" />
+      <StatusEffect type="OnWearing" target="Character" HideFace="true" SpeedMultiplier="1" setvalue="true" disabledeltatime="true" />
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.4" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygentank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-4.0" Condition="-5.0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="weldingfueltank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-5.0" Condition="-5.0">
+        <RequiredItem items="incendiumfueltank" type="Contained" />
+        <Affliction identifier="burn" amount="0.1" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.25" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygeniteshard" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.075" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.2" setvalue="true" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygeniteshard" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.2" setvalue="true" comparison="Or">
+        <Conditional IsDead="false" />
+        <RequiredItem items="oxygenitetank" type="Contained" />
+      </StatusEffect>
+    </Wearable>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="tank">
+      <Containable items="oxygensource,weldingtoolfuel" />
+    </ItemContainer>
+  </Item>
+  <Item name="Blue Beanie" identifier="bluebeanie" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft" scale="0.40">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.1" />
+    <PreferredContainer primary="locker" minamount="0" maxamount="1" spawnprobability="0.1" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="2" spawnprobability="0.1" />
+    <PreferredContainer primary="outposttrashcan" minamount="0" maxamount="1" spawnprobability="0.1" />
+    <Price baseprice="160" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.3" minavailable="2" />
+      <Price locationtype="city" multiplier="1.2" minavailable="4" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="0.9" minavailable="2" />
+      <Price locationtype="mine" multiplier="1" minavailable="2" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="helm" level="20" />
+      <RequiredItem identifier="organicfiber" />
+      <RequiredItem identifier="organicfiber" />
+    </Fabricate>
+    <InventoryIcon name="Blue Beanie" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" sourcerect="679,0,77,69" origin="0.5,0.5" />
+    <Sprite name="Blue Beanie Sprite" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" sourcerect="679,0,77,69" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" density="50" />
+    <Wearable slots="Any,Head" armorvalue="5.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.5" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.8" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.8" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" deflectprojectiles="true" />
+      <SkillModifier skillidentifier="helm" skillvalue="5" />
+      <sprite name="Blue Beanie Wearable" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.57" hidewearablesoftype="hair" sourcerect="681,86,76,61" origin="0.575,0.9" />
+    </Wearable>
+  </Item>
+  <Item name="Depth-Foam Wetsuit" identifier="depthfoamwetsuit" description="A depth-foam wetsuit capable of withstanding crushing pressures of up to 4000m" category="Equipment" tags="smallitem,clothing,diving,deepdiving,provocative" scale="0.75" fireproof="false" allowdroppingonswapwith="diving" impactsoundtag="impact_soft">
+    <Price baseprice="250">
+      <Price locationtype="outpost" multiplier="0.9" sold="false" />
+      <Price locationtype="city" multiplier="0.85" sold="false" />
+      <Price locationtype="research" multiplier="1" minavailable="2" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <PreferredContainer primary="divingsuitcontainer" spawnprobability="0" />
+    <Deconstruct time="30">
+      <Item identifier="silicon" />
+      <Item identifier="silicon" />
+      <Item identifier="rubber" />
+      <Item identifier="rubber" />
+      <Item identifier="steel" />
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredItem identifier="silicon" />
+      <RequiredItem identifier="silicon" />
+      <RequiredItem identifier="rubber" />
+      <RequiredItem identifier="rubber" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="ballisticfiber" />
+    </Fabricate>
+    <InventoryIcon name="Depth-Foam Wetsuit" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" sourcerect="279,147,124,115" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/NewIcons.png" name="Depth-Foam Wetsuit Sprite" sourcerect="16,377,213,63" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" variants="1" msg="ItemMsgPickUpSelect">
+      <sprite name="Depth-Foam Wetsuit's Torso" texture="depth-foam wetsuit.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Depth-Foam Wetsuit's Right Hand" texture="depth-foam wetsuit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Depth-Foam Wetsuit's Left Hand" texture="depth-foam wetsuit.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Depth-Foam Wetsuit's Right Lower Arm" texture="depth-foam wetsuit.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Depth-Foam Wetsuit's Left Lower Arm" texture="depth-foam wetsuit.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Depth-Foam Wetsuit's Right Upper Arm" texture="depth-foam wetsuit.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Depth-Foam Wetsuit's Left Upper Arm" texture="depth-foam wetsuit.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Depth-Foam Wetsuit's Waist" texture="depth-foam wetsuit.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Depth-Foam Wetsuit's Right Thigh" texture="depth-foam wetsuit.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Depth-Foam Wetsuit's Left Thigh" texture="depth-foam wetsuit.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Depth-Foam Wetsuit's Right Leg" texture="depth-foam wetsuit.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Depth-Foam Wetsuit's Left Leg" texture="depth-foam wetsuit.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Depth-Foam Wetsuit's Left Shoe" texture="depth-foam wetsuit.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Depth-Foam Wetsuit's Right Shoe" texture="depth-foam wetsuit.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      <StatusEffect type="OnWearing" target="Character" HideFace="false" ObstructVision="false" PressureProtection="4000.0" SpeedMultiplier="1" LowPassMultiplier="1" setvalue="true" disabledeltatime="true"></StatusEffect>
+    </Wearable>
+    <aitarget maxsightrange="1500" />
+  </Item>
+  <!--
+    titaniumaluminiumalloy, 2x silicon, 2x rubber, ballisticfiber, steel, (reinforced depth-foam swimsuit)
+    -->
+  <!--
+    2x titaniumaluminiumalloy, 2x plastic, 2x rubber, 2x ballisticfiber, (prototype diving plate-foam swimsuit)
+    -->
+</Items>
