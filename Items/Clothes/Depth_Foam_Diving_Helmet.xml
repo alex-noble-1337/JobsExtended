@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Item name="Depth Foam Diving Helmet" identifier="depthfoamdivinghelmet" description="Foam diving helmet that has been reinforced with a steel skeleton" scale="0.5" category="Equipment" Tags="smallitem,diving,lightdiving" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+  <Price baseprice="175">
+    <Price locationtype="outpost" multiplier="0.9" sold="false" />
+    <Price locationtype="city" multiplier="0.85" sold="false" />
+    <Price locationtype="research" multiplier="1" minavailable="2" />
+    <Price locationtype="military" multiplier="1" sold="false" />
+    <Price locationtype="mine" multiplier="1.25" sold="false" />
+  </Price>
+  <Deconstruct time="10">
+    <Item identifier="steel" />
+    <Item identifier="rubber" />
+  </Deconstruct>
+  <Fabricate suitablefabricators="fabricator" requiredtime="20">
+    <RequiredSkill identifier="mechanical" level="35" />
+    <RequiredItem identifier="steel" />
+    <RequiredItem identifier="plastic" />
+    <RequiredItem identifier="advanceddivingmask" />
+  </Fabricate>
+  <InventoryIcon texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear.png" sourcerect="92,0,92,111" origin="0.5,0.5" />
+  <Sprite texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear.png" sourcerect="102,115,75,82" origin="0.5,0.5" />
+  <Body width="40" height="35" density="15" />
+  <Wearable limbtype="Head" slots="Any,Head" armorvalue="12.0" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+      <damagemodifier afflictionidentifiers="lacerations,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+	  <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.55" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="concussion" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="" deflectprojectiles="true" />
+    <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+    <sprite name="Depth Foam Diving Helmet Sprite" texture="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear.png" limb="Head" inheritlimbdepth="true" inherittexturescale="true" hidelimb="false" hideotherwearables="false" sourcerect="102,115,75,82" origin="0.45,0.5" />
+    <StatusEffect type="OnWearing" target="Character" HideFace="true" SpeedMultiplier="1" setvalue="true" disabledeltatime="true" />
+    <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.5" comparison="Or">
+      <Conditional IsDead="false" />
+      <RequiredItem items="oxygentank" type="Contained" />
+    </StatusEffect>
+    <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-5.0" Condition="-5.0">
+      <Conditional IsDead="false" />
+      <RequiredItem items="weldingfueltank" type="Contained" />
+    </StatusEffect>
+    <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-7.0" Condition="-5.0">
+      <RequiredItem items="incendiumfueltank" type="Contained" />
+      <Affliction identifier="burn" amount="0.1" />
+    </StatusEffect>
+    <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.3" comparison="Or">
+      <Conditional IsDead="false" />
+      <RequiredItem items="oxygeniteshard" type="Contained" />
+    </StatusEffect>
+    <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.1" comparison="Or">
+      <Conditional IsDead="false" />
+      <RequiredItem items="oxygenitetank" type="Contained" />
+    </StatusEffect>
+    <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.1" setvalue="true" comparison="Or">
+      <Conditional IsDead="false" />
+      <RequiredItem items="oxygeniteshard" type="Contained" />
+    </StatusEffect>
+    <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.2" setvalue="true" comparison="Or">
+      <Conditional IsDead="false" />
+      <RequiredItem items="oxygenitetank" type="Contained" />
+    </StatusEffect>
+  </Wearable>
+  <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="tank">
+    <Containable items="oxygensource,weldingtoolfuel" />
+  </ItemContainer>
+</Item>

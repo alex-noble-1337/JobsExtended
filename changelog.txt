@@ -1,0 +1,3 @@
+Fixed:
+- also why the FUCK arent steel bolt shotgun shells tagged as shotgun shells
+- Invalid stat type type "AttackMultiplier" in item (stingrayshotgun)

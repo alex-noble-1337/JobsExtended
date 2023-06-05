@@ -226,7 +226,7 @@
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="Steel Bolt Shotgun Shell" identifier="steelboltshell" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,specialshotgunammo" Scale="0.33" impactsoundtag="impact_metal_light">
+  <Item name="Steel Bolt Shotgun Shell" description="Special steel tipped shells. Cant be fired from normal shotgun." identifier="steelboltshell" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,specialshotgunammo" Scale="0.33" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="stingrayshotgun" minamount="4" maxamount="4" spawnprobability="1" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.2" />
     <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="4" spawnprobability="0.33" />

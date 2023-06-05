@@ -3,6 +3,7 @@
   <Jobs file="%ModDir%/Jobs.xml" />
   <Item file="%ModDir%/Items/specialitems.xml" />
   <Item file="%ModDir%/Items/Clothes/uniforms.xml" />
+  <Item file="%ModDir%/Items/Clothes/Depth_Foam_Diving_Helmet.xml" />
   <Item file="%ModDir%/Items/clown.xml" />
   <TalentTrees file="%ModDir%/Talents/TalentTrees.xml" />
   <TalentTrees file="%ModDir%/Talents/TalentTrees-VanillaLike.xml" />
@@ -53,7 +54,6 @@
   <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Rusty Machete/Rusty Machete.xml" />
   <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Kukri/Kukri.xml" />
   <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Weapons/Ammo and Explosives/Ammo and Explosives.xml" />
-  <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear/Depth Foam Diving Helmet.xml" />
   <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear/Foam Diving Visor.xml" />
   <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear/Antique Diving Helmet.xml" />
   <Item file="%ModDir%/Diver expansion [AA] Aquatic Arsenal/Items/Tools and Gadgets/Diving Gear/Silent Sonar Scanner.xml" />
